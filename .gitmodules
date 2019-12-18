@@ -1,0 +1,3 @@
+[submodule "Repackaged-APPs-detection"]
+	path = Repackaged-APPs-detection
+	url = https://github.com/MIchicho/Repackaged-APPs-detection
