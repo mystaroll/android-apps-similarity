@@ -1,3 +1,6 @@
 [submodule "Repackaged-APPs-detection"]
 	path = Repackaged-APPs-detection
 	url = https://github.com/MIchicho/Repackaged-APPs-detection
+[submodule "Repackaged-APPs-detection-fork"]
+	path = Repackaged-APPs-detection-fork
+	url = https://github.com/mustafahafidi/Repackaged-APPs-detection
