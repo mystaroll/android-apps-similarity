@@ -23,7 +23,7 @@ print a1.get_permissions()
 print '\nPermissions REPACKAGED:'
 print a2.get_permissions()
 
-perm_difference = set(a1.get_permissions()).difference(a2.get_permissions())
+perm_difference = set(a2.get_permissions()).difference(a1.get_permissions())
 
 print chalk.bold('\nPermissions DIFFERENCE: %s') % (chalk.red(perm_difference) if len(
     perm_difference) != 0 else chalk.green("EQUAL"))
