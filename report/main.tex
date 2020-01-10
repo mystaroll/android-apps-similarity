@@ -1,0 +1,53 @@
+\documentclass[16pt,letterpaper]{article}
+\usepackage{preamble}
+\usepackage{prftree}
+
+\newcommand\course{Android Apps Similarity}
+\newcommand\hwnumber{1}
+\newcommand\userID{Mustafa Hafidi}
+%\everymath{\displaystyle}
+\definecolor{asd}{HTML}{FF7F00}
+ 
+
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+ 
+\addbibresource{bibliography.bib}
+\begin{document}
+\textbf{\Large Android Apps Similarity Detection - Overview/Report}
+
+% \section{Techniques}
+% \begin{itemize}
+%     \item Opcode-based
+%     \item AST-based
+%     \item Token-based
+%     \item API-based
+%     \item PDG-based
+%     \item CFG-based
+%     \item View-based
+%     \item System Calls based
+%     \item Traffic-based
+%     \item Resources-based
+% \end{itemize}
+
+\section{Dataset}
+
+Androzoo \cite{Allix} as the source where to get apks from, and as dataset we take into consideration the following:
+\begin{itemize}
+    \item 15297 pairs (app, repackaged app) taken from existing work on evaluation of available techniques for detection of repackaged apps \cite{repackaged-dataset} \textit{(unpublished work).}
+    \item 1498 pairs taken from existing work on App Piggybacking \cite{piggyback-paper,piggyback-dataset}.
+    \item \textbf{I use 80 pairs which are common to both}
+\end{itemize}
+
+
+
+%\begin{thebibliography}{9}
+%\bibitem{texbook} Donald E. Knuth (1986) \emph{The \TeX{} Book}, Addison-Wesley Professional.
+%\end{thebibliography}
+
+\printbibliography
+
+\end{document}

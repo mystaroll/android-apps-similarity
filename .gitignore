@@ -1,2 +1,4 @@
 .vscode/
 .idea
+src/data/pairs/*
+session.ag
