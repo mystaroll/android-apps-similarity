@@ -1,4 +1,10 @@
 # image: python:2.7-alpine3.10
+cache:
+  key:
+    files:
+      - src/data/common_with_groundtruth.txt
+  paths:
+    - src/data/apks
 download_data:
   script:
     - cd ./src/data/ && ./download_pairs.py
