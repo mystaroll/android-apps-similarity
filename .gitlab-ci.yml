@@ -9,5 +9,6 @@ download_data:
 
 build_report:
   script:
-    - pip install androguard
+    - pip install -U pip
+    - pip --cache-dir=.pip install requirements.txt
     - cd ./src && ./main.py
