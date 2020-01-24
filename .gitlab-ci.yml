@@ -8,4 +8,7 @@ download_data:
 
 build_report:
   script:
+    - python -V
+    - pip -V
+    - pip freeze
     - cd ./src && ./main.py
