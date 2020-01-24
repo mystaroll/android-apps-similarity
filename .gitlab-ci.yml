@@ -9,6 +9,5 @@ download_data:
 
 build_report:
   script:
-    - pip install -U pip
-    - pip --cache-dir=.pip install requirements.txt
+    - pip --cache-dir=.pip install -r requirements.txt
     - cd ./src && ./main.py
