@@ -2,13 +2,12 @@
 cache:
   paths:
     - src/data/apks
+    - .pip
 download_data:
   script:
     - cd ./src/data/ && ./download_pairs.py
 
 build_report:
   script:
-    - python -V
-    - pip -V
-    - pip freeze
+    - pip install androguard
     - cd ./src && ./main.py
