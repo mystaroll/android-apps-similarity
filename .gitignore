@@ -1,4 +1,4 @@
 .vscode/
 .idea
-src/data/pairs/*
+src/data/apks/*
 session.ag
