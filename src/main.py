@@ -17,6 +17,7 @@ DIFF_CHAR_LIMIT = 1000
 # s = androguard.session.Load(SESSION_FILENAME) if os.path.exists(
 #     SESSION_FILENAME) else androguard.session.Session()
 
+
 class Object:
     def __init__(self, **attributes):
         self.__dict__.update(attributes)
@@ -28,7 +29,11 @@ chalk_html = Object(
     green=lambda x: "<span style='color: green'>%s</span>" % x,
     red=lambda x: "<span style='color: red'>%s</span>" % x,
     bold=lambda x: "<b>%s</b>" % x)
-identity=lambda x:x
+
+
+def identity(x): return x
+
+
 chalk_file = Object(
     blue=identity,
     green=identity,
@@ -55,9 +60,9 @@ def jaccard_similarity_lists(list1, list2):
 
 def represent_methods(dx, restrict_classes=None, only_internal=True):
     return map(lambda internal_method: "%s->%s%s" % (internal_method.get_method().class_name, internal_method.get_method(
-    ).get_name(),internal_method.get_method(
-    ).get_descriptor()), filter(lambda mth: restrict_classes==None or mth.get_method().class_name in restrict_classes,
-                                                   filter(lambda method: (not method.is_external()) or (not only_internal), dx.get_methods())))
+    ).get_name(), internal_method.get_method(
+    ).get_descriptor()), filter(lambda mth: restrict_classes == None or mth.get_method().class_name in restrict_classes,
+                                filter(lambda method: (not method.is_external()) or (not only_internal), dx.get_methods())))
 
 
 # def jaccard_similarity_strings(str1, str2):
@@ -70,40 +75,39 @@ def compare_lists(l1, l2):
     difference1 = set(l1).difference(l2)
     difference2 = set(l2).difference(l1)
 
-    result = lambda print_difference: chalk.bold('%s') % (chalk.red('\nDELETED %s\n---\nADDED %s' % (
+    def result(print_difference): return chalk.bold('%s') % (chalk.red('\nDELETED %s\n---\nADDED %s' % (
         str(difference1), str(difference2)) if print_difference else 'CHANGED (JI %s%%)' % jaccard_similarity_lists(l1,
                                                                                                                     l2)) if len(
         difference1) != 0 or len(
         difference2) != 0 else chalk.green(
-        "EQUAL (JI %s%%)" % jaccard_similarity_lists(l1, l2)));  # type: Callable[[bool], str]
+        "EQUAL (JI %s%%)" % jaccard_similarity_lists(l1, l2)))  # type: Callable[[bool], str]
     return to_detailed_dict(result(True), result(False), jaccard_similarity_lists(l1,
                                                                                   l2))  # {"detailed": result(True), "not_detailed": result(False)}
 
 
 def compare_strings(s1, s2):
     # type: (str, str) -> dict
-    result = lambda print_difference: chalk.bold('%s') % (
+    def result(print_difference): return chalk.bold('%s') % (
         chalk.red('DIFFERENT: %s!=%s' % (s1, s2) if print_difference else 'CHANGED') if s1 != s2 else chalk.green(
-            "EQUAL"));
+            "EQUAL"))
     return to_detailed_dict(result(True), result(False), 0 if s1 != s2 else 100)
 
 
 def compare_methods_common_classes(dx1, dx2, only_internal=True):
     # type: (any, any) -> dict
     union_classes = set(dx1.classes).intersection(set(dx2.classes))
-    meths_dx1 = represent_methods(dx1, union_classes,only_internal)
-    meths_dx2 = represent_methods(dx2, union_classes,only_internal)
+    meths_dx1 = represent_methods(dx1, union_classes, only_internal)
+    meths_dx2 = represent_methods(dx2, union_classes, only_internal)
 
     return compare_lists(meths_dx1, meths_dx2)
 
 
 def compare_methods(dx1, dx2, only_internals=True):
     # type: (androguard.misc.Analysis, androguard.misc.Analysis) -> dict
-    meths_dx1 = represent_methods(dx1,None,only_internals)
-    meths_dx2 = represent_methods(dx2,None,only_internals)
+    meths_dx1 = represent_methods(dx1, None, only_internals)
+    meths_dx2 = represent_methods(dx2, None, only_internals)
 
     return compare_lists(meths_dx1, meths_dx2)
-
 
 
 analysis_rows, ground_truth_rows = [], []
@@ -114,11 +118,12 @@ cache = {}
 sys.stdout = open("./report/runs/report-%s.txt" % datetime.now(), 'w')
 
 with open('data/common_with_groundtruth.txt') as f:
-    for line in f.readlines()[:20]:
-        [original_apk_hash, repackaged_apk_hash, grnd_is_similar] = line.strip().split(',')
+    for line in f.readlines():
+        [original_apk_hash, repackaged_apk_hash,
+            grnd_is_similar] = line.strip().split(',')
         print chalk.bold(
             "\n\n################################################################### Analyzing pair of dataset: [%s...],[%s...] ###################################################################") % (
-                  chalk.blue(chalk.bold(original_apk_hash[:10])), chalk.bold(repackaged_apk_hash[:10]))
+            chalk.blue(chalk.bold(original_apk_hash[:10])), chalk.bold(repackaged_apk_hash[:10]))
 
         # TODO check if apk exist, if not download
         a1, d1, dx1 = androguard.misc.AnalyzeAPK(
@@ -126,7 +131,6 @@ with open('data/common_with_groundtruth.txt') as f:
 
         a2, d2, dx2 = androguard.misc.AnalyzeAPK(
             "./data/apks/%s.apk" % repackaged_apk_hash)
-
 
         # Testing
         """
@@ -136,7 +140,7 @@ with open('data/common_with_groundtruth.txt') as f:
         """
 
         # COMPARISONS
-        comparisons=[
+        comparisons = [
             compare_strings(
                 a1.get_androidversion_code(), a2.get_androidversion_code()),
             compare_strings(
@@ -170,8 +174,6 @@ with open('data/common_with_groundtruth.txt') as f:
             compare_methods(dx1, dx2, False),
             compare_methods_common_classes(dx1, dx2, False)
         ]
-
-
 
         print '=============================================='
         print 'Android version code: %s' % comparisons[0]['detailed']
@@ -210,8 +212,6 @@ with open('data/common_with_groundtruth.txt') as f:
                                          map(lambda comparison: comparison['not_detailed'], comparisons) +
                                          [grnd_is_similar]]
 
-
-
         print tabulate(analysis_rows, headers=['Ref.',
                                                'And. vcode',
                                                'And. vname',
@@ -233,14 +233,17 @@ with open('data/common_with_groundtruth.txt') as f:
                                                'Meths Com. cls(ext)',
                                                'GRND TRUTH'], tablefmt="grid")
 
-        avg_score = sum(map(lambda x: x['score'], comparisons)) / len(comparisons)
+        avg_score = sum(
+            map(lambda x: x['score'], comparisons)) / len(comparisons)
         tool_result = "SIMILAR" if avg_score >= THRESHOLD else "NOT_SIMILAR"
         ground_truth_rows = ground_truth_rows + [[chalk.blue(chalk.bold("%s" % original_apk_hash[:10])),
                                                   grnd_is_similar,
                                                   avg_score,
-                                                  chalk.bold(chalk.red(tool_result) if tool_result != grnd_is_similar else chalk.green(tool_result)),
+                                                  chalk.bold(chalk.red(
+                                                      tool_result) if tool_result != grnd_is_similar else chalk.green(tool_result)),
                                                   chalk.bold(chalk.red("WRONG") if tool_result != grnd_is_similar else chalk.green("RIGHT"))]]
-        accuracy = "%d" % (round((float(len(filter(lambda v: v==chalk.bold(chalk.green("RIGHT")), map(lambda row: row[4], ground_truth_rows)))) / len(ground_truth_rows) ) * 100,2) ) if len(ground_truth_rows)>0 else "NA"
+        accuracy = "%d" % (round((float(len(filter(lambda v: v == chalk.bold(chalk.green("RIGHT")), map(
+            lambda row: row[4], ground_truth_rows)))) / len(ground_truth_rows)) * 100, 2)) if len(ground_truth_rows) > 0 else "NA"
         print tabulate(ground_truth_rows, headers=['Ref.',
                                                    'Ground Truth',
                                                    'Score',
@@ -248,16 +251,18 @@ with open('data/common_with_groundtruth.txt') as f:
                                                    'Tool Conclusion'], tablefmt="grid")
 
         # average between min of similar and max of non similar
-        similar_rows = filter(lambda row: row[1]=="SIMILAR", ground_truth_rows)
-        not_similar_rows = filter(lambda row: row[1]=="NOT_SIMILAR", ground_truth_rows)
+        similar_rows = filter(
+            lambda row: row[1] == "SIMILAR", ground_truth_rows)
+        not_similar_rows = filter(
+            lambda row: row[1] == "NOT_SIMILAR", ground_truth_rows)
         recommended_threshold = round(float(
             min(map(lambda row: row[2], similar_rows))
-         +
-              max(map(lambda row: row[2], not_similar_rows))
-          ) / 2
-        ,2) if len(similar_rows)>0 and len(not_similar_rows)>0 else "ND"
+            +
+            max(map(lambda row: row[2], not_similar_rows))
+        ) / 2, 2) if len(similar_rows) > 0 and len(not_similar_rows) > 0 else "ND"
 
-        print "======= CURRENT THRESHOLD %s%% ======= CURRENT ACCURACY: %s ======= RECOMMENDED THRESHOLD %s%%    " % (chalk.blue(THRESHOLD), chalk.bold(chalk.blue(accuracy+"%")), chalk.bold(recommended_threshold))
+        print "======= CURRENT THRESHOLD %s%% ======= CURRENT ACCURACY: %s ======= RECOMMENDED THRESHOLD %s%%    " % (
+            chalk.blue(THRESHOLD), chalk.bold(chalk.blue(accuracy+"%")), chalk.bold(recommended_threshold))
 
         # setting threshold to recommended
         if recommended_threshold != "ND":

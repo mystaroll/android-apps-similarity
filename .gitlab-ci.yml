@@ -10,7 +10,7 @@ download_data:
 build_report:
   artifacts:
     paths:
-      - report/runs
+      - src/report
     expire_in: 1000 years
   script:
     - pip --cache-dir=.pip install -r requirements.txt
