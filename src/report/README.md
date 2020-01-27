@@ -1,0 +1,1 @@
+This folder contains the full log of the runs of the tool.
