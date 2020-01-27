@@ -115,7 +115,7 @@ analysis_rows_html, ground_truth_rows_html = [], []
 
 # sys.exit(0)
 cache = {}
-sys.stdout = open("./report/runs/report-%s.txt" % datetime.now(), 'w')
+sys.stdout = open("./report/report-%s.txt" % datetime.now(), 'w')
 
 with open('data/common_with_groundtruth.txt') as f:
     for line in f.readlines():
