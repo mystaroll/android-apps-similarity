@@ -11,7 +11,7 @@ build_report:
   artifacts:
     paths:
       - report/runs
-    expire_in: 0
+    expire_in: 1000 years
   script:
     - pip --cache-dir=.pip install -r requirements.txt
     - cd ./src && ./main.py
