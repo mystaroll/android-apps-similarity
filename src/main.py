@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # encoding=utf8
-import sys
-reload(sys)
-sys.setdefaultencoding('utf8')
+
 import androguard.misc
 import androguard.core
 import cPickle as pickle
 from tabulate import tabulate
 from datetime import datetime
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 THRESHOLD = 94
 DIFF_CHAR_LIMIT = 1000
 
@@ -262,7 +263,7 @@ with open('data/common_with_groundtruth.txt') as f:
         if recommended_threshold != "ND":
             THRESHOLD = recommended_threshold
 
-print "CACHING...."
+# print "CACHING...."
 # if not os.path.exists("./cache/analysis.bin"):
-with open("./cache/analysis.bin", "w") as file:
-    pickle.dump(cache, file)
+# with open("./cache/analysis.bin", "w") as file:
+#     pickle.dump(cache, file)

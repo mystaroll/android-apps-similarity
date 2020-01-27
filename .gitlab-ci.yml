@@ -8,6 +8,10 @@ download_data:
     - cd ./src/data/ && ./download_pairs.py
 
 build_report:
+  artifacts:
+    paths:
+      - report/runs
+    expire_in: 0
   script:
     - pip --cache-dir=.pip install -r requirements.txt
     - cd ./src && ./main.py
