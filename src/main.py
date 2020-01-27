@@ -7,15 +7,30 @@ import cPickle as pickle
 from tabulate import tabulate
 from datetime import datetime
 import sys
+
 reload(sys)
 sys.setdefaultencoding('utf8')
 THRESHOLD = 94
 DIFF_CHAR_LIMIT = 1000
+execution_time = datetime.now().strftime("%Y-%m-%d-%H:%M")
+
 
 # print 'Checking existing session'
 # SESSION_FILENAME = 'session.ag'
 # s = androguard.session.Load(SESSION_FILENAME) if os.path.exists(
 #     SESSION_FILENAME) else androguard.session.Session()
+
+class Logger(object):
+    def __init__(self):
+        self.terminal = sys.stdout
+        self.log = open("./report/report-FULL-%s.txt" % execution_time, 'w')
+
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+
+    def flush(self):
+        pass
 
 
 class Object:
@@ -23,6 +38,8 @@ class Object:
         self.__dict__.update(attributes)
 
 
+summary_report = open('./report/report-SUMMARY-%s.txt' % execution_time, 'w')
+sys.stdout = Logger()
 # chalk wrapper to print html tags
 chalk_html = Object(
     blue=lambda x: "<span style='color: blue'>%s</span>" % x,
@@ -59,10 +76,12 @@ def jaccard_similarity_lists(list1, list2):
 
 
 def represent_methods(dx, restrict_classes=None, only_internal=True):
-    return map(lambda internal_method: "%s->%s%s" % (internal_method.get_method().class_name, internal_method.get_method(
-    ).get_name(), internal_method.get_method(
-    ).get_descriptor()), filter(lambda mth: restrict_classes == None or mth.get_method().class_name in restrict_classes,
-                                filter(lambda method: (not method.is_external()) or (not only_internal), dx.get_methods())))
+    return map(
+        lambda internal_method: "%s->%s%s" % (internal_method.get_method().class_name, internal_method.get_method(
+        ).get_name(), internal_method.get_method(
+        ).get_descriptor()),
+        filter(lambda mth: restrict_classes == None or mth.get_method().class_name in restrict_classes,
+               filter(lambda method: (not method.is_external()) or (not only_internal), dx.get_methods())))
 
 
 # def jaccard_similarity_strings(str1, str2):
@@ -81,6 +100,7 @@ def compare_lists(l1, l2):
         difference1) != 0 or len(
         difference2) != 0 else chalk.green(
         "EQUAL (JI %s%%)" % jaccard_similarity_lists(l1, l2)))  # type: Callable[[bool], str]
+
     return to_detailed_dict(result(True), result(False), jaccard_similarity_lists(l1,
                                                                                   l2))  # {"detailed": result(True), "not_detailed": result(False)}
 
@@ -90,6 +110,7 @@ def compare_strings(s1, s2):
     def result(print_difference): return chalk.bold('%s') % (
         chalk.red('DIFFERENT: %s!=%s' % (s1, s2) if print_difference else 'CHANGED') if s1 != s2 else chalk.green(
             "EQUAL"))
+
     return to_detailed_dict(result(True), result(False), 0 if s1 != s2 else 100)
 
 
@@ -111,19 +132,13 @@ def compare_methods(dx1, dx2, only_internals=True):
 
 
 analysis_rows, ground_truth_rows = [], []
-analysis_rows_html, ground_truth_rows_html = [], []
-
-# sys.exit(0)
-cache = {}
-sys.stdout = open("./report/report-%s.txt" % datetime.now(), 'w')
-
 with open('data/common_with_groundtruth.txt') as f:
-    for line in f.readlines():
+    for line in f.readlines()[:2]:
         [original_apk_hash, repackaged_apk_hash,
-            grnd_is_similar] = line.strip().split(',')
+         grnd_is_similar] = line.strip().split(',')
         print chalk.bold(
             "\n\n################################################################### Analyzing pair of dataset: [%s...],[%s...] ###################################################################") % (
-            chalk.blue(chalk.bold(original_apk_hash[:10])), chalk.bold(repackaged_apk_hash[:10]))
+                  chalk.blue(chalk.bold(original_apk_hash[:10])), chalk.bold(repackaged_apk_hash[:10]))
 
         # TODO check if apk exist, if not download
         a1, d1, dx1 = androguard.misc.AnalyzeAPK(
@@ -136,7 +151,6 @@ with open('data/common_with_groundtruth.txt') as f:
         """
         a1, d1, dx1 = androguard.misc.AnalyzeAPK(
             "./src/data/apks/0E11713DB82EF4A9340CF9202D02D0620A370A5302CCA4DF9147EFF4C939F80E.apk")
-
         """
 
         # COMPARISONS
@@ -240,10 +254,14 @@ with open('data/common_with_groundtruth.txt') as f:
                                                   grnd_is_similar,
                                                   avg_score,
                                                   chalk.bold(chalk.red(
-                                                      tool_result) if tool_result != grnd_is_similar else chalk.green(tool_result)),
-                                                  chalk.bold(chalk.red("WRONG") if tool_result != grnd_is_similar else chalk.green("RIGHT"))]]
+                                                      tool_result) if tool_result != grnd_is_similar else chalk.green(
+                                                      tool_result)),
+                                                  chalk.bold(chalk.red(
+                                                      "WRONG") if tool_result != grnd_is_similar else chalk.green(
+                                                      "RIGHT"))]]
         accuracy = "%d" % (round((float(len(filter(lambda v: v == chalk.bold(chalk.green("RIGHT")), map(
-            lambda row: row[4], ground_truth_rows)))) / len(ground_truth_rows)) * 100, 2)) if len(ground_truth_rows) > 0 else "NA"
+            lambda row: row[4], ground_truth_rows)))) / len(ground_truth_rows)) * 100, 2)) if len(
+            ground_truth_rows) > 0 else "NA"
         print tabulate(ground_truth_rows, headers=['Ref.',
                                                    'Ground Truth',
                                                    'Score',
@@ -262,11 +280,41 @@ with open('data/common_with_groundtruth.txt') as f:
         ) / 2, 2) if len(similar_rows) > 0 and len(not_similar_rows) > 0 else "ND"
 
         print "======= CURRENT THRESHOLD %s%% ======= CURRENT ACCURACY: %s ======= RECOMMENDED THRESHOLD %s%%    " % (
-            chalk.blue(THRESHOLD), chalk.bold(chalk.blue(accuracy+"%")), chalk.bold(recommended_threshold))
-
+            chalk.blue(THRESHOLD), chalk.bold(chalk.blue(accuracy + "%")), chalk.bold(recommended_threshold))
+        summary_report.write(
+            "\n======= CURRENT THRESHOLD %s%% ======= CURRENT ACCURACY: %s ======= RECOMMENDED THRESHOLD %s%%    " % (
+                chalk.blue(THRESHOLD), chalk.bold(chalk.blue(accuracy + "%")), chalk.bold(recommended_threshold)))
         # setting threshold to recommended
         if recommended_threshold != "ND":
             THRESHOLD = recommended_threshold
+
+summary_report.write("\nFINAL ANALYSIS TABLE: \n")
+summary_report.write(tabulate(analysis_rows, headers=['Ref.',
+                                                      'And. vcode',
+                                                      'And. vname',
+                                                      'minsdk',
+                                                      'maxsdk',
+                                                      'targetsdk',
+                                                      'efftarget',
+                                                      'permissions',
+                                                      'package',
+                                                      'appname',
+                                                      'activities',
+                                                      'Resources',
+                                                      'Services',
+                                                      'Receivers',
+                                                      'Classes',
+                                                      'Methods All',
+                                                      'Methods Common cls',
+                                                      'Methods All(ext)',
+                                                      'Meths Com. cls(ext)',
+                                                      'GRND TRUTH'], tablefmt="grid"))
+summary_report.write(tabulate(ground_truth_rows, headers=['Ref.',
+                                                          'Ground Truth',
+                                                          'Score',
+                                                          'Tool Result',
+                                                          'Tool Conclusion'], tablefmt="grid"))
+summary_report.close()
 
 # print "CACHING...."
 # if not os.path.exists("./cache/analysis.bin"):
