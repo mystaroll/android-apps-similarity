@@ -133,7 +133,7 @@ def compare_methods(dx1, dx2, only_internals=True):
 
 analysis_rows, ground_truth_rows = [], []
 with open('data/common_with_groundtruth.txt') as f:
-    for line in f.readlines()[:2]:
+    for line in f.readlines():
         [original_apk_hash, repackaged_apk_hash,
          grnd_is_similar] = line.strip().split(',')
         print chalk.bold(
