@@ -10,7 +10,7 @@ import sys
 
 reload(sys)
 sys.setdefaultencoding('utf8')
-THRESHOLD = 94
+THRESHOLD = 57
 DIFF_CHAR_LIMIT = 1000
 execution_time = datetime.now().strftime("%Y-%m-%d-%H:%M")
 
@@ -130,8 +130,41 @@ def compare_methods(dx1, dx2, only_internals=True):
 
     return compare_lists(meths_dx1, meths_dx2)
 
+def compare_fields(dx1, dx2):
+    # type: (any, any) -> dict
+    fields_dx1 = map(lambda f: str(f.get_field()), dx1.get_fields())
+    fields_dx2 = map(lambda f: str(f.get_field()), dx2.get_fields())
+    return compare_lists(fields_dx1, fields_dx2)
 
 analysis_rows, ground_truth_rows = [], []
+analysis_header = ['Ref.',
+                   'And. vcode',
+                   'And. vname',
+                   'minsdk',
+                   'maxsdk',
+                   'targetsdk',
+                   'efftarget',
+                   'permissions',
+                   'package',
+                   'appname',
+                   'activities',
+                   'Resources',
+                   'Services',
+                   'Receivers',
+                   'Classes',
+                   'Methods All',
+                   'Methods Common cls',
+                   'Methods All(ext)',
+                   'Meths Com. cls(ext)',
+                   'Strings',
+                   'Fields',
+                   'GRND TRUTH']
+ground_truth_header = ['Ref.',
+                      'Ground Truth',
+                      'Score',
+                      'Tool Result',
+                      'Tool Conclusion']
+
 with open('data/common_with_groundtruth.txt') as f:
     for line in f.readlines():
         [original_apk_hash, repackaged_apk_hash,
@@ -147,11 +180,7 @@ with open('data/common_with_groundtruth.txt') as f:
         a2, d2, dx2 = androguard.misc.AnalyzeAPK(
             "./data/apks/%s.apk" % repackaged_apk_hash)
 
-        # Testing
-        """
-        a1, d1, dx1 = androguard.misc.AnalyzeAPK(
-            "./src/data/apks/0E11713DB82EF4A9340CF9202D02D0620A370A5302CCA4DF9147EFF4C939F80E.apk")
-        """
+
 
         # COMPARISONS
         comparisons = [
@@ -186,7 +215,9 @@ with open('data/common_with_groundtruth.txt') as f:
             compare_methods(dx1, dx2),
             compare_methods_common_classes(dx1, dx2),
             compare_methods(dx1, dx2, False),
-            compare_methods_common_classes(dx1, dx2, False)
+            compare_methods_common_classes(dx1, dx2, False),
+            compare_lists(dx1.strings, dx2.strings),
+            compare_fields(dx1,dx2)
         ]
 
         print '=============================================='
@@ -220,32 +251,17 @@ with open('data/common_with_groundtruth.txt') as f:
         print '(ext. incl.) Methods: %s' % comparisons[16]['detailed']
         print '=============================================='
         print '(ext. incl.) Methods Common classes: %s' % comparisons[17]['detailed']
+        print '=============================================='
+        print 'Strings: %s' % comparisons[18]['detailed']
+        print '=============================================='
+        print 'Fields: %s' % comparisons[19]['detailed']
         print '========================= CURRENT ANALYSIS ========================='
 
         analysis_rows = analysis_rows + [[chalk.blue(chalk.bold("%s" % original_apk_hash[:10]))] +
                                          map(lambda comparison: comparison['not_detailed'], comparisons) +
                                          [grnd_is_similar]]
 
-        print tabulate(analysis_rows, headers=['Ref.',
-                                               'And. vcode',
-                                               'And. vname',
-                                               'minsdk',
-                                               'maxsdk',
-                                               'targetsdk',
-                                               'efftarget',
-                                               'permissions',
-                                               'package',
-                                               'appname',
-                                               'activities',
-                                               'Resources',
-                                               'Services',
-                                               'Receivers',
-                                               'Classes',
-                                               'Methods All',
-                                               'Methods Common cls',
-                                               'Methods All(ext)',
-                                               'Meths Com. cls(ext)',
-                                               'GRND TRUTH'], tablefmt="grid")
+        print tabulate(analysis_rows, headers=analysis_header, tablefmt="grid")
 
         avg_score = sum(
             map(lambda x: x['score'], comparisons)) / len(comparisons)
@@ -262,11 +278,7 @@ with open('data/common_with_groundtruth.txt') as f:
         accuracy = "%d" % (round((float(len(filter(lambda v: v == chalk.bold(chalk.green("RIGHT")), map(
             lambda row: row[4], ground_truth_rows)))) / len(ground_truth_rows)) * 100, 2)) if len(
             ground_truth_rows) > 0 else "NA"
-        print tabulate(ground_truth_rows, headers=['Ref.',
-                                                   'Ground Truth',
-                                                   'Score',
-                                                   'Tool Result',
-                                                   'Tool Conclusion'], tablefmt="grid")
+        print tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid")
 
         # average between min of similar and max of non similar
         similar_rows = filter(
@@ -289,31 +301,8 @@ with open('data/common_with_groundtruth.txt') as f:
             THRESHOLD = recommended_threshold
 
 summary_report.write("\nFINAL ANALYSIS TABLE: \n")
-summary_report.write(tabulate(analysis_rows, headers=['Ref.',
-                                                      'And. vcode',
-                                                      'And. vname',
-                                                      'minsdk',
-                                                      'maxsdk',
-                                                      'targetsdk',
-                                                      'efftarget',
-                                                      'permissions',
-                                                      'package',
-                                                      'appname',
-                                                      'activities',
-                                                      'Resources',
-                                                      'Services',
-                                                      'Receivers',
-                                                      'Classes',
-                                                      'Methods All',
-                                                      'Methods Common cls',
-                                                      'Methods All(ext)',
-                                                      'Meths Com. cls(ext)',
-                                                      'GRND TRUTH'], tablefmt="grid"))
-summary_report.write(tabulate(ground_truth_rows, headers=['Ref.',
-                                                          'Ground Truth',
-                                                          'Score',
-                                                          'Tool Result',
-                                                          'Tool Conclusion'], tablefmt="grid"))
+summary_report.write(tabulate(analysis_rows, headers=analysis_header, tablefmt="grid"))
+summary_report.write(tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid"))
 summary_report.close()
 
 # print "CACHING...."
