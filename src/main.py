@@ -291,11 +291,13 @@ with open('data/common_with_groundtruth.txt') as f:
             max(map(lambda row: row[2], not_similar_rows))
         ) / 2, 2) if len(similar_rows) > 0 and len(not_similar_rows) > 0 else "ND"
 
-        print "======= CURRENT THRESHOLD %s%% ======= CURRENT ACCURACY: %s ======= RECOMMENDED THRESHOLD %s%%    " % (
-            chalk.blue(THRESHOLD), chalk.bold(chalk.blue(accuracy + "%")), chalk.bold(recommended_threshold))
-        summary_report.write(
-            "\n======= CURRENT THRESHOLD %s%% ======= CURRENT ACCURACY: %s ======= RECOMMENDED THRESHOLD %s%%    " % (
-                chalk.blue(THRESHOLD), chalk.bold(chalk.blue(accuracy + "%")), chalk.bold(recommended_threshold)))
+        summary_threshold =  "======= CURRENT THRESHOLD %s%% ======= CURRENT ACCURACY: %s ======= RECOMMENDED THRESHOLD %s%%  == MAX_NON_SIM: %s%% MIN_SIM. %s%% " % (
+            chalk.blue(THRESHOLD), chalk.bold(chalk.blue(accuracy + "%")), chalk.bold(recommended_threshold),
+            max(map(lambda row: row[2], not_similar_rows)),
+            min(map(lambda row: row[2], similar_rows))
+            )
+        print summary_threshold
+        summary_report.write(summary_threshold)
         # setting threshold to recommended
         if recommended_threshold != "ND":
             THRESHOLD = recommended_threshold
