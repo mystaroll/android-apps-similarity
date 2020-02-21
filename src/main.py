@@ -3,10 +3,12 @@
 
 import androguard.misc
 import androguard.core
-import cPickle as pickle
 from tabulate import tabulate
 from datetime import datetime
 import sys
+import os
+import urllib2
+import hashlib
 
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -95,7 +97,7 @@ def compare_lists(l1, l2):
     difference2 = set(l2).difference(l1)
 
     def result(print_difference): return chalk.bold('%s') % (chalk.red('\nDELETED %s\n---\nADDED %s' % (
-        str(difference1), str(difference2)) if print_difference else 'CHANGED (JI %s%%)' % jaccard_similarity_lists(l1,
+        str(difference1)[:DIFF_CHAR_LIMIT], str(difference2)[:DIFF_CHAR_LIMIT]) if print_difference else 'CHANGED (JI %s%%)' % jaccard_similarity_lists(l1,
                                                                                                                     l2)) if len(
         difference1) != 0 or len(
         difference2) != 0 else chalk.green(
@@ -108,7 +110,7 @@ def compare_lists(l1, l2):
 def compare_strings(s1, s2):
     # type: (str, str) -> dict
     def result(print_difference): return chalk.bold('%s') % (
-        chalk.red('DIFFERENT: %s!=%s' % (s1, s2) if print_difference else 'CHANGED') if s1 != s2 else chalk.green(
+        chalk.red('DIFFERENT: %s!=%s' % (str(s1)[:DIFF_CHAR_LIMIT], str(s2)[:DIFF_CHAR_LIMIT]) if print_difference else 'CHANGED') if s1 != s2 else chalk.green(
             "EQUAL"))
 
     return to_detailed_dict(result(True), result(False), 0 if s1 != s2 else 100)
@@ -130,11 +132,13 @@ def compare_methods(dx1, dx2, only_internals=True):
 
     return compare_lists(meths_dx1, meths_dx2)
 
+
 def compare_fields(dx1, dx2):
     # type: (any, any) -> dict
     fields_dx1 = map(lambda f: str(f.get_field()), dx1.get_fields())
     fields_dx2 = map(lambda f: str(f.get_field()), dx2.get_fields())
     return compare_lists(fields_dx1, fields_dx2)
+
 
 analysis_rows, ground_truth_rows = [], []
 analysis_header = ['Ref.',
@@ -160,27 +164,51 @@ analysis_header = ['Ref.',
                    'Fields',
                    'GRND TRUTH']
 ground_truth_header = ['Ref.',
-                      'Ground Truth',
-                      'Score',
-                      'Tool Result',
-                      'Tool Conclusion']
+                       'Ground Truth',
+                       'Score',
+                       'Tool Result',
+                       'Tool Conclusion']
+
+apks_dir = "data/apks"
+apks_list = os.listdir(apks_dir)
+
+
+def download_if_not_exists(hash):
+    global apks_dir, apks_list
+    if (hash + ".apk" in apks_list):
+        with open(apks_dir+"/"+hash + ".apk", "rb") as existing_apk:
+            hash_in_file = hashlib.sha256(existing_apk.read()).hexdigest().upper()
+        if hash_in_file != hash:
+            print "\n File exists but no equal hashes: %s, %s" % (hash,hash_in_file)
+        else:
+            return
+
+    print "Apk not downloaded, downloading now...\n"
+    with open(apks_dir + "/" + hash + ".apk", "wb") as fapk:
+        fapk.write(urllib2.urlopen(
+            "https://androzoo.uni.lu/api/download?apikey=a52054307648be3c6b753eb55c093f4c2fa4b03e452f8ed245db653fee146cdd&sha256=%s" % hash).read())
+        print "Download completed\n"
+
+
+# sys.exit(0)
 
 with open('data/common_with_groundtruth.txt') as f:
     for line in f.readlines():
         [original_apk_hash, repackaged_apk_hash,
          grnd_is_similar] = line.strip().split(',')
         print chalk.bold(
-            "\n\n################################################################### Analyzing pair of dataset: [%s...],[%s...] ###################################################################") % (
+            "\n\n################################# Analyzing pair of dataset: [%s...],[%s...] ####################################") % (
                   chalk.blue(chalk.bold(original_apk_hash[:10])), chalk.bold(repackaged_apk_hash[:10]))
 
-        # TODO check if apk exist, if not download
+        download_if_not_exists(original_apk_hash)
+        download_if_not_exists(repackaged_apk_hash)
+
+        print "Running comparisons"
         a1, d1, dx1 = androguard.misc.AnalyzeAPK(
             "./data/apks/%s.apk" % original_apk_hash)
 
         a2, d2, dx2 = androguard.misc.AnalyzeAPK(
             "./data/apks/%s.apk" % repackaged_apk_hash)
-
-
 
         # COMPARISONS
         comparisons = [
@@ -217,9 +245,9 @@ with open('data/common_with_groundtruth.txt') as f:
             compare_methods(dx1, dx2, False),
             compare_methods_common_classes(dx1, dx2, False),
             compare_lists(dx1.strings, dx2.strings),
-            compare_fields(dx1,dx2)
+            compare_fields(dx1, dx2)
         ]
-
+        '''
         print '=============================================='
         print 'Android version code: %s' % comparisons[0]['detailed']
         print 'Android version name: %s' % comparisons[1]['detailed']
@@ -256,7 +284,7 @@ with open('data/common_with_groundtruth.txt') as f:
         print '=============================================='
         print 'Fields: %s' % comparisons[19]['detailed']
         print '========================= CURRENT ANALYSIS ========================='
-
+        '''
         analysis_rows = analysis_rows + [[chalk.blue(chalk.bold("%s" % original_apk_hash[:10]))] +
                                          map(lambda comparison: comparison['not_detailed'], comparisons) +
                                          [grnd_is_similar]]
@@ -291,13 +319,25 @@ with open('data/common_with_groundtruth.txt') as f:
             max(map(lambda row: row[2], not_similar_rows))
         ) / 2, 2) if len(similar_rows) > 0 and len(not_similar_rows) > 0 else "ND"
 
-        summary_threshold =  "\n======= CURRENT THRESHOLD %s%% ======= CURRENT ACCURACY: %s ======= RECOMMENDED THRESHOLD %s%%  == MAX_NON_SIM: %s%% MIN_SIM. %s%% \n" % (
-            chalk.blue(THRESHOLD), chalk.bold(chalk.blue(accuracy + "%")), chalk.bold(recommended_threshold),
-            max(map(lambda row: row[2], not_similar_rows)) if len(not_similar_rows) > 0  else "ND",
-            min(map(lambda row: row[2], similar_rows)) if len(similar_rows) > 0  else "ND"
-            )
-        print summary_threshold
-        summary_report.write(summary_threshold)
+        TP = len(filter(lambda row: row[4] == "RIGHT", similar_rows))
+        TN = len(filter(lambda row: row[4] == "RIGHT", not_similar_rows))
+        FP = len(filter(lambda row: row[4] == "WRONG", not_similar_rows))
+        FN = len(filter(lambda row: row[4] == "WRONG", similar_rows))
+
+        summary_threshold = "\n======= CURRENT THRESHOLD %s%% ======= F1 SCORE: %s%% ======= RECOMMENDED THRESHOLD %s%%  == MAX_NON_SIM: %s%% MIN_SIM. %s%% \n" % (
+            chalk.blue(THRESHOLD),
+            round((float(2 * TP) / (2 * TP + FN + FP)) * 100, 2) if 2 * TP + FN + FP > 0 else "ND",
+            chalk.bold(recommended_threshold),
+            max(map(lambda row: row[2], not_similar_rows)) if len(not_similar_rows) > 0 else "ND",
+            min(map(lambda row: row[2], similar_rows)) if len(similar_rows) > 0 else "ND"
+        )
+        analysis_table = tabulate([
+            ["TOOL_SIMILAR", "TP(%s)" % TP, "FP(%s)" % FP],
+            ["TOOL_NOT_SIMILAR", "FN(%s)" % FN, "TN(%s)" % TN]
+        ], ["", "GND_SIMILAR", "GND_NOT_SIMILAR"], tablefmt="grid")
+
+        print analysis_table + "\n" + summary_threshold
+        summary_report.write(analysis_table + "\n" + summary_threshold)
         # setting threshold to recommended
         if recommended_threshold != "ND":
             THRESHOLD = recommended_threshold
