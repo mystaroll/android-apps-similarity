@@ -4,9 +4,9 @@ cache:
     - src/data/apks
     - src/cache
     - .pip
-download_data:
-  script:
-    - cd ./src/data/ && ./download_pairs.py
+# download_data:
+#   script:
+#     - cd ./src/data/ && ./download_pairs.py
 
 build_report:
   artifacts:
