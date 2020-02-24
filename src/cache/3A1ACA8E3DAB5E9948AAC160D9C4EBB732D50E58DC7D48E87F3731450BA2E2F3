@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 1200130!=100001'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 3.9.5!=1.00.001'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 9!=6'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: 16!=18'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 16!=18'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set(['android.permission.CHANGE_NETWORK_STATE', 'android.permission.READ_SYNC_SETTINGS', 'android.permission.RECEIVE_BOOT_COMPLETED', 'android.permission.READ_PHONE_STATE', 'com.android.alarm.permission.SET_ALARM', 'android.permission.ACCESS_COARSE_LOCATION', 'android.permission.READ_SYNC_STATS', 'android.permission.WRITE_SYNC_SETTINGS', 'android.permission.BLUETOOTH', 'android.permission.BLUETOOTH_ADMIN', 'android.permission.NFC', 'android.permission.ACCESS_FINE_LOCATION', 'android.permission.VIBRATE', 'android.permission.CAMERA', 'android.permission.GET_TASKS', 'android.permission.ACCESS_WIFI_STATE', 'android.permission.CHANGE_WIFI_MULTICAST_STATE', 'android.permission.CHANGE_WIFI_STATE', 'android.permission.READ_CONTACTS', 'android.permission.WRITE_SETTINGS', 'com.android.vending.CHECK_LICENSE', 'android.permission.READ_PROFILE', 'android.permission.WRITE_EXTERNAL_STORAGE', 'android.permission.GET_ACCOUNTS'])\n---\nADDED set(['android.permission.WAKE_LOCK', 'com.android.vending.BILLING'])"
+p24
+sg5
+S'CHANGED (JI 7.14%)'
+p25
+sg7
+F7.1399999999999997
+sa(dp26
+g3
+S'DIFFERENT: cloudtv.hdwidgets!=jp.co.pointzero.ccconfectionery'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: HD Widgets!=Confectionery'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['cloudtv.hdwidgets..activities.configure.ConfigureActivity5x5', 'cloudtv.hdwidgets..activities.switches.SwitchRowActivity', 'cloudtv.hdwidgets..activities.configure.ConfigureActivity5x1', 'cloudtv.hdwidgets..activities.configure.ConfigureActivity5x3', 'cloudtv.hdwidgets..activities.preview.MoreActivity', 'cloudtv.hdwidgets..activities.configure.ConfigureActivity4x4', 'cloudtv.hdwidgets..activities.configure.ConfigureActivity4x7', 'cloudtv.hdwidgets..activities.configure.ConfigureActivity4x1', 'cloudtv.hdwidgets..activities.configure.ConfigureActivity4x2', 'cloudtv.hdwidgets..activities.configure.ConfigureActivity4x3', 'cloudtv.hdwidgets..activities.switches.DialogNightBrightness', 'cloudtv.hdwidgets..activities.preferences.FilterWidgetsPreference', 'cloudtv.hdwidgets..activities.configure.ConfigureActivity6x2', 'cloudtv.hdwidgets..activities.configure.ConfigureActivity6x1', 'cloudtv.hdwidgets..activities.weather.WeatherLocationsListActivity', 'cloudtv.hdwidgets..activities.active.\n---\nADDED set(['com.prime31.GoogleIABProxyActivity', 'com.unity3d.player.UnityPlayerNativeActivity', 'com.unity3d.player.UnityPlayerProxyActivity', 'com.unity3d.player.UnityPlayerActivity', 'com.unity3d.player.VideoPlayer', 'com.google.ads.AdActivity'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set([u'res/drawable-hdpi/ic_content_expand.png', u'res/layout-sw720dp/activity_weather_header.xml', u'res/drawable-nodpi/ic_climacon_sunset.png', u'res/drawable-mdpi/switch_standard_battery_10.png', u'res/drawable-mdpi/preview_glass_clock_flipclock_black_bg_black_clearplastic.png', u'res/layout/widget_4x2_glass_weather_1day.xml', u'res/layout/widget_4x1_glass_weather_1day.xml', u'res/layout-sw600dp-land/widget_2x2_glass_mini_header.xml', u'res/drawable-tvdpi/switch_standard_autobrightness.png', u'res/drawable-hdpi/abs__spinner_ab_focused_holo_light.9.png', u'res/drawable-xhdpi/ic_notification_max.png', u'res/drawable-xhdpi/preview_glass_clock_flipclock_glass_bg_disco_feint.png', u'res/xml-v14/widget_info_5x1.xml', u'res/drawable-xhdpi/preview_arrow_right.png', u'res/drawable-sw600dp/preview_glass_clock_flipclock_black_bg_modern.png', u'res/layout-land/widget_6x1_glass_header.xml', u'res/drawable-hdpi/switch_standard_airplane_mode.png', u'res/drawable-tvdpi/ic_menu_preview_opacity.png',\n---\nADDED set(['assets/bin/Data/c7e797352ba3c674482c9397e5908f34', 'assets/bin/Data/2f7edc2af47411c4fbff5fa578a329ee', 'assets/bin/Data/03ce0b0855199844fa20e71f549423da', 'assets/bin/Data/edc0d31a17cae804e808f1cbb3562251', 'assets/bin/Data/96cf3e5749de6264eb2e55170cfe06aa', 'assets/bin/Data/6874d89b7d7f8b74597a1989c6f60b13', 'assets/bin/Data/1c597640b8e3510459f6691f6fcba117', 'assets/bin/Data/c6e1100d1418ed44480d0aa3e0c34225', 'assets/bin/Data/d96203fd6c755f94c95075ab8bd6f60c', 'assets/bin/Data/050d01812ebf91a4f8e6553d3be1130d', 'assets/bin/Data/5d375ebeb3a766840a7f2f7ae630d3ed', 'assets/bin/Data/f300ed313c33e0f439f0963b601a2740', 'assets/bin/Data/20f706768dfdf9f4daec4cf0e62f1057', 'assets/bin/Data/a88826ea459b80547a60093a73f4024a', 'assets/bin/Data/d0f22fec78d2f7a4390e1142420d1cf3', 'assets/bin/Data/ca5495c846d13de4aa6f9310230f4f32', 'assets/bin/Data/536e13b5b2c4d1e4bb6f1e1eb960afa8', 'assets/bin/Data/ecdd2020c3fec644686d6bf607f64820', 'assets/bin/Data/52ec4d2883d68914f96a92d483e626ea', 'assets"
+p36
+sg5
+S'CHANGED (JI 0.26%)'
+p37
+sg7
+F0.26000000000000001
+sa(dp38
+g3
+S"\nDELETED set(['com.littlefluffytoys.littlefluffylocationlibrary.LocationBroadcastService', 'cloudtv.hdwidgets..services.WidgetUpdaterService'])\n---\nADDED set([])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set(['cloudtv.hdwidgets..widgets.Widget4x4', 'cloudtv.hdwidgets..widgets.Widget4x7', 'cloudtv.hdwidgets..widgets.Widget4x1', 'com.google.android.apps.analytics.AnalyticsReceiver', 'cloudtv.hdwidgets..widgets.Widget4x3', 'cloudtv.hdwidgets..widgets.Widget4x2', 'cloudtv.hdwidgets..widgets.Widget3x5', 'cloudtv.hdwidgets..widgets.Widget0x1', 'cloudtv.hdwidgets..widgets.Widget0x0', 'cloudtv.hdwidgets..widgets.Widget5x5', 'cloudtv.hdwidgets..widgets.Widget5x1', 'cloudtv.hdwidgets..widgets.Widget5x2', 'cloudtv.hdwidgets..widgets.Widget5x3', 'cloudtv.hdwidgets..widgets.Widget6x2', 'cloudtv.hdwidgets..widgets.Widget6x1', 'cloudtv.hdwidgets..widgets.Widget8x1', 'cloudtv.hdwidgets..widgets.Widget1x1', 'cloudtv.hdwidgets..widgets.Widget8x2', 'com.littlefluffytoys.littlefluffylocationlibrary.PassiveLocationChangedReceiver', 'cloudtv.hdwidgets..widgets.Widget2x2', 'cloudtv.hdwidgets..widgets.Widget2x1', 'cloudtv.hdwidgets..receivers.InstallUninstallReceiver', 'cloudtv.hdwidgets..receivers.PilotsRece\n---\nADDED set([])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Lcloudtv/weather/accuweather/AccuWeatherWeatherDataParser$28;', u'Landroid/view/accessibility/AccessibilityEvent;', u'Landroid/support/v4/widget/SearchViewCompatHoneycomb$1;', u'Lnet/smartam/leeloo/common/message/OAuthResponse;', u'Lnet/smartam/leeloo/client/HttpClient;', u'Lorg/acra/collector/CrashReportDataFactory;', u'Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;', u'Lcom/google/api/client/xml/atom/AtomContent;', u'Lcloudtv/photos/instagram/InstagramPhotos$4;', u'Lcom/google/common/collect/Maps$FilteredEntryMap$KeySet$1;', u'Lcom/google/common/collect/Synchronized$SynchronizedRandomAccessList;', u'Lcom/google/gson/stream/MalformedJsonException;', u'Lcom/google/common/collect/Synchronized$SynchronizedAsMapValues;', u'Lcom/flurry/android/c;', u'Lcloudtv/hdwidgets/activities/preview/ArrowSwipeView;', u'[Lcom/google/api/client/json/JsonToken;', u'Ltwitter4j/api/GeoMethods;', u'Lcom/google/common/collect/LinkedHashMultimap$SetDecorator;', u'Landroid/graphics/d\n---\nADDED set([u'Lcom/google/ads/g;', u'Lcom/unity3d/player/q$2;', u'Lcom/unity3d/player/c;', u'Lcom/google/ads/c$c;', u'Lcom/prime31/util/IabHelper$2$1;', u'Lcom/unity3d/player/u$a;', u'Landroid/view/InputDevice;', u'Lcom/google/ads/g$a;', u'Lcom/unity3d/player/UnityPlayer$5;', u'Landroid/text/method/TextKeyListener;', u'[Lcom/google/ads/ab$b;', u'Lcom/unity3d/player/p$1;', u'Ljavax/microedition/khronos/egl/EGL10;', u'Lcom/unity3d/player/UnityPlayer;', u'Lcom/prime31/util/IabHelper$OnIabPurchaseFinishedListener;', u'Lcom/unity3d/player/UnityPlayer$27;', u'Lcom/google/ads/a;', u'Landroid/view/SurfaceHolder;', u'Landroid/view/SurfaceView;', u'Lcom/prime31/GoogleIABPlugin$5;', u'Lcom/prime31/util/Base64;', u'Lcom/unity3d/player/p$6;', u'Lcom/unity3d/player/a/e;', u'Lcom/unity3d/player/UnityPlayer$17;', u'Lcom/google/ads/util/AdUtil$a;', u'Lcom/prime31/util/IabHelper$1;', u'Lcom/unity3d/player/p;', u'Lcom/google/ads/o;', u'Lcom/google/ads/t;', u'Lcom/unity3d/player/k;', u'Lcom/unity3d/player/b;', u"
+p45
+sg5
+S'CHANGED (JI 3.27%)'
+p46
+sg7
+F3.27
+sa(dp47
+g3
+S"\nDELETED set([u'Landroid/support/v4/app/ListFragment;->setListShown(Z)V', u'Lorg/slf4j/helpers/BasicMDCAdapter;->setContextMap(Ljava/util/Map;)V', u'Lcom/actionbarsherlock/app/ActionBar;->setDisplayShowHomeEnabled(Z)V', u'Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet;->isStarted()Z', u'Lcloudtv/weather/SunriseSunset;->getYearOfSunlightForPoint(I D D Ljava/util/TimeZone;)Ljava/util/List;', u'Lcom/googlecode/flickrjandroid/RequestContext;->resetThreadLocals()V', u'Lcom/google/common/collect/MapConstraints$ConstrainedEntries;->remove(Ljava/lang/Object;)Z', u'Lcom/google/common/collect/Sets$2;->contains(Ljava/lang/Object;)Z', u'Lcom/actionbarsherlock/widget/ShareActionProvider$ShareMenuItemOnMenuItemClickListener;->onMenuItemClick(Lcom/actionbarsherlock/view/MenuItem;)Z', u'Lcom/actionbarsherlock/internal/widget/IcsSpinner;->setPromptId(I)V', u'Lcom/google/common/collect/HashBasedTable$Factory;->get()Ljava/lang/Object;', u'Lcloudtv/hdwidgets/activities/preview/PreviewActivit\n---\nADDED set([u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/unity3d/player/UnityPlayer$24;->run()V', u'Lcom/google/ads/d;-><init>(Landroid/app/Activity; Lcom/google/ads/Ad; Lcom/google/ads/AdSize; Ljava/lang/String; Z)V', u'Lcom/prime31/InAppBilling/R$id;-><init>()V', u'Lcom/google/ads/searchads/SearchAdRequest;-><init>()V', u'Lcom/android/vending/billing/IInAppBillingService;->getPurchases(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Landroid/os/Bundle;', u'Lcom/unity3d/player/g;->a(Landroid/view/MotionEvent;)I', u'Lcom/google/ads/d;->A()Z', u'Lcom/prime31/GoogleIABPlugin$2;-><init>(Lcom/prime31/GoogleIABPlugin; [Ljava/lang/String;)V', u'Lcom/google/ads/AdView;->a(Landroid/app/Activity; Lcom/google/ads/AdSize; Ljava/lang/String;)V', u'Lcom/unity3d/player/UnityPlayer$20;-><init>(Lcom/unity3d/player/UnityPlayer;)V', u'Lcom/google/ads/d;->a(Lcom/google/ads/AdRequest$ErrorCode;)V', u'Lcom/unity3d/player/WWW;->headerCallback(Ljava/util/Map;)Z', u'Lcom/unity3d/player/UnityJavaRunn"
+p48
+sg5
+S'CHANGED (JI 0.0%)'
+p49
+sg7
+F0
+sa(dp50
+g3
+S"\nDELETED set([u'Lorg/apache/http/NameValuePair;->getName()Ljava/lang/String;', u'Lorg/apache/http/client/utils/URLEncodedUtils;-><init>()V', u'Lorg/apache/http/NameValuePair;->getValue()Ljava/lang/String;', u'Lorg/apache/http/client/utils/URLEncodedUtils;->parse(Ljava/util/List; Ljava/util/Scanner; Ljava/lang/String;)V', u'Lorg/apache/http/client/utils/URLEncodedUtils;->isEncoded(Lorg/apache/http/HttpEntity;)Z', u'Lorg/apache/http/client/utils/URLEncodedUtils;->decode(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;', u'Lorg/apache/http/client/utils/URLEncodedUtils;->encode(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;', u'Lorg/apache/http/client/utils/URLEncodedUtils;->parse(Ljava/net/URI; Ljava/lang/String;)Ljava/util/List;', u'Lorg/apache/http/client/utils/URLEncodedUtils;->parse(Lorg/apache/http/HttpEntity;)Ljava/util/List;', u'Lorg/apache/http/client/utils/URLEncodedUtils;->format(Ljava/util/List; Ljava/lang/String;)Ljava/lang/String;'])\n---\nADDED set([])"
+p51
+sg5
+S'CHANGED (JI 0.0%)'
+p52
+sg7
+F0
+sa(dp53
+g3
+S"\nDELETED set([u'Landroid/support/v4/app/ListFragment;->setListShown(Z)V', u'Lorg/slf4j/helpers/BasicMDCAdapter;->setContextMap(Ljava/util/Map;)V', u'Lcom/actionbarsherlock/app/ActionBar;->setDisplayShowHomeEnabled(Z)V', u'Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet;->isStarted()Z', u'Lcloudtv/weather/SunriseSunset;->getYearOfSunlightForPoint(I D D Ljava/util/TimeZone;)Ljava/util/List;', u'Lcom/googlecode/flickrjandroid/RequestContext;->resetThreadLocals()V', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Lcom/google/common/collect/MapConstraints$ConstrainedEntries;->remove(Ljava/lang/Object;)Z', u'Lcom/google/common/collect/Sets$2;->contains(Ljava/lang/Object;)Z', u'Lcom/actionbarsherlock/widget/ShareActionProvider$ShareMenuItemOnMenuItemClickListener;->onMenuItemClick(Lcom/actionbarsherlock/view/MenuItem;)Z', u'Lcom/actionbarsherlock/internal/widget/IcsSpinner;->setPromptId(I)V', u'Landroid/content/Intent;->putExtra(Ljava/lang/St\n---\nADDED set([u'Lcom/google/ads/AdView;->stopLoading()V', u'Lorg/xmlpull/v1/XmlPullParserFactory;->newInstance()Lorg/xmlpull/v1/XmlPullParserFactory;', u'Lcom/prime31/util/IabResult;->isFailure()Z', u'Lcom/prime31/InAppBilling/R$id;-><init>()V', u'Lcom/unity3d/player/UnityPlayer$24;->run()V', u'Landroid/hardware/Camera;->setPreviewCallbackWithBuffer(Landroid/hardware/Camera$PreviewCallback;)V', u'Lcom/google/ads/searchads/SearchAdRequest;-><init>()V', u'Landroid/widget/VideoView;->setVideoPath(Ljava/lang/String;)V', u'Lcom/google/ads/InterstitialAd;-><init>(Landroid/app/Activity; Ljava/lang/String; Z)V', u'Lcom/android/vending/billing/IInAppBillingService;->getPurchases(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Landroid/os/Bundle;', u'Lcom/prime31/util/Security;->verify(Ljava/security/PublicKey; Ljava/lang/String; Ljava/lang/String;)Z', u'Lcom/unity3d/player/g;->a(Landroid/view/MotionEvent;)I', u'Lcom/google/ads/d;->A()Z', u'Lcom/prime31/GoogleIABPlugin$2;-><init>(Lcom/prime31/"
+p54
+sg5
+S'CHANGED (JI 1.61%)'
+p55
+sg7
+F1.6100000000000001
+sa(dp56
+g3
+S"\nDELETED set([u'Landroid/widget/EditText;->requestFocus()Z', u'Ljava/lang/Character;->isLetter(C)Z', u'Ljava/util/List;->indexOf(Ljava/lang/Object;)I', u'Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context; I)V', u'Ljava/io/OutputStream;->write([B)V', u'Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;', u'Landroid/view/View;->post(Ljava/lang/Runnable;)Z', u'Landroid/widget/RelativeLayout;->getChildCount()I', u'Landroid/widget/ImageView;->setMaxHeight(I)V', u'Ljava/util/Date;->setTime(J)V', u'Landroid/view/KeyEvent;->isCanceled()Z', u'Ljava/lang/Double;->isNaN()Z', u'Landroid/os/Bundle;->keySet()Ljava/util/Set;', u'Landroid/os/Looper;->myLooper()Landroid/os/Looper;', u'Landroid/webkit/WebViewClient;->onReceivedError(Landroid/webkit/WebView; I Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Landroid/database/Cursor;->requery()Z', u'Landroid/view/Display;->getRotation(\n---\nADDED set([u'Lorg/xmlpull/v1/XmlPullParserFactory;->newInstance()Lorg/xmlpull/v1/XmlPullParserFactory;', u'Landroid/os/PowerManager;->newWakeLock(I Ljava/lang/String;)Landroid/os/PowerManager$WakeLock;', u'Landroid/hardware/Camera;->setPreviewCallbackWithBuffer(Landroid/hardware/Camera$PreviewCallback;)V', u'Landroid/app/Activity;->addContentView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Ljava/lang/Object;->wait(J)V', u'Landroid/widget/EditText;->setClickable(Z)V', u'Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context; Landroid/util/AttributeSet;)V', u'Ljava/util/Arrays;->sort([I)V', u'Landroid/os/Bundle;->putFloat(Ljava/lang/String; F)V', u'Landroid/hardware/Camera$Parameters;->getSupportedPreviewSizes()Ljava/util/List;', u'Landroid/hardware/Camera$Parameters;->setPreviewSize(I I)V', u'Landroid/webkit/WebSettings;->setUserAgentString(Ljava/lang/String;)V', u'Landroid/widget/FrameLayout;->requestLayout()V', u'Landroid/hardware/Camera$Parameters;->getSupport"
+p57
+sg5
+S'CHANGED (JI 27.97%)'
+p58
+sg7
+F27.969999999999999
+sa(dp59
+g3
+S'\nDELETED set([u\'\\x00\', u\'Cannot find offer \', u\'http://api.tumblr.com/v2/user/info\', u\'promoPopupPref\', u\'List must not be null.\', u\'ENVIRONMENT\', u", fromUser=\'", u\'Exception in WifiHotSpot State Reading: \', u\'kk:mm.ss, E\', u\'http://api.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=%s&format=json\', u\'cloudtv.hdwidgets.USB_TETHERING_STATE_CHANGED\', u\'\\u516c\\u53f8.hk\', u\'mInnerView=\', u\'&#920;\', u\'\\x00 \', u\' index requested: \', u\'Token start position must not be negative: \', u\'maxwind\', u\'Time unit must not be null.\', u\'cloudtv.hdwidgets.MOBILE_DATA_STATE_CHANGED\', u\'postComment url :\', u\'botanicalgarden.museum\', u\'api_key\', u\'union.aero\', u\'DROP TABLE IF EXISTS referrer;\', u\'am-pm\', u\'isfriend\', u"The log adapter \'", u\'cloudtv.hdwidgets.FLASH_LIGHT_STATE_CHANGED\', u\'Could not find resource: \', u\'componentClass: \', u\'flickr.stats.getCollectionDomains\', u\'&RequestType=22&Latitude=\', u\'android.support.PARENT_ACTIVITY\', u\'InstallReceiver\', u\'wallonie.museum\', u\' on element\n---\nADDED set([u\'pto\', u\'No "action" parameter in a video gmsg.\', u\'Unable to ping the URL: \', u\'fixing Google bug where they think the sku \', u\'Cannot show interstitial because it is not loaded and ready.\', u\'/video\', u\'EGL_TRANSPARENT_BLUE_VALUE\', u\'0:OK/-1001:Remote exception during initialization/-1002:Bad response received/-1003:Purchase signature verification failed/-1004:Send intent failed/-1005:User cancelled/-1006:Unknown purchase response/-1007:Missing token/-1008:Unknown error-1009:Subscriptions not available/-1010:Invalid consumption attempt\', u\'Y29tLmFuZHJvaWQudmVuZGluZy5DSEVDS19MSUNFTlNF\', u\'originalJson\', u"Items of type \'", u\'Intent with no response code, assuming OK (known issue)\', u\'android.permission.VIBRATE not available?\', u\'  %s: %d\\n\', u\' AAx\', u\'GoogleAdMobDoritosLife\', u\'EGL_COVERAGE_BUFFERS_NV\', u\'failed to create JSON packet: \', u\'afma_notify_dt\', u\'AdMobPlugin\', u\'show\', u\'Querying SKU details.\', u\'android.opengl.GLSurfaceView$GLWrapper\', u"Trying to evaluate JS in a '
+p60
+sg5
+S'CHANGED (JI 1.05%)'
+p61
+sg7
+F1.05
+sa(dp62
+g3
+S"\nDELETED set(['Lorg/acra/sender/GoogleFormSender;->mFormUri Landroid/net/Uri; [access_flags=private final]\\n', 'Lcloudtv/hdwidgets/R$string;->enter_title I [access_flags=public static final]\\n', 'Lcom/google/common/util/concurrent/AbstractIdleService$1;->this$0 Lcom/google/common/util/concurrent/AbstractIdleService; [access_flags=synthetic final]\\n', 'Lcom/actionbarsherlock/view/MenuInflater;->mContext Landroid/content/Context; [access_flags=private]\\n', 'Lcom/google/gson/Gson;->DEFAULT_ANON_LOCAL_CLASS_EXCLUSION_STRATEGY Lcom/google/gson/AnonymousAndLocalClassExclusionStrategy; [access_flags=static final]\\n', 'Lcloudtv/hdwidgets/R$id;->activeWidgets I [access_flags=public static final]\\n', 'Lcloudtv/photos/instagram/InstagramPhotos$12;->this$0 Lcloudtv/photos/instagram/InstagramPhotos; [access_flags=synthetic final]\\n', 'Lcloudtv/hdwidgets/components/Date;->$abbreviatedPortrait Z [access_flags=protected]\\n', 'Lcloudtv/photos/facebook/model/FacebookUser;->link Ljava/lang/String; [access_flags=p\n---\nADDED set(['Lcom/prime31/util/IabHelper$3;->val$purchases Ljava/util/List; [access_flags=private synthetic final]\\n', 'Lcom/unity3d/player/UnityPlayer$16;->a I [access_flags=private synthetic]\\n', 'Lcom/unity3d/player/a/k;->d Ljava/lang/String; [access_flags=public]\\n', 'Lcom/unity3d/player/c;->a Landroid/content/ContextWrapper; [access_flags=protected final]\\n', 'Lcom/unity3d/player/a/c$a$a;->a Landroid/os/IBinder; [access_flags=private]\\n', 'Lcom/unity3d/player/b/a;->b [B [access_flags=private static final]\\n', 'Lcom/unity3d/player/a/g;->e Ljava/lang/String; [access_flags=private final]\\n', 'Lcom/unity3d/player/UnityPlayer$13;->d Z [access_flags=private synthetic]\\n', 'Lcom/unity3d/player/UnityPlayer$13;->c I [access_flags=private synthetic]\\n', 'Lcom/google/ads/g;->d J [access_flags=private]\\n', 'Lcom/google/ads/c;->j Lcom/google/ads/AdRequest$ErrorCode; [access_flags=private]\\n', 'Lcom/prime31/util/Purchase;->_token Ljava/lang/String; [access_flags=0x0]\\n', 'Lcom/google/ads/c$a;->a Lcom/"
+p63
+sg5
+S'CHANGED (JI 0.0%)'
+p64
+sg7
+F0
+sa.

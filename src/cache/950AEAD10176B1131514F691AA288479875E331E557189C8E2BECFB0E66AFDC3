@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.SYSTEM_ALERT_WINDOW', 'android.permission.ACCESS_WIFI_STATE', 'android.permission.WAKE_LOCK', 'android.permission.GET_TASKS', 'android.permission.WRITE_EXTERNAL_STORAGE'])"
+p24
+sg5
+S'CHANGED (JI 37.5%)'
+p25
+sg7
+F37.5
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.surwn.uwlood.cullty.RawuActivity', 'com.surwn.zroon.lutun.IawnActivity', 'com.surwn.zroon.ntess.GseueActivity', 'com.surwn.zroon.TewpActivity', 'com.surwn.uwlood.WwunActivity'])"
+p33
+sg5
+S'CHANGED (JI 50.0%)'
+p34
+sg7
+F50
+sa(dp35
+g3
+S"\nDELETED set([])\n---\nADDED set(['assets/Zhuamob_sdk_v1.8.2.version', 'assets/tepjn/pic.dat', 'assets/duon/sdtret.dat', 'assets/9.dat'])"
+p36
+sg5
+S'CHANGED (JI 95.6%)'
+p37
+sg7
+F95.599999999999994
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.surwn.uwlood.RawnllActivity', 'com.surwn.zroon.ntess.NwunActivity', 'com.surwn.zroon.BwtonActivity', 'com.surwn.zroon.lutun.DlluenActivity'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.surwn.zroon.lutun.PauwTanw', 'com.surwn.uwlood.VeuwActivity', 'com.surwn.zroon.ntess.HawuPawhnm', 'com.surwn.uwlood.cullty.RauwMwnin'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/io/FileNotFoundException;', u'Lcom/surwn/uwlood/utein/d;', u'Lcom/surwn/zroon/ntess/g/g;', u'Lcom/surwn/uwlood/cullty/c/v;', u'Lcom/surwn/zroon/ntess/g/ac;', u'Lcom/surwn/uwlood/cullty/f/i;', u'Lcom/surwn/uwlood/cullty/f/ah;', u'Lcom/surwn/uwlood/f;', u'Lcom/surwn/uwlood/o;', u'Lcom/surwn/uwlood/a/c;', u'Lcom/surwn/uwlood/cullty/e/f;', u'Lcom/surwn/uwlood/cullty/RawuActivity;', u'Lcom/surwn/zroon/ntess/mweui/f;', u'Lcom/surwn/uwlood/cullty/b;', u'Lcom/surwn/uwlood/at;', u'Lcom/surwn/zroon/ntess/NwunActivity;', u'Lcom/surwn/zroon/lutun/w;', u'Lcom/surwn/uwlood/y;', u'Lcom/surwn/zroon/lutun/as;', u'Lcom/surwn/uwlood/cullty/view/d;', u'Lcom/surwn/zroon/ntess/h;', u'Lcom/surwn/zroon/lutun/b/e;', u'Landroid/os/Message;', u'Lcom/surwn/zroon/ntess/e/f;', u'Lcom/surwn/uwlood/cullty/view/c;', u'Lcom/surwn/zroon/ntess/mweui/a;', u'Lcom/surwn/zroon/ntess/a;', u'Lcom/surwn/uwlood/cullty/c/y;', u'Lcom/surwn/uwlood/cullty/f/b;', u'Lcom/surwn/uwlood/cullty/f/ag;', u'Lcom/surwn/zroon/ntes"
+p45
+sg5
+S'CHANGED (JI 46.42%)'
+p46
+sg7
+F46.420000000000002
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/surwn/uwlood/utein/a;->f(Ljava/lang/String;)V', u'Lcom/surwn/zroon/ntess/b/f;->s()V', u'Lcom/surwn/zroon/b/e;->c()V', u'Lcom/surwn/uwlood/cullty/c/m;->d(Lcom/surwn/uwlood/cullty/c/m;)Ljava/util/Timer;', u'Lcom/surwn/zroon/lutun/ay;->b(Ljava/lang/String; Ljava/lang/String;)Z', u'Lcom/surwn/uwlood/n;-><init>(Landroid/app/Activity; Lcom/surwn/uwlood/ao; Z)V', u'Lcom/surwn/zroon/ntess/mweui/n;->a(Ljava/util/List; Lcom/surwn/zroon/ntess/e/j;)Z', u'Lcom/surwn/zroon/ntess/g/ac;->a(Lcom/surwn/zroon/ntess/g/ac; Ljava/lang/String;)Landroid/content/Intent;', u'Lcom/surwn/zroon/ntess/b/f;->a(Ljava/lang/String;)V', u'Lcom/surwn/uwlood/a/a;->a(Lcom/surwn/uwlood/a/f; J)V', u'Lcom/surwn/zroon/lutun/af;->a(Ljava/lang/String;)Ljava/lang/String;', u'Lcom/surwn/uwlood/cullty/d/c;->a(Lcom/surwn/uwlood/cullty/d/c; Ljava/lang/Thread;)Ljava/lang/Thread;', u'Lcom/surwn/uwlood/q;->a(I)V', u'Lcom/surwn/zroon/ntess/mweui/i;->a()V', u'Lcom/surwn/uwlood/at;->a(Landroid/content/Context; I I)V', u'Lcom/su"
+p48
+sg5
+S'CHANGED (JI 38.2%)'
+p49
+sg7
+F38.200000000000003
+sa(dp50
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/unity3d/player/UnityPlayerProxyActivity;->toStart()V'])"
+p51
+sg5
+S'CHANGED (JI 99.94%)'
+p52
+sg7
+F99.939999999999998
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/surwn/uwlood/utein/a;->f(Ljava/lang/String;)V', u'Lcom/surwn/zroon/ntess/b/f;->s()V', u'Lcom/surwn/uwlood/cullty/c/m;->d(Lcom/surwn/uwlood/cullty/c/m;)Ljava/util/Timer;', u'Lcom/surwn/uwlood/cullty/d/c;->poll()Ljava/lang/Object;', u'Lcom/surwn/zroon/b/e;->c()V', u'Lcom/surwn/zroon/lutun/ay;->b(Ljava/lang/String; Ljava/lang/String;)Z', u'Lcom/surwn/zroon/ntess/e/g;->a(Landroid/content/Context;)Lorg/apache/http/client/HttpClient;', u'Lcom/surwn/zroon/ntess/g/s;->c()Z', u'Lcom/surwn/zroon/ntess/g/ac;->a(Lcom/surwn/zroon/ntess/g/ac; Ljava/lang/String;)Landroid/content/Intent;', u'Lcom/surwn/uwlood/a/a;->a(Lcom/surwn/uwlood/a/f; J)V', u'Lcom/surwn/zroon/lutun/af;->a(Ljava/lang/String;)Ljava/lang/String;', u'Lcom/surwn/uwlood/cullty/d/c;->a(Lcom/surwn/uwlood/cullty/d/c; Ljava/lang/Thread;)Ljava/lang/Thread;', u'Lcom/surwn/uwlood/q;->a(I)V', u'Lcom/surwn/zroon/ntess/mweui/i;->a()V', u'Lcom/surwn/zroon/ntess/mweui/n;->d(Lcom/surwn/zroon/ntess/mweui/n;)Lcom/surwn/zroon/ntess/GseueAc"
+p54
+sg5
+S'CHANGED (JI 43.55%)'
+p55
+sg7
+F43.549999999999997
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z', u'Landroid/webkit/WebChromeClient;->onReceivedIcon(Landroid/webkit/WebView; Landroid/graphics/Bitmap;)V', u'Landroid/database/Cursor;->close()V', u'Landroid/widget/Button;->setTextColor(I)V', u'Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;', u'Landroid/widget/Button;->setFocusable(Z)V', u'Landroid/webkit/WebView;->clearCache(Z)V', u'Ljava/io/File;-><init>(Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/widget/ImageView;->getTag()Ljava/lang/Object;', u'Landroid/os/Handler;->sendEmptyMessageDelayed(I J)Z', u'Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V', u'Landroid/widget/Button;->setBackgroundResource(I)V', u'Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;', u'Ljava/io/InputStream;->markSupported()Z', u'Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I', u'Ljava/lang/String;->toUpperCase()Ljava/lang/String;', u'Ljava/net/HttpURLConnection;"
+p57
+sg5
+S'CHANGED (JI 90.9%)'
+p58
+sg7
+F90.900000000000006
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'\\x00', u'Cp850', u'alm', u'duon', u'x\\xcey', u's\\x9da\\u5388\\u5b81\\u50d6\\u7ac0\\u95fd\\u4e32\\u8e05\\uff5a\\u8c49\\u523a\\u968f\\u4e1f\\u4ea4\\u6593\\u4f53\\u4e93\\u5458\\u5199\\u91e1\\u8c31\\uff22e', u's\\u7292\\u6749\\uff41e', u's\\x92\\x8c\\x96\\x90\\xa3\\xb5h\\x92\\xb7\\xb2\\xbb{\\x8a\\x8f{{\\xcd\\xad\\xbc\\x80s\\xcc\\x93mwe', u'------------', u'x\\u598c\\u5c88y', u'WDActivity', u's\\xbe\\x8c\\x9b\\x8a\\x9a\\xa5|\\x8e\\xcc\\xb3e', u's\\xb3\\x90l\\xa1\\x97\\xbaU\\x8e\\xc5\\xc2e', u'\\uff1a', u'x\\xef\\u0103\\xfc\\xec\\xe2y', u's\\xc0\\x84\\x97\\x88\\xa2\\xb5p\\x8c\\xbe\\xb3\\xb1\\x80\\x97\\x80pk\\xcd\\xba\\xafre', u'x\\u6063\\u63e0\\u661f\\u5f8c\\u9059\\u51f9\\u8c59\\u8fe7\\u4f75\\u7700\\u4e8d\\u8ffa\\u98ea\\u97f3\\uff66y', u'x\\xee\\xf5\\u0109\\xeay', u'x\\xd9\\xe6\\xdd\\xe6\\xd5\\xd5\\xde\\xe2\\xc3\\xad\\xe2\\xaey', u'/ui/', u'nextRequest', u's\\u8c37\\u8a1d\\uff41Ie', u'smsto:', u'x\\xbd\\xbd\\xe9\\xec\\xe6y', u's\\xc6@Qe', u'getMessage', u'requestId', u'\\u7c7b\\u578b\\uff1a', u' [', u'\\u5206\\u4eab', u'ra', u'x\\uff89\\u619d\\u8a5d\\u4e81\\u9591\\uff8b\\u72f5\\u6191\\u6425\\u83c5\\u7f6a\\u4fc5\\uff6d\\u4e9"
+p60
+sg5
+S'CHANGED (JI 55.38%)'
+p61
+sg7
+F55.380000000000003
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/surwn/zroon/lutun/ad;->e I [access_flags=public]\\n', 'Lcom/surwn/zroon/ntess/f/d;->aX Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/surwn/zroon/ntess/NwunActivity;->c I [access_flags=0x0]\\n', 'Lcom/surwn/zroon/ntess/g/g;->k Landroid/widget/TextView; [access_flags=private]\\n', 'Lcom/surwn/uwlood/ao;->M I [access_flags=protected]\\n', 'Lcom/surwn/zroon/ntess/HawuPawhnm;->c Landroid/os/PowerManager$WakeLock; [access_flags=static]\\n', 'Lcom/surwn/zroon/ntess/f/d;->B Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/surwn/uwlood/cullty/d;->d I [access_flags=synthetic final]\\n', 'Lcom/surwn/zroon/ntess/mweui/d;->k I [access_flags=private final]\\n', 'Lcom/surwn/zroon/ntess/f/d;->T Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/surwn/zroon/ntess/g/ac;->h Lcom/surwn/zroon/ntess/e/j; [access_flags=private]\\n', 'Lcom/surwn/uwlood/cullty/e/f;->c Z [access_flags=private final]\\n', 'Lcom/surwn/uwlood/cullty/f/c;->u I [access_flags=private]\\n"
+p63
+sg5
+S'CHANGED (JI 32.41%)'
+p64
+sg7
+F32.409999999999997
+sa.

@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 3020!=1'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 3.2!=1.0'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 1!=6'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: 11!=17'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 11!=17'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set(['android.permission.GET_PACKAGE_SIZE'])\n---\nADDED set(['android.permission.ACCESS_NETWORK_STATE', 'android.permission.INTERNET'])"
+p24
+sg5
+S'CHANGED (JI 25.0%)'
+p25
+sg7
+F25
+sa(dp26
+g3
+S'DIFFERENT: com.google.android.diskusage!=com.silvermagic.AllMomentumTrackRacingFree'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: DiskUsage!=Track Racing'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.google.android.diskusage..DiskUsage', 'com.google.android.diskusage..SelectActivity', 'com.google.android.diskusage..DeleteActivity', 'com.google.android.diskusage..AppUsage', 'com.google.android.diskusage..FilterActivity', 'com.google.android.diskusage.ShowHideMountPointsActivity'])\n---\nADDED set(['com.chartboost.sdk.CBImpressionActivity', 'com.heyzap.sdk.ads.HeyzapInterstitialActivity', 'com.chartboost.sdk.CBDialogActivity', 'com.unity3d.player.UnityPlayerNativeActivity', 'com.unity3d.player.UnityPlayerProxyActivity', 'com.unity3d.player.UnityPlayerActivity', 'com.heyzap.sdk.ads.HeyzapVideoActivity', 'com.unity3d.player.VideoPlayer'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set(['res/layout/list_file_item.xml', 'res/drawable/special.png', 'assets/scan', 'res/layout/progress.xml', 'res/drawable/small.png', 'res/drawable/white_gradient.png', 'res/drawable-hdpi/icon.png', 'META-INF/75B7B12C.SF', 'res/layout/list_dir_item.xml', 'META-INF/75B7B12C.RSA', 'res/menu/menu.xml', 'res/raw/mimes', 'res/drawable/filebg_new.png', 'res/drawable/icon.png', 'res/xml/filter.xml', 'res/layout/main.xml', 'res/drawable/dirbg_new.png', 'res/xml/mount_points_ignore_list.xml', 'res/layout/delete_view.xml'])\n---\nADDED set(['assets/bin/Data/sharedassets0.assets.split9', 'assets/bin/Data/sharedassets0.assets.split8', 'assets/bin/Data/sharedassets0.assets.split7', 'assets/bin/Data/sharedassets0.assets.split6', 'assets/bin/Data/sharedassets0.assets.split5', 'assets/bin/Data/sharedassets0.assets.split4', 'assets/bin/Data/sharedassets0.assets.split3', 'assets/bin/Data/sharedassets0.assets.split2', 'assets/bin/Data/sharedassets0.assets.split1', 'assets/bin/Data/sharedassets0.assets.split0', 'res/drawable-ldpi/app_icon.png', 'assets/bin/Data/sharedassets0.assets.split39', 'assets/bin/Data/sharedassets0.assets.split38', 'assets/bin/Data/Managed/Assembly-UnityScript-firstpass.dll', 'assets/bin/Data/Managed/P31RestKit.dll', 'assets/bin/Data/sharedassets0.assets.split31', 'assets/bin/Data/sharedassets0.assets.split30', 'assets/bin/Data/sharedassets0.assets.split33', 'assets/bin/Data/sharedassets0.assets.split32', 'assets/bin/Data/sharedassets0.assets.split35', 'assets/bin/Data/sharedassets0.assets.split34', 'as"
+p36
+sg5
+S'CHANGED (JI 4.4%)'
+p37
+sg7
+F4.4000000000000004
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.heyzap.sdk.ads.PackageAddedReceiver'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Lcom/google/android/diskusage/DiskUsage$EclairPackageViewer;', u'Lcom/google/android/diskusage/NativeScanner$Type;', u'Landroid/preference/CheckBoxPreference;', u'Ljava/util/PriorityQueue;', u'Lcom/google/android/diskusage/DiskUsageMenu$6;', u'Lcom/google/android/diskusage/opengl/FileSystemViewGPU$2;', u'Lcom/google/android/diskusage/AppFilter$1;', u'Ljava/lang/Process;', u'[Lcom/google/android/diskusage/AppFilter$App2SD;', u'Lcom/google/android/diskusage/LoadableActivity$2$1;', u'Lcom/google/android/diskusage/DiskUsage;', u'Lcom/google/android/diskusage/FileSystemState$4;', u'Ljavax/microedition/khronos/egl/EGL10;', u'Lcom/google/android/diskusage/opengl/RenderingThread$Square;', u'Lcom/google/android/diskusage/opengl/AbstractRenderingThread$SurfaceChangedEvent;', u'Lcom/google/android/diskusage/entity/FileSystemEntry;', u'Ljava/util/TreeSet;', u'Lcom/google/android/diskusage/R$raw;', u'Lcom/google/android/diskusage/DiskUsageMenuHoneycomb$1;', u'Lcom/google/android/diskusage/Di\n---\nADDED set([u'Ljava/io/FileNotFoundException;', u'Lcom/chartboost/sdk/Chartboost$1;', u'Landroid/widget/ImageView;', u'Lcom/heyzap/sdk/ads/HeyzapAds$1;', u'Lcom/heyzap/sdk/extensions/ads/UnityHelper;', u'Lcom/heyzap/http/AsyncHttpRequest;', u'Landroid/widget/RelativeLayout$LayoutParams;', u'Lcom/chartboost/sdk/impl/s;', u'Landroid/graphics/drawable/shapes/RoundRectShape;', u'Lcom/heyzap/http/SerializableCookie;', u'Ljava/lang/reflect/Modifier;', u'Lcom/chartboost/sdk/impl/z;', u'Lcom/chartboost/sdk/impl/n$a;', u'Ljava/lang/ref/WeakReference;', u'Lcom/unity3d/player/UnityPlayer$17;', u'Lcom/heyzap/sdk/extensions/ads/UnityHelper$1;', u'Lcom/chartboost/sdk/impl/ao;', u'Lcom/heyzap/http/AsyncHttpClient$InflatingEntity;', u'Lcom/unity3d/player/k;', u'Lcom/chartboost/sdk/impl/o$a;', u'Lcom/heyzap/sdk/ads/VideoControlView$3;', u'Lcom/chartboost/sdk/Libraries/e$f;', u'Ljava/net/ConnectException;', u'Landroid/media/AudioTrack;', u'Ljava/util/concurrent/TimeUnit;', u'Lcom/heyzap/internal/HeyzapProgress"
+p45
+sg5
+S'CHANGED (JI 9.04%)'
+p46
+sg7
+F9.0399999999999991
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/google/android/diskusage/R$menu;-><init>()V', u'Lcom/google/android/diskusage/SelectActivity;-><init>()V', u'Lcom/google/android/diskusage/RendererManager;->makeView(Lcom/google/android/diskusage/FileSystemState; Lcom/google/android/diskusage/entity/FileSystemSuperRoot;)V', u'Lcom/google/android/diskusage/R$style;-><init>()V', u'Lcom/google/android/diskusage/R$raw;-><init>()V', u'Lcom/google/android/diskusage/FileSystemState;->access$1500(Lcom/google/android/diskusage/FileSystemState;)F', u'Lcom/google/android/diskusage/R$drawable;-><init>()V', u'Lcom/google/android/diskusage/FileSystemState$VersionedMultitouchHandler;->access$2700(Lcom/google/android/diskusage/FileSystemState;)Lcom/google/android/diskusage/FileSystemState$VersionedMultitouchHandler;', u'Lcom/google/android/diskusage/FileSystemState$MotionFilter;->doFilter(F)F', u'Lcom/google/android/diskusage/FileSystemState$MainThreadAction;->searchRequest()V', u'Lcom/google/android/diskusage/LoadableActivity$2$3$1;->onCa\n---\nADDED set([u'Lcom/prime31/ChartboostPlugin$9;-><init>(Lcom/prime31/ChartboostPlugin;)V', u'Lcom/unity3d/player/UnityPlayer;->s(Lcom/unity3d/player/UnityPlayer;)V', u'Lcom/heyzap/sdk/ads/FullscreenVideoView;->hideControls()V', u'Lcom/chartboost/sdk/impl/p$b;-><clinit>()V', u'Lcom/chartboost/sdk/Libraries/e$k;-><init>([Lcom/chartboost/sdk/Libraries/e$a;)V', u'Lcom/heyzap/sdk/ads/InterstitialWebView$5;-><init>(Lcom/heyzap/sdk/ads/InterstitialWebView;)V', u'Lcom/heyzap/internal/ClickableToast;->onAttachedToWindow()V', u'Lcom/chartboost/sdk/Libraries/CBOrientation;->rotate270()Lcom/chartboost/sdk/Libraries/CBOrientation;', u'Lcom/chartboost/sdk/CBImpressionActivity;->onDestroy()V', u'Lcom/chartboost/sdk/impl/b;->a(Lorg/json/JSONObject;)V', u'Lcom/heyzap/http/AsyncHttpClient;->setUserAgent(Ljava/lang/String;)V', u'Lcom/heyzap/http/RequestParams;->getParamString()Ljava/lang/String;', u'Lcom/heyzap/internal/Drawables$4$1;->run()V', u'Lorg/fmod/FMODAudioDevice;->access$100(Lorg/fmod/FMODAudioDevice;)"
+p48
+sg5
+S'CHANGED (JI 0.0%)'
+p49
+sg7
+F0
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([u'Landroid/widget/EditText;->requestFocus()Z', u'Lcom/google/android/diskusage/DiskUsage;->searchRequest()V', u'Lcom/google/android/diskusage/RendererManager;->makeView(Lcom/google/android/diskusage/FileSystemState; Lcom/google/android/diskusage/entity/FileSystemSuperRoot;)V', u'Lcom/google/android/diskusage/FileSystemState;->access$1700(Lcom/google/android/diskusage/FileSystemState;)I', u'Lcom/google/android/diskusage/FileSystemState$VersionedMultitouchHandler;->access$2700(Lcom/google/android/diskusage/FileSystemState;)Lcom/google/android/diskusage/FileSystemState$VersionedMultitouchHandler;', u'Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I', u'Lcom/google/android/diskusage/FileSystemState$MotionFilter;->doFilter(F)F', u'Landroid/graphics/Canvas;->drawText(Ljava/lang/String; F F Landroid/graphics/Paint;)V', u'Ljavax/microedition/khronos/egl/EGL10;->eglSwapBuffers(Ljavax/microedition/khronos/egl/EGLDisplay; Ljavax/microedition/khronos/egl/EGL\n---\nADDED set([u'Lcom/prime31/ChartboostPlugin$9;-><init>(Lcom/prime31/ChartboostPlugin;)V', u'Lorg/xmlpull/v1/XmlPullParserFactory;->newInstance()Lorg/xmlpull/v1/XmlPullParserFactory;', u'Lcom/chartboost/sdk/impl/n$a;->a(Z Ljava/lang/String;)V', u'Ljava/util/Random;-><init>()V', u'Landroid/widget/FrameLayout;->onTouchEvent(Landroid/view/MotionEvent;)Z', u'Landroid/view/View;->post(Ljava/lang/Runnable;)Z', u'Lorg/xmlpull/v1/XmlPullParserFactory;->setNamespaceAware(Z)V', u'Landroid/widget/AbsoluteLayout;->onMeasure(I I)V', u'Lcom/chartboost/sdk/Libraries/e$k;-><init>([Lcom/chartboost/sdk/Libraries/e$a;)V', u'Lcom/heyzap/sdk/ads/InterstitialWebView$5;-><init>(Lcom/heyzap/sdk/ads/InterstitialWebView;)V', u'Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V', u'Landroid/media/MediaPlayer;->setAudioStreamType(I)V', u'Lcom/prime31/ChartboostPlugin;->showMoreApps()V', u'Lcom/heyzap/internal/ClickableToast;->onAttachedToWindow()V', u'Lcom/chartboost/sdk/Libraries/CBOrientation;->rotate270()Lco"
+p54
+sg5
+S'CHANGED (JI 3.93%)'
+p55
+sg7
+F3.9300000000000002
+sa(dp56
+g3
+S"\nDELETED set([u'Landroid/widget/EditText;->requestFocus()Z', u'Landroid/graphics/Paint;->ascent()F', u'Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I', u'Landroid/app/AlertDialog;->hide()V', u'Landroid/os/Bundle;->putLong(Ljava/lang/String; J)V', u'Landroid/graphics/Canvas;->getClipBounds()Landroid/graphics/Rect;', u'Landroid/graphics/Paint;->setShadowLayer(F F F I)V', u'Landroid/view/View;->onLayout(Z I I I I)V', u'Landroid/graphics/Canvas;->drawColor(I)V', u'Landroid/graphics/Paint;->measureText(Ljava/lang/String;)F', u'Landroid/os/Bundle;->putStringArray(Ljava/lang/String; [Ljava/lang/String;)V', u'Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;', u'Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;', u'Landroid/app/AlertDialog;->onCreate(Landroid/os/Bundle;)V', u'Landroid/os/Bundle;->putParcelable(Ljava/lang/String; Landroid/os/Parcelable;)V', u'Landroid/view/View;->onKeyDown(I Landroid/view/KeyEvent;)Z', u'Landroid/app/Progress\n---\nADDED set([u'Landroid/os/Bundle;->keySet()Ljava/util/Set;', u'Landroid/app/Activity;->getComponentName()Landroid/content/ComponentName;', u'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Landroid/app/Activity;->addContentView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Ljava/lang/String;->charAt(I)C', u'Landroid/app/Activity;->onStop()V', u'Ljava/io/FileOutputStream;->write([B)V', u'Landroid/widget/EditText;->getText()Landroid/text/Editable;', u'Ljava/io/IOException;-><init>(Ljava/lang/String;)V', u'Landroid/view/View;->post(Ljava/lang/Runnable;)Z', u'Ljava/util/List;->get(I)Ljava/lang/Object;', u'Landroid/widget/ListView;-><init>(Landroid/content/Context; Landroid/util/AttributeSet; I)V', u'Landroid/graphics/Canvas;->getHeight()I', u'Ljava/io/File;-><init>(Ljava/lang/String; Ljava/lang/String;)V', u'Ljava/util/List;->contains(Ljava/lang/Object;)Z', u'Landr"
+p57
+sg5
+S'CHANGED (JI 27.14%)'
+p58
+sg7
+F27.140000000000001
+sa(dp59
+g3
+S'\nDELETED set([u\'org.openintents.extra.TITLE\', u\'Failed to chmod\', u\'list files\', u\'android.intent.category.DEFAULT\', u\'drawFrame (pre) viewTop = \', u\'Error: too large entity size\', u\'rendering thread exited cleanly\', u\'#18C5E7\', u\'hw_renderer\', u\'pkg\', u\'com.android.settings.ApplicationPkgName\', u\'Error: no mount point\', u\' viewBottom = \', u\'android.content.pm.IPackageStatsObserver\', u\' win =\', u\'tmpfs\', u\'Press menu to preview or delete\', u\'android.settings.APPLICATION_DETAILS_SETTINGS\', u\'drawFrame viewTop = \', u\'entry = \', u\'No applicationInfo\', u\'zoomState\', u\'Applications\', u\'/data/data/com.google.android.diskusage/scan \', u\'removed progress dialog\', u\'updated viewport = \', u\'special case for \', u\'Deletion requested for \', u\'storage:\', u\'onCreate, rootPath = \', u\'<%d files>\', u\'Filesystem is damaged.\', u\'/system/xbin/su\', u\' +\', u\'show package = \', u\'something broken\', u\'zoom false\', u\'diskusage\', u\'/.../G\', u\'killed\', u\'settings\', u\' bytes\', u\'dismissed dialog\', u\'[Show/hide]\', u\'ignore_l\n---\nADDED set([u\'Android Simulator\', u\'.obb\', u\'org.bson.ObjectId\', u\'streaming_url\', u\'Unknown\', u\'umts\', u\'File does not exist.\', u\'video_duration_seconds\', u\'bad base-64\', u\'query\', u\'KFSOWI\', u\'javascript: try{adViewHidden();} catch(e) {}\', u\'DOTALL\', u\'android-async-http/%s (http://loopj.com/android-async-http)\', u\'heyzap-start\', u\'onDestroy\', u\'MinKey\', u\'Not running Unity from an Activity; ignored...\', u\'0\', u\'nofilename\', u\'ad_strategy\', u\'onActivityResult\', u\'ANGLE_90\', u\'use_random_strategy_v2\', u\'The context must be set through the Chartboost method onCreate() before calling recordPaymentTransaction().\', u\'/in_game_api/ads/fetch_ad\', u\'object must contain the following key-value schema: {\\n\', u\' (\', u\'currentActivity\', u\'dialog_btn.png\', u\' is not known!\', u\'failed,\', u\'impression_id\', u\'audio_starting,\', u\'The context must be set through the Chartboost method onCreate() before calling showInterstitial().\', u\'{ "$ref" : "\', u\'Content-Disposition: form-data; name="\', u\'UnitySendMessage'
+p60
+sg5
+S'CHANGED (JI 2.6%)'
+p61
+sg7
+F2.6000000000000001
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/google/android/diskusage/MountPoint;->honeycombSdcard Lcom/google/android/diskusage/MountPoint; [access_flags=private static]\\n', 'Lcom/google/android/diskusage/FileSystemState$MainThreadActionIndirect$1;->this$0 Lcom/google/android/diskusage/FileSystemState$MainThreadActionIndirect; [access_flags=synthetic final]\\n', 'Landroid/content/pm/PackageStats;->packageName Ljava/lang/String; [access_flags=public]\\n', 'Lcom/google/android/diskusage/MyProgressDialog;->detailsView Landroid/widget/TextView; [access_flags=private]\\n', 'Lcom/google/android/diskusage/DiskUsage;->fileSystemState Lcom/google/android/diskusage/FileSystemState; [access_flags=protected]\\n', 'Lcom/google/android/diskusage/opengl/AbstractRenderingThread$SurfaceChangedEvent;->w I [access_flags=0x0]\\n', 'Lcom/google/android/diskusage/BackgroundDelete;->file Ljava/io/File; [access_flags=0x0]\\n', 'Lcom/google/android/diskusage/opengl/RenderingThread$SmallSquare;->texSmallCoordsBuffer Ljava/nio/FloatBuffer; [access_fl\n---\nADDED set(['Lcom/chartboost/sdk/a;->e Lcom/chartboost/sdk/impl/n; [access_flags=private]\\n', 'Lcom/heyzap/sdk/ads/Manager;->lastClickedTime J [access_flags=public]\\n', 'Lcom/heyzap/sdk/ads/AttributionManager$1;->val$existingImpressionId Ljava/lang/String; [access_flags=synthetic final]\\n', 'Lcom/chartboost/sdk/impl/ai$a;->l Ljava/lang/String; [access_flags=public final]\\n', 'Lcom/heyzap/sdk/ads/VideoModel;->FORMAT Ljava/lang/String; [access_flags=public static]\\n', 'Lcom/heyzap/sdk/ads/InterstitialWebView$1;->val$width I [access_flags=synthetic final]\\n', 'Lcom/chartboost/sdk/Chartboost;->z Z [access_flags=private]\\n', 'Lcom/unity3d/player/j;->b Landroid/app/Activity; [access_flags=private final]\\n', 'Lcom/chartboost/sdk/Chartboost;->e Lcom/chartboost/sdk/b; [access_flags=private]\\n', 'Lcom/prime31/ChartboostPlugin$10;->this$0 Lcom/prime31/ChartboostPlugin; [access_flags=synthetic final]\\n', 'Lcom/chartboost/sdk/impl/p;->b [I [access_flags=private synthetic static]\\n', 'Lcom/chartboost/sdk/i"
+p63
+sg5
+S'CHANGED (JI 0.0%)'
+p64
+sg7
+F0
+sa.

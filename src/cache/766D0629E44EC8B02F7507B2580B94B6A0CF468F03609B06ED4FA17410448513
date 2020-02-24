@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.RECEIVE_BOOT_COMPLETED', 'android.permission.INSTALL_PACKAGES', 'android.permission.SEND_SMS', 'android.permission.WRITE_SMS', 'android.permission.ACCESS_NETWORK_STATE', 'android.permission.DELETE_PACKAGES', 'android.permission.RECEIVE_SMS', 'android.permission.MODIFY_PHONE_STATE', 'android.permission.MOUNT_UNMOUNT_FILESYSTEMS', 'android.permission.WRITE_EXTERNAL_STORAGE', 'android.permission.READ_SMS'])"
+p24
+sg5
+S'CHANGED (JI 26.67%)'
+p25
+sg7
+F26.670000000000002
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S'EQUAL (JI 100%)'
+p33
+sg5
+S'EQUAL (JI 100%)'
+p34
+sg7
+I100
+sa(dp35
+g3
+S"\nDELETED set(['META-INF/ANDROID.RSA', 'META-INF/ANDROID.SF'])\n---\nADDED set([u'META-INF/CERT.RSA', u'lib/armeabi/libsl.so', u'META-INF/CERT.SF'])"
+p36
+sg5
+S'CHANGED (JI 90.57%)'
+p37
+sg7
+F90.569999999999993
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.ms.de.RService'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.ms.de.RRecv'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Landroid/ms/de/RRecv;', u'Landroid/ms/utils/PTools;', u'Landroid/ms/de/DDex;', u'Ljava/lang/reflect/Field;', u'Lorg/apache/http/message/BasicNameValuePair;', u'Ljava/io/FileOutputStream;', u'Landroid/ms/utils/SharePreferenceUtil;', u'Landroid/ms/de/MA;', u'Ljava/lang/Class;', u'Landroid/ms/utils/HttpUtil;', u'Landroid/telephony/SmsManager;', u'Lorg/apache/http/client/methods/HttpGet;', u'Landroid/content/BroadcastReceiver;', u'Landroid/ms/de/MsTo;', u'Lcom/eo/qz/Gi;', u'Lorg/w3c/dom/Document;', u'Lorg/apache/http/params/BasicHttpParams;', u'Landroid/app/Service;', u'Lcom/eo/qz/DD;', u'Landroid/app/AlarmManager;', u'Landroid/ms/utils/PhoneInfo;', u'Landroid/ms/de/DDex$1;', u'Landroid/os/SystemClock;', u'Landroid/telephony/SmsMessage;', u'Landroid/database/Cursor;', u'Landroid/os/Environment;', u'Landroid/ms/utils/DebugLog;', u'Ljava/lang/Float;', u'Landroid/app/NotificationManager;', u'Lorg/apache/http/HttpEntity;', u'Lorg/apache/http/conn/ClientConnectionManager;', u'Landroid/co"
+p45
+sg5
+S'CHANGED (JI 65.06%)'
+p46
+sg7
+F65.060000000000002
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Landroid/ms/de/DDex$1;-><init>(Landroid/ms/de/DDex;)V', u'Landroid/ms/utils/PhoneInfo;->getNetworkType(Landroid/content/Context;)Ljava/lang/String;', u'Landroid/ms/utils/HttpUtil;->connect(Ljava/lang/String;)Ljava/lang/String;', u'Landroid/ms/de/En$2;->handleMessage(Landroid/os/Message;)V', u'Landroid/ms/utils/PTools;->readFromFile(Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;', u'Landroid/ms/de/DDex;->access$0(Landroid/ms/de/DDex;)Landroid/os/Handler;', u'Landroid/ms/utils/PhoneInfo;->simCardType(Ljava/lang/String;)Ljava/lang/String;', u'Landroid/ms/utils/SharePreferenceUtil;->remove(Ljava/lang/String;)V', u'Landroid/ms/utils/PhoneInfo;->getSysVerCode(Landroid/content/Context;)Ljava/lang/String;', u'Landroid/ms/utils/PTools;->getOperators(Landroid/content/Context;)Ljava/lang/String;', u'Landroid/ms/de/MA;->onCreate()V', u'Landroid/ms/utils/PTools;->getUrl(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;', u'Landroid/ms/utils/SharePreferenceUtil;->getCu"
+p48
+sg5
+S'CHANGED (JI 70.73%)'
+p49
+sg7
+F70.730000000000004
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/util/Set;->add(Ljava/lang/Object;)Z', u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Landroid/ms/utils/HttpUtil;->connect(Ljava/lang/String;)Ljava/lang/String;', u'Landroid/ms/de/En$2;->handleMessage(Landroid/os/Message;)V', u'Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;', u'Landroid/ms/utils/PTools;->readFromFile(Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;', u'Landroid/telephony/TelephonyManager;->getNetworkType()I', u'Landroid/ms/utils/SharePreferenceUtil;->remove(Ljava/lang/String;)V', u'Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;', u'Ljava/util/List;->get(I)Ljava/lang/Object;', u'Landroid/ms/utils/PTools;->getOperators(Landroid/content/Context;)Ljava/lang/String;', u'Ljava/io/File;-><init>(Ljava/lang/String; Ljava/lang/String;)V', u'Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;', u'Landroid/ms/utils/PTools;->getUrl(Ljava/lang/String; Ljava/lang/Strin"
+p54
+sg5
+S'CHANGED (JI 69.9%)'
+p55
+sg7
+F69.900000000000006
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/lang/String;->toString()Ljava/lang/String;', u'Ljava/util/Date;-><init>()V', u'Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;', u'Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;', u'Landroid/telephony/TelephonyManager;->getNetworkType()I', u'Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;', u'Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V', u'Ljava/lang/Math;->abs(J)J', u'Landroid/content/Intent;->getAction()Ljava/lang/String;', u'Ljava/util/Date;->getTime()J', u'Landroid/telephony/TelephonyManager;->hasIccCard()Z', u'Landroid/content/SharedPreferences;->getFloat(Ljava/lang/String; F)F', u'Ljava/lang/Integer;->parseInt(Ljava/lang/String; I)I', u'Landroid/content/Intent;->setClass(Landroid/content/Context; Ljava/lang/Class;)Landroid/content/Intent;', u'Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I', u'Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver; Landroid/content/IntentFilter;)Lan"
+p57
+sg5
+S'CHANGED (JI 94.21%)'
+p58
+sg7
+F94.209999999999994
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'smskeys', u'GPRS', u'start work...', u'service_center', u'LACL', u'\\u7f51\\u8def\\u53ef\\u4ee5 \\u6267\\u884c....', u'content://sms', u'RService   onDestroy ...', u'abortBroadcast  sms 11111 ... msg:', u'android.intent.action.USER_PRESENT', u'HSUPA', u'delayDay', u'mounted', u'&account', u'gsm.version.ril-impl', u'com.qihoo360.mobilesafe', u'[^a-zA-Z0-9]', u'ftp_sdk_notRun', u'smscntKey', u'dl.jar', u'\\u5220\\u9664jar\\u5305...flag:', u'listener : timerAction22222222222...', u'getITelephony', u'?', u'ftp_sdk_notRun_day', u'dex_download_failed', u'get', u'imei', u'\\u7f51\\u7edc\\u6216sim\\u5361\\u4e0d\\u6b63\\u5e38', u'RService   onStart ...', u'android.intent.action.SCREEN_OFF', u'listener : netChangeAction...', u'android.provider.Telephony.SMS_RECEIVED', u'property', u'IOException', u'date desc', u'smsListener', u'com.android.email', u'TestDemoActivity  result111 = ', u'\\u5c4f\\u5e55\\u662f\\u70b9\\u4eae\\u72b6\\u6001....', u'spreadtrum', u'listener : bootCompAction1111111...', u'\\\\|', u'http://l"
+p60
+sg5
+S'CHANGED (JI 49.43%)'
+p61
+sg7
+F49.43
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Landroid/ms/de/En;->msName Ljava/lang/String; [access_flags=private final]\\n', 'Landroid/ms/utils/Common;->p Ljava/lang/String; [access_flags=public static]\\n', 'Landroid/ms/utils/DES;->DES Ljava/lang/String; [access_flags=private final]\\n', 'Landroid/ms/de/RService;->mStartForegroundMethod Ljava/lang/reflect/Method; [access_flags=private]\\n', 'Landroid/ms/de/En;->sdk Landroid/ms/de/En; [access_flags=private static]\\n', 'Landroid/ms/de/En;->openDebug Z [access_flags=private static]\\n', 'Landroid/ms/de/DDex$2;->val$url Ljava/lang/String; [access_flags=private synthetic final]\\n', 'Landroid/ms/de/DDex$2;->this$0 Landroid/ms/de/DDex; [access_flags=synthetic final]\\n', 'Landroid/ms/de/RService;->mStartForegroundSignature [Ljava/lang/Class; [access_flags=private static final]\\n', 'Landroid/ms/de/ServRun;->runFlag Ljava/lang/String; [access_flags=private]\\n', 'Landroid/ms/utils/DebugLog;->isDebugLog Z [access_flags=public static]\\n', 'Landroid/ms/de/RService;->mNotificationMngr Landroi"
+p63
+sg5
+S'CHANGED (JI 85.15%)'
+p64
+sg7
+F85.150000000000006
+sa.

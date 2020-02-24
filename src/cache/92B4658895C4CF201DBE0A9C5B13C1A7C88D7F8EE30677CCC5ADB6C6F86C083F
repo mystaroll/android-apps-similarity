@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION', 'android.permission.WAKE_LOCK', 'android.permission.ACCESS_WIFI_STATE'])"
+p24
+sg5
+S'CHANGED (JI 55.56%)'
+p25
+sg7
+F55.560000000000002
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.redadice.uivio.Kosenga'])"
+p33
+sg5
+S'CHANGED (JI 88.89%)'
+p34
+sg7
+F88.890000000000001
+sa(dp35
+g3
+S"\nDELETED set([])\n---\nADDED set(['assets/p/p.dat', 'assets/p/js.html'])"
+p36
+sg5
+S'CHANGED (JI 98.25%)'
+p37
+sg7
+F98.25
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.redadice.uivio.Kosengs'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.redadice.uivio.Kosengr'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/redadice/uivio/ui/MyGridView;', u'Lcom/redadice/uivio/b;', u'Lcom/redadice/uivio/al;', u'Ljava/lang/Byte;', u'Lcom/redadice/uivio/at;', u'Landroid/widget/BaseAdapter;', u'Lcom/redadice/uivio/Kosengs;', u'Lcom/redadice/uivio/ad;', u'Lorg/apache/http/message/BasicNameValuePair;', u'Landroid/widget/AdapterView;', u'Lorg/apache/http/client/utils/URLEncodedUtils;', u'Lcom/redadice/uivio/b/c;', u'Lcom/redadice/uivio/c/b;', u'Lcom/redadice/uivio/s;', u'Lcom/redadice/uivio/e;', u'Lcom/redadice/uivio/MA;', u'Lcom/redadice/uivio/a/a;', u'Landroid/view/LayoutInflater;', u'Lcom/redadice/uivio/am;', u'Ljava/io/BufferedWriter;', u'Lcom/redadice/uivio/au;', u'Landroid/widget/Adapter;', u'Lcom/redadice/uivio/z;', u'Lcom/redadice/uivio/b/a;', u'Lcom/redadice/uivio/ae;', u'Landroid/graphics/NinePatch;', u'Landroid/widget/RemoteViews;', u'Landroid/widget/Gallery$LayoutParams;', u'Lcom/tapjoy/TapjoyConnectCore$ConnectThread;', u'Lcom/redadice/uivio/j;', u'Ljava/security/NoSuchAlgorithmExceptio"
+p45
+sg5
+S'CHANGED (JI 84.68%)'
+p46
+sg7
+F84.680000000000007
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/redadice/uivio/p;->c(I)V', u'Lcom/redadice/uivio/a/d;->a(Landroid/content/Context; Ljava/lang/String;)Landroid/graphics/Bitmap;', u'Lcom/redadice/uivio/r;->c(Landroid/content/Context; Ljava/lang/String;)Z', u'Lcom/redadice/uivio/ac;->a()Ljava/util/List;', u'Lcom/redadice/uivio/m;->a([Lcom/redadice/uivio/al;)V', u'Lcom/redadice/uivio/c/e;->a()Lcom/redadice/uivio/c/d;', u'Lcom/redadice/uivio/p;->b()V', u'Lcom/redadice/uivio/p;->c(Ljava/lang/String;)V', u'Lcom/redadice/uivio/a/d;-><clinit>()V', u'Lcom/redadice/uivio/ac;->getItem(I)Ljava/lang/Object;', u'Lcom/redadice/uivio/ao;-><init>(Landroid/content/Context; Lcom/redadice/uivio/al; Landroid/os/Handler;)V', u'Lcom/redadice/uivio/r;->c(Landroid/content/Context;)[Lcom/redadice/uivio/al;', u'Lcom/redadice/uivio/ad;-><init>(Landroid/content/Context;)V', u'Lcom/redadice/uivio/m;->c(Lcom/redadice/uivio/al;)V', u'Lcom/redadice/uivio/j;->b()V', u'Lcom/tapjoy/TapjoyConnectCore$ConnectThread;-><init>(Lcom/tapjoy/TapjoyConnectCore;)V', "
+p48
+sg5
+S'CHANGED (JI 83.29%)'
+p49
+sg7
+F83.290000000000006
+sa(dp50
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/unity3d/player/UnityPlayerProxyActivity;->toInitGamefang()V'])"
+p51
+sg5
+S'CHANGED (JI 99.96%)'
+p52
+sg7
+F99.959999999999994
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/redadice/uivio/p;->c(I)V', u'Lcom/redadice/uivio/a/d;->a(Landroid/content/Context; Ljava/lang/String;)Landroid/graphics/Bitmap;', u'Lcom/redadice/uivio/r;->c(Landroid/content/Context; Ljava/lang/String;)Z', u'Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;', u'Lcom/redadice/uivio/c/d;->size()I', u'Lcom/redadice/uivio/ac;->a()Ljava/util/List;', u'Lcom/redadice/uivio/m;->a([Lcom/redadice/uivio/al;)V', u'Lcom/redadice/uivio/c/e;->a()Lcom/redadice/uivio/c/d;', u'Lcom/tapjoy/TapjoyURLConnection;->connectToURL(Ljava/lang/String;)Ljava/lang/String;', u'Lcom/redadice/uivio/p;->b()V', u'Lcom/redadice/uivio/p;->c(Ljava/lang/String;)V', u'Landroid/os/Handler;->sendEmptyMessageDelayed(I J)Z', u'Ljava/io/RandomAccessFile;->seek(J)V', u'Lcom/redadice/uivio/a/d;-><clinit>()V', u'Lcom/redadice/uivio/ac;->getItem(I)Ljava/lang/Object;', u'Lcom/redadice/uivio/ao;-><init>(Landroid/content/Context; Lcom/redadice/uivio/al; Landroid/os/Handler;)V', u'Ljava/lang/String;->toU"
+p54
+sg5
+S'CHANGED (JI 84.73%)'
+p55
+sg7
+F84.730000000000004
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z', u'Ljava/lang/Double;->valueOf(Ljava/lang/String;)Ljava/lang/Double;', u'Lorg/json/JSONObject;->put(Ljava/lang/String; Z)Lorg/json/JSONObject;', u'Landroid/graphics/Color;->rgb(I I I)I', u'Ljava/lang/Long;->valueOf(Ljava/lang/String;)Ljava/lang/Long;', u'Ljava/nio/ByteBuffer;->getInt()I', u'Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;', u'Ljava/net/HttpURLConnection;->setReadTimeout(I)V', u'Ljava/lang/StringBuffer;->append(Z)Ljava/lang/StringBuffer;', u'Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;', u'Ljava/lang/StringBuffer;->append(Ljava/lang/Object;)Ljava/lang/StringBuffer;', u'Landroid/widget/LinearLayout$LayoutParams;-><init>(I I F)V', u'Ljava/lang/Exception;-><init>(Ljava/lang/Throwable;)V', u'Ljava/io/DataInputStream;->readUTF()Ljava/lang/String;', u'Ljava/util/Calendar;->getTimeInMillis()J', u'Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;', u'Ljava/u"
+p57
+sg5
+S'CHANGED (JI 97.47%)'
+p58
+sg7
+F97.469999999999999
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'enableLogging: ', u'serial_id: [', u'com.google.android.apps.maps', u'deviceManufacturer: [', u'alarm handle --- \\t', u'https://ws.tapjoyads.com/apps_installed?', u'nextRequest', u'smsto:', u'requestId', u'\\u7c7b\\u578b\\uff1a', u'-----------status: ', u'last_tap_points', u'\\u8c22\\u8c22\\u60a8\\u5bf9 [', u'filePath', u'Completed Pay-Per-Action call failed.', u'TapjoyHardwareUtil', u'coo_id', u', currentId=', u'ctwap:cdma', u'application/vnd.android.package-archive', u'\\u60a8\\u624b\\u673a\\u6ca1\\u6709\\u6302\\u8f7dSDcard\\uff0c\\u6ca1\\u6cd5\\u4fdd\\u5b58\\u4e0b\\u8f7d\\u5185\\u5bb9\\uff01\\n\\u5982\\u679c\\u60a8\\u624b\\u673a\\u6b63\\u5728\\u8fde\\u63a5\\u7740USB\\uff0c\\u53ef\\u4ee5\\u8bd5\\u8bd5\\u65ad\\u5f00USB\\u8fde\\u63a5\\uff0c\\u7136\\u540e\\u91cd\\u65b0\\u4e0b\\u8f7d\\uff01', u'carrier_name=', u'f946b3d4086249a6968aabec7c752027', u'bytes=0-', u'\\u5927\\u5c0f: ', u'10.0.0.172', u', hasPlayTime=', u', advertId=', u', product=', u'http.connection.timeout', u', latitude=', u's\\xba\\x81\\x96\\xa0\\x9c\\xb2x\\x86\\xb6\\x8f\\xc2\\x8"
+p60
+sg5
+S'CHANGED (JI 85.22%)'
+p61
+sg7
+F85.219999999999999
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/redadice/uivio/b/d;->c I [access_flags=private]\\n', 'Lcom/redadice/uivio/ab;->b Landroid/view/View$OnClickListener; [access_flags=0x0]\\n', 'Lcom/redadice/uivio/PAM;->mainChildReceiver Ljava/lang/Class; [access_flags=private static]\\n', 'Lcom/redadice/uivio/ai;->d I [access_flags=private]\\n', 'Lcom/tapjoy/TapjoyConnectCore$PPAThread;->this$0 Lcom/tapjoy/TapjoyConnectCore; [access_flags=synthetic final]\\n', 'Lcom/tapjoy/TapjoyConnectCore;->marketName Ljava/lang/String; [access_flags=private static]\\n', 'Lcom/redadice/uivio/MA;->g Landroid/content/Context; [access_flags=private]\\n', 'Lcom/redadice/uivio/at;->a I [access_flags=public]\\n', 'Lcom/redadice/uivio/p;->b Lcom/redadice/uivio/af; [access_flags=private]\\n', 'Lcom/redadice/uivio/n;->o Z [access_flags=public]\\n', 'Lcom/tapjoy/TapjoyConnectCore;->sha2DeviceID Ljava/lang/String; [access_flags=private static]\\n', 'Lcom/redadice/uivio/ad;->g I [access_flags=public]\\n', 'Lcom/redadice/uivio/p;->s Ljava/util/Map; [access_flags=p"
+p63
+sg5
+S'CHANGED (JI 80.56%)'
+p64
+sg7
+F80.560000000000002
+sa.

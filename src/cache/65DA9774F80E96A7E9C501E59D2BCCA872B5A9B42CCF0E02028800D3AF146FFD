@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.android.launcher.permission.INSTALL_SHORTCUT', 'android.permission.SYSTEM_ALERT_WINDOW', 'android.permission.GET_TASKS', 'android.permission.ACCESS_WIFI_STATE', 'android.permission.READ_PHONE_STATE', 'android.permission.WRITE_EXTERNAL_STORAGE'])"
+p24
+sg5
+S'CHANGED (JI 40.0%)'
+p25
+sg7
+F40
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.cotys.ditrvo.tianc.CaronActivity', 'com.zown.utcom.MuwGwown', 'com.cotys.ditrvo.DauRarll', 'com.cotys.tuaca.aecro.DrecActivity', 'com.zown.TownActivity'])"
+p33
+sg5
+S'CHANGED (JI 54.55%)'
+p34
+sg7
+F54.549999999999997
+sa(dp35
+g3
+S"\nDELETED set([])\n---\nADDED set(['assets/Zhuamob_sdk_v1.8.2.version', 'assets/tihn/awecv.dat', 'assets/atrvr/pic.dat', 'assets/l/l.dat'])"
+p36
+sg5
+S'CHANGED (JI 98.89%)'
+p37
+sg7
+F98.890000000000001
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.cotys.ditrvo.SwitActivity', 'com.zown.utcom.SuseTwswn', 'com.cotys.tuaca.aecro.NranRwin', 'com.zown.Gwontun'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.cotys.ditrvo.tianc.RwiuTwon', 'com.zown.utcom.KsecuActivity', 'com.cotys.ditrvo.CtwinViwn', 'com.zown.RwnTom', 'com.cotys.tuaca.aecro.RwunPwnio'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/zown/TownActivity;', u'Lcom/cotys/ditrvo/s;', u'Lcom/cotys/ditrvo/tianc/view/Geron;', u'Lcom/zown/utcom/c/b;', u'Lcom/cotys/ditrvo/a/f;', u'Lcom/cotys/ditrvo/cuao/j;', u'Lcom/cotys/ditrvo/tianc/BaowActivity;', u'Ljava/util/Calendar;', u'Lcom/cotys/ditrvo/tianc/e/l;', u'Lcom/cotys/ditrvo/b/c;', u'Lcom/cotys/ditrvo/tianc/c/b;', u'Lcom/zown/utcom/d/d;', u'Lcom/cotys/ditrvo/tianc/e/o;', u'Lcom/zown/utcom/MuwGwown;', u'Lcom/zown/utcom/coin/d;', u'Lcom/cotys/ditrvo/j;', u'Lcom/cotys/tuaca/aecro/a/d;', u'Lcom/cotys/ditrvo/tianc/f/g;', u'Lcom/cotys/ditrvo/tianc/b;', u'Lcom/cotys/ditrvo/tianc/e/r;', u'Lcom/cotys/ditrvo/tianc/c/k;', u'Lcom/cotys/tuaca/aecro/c/k;', u'Lcom/cotys/tuaca/aecro/eywen/b;', u'Lcom/cotys/tuaca/aecro/g/n;', u'Lcom/cotys/ditrvo/tianc/f/ag;', u'Lcom/zown/utcom/o;', u'Lcom/cotys/ditrvo/aj;', u'Ljava/lang/Process;', u'Landroid/os/Message;', u'Lcom/cotys/ditrvo/tianc/d/b;', u'Lcom/cotys/ditrvo/tianc/k;', u'Ljava/io/ObjectInputStream;', u'Ljava/util/zip/Inflater;', "
+p45
+sg5
+S'CHANGED (JI 40.99%)'
+p46
+sg7
+F40.990000000000002
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/cotys/ditrvo/tianc/tiwner/Tsein;->exit()V', u'Lcom/cotys/ditrvo/a/c;-><init>()V', u'Lcom/cotys/tuaca/aecro/DrecActivity;->f(Lcom/cotys/tuaca/aecro/DrecActivity;)Landroid/view/animation/TranslateAnimation;', u'Lcom/cotys/ditrvo/tianc/f/c;->a(F)V', u'Lcom/cotys/ditrvo/tianc/c/ak;->a()Lcom/cotys/ditrvo/tianc/c/ak;', u'Lcom/cotys/ditrvo/ah;->a(Landroid/content/Context; Lcom/cotys/ditrvo/ao;)V', u'Lcom/cotys/ditrvo/tianc/e/k;->hashCode()I', u'Lcom/cotys/tuaca/aecro/b/d;->a()Ljava/util/List;', u'Lcom/cotys/ditrvo/f;->run()V', u'Lcom/cotys/ditrvo/tianc/f/v;->d(Lcom/cotys/ditrvo/tianc/f/v;)I', u'Lcom/cotys/ditrvo/tianc/c/c;->a(I I)I', u'Lcom/cotys/ditrvo/cuao/a;->a(Lcom/cotys/ditrvo/cuao/a; Lcom/cotys/ditrvo/ap;)Lcom/cotys/ditrvo/ap;', u'Lcom/zown/utcom/e/f;->a([I Ljava/nio/ByteBuffer;)V', u'Lcom/cotys/ditrvo/tianc/d/h;->c()Ljava/lang/String;', u'Lcom/cotys/ditrvo/a/d;->a(Lcom/cotys/ditrvo/a/c;)V', u'Lcom/cotys/ditrvo/tianc/e/f;->a(Z)Z', u'Lcom/zown/utcom/e/h;->b(Landroid/content/C"
+p48
+sg5
+S'CHANGED (JI 27.88%)'
+p49
+sg7
+F27.879999999999999
+sa(dp50
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/unity3d/player/UnityPlayerProxyActivity;->toStart()V'])"
+p51
+sg5
+S'CHANGED (JI 99.91%)'
+p52
+sg7
+F99.909999999999997
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/cotys/tuaca/aecro/DrecActivity;->f(Lcom/cotys/tuaca/aecro/DrecActivity;)Landroid/view/animation/TranslateAnimation;', u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Lcom/zown/b/f;->c()Ljava/lang/String;', u'Lcom/cotys/ditrvo/tianc/c/ak;->a()Lcom/cotys/ditrvo/tianc/c/ak;', u'Lcom/cotys/ditrvo/ah;->a(Landroid/content/Context; Lcom/cotys/ditrvo/ao;)V', u'Lcom/cotys/tuaca/aecro/d/c;->size()I', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Lcom/cotys/ditrvo/tianc/e/k;->equals(Ljava/lang/Object;)Z', u'Lcom/cotys/ditrvo/tianc/c/c;->a(I I)I', u'Lcom/cotys/ditrvo/tianc/e/n;->a()I', u'Lcom/zown/utcom/e/f;->a([I Ljava/nio/ByteBuffer;)V', u'Lcom/cotys/tuaca/aecro/DrecActivity;->onActivityResult(I I Landroid/content/Intent;)V', u'Lcom/zown/utcom/e/h;->b(Landroid/content/Context;)Ljava/lang/String;', u'Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;', u'Lcom/cotys/tuaca/aecro/eywen/a;->b()Z', u'Lcom/cotys/dit"
+p54
+sg5
+S'CHANGED (JI 35.35%)'
+p55
+sg7
+F35.350000000000001
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;', u'Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Ljava/security/MessageDigest;->update([B)V', u'Landroid/widget/Button;->setTextColor(I)V', u'Landroid/widget/Button;->setFocusable(Z)V', u'Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;', u'Ljava/io/IOException;-><init>(Ljava/lang/String;)V', u'Landroid/webkit/WebView;->clearCache(Z)V', u'Ljava/io/File;-><init>(Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/widget/FrameLayout;->addView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Landroid/widget/ImageView;->getTag()Ljava/lang/Object;', u'Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;', u'Landroid/os/Handler;->sendEmptyMessageDelayed(I J)Z', u'Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V', u'Landroid/widget/Button;->se"
+p57
+sg5
+S'CHANGED (JI 87.33%)'
+p58
+sg7
+F87.329999999999998
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'DROP TABLE IF EXISTS ldownloads', u'\\x00', u'alm', u'Tsein', u's\\x9da\\u5388\\u5b81\\u50d6\\u7ac0\\u95fd\\u4e32\\u8e05\\uff5a\\u8c49\\u523a\\u968f\\u4e1f\\u4ea4\\u6593\\u4f53\\u4e93\\u5458\\u5199\\u91e1\\u8c31\\uff22e', u's\\xbd\\xb3\\xa3\\x9b\\xbc\\xedne', u's\\u7292\\u6749\\uff41e', u's\\xab\\x89\\x93\\x88\\x8f\\xb6y\\x84\\xb5\\xbd\\xc7\\x88\\x9fe', u's\\x92\\x8c\\x96\\x90\\xa3\\xb5h\\x92\\xb7\\xb2\\xbb{\\x8a\\x8f{{\\xcd\\xad\\xbc\\x80s\\xcc\\x93mwe', u'com.google.android.apps.maps', u's\\xc1\\x86\\x8d\\x92\\u4e39\\u98ca\\u7eaf\\u4e30\\u8fcfe', u's\\xbd\\xd3\\xae\\xbb\\xb6\\xe6\\xb4\\x9f\\xec\\u0105\\u0113\\xe0\\xa4\\xba\\x9az\\xcf\\u0118\\xafe', u's\\xbe\\x8c\\x9b\\x8a\\x9a\\xa5|\\x8e\\xcc\\xb3e', u's\\xb3\\x90l\\xa1\\x97\\xbaU\\x8e\\xc5\\xc2e', u's\\xc0\\x84\\x97\\x88\\xa2\\xb5p\\x8c\\xbe\\xb3\\xb1\\x80\\x97\\x80pk\\xcd\\xba\\xafre', u's\\u4e84\\u4ea3\\u82a9\\u772a\\u60d6\\u76ca\\u6254\\u675f\\u6d93\\u921d\\uff5e\\u989e\\u7ed1\\u5747`U\\xa3\\x91\\u7f9b\\u7ee8\\u4e1f\\u8fd9\\uff40e', u'/ui/', u'nextRequest', u's\\u8c37\\u8a1d\\uff41Ie', u's\\xbe~\\x8ee', u's\\xc0\\x84\\x86\\x97\\xa2\\xbfe', u's\\xc6@Qe', u'getMessage', u's\\xa"
+p60
+sg5
+S'CHANGED (JI 52.59%)'
+p61
+sg7
+F52.590000000000003
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/cotys/tuaca/aecro/e/i;->s Ljava/lang/String; [access_flags=public]\\n', 'Lcom/cotys/tuaca/aecro/g/s;->b Lcom/cotys/tuaca/aecro/g/y; [access_flags=private]\\n', 'Lcom/cotys/ditrvo/tianc/f/al;->d Lcom/cotys/ditrvo/tianc/tiwner/Tsein; [access_flags=private]\\n', 'Lcom/zown/b/b;->c Lcom/zown/b/d; [access_flags=private]\\n', 'Lcom/cotys/ditrvo/ah;->b Lcom/cotys/ditrvo/ah; [access_flags=private static]\\n', 'Lcom/cotys/tuaca/aecro/e/j;->h I [access_flags=public]\\n', 'Lcom/cotys/ditrvo/tianc/f/am;->a Lcom/cotys/ditrvo/tianc/f/al; [access_flags=synthetic final]\\n', 'Lcom/zown/utcom/b/g;->n Ljava/lang/String; [access_flags=public]\\n', 'Lcom/cotys/tuaca/aecro/f/d;->C Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/zown/utcom/e/c;->s Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/zown/utcom/e/c;->T Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/cotys/ditrvo/tianc/f/al;->y Landroid/graphics/drawable/StateListDrawable; [access_flags=private]\\n"
+p63
+sg5
+S'CHANGED (JI 23.04%)'
+p64
+sg7
+F23.039999999999999
+sa.

@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.RECEIVE_BOOT_COMPLETED', 'android.permission.READ_PHONE_STATE', 'android.permission.ACCESS_WIFI_STATE', 'android.permission.ACCESS_NETWORK_STATE', 'android.permission.INTERNET', 'android.permission.MOUNT_UNMOUNT_FILESYSTEMS', 'android.permission.RESTART_PACKAGES', 'android.permission.WRITE_EXTERNAL_STORAGE'])"
+p24
+sg5
+S'CHANGED (JI 0.0%)'
+p25
+sg7
+F0
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.jmp.sfc.ui.DSWV', 'com.adfeiwo.ad.coverscreen.SA', 'com.adfeiwo.ad.coverscreen.WA'])"
+p33
+sg5
+S'CHANGED (JI 66.67%)'
+p34
+sg7
+F66.670000000000002
+sa(dp35
+g3
+S"\nDELETED set(['lib/', 'assets/spr/', 'assets/cls/', 'META-INF/OMICRON.RSA', 'res/raw/', 'lib/armeabi-v7a/', 'res/drawable-ldpi-v11/', 'res/drawable/', 'res/drawable-hdpi-v9/', 'res/drawable-xhdpi/', 'META-INF/OMICRON.SF', 'res/drawable-hdpi-v11/', 'assets/snd/', 'res/drawable-ldpi/', 'res/drawable-xhdpi-v9/', 'assets/aSnd/', 'assets/', 'res/drawable-xxhdpi/', 'res/', 'res/drawable-ldpi-v9/', 'res/drawable-mdpi-v9/', 'assets/img/', 'res/drawable-mdpi-v11/', 'res/drawable-hdpi/', 'res/drawable-mdpi/', 'res/drawable-xhdpi-v11/', 'res/layout/'])\n---\nADDED set(['META-INF/ABC_KEYS.SF', 'META-INF/ABC_KEYS.RSA'])"
+p36
+sg5
+S'CHANGED (JI 88.8%)'
+p37
+sg7
+F88.799999999999997
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.jmp.sfc.net.DwService', 'com.jmp.sfc.net.OpenService'])"
+p39
+sg5
+S'CHANGED (JI 33.33%)'
+p40
+sg7
+F33.329999999999998
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.jmp.sfc.net.OpenReceiver', 'com.adfeiwo.ad.coverscreen.SR'])"
+p42
+sg5
+S'CHANGED (JI 71.43%)'
+p43
+sg7
+F71.430000000000007
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/adfeiwo/ad/coverscreen/c/i/a/a;', u'Lcom/jmp/sfc/uti/DwSei$DownloaderTask$NetState;', u'Lcom/jmp/sfc/net/OpenService$1;', u'Lcom/adfeiwo/ad/coverscreen/E;', u'Lcom/jmp/sfc/uti/DwSei$DownloaderTask$1;', u'Lcom/adfeiwo/ad/coverscreen/c/a/a;', u'Leval_v;', u'Ljava/util/concurrent/ConcurrentLinkedQueue;', u'Lcom/adfeiwo/ad/coverscreen/w;', u'Landroid/graphics/drawable/shapes/RoundRectShape;', u'Lcom/adfeiwo/ad/coverscreen/l;', u'Leval_o;', u'Lcom/adfeiwo/ad/coverscreen/g;', u'Leval_g;', u'Lcom/jmp/sfc/uti/DoUt;', u'Lcom/jmp/sfc/ui/DSWV$MyWebView;', u'Leval_k;', u'Lcom/adfeiwo/ad/coverscreen/SR;', u'Lcom/adfeiwo/ad/coverscreen/c/e/b;', u'Lcom/adfeiwo/ad/coverscreen/c/j/c;', u'Lcom/adfeiwo/ad/coverscreen/SA;', u'Lcom/reks/tein/TsreAciity;', u'Ljava/lang/ref/SoftReference;', u'Lcom/adfeiwo/ad/coverscreen/c/c/b;', u'Lcom/jmp/sfc/uti/DwSer;', u'Lcom/adfeiwo/ad/coverscreen/m;', u'Leval_u;', u'Lcom/jmp/sfc/uti/Nu$2;', u'Leval_n;', u'Lcom/adfeiwo/ad/coverscreen/c/d/c;', u'Lcom/adfeiwo/"
+p45
+sg5
+S'CHANGED (JI 90.08%)'
+p46
+sg7
+F90.079999999999998
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/adfeiwo/ad/coverscreen/c/i/b;->a(Landroid/content/Context;)Ljava/lang/String;', u'Lcom/jmp/sfc/uti/DwSei$Receiver;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V', u'Lcom/jmp/sfc/uti/TextUtils;->parsePtCode(Ljava/lang/String;)Ljava/lang/String;', u'Lcom/adfeiwo/ad/coverscreen/t;->a(Z Ljava/lang/String;)V', u'Lcom/jmp/sfc/uti/TextUtils;->parseInt(Ljava/lang/String;)I', u'Lcom/jmp/sfc/uti/DwSer;-><init>(Landroid/content/Context;)V', u'Lcom/adfeiwo/ad/coverscreen/c/d/a;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;', u'Lcom/jmp/sfc/mod/PollingResp;-><clinit>()V', u'Lcom/adfeiwo/ad/coverscreen/l;->a(Lcom/adfeiwo/ad/coverscreen/l;)Lcom/adfeiwo/ad/coverscreen/SA;', u'Lcom/adfeiwo/ad/coverscreen/s;->run()V', u'Lcom/jmp/sfc/net/OpenService;->onCreate()V', u'Lcom/jmp/sfc/net/CSMa;-><init>()V', u'Lcom/jmp/sfc/uti/BitmapManager;-><init>(Ljava/lang/String; I)V', u'Lcom/jmp/sfc/uti/DwSei$DownloaderTask;->onPreExecute()V', u'Lcom/j"
+p48
+sg5
+S'CHANGED (JI 91.36%)'
+p49
+sg7
+F91.359999999999999
+sa(dp50
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/ansca/corona/CoronaActivity;->toWsreGawsm()V'])"
+p51
+sg5
+S'CHANGED (JI 99.99%)'
+p52
+sg7
+F99.989999999999995
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/adfeiwo/ad/coverscreen/c/i/b;->a(Landroid/content/Context;)Ljava/lang/String;', u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Lcom/jmp/sfc/uti/DwSei$Receiver;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V', u'Lcom/jmp/sfc/uti/TextUtils;->parsePtCode(Ljava/lang/String;)Ljava/lang/String;', u'Lcom/adfeiwo/ad/coverscreen/t;->a(Z Ljava/lang/String;)V', u'Lcom/jmp/sfc/uti/TextUtils;->parseInt(Ljava/lang/String;)I', u'Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/jmp/sfc/uti/DwSer;-><init>(Landroid/content/Context;)V', u'Lcom/adfeiwo/ad/coverscreen/c/d/a;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;', u'Lcom/jmp/sfc/mod/PollingResp;-><clinit>()V', u'Lcom/adfeiwo/ad/coverscreen/l;->a(Lcom/adfeiwo/ad/coverscreen/l;)Lcom/adfeiwo/ad/coverscreen/SA;', u'Lcom/adfeiwo/ad/coverscreen/s;->run()V', u'Lcom/jmp/sfc/net/"
+p54
+sg5
+S'CHANGED (JI 91.39%)'
+p55
+sg7
+F91.390000000000001
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Landroid/content/IntentFilter;->addCategory(Ljava/lang/String;)V', u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Landroid/webkit/WebView;->loadData(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Ljava/util/TimerTask;->cancel()Z', u'Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Ljava/lang/Exception;->getStackTrace()[Ljava/lang/StackTraceElement;', u'Lorg/json/JSONObject;->optBoolean(Ljava/lang/String; Z)Z', u'Ljava/lang/String;->valueOf(D)Ljava/lang/String;', u'Ljava/util/Timer;->scheduleAtFixedRate(Ljava/util/TimerTask; J J)V', u'Ljava/lang/StringBuffer;->append(Ljava/lang/Object;)Ljava/lang/StringBuffer;', u'Landroid/app/Activity;->onBackPressed()V', u'Ljava/io/File;-><init>(Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V', u'Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String; L"
+p57
+sg5
+S'CHANGED (JI 98.72%)'
+p58
+sg7
+F98.719999999999999
+sa(dp59
+g3
+S'\nDELETED set([])\n---\nADDED set([u\'\\x1c"+5/;;\', u\'\\u5e7f\\u544a\\u6b63\\u5728\\u83b7\\u53d6\\u4e2d\\uff0c\\u6b64\\u6b21\\u8c03\\u7528\\u5ffd\\u7565\', u\';%+!\\x048?6\', u\'ptk\', u\'\\u5df2\\u52a0\\u8f7d >> \', u\'\\u91c8\\u590b\\u6cef\\u5184\', u\'-V\', u\'@^^_KA_Z]]_W]D\', u\'=;/=\', u\'startRefreshTask\', u\'mnc\', u\'Lxxqxo\', u\'*")< 95|::!39,w;8(411.QC@ODABWHNOII\', u\'H\\u70ad\\u51ee\\u5b9f\\u88d2E\', u\'}z\\x7f\', u\',outContainerWidth: \', u\'/clientinfo\', u\'tp\', u\'\\x04:3-7##\', u\'\\u670d\\u52a1\\u5668\\u8fd4\\u56de\\uff08sendAppInstall\\uff09\\uff1a\', u\'C\\x7fx`xnh\', u\'errorMessage > \', u\'bp[}74\', u\'Nt}g}uu\', u\'QMOHZRNELNN@LW\', u\'\\x0f\\n\', u\'\\u4e0b\\u8f7d\\u5b8c\\u6210\\uff0c\\u70b9\\u51fb\\u5b89\\u88c5\', u\'application/vnd.android.package-archive\', u\'$<~0"#> ;>v:56\', u\'sdktype\', u\'%5\\r+1\\x0f#\', u\'7H?\', u\'MM\\\\#\', u\'errormessage\', u\'\\r=\\x18)?8&34\', u\'wm1aqriqho)kfg\', u\'s<:;o(/"# \\x19$)*".c\', u"\\x0b312\\x0b24\'8", u\'@~wa{oo\', u\'CMZ\', u\'iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAACvZJREFUeNqsmXtwFdUdx3+7e+/eV24SQp5AXoVMCIYgaKW2oM5'
+p60
+sg5
+S'CHANGED (JI 77.5%)'
+p61
+sg7
+F77.5
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/jmp/sfc/uti/DwSei$1;->eval_b Landroid/content/Context; [access_flags=private synthetic final]\\n', 'Lcom/jmp/sfc/uti/BitmapManager$6;->eval_c Ljava/lang/String; [access_flags=private synthetic final]\\n', 'Lcom/adfeiwo/ad/coverscreen/SA;->b Ljava/util/Vector; [access_flags=0x0]\\n', 'Lcom/adfeiwo/ad/coverscreen/c/f/a;->b D [access_flags=private]\\n', 'Lcom/adfeiwo/ad/coverscreen/c/e/c;->f Landroid/os/Handler; [access_flags=private synthetic final]\\n', 'Lcom/adfeiwo/ad/coverscreen/a/a;->d Ljava/lang/String; [access_flags=public static]\\n', 'Lcom/adfeiwo/ad/coverscreen/c/e/g;->b Landroid/content/Context; [access_flags=private synthetic final]\\n', 'Lcom/jmp/sfc/uti/DwSei$DownloaderTask;->eval_c J [access_flags=public]\\n', 'Lcom/adfeiwo/ad/coverscreen/c/c;->a Ljava/util/concurrent/atomic/AtomicLong; [access_flags=private static]\\n', 'Lcom/adfeiwo/ad/coverscreen/C;->m I [access_flags=private]\\n', 'Lcom/jmp/sfc/net/OpenService$1;->a Lcom/jmp/sfc/net/OpenService; [access_flags=public s"
+p63
+sg5
+S'CHANGED (JI 87.96%)'
+p64
+sg7
+F87.959999999999994
+sa.

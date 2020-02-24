@@ -9,9 +9,11 @@ import sys
 import os
 import urllib2
 import hashlib
+import cPickle
 
 reload(sys)
 sys.setdefaultencoding('utf8')
+VERSION = "0.0.1" # useful for caching
 THRESHOLD = 57
 DIFF_CHAR_LIMIT = 1000
 execution_time = datetime.now().strftime("%Y-%m-%d-%H:%M")
@@ -191,7 +193,7 @@ def download_if_not_exists(hash):
 
 
 # sys.exit(0)
-
+comparisons = []
 with open('data/common_with_groundtruth.txt') as f:
     for line in f.readlines():
         [original_apk_hash, repackaged_apk_hash,
@@ -203,51 +205,62 @@ with open('data/common_with_groundtruth.txt') as f:
         download_if_not_exists(original_apk_hash)
         download_if_not_exists(repackaged_apk_hash)
 
-        print "Running comparisons"
-        a1, d1, dx1 = androguard.misc.AnalyzeAPK(
-            "./data/apks/%s.apk" % original_apk_hash)
+        cache_filename = hashlib.sha256(bytes(original_apk_hash + repackaged_apk_hash + VERSION)).hexdigest().upper()
 
-        a2, d2, dx2 = androguard.misc.AnalyzeAPK(
-            "./data/apks/%s.apk" % repackaged_apk_hash)
+        if os.path.exists("./cache/" + cache_filename):
+            print "CACHED getting results...."
+            with open("./cache/" + cache_filename, "rb") as file:
+                comparisons = cPickle.load(file)
+        else:
+            print "Running comparisons"
+            a1, d1, dx1 = androguard.misc.AnalyzeAPK(
+                "./data/apks/%s.apk" % original_apk_hash)
+            a2, d2, dx2 = androguard.misc.AnalyzeAPK(
+                "./data/apks/%s.apk" % repackaged_apk_hash)
 
-        # COMPARISONS
-        comparisons = [
-            compare_strings(
-                a1.get_androidversion_code(), a2.get_androidversion_code()),
-            compare_strings(
-                a1.get_androidversion_name(), a2.get_androidversion_name()),
-            compare_strings(
-                a1.get_min_sdk_version(), a2.get_min_sdk_version()),
-            compare_strings(
-                a1.get_max_sdk_version(), a2.get_max_sdk_version()),
-            compare_strings(
-                a1.get_target_sdk_version(), a2.get_target_sdk_version()),
-            compare_strings(
-                a1.get_effective_target_sdk_version(), a2.get_effective_target_sdk_version()),
-            compare_lists(
-                a1.get_permissions(), a2.get_permissions()),
-            compare_strings(
-                a1.get_package(), a2.get_package()),
-            compare_strings(
-                a1.get_app_name(), a2.get_app_name()),
-            compare_lists(
-                a1.get_activities(), a2.get_activities()),
-            compare_lists(
-                a1.get_files(), a2.get_files()),
-            compare_lists(
-                a1.get_services(), a2.get_services()),
-            compare_lists(
-                a1.get_receivers(), a2.get_receivers()),
-            compare_lists(
-                dx1.classes, dx2.classes),
-            compare_methods(dx1, dx2),
-            compare_methods_common_classes(dx1, dx2),
-            compare_methods(dx1, dx2, False),
-            compare_methods_common_classes(dx1, dx2, False),
-            compare_lists(dx1.strings, dx2.strings),
-            compare_fields(dx1, dx2)
-        ]
-        '''
+            # COMPARISONS
+            comparisons = [
+                compare_strings(
+                    a1.get_androidversion_code(), a2.get_androidversion_code()),
+                compare_strings(
+                    a1.get_androidversion_name(), a2.get_androidversion_name()),
+                compare_strings(
+                    a1.get_min_sdk_version(), a2.get_min_sdk_version()),
+                compare_strings(
+                    a1.get_max_sdk_version(), a2.get_max_sdk_version()),
+                compare_strings(
+                    a1.get_target_sdk_version(), a2.get_target_sdk_version()),
+                compare_strings(
+                    a1.get_effective_target_sdk_version(), a2.get_effective_target_sdk_version()),
+                compare_lists(
+                    a1.get_permissions(), a2.get_permissions()),
+                compare_strings(
+                    a1.get_package(), a2.get_package()),
+                compare_strings(
+                    a1.get_app_name(), a2.get_app_name()),
+                compare_lists(
+                    a1.get_activities(), a2.get_activities()),
+                compare_lists(
+                    a1.get_files(), a2.get_files()),
+                compare_lists(
+                    a1.get_services(), a2.get_services()),
+                compare_lists(
+                    a1.get_receivers(), a2.get_receivers()),
+                compare_lists(
+                    dx1.classes, dx2.classes),
+                compare_methods(dx1, dx2),
+                compare_methods_common_classes(dx1, dx2),
+                compare_methods(dx1, dx2, False),
+                compare_methods_common_classes(dx1, dx2, False),
+                compare_lists(dx1.strings, dx2.strings),
+                compare_fields(dx1, dx2)
+            ]
+
+        if not os.path.exists("./cache/" + cache_filename):
+            print "CACHING...."
+            with open("./cache/" + cache_filename, "wb") as file:
+                cPickle.dump(comparisons, file)
+
         print '=============================================='
         print 'Android version code: %s' % comparisons[0]['detailed']
         print 'Android version name: %s' % comparisons[1]['detailed']
@@ -284,7 +297,7 @@ with open('data/common_with_groundtruth.txt') as f:
         print '=============================================='
         print 'Fields: %s' % comparisons[19]['detailed']
         print '========================= CURRENT ANALYSIS ========================='
-        '''
+
         analysis_rows = analysis_rows + [[chalk.blue(chalk.bold("%s" % original_apk_hash[:10]))] +
                                          map(lambda comparison: comparison['not_detailed'], comparisons) +
                                          [grnd_is_similar]]
@@ -347,7 +360,3 @@ summary_report.write(tabulate(analysis_rows, headers=analysis_header, tablefmt="
 summary_report.write(tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid"))
 summary_report.close()
 
-# print "CACHING...."
-# if not os.path.exists("./cache/analysis.bin"):
-# with open("./cache/analysis.bin", "w") as file:
-#     pickle.dump(cache, file)

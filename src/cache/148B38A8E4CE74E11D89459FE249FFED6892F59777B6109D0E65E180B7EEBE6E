@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 405021!=7'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 4.5.2!=1.0.4'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 8!=9'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: 8!=19'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 8!=19'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set(['android.permission.ACCESS_FINE_LOCATION', 'android.permission.VIBRATE', 'android.permission.RECEIVE_BOOT_COMPLETED', 'android.permission.READ_LOGS', 'android.permission.ACCESS_COARSE_LOCATION', 'android.permission.GET_TASKS', 'android.permission.CHANGE_WIFI_STATE'])\n---\nADDED set(['com.android.vending.BILLING'])"
+p24
+sg5
+S'CHANGED (JI 38.46%)'
+p25
+sg7
+F38.460000000000001
+sa(dp26
+g3
+S'DIFFERENT: com.kuxun.scliang.plane!=com.happylabs.happymall'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: \xe9\x85\xb7\xe8\xae\xaf\xe6\x9c\xba\xe7\xa5\xa8!=Happy Mall S'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.kuxun.scliang.plane.UserCenterEditContactsActivity', 'com.kuxun.scliang.plane.UserCenterContactsListActivity', 'com.kuxun.scliang.plane.UserCenterForgetPasswordActivity', 'com.kuxun.scliang.plane.CommitOrderWapPayActivity', 'com.umeng.fb.ui.FeedbackConversations', 'com.kuxun.scliang.plane.EditPassengerSelectCardTypeActivity', 'com.kuxun.scliang.plane.v2.PageMainActivity', 'com.umeng.fb.ui.FeedbackConversation', 'com.kuxun.scliang.plane.HelpBusListActivity', 'com.kuxun.scliang.plane.HelpCityWeatherActivity', 'com.kuxun.scliang.plane.SelectAirportActivity', 'com.kuxun.scliang.plane.CommitOrderEditReceiverActivity', 'com.kuxun.scliang.plane.SelectInsuranceActivity', 'com.kuxun.scliang.plane.SelectCityActivity', 'com.kuxun.scliang.plane.UserCenterSetPasswordActivity', 'com.kuxun.scliang.plane.UserCenterPassengerListActivity', 'com.kuxun.scliang.plane.FlightListSortActivity', 'com.kuxun.scliang.plane.UserGuideActivity', 'com.kuxun.scliang.plane.UserCenterLoginActivity', 'com.kuxun\n---\nADDED set(['net.metaps.sdk.WallActivity', 'net.metaps.sdk.StatusActivity', 'com.happylabs.happymall.MainActivity'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set(['res/drawable-xhdpi/plane_m_8.png', 'res/layout/plane_update_db_loading.xml', 'res/drawable-hdpi/plane_message_date_bg.9.png', 'res/layout/often_contacts_list_item.xml', 'res/drawable-hdpi/plane_fancheng_bt_press.png', 'res/layout/plane_view_main_tab_center.xml', 'res/drawable/plane_btn_select.xml', 'res/layout/plane_help_bus_detail.xml', 'res/drawable-hdpi/plane_m_3_s.png', 'res/drawable/plane_pull_ref_pb.xml', 'res/drawable-xxhdpi/plane_status_msg.9.png', 'res/anim/plane_next_activity_open_enter.xml', 'res/drawable-hdpi/plane_m_4_s.png', 'res/anim/plane_move_to_right.xml', 'res/anim/plane_tab_selector_move_to_right.xml', 'res/drawable-xxhdpi/plane_baozhang_info.png', 'res/drawable-hdpi/plane_calendar_icon.png', 'res/drawable-xxhdpi/plane_guarantee.png', 'res/drawable-hdpi/start_buy.png', 'res/layout/plane_flight_detail_activity.xml', 'res/drawable/umeng_fb_list_item_selector.xml', 'res/drawable-xhdpi/plane_follow_dlg_btn_ok.9.png', 'res/drawable/umeng_fb_write_pressed.png', 'res\n---\nADDED set(['assets/decorations02.png', 'res/drawable-mdpi/com_facebook_button_blue_focused.9.png', 'res/layout/com_facebook_picker_image.xml', 'assets/Default-Landscape~ipad.png', 'assets/buildings04.png', 'assets/buildings00.png', 'res/drawable-xhdpi/ic_launcher.png', 'res/drawable/com_facebook_list_section_header_background.9.png', 'res/drawable-hdpi/com_facebook_picker_magnifier.png', 'assets/bg_floor.png', 'res/drawable-hdpi/com_facebook_logo.png', 'assets/indonesian.bin', 'res/drawable/com_facebook_button_check.xml', 'res/layout/com_facebook_picker_list_section_header.xml', 'res/drawable/com_facebook_picker_list_pressed.9.png', 'assets/char_head_01_half.png', 'res/drawable/com_facebook_picker_list_selector.xml', 'res/drawable-xhdpi/com_facebook_inverse_icon.png', 'assets/buildings02_half.png', 'res/drawable/com_facebook_profile_default_icon.png', 'res/layout/com_facebook_picker_title_bar.xml', 'res/drawable/com_facebook_button_blue_pressed.9.png', 'res/drawable-xhdpi/com_facebook_button"
+p36
+sg5
+S'CHANGED (JI 0.51%)'
+p37
+sg7
+F0.51000000000000001
+sa(dp38
+g3
+S"\nDELETED set(['com.scliang.services.download.DownloadService', 'com.kuxun.scliang.plane.model.SyncService', 'com.kuxun.scliang.plane.model.QueryHelper', 'com.umeng.common.net.DownloadingService', 'com.kuxun.app.services.push.PushService', 'com.baidu.location.f'])\n---\nADDED set([])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set(['com.kuxun.app.services.push.PushReceiver', 'com.kuxun.app.services.apkpackage.CheckApkRunReceiver', 'com.kuxun.app.services.push.BootCompletedReceiver', 'com.kuxun.scliang.plane.AppRegister', 'com.kuxun.app.services.apkpackage.ApkPackageReceiver', 'com.kuxun.app.services.apkpackage.ForceUpdateReceiver'])\n---\nADDED set(['com.happylabs.util.NotificationsManager'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Lcom/google/gson/Streams$AppendableWriter;', u'Lcom/kuxun/scliang/plane/view/TabContentCenterView$handler360$1;', u'Lproguard/classfile/constant/MethodTypeConstant;', u'Lcom/kuxun/scliang/plane/BaseContactsReceiverManagerActivity$5;', u'Lcom/kuxun/scliang/plane/bean/Weather;', u'Lcom/google/gson/stream/MalformedJsonException;', u'Lproguard/io/ManifestRewriter$SplitLineReader;', u'Lproguard/classfile/Member;', u'Lcom/kuxun/scliang/plane/BaseReceiverListActivity;', u'Lcom/google/gson/DefaultTypeAdapters$NumberTypeAdapter;', u'Lcom/kuxun/scliang/plane/MainActivity$7;', u'Lcom/kuxun/liandongyoushi/LDYSPayActivity$12;', u'Lcom/kuxun/scliang/plane/view/TabContentCenterView$handler360;', u'Ljava/util/jar/JarOutputStream;', u'Lcom/kuxun/scliang/plane/SelectAirportActivity$9$2;', u'Landroid/support/v4/content/IntentCompat$IntentCompatImplHC;', u'Lcom/kuxun/scliang/plane/BaseEditPassengerActivity$4$4;', u'Lproguard/classfile/instruction/visitor/AllInstructionVisitor;', u'Ljunit/framework/\n---\nADDED set([u'Lcom/google/tagmanager/TagManager$ContainerOpenException;', u'Lcom/google/tagmanager/ResourceUtil$1;', u'Lcom/google/tagmanager/proto/MutableResource;', u'Lcom/parse/ParseCommand$4;', u'Lcom/metaps/c$6;', u'Lcom/directtap/q;', u'Lcom/google/tagmanager/proto/Resource$ResourceWithMetadata$1;', u'Lcom/parse/twitter/Twitter$1$1$1;', u'Lcom/google/analytics/containertag/proto/Serving$Resource;', u'Lcom/parse/ParseObject$20;', u'Lcom/happylabs/billing_util/Inventory;', u'Lcom/facebook/widget/PickerFragment$4;', u'Lcom/facebook/TestSession$FqlResponse;', u'Lcom/google/tagmanager/ContainerOpener$3;', u'Lcom/directtap/m$2;', u'Lcom/parse/ParseQuery$11;', u'Lcom/google/tagmanager/protobuf/ByteString$Output;', u'Lcom/google/analytics/tracking/android/GAThread$4;', u'Lcom/facebook/internal/PlatformServiceClient$1;', u'Lcom/facebook/widget/PickerFragment$OnDoneButtonClickedListener;', u'Lcom/parse/ParseUser$2;', u'Lcom/google/analytics/containertag/proto/Debug$MacroEvaluationInfo$Builder;', "
+p45
+sg5
+S'CHANGED (JI 12.58%)'
+p46
+sg7
+F12.58
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/baidu/location/LocationClient;->a(I)V', u'Lcom/alipay/api/internal/mapping/Reader;->getObject(Ljava/lang/Object; Ljava/lang/Class;)Ljava/lang/Object;', u'Lproguard/classfile/attribute/visitor/NonEmptyAttributeFilter;->visitSignatureAttribute(Lproguard/classfile/Clazz; Lproguard/classfile/Method; Lproguard/classfile/attribute/SignatureAttribute;)V', u'Lcom/google/gson/JsonPrimitive;-><init>(Ljava/lang/Boolean;)V', u'Lcom/umeng/fb/c;->onClick(Landroid/view/View;)V', u'Lcom/tencent/mm/sdk/plugin/MMPluginOAuth$Receiver;-><init>()V', u'Lcom/kuxun/scliang/plane/CommitOrderActivity;->access$202(Lcom/kuxun/scliang/plane/CommitOrderActivity; I)I', u'Lcom/kuxun/scliang/plane/MessageCenterActivity;->onQueryStart(Ljava/lang/String;)V', u'Lcom/tencent/mm/sdk/platformtools/LocaleUtil;->isLanguageSupported(Ljava/lang/String;)Z', u'Lcom/umeng/common/net/p;->a(Ljava/io/File;)V', u'Lproguard/obfuscate/MultiMappingProcessor;-><init>([Lproguard/obfuscate/MappingProcessor;)V', u'Lcom/kuxun/scli\n---\nADDED set([u'Lcom/directtap/b;->a(Ljava/lang/String; Ljava/lang/String; Ljava/util/List; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;', u'Lcom/parse/RefreshCallback;-><init>()V', u'Lcom/facebook/model/GraphObject$Factory$GraphObjectListImpl;->put(I Ljava/lang/Object;)V', u'Lcom/parse/ParseAddUniqueOperation;-><init>(Ljava/util/Collection;)V', u'Lcom/happylabs/billing_util/Base64;->encode([B)Ljava/lang/String;', u'Lcom/facebook/widget/WebDialog;->setUpWebView(I)V', u'Lcom/google/tagmanager/protobuf/UnmodifiableLazyStringList$1;->nextIndex()I', u'Lcom/parse/ParseObject$11;->then(Lcom/parse/Task;)Ljava/lang/Object;', u'Lcom/facebook/Session$Builder;-><init>(Landroid/content/Context;)V', u'Lcom/happylabs/util/ParseManager;->FetchFile(Ljava/lang/String;)V', u'Lcom/google/tagmanager/proto/Resource$ResourceWithMetadata;-><init>(Lcom/google/tagmanager/protobuf/GeneratedMessageLite$Builder; Lcom/google/tagmanager/proto/Resource$1;)V', u'Lcom/google/analytics/containertag/proto/Serving$Con"
+p48
+sg5
+S'CHANGED (JI 7.12%)'
+p49
+sg7
+F7.1200000000000001
+sa(dp50
+g3
+S"\nDELETED set([u'Landroid/support/v4/app/Fragment;->setIndex(I Landroid/support/v4/app/Fragment;)V', u'Landroid/support/v4/content/IntentCompat;->makeRestartActivityTask(Landroid/content/ComponentName;)Landroid/content/Intent;', u'Landroid/support/v4/widget/SearchViewCompat;->setQueryHint(Landroid/view/View; Ljava/lang/CharSequence;)V', u'Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatImpl;->setQueryRefinementEnabled(Landroid/view/View; Z)V', u'Landroid/support/v4/view/ViewCompat$ViewCompatImpl;->setLabelFor(Landroid/view/View; I)V', u'Landroid/support/v4/view/ViewCompat$ViewCompatImpl;->performAccessibilityAction(Landroid/view/View; I Landroid/os/Bundle;)Z', u'Landroid/support/v4/app/Fragment;->performLowMemory()V', u'Landroid/support/v4/view/ViewCompat$ViewCompatImpl;->getLayerType(Landroid/view/View;)I', u'Landroid/support/v4/view/ViewCompat$JBViewCompatImpl;->performAccessibilityAction(Landroid/view/View; I Landroid/os/Bundle;)Z', u'Landroid/support/v4/view/ViewPager;->access$30\n---\nADDED set([u'Landroid/support/v4/app/NotificationCompat$Builder;->setLargeIcon(Landroid/graphics/Bitmap;)Landroid/support/v4/app/NotificationCompat$Builder;', u'Landroid/support/v4/app/FragmentState;->instantiate(Landroid/support/v4/app/FragmentActivity;)Landroid/support/v4/app/Fragment;', u'Landroid/support/v4/view/ViewPager;->completeScroll()V', u'Landroid/support/v4/app/NotificationCompat$Builder;->setSound(Landroid/net/Uri;)Landroid/support/v4/app/NotificationCompat$Builder;', u'Landroid/support/v4/app/NotificationCompat$Builder;->setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;', u'Landroid/support/v4/app/Fragment;->restoreViewState()V', u'Landroid/support/v4/app/LoaderManagerImpl;-><init>(Landroid/support/v4/app/FragmentActivity; Z)V', u'Landroid/support/v4/app/FragmentActivity;->getLoaderManager(I Z Z)Landroid/support/v4/app/LoaderManagerImpl;', u'Landroid/support/v4/app/FragmentActivity;->invalidateSupportFragmentIndex(I)V', u'Landroid/support/v4/view/ViewPager;->ac"
+p51
+sg5
+S'CHANGED (JI 92.86%)'
+p52
+sg7
+F92.859999999999999
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/baidu/location/LocationClient;->a(I)V', u'Lcom/alipay/api/internal/mapping/Reader;->getObject(Ljava/lang/Object; Ljava/lang/Class;)Ljava/lang/Object;', u'Lproguard/classfile/attribute/visitor/NonEmptyAttributeFilter;->visitSignatureAttribute(Lproguard/classfile/Clazz; Lproguard/classfile/Method; Lproguard/classfile/attribute/SignatureAttribute;)V', u'Lcom/kuxun/scliang/plane/CommitOrderActivity;->access$202(Lcom/kuxun/scliang/plane/CommitOrderActivity; I)I', u'Lcom/kuxun/scliang/plane/MessageCenterActivity;->onQueryStart(Ljava/lang/String;)V', u'Lproguard/obfuscate/MultiMappingProcessor;-><init>([Lproguard/obfuscate/MappingProcessor;)V', u'Lcom/kuxun/scliang/plane/model/QueryHelper;->checkStartQueryEngine()Z', u'Lcom/kuxun/scliang/plane/UserCenterRegisterResultActivity;->finish(Landroid/view/View;)V', u'Lproguard/classfile/Clazz;->getType(I)Ljava/lang/String;', u'Lcom/kuxun/scliang/plane/view/TabContentCenterView;->access$300(Lcom/kuxun/scliang/plane/view/TabContentCenterVi\n---\nADDED set([u'Lcom/directtap/b;->a(Ljava/lang/String; Ljava/lang/String; Ljava/util/List; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;', u'Lcom/parse/RefreshCallback;-><init>()V', u'Lcom/parse/ParseAddUniqueOperation;-><init>(Ljava/util/Collection;)V', u'Lcom/happylabs/billing_util/Base64;->encode([B)Ljava/lang/String;', u'Lcom/facebook/widget/WebDialog;->setUpWebView(I)V', u'Lcom/facebook/widget/PlacePickerFragment$SearchTextWatcher;-><init>(Lcom/facebook/widget/PlacePickerFragment; Lcom/facebook/widget/PlacePickerFragment$SearchTextWatcher;)V', u'Lcom/google/tagmanager/protobuf/UnmodifiableLazyStringList$1;->nextIndex()I', u'Lcom/parse/ParseObject$11;->then(Lcom/parse/Task;)Ljava/lang/Object;', u'Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V', u'Lcom/facebook/model/GraphObject$Factory$GraphObjectListImpl;->put(I Ljava/lang/Object;)V', u'Lcom/happylabs/util/ParseManager;->FetchFile(Ljava/lang/String;)V', u'Lcom/google/tagmanager/proto/Resource$ResourceWithMetadata;"
+p54
+sg5
+S'CHANGED (JI 10.73%)'
+p55
+sg7
+F10.73
+sa(dp56
+g3
+S"\nDELETED set([u'Landroid/widget/EditText;->requestFocus()Z', u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Ljava/io/Writer;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;', u'Landroid/view/View;->post(Ljava/lang/Runnable;)Z', u'Ljava/lang/Float;->isNaN(F)Z', u'Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V', u'Landroid/webkit/WebChromeClient;->onReceivedIcon(Landroid/webkit/WebView; Landroid/graphics/Bitmap;)V', u'Landroid/location/Location;->getSpeed()F', u'Landroid/widget/TextView;->setBackgroundResource(I)V', u'Landroid/support/v4/view/ViewCompat$ViewCompatImpl;->performAccessibilityAction(Landroid/view/View; I Landroid/os/Bundle;)Z', u'Ljava/lang/Character;->charValue()C', u'Landroid/content/Intent;->getByteArrayExtra(Ljava/lang/String;)[B', u'Landroid/location/LocationManager;->addNmeaListener(Landroid/location/GpsStatus$NmeaListener;)Z', u'Ljava/io/File;-><init>(Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String;\n---\nADDED set([u'Ljava/util/List;->indexOf(Ljava/lang/Object;)I', u'Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V', u'Ljava/lang/InterruptedException;->toString()Ljava/lang/String;', u'Ljava/util/TreeMap;->clear()V', u'Ljava/util/TreeMap;->get(Ljava/lang/Object;)Ljava/lang/Object;', u'Lorg/json/JSONObject;->names()Lorg/json/JSONArray;', u'Ljava/util/TreeSet;->add(Ljava/lang/Object;)Z', u'Landroid/support/v4/app/FragmentActivity;->getLoaderManager(I Z Z)Landroid/support/v4/app/LoaderManagerImpl;', u'Ljava/lang/Character;->digit(C I)I', u'Landroid/webkit/WebSettings;->setUserAgentString(Ljava/lang/String;)V', u'Landroid/graphics/Paint;->measureText(Ljava/lang/String;)F', u'Landroid/widget/ImageView;->getTag()Ljava/lang/Object;', u'Ljava/nio/ByteBuffer;->hasArray()Z', u'Ljava/util/SortedSet;->remove(Ljava/lang/Object;)Z', u'Lorg/json/JSONA"
+p57
+sg5
+S'CHANGED (JI 71.87%)'
+p58
+sg7
+F71.870000000000005
+sa(dp59
+g3
+S'\nDELETED set([u\'req config value:\', u\'MIIDNDCCAp2gAwIBAgICLVkwDQYJKoZIhvcNAQEFBQAwPTEOMAwGA1UEBhMFQ0hJTkExKzApBgNVBAMTIkNISU5BVEVMRUNPTSBDRVJUSUZJQ0FURSBBVVRIT1JJVFkwHhcNMDEwMzIxMTA0NzEzWhcNMDMwMzIxMTA0NzEzWjBcMQswCQYDVQQGEwJDTjERMA8GA1UEChMItPPBrLXn0MUxETAPBgNVBAgTCFNoZW55YW5nMRQwEgYDVQQDEwsxOTIuMTY4LjIuMjERMA8GA1UEBxMIU2hlbnlhbmcwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMZYC7inporVKJCo0pPWdOBjADxzPRF1719G2YskDHVDEuqt6sBRWX+65dXs1AVKROKmi6jdzAQSlp7z3brsB4skHMo9sqdQgPolgZvCersKJFHgTbjjNyCoTyOjwOeRsfcqSJaiehQwPW4fLpNQW/lbvOuFrP8Tn0xWZvOunVPDAgMBAAGjggEiMIIBHjAJBgNVHRMEAjAAMEYGA1UdHwQ/MD0wO6A5oDeGNWxkYXA6Ly8yMDIuMTAzLjY1LjE4L291PWNhLG91PXN5c3RlbSxvdT1jYTEsbz1jdCxjPUNOMC8GCCsGAQUFBwEBBCMwITAfBggrBgEFBQcwAYYTLDIwMi4xMDMuNjUuMTg6OTAwMzAPBghghkgBhvhDDAQDAgEBMBIGCGCGSAGG+EMOBAYWBDI3RjkwGQYIYIZIAYb4QxAEDRYLMTkyLjE2OC4yLjIwEAYIYIZIAYb4QxEEBBYCTlQwGgYIYIZIAYb4QxkEDhYMOTe9ybfRt/7O8cb3MBkGCGCGSAGG+EMbBA0WCzE5Mi4xNjguMi4yMA8GCGCGSAGG+EMaBAMCAQMwDQYJKoZIhvcNAQEFBQADgYEAckkH/Vem5+kXPSGgkowjPwv47XXNbD0hGRMTVXm5PC2\n---\nADDED set([u\'IOException in blocking read: \', u\'EVERYONE\', u\'MEDIAPLEX_ROI\', u\'onDismiss() is called\', u\'auth.expireSession failed\', u\'basic_info\', u\'SUPPRESS_SSO\', u\'limitEventUsage\', u\'TRACK_SOCIAL\', u\'android.permission.INTERNET\', u\'Prelude displayed\', u\'Intent with no response code, assuming OK (known issue)\', u\'Prelude removed from display because called another time\', u\'ensuring push service is started\', u\' at index \', u\'6_extras\', u\'CONSTRUCT_RAW_EXCEPTION\', u\'  %s:\\t%s\\n\', u\'%s/activities\', u\'setForceLocalDispatch() queued. It will be called once initialization is complete.\', u\'Querying SKU details.\', u\'&ci\', u\'Host\', u\'CAMPAIGN_TERM_KEY\', u\' token:\', u\'JOINER\', u\'com.facebook.platform.extra.EXPIRES_SECONDS_SINCE_EPOCH\', u\'Hit too long (> 8192 bytes)--not sent\', u"\' to a number.", u\'bound to service\', u\'fb_dialog_outcome\', u\'com.google.analytics.containertag.proto.MutableDebug$ResolvedRule\', u\'_eventName\', u\'AppUID\', u\'hit_id=?\', u\'Error writing to clientId file.\', u\'Would be too big'
+p60
+sg5
+S'CHANGED (JI 6.88%)'
+p61
+sg7
+F6.8799999999999999
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/kuxun/scliang/plane/view/ViewPager$ItemInfo;->widthFactor F [access_flags=0x0]\\n', 'Lproguard/classfile/visitor/ExceptionExcludedOffsetFilter;->exceptionInfoVisitor Lproguard/classfile/attribute/visitor/ExceptionInfoVisitor; [access_flags=private final]\\n', 'Lcom/umeng/common/net/DownloadingService;->n Landroid/os/Messenger; [access_flags=final]\\n', 'Lproguard/preverify/CodePreverifier;->partialEvaluator Lproguard/optimize/evaluation/PartialEvaluator; [access_flags=private final]\\n', 'Lcom/kuxun/scliang/plane/UserCenterSetPasswordActivity$5;->this$0 Lcom/kuxun/scliang/plane/UserCenterSetPasswordActivity; [access_flags=synthetic final]\\n', 'Lproguard/ClassSpecification;->className Ljava/lang/String; [access_flags=public]\\n', 'Lcom/tencent/mm/sdk/contact/RContact;->field_nickname Ljava/lang/String; [access_flags=public]\\n', 'Lcom/kuxun/scliang/plane/refresh/PullToRefreshBase;->touchSlop I [access_flags=private]\\n', 'Lcom/kuxun/scliang/plane/SclCalendarActivity$MonthView;->year\n---\nADDED set(['Lcom/google/analytics/containertag/common/FunctionType;->ADVERTISING_TRACKING_ENABLED Lcom/google/analytics/containertag/common/FunctionType; [access_flags=public static enum final]\\n', 'Lcom/google/analytics/tracking/android/GAUsage$Field;->BLANK_38 Lcom/google/analytics/tracking/android/GAUsage$Field; [access_flags=public static enum final]\\n', 'Lcom/parse/ParseCommandCache;->log Ljava/util/logging/Logger; [access_flags=private]\\n', 'Lcom/google/tagmanager/protobuf/CodedInputStream;->bufferIsImmutable Z [access_flags=private final]\\n', 'Lcom/google/tagmanager/protobuf/LazyField;->bytes Lcom/google/tagmanager/protobuf/ByteString; [access_flags=private]\\n', 'Lcom/facebook/android/R$layout;->com_facebook_login_activity_layout I [access_flags=public static final]\\n', 'Lcom/google/analytics/containertag/proto/MutableDebug$RuleEvaluationStepInfo;->enabledFunctions_ Ljava/util/List; [access_flags=private]\\n', 'Lcom/facebook/model/GraphObject$Factory$GraphObjectListImpl;->itemType Ljav"
+p63
+sg5
+S'CHANGED (JI 4.55%)'
+p64
+sg7
+F4.5499999999999998
+sa.

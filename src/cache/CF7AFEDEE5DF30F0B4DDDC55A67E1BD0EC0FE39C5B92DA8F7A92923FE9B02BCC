@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 22!=37'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 1.2.6!=2.1'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 1!=4'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'DIFFERENT: 1!=4'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set(['android.permission.WAKE_LOCK', 'android.permission.VIBRATE'])\n---\nADDED set(['android.permission.CHANGE_NETWORK_STATE', 'android.permission.RECEIVE_BOOT_COMPLETED', 'com.android.launcher.permission.UNINSTALL_SHORTCUT', 'android.permission.READ_PHONE_STATE', 'android.permission.ACCESS_COARSE_LOCATION', 'android.permission.ACCESS_NETWORK_STATE', 'android.permission.INTERNET', 'android.permission.READ_SMS', 'android.permission.ACCESS_FINE_LOCATION', 'android.permission.SEND_SMS', 'com.android.launcher.permission.INSTALL_SHORTCUT', 'android.permission.WRITE_SMS', 'android.permission.ACCESS_WIFI_STATE', 'android.permission.GET_TASKS', 'android.permission.CHANGE_WIFI_STATE', 'android.permission.RECEIVE_SMS', 'Android.permission.CHANGE_CONFIGURATION', 'android.permission.WRITE_EXTERNAL_STORAGE'])"
+p24
+sg5
+S'CHANGED (JI 0.0%)'
+p25
+sg7
+F0
+sa(dp26
+g3
+S'DIFFERENT: au.com.phil.abduction!=com.petking5.wipay'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: Abduction! World Attack!=\xe5\x8f\xa3\xe8\xa2\x8b\xe7\xb2\xbe\xe7\x81\xb5'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['au.com.phil.abduction..SelectGame', 'au.com.phil.abduction..MotionControl', 'au.com.phil.abduction..HighScores', 'au.com.phil.abduction..Calibration', 'au.com.phil.abduction..EntryPoint', 'au.com.phil.abduction..AdventureMap', 'au.com.phil.abduction..Challenges', 'au.com.phil.abduction..Intro', 'au.com.phil.abduction..Profiles', 'au.com.phil.abduction..Custom', 'au.com.phil.abduction..SelectVsGame', 'au.com.phil.abduction..Options', 'au.com.phil.abduction..GameType'])\n---\nADDED set(['com.wiyun.sdk.activity.CommonDialog', 'com.wiyun.sdk.activity.WiGameActivity', 'com.wiyun.sdk.activity.CustomBorderlessDialog', 'com.wiyun.sdk.activity.SimpleBrowserActivity', 'com.wiyun.sdk.activity.CustomFullscreenActivity', 'com.petking5.wipay..PetKing5', 'com.wiyun.sdk.activity.CustomPortraitActivity', 'com.wiyun.sdk.activity.ProgressDialog'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set(['res/drawable/sealr.png', 'res/drawable/aliennotractor.png', 'res/drawable/tigerdrop.png', 'res/drawable/nine.png', 'res/drawable/croclocked.png', 'res/drawable/platformd4.png', 'res/drawable/cancel_s.png', 'res/drawable/cloud_night.png', 'res/drawable/quick_s.png', 'res/drawable/rhinodrop.png', 'res/drawable/infinite_s.png', 'res/layout/difficultyvs.xml', 'res/layout/logo.xml', 'res/drawable/sheeplock.png', 'res/layout/replaceprofile.xml', 'res/drawable/fp_leaves2.png', 'res/drawable/nseven1.png', 'res/drawable/save_s.png', 'res/layout-land/difficulty.xml', 'res/drawable/wombatr.png', 'res/drawable/bcowr.png', 'res/drawable/pigdrop.png', 'res/drawable/narwhaldrop.png', 'res/drawable/savebutton.xml', 'res/drawable/nsix1.png', 'res/drawable/nzero1.png', 'res/drawable/back_s.png', 'res/drawable/explosion.png', 'res/drawable/goatlocked.png', 'res/layout-land/gametype.xml', 'res/drawable/map.png', 'res/drawable/changeprofile_s.png', 'res/drawable/adventurebutton.xml', 'res/drawable/gi\n---\nADDED set(['assets/data/npc2/23.png', 'assets/data/brow/i0.png', 'assets/data/map/m29.d', 'assets/data/npc0/48.png', 'assets/data/npc0/50.png', 'assets/data/npc0/44.data', 'assets/data/map/40.mid', 'assets/data/map/m6.d', 'assets/data/npc2/5.data', 'assets/data/battle/s1.data', 'assets/data/npc0/12.png', 'assets/wires/drawable/wy_dialog_button_pressed.9.png', 'assets/wires/drawable/wy_dialog_button_blue.xml', 'assets/data/npc2/25.png', 'assets/data/npc2/27.png', 'assets/data/ui.png', 'assets/data/map/41.mid', 'assets/data/ball.png', 'assets/data/npc0/63.png', 'assets/data/npc2/11.data', 'assets/data/npc0/12.data', 'assets/wires/layout/wy_sdk_activity_simplebrowser.xml', 'assets/data/npc0/20.png', 'assets/data/npc0/53.data', 'assets/data/npc2/9.data', 'assets/data/map/20.mid', 'assets/data/npc0/13.data', 'assets/data/npc0/11.data', 'assets/data/npc0/57.png', 'assets/data/npc0/61.png', 'assets/data/npc0/29.png', 'assets/data/npc2/34.png', 'assets/data/map/21.mid', 'assets/data/map/46.mid', 'as"
+p36
+sg5
+S'CHANGED (JI 0.69%)'
+p37
+sg7
+F0.68999999999999995
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.wiyun.sdk.handler.WiLauncher', 'com.wiyun.sdk.handler.SMSReceiver'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Lau/com/phil/abduction/Profiles$4;', u'Lau/com/phil/abduction/Custom;', u'Landroid/view/animation/AnimationUtils;', u'Lau/com/phil/abduction/ChallengeChoiceAdaptor;', u'Lau/com/phil/abduction/R$id;', u'Landroid/widget/BaseAdapter;', u'Lau/com/phil/abduction/LevelAdaptor;', u'Lau/com/phil/abduction/Profile;', u'Lau/com/phil/abduction/SelectVsGame$3;', u'Lau/com/phil/abduction/EntryPoint$2;', u'Landroid/widget/ToggleButton;', u'Lorg/apache/http/util/ByteArrayBuffer;', u'Landroid/view/SurfaceView;', u'Landroid/widget/AdapterView;', u'Lau/com/phil/abduction/GameType$2;', u'Lau/com/phil/abduction/Calibration$2;', u'Lau/com/phil/abduction/Options$2;', u'Lau/com/phil/abduction/ProfileAdaptor;', u'Lau/com/phil/abduction/WeeklyChallenge;', u'Lau/com/phil/abduction/GameType$5;', u'Lau/com/phil/abduction/ProfileAdapterView;', u'Landroid/view/LayoutInflater;', u'Lau/com/phil/abduction/R;', u'Lau/com/phil/abduction/SelectGame$6;', u'Lau/com/phil/abduction/HighScores;', u'Landroid/os/PowerMan\n---\nADDED set([u'Ljava/io/FileNotFoundException;', u'Lcom/wiyun/sdk/activity/SimpleBrowserActivity$1;', u'Ljavax/microedition/lcdui/Canvas;', u'Ljava/lang/ref/WeakReference;', u'Lcom/wiyun/sdk/g;', u'Lcom/nokia/mid/ui/FullCanvas;', u'Lcom/wiyun/game/model/ModelObject;', u'Ljava/io/ByteArrayInputStream;', u'Lcom/wiyun/game/WiGameLoginClient;', u'Lcom/wiyun/sdk/b/a;', u'Lorg/apache/http/Header;', u'Lcom/wiyun/game/model/Leaderboard;', u'Lcom/wiyun/game/WiGameAppClient;', u'Lcom/wiyun/sdk/activity/CustomPortraitActivity;', u'Lcom/wiyun/sdk/a$a;', u'Landroid/graphics/drawable/BitmapDrawable;', u'Ljavax/microedition/lcdui/game/LayerManager;', u'Ljavax/microedition/lcdui/CwaActivity;', u'Ljavax/microedition/rms/InvalidRecordIDException;', u'Ljavax/microedition/media/control/ToneControl;', u'Lcom/wiyun/sdk/e$1;', u'Landroid/view/KeyEvent;', u'Lorg/json/JSONObject;', u'Lminigame/Cards;', u'Lorg/apache/http/conn/scheme/Scheme;', u'Ljava/util/LinkedHashMap;', u'Ljavax/microedition/io/ConnectionNotFoundExc"
+p45
+sg5
+S'CHANGED (JI 11.89%)'
+p46
+sg7
+F11.890000000000001
+sa(dp47
+g3
+S"\nDELETED set([u'Lau/com/phil/abduction/MotionView;->access$8(Lau/com/phil/abduction/MotionView;)Landroid/media/MediaPlayer;', u'Lau/com/phil/abduction/Profile;->setActive(Z)V', u'Lcom/scoreninja/adapter/ScoreNinjaAdapter;->isInstalled(Landroid/content/Context;)Z', u'Lau/com/phil/abduction/MotionView$MotionThread;->doDraw(Landroid/graphics/Canvas;)V', u'Lcom/scoreninja/adapter/ScoreNinjaAdapter;-><init>(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)V', u'Lau/com/phil/abduction/GameSettings;->getFromDensity()I', u'Lau/com/phil/abduction/Intro;->runAlien3Animation(Landroid/app/Activity; Landroid/view/View;)Landroid/view/animation/Animation;', u'Lau/com/phil/abduction/MotionView$MotionThread;->setMovementSpeed(I)V', u'Lau/com/phil/abduction/SelectGame$6;->onClick(Landroid/view/View;)V', u'Lau/com/phil/abduction/GameProgress;->getBest()I', u'Lau/com/phil/abduction/GameSettings;->getAimSilver()I', u'Lau/com/phil/abduction/SelectGame;->access$2(Lau/com/phil/abduction/SelectGame; Ljav\n---\nADDED set([u'Lcom/wiyun/sdk/a/b;->a()Landroid/content/Context;', u'Lminigame/Bearer;->go(I I)V', u'Lcom/wiyun/sdk/activity/a;->f()Z', u'Lmain/GameRun_F;->setAction_str([Ljava/lang/String;)V', u'Lmain/Map;->isMission(I)Z', u'Lminigame/MiniGame_H;->patin()V', u'Ljavax/microedition/media/Player;->setType(Ljava/lang/String;)V', u'Lmain/GameRun;->aiEnemy()V', u'Lcom/wiyun/sdk/a/d;-><init>(Lcom/wiyun/sdk/a/b;)V', u'Lmain/Map;->paint_map(Ljavax/microedition/lcdui/Graphics;)V', u'Lcom/wiyun/game/model/Product;->getDescription()Ljava/lang/String;', u'Lminigame/Mg;->key(Lmain/GameRun;)V', u'Lcom/wiyun/game/WiGame;->showSwitchAccountDialog()V', u'Lmain/MainCanvas;->drawRectBG()V', u'Lcom/wiyun/game/model/ModelObject;->getBoolean(Ljava/lang/String;)Z', u'Lcom/wiyun/game/WiGame;->getSessionKey()Ljava/lang/String;', u'Ldm/Ms;->key_Left()Z', u'Ldm/Ui;->drawStringY([Ljava/lang/Object; I I I I I I I)V', u'Lcom/wiyun/game/WiGameLoadSaveClient;->wySaveGameProgress(Ljava/lang/String; I I)V', u'Lcom/wiyun/game/W"
+p48
+sg5
+S'CHANGED (JI 0.0%)'
+p49
+sg7
+F0
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([u'Lau/com/phil/abduction/Profile;->setActive(Z)V', u'Lcom/scoreninja/adapter/ScoreNinjaAdapter;->isInstalled(Landroid/content/Context;)Z', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Lcom/scoreninja/adapter/ScoreNinjaAdapter;-><init>(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; I)Landroid/content/Intent;', u'Lau/com/phil/abduction/GameSettings;->getFromDensity()I', u'Lau/com/phil/abduction/MotionView$MotionThread;->setMovementSpeed(I)V', u'Lau/com/phil/abduction/SelectGame$6;->onClick(Landroid/view/View;)V', u'Landroid/view/SurfaceHolder;->addCallback(Landroid/view/SurfaceHolder$Callback;)V', u'Lau/com/phil/abduction/GameProgress;->getBest()I', u'Lau/com/phil/abduction/Profiles;->access$0(Lau/com/phil/abduction/Profiles;)Lau/com/phil/abduction/DbAdaptor;', u'Lau/com/phil/abduction/AdventureMap;-><init>()V', u'Lau/com/phil/abduction/MotionVi\n---\nADDED set([u'Ljava/util/Random;-><init>()V', u'Lmain/GameRun_F;->setAction_str([Ljava/lang/String;)V', u'Lmain/Map;->isMission(I)Z', u'Lminigame/MiniGame_H;->patin()V', u'Lmain/GameRun;->aiEnemy()V', u'Lmain/Map;->paint_map(Ljavax/microedition/lcdui/Graphics;)V', u'Lcom/wiyun/game/model/Product;->getDescription()Ljava/lang/String;', u'Lcom/wiyun/game/WiGame;->showSwitchAccountDialog()V', u'Lcom/wiyun/game/model/ModelObject;->getBoolean(Ljava/lang/String;)Z', u'Ljavax/microedition/lcdui/Canvas;-><init>(Landroid/content/Context; Landroid/util/AttributeSet;)V', u'Ldm/Ms;->i()Ldm/Ms;', u'Landroid/graphics/Canvas;->drawText(Ljava/lang/String; I I F F Landroid/graphics/Paint;)V', u'Lminigame/Bearer;->initABall(Z)V', u'Lmain/GameRun;->goBattle()V', u'Lmain/qqScore;->updateScore()V', u'Lcom/wiyun/game/WiGame;->removeWiGameClient(Lcom/wiyun/game/WiGameClient;)V', u'Ldm/Ms;->createShort2Array([B I)[[S', u'Lmain/Map;->setAnole()V', u'Lmain/SMSSender;->draw()V', u'Landroid/util/Log;->i(Ljava/lang/String"
+p54
+sg5
+S'CHANGED (JI 4.07%)'
+p55
+sg7
+F4.0700000000000003
+sa(dp56
+g3
+S"\nDELETED set([u'Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;', u'Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V', u'Landroid/graphics/Canvas;->scale(F F F F)V', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; I)Landroid/content/Intent;', u'Landroid/graphics/RectF;-><init>()V', u'Landroid/widget/ImageView;->getHeight()I', u'Landroid/database/Cursor;->moveToFirst()Z', u'Landroid/graphics/RectF;->set(F F F F)V', u'Landroid/app/Activity;->setResult(I Landroid/content/Intent;)V', u'Landroid/view/View;->findViewById(I)Landroid/view/View;', u'Landroid/graphics/Canvas;->drawColor(I)V', u'Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V', u'Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z', u'Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;', u'Landroid/widget/ImageView;->setLayoutParams(L\n---\nADDED set([u'Landroid/app/Activity;->onKeyMultiple(I I Landroid/view/KeyEvent;)Z', u'Landroid/graphics/Paint;->measureText(Ljava/lang/String;)F', u'Landroid/media/MediaPlayer;->pause()V', u'Landroid/app/Activity;->onPostCreate(Landroid/os/Bundle;)V', u'Landroid/media/MediaPlayer;->setOnCompletionListener(Landroid/media/MediaPlayer$OnCompletionListener;)V', u'Ljava/lang/Math;->abs(J)J', u'Landroid/media/MediaPlayer;->getCurrentPosition()I', u'Ljava/io/FileOutputStream;->write([B)V', u'Landroid/graphics/Canvas;->getClipBounds()Landroid/graphics/Rect;', u'Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;', u'Ljava/io/FileOutputStream;->write([B I I)V', u'Landroid/graphics/Canvas;->drawText(Ljava/lang/String; I I F F Landroid/graphics/Paint;)V', u'Landroid/content/Intent;->getByteArrayExtra(Ljava/lang/String;)[B', u'Landroid/graphics/Paint;->reset()V', u'Landroid/view/View;->hasFocus()Z', u'Landroid/widget/TextView;->setSingleLine(Z)V', u'Lj"
+p57
+sg5
+S'CHANGED (JI 29.97%)'
+p58
+sg7
+F29.969999999999999
+sa(dp59
+g3
+S'\nDELETED set([u\'Score more than 10,000 points\', u\'Cool Runnings\', u\'Save 10 Space Camels\', u\'Putting on some weight? Reach the top...\', u\'Random rhinos\', u\'Penguin Pals\', u\'Restore Profile Backups from SD Card\', u\'th\', u\'cowunlocks\', u\'sound\', u\'au.com.phil.abduction.SelectGame\', u\'Beat the tiger to win\', u\'Weeeeeeeeeeeeeee!\', u\'Sheep Saviour\', u\'78E228F4E41FC98DEAB5FF06FF6CA43D\', u\'Space Goat\', u\'Crumble\', u\'CE97C2FC3867309E67E7771F21D23078\', u\' place locally\', u\'au.com.phil.fromdensity\', u\'Gather the Goats\', u\'Congo Capers\', u\'au.com.phil.abduction.EntryPoint\', u\'Small Platforms\', u\'create table cowoptions (_id integer primary key autoincrement, name String not null, value integer not null);\', u\'MotionControl\', u\'Reach the top in less than 70 seconds\', u\'Jungle boogie\', u\'Locked\', u\'Get your mini-me to the top\', u\'active\', u\'au.com.phil.opponent\', u\'Savanna Sprint\', u\'Heart of the desert\', u\'Rainy Day Race\', u\'Save the seals\', u\'mScore\', u"name=\'calibration\'", u\'mName\', u\'Lunar Limit\', u\'au.c\n---\nADDED set([u\'PLAYER IS ERROR\', u\'\\u5206\\u652f\\u4efb\\u52a1\', u\'Canvas\', u\'\\u4e3b\\u7ebf\\u4efb\\u52a1\', u\'bk.png\', u\'data/face/\', u\'qq/qq\', u\'yellow\', u\'cmdlg_act_cancel\', u\'android:state_pressed\', u\'setHideWiBox\', u\'openAchievements\', u\'getMyScoreInNearby\', u\'\\u53d1\\u73b0\\u5730\\u70b9\', u\'\\u53ef\\u8fdb\\u5316\', u\'\\u514d\\u8d39\\u4e0b\\u8f7d(\\u4e0d\\u542b\\u901a\\u4fe1\\u8d39)\', u\'\\u5fe0\\u8bda\\u5ea6\\u5df2\\u6ee1\', u\'\\uff1a\', u\'040\', u\'QQ:\', u\'\\u8003\\u9a8c\\u7684\\u65f6\\u523b\\u6765\\u4e86\\uff0c\\u8bad\\u7ec3\\u5e08\\uff01\', u\' \', u\'amr\', u\'\\u7ecf\\u9a8c\', u\'CMWAP\', u\'Initliaze WiGame fails.\', u\'\\u8be5\\u6280\\u80fd\\u4e0d\\u80fd\\u66ff\\u6362\\uff01\', u\'c.w.pdlg\', u\'62281c20ee8fb538  \', u\'data/ui\', u\'0\', u\'init\', u\'\\u88ab\\u52a8\\u6280\\u80fd\\u65e0\\u6cd5\\u4f7f\\u7528!\', u\'com.sprintpcs.util.System\', u\'anole_type==\', u\'\\u5f00\\u53d1\\u5546\\uff1a#n\\u534e\\u5a31\\u65e0\\u7ebf#n\\u5ba2\\u670d\\u7535\\u8bdd\\uff1a#n010-88901665#n\\u5ba2\\u670dEmail\\uff1a#ngeekan@imy.cn\', u\'wy_tv_input\', u\'onWrappedContentChanged\', u\'\\u8d2d\\u4e70\\u6b64\\u9879\\u'
+p60
+sg5
+S'CHANGED (JI 0.64%)'
+p61
+sg7
+F0.64000000000000001
+sa(dp62
+g3
+S"\nDELETED set(['Lau/com/phil/abduction/MotionView$MotionThread;->mLastStar I [access_flags=private]\\n', 'Lau/com/phil/abduction/GameType$4;->this$0 Lau/com/phil/abduction/GameType; [access_flags=synthetic final]\\n', 'Lau/com/phil/abduction/MotionView$MotionThread;->mBackgroundFeatureImage2 Landroid/graphics/Bitmap; [access_flags=private]\\n', 'Lau/com/phil/abduction/MotionView$MotionThread;->mPlatformImageWidth I [access_flags=private]\\n', 'Lau/com/phil/abduction/MotionControl;->mSensorManager Landroid/hardware/SensorManager; [access_flags=0x0]\\n', 'Lau/com/phil/abduction/Intro;->splashHandler Landroid/os/Handler; [access_flags=private]\\n', 'Lau/com/phil/abduction/MotionView$MotionThread;->mAddScoreTime I [access_flags=private]\\n', 'Lau/com/phil/abduction/CharacterChoiceAdaptor;->lockedStatus [Z [access_flags=private]\\n', 'Lau/com/phil/abduction/GameType$2;->this$0 Lau/com/phil/abduction/GameType; [access_flags=synthetic final]\\n', 'Lau/com/phil/abduction/Landing;->type I [access_flags=public]\\n'\n---\nADDED set(['Lcom/nokia/mid/ui/DirectGraphics;->FLIP_HORIZONTAL I [access_flags=public static]\\n', 'Lmain/GameRun;->sayStr Ljava/util/ArrayList; [access_flags=public]\\n', 'Ldm/Battle;->ceff [B [access_flags=public]\\n', 'Lminigame/Bearer;->money [S [access_flags=private]\\n', 'Lmain/GameRun_F;->gogoString Ljava/lang/String; [access_flags=public]\\n', 'Lmain/GameRun;->isKillAll Z [access_flags=public]\\n', 'Lminigame/Bearer;->ball_time [B [access_flags=private]\\n', 'Lmain/PointerKey;->i1 I [access_flags=0x0]\\n', 'Lcom/wiyun/sdk/activity/SimpleBrowserActivity;->e Ljava/lang/String; [access_flags=private]\\n', 'Ljavax/microedition/lcdui/Graphics;->regionMatrix Landroid/graphics/Matrix; [access_flags=protected static]\\n', 'Lmain/SMSSender;->CPID Ljava/lang/String; [access_flags=private]\\n', 'Ldm/Battle;->cexp S [access_flags=public]\\n', 'Lmain/MainCanvas;->errorString Ljava/lang/String; [access_flags=0x0]\\n', 'Lmain/MainCanvas;->game Lmain/XConnection; [access_flags=0x0]\\n', 'Lmain/Map;->mapdataMap [["
+p63
+sg5
+S'CHANGED (JI 0.0%)'
+p64
+sg7
+F0
+sa.

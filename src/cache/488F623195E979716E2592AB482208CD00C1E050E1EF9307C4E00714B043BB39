@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S'EQUAL (JI 100%)'
+p24
+sg5
+S'EQUAL (JI 100%)'
+p25
+sg7
+I100
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S'EQUAL (JI 100%)'
+p33
+sg5
+S'EQUAL (JI 100%)'
+p34
+sg7
+I100
+sa(dp35
+g3
+S'EQUAL (JI 100%)'
+p36
+sg5
+S'EQUAL (JI 100%)'
+p37
+sg7
+I100
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S'EQUAL (JI 100%)'
+p42
+sg5
+S'EQUAL (JI 100%)'
+p43
+sg7
+I100
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/mmsdk/internal/CustomWebView$OnDownLoadStartListener;', u'Landroid/widget/RelativeLayout$LayoutParams;', u'Lcom/mmsdk/a/d$5;', u'Lcom/mmsdk/internal/UserObject;', u'Lcom/mmsdk/a/a$2;', u'Lcom/mmsdk/internal/CustomWebViewBackup$5;', u'Lcom/mmsdk/internal/CustomWebView$OnJsAlertListener;', u'Lorg/apache/http/message/BasicNameValuePair;', u'Lcom/mmsdk/internal/AdController$2;', u'Lcom/mmsdk/a/d$2;', u'Ljava/io/FileOutputStream;', u'Lorg/json/JSONException;', u'Lcom/mmsdk/internal/CustomWebView$8;', u'Lorg/apache/http/client/methods/HttpGet;', u'Ljava/util/LinkedHashMap;', u'Lcom/mmsdk/a/f$4;', u'Lcom/mmsdk/internal/CustomWebView;', u'Ljava/lang/Class;', u'Lcom/mmsdk/internal/CustomWebView$7;', u'Lcom/mmsdk/internal/CustomWebView$DownLoadObj;', u'Landroid/webkit/WebViewClient;', u'Lcom/mmsdk/a/d$4;', u'Lcom/mmsdk/a/a$3;', u'Lcom/mmsdk/internal/AdWebView$1;', u'Lcom/mmsdk/a/b;', u'Lcom/mmsdk/internal/TimerBannerAdController$4;', u'Lcom/mmsdk/utils/ObjectToFileUtils;', u'Lcom/mms"
+p45
+sg5
+S'CHANGED (JI 35.71%)'
+p46
+sg7
+F35.710000000000001
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/mmsdk/internal/MyLog;-><init>()V', u'Lcom/mmsdk/internal/CustomWebView;->access$0(Lcom/mmsdk/internal/CustomWebView;)Lcom/mmsdk/internal/CustomWebView$OnJsAlertListener;', u'Lcom/mmsdk/internal/AdHelper;->showAdWeb(Landroid/content/Context; Ljava/lang/String;)V', u'Lcom/mmsdk/b/b;->a(Ljava/io/File;)Ljava/lang/String;', u'Lcom/mmsdk/ads/TimerBannerAd;-><init>(Landroid/content/Context; I Lcom/mmsdk/ads/AdSize;)V', u'Lcom/mmsdk/a/d$6;-><init>(Lcom/mmsdk/a/d; Ljava/lang/String;)V', u'Lcom/mmsdk/internal/AdWebView$1;->shouldOverrideUrlLoading(Landroid/webkit/WebView; Ljava/lang/String;)Z', u'Lcom/mmsdk/internal/TimerBannerAdController;->isReady()Z', u'Lcom/mmsdk/a/d$1;->onJsAlert(Landroid/webkit/WebView; Ljava/lang/String; Ljava/lang/String; Landroid/webkit/JsResult;)Z', u'Lcom/mmsdk/a/a$3;->a(Landroid/webkit/WebView; Ljava/lang/String;)V', u'Lcom/mmsdk/a/f;->h(Lcom/mmsdk/a/f;)Z', u'Lcom/mmsdk/internal/CustomWebView;->hideScroll()V', u'Lcom/mmsdk/a/d;->a(Lcom/mmsdk/a/d; I Landro"
+p48
+sg5
+S'CHANGED (JI 21.58%)'
+p49
+sg7
+F21.579999999999998
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/mmsdk/internal/AdWebView;->setVerticalScrollBarEnabled(Z)V', u'Ljava/io/OutputStream;->write([B)V', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V', u'Lcom/mmsdk/internal/CustomWebView;->access$0(Lcom/mmsdk/internal/CustomWebView;)Lcom/mmsdk/internal/CustomWebView$OnJsAlertListener;', u'Lcom/mmsdk/b/b;->a(Ljava/io/File;)Ljava/lang/String;', u'Lcom/mmsdk/ads/TimerBannerAd;-><init>(Landroid/content/Context; I Lcom/mmsdk/ads/AdSize;)V', u'Lcom/mmsdk/a/d;->a()V', u'Lcom/mmsdk/internal/TimerBannerAdController;->isReady()Z', u'Ljava/util/List;->get(I)Ljava/lang/Object;', u'Lcom/mmsdk/a/a$3;->a(Landroid/webkit/WebView; Ljava/lang/String;)V', u'Landroid/webkit/WebSettings;->setGeolocationEnabled(Z)V', u'Lcom/mmsdk/a/d;->a(Lcom/mmsdk/a/d; I Landroid/app/Notification;)V', u'Landroid/webkit/WebSettings;->setUserAgentString(Ljava/lang/String;)V', u'Lcom/mmsdk/a/d$1;->onGeolocationPermiss"
+p54
+sg5
+S'CHANGED (JI 32.61%)'
+p55
+sg7
+F32.609999999999999
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/lang/String;->toString()Ljava/lang/String;', u'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Landroid/app/Activity;->addContentView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; [Ljava/lang/String;)Landroid/content/Intent;', u'Ljava/lang/String;-><init>(Ljava/lang/String;)V', u'Landroid/webkit/WebSettings;->setLayoutAlgorithm(Landroid/webkit/WebSettings$LayoutAlgorithm;)V', u'Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;', u'Ljava/lang/String;->valueOf(D)Ljava/lang/String;', u'Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;', u'Landroid/webkit/WebView;->onKeyDown(I Landroid/view/KeyEvent;)Z', u'Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Inte"
+p57
+sg5
+S'CHANGED (JI 82.73%)'
+p58
+sg7
+F82.730000000000004
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'  progress = ', u'ip.txt', u'onProgressChanged', u'Choose Email Client', u'SubmitDataByHttpClientAndOrdinaryWay', u'video/quicktime', u'adobject: ', u'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)', u'audio/x-mpegurl', u'Mozilla/5.0 (', u'email:', u'.conf', u'>, Has: <', u'JSInterface', u', pkgName=', u', hideTime=', u'PostUserInfoTask', u'android_id', u' : \\u4e0b\\u8f7d\\u5b8c\\u6210\\uff01', u' ', u'MimiSDK', u', isShow=', u'longitude = ', u'INTERNET permissions must be enabled in AndroidManifest.xml', u'.rar', u'tp', u'sdkinfo', u'.rc', u'?zd', u'tm', u'versionCode', u'.asf', u'device location: ', u'image/png', u', size=', u'JSONSTRING', u'audio/x-pn-realaudio', u'.doc', u'audio/x-wav', u'.bmp', u'application/x-gzip', u'Longitude', u'.js', u'>', u'\\u786e\\u5b9a', u', zoneId=', u'android.intent.extra.TEXT', u'http://weitvs.com/info.php', u'Java0', u'android.in"
+p60
+sg5
+S'CHANGED (JI 36.6%)'
+p61
+sg7
+F36.600000000000001
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/mmsdk/a/a;->d Lcom/mmsdk/ads/AdSize; [access_flags=private]\\n', 'Lcom/mmsdk/internal/AdController;->isCallRelease Z [access_flags=private bridge]\\n', 'Lcom/mmsdk/internal/TimerBannerAdController;->mAdLayout Landroid/widget/RelativeLayout; [access_flags=private]\\n', 'Lcom/mmsdk/internal/CustomWebViewBackup$DownLoadObj;->mThread Lcom/mmsdk/internal/DownloadThread; [access_flags=private]\\n', 'Lcom/mmsdk/a/d;->f Ljava/lang/String; [access_flags=private static final]\\n', 'Lcom/mmsdk/a/c;->d I [access_flags=public]\\n', 'Lcom/mmsdk/a/a;->h Lcom/mmsdk/a/b; [access_flags=private]\\n', 'Lcom/mmsdk/a/b$b;->c Lcom/mmsdk/a/b; [access_flags=private synthetic]\\n', 'Lcom/mmsdk/a/c;->f Ljava/lang/String; [access_flags=public]\\n', 'Lcom/mmsdk/internal/CustomWebView$2;->this$0 Lcom/mmsdk/internal/CustomWebView; [access_flags=synthetic final]\\n', 'Lcom/mmsdk/internal/TimerBannerAdController;->mContext Landroid/content/Context; [access_flags=private]\\n', 'Lcom/mmsdk/internal/CustomWebView$1;->thi"
+p63
+sg5
+S'CHANGED (JI 21.62%)'
+p64
+sg7
+F21.620000000000001
+sa.

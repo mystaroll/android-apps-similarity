@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 7!=3'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 1.2b!=1.1.2'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 4!=8'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'DIFFERENT: 4!=8'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set(['android.permission.ACCESS_COARSE_LOCATION'])\n---\nADDED set(['android.permission.WAKE_LOCK', 'android.permission.SEND_SMS', 'android.permission.WRITE_EXTERNAL_STORAGE', 'android.permission.ACCESS_NETWORK_STATE'])"
+p24
+sg5
+S'CHANGED (JI 28.57%)'
+p25
+sg7
+F28.57
+sa(dp26
+g3
+S'DIFFERENT: com.mrd.SG3D!=com.jzzh.runfaster'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: !3D Bubble Breaker!=\xe4\xb9\x9d\xe6\xb4\xb2\xe8\xb7\x91\xe5\xbe\x97\xe5\xbf\xab'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.scoreloop.client.android.ui.component.news.NewsListActivity', 'com.scoreloop.client.android.ui.component.challenge.ChallengeListActivity', 'com.scoreloop.client.android.ui.component.achievement.AchievementHeaderActivity', 'com.mrd.SG3D..MainAct', 'com.scoreloop.client.android.ui.LeaderboardsScreenActivity', 'com.scoreloop.client.android.ui.component.user.UserDetailListActivity', 'com.scoreloop.client.android.ui.component.score.ScoreHeaderActivity', 'com.scoreloop.client.android.ui.component.news.NewsHeaderActivity', 'com.scoreloop.client.android.ui.component.entry.EntryListActivity', 'com.scoreloop.client.android.ui.PostScoreOverlayActivity', 'com.scoreloop.client.android.ui.component.market.MarketListActivity', 'com.scoreloop.client.android.ui.component.game.GameDetailHeaderActivity', 'com.scoreloop.client.android.ui.component.achievement.AchievementListActivity', 'com.scoreloop.client.android.ui.component.challenge.ChallengeAcceptListActivity', 'com.scoreloop.client.android\n---\nADDED set(['com.jzzh.runfaster..Runfaster'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set(['res/layout/sl_tabs.xml', 'res/drawable/sl_icon_leaderboards.png', 'res/drawable-ldpi/sl_shortcut_market_default.png', 'res/drawable-hdpi/sl_checkbox_checked.png', 'res/drawable-hdpi/help.png', 'res/layout/sl_header_user.xml', 'res/drawable-ldpi/sl_shortcut_friends_default.png', 'res/drawable/sl_icon_next.png', 'res/drawable/sl_header_button_background.9.png', 'res/drawable/sl_icon_scoreloop.png', 'res/drawable-ldpi/sl_shortcut_home_active.png', 'res/drawable/sl_checkbox_checked.png', 'res/drawable-ldpi/sl_tab_active.png', 'res/drawable/sl_shortcut_market_default.png', 'res/drawable/sl_shortcut_home_default.png', 'res/drawable-hdpi/sl_icon_market.png', 'res/drawable/sl_challenge_seekbar.xml', 'res/drawable-hdpi/sl_button_add_friend.png', 'res/drawable-hdpi/sl_header_icon_user.png', 'res/drawable/sl_button_more.png', 'res/drawable/sl_icon_change_email.png', 'res/drawable-land-ldpi/sl_shortcut_highlight.png', 'res/menu/sl_options_menu.xml', 'res/drawable/sl_header_background.xml', '\n---\nADDED set(['assets/res/sound/play/male/10.mp3', 'assets/res/mall.png', 'assets/res/sound/play/funny_male/d6.mp3', 'assets/res/sound/play/funny_male/12.mp3', 'assets/res/sound/play/male/ybq.mp3', 'assets/res/sound/play/male/d8.mp3', 'assets/res/sound/play/funny_female/fj.mp3', 'assets/res/sound/play/male/d9.mp3', 'assets/res/sound/play/funny_male/13.mp3', 'assets/res/sound/system/coin_1.mp3', 'assets/res/sound/play/male/5.mp3', 'assets/res/sound/play/funny_male/d8.mp3', 'assets/res/sound/play/male/sde.mp3', 'assets/res/user_bg.png', 'assets/res/sound/play/funny_male/d10.mp3', 'assets/res/sound/play/funny_female/ld.mp3', 'res/drawable-mdpi/icon.png', 'assets/res/sound/play/funny_female/5.mp3', 'assets/res/sound/play/female/fj.mp3', 'assets/res/sound/play/female/sl.mp3', 'assets/res/sound/play/female/bj.mp3', 'assets/res/sound/play/funny_female/d11.mp3', 'assets/res/sound/play/male/8.mp3', 'assets/res/sound/play/funny_male/4.mp3', 'assets/res/CardCount.png', 'assets/res/textinput.png', 'assets/"
+p36
+sg5
+S'CHANGED (JI 1.25%)'
+p37
+sg7
+F1.25
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S"\nDELETED set(['com.admob.android.ads.analytics.InstallReceiver'])\n---\nADDED set([])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Lcom/mrd/SG3D/R$drawable;', u'Landroid/widget/ImageView;', u'Lcom/scoreloop/client/android/core/model/Device$State;', u'Landroid/widget/RelativeLayout$LayoutParams;', u'Lcom/scoreloop/client/android/ui/util/ImageDownloader$FlushedInputStream;', u'Lcom/scoreloop/client/android/core/util/Formats;', u'Lcom/scoreloop/client/android/ui/framework/PagingListAdapter;', u'Lcom/scoreloop/client/android/ui/component/challenge/ChallengeSettingsEditListItem;', u'Lcom/scoreloop/client/android/ui/util/Base64$OutputStream;', u'[Lcom/scoreloop/client/android/core/model/User$b;', u'Lcom/admob/android/ads/o;', u'Lcom/scoreloop/client/android/ui/component/challenge/ChallengeControlsListItem$OnControlObserver;', u'Lcom/scoreloop/client/android/core/controller/GameController$a;', u'[Lcom/scoreloop/client/android/core/util/SetterIntent$KeyMode;', u'Ljavax/microedition/khronos/opengles/GL11;', u'Lcom/scoreloop/client/android/core/controller/GameController;', u'Lcom/scoreloop/client/android/ui/component\n---\nADDED set([u'Lcom/alipay/NetworkManager;', u'Lorg/cocos2dx/lib/Cocos2dxEditText;', u'Landroid/text/InputFilter$LengthFilter;', u'Landroid/graphics/drawable/ColorDrawable;', u'Lorg/cocos2dx/lib/Cocos2dxGLSurfaceView$9;', u'Lcom/alipay/Payment$2$2;', u'Lorg/cocos2dx/lib/Cocos2dxGLSurfaceView$1;', u'Landroid/os/IBinder;', u'Lcom/alipay/MobileSecurePayer$2;', u'Lorg/apache/http/message/BasicNameValuePair;', u'Lcom/jiuzhouzhonghe/AndroidBridge$1$1;', u'Lorg/cocos2dx/lib/Cocos2dxTextInputWraper;', u'Lorg/cocos2dx/lib/Cocos2dxGLSurfaceView$10;', u'Lcom/alipay/Payment;', u'Lcom/jiuzhouzhonghe/AndroidBridge$2$1$1;', u'Landroid/os/Process;', u'Lcom/alipay/Payment$1;', u'Lcom/alipay/android/app/IRemoteServiceCallback$Stub$Proxy;', u'Landroid/opengl/ETC1Util;', u'Landroid/opengl/ETC1Util$ETC1Texture;', u'Lcom/alipay/Constant;', u'Lcom/alipay/FileDownloader$1;', u'Landroid/os/PowerManager$WakeLock;', u'Lcom/alipay/MobileSecurePayHelper$1;', u'Lcom/alipay/AlixDefine;', u'Lorg/cocos2dx/lib/Cocos2dxHandler$"
+p45
+sg5
+S'CHANGED (JI 8.57%)'
+p46
+sg7
+F8.5700000000000003
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/scoreloop/client/android/core/model/Session;->getUser()Lcom/scoreloop/client/android/core/model/User;', u'Lcom/scoreloop/client/android/ui/component/user/UserAddBuddyListActivity;->socialProviderControllerDidFail(Lcom/scoreloop/client/android/core/controller/SocialProviderController; Ljava/lang/Throwable;)V', u'Lcom/scoreloop/client/android/core/model/Award;->d()Ljava/lang/String;', u'Lcom/scoreloop/client/android/ui/component/profile/ProfileSettingsListActivity$RequestType;->values()[Lcom/scoreloop/client/android/ui/component/profile/ProfileSettingsListActivity$RequestType;', u'Lcom/scoreloop/client/android/ui/component/challenge/ChallengeCreateListActivity;->onRefresh(I)V', u'Lcom/scoreloop/client/android/core/controller/GameController$a;->b()Lorg/json/JSONObject;', u'Lcom/scoreloop/client/android/ui/framework/ValueStore;->getObserverMap()Ljava/util/Map;', u'Lcom/scoreloop/client/android/ui/framework/BaseActivity;->onStart()V', u'Lcom/scoreloop/client/android/ui/component\n---\nADDED set([u'Lcom/alipay/BaseHelper;->string2JSON(Ljava/lang/String; Ljava/lang/String;)Lorg/json/JSONObject;', u'Lcom/alipay/MobileSecurePayer$3;-><init>(Lcom/alipay/MobileSecurePayer; Ljava/lang/String; I Landroid/os/Handler;)V', u'Lcom/alipay/android/app/IAlixPay;->unregisterCallback(Lcom/alipay/android/app/IRemoteServiceCallback;)V', u'Lcom/alipay/Payment;->access$10(Landroid/app/ProgressDialog;)V', u'Lorg/cocos2dx/lib/Cocos2dxGLSurfaceView$6;-><init>(Lorg/cocos2dx/lib/Cocos2dxGLSurfaceView; I F F)V', u'Lorg/cocos2dx/lib/Cocos2dxLocalStorage$DBOpenHelper;-><init>(Landroid/content/Context;)V', u'Lcom/alipay/MobileSecurePayHelper;-><init>(Landroid/content/Context; I)V', u'Lorg/cocos2dx/lib/Cocos2dxLuaJavaBridge;->releaseLuaFunction(I)I', u'Lcom/alipay/android/app/IAlixPay$Stub;-><init>()V', u'Lcom/alipay/MobileSecurePayHelper$4;->onClick(Landroid/content/DialogInterface; I)V', u'Lorg/cocos2dx/lib/Cocos2dxRenderer;->handleInsertText(Ljava/lang/String;)V', u'Lorg/cocos2dx/lib/Cocos2dxHelper;"
+p48
+sg5
+S'CHANGED (JI 0.0%)'
+p49
+sg7
+F0
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([u'Landroid/widget/Toast;-><init>(Landroid/content/Context;)V', u'Lcom/scoreloop/client/android/ui/component/profile/ProfileSettingsListActivity$RequestType;->values()[Lcom/scoreloop/client/android/ui/component/profile/ProfileSettingsListActivity$RequestType;', u'Lcom/scoreloop/client/android/core/controller/GameController$a;->b()Lorg/json/JSONObject;', u'Lcom/scoreloop/client/android/ui/framework/ValueStore;->getObserverMap()Ljava/util/Map;', u'Lcom/scoreloop/client/android/ui/framework/TextButtonDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Lcom/scoreloop/client/android/ui/framework/BaseListItem;-><init>(Landroid/content/Context; Landroid/graphics/drawable/Drawable; Ljava/lang/String;)V', u'Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V', u'Lcom/scoreloop/client/android/ui/component/base/StringFormatter;->getChallengesSubTitle(Landroid/conten\n---\nADDED set([u'Lcom/alipay/BaseHelper;->string2JSON(Ljava/lang/String; Ljava/lang/String;)Lorg/json/JSONObject;', u'Landroid/widget/EditText;->requestFocus()Z', u'Lcom/alipay/android/app/IAlixPay;->unregisterCallback(Lcom/alipay/android/app/IRemoteServiceCallback;)V', u'Ljava/lang/Class;->getName()Ljava/lang/String;', u'Lcom/alipay/Payment;->access$10(Landroid/app/ProgressDialog;)V', u'Ljava/lang/StringBuilder;->indexOf(Ljava/lang/String;)I', u'Lorg/cocos2dx/lib/Cocos2dxActivity;->getContext()Landroid/content/Context;', u'Lorg/cocos2dx/lib/Cocos2dxGLSurfaceView$6;-><init>(Lorg/cocos2dx/lib/Cocos2dxGLSurfaceView; I F F)V', u'Lorg/cocos2dx/lib/Cocos2dxLocalStorage$DBOpenHelper;-><init>(Landroid/content/Context;)V', u'Landroid/database/Cursor;->close()V', u'Landroid/media/SoundPool;->play(I F F I I F)I', u'Lorg/cocos2dx/lib/Cocos2dxLocalStorage;->access$0()Ljava/lang/String;', u'Lorg/cocos2dx/lib/Cocos2dxRenderer;->handleActionMove([I [F [F)V', u'Lorg/cocos2dx/lib/Cocos2dxSound;->access$2(Lorg/co"
+p54
+sg5
+S'CHANGED (JI 3.19%)'
+p55
+sg7
+F3.1899999999999999
+sa(dp56
+g3
+S"\nDELETED set([u'Ljava/util/Set;->add(Ljava/lang/Object;)Z', u'Landroid/widget/Toast;-><init>(Landroid/content/Context;)V', u'Landroid/os/Bundle;->keySet()Ljava/util/Set;', u'Ljava/io/OutputStream;->write([B)V', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; I)Landroid/content/Intent;', u'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent; I)Landroid/content/pm/ResolveInfo;', u'Landroid/os/Bundle;->putLong(Ljava/lang/String; J)V', u'Landroid/app/AlertDialog$Builder;->setItems(I Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;', u'Landroid/os/Message;->sendToTarget()V', u'Ljava/io/FileOutputStream;->write([B)V', u'Ljava/io/IOException;-><init>(Ljava/lang/String;)V', u'Lorg/json/JSONObject;->toString(I)Ljava/lang/String;', u'Ljava/lang/Math;->round(D)J', u'Landroid/wi\n---\nADDED set([u'Landroid/widget/EditText;->requestFocus()Z', u'Lorg/json/JSONException;->printStackTrace()V', u'Landroid/graphics/Typeface;->create(Ljava/lang/String; I)Landroid/graphics/Typeface;', u'Landroid/app/ProgressDialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V', u'Ljava/lang/StringBuilder;->indexOf(Ljava/lang/String;)I', u'Ljava/lang/StringBuilder;->insert(I Ljava/lang/String;)Ljava/lang/StringBuilder;', u'Landroid/app/AlertDialog;->setButton(Ljava/lang/CharSequence; Landroid/content/DialogInterface$OnClickListener;)V', u'Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V', u'Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V', u'Ljava/io/FileInputStream;->getFD()Ljava/io/FileDescriptor;', u'Landroid/graphics/Typeface;->createFromAsset(Landroid/content/res/AssetManager; Ljava/lang/String;)Landroid/graphics/Typeface;', u'Ljava/io/FileOutputStream;->write([B I I)V', u'Landroid/widget/EditText;->onKeyDown(I Landroid/view/KeyEvent;)Z', u'Lj"
+p57
+sg5
+S'CHANGED (JI 30.83%)'
+p58
+sg7
+F30.829999999999998
+sa(dp59
+g3
+S'\nDELETED set([u\'Could not read basic animation: could not interpret keyPath(\', u\'Score mode does not match challenge mode\', u\'com.scoreloop.client.android.ui.component.news.NewsListActivity\', u\'ScoreloopUI\', u\'tried to compare Money objects of different currencies: \', u\'numberBuddies\', u\'android.permission.INTERNET\', u\'token_secret\', u\'cannot access game modes without a game\', u\'Unexpected page loaded, urlThatFinished: \', u\'userImageUrl\', u\'internal error: no _user set\', u\'@\', u\'com.scoreloop.client.android.ui.component.user.UserAddBuddyListActivity\', u\'IS_NOT\', u\'when you enable the achievement feature you also have to provide an SLAwards.bundle in the assets folder\', u\'Cannot requestFreshAd() when the AdView is not visible.  Call AdView.setVisibility(View.VISIBLE) first.\', u\'skycube.obj\', u\'this should not happen - a reject error occured while creating the challenge\', u\'AdView\\\'s "testing" XML attribute has been deprecated and will be ignored.  Please delete it from your XML layout and use Ad\n---\nADDED set([u\'incr size:\', u\'isEmulator=\', u\'net work exception,ErrorCode :\', u\'MOVE\', u\'\\u4ea4\\u6613\\u7cfb\\u7edf\\u5f02\\u5e38\\uff0c\\u8bf7\\u7a0d\\u5019\\u518d\\u8bd5\\uff01\', u\'Payment onDestroy()\', u\'6001\', u\'PAUSE COCOS2D\', u\'android.intent.action.PACKAGE_ADDED\', u\'(key TEXT PRIMARY KEY,value TEXT);\', u\'platform\', u\'assets/\', u\'POINTER_UP\', u\'MoaiFacebook onActivityResult: Calling authorize callback\', u\'MobileSecurePayer\', u\'---lock---\', u\'\\u6b63\\u5728\\u652f\\u4ed8\', u\'After Pay: \', u\'\\u652f\\u4ed8\\u5df2\\u53d6\\u6d88\', u\'/temp.apk\', u\'input_method\', u\'Cocos2dxHelper\', u\'ACTIVITY ON PAUSE\', u\'application/vnd.android.package-archive\', u\'POINTER_DOWN\', u\'&sign_type=\', u\'updateUrl\', u\'event ACTION_\', u\'\\\\n\', u\'Alipay onCreate: Initializing Payment\', u\'mCallback:\\t\', u\'playBackgroundMusic: error state\', u\'msg = \', u\'sign\', u\'DOWN\', u\'cancel\', u\'--\\u83b7\\u53d6\\u901a\\u4fe1\\u901a\\u9053--\', u\'8?\', u\'response \', u\'.ttf\', u\'android.intent.action.MAIN\', u\' to \', u\'#\', u\'Cocos2dxActivity ON CREATE\', u\'_sdk\', u\''
+p60
+sg5
+S'CHANGED (JI 1.49%)'
+p61
+sg7
+F1.49
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/scoreloop/client/android/core/model/User$Gender;->UNKNOWN Lcom/scoreloop/client/android/core/model/User$Gender; [access_flags=public static enum final]\\n', 'Lcom/admob/android/ads/InterstitialAd$Event;->SCREEN_CHANGE Lcom/admob/android/ads/InterstitialAd$Event; [access_flags=public static enum final]\\n', 'Lcom/scoreloop/client/android/core/server/Request$State;->EXECUTING Lcom/scoreloop/client/android/core/server/Request$State; [access_flags=public static enum final]\\n', 'Lcom/scoreloop/client/android/ui/component/user/UserHeaderActivity;->_canRemoveBuddy Z [access_flags=private]\\n', 'Lcom/scoreloop/client/android/ui/framework/BaseActivity;->_currentScreenValues Lcom/scoreloop/client/android/ui/framework/ValueStore; [access_flags=private]\\n', 'Lcom/scoreloop/client/android/ui/component/user/UserHeaderActivity$2;->val$user Lcom/scoreloop/client/android/core/model/User; [access_flags=private synthetic final]\\n', 'Lcom/scoreloop/client/android/core/server/Request$State;->COMPLE\n---\nADDED set(['Lcom/jiuzhouzhonghe/AndroidBridge$1$1;->this$1 Lcom/jiuzhouzhonghe/AndroidBridge$1; [access_flags=synthetic final]\\n', 'Lorg/cocos2dx/lib/Cocos2dxHandler$DialogMessage;->message Ljava/lang/String; [access_flags=public]\\n', 'Lorg/cocos2dx/lib/Cocos2dxGLSurfaceView$9;->val$yUp F [access_flags=private synthetic final]\\n', 'Lorg/cocos2dx/lib/Cocos2dxHandler$EditBoxMessage;->title Ljava/lang/String; [access_flags=public]\\n', 'Lorg/cocos2dx/lib/Cocos2dxMusic;->mCurrentPath Ljava/lang/String; [access_flags=private]\\n', 'Lorg/cocos2dx/lib/Cocos2dxEditBoxDialog;->kEditBoxInputModePhoneNumber I [access_flags=private final]\\n', 'Lcom/alipay/Payment;->mPayInfo Ljava/lang/String; [access_flags=private static]\\n', 'Lcom/alipay/FileFetch;->fileEnd J [access_flags=private]\\n', 'Lcom/jiuzhouzhonghe/AndroidBridge$1;->val$luaCallbackFunction I [access_flags=private synthetic final]\\n', 'Lcom/alipay/NetworkManager$1;->this$0 Lcom/alipay/NetworkManager; [access_flags=synthetic final]\\n', 'Lorg/cocos2"
+p63
+sg5
+S'CHANGED (JI 0.0%)'
+p64
+sg7
+F0
+sa.

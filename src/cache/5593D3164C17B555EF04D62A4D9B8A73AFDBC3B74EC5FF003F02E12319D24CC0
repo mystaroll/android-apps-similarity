@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.RECEIVE_BOOT_COMPLETED', 'android.permission.WAKE_LOCK', 'android.permission.MOUNT_UNMOUNT_FILESYSTEMS', 'android.permission.RESTART_PACKAGES'])"
+p24
+sg5
+S'CHANGED (JI 60.0%)'
+p25
+sg7
+F60
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.cdsak.ysiq.JActivity', 'com.adfeiwo.ad.coverscreen.WA', 'com.jmp.sfc.ui.DSWV', 'com.adfeiwo.ad.coverscreen.SA'])"
+p33
+sg5
+S'CHANGED (JI 42.86%)'
+p34
+sg7
+F42.859999999999999
+sa(dp35
+g3
+S"\nDELETED set(['META-INF/JEFFREY_.RSA', 'META-INF/JEFFREY_.SF', 'manifest'])\n---\nADDED set(['assets/jf_res/default_app_icon.jpg', 'META-INF/ABC_KEYS.SF', 'META-INF/ABC_KEYS.RSA', 'assets/jf_res/refresh.png', 'assets/jf_res/share.png', 'assets/jf_res/indicator_off_icon.png', 'assets/jf_res/indicator_on_icon.png', 'assets/jf_res/good.png', 'assets/jf_res/close_icon.9.png', 'assets/jf_res/phone_down.png', 'assets/jf_res/phone_up.png', 'assets/jf_res/default_sc.jpg'])"
+p36
+sg5
+S'CHANGED (JI 91.43%)'
+p37
+sg7
+F91.430000000000007
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.jmp.sfc.net.DwService', 'com.jmp.sfc.net.OpenService', 'com.cdsak.ysiq.JService'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.adfeiwo.ad.coverscreen.SR', 'com.cdsak.ysiq.JReceiver', 'com.jmp.sfc.net.OpenReceiver'])"
+p42
+sg5
+S'CHANGED (JI 25.0%)'
+p43
+sg7
+F25
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/adfeiwo/ad/coverscreen/c/i/a/a;', u'Lcom/jmp/sfc/uti/DwSei$DownloaderTask$NetState;', u'Ljava/lang/SecurityException;', u'Lcom/cdsak/ysiq/m;', u'Lcom/jmp/sfc/uti/Nu$2;', u'Lcom/adfeiwo/ad/coverscreen/E;', u'Lcom/cdsak/ysiq/h/d;', u'Lcom/jmp/sfc/uti/Nu;', u'Lcom/cdsak/ysiq/c/d;', u'Leval_v;', u'Lcom/adfeiwo/ad/coverscreen/w;', u'Landroid/graphics/drawable/shapes/RoundRectShape;', u'Lcom/cdsak/ysiq/b/e;', u'Ljava/util/Hashtable;', u'Lcom/cdsak/ysiq/JReceiver;', u'Leval_o;', u'Lcom/adfeiwo/ad/coverscreen/g;', u'Leval_g;', u'Lcom/jmp/sfc/uti/DoUt;', u'Lcom/cdsak/ysiq/f/k;', u'Leval_k;', u'Lcom/adfeiwo/ad/coverscreen/SR;', u'Lcom/cdsak/ysiq/f/c;', u'Lcom/adfeiwo/ad/coverscreen/c/e/b;', u'Lcom/adfeiwo/ad/coverscreen/c/j/c;', u'Lcom/adfeiwo/ad/coverscreen/SA;', u'Lcom/adfeiwo/ad/coverscreen/t;', u'Lcom/cdsak/ysiq/e;', u'Ljava/util/concurrent/BlockingQueue;', u'Ljava/lang/ref/SoftReference;', u'Lcom/adfeiwo/ad/coverscreen/j;', u'Lcom/cdsak/ysiq/JActivity;', u'Lcom/adfeiwo/ad/covers"
+p45
+sg5
+S'CHANGED (JI 89.1%)'
+p46
+sg7
+F89.099999999999994
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/jmp/sfc/uti/TextUtils;->parseInt(Ljava/lang/String;)I', u'Lcom/jmp/sfc/uti/DwSei$Receiver;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V', u'Lcom/adfeiwo/ad/coverscreen/t;->a(Z Ljava/lang/String;)V', u'Lcom/adfeiwo/ad/coverscreen/c/i/b;->a(Landroid/content/Context;)Ljava/lang/String;', u'Lcom/cdsak/ysiq/e/b;->a(Ljava/lang/String;)Z', u'Lcom/jmp/sfc/uti/DwSer;-><init>(Landroid/content/Context;)V', u'Lcom/jmp/sfc/mod/PollingResp;-><clinit>()V', u'Lcom/adfeiwo/ad/coverscreen/s;->run()V', u'Lcom/jmp/sfc/net/OpenService;->onCreate()V', u'Lcom/jmp/sfc/uti/DwSei$DownloaderTask;->onPreExecute()V', u'Lcom/cdsak/ysiq/a/a;->a(Ljava/lang/String;)Lcom/cdsak/ysiq/a/a;', u'Lcom/cdsak/ysiq/JActivity;->a()V', u'Lcom/cdsak/ysiq/p;-><init>(Lcom/cdsak/ysiq/JService; Lcom/cdsak/ysiq/a/a;)V', u'Lcom/cdsak/ysiq/f/a;->c(Landroid/content/Context;)Ljava/lang/String;', u'Lcom/adfeiwo/ad/coverscreen/c/j/c;->c(Ljava/lang/String; Ljava/lang/String;)[B', u'Lcom/cdsak/ysiq/e/d;->f(Ljava/"
+p48
+sg5
+S'CHANGED (JI 92.08%)'
+p49
+sg7
+F92.079999999999998
+sa(dp50
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/happylabs/happymall/MainActivity;->toGaerCawo()V'])"
+p51
+sg5
+S'CHANGED (JI 99.99%)'
+p52
+sg7
+F99.989999999999995
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/adfeiwo/ad/coverscreen/c/i/b;->a(Landroid/content/Context;)Ljava/lang/String;', u'Landroid/widget/Toast;-><init>(Landroid/content/Context;)V', u'Lcom/jmp/sfc/uti/DwSei$Receiver;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V', u'Lcom/adfeiwo/ad/coverscreen/t;->a(Z Ljava/lang/String;)V', u'Lcom/jmp/sfc/uti/TextUtils;->parseInt(Ljava/lang/String;)I', u'Lcom/cdsak/ysiq/e/b;->a(Ljava/lang/String;)Z', u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Lcom/jmp/sfc/mod/PollingResp;-><clinit>()V', u'Lcom/jmp/sfc/uti/DwSei$DownloaderTask;->onProgressUpdate([Ljava/lang/Object;)V', u'Lcom/jmp/sfc/net/OpenService;->onCreate()V', u'Lcom/jmp/sfc/uti/DwSei$DownloaderTask;->onPreExecute()V', u'Lcom/adfeiwo/ad/coverscreen/CoverAdComponent;->a(Z)V', u'Lcom/cdsak/ysiq/a/a;->a(Ljava/lang/String;)Lcom/cdsak/ysiq/a/a;', u'Lcom/cdsak/ysiq/JActivity;->a()V', u'Lcom/cdsak/ysiq/p;-><init>(Lcom/cdsak/ysiq/JService; Lcom/cdsak/ysiq/a/a;)V', u'Lcom/adfeiwo/ad/coverscreen/SA;->get"
+p54
+sg5
+S'CHANGED (JI 91.12%)'
+p55
+sg7
+F91.120000000000005
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Landroid/widget/Toast;-><init>(Landroid/content/Context;)V', u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Landroid/widget/Button;->setTextColor(I)V', u'Ljava/util/concurrent/ThreadPoolExecutor;->getQueue()Ljava/util/concurrent/BlockingQueue;', u'Landroid/telephony/TelephonyManager;->getSubscriberId()Ljava/lang/String;', u'Landroid/view/animation/Animation;->setDuration(J)V', u'Ljava/io/File;-><init>(Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String; Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;', u'Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;', u'Ljava/util/TimerTask;->cancel()Z', u'Landroid/os/Handler;->sendEmptyMessageDelayed(I J)Z', u'Ljava/util/WeakHashMap;-><init>(I)V', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; [I)Landroid/content/Intent;', u'Landroid/widget/RelativeLayout;->setId(I)V', u'Ljava/util/Collections;->synchro"
+p57
+sg5
+S'CHANGED (JI 98.96%)'
+p58
+sg7
+F98.959999999999994
+sa(dp59
+g3
+S'\nDELETED set([])\n---\nADDED set([u\'\\x1c"+5/;;\', u\'\\u5e7f\\u544a\\u6b63\\u5728\\u83b7\\u53d6\\u4e2d\\uff0c\\u6b64\\u6b21\\u8c03\\u7528\\u5ffd\\u7565\', u\';%+!\\x048?6\', u\'dist\', u\'network disconnected, change download task and update noti display\', u\'installing app report response content is: \', u\'\\u5df2\\u52a0\\u8f7d >> \', u\'receive ad fail !!!\', u\'Main Service onCreate()\', u\'Developer should set AppKey in AndroidManifest.xml,can not complete regist\', u\'daily_push_over_num\', u\'-V\', u\'@^^_KA_Z]]_W]D\', u"\\x0b312\\x0b24\'8", u\'ptk\', u\',imageHeight: \', u\'mnc\', u\'Lxxqxo\', u\'*")< 95|::!39,w;8(411.QC@ODABWHNOII\', u\'regist info not complete ,maybe the phone imei or imsi get fail,stop regist\', u\'HSUPA\', u\'H\\u70ad\\u51ee\\u5b9f\\u88d2E\', u\'uvw{\', u\'ver\', u\',outContainerWidth: \', u\'] \\u7684\\u652f\\u6301\\uff01\', u\'/clientinfo\', u\'regist success !!!\', u\'tp\', u\'EVDO_0\', u\'\\x04:3-7##\', u\'metadata: channel - not defined in manifest\', u\'error result: \', u\'\\u6253\\u5f00\', u\'\\u91cf\\u590e\\u6cec\\u5189\', u\'\\u670d\\u52a1\\u5668\\u8fd4\\u56de\\uff08sendAppInstall\\u'
+p60
+sg5
+S'CHANGED (JI 83.59%)'
+p61
+sg7
+F83.590000000000003
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/adfeiwo/ad/coverscreen/c/f/a;->b D [access_flags=private]\\n', 'Lcom/adfeiwo/ad/coverscreen/c/e/g;->b Landroid/content/Context; [access_flags=private synthetic final]\\n', 'Lcom/cdsak/ysiq/p;->a Lcom/cdsak/ysiq/JService; [access_flags=synthetic final]\\n', 'Lcom/jmp/sfc/uti/DwSei$DownloaderTask;->eval_c J [access_flags=public]\\n', 'Lcom/jmp/sfc/uti/Resu$1;->a Lcom/jmp/sfc/uti/Resu; [access_flags=public synthetic final]\\n', 'Lcom/adfeiwo/ad/coverscreen/w;->b Ljava/lang/String; [access_flags=private synthetic final]\\n', 'Lcom/adfeiwo/ad/coverscreen/s;->c Lcom/adfeiwo/ad/coverscreen/b/a; [access_flags=private synthetic final]\\n', 'Lcom/cdsak/ysiq/n;->a Lcom/cdsak/ysiq/JService; [access_flags=synthetic final]\\n', 'Lcom/jmp/sfc/mod/DwBean;->eval_c I [access_flags=private synthetic]\\n', 'Lcom/jmp/sfc/uti/BitmapManager$5;->eval_b Landroid/widget/ImageView; [access_flags=private synthetic final]\\n', 'Lcom/cdsak/ysiq/b/h;->b Ljava/lang/String; [access_flags=private synthetic final]\\n', "
+p63
+sg5
+S'CHANGED (JI 88.14%)'
+p64
+sg7
+F88.140000000000001
+sa.

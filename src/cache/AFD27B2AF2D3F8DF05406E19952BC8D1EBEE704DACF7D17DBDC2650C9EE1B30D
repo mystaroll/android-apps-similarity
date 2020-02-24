@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.SYSTEM_ALERT_WINDOW', 'android.permission.WAKE_LOCK'])"
+p24
+sg5
+S'CHANGED (JI 75.0%)'
+p25
+sg7
+F75
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'DIFFERENT: Glint!=\xe9\x97\xaa\xe7\x83\x81\xe6\xb6\x88\xe9\x99\xa4'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.fivefeiwo.coverscreen.SA', 'com.bodys.sh.Bjbwa', 'com.fivefeiwo.coverscreen.WA'])"
+p33
+sg5
+S'CHANGED (JI 62.5%)'
+p34
+sg7
+F62.5
+sa(dp35
+g3
+S"\nDELETED set([])\n---\nADDED set(['assets/wknb'])"
+p36
+sg5
+S'CHANGED (JI 99.64%)'
+p37
+sg7
+F99.640000000000001
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.bodys.sh.Bjbws'])"
+p39
+sg5
+S'CHANGED (JI 50.0%)'
+p40
+sg7
+F50
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.bodys.sh.Bjbwr', 'com.fivefeiwo.coverscreen.SR'])"
+p42
+sg5
+S'CHANGED (JI 33.33%)'
+p43
+sg7
+F33.329999999999998
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/fivefeiwo/coverscreen/K;', u'Lcom/fivefeiwo/coverscreen/an;', u'Lcom/bodys/sh/c;', u'Lcom/fivefeiwo/coverscreen/Z;', u'Landroid/graphics/drawable/shapes/RoundRectShape;', u'Lcom/fivefeiwo/coverscreen/m;', u'Lcom/fivefeiwo/coverscreen/C;', u'Lcom/fivefeiwo/coverscreen/j;', u'Lcom/fivefeiwo/coverscreen/S;', u'Lcom/fivefeiwo/coverscreen/af;', u'Lcom/fivefeiwo/coverscreen/b;', u'Lcom/fivefeiwo/coverscreen/u;', u'Ljava/lang/ref/SoftReference;', u'Lcom/fivefeiwo/coverscreen/J;', u'Lcom/fivefeiwo/coverscreen/ap;', u'Lcom/fivefeiwo/coverscreen/w;', u'Lcom/fivefeiwo/coverscreen/ao;', u'Lcom/fivefeiwo/coverscreen/l;', u'Lcom/fivefeiwo/coverscreen/B;', u'Lcom/fivefeiwo/coverscreen/U;', u'Landroid/widget/RemoteViews;', u'Lcom/fivefeiwo/coverscreen/R;', u'Lcom/fivefeiwo/coverscreen/e;', u'Ljava/util/zip/ZipInputStream;', u'Lcom/bodys/sh/d;', u'Lcom/fivefeiwo/coverscreen/ag;', u'Lcom/fivefeiwo/coverscreen/t;', u'Lcom/bodys/sh/m;', u'Landroid/net/Proxy;', u'Lcom/fivefeiwo/coverscreen/aq;'"
+p45
+sg5
+S'CHANGED (JI 93.57%)'
+p46
+sg7
+F93.569999999999993
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/fivefeiwo/coverscreen/K;->a(Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/bodys/sh/e;->a(Landroid/content/Context; Ljava/lang/String;)Lcom/bodys/sh/e;', u'Lcom/fivefeiwo/coverscreen/s;->f()V', u'Lcom/bodys/sh/h;-><init>()V', u'Lcom/fivefeiwo/coverscreen/q;-><init>(Lcom/fivefeiwo/coverscreen/SR; Landroid/content/Intent; Landroid/content/Context;)V', u'Lcom/fivefeiwo/coverscreen/Y;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;', u'Lcom/fivefeiwo/coverscreen/CPManager;->c()V', u'Lcom/fivefeiwo/coverscreen/ac;->c()Lcom/fivefeiwo/coverscreen/ac;', u'Lcom/fivefeiwo/coverscreen/aj;->a(Landroid/content/Context; Ljava/lang/String;)Landroid/graphics/Bitmap;', u'Lcom/fivefeiwo/coverscreen/ae;->a(I)V', u'Lcom/fivefeiwo/coverscreen/ap;->b(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/fivefeiwo/coverscreen/a;->e()Landroid/content/Context;', u'Lcom/fivefeiwo/coverscreen/ag;->c(Landroid/content/Conte"
+p48
+sg5
+S'CHANGED (JI 95.18%)'
+p49
+sg7
+F95.180000000000007
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/fivefeiwo/coverscreen/K;->a(Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/bodys/sh/e;->a(Landroid/content/Context; Ljava/lang/String;)Lcom/bodys/sh/e;', u'Lcom/fivefeiwo/coverscreen/s;->f()V', u'Lcom/bodys/sh/h;-><init>()V', u'Lcom/fivefeiwo/coverscreen/ac;->c()Lcom/fivefeiwo/coverscreen/ac;', u'Lcom/fivefeiwo/coverscreen/ap;->b(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/util/Base64InputStream;-><init>(Ljava/io/InputStream; I)V', u'Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String; Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;', u'Lcom/fivefeiwo/coverscreen/SA;->getApplicationContext()Landroid/content/Context;', u'Lcom/fivefeiwo/coverscreen/SA;-><init>()V', u'Lcom/fivefeiwo/coverscreen/A;->onDown(Landroid/view/MotionEvent;)Z', u'Lcom/fivefeiwo/coverscreen/g;-><init>(Lcom/fivefeiwo/coverscreen/a; Ljava/lang/String;)V', u'Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I', u'Lc"
+p54
+sg5
+S'CHANGED (JI 94.94%)'
+p55
+sg7
+F94.939999999999998
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/lang/Exception;->getStackTrace()[Ljava/lang/StackTraceElement;', u'Landroid/widget/ViewFlipper;->setOutAnimation(Landroid/view/animation/Animation;)V', u'Landroid/widget/LinearLayout;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V', u'Lorg/json/JSONObject;->optBoolean(Ljava/lang/String; Z)Z', u'Landroid/view/animation/Animation;->setDuration(J)V', u'Landroid/net/wifi/WifiInfo;->getBSSID()Ljava/lang/String;', u'Ljava/lang/StringBuffer;->append(Ljava/lang/Object;)Ljava/lang/StringBuffer;', u'Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V', u'Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String; Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;', u'Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z', u'Ljava/net/URL;->openConnection(Ljava/net/Proxy;)Ljava/net/URLConnection;', u'Landroid/widget/ImageView;->getId()I', u'Landroid/telephony/TelephonyManager;->getNetworkOperator()Ljava/lang/String;'"
+p57
+sg5
+S'CHANGED (JI 99.23%)'
+p58
+sg7
+F99.230000000000004
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'\\u63d0\\u793a_feiwocp', u'\\u4e0b\\u8f7d\\u5931\\u8d25_feiwocp', u'screenOnSwitchDelay_feiwocp', u'\\u5df2\\u52a0\\u8f7d >> _feiwocp', u'V1_feiwocp', u', screenOnSwitchDelay: ', u'MOBILE_feiwocp', u'DES_feiwocp', u'\\u786e\\u5b9a\\u4e0b\\u8f7d _feiwocp', u' \\u53ef\\u5230\\u901a\\u77e5\\u680f\\u67e5\\u770b_feiwocp', u'\\nG_error Exception > ', u',imageHeight: ', u'name_feiwocp', u'PackageInfoManager_feiwocp', u'screenNoShowRate_feiwocp', u', totalSize: ', u'IOException: _feiwocp', u'apppackage_feiwocp', u'\\u670d\\u52a1\\u5668\\u8fd4\\u56de\\uff08sendShowRequest\\uff09\\uff1a', u'request failed: ', u'packnames_feiwocp', u'initParam: [rate: ', u'id_feiwocp', u'text/html_feiwocp', u'iVBORw0KGgoAAAANSUhEUgAAAIsAAAA0CAYAAAC6hctfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAF7NJREFUeNrsXQt4lNWZfv+ZzGRyn4RMEkIukxtBriMolopksEWhiMXWXdfWRyKWtvusRUq7a7erpKRuW7s1CqXbZ9uFAqVaFSVAXUvBkFQKCoIJyD2QyZVcSDK5Tm6Tf7/vnLmGXNF1Hx/ne57/mct//vOf8533e7/L+SdRlE0fgmQKHc/TsdD1PiABYaml4wgd3xtcO6NWIbBk04ejSoopRjEZAX1QQEUBkdI3ALX"
+p60
+sg5
+S'CHANGED (JI 92.0%)'
+p61
+sg7
+F92
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/fivefeiwo/coverscreen/O;->c [B [access_flags=private static final]\\n', 'Lcom/fivefeiwo/coverscreen/Q;->e I [access_flags=private]\\n', 'Lcom/fivefeiwo/coverscreen/Q;->q Ljava/lang/String; [access_flags=private]\\n', 'Lcom/fivefeiwo/coverscreen/O;->a [C [access_flags=private static final]\\n', 'Lcom/fivefeiwo/coverscreen/Q;->h Ljava/lang/String; [access_flags=private]\\n', 'Lcom/fivefeiwo/coverscreen/S;->p Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/fivefeiwo/coverscreen/U;->c Ljava/lang/String; [access_flags=0x0]\\n', 'Lcom/fivefeiwo/coverscreen/SA;->e Ljava/util/List; [access_flags=private]\\n', 'Lcom/bodys/sh/c;->m Ljava/lang/String; [access_flags=public static]\\n', 'Lcom/fivefeiwo/coverscreen/s;->b Ljava/util/List; [access_flags=0x0]\\n', 'Lcom/fivefeiwo/coverscreen/SA;->c Lcom/fivefeiwo/coverscreen/s; [access_flags=private]\\n', 'Lcom/bodys/sh/c;->c Ljava/lang/String; [access_flags=public static]\\n', 'Lcom/fivefeiwo/coverscreen/a;->b Z [access_flags=0x0]\\n', "
+p63
+sg5
+S'CHANGED (JI 91.96%)'
+p64
+sg7
+F91.959999999999994
+sa.

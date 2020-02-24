@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.WAKE_LOCK', 'android.permission.ACCESS_COARSE_LOCATION'])"
+p24
+sg5
+S'CHANGED (JI 50.0%)'
+p25
+sg7
+F50
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.gameneeti.game.premiumleague.mobi.vserv.android.service.VservServiceManager', 'com.gameneeti.game.premiumleague.mobi.vserv.org.ormma.view.OrmmaActionHandler', 'com.gameneeti.game.premiumleague.mobi.vserv.android.ads.VservAdManager', 'com.gameneeti.game.premiumleague.mobi.vserv.org.ormma.view.Browser'])"
+p33
+sg5
+S'CHANGED (JI 83.33%)'
+p34
+sg7
+F83.329999999999998
+sa(dp35
+g3
+S"\nDELETED set([u'META-INF/CERT.SF', u'META-INF/CERT.RSA'])\n---\nADDED set([u'res/drawable/vserv_browser_refresh.png', u'res/drawable-xhdpi/vserv_progress.png', u'res/drawable/vserv_rotate_to_landscape.png', u'res/drawable-xhdpi/vserv_close_advertisement.png', u'mobi/vserv/android/js/vserv_ormmaReady_A-AN-2.0.1.js', u'res/drawable-ldpi-v11/vserv_progress.png', u'mobi/vserv/android/js/ormma_bridge_A-AN-2.0.1.js', u'res/drawable-hdpi-v11/vserv_progress.png', u'res/drawable/vserv_browser_bkgrnd.png', u'res/drawable/vserv_browser_unrightarrow.png', u'res/drawable/vserv_browser_rightarrow.png', u'res/drawable-mdpi/vserv_progress.png', u'res/drawable-mdpi-v9/vserv_progress.png', u'res/drawable-mdpi/vserv_close_advertisement.png', u'res/drawable-ldpi-v9/vserv_progress.png', u'res/drawable-hdpi/vserv_close_advertisement.png', u'res/layout/vserv_web_layout.xml', u'mobi/vserv/android/js/ormma_A-AN-2.0.1.js', u'res/drawable-hdpi/vserv_progress.png', u'res/drawable-mdpi-v11/vserv_progress.png', u'res/drawable/vserv_rotate_to_portrait.png', u'res/layout/vserv_dialog_l"
+p36
+sg5
+S'CHANGED (JI 92.68%)'
+p37
+sg7
+F92.680000000000007
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S'EQUAL (JI 100%)'
+p42
+sg5
+S'EQUAL (JI 100%)'
+p43
+sg7
+I100
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lorg/xmlpull/v1/XmlPullParser;', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/android/downloader/NotificationCompat$b;', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/org/ormma/view/OrmmaActionHandler;', u'Landroid/graphics/drawable/ColorDrawable;', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/android/ads/VservAd;', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/android/ads/N;', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/org/ormma/view/m;', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/org/ormma/controller/d;', u'Landroid/net/NetworkInfo$State;', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/org/ormma/controller/util/OrmmaPlayerListener;', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/android/ads/v;', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/org/ormma/view/c;', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/android/downloader/NotificationCompat;', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/org/ormma/controller/f;', u'Lcom/gameneeti/game/premiumleague/mobi/v"
+p45
+sg5
+S'CHANGED (JI 93.68%)'
+p46
+sg7
+F93.680000000000007
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/gameneeti/game/premiumleague/MenuPage;->access$8(Lcom/gameneeti/game/premiumleague/MenuPage;)Lorg/anddev/andengine/entity/sprite/Sprite;', u'Lcom/gameneeti/game/premiumleague/Bowlling;->access$199(Lcom/gameneeti/game/premiumleague/Bowlling; Lorg/anddev/andengine/opengl/texture/atlas/bitmap/BitmapTextureAtlas;)V', u'Lcom/gameneeti/game/premiumleague/Game;->access$107(Lcom/gameneeti/game/premiumleague/Game;)Lorg/anddev/andengine/opengl/texture/region/TextureRegion;', u'Lcom/gameneeti/game/premiumleague/Game;->access$63(Lcom/gameneeti/game/premiumleague/Game;)Lorg/anddev/andengine/entity/sprite/AnimatedSprite;', u'Lcom/gameneeti/game/premiumleague/Bowlling;->access$14(Lcom/gameneeti/game/premiumleague/Bowlling;)V', u'Lcom/gameneeti/game/premiumleague/Game;->access$39(Lcom/gameneeti/game/premiumleague/Game;)Z', u'Lcom/gameneeti/game/premiumleague/SelectTeam;->access$94(Lcom/gameneeti/game/premiumleague/SelectTeam; Lorg/anddev/andengine/entity/text/ChangeableText;)V', u'Lcom/gam\n---\nADDED set([u'Lcom/gameneeti/game/premiumleague/Game;->access$89(Lcom/gameneeti/game/premiumleague/Game;)Lorg/anddev/andengine/entity/text/ChangeableText;', u'Lcom/gameneeti/game/premiumleague/Game;->access$46(Lcom/gameneeti/game/premiumleague/Game;)V', u'Lcom/gameneeti/game/premiumleague/Toss;->access$11(Lcom/gameneeti/game/premiumleague/Toss;)Lorg/anddev/andengine/opengl/texture/region/TextureRegion;', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/android/ads/VservInstallReceiver;-><init>()V', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/org/ormma/controller/util/OrmmaConfigurationBroadcastReceiver;-><init>(Lcom/gameneeti/game/premiumleague/mobi/vserv/org/ormma/controller/OrmmaDisplayController;)V', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/org/ormma/controller/OrmmaAssetController;->deleteOldAds()V', u'Lcom/gameneeti/game/premiumleague/Game;->access$85(Lcom/gameneeti/game/premiumleague/Game;)Lorg/anddev/andengine/opengl/texture/region/TextureRegion;', u'Lcom/gameneeti/game/premiuml"
+p48
+sg5
+S'CHANGED (JI 90.66%)'
+p49
+sg7
+F90.659999999999997
+sa(dp50
+g3
+S"\nDELETED set([u'Lcom/gameneeti/game/premiumleague/MenuPage;->access$8(Lcom/gameneeti/game/premiumleague/MenuPage;)Lorg/anddev/andengine/entity/sprite/Sprite;', u'Lcom/gameneeti/game/premiumleague/Bowlling;->access$199(Lcom/gameneeti/game/premiumleague/Bowlling; Lorg/anddev/andengine/opengl/texture/atlas/bitmap/BitmapTextureAtlas;)V', u'Lcom/gameneeti/game/premiumleague/Game;->access$107(Lcom/gameneeti/game/premiumleague/Game;)Lorg/anddev/andengine/opengl/texture/region/TextureRegion;', u'Lcom/gameneeti/game/premiumleague/Game;->access$63(Lcom/gameneeti/game/premiumleague/Game;)Lorg/anddev/andengine/entity/sprite/AnimatedSprite;', u'Lcom/gameneeti/game/premiumleague/Bowlling;->access$14(Lcom/gameneeti/game/premiumleague/Bowlling;)V', u'Lcom/gameneeti/game/premiumleague/Game;->access$39(Lcom/gameneeti/game/premiumleague/Game;)Z', u'Lcom/gameneeti/game/premiumleague/SelectTeam;->access$94(Lcom/gameneeti/game/premiumleague/SelectTeam; Lorg/anddev/andengine/entity/text/ChangeableText;)V', u'Lcom/gam\n---\nADDED set([u'Lcom/gameneeti/game/premiumleague/Toss;->access$32(Lcom/gameneeti/game/premiumleague/Toss; Z)V', u'Lcom/gameneeti/game/premiumleague/SeriesResult;->access$1(Lcom/gameneeti/game/premiumleague/SeriesResult;)Lcom/google/ads/AdView;', u'Lcom/gameneeti/game/premiumleague/Game;->access$89(Lcom/gameneeti/game/premiumleague/Game;)Lorg/anddev/andengine/entity/text/ChangeableText;', u'Lcom/gameneeti/game/premiumleague/Bowlling;->access$163(Lcom/gameneeti/game/premiumleague/Bowlling; Lorg/anddev/andengine/entity/sprite/AnimatedSprite;)V', u'Lcom/gameneeti/game/premiumleague/Game;->access$46(Lcom/gameneeti/game/premiumleague/Game;)V', u'Lcom/gameneeti/game/premiumleague/Toss;->access$11(Lcom/gameneeti/game/premiumleague/Toss;)Lorg/anddev/andengine/opengl/texture/region/TextureRegion;', u'Lcom/gameneeti/game/premiumleague/Bowlling;->access$144(Lcom/gameneeti/game/premiumleague/Bowlling; Lorg/anddev/andengine/entity/sprite/Sprite;)V', u'Lcom/gameneeti/game/premiumleague/Toss;->access$52(Lcom/"
+p51
+sg5
+S'CHANGED (JI 95.58%)'
+p52
+sg7
+F95.579999999999998
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/gameneeti/game/premiumleague/MenuPage;->access$8(Lcom/gameneeti/game/premiumleague/MenuPage;)Lorg/anddev/andengine/entity/sprite/Sprite;', u'Lcom/gameneeti/game/premiumleague/Bowlling;->access$199(Lcom/gameneeti/game/premiumleague/Bowlling; Lorg/anddev/andengine/opengl/texture/atlas/bitmap/BitmapTextureAtlas;)V', u'Lcom/gameneeti/game/premiumleague/Game;->access$107(Lcom/gameneeti/game/premiumleague/Game;)Lorg/anddev/andengine/opengl/texture/region/TextureRegion;', u'Lcom/gameneeti/game/premiumleague/Game;->access$63(Lcom/gameneeti/game/premiumleague/Game;)Lorg/anddev/andengine/entity/sprite/AnimatedSprite;', u'Lcom/gameneeti/game/premiumleague/Bowlling;->access$14(Lcom/gameneeti/game/premiumleague/Bowlling;)V', u'Lcom/gameneeti/game/premiumleague/Game;->access$39(Lcom/gameneeti/game/premiumleague/Game;)Z', u'Lcom/gameneeti/game/premiumleague/SelectTeam;->access$94(Lcom/gameneeti/game/premiumleague/SelectTeam; Lorg/anddev/andengine/entity/text/ChangeableText;)V', u'Lcom/gam\n---\nADDED set([u'Lorg/xmlpull/v1/XmlPullParserFactory;->newInstance()Lorg/xmlpull/v1/XmlPullParserFactory;', u'Lorg/xmlpull/v1/XmlPullParserFactory;->setNamespaceAware(Z)V', u'Lcom/gameneeti/game/premiumleague/Game;->access$89(Lcom/gameneeti/game/premiumleague/Game;)Lorg/anddev/andengine/entity/text/ChangeableText;', u'Lcom/gameneeti/game/premiumleague/Game;->access$46(Lcom/gameneeti/game/premiumleague/Game;)V', u'Lcom/gameneeti/game/premiumleague/Toss;->access$11(Lcom/gameneeti/game/premiumleague/Toss;)Lorg/anddev/andengine/opengl/texture/region/TextureRegion;', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/android/ads/VservInstallReceiver;-><init>()V', u'Landroid/content/ContentProviderOperation;->newInsert(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;', u'Lcom/gameneeti/game/premiumleague/mobi/vserv/org/ormma/controller/util/OrmmaConfigurationBroadcastReceiver;-><init>(Lcom/gameneeti/game/premiumleague/mobi/vserv/org/ormma/controller/OrmmaDisplayController;)V', u'Lcom/"
+p54
+sg5
+S'CHANGED (JI 90.93%)'
+p55
+sg7
+F90.930000000000007
+sa(dp56
+g3
+S"\nDELETED set([u'Lcom/gameneeti/game/premiumleague/MenuPage;->access$8(Lcom/gameneeti/game/premiumleague/MenuPage;)Lorg/anddev/andengine/entity/sprite/Sprite;', u'Lcom/gameneeti/game/premiumleague/Bowlling;->access$199(Lcom/gameneeti/game/premiumleague/Bowlling; Lorg/anddev/andengine/opengl/texture/atlas/bitmap/BitmapTextureAtlas;)V', u'Lcom/gameneeti/game/premiumleague/Game;->access$107(Lcom/gameneeti/game/premiumleague/Game;)Lorg/anddev/andengine/opengl/texture/region/TextureRegion;', u'Lcom/gameneeti/game/premiumleague/Game;->access$63(Lcom/gameneeti/game/premiumleague/Game;)Lorg/anddev/andengine/entity/sprite/AnimatedSprite;', u'Lcom/gameneeti/game/premiumleague/Bowlling;->access$14(Lcom/gameneeti/game/premiumleague/Bowlling;)V', u'Lcom/gameneeti/game/premiumleague/Game;->access$39(Lcom/gameneeti/game/premiumleague/Game;)Z', u'Lcom/gameneeti/game/premiumleague/SelectTeam;->access$94(Lcom/gameneeti/game/premiumleague/SelectTeam; Lorg/anddev/andengine/entity/text/ChangeableText;)V', u'Lcom/gam\n---\nADDED set([u'Lcom/gameneeti/game/premiumleague/Toss;->access$32(Lcom/gameneeti/game/premiumleague/Toss; Z)V', u'Lcom/gameneeti/game/premiumleague/SeriesResult;->access$1(Lcom/gameneeti/game/premiumleague/SeriesResult;)Lcom/google/ads/AdView;', u'Ljava/lang/ClassLoader;->getResource(Ljava/lang/String;)Ljava/net/URL;', u'Lcom/gameneeti/game/premiumleague/Bowlling;->access$135(Lcom/gameneeti/game/premiumleague/Bowlling; Z)V', u'Lcom/gameneeti/game/premiumleague/Bowlling;->access$163(Lcom/gameneeti/game/premiumleague/Bowlling; Lorg/anddev/andengine/entity/sprite/AnimatedSprite;)V', u'Lcom/gameneeti/game/premiumleague/Game;->access$46(Lcom/gameneeti/game/premiumleague/Game;)V', u'Lcom/gameneeti/game/premiumleague/Toss;->access$11(Lcom/gameneeti/game/premiumleague/Toss;)Lorg/anddev/andengine/opengl/texture/region/TextureRegion;', u'Lcom/gameneeti/game/premiumleague/Bowlling;->access$144(Lcom/gameneeti/game/premiumleague/Bowlling; Lorg/anddev/andengine/entity/sprite/Sprite;)V', u'Ljava/util/Hashtab"
+p57
+sg5
+S'CHANGED (JI 95.82%)'
+p58
+sg7
+F95.819999999999993
+sa(dp59
+g3
+S'\nDELETED set([u\'com.gameneeti.game.premiumleague\', u\'http://www.gameneeti.com/androidinhouseads2/slidemeurl2.txt\', u\'http://www.gameneeti.com/AndroidInHouseAds/SlideMeURL.txt\'])\n---\nADDED set([u\'&tz=\', u\'{ x : "\', u\'vservPostActionNotifyUrlPref\', u\'//android_asset/js/ormma.js\', u\'window.ormmaview.fireChangeEvent({ tilt: \', u\'getAdFile.txt\', u\'<mn>\', u"<meta name=\'viewport\' content=\'user-scalable=no initial-scale=1.0\' />", u", \'audio\'", u\'Bad Phone Number\', u\'account_name\', u\'preferenceName_end\', u\'&sw=\', u\'play.google.com\', u\'mobi.vserv.ad.dismiss_screen\', u\'//android_asset/js/ormma_bridge.js\', u\'&ai=\', u\'vserv.download\', u\'&lon\', u\'X-VSERV-AD-TYPE\', u\' %\', u\'showAdOnlyAtExit\', u\'vnd.android-dir/mms-sms\', u\'&ts=\', u\'Invalid url\', u\'http://www.gameneeti.com/androidinhouseads2/googleplayurl2.txt\', u\'&ap=\', u\', screenSize: \', u\'application/vnd.android.package-archive\', u\'android.permission.READ_CONTACTS\', u\'&ce=\', u\'&sn=\', u\' });\', u\'vserv_browser_rightarrow\', u\'getAdvertisingIdInfo\', u\'gn\', u\'X-VSERV-CONTEXT\', u\'&ua=\', u\'viewMandatoryMessage\', u\'ONLY_NEXT\', u\'cell\', u\'player_properties\', u"window.ormmaview.fireChangeEvent({ state: \'default\', size: { width: ", u\'flagDataTy'
+p60
+sg5
+S'CHANGED (JI 91.79%)'
+p61
+sg7
+F91.790000000000006
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/gameneeti/game/premiumleague/mobi/vserv/org/ormma/controller/listeners/AccelListener;->c I [access_flags=private]\\n', 'Lcom/gameneeti/game/premiumleague/mobi/vserv/android/downloader/NotificationCompat$Builder;->a Landroid/content/Context; [access_flags=0x0]\\n', 'Lcom/gameneeti/game/premiumleague/mobi/vserv/android/downloader/a;->a Landroid/app/Notification$Builder; [access_flags=private]\\n', 'Lcom/gameneeti/game/premiumleague/mobi/vserv/android/ads/VservAdController;->refreshRate I [access_flags=public]\\n', 'Lcom/gameneeti/game/premiumleague/mobi/vserv/org/ormma/controller/util/TransitionStringEnum;->FADE Lcom/gameneeti/game/premiumleague/mobi/vserv/org/ormma/controller/util/TransitionStringEnum; [access_flags=public static enum final]\\n', 'Lcom/gameneeti/game/premiumleague/mobi/vserv/android/ads/VservManager;->n Lcom/gameneeti/game/premiumleague/mobi/vserv/android/ads/VservAdController; [access_flags=private]\\n', 'Lcom/gameneeti/game/premiumleague/mobi/vserv/org/ormma/cont"
+p63
+sg5
+S'CHANGED (JI 93.24%)'
+p64
+sg7
+F93.239999999999995
+sa.

@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.ACCESS_FINE_LOCATION', 'android.permission.READ_PHONE_STATE', 'android.permission.SYSTEM_OVERLAY_WINDOW', 'com.android.launcher.permission.INSTALL_SHORTCUT', 'android.permission.ACCESS_NETWORK_STATE', 'android.permission.ACCESS_COARSE_LOCATION', 'android.permission.WAKE_LOCK', 'android.permission.ACCESS_WIFI_STATE', 'android.permission.SYSTEM_ALERT_WINDOW'])"
+p24
+sg5
+S'CHANGED (JI 18.18%)'
+p25
+sg7
+F18.18
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set(['com.textualindices.refractionlite..LevelActivity', 'com.textualindices.refractionlite..Menu', 'com.textualindices.refractionlite..SolutionsOnlineActivity', 'com.textualindices.refractionlite..SolutionsActivity', 'com.textualindices.refractionlite..SolutionsDownloadsActivity', 'com.textualindices.refractionlite..Options', 'com.textualindices.refractionlite..SectorActivity', 'com.textualindices.refractionlite..Credits', 'com.textualindices.refractionlite..SolutionsLocalActivity', 'com.textualindices.refractionlite..Help', 'com.textualindices.refractionlite..LevelSelect'])\n---\nADDED set(['com.feiwo.coverscreen.WA', 'com.textualindices.refractionlite.Help', 'com.textualindices.refractionlite.SolutionsActivity', 'com.textualindices.refractionlite.SolutionsLocalActivity', 'com.textualindices.refractionlite.SectorActivity', 'com.textualindices.refractionlite.Menu', 'com.textualindices.refractionlite.SolutionsDownloadsActivity', 'com.textualindices.refractionlite.SolutionsOnlineActivity', 'com.textualindices.refractionlite.LevelSelect', 'com.textualindices.refractionlite.Credits', 'we.si.u.LCActivity', 'com.textualindices.refractionlite.LevelActivity', 'com.textualindices.refractionlite.Options', 'we.ci.t.WActivity', 'com.feiwo.coverscreen.SA'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set([])\n---\nADDED set(['projects/temp/META-INF/CERT.SF', 'projects/temp/META-INF/MANIFEST.MF', 'projects/temp/META-INF/CERT.RSA', 'assets/bin.cc', 'assets/lc/lj_cp.dat', 'assets/cncto', 'assets/l/l.dat'])"
+p36
+sg5
+S'CHANGED (JI 97.67%)'
+p37
+sg7
+F97.670000000000002
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['we.ci.t.LService'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['we.si.u.LCReceiver', 'com.feiwo.coverscreen.SR', 'we.ci.t.KReceiver'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;', u'Landroid/support/v4/widget/SearchViewCompatHoneycomb$1;', u'Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompatKitKat$1;', u'Ljava/lang/ref/WeakReference;', u'Lwe/si/u/k;', u'Lwe/ci/t/ui/l;', u'Lcom/feiwo/coverscreen/h;', u'Landroid/support/v4/widget/SlidingPaneLayout$1;', u'Landroid/support/v4/text/TextDirectionHeuristicsCompat$1;', u'Landroid/text/TextUtils;', u'Ljava/lang/reflect/Modifier;', u'Landroid/support/v4/view/MenuItemCompat$IcsMenuVersionImpl;', u'Lwe/si/u/d/e;', u'Landroid/support/v4/view/ViewPager$MyAccessibilityDelegate;', u'Ljava/io/PrintWriter;', u'Lcom/feiwo/coverscreen/a/I;', u'Landroid/support/v4/os/EnvironmentCompatKitKat;', u'Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;', u'Ljava/util/LinkedHashMap;', u'Landroid/support/v4/view/ViewGroupCompatHC;', u'Landroid/support/v4/content/IntentCompat$IntentCompatImplHC;', u'Landroid/view/GestureDetector$OnDoubleTap"
+p45
+sg5
+S'CHANGED (JI 21.31%)'
+p46
+sg7
+F21.309999999999999
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Landroid/support/v4/util/SimpleArrayMap;->toString()Ljava/lang/String;', u'Landroid/support/v4/view/MarginLayoutParamsCompatJellybeanMr1;->isMarginRelative(Landroid/view/ViewGroup$MarginLayoutParams;)Z', u'Landroid/support/v4/widget/AutoScrollHelper;->setRelativeEdges(F F)Landroid/support/v4/widget/AutoScrollHelper;', u'Landroid/support/v4/app/ListFragment;->setListShown(Z)V', u'Landroid/support/v4/app/FragmentTransaction;->commit()I', u'Lwe/si/u/a/f;->a(Lwe/si/u/a/a;)V', u'Landroid/support/v4/app/FragmentManagerImpl;->dispatchLowMemory()V', u'Lwe/si/u/ui/w;-><init>(Landroid/content/Context; Ljava/util/ArrayList;)V', u'Lcom/feiwo/coverscreen/z;->c()V', u'Landroid/support/v4/widget/ViewDragHelper;->processTouchEvent(Landroid/view/MotionEvent;)V', u'Landroid/support/v4/app/NavUtils$NavUtilsImplJB;->getParentActivityName(Landroid/content/Context; Landroid/content/pm/ActivityInfo;)Ljava/lang/String;', u'Lwe/si/u/c/h;-><init>(Ljava/lang/String;)V', u'Landroid/support/v4/app/ActivityO"
+p48
+sg5
+S'CHANGED (JI 9.54%)'
+p49
+sg7
+F9.5399999999999991
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lwe/si/u/a/f;->a(Lwe/si/u/a/a;)V', u'Landroid/support/v4/util/SimpleArrayMap;->toString()Ljava/lang/String;', u'Ljava/util/List;->indexOf(Ljava/lang/Object;)I', u'Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context; I)V', u'Landroid/support/v4/widget/AutoScrollHelper;->setRelativeEdges(F F)Landroid/support/v4/widget/AutoScrollHelper;', u'Landroid/util/SparseArray;->remove(I)V', u'Landroid/view/accessibility/AccessibilityRecord;->setToIndex(I)V', u'Landroid/support/v4/app/ListFragment;->setListShown(Z)V', u'Landroid/support/v4/util/MapCollections$KeySet;->remove(Ljava/lang/Object;)Z', u'Landroid/view/accessibility/AccessibilityManager;->addAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeListener;)Z', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Lwe/si/u/ui/w;->getScrollX()I', u'Landroid/print/pdf/PrintedPdfDocument;->close()V', u'Landroid/support/v4/app/FragmentMan"
+p54
+sg5
+S'CHANGED (JI 14.91%)'
+p55
+sg7
+F14.91
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/util/List;->indexOf(Ljava/lang/Object;)I', u'Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context; I)V', u'Landroid/content/Context;->obtainStyledAttributes(I [I)Landroid/content/res/TypedArray;', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Landroid/os/Bundle;->keySet()Ljava/util/Set;', u'Landroid/view/View;->postInvalidateOnAnimation()V', u'Ljava/util/List;->get(I)Ljava/lang/Object;', u'Ljava/io/FileInputStream;->close()V', u'Ljava/util/zip/GZIPOutputStream;->write([B)V', u'Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String; Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;', u'Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I', u'Landroid/widget/ImageView;->getTag()Ljava/lang/Object;', u'Landroid/view/View;->getResources()Landroid/content/res/Resources;', u'Ljava/io/FileOutputStream;-><init>(Ljava/io/FileDescriptor;)V', u'Landroid/widget/ListView;-><init>(Landroid/content/"
+p57
+sg5
+S'CHANGED (JI 64.44%)'
+p58
+sg7
+F64.439999999999998
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u's\\x94e', u'\\u5e7f\\u544a\\u6b63\\u5728\\u83b7\\u53d6\\u4e2d\\uff0c\\u6b64\\u6b21\\u8c03\\u7528\\u5ffd\\u7565', u'\\xd1\\xa2\\xd9\\x9e\\xaf\\x9e\\x92\\xe0\\xcd\\xda\\x95\\xe7\\xd2\\xdd_\\x9d\\\\\\xd8\\xde\\xd0\\xa3\\xcf\\xd0\\xd5\\xe1\\xd8\\xd7\\x95\\xd0\\x93\\xa4\\xe1\\xc8\\xd7\\xd2\\xdc\\xd4\\xdc\\xdd\\xcd\\\\\\xc6\\x91\\xe9\\xd8\\xd2\\xe2', u's\\x9c\\x82\\x98\\x9e\\x93\\xb9}u\\xc4\\xbd\\xc2\\x7f\\x9d\\x93rq\\xd0\\x85e', u's\\x9da\\u5388\\u5b81\\u50d6\\u7ac0\\u95fd\\u4e32\\u8e05\\uff5a\\u8c49\\u523a\\u968f\\u4e1f\\u4ea4\\u6593\\u4f53\\u4e93\\u5458\\u5199\\u91e1\\u8c31\\uff22e', u's\\u7292\\u6749\\uff41e', u's\\xb6\\x80V\\x95\\x98\\xa5l\\x95\\x80\\xb2\\xb3\\x8ee', u'\\xcc\\xa2\\xdc\\x8f\\xe5\\xa9\\xc6\\xd8\\xd0\\xd0', u'getScript', u's\\xbe\\x8c\\x9b\\x8a\\x9a\\xa5|\\x8e\\xcc\\xb3e', u' mTag=', u'failWrite: Got exception:', u',imageHeight: ', u'mnc', u'mInnerView=', u'_size', u' at index ', u'content', u' did not call through to super.onDestroyView()', u'  Ignoring load complete -- destroyed', u',outContainerWidth: ', u'Finished Retaining in ', u' index requested: ', u'/clientinfo', u'ACTION_CLEAR_FOCUS',"
+p60
+sg5
+S'CHANGED (JI 24.04%)'
+p61
+sg7
+F24.039999999999999
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/feiwo/coverscreen/a/i;->q Z [access_flags=private varargs]\\n', 'Lwe/si/u/d/b;->bJ Ljava/lang/String; [access_flags=public static final]\\n', 'Lwe/si/u/c/h;->b Ljava/util/Map; [access_flags=private]\\n', 'Lcom/feiwo/coverscreen/a/c;->a Lcom/feiwo/coverscreen/a/c; [access_flags=private static]\\n', 'Landroid/support/v4/app/Fragment;->mContainer Landroid/view/ViewGroup; [access_flags=0x0]\\n', 'Landroid/support/v4/app/ActionBarDrawerToggleHoneycomb$SetIndicatorInfo;->upIndicatorView Landroid/widget/ImageView; [access_flags=public]\\n', 'Landroid/support/v4/app/LoaderManagerImpl;->mWho Ljava/lang/String; [access_flags=final]\\n', 'Lwe/ci/t/ui/a;->k Landroid/widget/LinearLayout; [access_flags=private]\\n', 'Lwe/si/u/b/k;->b Ljava/lang/String; [access_flags=public]\\n', 'Lcom/feiwo/coverscreen/n;->b Lcom/feiwo/coverscreen/a/i; [access_flags=private synthetic final]\\n', 'Landroid/support/v4/util/AtomicFile;->mBaseName Ljava/io/File; [access_flags=private final]\\n', 'Landroid/support/v4/app"
+p63
+sg5
+S'CHANGED (JI 20.22%)'
+p64
+sg7
+F20.219999999999999
+sa.

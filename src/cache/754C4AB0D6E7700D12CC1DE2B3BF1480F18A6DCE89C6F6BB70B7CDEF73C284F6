@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S'EQUAL (JI 100%)'
+p24
+sg5
+S'EQUAL (JI 100%)'
+p25
+sg7
+I100
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S'EQUAL (JI 100%)'
+p33
+sg5
+S'EQUAL (JI 100%)'
+p34
+sg7
+I100
+sa(dp35
+g3
+S"\nDELETED set(['META-INF/75B7B12C.SF', 'META-INF/75B7B12C.RSA'])\n---\nADDED set(['res/layout/tmp.xml', 'META-INF/CERT.SF', 'META-INF/CERT.RSA'])"
+p36
+sg5
+S'CHANGED (JI 80.77%)'
+p37
+sg7
+F80.769999999999996
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S'EQUAL (JI 100%)'
+p42
+sg5
+S'EQUAL (JI 100%)'
+p43
+sg7
+I100
+sa(dp44
+g3
+S"\nDELETED set([u'[Lcom/google/android/diskusage/FileSystemState$ZoomState;', u'[Lcom/google/android/diskusage/AppFilter$App2SD;', u'[Lcom/google/android/diskusage/NativeScanner$Type;', u'Lcom/google/android/diskusage/opengl/AbstractRenderingThread$1;'])\n---\nADDED set([u'Ljava/lang/CharSequence;'])"
+p45
+sg5
+S'CHANGED (JI 98.17%)'
+p46
+sg7
+F98.170000000000002
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/google/android/diskusage/DiskUsage$4;-><init>(Lcom/google/android/diskusage/DiskUsage; Lcom/google/android/diskusage/entity/FileSystemEntry;)V', u'Lcom/google/android/diskusage/FileSystemState;->access$1700(Lcom/google/android/diskusage/FileSystemState;)I', u'Lcom/google/android/diskusage/LoadableActivity;->access$100(Landroid/app/Activity;)V', u'Lcom/google/android/diskusage/opengl/RenderingThread;->access$100(Lcom/google/android/diskusage/opengl/RenderingThread;)Ljava/nio/FloatBuffer;', u'Lcom/google/android/diskusage/DiskUsageMenuPreCupcake;->access$000(Lcom/google/android/diskusage/DiskUsageMenuPreCupcake;)Ljava/lang/String;', u'Lcom/google/android/diskusage/delete/FileInfoAdapter;->access$000(Lcom/google/android/diskusage/delete/FileInfoAdapter; Ljava/util/ArrayList;)Z', u'Lcom/google/android/diskusage/FileSystemState$VersionedMultitouchHandler;->access$2700(Lcom/google/android/diskusage/FileSystemState;)Lcom/google/android/diskusage/FileSystemState$VersionedMultitouch\n---\nADDED set([u'Lcom/google/android/diskusage/FileSystemState;->access$16(Lcom/google/android/diskusage/FileSystemState;)J', u'Lcom/google/android/diskusage/delete/FileInfoAdapter;->access$5(Lcom/google/android/diskusage/delete/FileInfoAdapter;)I', u'Lcom/google/android/diskusage/delete/FileInfoAdapter;->access$2(Lcom/google/android/diskusage/delete/FileInfoAdapter;)Ljava/util/ArrayList;', u'Lcom/google/android/diskusage/opengl/AbstractRenderingThread;->access$2(Lcom/google/android/diskusage/opengl/AbstractRenderingThread; Z)V', u'Lcom/google/android/diskusage/FileSystemState;->access$34(Lcom/google/android/diskusage/FileSystemState;)Lcom/google/android/diskusage/Cursor;', u'Lcom/google/android/diskusage/FileSystemState;->access$4(Lcom/google/android/diskusage/FileSystemState;)F', u'Lcom/google/android/diskusage/FileSystemState;->access$20(Lcom/google/android/diskusage/FileSystemState;)I', u'Lcom/google/android/diskusage/FileSystemState;->access$38(Lcom/google/android/diskusage/FileSystemState;"
+p48
+sg5
+S'CHANGED (JI 73.67%)'
+p49
+sg7
+F73.670000000000002
+sa(dp50
+g3
+S"\nDELETED set([u'Lcom/google/android/diskusage/DiskUsage$4;-><init>(Lcom/google/android/diskusage/DiskUsage; Lcom/google/android/diskusage/entity/FileSystemEntry;)V', u'Lcom/google/android/diskusage/FileSystemState;->access$1700(Lcom/google/android/diskusage/FileSystemState;)I', u'Lcom/google/android/diskusage/LoadableActivity;->access$100(Landroid/app/Activity;)V', u'Lcom/google/android/diskusage/opengl/RenderingThread;->access$100(Lcom/google/android/diskusage/opengl/RenderingThread;)Ljava/nio/FloatBuffer;', u'Lcom/google/android/diskusage/DiskUsageMenuPreCupcake;->access$000(Lcom/google/android/diskusage/DiskUsageMenuPreCupcake;)Ljava/lang/String;', u'Lcom/google/android/diskusage/delete/FileInfoAdapter;->access$000(Lcom/google/android/diskusage/delete/FileInfoAdapter; Ljava/util/ArrayList;)Z', u'Lcom/google/android/diskusage/FileSystemState$VersionedMultitouchHandler;->access$2700(Lcom/google/android/diskusage/FileSystemState;)Lcom/google/android/diskusage/FileSystemState$VersionedMultitouch\n---\nADDED set([u'Lcom/google/android/diskusage/FileSystemState;->access$16(Lcom/google/android/diskusage/FileSystemState;)J', u'Lcom/google/android/diskusage/delete/FileInfoAdapter;->access$5(Lcom/google/android/diskusage/delete/FileInfoAdapter;)I', u'Lcom/google/android/diskusage/delete/FileInfoAdapter;->access$2(Lcom/google/android/diskusage/delete/FileInfoAdapter;)Ljava/util/ArrayList;', u'Lcom/google/android/diskusage/opengl/AbstractRenderingThread;->access$2(Lcom/google/android/diskusage/opengl/AbstractRenderingThread; Z)V', u'Lcom/google/android/diskusage/FileSystemState;->access$34(Lcom/google/android/diskusage/FileSystemState;)Lcom/google/android/diskusage/Cursor;', u'Lcom/google/android/diskusage/FileSystemState;->access$4(Lcom/google/android/diskusage/FileSystemState;)F', u'Lcom/google/android/diskusage/FileSystemState;->access$20(Lcom/google/android/diskusage/FileSystemState;)I', u'Lcom/google/android/diskusage/FileSystemState;->access$38(Lcom/google/android/diskusage/FileSystemState;"
+p51
+sg5
+S'CHANGED (JI 73.67%)'
+p52
+sg7
+F73.670000000000002
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/google/android/diskusage/DiskUsage$4;-><init>(Lcom/google/android/diskusage/DiskUsage; Lcom/google/android/diskusage/entity/FileSystemEntry;)V', u'Lcom/google/android/diskusage/FileSystemState;->access$1700(Lcom/google/android/diskusage/FileSystemState;)I', u'Lcom/google/android/diskusage/LoadableActivity;->access$100(Landroid/app/Activity;)V', u'Lcom/google/android/diskusage/FileSystemState;->access$1500(Lcom/google/android/diskusage/FileSystemState;)F', u'Lcom/google/android/diskusage/DiskUsageMenuPreCupcake;->access$000(Lcom/google/android/diskusage/DiskUsageMenuPreCupcake;)Ljava/lang/String;', u'Lcom/google/android/diskusage/delete/FileInfoAdapter;->access$000(Lcom/google/android/diskusage/delete/FileInfoAdapter; Ljava/util/ArrayList;)Z', u'Lcom/google/android/diskusage/FileSystemState$VersionedMultitouchHandler;->access$2700(Lcom/google/android/diskusage/FileSystemState;)Lcom/google/android/diskusage/FileSystemState$VersionedMultitouchHandler;', u'Lcom/google/android/d\n---\nADDED set([u'Lcom/google/android/diskusage/FileSystemState;->access$23(Lcom/google/android/diskusage/FileSystemState; F)V', u'Lcom/google/android/diskusage/FileSystemState;->access$44(Lcom/google/android/diskusage/FileSystemState;)Lcom/google/android/diskusage/entity/FileSystemEntry;', u'Lcom/google/android/diskusage/delete/FileInfoAdapter;->access$5(Lcom/google/android/diskusage/delete/FileInfoAdapter;)I', u'Lcom/google/android/diskusage/opengl/AbstractRenderingThread$ExitException;-><init>(Lcom/google/android/diskusage/opengl/AbstractRenderingThread; Lcom/google/android/diskusage/opengl/AbstractRenderingThread$ExitException;)V', u'Lcom/google/android/diskusage/opengl/AbstractRenderingThread;->access$2(Lcom/google/android/diskusage/opengl/AbstractRenderingThread; Z)V', u'Lcom/google/android/diskusage/FileSystemState;->access$34(Lcom/google/android/diskusage/FileSystemState;)Lcom/google/android/diskusage/Cursor;', u'Lcom/google/android/diskusage/FileSystemState;->access$4(Lcom/google/android"
+p54
+sg5
+S'CHANGED (JI 83.26%)'
+p55
+sg7
+F83.260000000000005
+sa(dp56
+g3
+S"\nDELETED set([u'Lcom/google/android/diskusage/DiskUsage$4;-><init>(Lcom/google/android/diskusage/DiskUsage; Lcom/google/android/diskusage/entity/FileSystemEntry;)V', u'Lcom/google/android/diskusage/FileSystemState;->access$1700(Lcom/google/android/diskusage/FileSystemState;)I', u'Lcom/google/android/diskusage/LoadableActivity;->access$100(Landroid/app/Activity;)V', u'Lcom/google/android/diskusage/FileSystemState;->access$1500(Lcom/google/android/diskusage/FileSystemState;)F', u'Lcom/google/android/diskusage/DiskUsageMenuPreCupcake;->access$000(Lcom/google/android/diskusage/DiskUsageMenuPreCupcake;)Ljava/lang/String;', u'Lcom/google/android/diskusage/delete/FileInfoAdapter;->access$000(Lcom/google/android/diskusage/delete/FileInfoAdapter; Ljava/util/ArrayList;)Z', u'Lcom/google/android/diskusage/FileSystemState$VersionedMultitouchHandler;->access$2700(Lcom/google/android/diskusage/FileSystemState;)Lcom/google/android/diskusage/FileSystemState$VersionedMultitouchHandler;', u'Lcom/google/android/d\n---\nADDED set([u'Lcom/google/android/diskusage/FileSystemState;->access$23(Lcom/google/android/diskusage/FileSystemState; F)V', u'Lcom/google/android/diskusage/FileSystemState;->access$44(Lcom/google/android/diskusage/FileSystemState;)Lcom/google/android/diskusage/entity/FileSystemEntry;', u'Lcom/google/android/diskusage/delete/FileInfoAdapter;->access$5(Lcom/google/android/diskusage/delete/FileInfoAdapter;)I', u'Lcom/google/android/diskusage/opengl/AbstractRenderingThread$ExitException;-><init>(Lcom/google/android/diskusage/opengl/AbstractRenderingThread; Lcom/google/android/diskusage/opengl/AbstractRenderingThread$ExitException;)V', u'Lcom/google/android/diskusage/opengl/AbstractRenderingThread;->access$2(Lcom/google/android/diskusage/opengl/AbstractRenderingThread; Z)V', u'Lcom/google/android/diskusage/FileSystemState;->access$34(Lcom/google/android/diskusage/FileSystemState;)Lcom/google/android/diskusage/Cursor;', u'Lcom/google/android/diskusage/FileSystemState;->access$4(Lcom/google/android"
+p57
+sg5
+S'CHANGED (JI 83.5%)'
+p58
+sg7
+F83.5
+sa(dp59
+g3
+S'EQUAL (JI 100%)'
+p60
+sg5
+S'EQUAL (JI 100%)'
+p61
+sg7
+I100
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/google/android/diskusage/FileSystemState$MainThreadActionIndirect$1;->this$0 Lcom/google/android/diskusage/FileSystemState$MainThreadActionIndirect; [access_flags=synthetic final]\\n', 'Lcom/google/android/diskusage/Apps2SDLoader$2;->val$pkg Ljava/lang/String; [access_flags=synthetic final]\\n', 'Lcom/google/android/diskusage/LoadableActivity$4;->val$activity Lcom/google/android/diskusage/LoadableActivity; [access_flags=synthetic final]\\n', 'Lcom/google/android/diskusage/LoadableActivity$2;->val$runAfterLoad Lcom/google/android/diskusage/DiskUsage$AfterLoad; [access_flags=synthetic final]\\n', 'Lcom/google/android/diskusage/Apps2SDLoader$2;->val$info Landroid/content/pm/PackageInfo; [access_flags=synthetic final]\\n', 'Lcom/google/android/diskusage/FileSystemState$MainThreadActionIndirect$1;->val$position Lcom/google/android/diskusage/entity/FileSystemEntry; [access_flags=synthetic final]\\n', 'Lcom/google/android/diskusage/FileSystemState$1;->val$newRoot Lcom/google/android/disk\n---\nADDED set(['Lcom/google/android/diskusage/Apps2SDLoader$2;->val$blockSize I [access_flags=private synthetic final]\\n', 'Lcom/google/android/diskusage/LoadableActivity$2$1;->val$state Lcom/google/android/diskusage/LoadableActivity$PersistantActivityState; [access_flags=private synthetic final]\\n', 'Lcom/google/android/diskusage/LoadableActivity$2$1;->val$newRoot Lcom/google/android/diskusage/entity/FileSystemSuperRoot; [access_flags=private synthetic final]\\n', 'Lcom/google/android/diskusage/FileSystemState$MainThreadActionIndirect$3;->this$1 Lcom/google/android/diskusage/FileSystemState$MainThreadActionIndirect; [access_flags=synthetic final]\\n', 'Lcom/google/android/diskusage/LoadableActivity$3;->val$activity Lcom/google/android/diskusage/LoadableActivity; [access_flags=private synthetic final]\\n', 'Lcom/google/android/diskusage/LoadableActivity$2$1;->val$runAfterLoad Lcom/google/android/diskusage/DiskUsage$AfterLoad; [access_flags=private synthetic final]\\n', 'Lcom/google/android/diskusage"
+p63
+sg5
+S'CHANGED (JI 81.99%)'
+p64
+sg7
+F81.989999999999995
+sa.

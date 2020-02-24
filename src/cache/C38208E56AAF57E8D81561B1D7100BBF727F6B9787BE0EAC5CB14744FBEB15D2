@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 2!=11140106'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 1.0!=1.0.6'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 3!=15'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'DIFFERENT: 3!=15'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.READ_EXTERNAL_STORAGE', 'android.permission.ACCESS_NETWORK_STATE', 'android.permission.WAKE_LOCK', 'android.permission.ACCESS_WIFI_STATE', 'android.permission.INTERNET', 'com.android.vending.CHECK_LICENSE', 'android.permission.WRITE_EXTERNAL_STORAGE', 'android.permission.GET_ACCOUNTS'])"
+p24
+sg5
+S'CHANGED (JI 0.0%)'
+p25
+sg7
+F0
+sa(dp26
+g3
+S'DIFFERENT: com.ChatEmotionForeng2!=uk.co.revolution.bs5'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: ChatEmotionEng!=Broken Sword 5'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.ChatEmotionForeng2.face01', 'com.ChatEmotionForeng2.emo01', 'com.ChatEmotionForeng2.intro', 'com.ChatEmotionForeng2.lastmain', 'com.ChatEmotionForeng2.etcmain', 'com.ChatEmotionForeng2.ChatEmotionEng', 'com.ChatEmotionForeng2.emomain', 'com.ChatEmotionForeng2.etc03', 'com.ChatEmotionForeng2.etc02', 'com.ChatEmotionForeng2.etc01', 'com.ChatEmotionForeng2.facemain', 'com.ChatEmotionForeng2.helpmain'])\n---\nADDED set(['uk.co.revolution.googlePlay.DownloaderActivity', 'uk.co.revolution.NativeActivity'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set(['res/drawable/face1.png', 'res/drawable/face5.png', 'res/drawable/button1.png', 'res/drawable/engbutton4.png', 'res/drawable/face9.png', 'res/drawable/en6.png', 'res/drawable/en7.png', 'res/drawable/en14.png', 'res/drawable/engbutton1.png', 'res/drawable/face23.png', 'res/drawable/e38.png', 'res/drawable/en334.png', 'res/layout/facelayout.xml', 'res/drawable/e33.png', 'res/drawable/en5.png', 'res/drawable/e335.png', 'res/drawable/e327.png', 'res/drawable/e36.png', 'res/drawable/face3.png', 'res/drawable/face7.png', 'res/drawable/engbutton2.png', 'res/drawable/icon.png', 'res/drawable/engmenu.png', 'res/drawable/face17.png', 'res/drawable/face21.png', 'res/layout/introlay.xml', 'res/drawable/en333.png', 'res/drawable/e32.png', 'res/drawable/e34.png', 'res/drawable/e324.png', 'res/drawable/face20.png', 'res/drawable/e316.png', 'res/drawable/e314.png', 'res/drawable/en13.png', 'res/drawable/en8.png', 'res/drawable/engintro.png', 'res/layout/main.xml', 'res/layout/etclayout.xml', 'res\n---\nADDED set([u'res/drawable-xxhdpi/common_signin_btn_text_disabled_focus_light.9.png', u'res/drawable-xhdpi/common_signin_btn_text_normal_light.9.png', u'res/drawable-xxxhdpi/bs5_icon.png', u'res/drawable-xhdpi/bs5_icon.png', u'res/drawable/common_signin_btn_icon_light.xml', u'lib/armeabi/libvt7-android.so', u'res/drawable-xxhdpi/common_signin_btn_text_pressed_light.9.png', u'res/drawable-xhdpi/common_signin_btn_icon_focus_light.9.png', u'res/drawable-xhdpi/common_signin_btn_text_focus_dark.9.png', u'res/drawable-de/downloader_logo.png', u'res/drawable-xhdpi/common_signin_btn_icon_disabled_focus_light.9.png', u'res/drawable-xxhdpi/common_signin_btn_icon_pressed_light.9.png', u'res/drawable-xhdpi/common_signin_btn_text_normal_dark.9.png', u'res/drawable-hdpi/common_signin_btn_text_disabled_light.9.png', u'res/color/common_signin_btn_text_light.xml', u'res/drawable-mdpi/notify_panel_notification_icon_bg.png', u'res/drawable/common_signin_btn_icon_dark.xml', u'res/drawable-hdpi/common_signin_btn_"
+p36
+sg5
+S'CHANGED (JI 2.61%)'
+p37
+sg7
+F2.6099999999999999
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['uk.co.revolution.googlePlay.DownloaderService'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['uk.co.revolution.googlePlay.DownloaderAlarmReceiver'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Lcom/ChatEmotionForeng2/R$string;', u'Lcom/ChatEmotionForeng2/lastmain;', u'Lcom/ChatEmotionForeng2/face01;', u'Lcom/ChatEmotionForeng2/etc03;', u'Lcom/ChatEmotionForeng2/emo01;', u'Lcom/ChatEmotionForeng2/etc01;', u'Lcom/ChatEmotionForeng2/emomain;', u'Lcom/ChatEmotionForeng2/etc01$1last_etc1nb;', u'Lcom/ChatEmotionForeng2/facemain;', u'Lcom/ChatEmotionForeng2/lastmain$intro_last_class;', u'Landroid/app/ListActivity;', u'Lcom/ChatEmotionForeng2/etc01$1etc1nb;', u'Lcom/ChatEmotionForeng2/R;', u'Lcom/ChatEmotionForeng2/helpmain;', u'Lcom/ChatEmotionForeng2/intro;', u'Lcom/ChatEmotionForeng2/etc03$1etc3nb;', u'Lcom/ChatEmotionForeng2/etcmain$etcnb;', u'Lcom/ChatEmotionForeng2/ChatEmotionEng;', u'Lcom/ChatEmotionForeng2/emo01$1emonb;', u'Lcom/ChatEmotionForeng2/etc02$1etc2nb;', u'Lcom/ChatEmotionForeng2/R$drawable;', u'Lcom/ChatEmotionForeng2/etc03$1last_etc3nb;', u'Lcom/ChatEmotionForeng2/etc02;', u'Lcom/ChatEmotionForeng2/R$attr;', u'Lcom/ChatEmotionForeng2/face01$1facenb;', u'Lc\n---\nADDED set([u'Ljava/io/FileNotFoundException;', u'Lcom/google/android/gms/internal/ak;', u'Landroid/view/accessibility/AccessibilityEvent;', u'Ljava/lang/ref/WeakReference;', u'Landroid/widget/RelativeLayout$LayoutParams;', u'Lcom/google/android/gms/common/data/a;', u'Li/b;', u'Lcom/google/android/vending/expansion/downloader/DownloadProgressInfo;', u'Landroid/os/SystemClock;', u'Lcom/google/android/gms/internal/bs;', u'La/k;', u'Lcom/google/android/gms/internal/ce;', u'Lcom/google/android/gms/internal/ev$a;', u'Landroid/view/SurfaceHolder;', u'Landroid/view/SurfaceView;', u'Li/x;', u'Ljava/util/concurrent/BlockingQueue;', u'Ljava/lang/Class;', u'Lcom/google/android/gms/internal/es;', u'Lcom/google/android/vending/expansion/downloader/a;', u'Landroid/os/Environment;', u'Landroid/database/sqlite/SQLiteCursor;', u'La/ay;', u'Lcom/google/android/gms/internal/ab;', u'Lcom/google/android/gms/internal/ig$d;', u'Landroid/os/Message;', u'Lcom/google/android/vending/expansion/downloader/n;', u'Li/k;',"
+p45
+sg5
+S'CHANGED (JI 1.87%)'
+p46
+sg7
+F1.8700000000000001
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/ChatEmotionForeng2/etcmain$etcnb;->plusnum()V', u'Lcom/ChatEmotionForeng2/R$string;-><init>()V', u'Lcom/ChatEmotionForeng2/etc03$1etc3nb;-><init>(Lcom/ChatEmotionForeng2/etc03;)V', u'Lcom/ChatEmotionForeng2/emo01$1last_emonb;->last_change_bool()V', u'Lcom/ChatEmotionForeng2/etc02$1last_etc2nb;->last_change()V', u'Lcom/ChatEmotionForeng2/lastmain;->ectswitch(I)V', u'Lcom/ChatEmotionForeng2/face01;->face_show(I)V', u'Lcom/ChatEmotionForeng2/etc01;->etc1_show(I)V', u'Lcom/ChatEmotionForeng2/etcmain;->onListItemClick(Landroid/widget/ListView; Landroid/view/View; I J)V', u'Lcom/ChatEmotionForeng2/etc01;-><init>()V', u'Lcom/ChatEmotionForeng2/emomain$emonb;->setemonb(I)V', u'Lcom/ChatEmotionForeng2/R$drawable;-><init>()V', u'Lcom/ChatEmotionForeng2/R$layout;-><init>()V', u'Lcom/ChatEmotionForeng2/lastmain;-><init>()V', u'Lcom/ChatEmotionForeng2/etc01;->onCreate(Landroid/os/Bundle;)V', u'Lcom/ChatEmotionForeng2/etc02$1last_etc2nb;-><init>(Lcom/ChatEmotionForeng2/etc02;)V', u'Lcom/\n---\nADDED set([u'Lcom/google/android/gms/common/api/c;->a(Landroid/content/Context; Lcom/google/android/gms/internal/dt; Ld/b; Lcom/google/android/gms/common/api/i; Ld/c;)Lcom/google/android/gms/common/api/b;', u'Lcom/google/android/gms/internal/ig$b$b;->h()I', u'Luk/co/revolution/video/Video;->handleVideoException(Ljava/lang/Exception;)V', u'Li/i;->c(J)V', u'Lcom/google/android/gms/common/api/f;->a()Z', u'Lcom/google/android/vending/expansion/downloader/h;->a(I)V', u'Luk/co/revolution/video/w;->g()V', u'Lcom/google/android/gms/common/api/d;-><init>(Landroid/content/Context; Lcom/google/android/gms/internal/dt; Ljava/util/Map; Ljava/util/Set; Ljava/util/Set; B)V', u'Li/i;->a()V', u'Lcom/google/android/gms/internal/aq;->a(I Landroid/os/IBinder; Landroid/os/Bundle;)V', u'Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;-><init>(I Ljava/lang/String; Ljava/lang/String; J I Ljava/lang/String; I Landroid/os/Bundle; Ljava/util/ArrayList; I)V', u'La/b;->b()V', u'Lcom/google/android/gms/game"
+p48
+sg5
+S'CHANGED (JI 0.0%)'
+p49
+sg7
+F0
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/ChatEmotionForeng2/ChatEmotionEng;->finish()V', u'Landroid/widget/Button;->getBackground()Landroid/graphics/drawable/Drawable;', u'Lcom/ChatEmotionForeng2/lastmain;->ectswitch(I)V', u'Lcom/ChatEmotionForeng2/etc02;->setTheme(I)V', u'Lcom/ChatEmotionForeng2/etcmain;->onListItemClick(Landroid/widget/ListView; Landroid/view/View; I J)V', u'Lcom/ChatEmotionForeng2/intro;->findViewById(I)Landroid/view/View;', u'Lcom/ChatEmotionForeng2/etc01;-><init>()V', u'Lcom/ChatEmotionForeng2/emomain;->setListAdapter(Landroid/widget/ListAdapter;)V', u'Lcom/ChatEmotionForeng2/R$layout;-><init>()V', u'Lcom/ChatEmotionForeng2/emomain;->requestWindowFeature(I)Z', u'Lcom/ChatEmotionForeng2/etc01$1etc1nb;-><init>(Lcom/ChatEmotionForeng2/etc01;)V', u'Lcom/ChatEmotionForeng2/etc02$1last_etc2nb;-><init>(Lcom/ChatEmotionForeng2/etc02;)V', u'Lcom/ChatEmotionForeng2/intro;-><clinit>()V', u'Lcom/ChatEmotionForeng2/ChatEmotionEng;->findViewById(I)Landroid/view/View;', u'Lcom/ChatEmotionForeng2/etcmain;->r\n---\nADDED set([u'Lcom/google/android/gms/common/api/c;->a(Landroid/content/Context; Lcom/google/android/gms/internal/dt; Ld/b; Lcom/google/android/gms/common/api/i; Ld/c;)Lcom/google/android/gms/common/api/b;', u'Lcom/google/android/gms/internal/ig$b$b;->h()I', u'Luk/co/revolution/video/Video;->handleVideoException(Ljava/lang/Exception;)V', u'Li/i;->c(J)V', u'Lcom/google/android/gms/common/api/f;->a()Z', u'Lcom/google/android/vending/expansion/downloader/h;->a(I)V', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Luk/co/revolution/video/w;->g()V', u'Landroid/media/MediaPlayer;->setAudioStreamType(I)V', u'Li/i;->a()V', u'Ljava/lang/InterruptedException;->toString()Ljava/lang/String;', u'Lcom/google/android/gms/internal/bb;->b(Lcom/google/android/gms/internal/ax;)V', u'Ljava/lang/StringBuilder;-><init>()V', u'Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;-><init>(I Ljava/lang/String; Ljava/lang/String; J I Ljava/lang/String; I Landroid/os/Bundl"
+p54
+sg5
+S'CHANGED (JI 0.4%)'
+p55
+sg7
+F0.40000000000000002
+sa(dp56
+g3
+S"\nDELETED set([u'Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;', u'Landroid/widget/Button;->getBackground()Landroid/graphics/drawable/Drawable;', u'Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;', u'Ljava/util/ArrayList;->add(I Ljava/lang/Object;)V', u'Landroid/widget/ImageButton;->getBackground()Landroid/graphics/drawable/Drawable;', u'Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V', u'Landroid/view/View;->getId()I'])\n---\nADDED set([u'Landroid/content/Intent;-><init>(Landroid/content/Intent;)V', u'Landroid/widget/ImageButton;->requestFocus()Z', u'Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent; I)V', u'Landroid/view/View;->getHeight()I', u'Landroid/app/Activity;->getComponentName()Landroid/content/ComponentName;', u'Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;', u'Landroid/widget/ImageButton;->setSelected(Z)V', u'Landroid/view/View;->addOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V', u'Landroid/view/View;->setVisibility(I)V', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; [Ljava/lang/String;)Landroid/content/Intent;', u'Landroid/widget/Button;->setText(I)V', u'Ljava/lang/Object;->hashCode()I', u'Ljava/lang/Object;->wait()V', u'Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V', u'Landroid/content/Intent;-><init>(Ljava/lang/String;)V', u'Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V', u'Landroid/view/View;->setSelected"
+p57
+sg5
+S'CHANGED (JI 13.73%)'
+p58
+sg7
+F13.73
+sa(dp59
+g3
+S'\nDELETED set([])\n---\nADDED set([u\'\', u\'Empty/Null collection passed to deleteHits.\', u\'BLANK_21\', u\'BLANK_20\', u\'BLANK_27\', u\'BLANK_26\', u\'BLANK_25\', u\'BLANK_22\', u\'Transfer-Encoding\', u\'TEXT\', u\'BLANK_29\', u\'BLANK_28\', u\': \', u\'appendQueueTime\', u\'GameHelper: you called GameHelper.createApiClientBuilder() after calling setup. You can only get a client builder BEFORE performing setup.\', u\' sync failed: \', u\'found invalid internal destination filename\', u\'Empty hit, discarding.\', u\'Unknown safe parcelable id=\', u\'Google Analytics will not start up.\', u\'PreferenceObfuscator\', u\'...no network connectivity\', u\'Google Play Store signature invalid.\', u\'CURRENTBYTES\', u\' \', u\'mounted\', u\'CONSTRUCT_RAW_EXCEPTION\', u\':\\n\', u\'X509\', u\'service disconnected: \', u\'com.google.android.gms.appstate.internal.IAppStateCallbacks\', u\'com.android.vending.licensing.ILicenseResultListener\', u\'Failed Connect\', u\'[\\\\\\\\"/\\x08\\x0c\\n\\r\\t]\', u\'0\', u\'Host\', u\'android.net.SSLSessionCache\', u\'Header not found (invalid data or key):\', u\'newStat'
+p60
+sg5
+S'CHANGED (JI 0.0%)'
+p61
+sg7
+F0
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/ChatEmotionForeng2/etc01$1last_etc1nb;->this$0 Lcom/ChatEmotionForeng2/etc01; [access_flags=synthetic final]\\n', 'Lcom/ChatEmotionForeng2/etcmain;->aa Lcom/ChatEmotionForeng2/etcmain$etcnb; [access_flags=0x0]\\n', 'Lcom/ChatEmotionForeng2/etc03;->etc3_aa I [access_flags=public]\\n', 'Lcom/ChatEmotionForeng2/emomain$emonb;->this$0 Lcom/ChatEmotionForeng2/emomain; [access_flags=synthetic final]\\n', 'Lcom/ChatEmotionForeng2/lastmain;->last_face I [access_flags=public static]\\n', 'Lcom/ChatEmotionForeng2/lastmain;->introsbc Lcom/ChatEmotionForeng2/lastmain$intro_last_class; [access_flags=0x0]\\n', 'Lcom/ChatEmotionForeng2/etc03;->etc3_bool Ljava/lang/Boolean; [access_flags=public]\\n', 'Lcom/ChatEmotionForeng2/etc01$1etc1nb;->this$0 Lcom/ChatEmotionForeng2/etc01; [access_flags=synthetic final]\\n', 'Lcom/ChatEmotionForeng2/etc01;->etc1_aa I [access_flags=public]\\n', 'Lcom/ChatEmotionForeng2/facemain$facenb;->this$0 Lcom/ChatEmotionForeng2/facemain; [access_flags=synthetic final]\\n', \n---\nADDED set(['La/ad;->d Ljava/util/List; [access_flags=private final]\\n', 'Lcom/google/android/gms/internal/s;->c Landroid/content/Context; [access_flags=private final]\\n', 'Lj/a;->b Ljavax/crypto/Cipher; [access_flags=private]\\n', 'La/aq;->c La/aq; [access_flags=public static enum final]\\n', 'Lcom/google/android/gms/internal/at;->a Lcom/google/android/gms/common/api/Status; [access_flags=private final]\\n', 'Lcom/google/android/gms/internal/ey;->c Lcom/google/android/gms/internal/ev; [access_flags=private final]\\n', 'Lcom/google/android/gms/internal/ig;->m Ljava/lang/String; [access_flags=private]\\n', 'Lcom/google/android/gms/internal/i;->f Lcom/google/android/gms/internal/n; [access_flags=private]\\n', 'Li/t;->f Landroid/database/sqlite/SQLiteStatement; [access_flags=private]\\n', 'Lcom/google/android/gms/internal/ig$d;->c I [access_flags=private final]\\n', 'Lcom/google/android/vending/expansion/downloader/e;->c Z [access_flags=private]\\n', 'Lcom/google/android/gms/internal/hu;->g Ljava/lang/St"
+p63
+sg5
+S'CHANGED (JI 0.0%)'
+p64
+sg7
+F0
+sa.

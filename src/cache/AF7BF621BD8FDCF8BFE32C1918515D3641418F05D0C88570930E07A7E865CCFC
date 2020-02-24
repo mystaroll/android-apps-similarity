@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 26!=1000000'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 2.2.9!=1'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: 19!=13'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 19!=13'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set(['android.permission.READ_SYNC_SETTINGS', 'android.permission.WRITE_SYNC_SETTINGS', 'android.permission.USE_CREDENTIALS', 'android.permission.AUTHENTICATE_ACCOUNTS', 'android.permission.CALL_PHONE', 'android.permission.READ_SYNC_STATS', 'android.permission.RECEIVE_BOOT_COMPLETED', 'android.permission.WRITE_CONTACTS', 'android.permission.MANAGE_ACCOUNTS', 'android.permission.VIBRATE', 'com.google.android.c2dm.permission.RECEIVE', 'android.permission.WAKE_LOCK', 'android.permission.READ_CONTACTS', 'org.kontalk.permission.C2D_MESSAGE', 'android.permission.WRITE_EXTERNAL_STORAGE', 'android.permission.GET_ACCOUNTS'])\n---\nADDED set([])"
+p24
+sg5
+S'CHANGED (JI 15.79%)'
+p25
+sg7
+F15.789999999999999
+sa(dp26
+g3
+S'DIFFERENT: org.kontalk!=air.EscapeStoneHouse'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: Kontalk!=Escape Stone House'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['org.kontalk..ui.MessagingPreferences', 'org.kontalk..ui.CodeValidation', 'org.kontalk..ui.BootstrapPreferences', 'org.kontalk..ui.SearchActivity', 'org.kontalk..ui.ComposeMessage', 'org.kontalk..ui.ContactsListActivity', 'org.kontalk..ui.AboutActivity', 'org.kontalk..ui.ConversationList', 'org.kontalk..ui.NumberValidation', 'org.kontalk..ui.RevalidateActivity', 'org.kontalk..ui.StatusActivity'])\n---\nADDED set(['air.EscapeStoneHouse..AppEntry', 'com.google.ads.AdActivity'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set([u'res/drawable-nodpi/emoji_bank.png', u'res/drawable-nodpi/emoji_yellow_heart.png', u'res/drawable-nodpi/emoji_rage4.png', u'res/drawable-nodpi/emoji_credit_card.png', u'res/drawable-nodpi/flag_sg.png', u'res/drawable-nodpi/emoji_money_with_wings.png', u'res/drawable-nodpi/flag_hr.png', u'res/drawable-nodpi/emoji_paperclip.png', u'com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_882', u'com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_883', u'res/drawable-hdpi/abs__spinner_ab_focused_holo_light.9.png', u'res/drawable-nodpi/emoji_cancer.png', u'res/drawable-hdpi/abs__cab_background_top_holo_light.9.png', u'res/drawable-nodpi/emoji_running.png', u'res/drawable-nodpi/emoji_baby.png', u'res/drawable-nodpi/emoji_wavy_dash.png', u'res/drawable-nodpi/emoji_fries.png', u'res/drawable-mdpi/abs__ic_cab_done_holo_dark.png', u'res/drawable-mdpi/abs__spinner_ab_pressed_holo_dark.9.png', u'res/drawable-nodpi/emoji_bouquet.png', u'res/drawable-nodpi/flag_tz.png', u'res/drawab\n---\nADDED set(['res/layout/ssl_certificate_warning.xml', 'assets/adobeair.vch', 'res/drawable-ldpi/icon.png', 'res/layout/multiple_file_selection_panel.xml', 'res/drawable-hdpi/icon.png', 'assets/META-INF/AIR/extensions/com.milkmangames.extensions.AdMob/docs/com.milkmangames.nativeextensions.xml', 'res/drawable/air_72px_mobile_eula.png', 'res/raw/debuginfo', 'assets/game.swf', 'res/layout/expandable_chooser_row.xml', 'res/drawable-xhdpi/icon.png', 'assets/META-INF/AIR/extensions/com.milkmangames.extensions.AdMob/docs/packages.dita', 'res/drawable-mdpi/icon.png', 'assets/META-INF/AIR/extensions/com.milkmangames.extensions.AdMob/META-INF/ANE/Android-ARM/library.swf', 'res/layout/expandable_multiple_chooser_row.xml', 'res/drawable/mp_warning_32x32_n.png', 'assets/META-INF/AIR/extensions/com.milkmangames.extensions.AdMob/META-INF/ANE/extension.xml', 'lib/armeabi-v7a/libstagefright_honeycomb.so', 'res/raw/adobelogo.gif', 'res/layout/main.xml', 'assets/META-INF/AIR/extensions/com.milkmangames.extensio"
+p36
+sg5
+S'CHANGED (JI 0.29%)'
+p37
+sg7
+F0.28999999999999998
+sa(dp38
+g3
+S"\nDELETED set(['org.kontalk..service.DownloadService', 'org.kontalk..service.MessageCenterService', 'org.kontalk..sync.ContactsSyncAdapterService', 'org.kontalk..authenticator.AccountAuthenticatorService', 'org.kontalk..GCMIntentService'])\n---\nADDED set([])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set(['com.google.android.gcm.GCMBroadcastReceiver', 'org.kontalk..service.NetworkStateReceiver', 'org.kontalk..service.SystemBootStartup'])\n---\nADDED set([])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Ljava/io/FileNotFoundException;', u'Landroid/widget/ImageView;', u'Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;', u'Landroid/support/v4/widget/SearchViewCompatHoneycomb$1;', u'Lcom/actionbarsherlock/app/SherlockListActivity;', u'Lcom/actionbarsherlock/view/ActionMode$Callback;', u'Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;', u'Lcom/actionbarsherlock/app/SherlockExpandableListActivity;', u'Landroid/widget/PopupWindow;', u'Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder;', u'[Lcom/google/i18n/phonenumbers/ShortNumberUtil$ShortNumberCost;', u'Landroid/graphics/drawable/shapes/RoundRectShape;', u'Lorg/kontalk/ui/NumberValidation$9;', u'Lcom/google/i18n/phonenumbers/AlternateFormatsCountryCodeSet;', u'Lorg/kontalk/ui/ComposeMessageFragment$ComposerServiceConnection;', u'Lcom/google/i18n/phonenumbers/PhoneNumberUtil$Leniency$1;', u'Landroid/graphics/drawable/ClipDrawable;', u'Lcom/google/pro\n---\nADDED set([u'Landroid/graphics/drawable/shapes/RectShape;', u'Lcom/adobe/air/AndroidInputConnection;', u'Lcom/adobe/air/AndroidStageText$AndroidStageTextEditText$DelayedTransparentRegionUpdate;', u'Landroid/widget/RelativeLayout$LayoutParams;', u'Ljava/util/Calendar;', u'Lcom/adobe/air/AIRExpandableFileChooser$FileInfo;', u'Ljava/util/concurrent/locks/Condition;', u'Lcom/adobe/air/AndroidWebView$2$1;', u'Lcom/google/ads/internal/c$e;', u'Lcom/milkmangames/extensions/android/AdMobDestroyAdFunction;', u'[Lcom/google/ads/util/b$a;', u'Lcom/adobe/air/AndroidCameraView;', u'Ljava/nio/charset/CharsetEncoder;', u'Lcom/google/ads/util/c;', u'Landroid/view/SurfaceHolder;', u'Lcom/adobe/air/AndroidMediaManager;', u'Landroid/provider/MediaStore$Images$Media;', u'Lcom/adobe/air/JavaTrustStoreHelper$SystemKeyStoreManager_sysprop;', u'Lcom/google/ads/util/g;', u'Lcom/google/ads/internal/f$1;', u'Lcom/adobe/air/AIRWindowSurfaceView$HoverTimeoutHandler;', u'Landroid/media/AudioTrack;', u'Lcom/google/ads/af;"
+p45
+sg5
+S'CHANGED (JI 7.27%)'
+p46
+sg7
+F7.2699999999999996
+sa(dp47
+g3
+S"\nDELETED set([u'Landroid/support/v4/app/ListFragment;->setListShown(Z)V', u'Lcom/actionbarsherlock/app/ActionBar;->setDisplayShowHomeEnabled(Z)V', u'Lcom/actionbarsherlock/internal/app/ActionBarImpl;->addTab(Lcom/actionbarsherlock/app/ActionBar$Tab; Z)V', u'Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet;->isStarted()Z', u'Lorg/kontalk/service/RequestWorker;->hold()V', u'Landroid/support/v4/app/ShareCompat$IntentReader;->getEmailCc()[Ljava/lang/String;', u'Lorg/kontalk/client/Protocol$UserLookupResponse$Entry;->getStatusBytes()Lcom/google/protobuf/ByteString;', u'Lorg/kontalk/client/Protocol$MessagePostRequest$Builder;->getRecipient(I)Ljava/lang/String;', u'Lcom/actionbarsherlock/widget/ShareActionProvider$ShareMenuItemOnMenuItemClickListener;->onMenuItemClick(Lcom/actionbarsherlock/view/MenuItem;)Z', u'Landroid/support/v4/widget/ViewDragHelper;->processTouchEvent(Landroid/view/MotionEvent;)V', u'Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;->update(\n---\nADDED set([u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/google/ads/internal/AdWebView;->onMeasure(I I)V', u'Lcom/adobe/air/AndroidStageText$AndroidStageTextEditText;->onKeyDown(I Landroid/view/KeyEvent;)Z', u'Lcom/google/ads/util/b;->d(Ljava/lang/String;)V', u'Lcom/google/ads/internal/d;->a(J)V', u'Lcom/adobe/air/CameraUI;->nativeOnCameraError(J I)V', u'Lcom/google/ads/internal/d;->p()Z', u'Lcom/google/ads/internal/d;-><init>(Lcom/google/ads/m; Z)V', u'Lcom/adobe/air/ApplicationFileManager;->deleteDir(Ljava/io/File;)Z', u'Lcom/google/ads/ae;-><clinit>()V', u'Lcom/adobe/flashruntime/air/VideoViewAIR;-><init>(Landroid/content/Context; Lcom/adobe/air/AndroidActivityWrapper;)V', u'Lcom/google/ads/internal/i;->onPageFinished(Landroid/webkit/WebView; Ljava/lang/String;)V', u'Lcom/google/ads/util/b;->c(Ljava/lang/String;)V', u'Lcom/adobe/air/AndroidWebView$AndroidWebViewImpl;-><init>(Lcom/adobe/air/AndroidWebView; Landroid/content/Context;)V', u'Lcom/adobe/flashplayer/HDMIUtils$HdmiBroadcastR"
+p48
+sg5
+S'CHANGED (JI 0.0%)'
+p49
+sg7
+F0
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/actionbarsherlock/internal/widget/ActionBarView$HomeView;->getParent()Landroid/view/ViewParent;', u'Landroid/support/v4/app/ListFragment;->setListShown(Z)V', u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context; I)V', u'Lcom/actionbarsherlock/internal/app/ActionBarImpl;->addTab(Lcom/actionbarsherlock/app/ActionBar$Tab; Z)V', u'Lorg/kontalk/client/Protocol$UserPresenceSubscribeResponse$Builder;->mergeDelimitedFrom(Ljava/io/InputStream;)Z', u'Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet;->isStarted()Z', u'Ljava/lang/StringBuilder;->replace(I I Ljava/lang/String;)Ljava/lang/StringBuilder;', u'Lorg/kontalk/service/RequestWorker;->hold()V', u'Landroid/support/v4/app/ShareCompat$IntentReader;->getEmailCc()[Ljava/lang/String;', u'Landroid/view/accessibility/AccessibilityManager;->addAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager$AccessibilityStateCha\n---\nADDED set([u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/adobe/air/AndroidStageText$AndroidStageTextEditText;->onKeyDown(I Landroid/view/KeyEvent;)Z', u'Landroid/view/InputDevice;->isVirtual()Z', u'Landroid/widget/RelativeLayout;->getChildCount()I', u'Lcom/google/ads/util/b;->d(Ljava/lang/String;)V', u'Lcom/google/ads/internal/d;->a(J)V', u'Landroid/widget/VideoView;->setVideoPath(Ljava/lang/String;)V', u'Lcom/adobe/air/CameraUI;->nativeOnCameraError(J I)V', u'Lcom/google/ads/internal/d;->p()Z', u'Lcom/google/ads/internal/d;-><init>(Lcom/google/ads/m; Z)V', u'Lcom/adobe/air/ApplicationFileManager;->deleteDir(Ljava/io/File;)Z', u'Lcom/google/ads/ae;-><clinit>()V', u'Lcom/adobe/flashruntime/air/VideoViewAIR;-><init>(Landroid/content/Context; Lcom/adobe/air/AndroidActivityWrapper;)V', u'Lcom/google/ads/internal/AdWebView;->a()V', u'Lcom/google/ads/internal/i;->onPageFinished(Landroid/webkit/WebView; Ljava/lang/String;)V', u'Lcom/google/ads/c;-><clinit>()V', u'Lcom/google/ads/util/b;->c(Lja"
+p54
+sg5
+S'CHANGED (JI 2.76%)'
+p55
+sg7
+F2.7599999999999998
+sa(dp56
+g3
+S"\nDELETED set([u'Landroid/widget/EditText;->requestFocus()Z', u'Ljava/util/List;->indexOf(Ljava/lang/Object;)I', u'Landroid/os/Bundle;->keySet()Ljava/util/Set;', u'Ljava/io/OutputStream;->write([B)V', u'Ljava/lang/StringBuilder;->indexOf(Ljava/lang/String;)I', u'Ljava/lang/StringBuilder;->replace(I I Ljava/lang/String;)Ljava/lang/StringBuilder;', u'Landroid/content/Context;->obtainStyledAttributes(I [I)Landroid/content/res/TypedArray;', u'Ljava/lang/Float;->floatToIntBits(F)I', u'Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context; I)V', u'Landroid/view/View;->postInvalidateOnAnimation()V', u'Landroid/view/GestureDetector;->setIsLongpressEnabled(Z)V', u'Landroid/widget/TextView;->setBackgroundResource(I)V', u'Landroid/view/View;->post(Ljava/lang/Runnable;)Z', u'Ljava/io/FileInputStream;->close()V', u'Landroid/app/Activity;->setTitle(Ljava/lang/CharSequence;)V', u'Landroid/app/AlertDialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V', u'Landroid/vie\n---\nADDED set([u'Landroid/widget/RelativeLayout;->getChildCount()I', u'Landroid/media/AudioManager;->setSpeakerphoneOn(Z)V', u'Landroid/app/Activity;->addContentView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Landroid/view/Display;->getRotation()I', u'Landroid/widget/FrameLayout;->bringChildToFront(Landroid/view/View;)V', u'Landroid/graphics/Canvas;->drawRGB(I I I)V', u'Landroid/content/IntentFilter;-><init>()V', u'Ljava/util/Map;->putAll(Ljava/util/Map;)V', u'Landroid/widget/EditText;->setHeight(I)V', u'Landroid/content/Context;->checkCallingOrSelfPermission(Ljava/lang/String;)I', u'Landroid/view/KeyEvent;->getUnicodeChar()I', u'Landroid/app/Application;->getCacheDir()Ljava/io/File;', u'Landroid/app/Activity;->onUserInteraction()V', u'Landroid/view/MotionEvent;->getToolType(I)I', u'Landroid/view/Window;->setSoftInputMode(I)V', u'Ljava/lang/IllegalArgumentException;->printStackTrace()V', u'Landroid/widget/FrameLayout;->addView(Landroid/view/View; I I)V', u'Landroid/view/View"
+p57
+sg5
+S'CHANGED (JI 29.01%)'
+p58
+sg7
+F29.010000000000002
+sa(dp59
+g3
+S'\nDELETED set([u\'Toast\', u\'[hasFeature] featureId: \', u\' mTag=\', u\'failWrite: Got exception:\', u\'account_name\', u\' at index \', u\'users/*\', u\' did not call through to super.onDestroyView()\', u\' index requested: \', u\'", phone: \', u\'AbsSpinner.SavedState{\', u\'action_msg\', u\'INSERT INTO messages_new SELECT _id, thread_id, msg_id, real_id, peer, mime, content, direction, unread, timestamp, status_changed, status, fetch_url, fetched, local_uri, encrypted, encrypt_key, preview_path, NULL, 0 FROM messages\', u\'GW\', u\'GU\', u\'GT\', u\'GR\', u\'GQ\', u\'GP\', u\'GY\', u\'GG\', u\'GF\', u\'GE\', u\'GD\', u\'UTF-8 not supported?\', u\'GB\', u\'GA\', u\'GN\', u\' mContainerId=#\', u\'android.support.PARENT_ACTIVITY\', u\'GI\', u\'GH\', u\'Message missing required fields: \', u\'ActionBarSherlock\', u\'force\', u\'STATUS_THROTTLING\', u"refillBuffer() called when buffer wasn\'t empty.", u\'[setTitle] resId: \', u\'registration_id\', u\' mArgs=\', u\'+\', u\'The string supplied did not seem to be a phone number.\', u\' id=0x\', u\'thread_id = ? AND unread <> 0 AND d\n---\nADDED set([u\'pto\', u\'file_upload\', u\'isLoadAdTaskSuccessful() called when isLoadAdTaskDone() is false.\', u\'Unable to ping the URL: \', u\'fullScreen\', u\'RECEIVED_AD\', u\'Cannot show interstitial because it is not loaded and ready.\', u\'/video\', u\'onAdClicked()\', u\'SCH-I800\', u\'onDetachedFromWindow\', u\'Set parent bottom\', u\'@gw_adnetrefresh@\', u\'No "action" parameter in a video gmsg.\', u\'android.permission.INTERNET\', u\'After eglCreateWindowSurface\', u\'bad base-64\', u\'[adMobEx]\', u\'/system/lib/\', u\'AIRUpdateDialog\', u\'GoogleAdMobDoritosLife\', u\'afma_notify_dt\', u\'min_hwa_overlay\', u\'containsVideo\', u\'AdViews container parent:\', u\'X509\', u\'Android \', u\'Set parent top\', u\'IDA_INPUT_METHOD_STRING\', u\'mad_hac\', u\'Host\', u\'drt_include\', u\') ad to show interstitial: \', u\'Disabling hardware acceleration on collapsing MRAID WebView.\', u\'about:blank\', u\'android.hardware.location.network\', u\'onActivityResult\', u\' user set IAB_MRECT, applying AdSize.IAB_MRECT=\', u\'[JP] writeText 2 \', u\'flash.utils.ByteArray\''
+p60
+sg5
+S'CHANGED (JI 2.77%)'
+p61
+sg7
+F2.77
+sa(dp62
+g3
+S"\nDELETED set(['Lorg/kontalk/ui/ConversationListItem;->STYLE_BOLD Landroid/text/style/StyleSpan; [access_flags=private static final]\\n', 'Lcom/actionbarsherlock/R$layout;->abs__search_view I [access_flags=public static final]\\n', 'Lcom/actionbarsherlock/R$attr;->actionOverflowButtonStyle I [access_flags=public static final]\\n', 'Lcom/google/protobuf/SmallSortedMap;->overflowEntries Ljava/util/Map; [access_flags=private]\\n', 'Lcom/actionbarsherlock/widget/ActivityChooserModel;->mCanReadHistoricalData Z [access_flags=private]\\n', 'Lcom/actionbarsherlock/view/MenuInflater;->mContext Landroid/content/Context; [access_flags=private]\\n', 'Landroid/support/v4/app/Fragment;->mContainer Landroid/view/ViewGroup; [access_flags=0x0]\\n', 'Lcom/google/i18n/phonenumbers/PhoneNumberMatcher;->phoneUtil Lcom/google/i18n/phonenumbers/PhoneNumberUtil; [access_flags=private final]\\n', 'Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;->R_styleable_TextView [I [access_flags=private static final]\\n', 'Lcom/\n---\nADDED set(['Lcom/adobe/air/RemoteDebuggerListenerDialog;->mActivity Landroid/app/Activity; [access_flags=private]\\n', 'Lcom/google/ads/util/c$c;->k I [access_flags=private]\\n', 'Lcom/adobe/air/AIRWindowSurfaceView;->mSkipHeightFromTop I [access_flags=private]\\n', 'Lcom/google/ads/util/c$c;->g Z [access_flags=synthetic static final]\\n', 'Lcom/adobe/air/gestures/AIRGestureListener$TouchPoint;->pid I [access_flags=private]\\n', 'Lcom/adobe/air/AIRWindowSurfaceView$5;->$SwitchMap$com$adobe$air$AIRWindowSurfaceView$MetaKeyState [I [access_flags=synthetic static final]\\n', 'Lcom/google/ads/util/g$a$4;->a Landroid/webkit/JsPromptResult; [access_flags=synthetic final]\\n', 'Lcom/adobe/air/OrientationManager;->mOrientation I [access_flags=private]\\n', 'Lcom/adobe/air/location/Geolocation;->m_gpsLongitude D [access_flags=protected]\\n', 'Lcom/adobe/air/AIRExpandableFileChooser$FileChooserItem;->this$0 Lcom/adobe/air/AIRExpandableFileChooser; [access_flags=synthetic final]\\n', 'Lcom/google/ads/j;->b Z [ac"
+p63
+sg5
+S'CHANGED (JI 0.0%)'
+p64
+sg7
+F0
+sa.

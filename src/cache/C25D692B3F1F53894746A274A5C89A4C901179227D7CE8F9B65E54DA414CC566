@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 2!=1'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 1.01!=1.0'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 9!=8'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: 17!=18'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 17!=18'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.forex.app.permission.C2D_MESSAGE', 'android.permission.INTERNET', 'android.permission.AUTHENTICATE_ACCOUNTS', 'android.permission.CALL_PHONE', 'android.permission.ACCESS_NETWORK_STATE', 'android.permission.READ_PHONE_STATE', 'com.android.vending.BILLING', 'android.permission.WRITE_CONTACTS', 'android.permission.VIBRATE', 'com.google.android.c2dm.permission.RECEIVE', 'android.permission.CAMERA', 'android.permission.READ_CONTACTS', 'android.permission.WRITE_EXTERNAL_STORAGE', 'android.permission.GET_ACCOUNTS', 'android.permission.WRITE_CALENDAR'])"
+p24
+sg5
+S'CHANGED (JI 6.25%)'
+p25
+sg7
+F6.25
+sa(dp26
+g3
+S'DIFFERENT: com.radiangames.bombcats!=com.forex.app'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: Bombcats SE!=Forex'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.unity3d.player.VideoPlayer', 'com.unity3d.player.UnityPlayerNativeActivity', 'com.unity3d.player.UnityPlayerProxyActivity', 'com.unity3d.player.UnityPlayerActivity'])\n---\nADDED set(['com.forex.app.ForexActivity'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set(['assets/bin/Data/3c56952046fc249cf8a0cb2eb2e64b1e', 'assets/bin/Data/c69a7e6d610c233408c442542e66816a', 'assets/bin/Data/1b98bb89147474f4c94b0759556ddcd7', 'assets/bin/Data/68fe02a1105785741b288c40c66c2b1f', 'assets/bin/Data/f1462b02807796a409ac825d4d76b944', 'assets/bin/Data/7f1dc3f6e577f44cf818afc34c92e8dd', 'assets/bin/Data/e6a1388deca333a4a9bedbf1fd8fd175', 'assets/bin/Data/a69dfde32285441578579d62984ad777', 'assets/bin/Data/09da0db3f517a2444ae50a22b2c42ead', 'assets/bin/Data/a3c7d0e75e139714687b1a57d81442da', 'assets/bin/Data/ee66bd15e4bbd4ee3923deeb4eb510c8', 'assets/bin/Data/3bfae82b2a4394c1694648673c2724a4', 'assets/bin/Data/0ccac5bc0658c41bda6d5dff421f4e6f', 'assets/bin/Data/be4c743bf75fd4b37bd499bb650662d5', 'assets/bin/Data/bf11e5362052542669c8be45a846883a', 'assets/bin/Data/254d08c0b466b434aa3a3444aa0ff1a5', 'assets/bin/Data/7234526e18fdb41819b975e0cde1b96f', 'assets/bin/Data/6b9b3b0dad81114479108b13ed37a042', 'assets/bin/Data/9a50a807d904206499d5d7bd042f9f60', 'assets\n---\nADDED set([u'assets/www/fonts/elefuns22029.TTF', u'assets/www/images/menu/share.png', u'res/drawable-xhdpi/ic_launcher.png', u'res/drawable-ldpi/ic_launcher.png', u'assets/www/images/fd_logo.png', u'assets/www/js/expired.js', u'assets/www/js/settings.js', u'assets/www/images/settings/renew.png', u'res/drawable-hdpi/ic_launcher.png', u'assets/www/images/currency/eur.jpg', u'assets/www/js/main.js', u'res/drawable-xxhdpi/ic_launcher.png', u'assets/www/js/plugins/datePicker.js', u'assets/www/css/jquery/themes/default/images/icons-18-white.png', u'assets/www/js/serverCalls.js', u'assets/www/fonts/elefuns22037.ttf', u'assets/www/css/styles/expired.css', u'assets/www/js/register.js', u'res/drawable-mdpi/ic_launcher.png', u'assets/www/js/auth.js', u'assets/www/css/styles/myAccount.css', u'assets/www/images/header/back.png', u'assets/www/js/myAccount.js', u'res/drawable-hdpi/notification.png', u'assets/www/js/forgotPassword.js', u'assets/www/css/jquery/themes/default/images/icons-36-black.png', u'res"
+p36
+sg5
+S'CHANGED (JI 1.19%)'
+p37
+sg7
+F1.1899999999999999
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.forex.app.GCMIntentService'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.google.android.gcm.GCMBroadcastReceiver'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Lcom/amazon/ags/api/whispersync/SynchronizeRequest;', u'Lcom/amazon/ags/client/achievements/AchievementsReplyMessengerFactory;', u'Lcom/unity3d/player/p$1;', u'Landroid/view/SurfaceHolder;', u'Lcom/amazon/ags/client/BaseReplyMessengerFactory$ServiceHandleHandler;', u'Lcom/amazon/GameCirclePlugin$3;', u'Lcom/unity3d/player/p$6;', u'Lcom/unity3d/player/UnityPlayer$17;', u'Lcom/amazon/ags/jni/achievements/GetAchievementJniRespHandler;', u'Lcom/amazon/ags/constants/BindingKeys;', u'Lcom/amazon/ags/client/profiles/PlayerImpl;', u'Lcom/unity3d/player/k;', u'Lcom/amazon/ags/api/leaderboards/Leaderboard;', u'Lcom/unity3d/player/a/l;', u'Lcom/amazon/ags/api/AGResponseHandle;', u'Landroid/media/AudioTrack;', u'Lcom/amazon/ags/jni/leaderboards/SubmitScoreJniResponseHandler;', u'Lcom/amazon/ags/constants/IconSize;', u'Lcom/amazon/ags/api/AmazonGames;', u'Lcom/amazon/ags/client/whispersync/savedgame/SummaryRepository;', u'Lcom/unity3d/player/a$1;', u'Ljavax/crypto/spec/IvParameterSpec;', u'L\n---\nADDED set([u'Lcom/forex/app/R$drawable;', u'Lorg/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode;', u'Lorg/apache/cordova/CordovaActivity;', u'Landroid/support/v4/widget/SearchViewCompatHoneycomb$1;', u'Ljava/lang/ref/WeakReference;', u'Lorg/apache/cordova/api/CordovaPlugin;', u'Ljava/util/Calendar;', u'Lcom/squareup/okhttp/internal/AbstractOutputStream;', u'Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;', u'Landroid/support/v4/text/TextDirectionHeuristicsCompat$1;', u'Landroid/support/v4/content/ModernAsyncTask$InternalHandler;', u'Landroid/support/v4/view/MenuItemCompat$IcsMenuVersionImpl;', u'Lorg/apache/cordova/HttpHandler;', u'Ljava/io/PrintWriter;', u'Lorg/apache/cordova/LinearLayoutSoftKeyboardDetect;', u'Landroid/support/v4/media/TransportController;', u'Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;', u'Lorg/apache/cordova/FileTransfer$ExposedGZIPInputStream;', u'Landroid/support/v4/view/ViewGroupCompatHC;', u'Landroid/support/v4/content/"
+p45
+sg5
+S'CHANGED (JI 7.85%)'
+p46
+sg7
+F7.8499999999999996
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/unity3d/player/UnityPlayer$24;->run()V', u'Lcom/amazon/ags/client/leaderboards/SubmitScoreResponseImp;-><init>(Ljava/util/Map; Ljava/util/Map; I)V', u'Lcom/amazon/ags/constants/whispersync/SynchronizeResultKey;-><init>(Ljava/lang/String; I)V', u'Lcom/amazon/ags/client/profiles/ProfilesReplyMessengerFactory;-><init>(Landroid/content/Context;)V', u'Lcom/unity3d/player/UnityPlayer;->nativeInitWWW(Ljava/lang/Class;)V', u'Lcom/amazon/ags/jni/whispersync/WhisperSyncJni;->getSynchronizeBlobConflictDeferral(J I)V', u'Lcom/amazon/ags/api/achievements/AchievementsClient;->getAchievement(Ljava/lang/String; [Ljava/lang/Object;)Lcom/amazon/ags/api/AGResponseHandle;', u'Lcom/amazon/ags/client/leaderboards/LeaderboardsReplyMessengerFactory;->unbundleSubmitScoreResponse(Landroid/os/Bundle; I)Lcom/amazon/ags/api/RequestResponse;', u'Lcom/amazon/ags/client/whispersync/WhisperSyncServiceProxy;->access$300()Ljava/lang/String;', u'Lcom/unity3d/player/g;->a(Landroid/view/MotionEvent;)I', u'Lcom/\n---\nADDED set([u'Lcom/squareup/okhttp/internal/Platform$JettyNpnProvider;->access$300(Lcom/squareup/okhttp/internal/Platform$JettyNpnProvider;)Z', u'Landroid/support/v4/app/ListFragment;->setListShown(Z)V', u'Landroid/support/v4/view/MarginLayoutParamsCompatJellybeanMr1;->isMarginRelative(Landroid/view/ViewGroup$MarginLayoutParams;)Z', u'Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;->update(Landroid/support/v4/app/ActivityOptionsCompat;)V', u'Landroid/support/v4/app/ShareCompat$IntentReader;->getEmailCc()[Ljava/lang/String;', u'Landroid/support/v4/app/FragmentManagerImpl;->dispatchLowMemory()V', u'Landroid/support/v4/app/DialogFragment;->dismiss()V', u'Landroid/support/v4/app/FragmentActivity$NonConfigurationInstances;-><init>()V', u'Landroid/support/v4/widget/ViewDragHelper;->processTouchEvent(Landroid/view/MotionEvent;)V', u'Landroid/support/v4/app/NavUtils$NavUtilsImplJB;->getParentActivityName(Landroid/content/Context; Landroid/content/pm/ActivityInfo;)Ljava/lang/Strin"
+p48
+sg5
+S'CHANGED (JI 0.0%)'
+p49
+sg7
+F0
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([u'Lorg/xmlpull/v1/XmlPullParserFactory;->newInstance()Lorg/xmlpull/v1/XmlPullParserFactory;', u'Lcom/amazon/ags/client/leaderboards/SubmitScoreResponseImp;-><init>(Ljava/util/Map; Ljava/util/Map; I)V', u'Lorg/xmlpull/v1/XmlPullParserFactory;->setNamespaceAware(Z)V', u'Lcom/amazon/ags/api/achievements/AchievementsClient;->getAchievement(Ljava/lang/String; [Ljava/lang/Object;)Lcom/amazon/ags/api/AGResponseHandle;', u'Lcom/amazon/ags/client/leaderboards/LeaderboardsReplyMessengerFactory;->unbundleSubmitScoreResponse(Landroid/os/Bundle; I)Lcom/amazon/ags/api/RequestResponse;', u'Lcom/amazon/ags/client/whispersync/WhisperSyncServiceProxy;->access$300()Ljava/lang/String;', u'Lcom/unity3d/player/g;->a(Landroid/view/MotionEvent;)I', u'Lcom/unity3d/player/UnityPlayer$20;-><init>(Lcom/unity3d/player/UnityPlayer;)V', u'Lcom/amazon/ags/client/achievements/AchievementsServiceProxy;->access$300(Lcom/amazon/ags/client/achievements/AchievementsServiceProxy; Ljava/lang/String;)Landroid/os/Bundle;'\n---\nADDED set([u'Lcom/squareup/okhttp/internal/Platform$JettyNpnProvider;->access$300(Lcom/squareup/okhttp/internal/Platform$JettyNpnProvider;)Z', u'Landroid/support/v4/app/ListFragment;->setListShown(Z)V', u'Landroid/support/v4/view/MarginLayoutParamsCompatJellybeanMr1;->isMarginRelative(Landroid/view/ViewGroup$MarginLayoutParams;)Z', u'Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context; I)V', u'Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;->update(Landroid/support/v4/app/ActivityOptionsCompat;)V', u'Landroid/util/SparseArray;->remove(I)V', u'Landroid/view/accessibility/AccessibilityRecord;->setToIndex(I)V', u'Landroid/support/v4/app/ShareCompat$IntentReader;->getEmailCc()[Ljava/lang/String;', u'Landroid/view/accessibility/AccessibilityManager;->addAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeListener;)Z', u'Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V', u'Landroid/support/v4/a"
+p54
+sg5
+S'CHANGED (JI 3.85%)'
+p55
+sg7
+F3.8500000000000001
+sa(dp56
+g3
+S"\nDELETED set([u'Landroid/os/Bundle;->putLong(Ljava/lang/String; J)V', u'Landroid/os/Bundle;->getLongArray(Ljava/lang/String;)[J', u'Ljava/io/FileOutputStream;->write([B)V', u'Landroid/view/animation/Animation;->setDuration(J)V', u'Ljava/util/Arrays;->sort([I)V', u'Landroid/widget/FrameLayout;->requestLayout()V', u'Landroid/view/View;->getWindowVisibleDisplayFrame(Landroid/graphics/Rect;)V', u'Landroid/view/KeyEvent;->getScanCode()I', u'Ljava/security/SecureRandom;->nextInt()I', u'Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener; Landroid/hardware/Sensor;)V', u'Landroid/widget/Button;->setText(I)V', u'Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V', u'Landroid/view/Window;->setSoftInputMode(I)V', u'Ljava/lang/String;->replace(C C)Ljava/lang/String;', u'Landroid/app/Activity;->getCacheDir()Ljava/io/File;', u'Landroid/widget/ProgressBar;->setIndeterminate(Z)V', u'Landroid/app/Dialog;-><init>(Landroid/content/Context;)V', u'L\n---\nADDED set([u'Landroid/os/Bundle;->keySet()Ljava/util/Set;', u'Ljava/io/OutputStream;->write([B)V', u'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;', u'Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z', u'Landroid/content/Context;->obtainStyledAttributes(I [I)Landroid/content/res/TypedArray;', u'Landroid/app/Dialog;->getContext()Landroid/content/Context;', u'Landroid/os/Looper;->myLooper()Landroid/os/Looper;', u'Lorg/json/JSONObject;->names()Lorg/json/JSONArray;', u'Landroid/app/Activity;->onPanelClosed(I Landroid/view/Menu;)V', u'Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;', u'Landroid/os/Message;->sendToTarget()V', u'Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;', u'Ljava/io/IOException;-><init>(Ljava/lang/String;)V', u'Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;', u'Landroid/view/View;->getAlpha()F', u'Landroid/content/pm/PackageManager;->getApplicationLabel(Landroi"
+p57
+sg5
+S'CHANGED (JI 30.59%)'
+p58
+sg7
+F30.59
+sa(dp59
+g3
+S'\nDELETED set([u\'Failure to initialize!\', u\'Processing incoming service response message of type: \', u\'RequestScoresJniResponseHandler\', u\'Y29tLmFuZHJvaWQudmVuZGluZy5DSEVDS19MSUNFTlNF\', u\'android.permission.VIBRATE not available?\', u\'  %s: %d\\n\', u\' AAx\', u\'EGL_COVERAGE_BUFFERS_NV\', u\'\\n\\nActual\\nm32bit: \', u\'jniRequestScores response - onFailure\', u\'NUMERIC\', u\'android.opengl.GLSurfaceView$GLWrapper\', u\'Not running Unity from an Activity; ignored...\', u\'0\', u\'OPT_IN_STATUS\', u\'POP_UP_LOCATION\', u\' called Asynchronously with handle.\', u\'scoreValue\', u\'AmazonGamesJni\', u\'ResetAchievementJniRespHandler\', u\'CANNOT_BIND\', u\', constructing failure response\', u\'currentActivity\', u\'armeabi\', u\' is not known!\', u\'Entering pack()...\', u\' to [\', u\'icon byte array in bundle: \', u\'ResetAchievementsJniRespHandler\', u\'lastResponse\', u\'Tried to unpack, but no data exists.  Ignoring.\', u\'CPU architecture\', u\'onGameUploadSuccess\', u\'errorCode must be non-null.\', u\'EGL_LUMINANCE_SIZE\', u\'INSTANCE\', u\'requestLocal\n---\nADDED set([u\'\\x00\', u\'.3gpp\', u\'Could not get websites\', u\'DateTime\', u\'umts\', u\'Error sending email \', u\' mTag=\', u\'failWrite: Got exception:\', u\'vnd.android.cursor.item/contact_event\', u\' at index \', u\' did not call through to super.onDestroyView()\', u"cordova.require(\'cordova/plugin/Media\').onStatus(\'", u\'clearCache\', u"javascript:cordova.fireDocumentEvent(\'menubutton\');", u\' index requested: \', u\'android.intent.extra.KEY_EVENT\', u\'Host\', u\'about:blank\', u"cordova.fireDocumentEvent(\'hidekeyboard\');", u\'ExposureTime\', u\'ACTION_PREVIOUS_HTML_ELEMENT\', u\',"keepCallback":\', u\'java.version\', u\' mStateSaved=\', u\' mContainerId=#\', u\'android.support.PARENT_ACTIVITY\', u\'Origin to allow: %s\', u\'upload\', u\'CordovaActivity.onCreate()\', u\'heading\', u\'INVALID_STREAM\', u\'honorificSuffix\', u\'CordovaActivity.init()\', u\'Could not get name\', u\'registration_id\', u\'hide\', u\' mArgs=\', u\' id=0x\', u\'account_name\', u\'getConnectionInfo\', u\' already has a \', u\'Can not perform this action inside of \', u\'ACTION_COPY\''
+p60
+sg5
+S'CHANGED (JI 1.49%)'
+p61
+sg7
+F1.49
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/amazon/ags/api/AmazonGamesClient;->apiHandler Landroid/os/Handler; [access_flags=public final]\\n', 'Lcom/unity3d/player/UnityPlayer$16;->a I [access_flags=private synthetic]\\n', 'Lcom/amazon/ags/client/whispersync/savedgame/SimpleGameSummary;->version Ljava/lang/String; [access_flags=private]\\n', 'Lcom/amazon/ags/api/AmazonGamesClient;->INSTANCE Lcom/amazon/ags/api/AmazonGames; [access_flags=private static]\\n', 'Lcom/amazon/ags/client/util/YesNoMaybe;->NO Lcom/amazon/ags/client/util/YesNoMaybe; [access_flags=public static enum final]\\n', 'Lcom/unity3d/player/a/k;->d Ljava/lang/String; [access_flags=public]\\n', 'Lcom/amazon/ags/api/AmazonGamesClient$2;->this$0 Lcom/amazon/ags/api/AmazonGamesClient; [access_flags=synthetic final]\\n', 'Lcom/unity3d/player/c;->a Landroid/content/ContextWrapper; [access_flags=protected final]\\n', 'Lcom/unity3d/player/a/c$a$a;->a Landroid/os/IBinder; [access_flags=private]\\n', 'Lcom/amazon/ags/client/leaderboards/LeaderboardsServiceProxy$4;->this$\n---\nADDED set(['Lcom/squareup/okhttp/internal/spdy/SpdyStream$SpdyDataOutputStream;->this$0 Lcom/squareup/okhttp/internal/spdy/SpdyStream; [access_flags=synthetic final]\\n', 'Landroid/support/v4/text/BidiFormatter;->RLM_STRING Ljava/lang/String; [access_flags=private static final]\\n', 'Lcom/squareup/okhttp/internal/http/ResponseHeaders;->sMaxAgeSeconds I [access_flags=private]\\n', 'Landroid/support/v4/app/FragmentActivity;->mCheckedForLoaderManager Z [access_flags=0x0]\\n', 'Lorg/apache/cordova/Notification$1;->val$cordova Lorg/apache/cordova/api/CordovaInterface; [access_flags=synthetic final]\\n', 'Lorg/apache/cordova/Notification$1;->val$title Ljava/lang/String; [access_flags=synthetic final]\\n', 'Lorg/apache/cordova/CordovaActivity;->TAG Ljava/lang/String; [access_flags=public static]\\n', 'Lorg/apache/cordova/ExifHelper;->gpsTimestamp Ljava/lang/String; [access_flags=private]\\n', 'Landroid/support/v4/app/Fragment;->mContainer Landroid/view/ViewGroup; [access_flags=0x0]\\n', 'Lcom/squareup/okhtt"
+p63
+sg5
+S'CHANGED (JI 0.0%)'
+p64
+sg7
+F0
+sa.

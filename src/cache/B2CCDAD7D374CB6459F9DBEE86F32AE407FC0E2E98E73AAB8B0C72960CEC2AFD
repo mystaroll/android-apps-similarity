@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 18!=2'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 2.0!=1.01'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 14!=4'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: 19!=None'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 19!=4'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set(['com.android.vending.BILLING'])\n---\nADDED set(['android.permission.SYSTEM_ALERT_WINDOW', 'android.permission.READ_LOGS'])"
+p24
+sg5
+S'CHANGED (JI 62.5%)'
+p25
+sg7
+F62.5
+sa(dp26
+g3
+S'DIFFERENT: com.ensomniac.glint!=com.qi.Gobang'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: Glint!=gobang'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.apsalar.sdk.Activity', 'com.prime31.UnityPlayerNativeActivity', 'com.prime31.GoogleIABProxyActivity', 'com.facebook.LoginActivity', 'com.vungle.sdk.VungleAdvert'])\n---\nADDED set(['com.qi.Gobang..gobang', 'com.google.ads.AdActivity'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set(['res/layout/com_facebook_picker_image.xml', 'assets/bin/Data/d29ec6822cc0945a6955382d0ab7acc6', 'res/drawable-xhdpi/com_facebook_button_grey_pressed.9.png', 'assets/bin/Data/da299c38c2daa47a1ac2b6a67f0f91be', 'res/drawable/com_facebook_list_section_header_background.9.png', 'assets/bin/Data/6f38bdcd4554f4cedb1bb85275d1b587', 'assets/bin/Data/695f7be767d0d46dc9d5e12d61c35d2e', 'res/drawable-hdpi/com_facebook_picker_magnifier.png', 'res/drawable-hdpi/com_facebook_logo.png', 'assets/bin/Data/974b1e4e79cf449068884f0053a2177b', 'assets/bin/Data/29db9588bce86420e995e57baea02628', 'assets/bin/Data/ec254bb4b201a442d93d22371300668e', 'assets/bin/Data/268d70caf2bb84ce19a58228ccacb2c4', 'res/drawable-xhdpi/com_facebook_inverse_icon.png', 'assets/bin/Data/53b12d7a268014ecd87095a8b640a731', 'assets/bin/Data/Managed/UnityEngine.dll', 'assets/bin/Data/e0144c029d8014b2484806fe8e1045b2', 'res/drawable-xxhdpi/app_icon.png', 'assets/bin/Data/810bbb19deed24f3cb7b854f9bafde26', 'assets/bin/Data/Resour\n---\nADDED set(['res/layout/main.xml', 'assets/gobang.dll', 'res/drawable-ldpi/ic_launcher.png', 'com/adwhirl/assets/ad_frame.gif', 'res/layout/adview.xml', 'res/drawable-hdpi/ic_launcher.png', 'res/drawable-mdpi/ic_launcher.png', 'lib/armeabi/libsiqi.so'])"
+p36
+sg5
+S'CHANGED (JI 2.1%)'
+p37
+sg7
+F2.1000000000000001
+sa(dp38
+g3
+S"\nDELETED set(['com.vungle.sdk.VungleIntentService'])\n---\nADDED set([])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set(['com.apsalar.sdk.ApsalarReceiver'])\n---\nADDED set([])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Landroid/support/v4/widget/SearchViewCompatHoneycomb$1;', u'Lcom/vungle/sdk/i$a;', u'Lcom/vungle/sdk/j$a$3;', u'Lcom/prime31/GoogleIABPlugin$5;', u'Lcom/vungle/sdk/IVungleConstants;', u'Lcom/unity3d/player/UnityPlayer$17;', u'Ljava/util/LinkedHashMap;', u'Landroid/support/v4/content/IntentCompat$IntentCompatImplHC;', u'Lcom/vungle/sdk/at;', u'Lcom/facebook/widget/PickerFragment$4;', u'Lcom/facebook/TestSession$FqlResponse;', u'Lcom/unity3d/player/k;', u'Landroid/graphics/pdf/PdfDocument$PageInfo;', u'Lcom/vungle/sdk/af;', u'Landroid/support/v4/app/FragmentManager$OnBackStackChangedListener;', u'Ljava/util/concurrent/TimeUnit;', u'Landroid/support/v4/net/ConnectivityManagerCompatGingerbread;', u'Lcom/prime31/FacebookPluginBase;', u'Lcom/facebook/widget/PickerFragment$OnDoneButtonClickedListener;', u'Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;', u'Landroid/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1;', u'Landroid/support/v4/view/V\n---\nADDED set([u'Lcom/qi/Gobang/VirtualKeyBoard;', u'Lcom/nexage/android/NexageAdManager;', u'Lcom/google/ads/g;', u'Lcom/qi/Gobang/gobang$KeyCallback;', u'Lcom/google/ads/c$c;', u'Lcom/adwhirl/AdWhirlTargeting$Gender;', u'Ljava/util/StringTokenizer;', u'Lcom/feedback/a;', u'Lcom/google/ads/g$a;', u'Ljava/util/Calendar;', u'Lcom/google/ads/util/b$a;', u'Ljava/util/GregorianCalendar;', u'[Lcom/google/ads/ab$b;', u'Lcom/adwhirl/adapters/MdotMAdapter;', u'Ljava/util/Hashtable;', u'Lcom/adwhirl/AdWhirlLayout$InitRunnable;', u'Lcom/qi/Gobang/R$layout;', u'Lcom/adwhirl/adapters/MillennialAdapter;', u'Lcom/qwapi/adclient/android/requestparams/AdRequestParams;', u'Lcom/mobclick/android/d;', u'Lcom/feedback/ui/c;', u'Lcom/adwhirl/obj/Ration;', u'Lcom/adwhirl/adapters/CustomAdapter$FetchCustomRunnable;', u'Lcom/google/ads/o;', u'Lcom/junction/fire/engine/FireEnginePlayer;', u'Lcom/google/ads/t;', u'Ljava/math/BigInteger;', u'Lcom/adwhirl/adapters/QuattroAdapter;', u'Lcom/google/ads/AdSize;', u'Lcom/google"
+p45
+sg5
+S'CHANGED (JI 7.79%)'
+p46
+sg7
+F7.79
+sa(dp47
+g3
+S"\nDELETED set([u'Landroid/support/v4/util/SimpleArrayMap;->toString()Ljava/lang/String;', u'Landroid/support/v4/view/MarginLayoutParamsCompatJellybeanMr1;->isMarginRelative(Landroid/view/ViewGroup$MarginLayoutParams;)Z', u'Lcom/facebook/model/GraphObject$Factory$GraphObjectListImpl;->put(I Ljava/lang/Object;)V', u'Landroid/support/v4/widget/AutoScrollHelper;->setRelativeEdges(F F)Landroid/support/v4/widget/AutoScrollHelper;', u'Lcom/facebook/internal/FileLruCache$CopyingInputStream;->read([B)I', u'Lcom/vungle/sdk/g;-><init>()V', u'Lcom/facebook/widget/WebDialog;->setUpWebView(I)V', u'Lcom/prime31/util/IabResult;->isFailure()Z', u'Lcom/facebook/widget/PlacePickerFragment$SearchTextWatcher;-><init>(Lcom/facebook/widget/PlacePickerFragment; Lcom/facebook/widget/PlacePickerFragment$SearchTextWatcher;)V', u'Lcom/facebook/Session;->onActivityResult(Landroid/app/Activity; I I Landroid/content/Intent;)Z', u'Landroid/support/v4/util/MapCollections$KeySet;->remove(Ljava/lang/Object;)Z', u'Landroid/support\n---\nADDED set([u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/junction/fire/engine/FireEnginePlayer$AudioPlayBack$AudioCallback;->onPeriodicNotification(Landroid/media/AudioTrack;)V', u'Lcom/mobclick/android/a;-><init>(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/mobclick/android/l;-><init>()V', u'Lcom/google/ads/AdActivity;->onPause()V', u'Lcom/google/ads/d;-><init>(Landroid/app/Activity; Lcom/google/ads/Ad; Lcom/google/ads/AdSize; Ljava/lang/String; Z)V', u'Lcom/feedback/UMFeedbackService;->getHasCheckedReply()Z', u'Lcom/google/ads/searchads/SearchAdRequest;-><init>()V', u'Lcom/google/ads/util/a;->b(Ljava/lang/String; Ljava/lang/Throwable;)V', u'Lcom/qi/Gobang/gobang$1;->onClick(Landroid/content/DialogInterface; I)V', u'Lcom/junction/fire/engine/FireEnginePlayer$AudioPlayBack;->DestroyAudio(I)V', u'Lcom/adwhirl/adapters/MillennialAdapter;->MMAdOverlayLaunched(Lcom/millennialmedia/android/MMAdView;)V', u'"
+p48
+sg5
+S'CHANGED (JI 0.0%)'
+p49
+sg7
+F0
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([u'Landroid/support/v4/util/SimpleArrayMap;->toString()Ljava/lang/String;', u'Lcom/facebook/model/GraphObject$Factory$GraphObjectListImpl;->put(I Ljava/lang/Object;)V', u'Landroid/support/v4/widget/AutoScrollHelper;->setRelativeEdges(F F)Landroid/support/v4/widget/AutoScrollHelper;', u'Landroid/util/SparseArray;->remove(I)V', u'Landroid/view/accessibility/AccessibilityRecord;->setToIndex(I)V', u'Lcom/vungle/sdk/g;-><init>()V', u'Ljava/lang/StringBuilder;->replace(I I Ljava/lang/String;)Ljava/lang/StringBuilder;', u'Lcom/prime31/util/IabResult;->isFailure()Z', u'Lcom/facebook/widget/PlacePickerFragment$SearchTextWatcher;-><init>(Lcom/facebook/widget/PlacePickerFragment; Lcom/facebook/widget/PlacePickerFragment$SearchTextWatcher;)V', u'Landroid/support/v4/widget/AutoScrollHelper$ClampedScroller;->setRampUpDuration(I)V', u'Landroid/view/accessibility/AccessibilityManager;->addAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeList\n---\nADDED set([u'Landroid/widget/EditText;->requestFocus()Z', u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/mobclick/android/a;-><init>(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/feedback/ui/b;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V', u'Lcom/google/ads/d;-><init>(Landroid/app/Activity; Lcom/google/ads/Ad; Lcom/google/ads/AdSize; Ljava/lang/String; Z)V', u'Lcom/feedback/UMFeedbackService;->getHasCheckedReply()Z', u'Lcom/google/ads/searchads/SearchAdRequest;-><init>()V', u'Lcom/google/ads/e;->a()Landroid/os/Bundle;', u'Lcom/mobclick/android/l;->b(Landroid/content/Context;)Ljava/lang/String;', u'Lcom/google/ads/d;->A()Z', u'Lcom/google/ads/AdView;->a(Landroid/app/Activity; Lcom/google/ads/AdSize; Ljava/lang/String;)V', u'Lcom/google/ads/d;->a(Lcom/google/ads/AdRequest$ErrorCode;)V', u'Lcom/qi/Gobang/gobang;->getWindowManager()Landroid/view/WindowManager;', u'Landroid/widget/ArrayAd"
+p54
+sg5
+S'CHANGED (JI 3.91%)'
+p55
+sg7
+F3.9100000000000001
+sa(dp56
+g3
+S"\nDELETED set([u'Ljava/util/List;->indexOf(Ljava/lang/Object;)I', u'Landroid/os/Bundle;->keySet()Ljava/util/Set;', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Ljava/lang/StringBuilder;->replace(I I Ljava/lang/String;)Ljava/lang/StringBuilder;', u'Landroid/content/Context;->obtainStyledAttributes(I [I)Landroid/content/res/TypedArray;', u'Ljava/lang/String;->charAt(I)C', u'Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context; I)V', u'Lorg/json/JSONObject;->names()Lorg/json/JSONArray;', u'Landroid/webkit/WebSettings;->setSaveFormData(Z)V', u'Landroid/webkit/WebViewClient;->onReceivedError(Landroid/webkit/WebView; I Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/view/View;->postInvalidateOnAnimation()V', u'Landroid/widget/FrameLayout;->onTouchEvent(Landroid/view/MotionEvent;)Z', u'Landroid/widget/FrameLayout;->addView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Landroid/widget/ImageView;->getTa\n---\nADDED set([u'Landroid/widget/EditText;->requestFocus()Z', u'Ljava/lang/Object;->wait(J)V', u'Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;', u'Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context; Landroid/util/AttributeSet;)V', u'Ljava/io/FileOutputStream;->write([B)V', u'Landroid/util/Log;->isLoggable(Ljava/lang/String; I)Z', u'Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V', u'Landroid/webkit/WebSettings;->setUserAgentString(Ljava/lang/String;)V', u'Landroid/graphics/drawable/BitmapDrawable;-><init>(Ljava/io/InputStream;)V', u'Lorg/apache/http/client/methods/HttpPost;->addHeader(Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/widget/ImageView;->setId(I)V', u'Lorg/apache/http/client/methods/HttpPost;->addHeader(Lorg/apache/http/Header;)V', u'Ljava/util/zip/ZipFile;-><init>(Ljava/lang/String;)V', u'Landroid/media/AudioManager;->isSpeakerphoneOn()Z', u'Landroid/widget/EditText;->setEnabled(Z)V', u'Landroid/content/Context;"
+p57
+sg5
+S'CHANGED (JI 30.47%)'
+p58
+sg7
+F30.469999999999999
+sa(dp59
+g3
+S'\nDELETED set([u\'EVERYONE\', u\'VungleIntentService[\', u\'auth.expireSession failed\', u\'basic_info\', u\'SUPPRESS_SSO\', u\'limitEventUsage\', u\'sleep\', u\' mTag=\', u\'failWrite: Got exception:\', u\'Intent with no response code, assuming OK (known issue)\', u\'isSdCardAvailable\', u\' at index \', u\'failed to create JSON packet: \', u\' did not call through to super.onDestroyView()\', u\'&sw=\', u\'  %s:\\t%s\\n\', u\') because another async operation(\', u\' index requested: \', u\'Querying SKU details.\', u\'android.intent.extra.KEY_EVENT\', u\'Not running Unity from an Activity; ignored...\', u\' token:\', u\'No injectable members on \', u\'com.facebook.platform.extra.EXPIRES_SECONDS_SINCE_EPOCH\', u\'@\', u\'fb_dialog_outcome\', u\'_eventName\', u\'ACTION_PREVIOUS_HTML_ELEMENT\', u\'currentActivity\', u\' is not known!\', u\'initialized Twitter service.\', u\'members/com.vungle.sdk.net.http.InfiniteRetryHttpResponseHandler\', u\' mStateSaved=\', u\'Attempting to consume \', u\'&type=\', u\' mContainerId=#\', u\'android.support.PARENT_ACTIVITY\', u"Can\'t sta\n---\nADDED set([u\'pto\', u\'Exception occurred in ReportMessageHandler\', u\'No "action" parameter in a video gmsg.\', u\'Unable to ping the URL: \', u\'start to check update info ...\', u\'Cannot show interstitial because it is not loaded and ready.\', u\'/video\', u\'mobclick_agent_update_\', u\'AdSense failure\', u\'ZestADZ failure\', u\'Nexage success\', u\'JSONException in parsing config.rations JSON. This may or may not be fatal.\', u\'age_group\', u\'GoogleAdMobDoritosLife\', u\'unexpected null context in onPause\', u\'-d\', u\'afma_notify_dt\', u\'get update info failed\', u\'/com/adwhirl/assets/ad_frame.gif\', u\'key_item = \', u\'UMViewFeedback\', u\'show\', u\'tp\', u"Trying to evaluate JS in a WebView that isn\'t an AdWebView", u\'-v\', u\'drt_include\', u\'-p\', u\'UmengFb_Nums\', u\'AdView missing required XML attribute "adSize".\', u\'http://mob.adwhirl.com/getInfo.php?appid=%s&appver=%d&client=2\', u\'com.millennialmedia.android.MMAdView\', u\'activities\', u"{\'event\': \'canplaythrough\', \'duration\': \'", u\'Download saveAPK error\', u\'http://www'
+p60
+sg5
+S'CHANGED (JI 2.67%)'
+p61
+sg7
+F2.6699999999999999
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/facebook/widget/GraphObjectPagingLoader;->nextRequest Lcom/facebook/Request; [access_flags=private]\\n', 'Lcom/prime31/TwitterPlugin$4$1;->val$authUrl Ljava/lang/String; [access_flags=private synthetic final]\\n', 'Lcom/vungle/sdk/ar;->f Ljava/lang/ClassLoader; [access_flags=private final]\\n', 'Lcom/unity3d/player/j;->b Landroid/app/Activity; [access_flags=private final]\\n', 'Lcom/facebook/widget/UserSettingsFragment;->userProfilePicID Ljava/lang/String; [access_flags=private]\\n', 'Lcom/vungle/sdk/n;->H Z [access_flags=private static]\\n', 'Lcom/vungle/sdk/model/RequestAd$$InjectAdapter;->h Lcom/vungle/sdk/aq; [access_flags=private]\\n', 'Landroid/support/v4/app/Fragment;->mContainer Landroid/view/ViewGroup; [access_flags=0x0]\\n', 'Lcom/vungle/sdk/VungleIntentService$a$1;->c Ljava/lang/String; [access_flags=synthetic final]\\n', 'Lcom/facebook/Request;->session Lcom/facebook/Session; [access_flags=private]\\n', 'Landroid/support/v4/widget/ViewDragHelper;->mReleaseInProgress Z [acc\n---\nADDED set(['Lcom/mobclick/android/UpdateStatus;->Timeout I [access_flags=public static]\\n', 'Lcom/mobclick/android/MobclickAgent;->a Lcom/mobclick/android/MobclickAgent; [access_flags=private static final]\\n', 'Lcom/feedback/UMFeedbackService;->b Landroid/content/Context; [access_flags=private static]\\n', 'Lcom/adwhirl/obj/Extra;->cycleTime I [access_flags=public]\\n', 'Lcom/adwhirl/AdWhirlLayout;->maxHeight I [access_flags=private]\\n', 'Lcom/google/ads/searchads/SearchAdRequest$BorderType;->NONE Lcom/google/ads/searchads/SearchAdRequest$BorderType; [access_flags=public static enum final]\\n', 'Lcom/feedback/ui/c;->a Landroid/content/Context; [access_flags=0x0]\\n', 'Lcom/google/ads/AdRequest;->i Ljava/util/Set; [access_flags=private]\\n', 'Lcom/google/ads/util/b$b;->k I [access_flags=private]\\n', 'Lcom/feedback/NotificationType;->AlertDialog Lcom/feedback/NotificationType; [access_flags=public static enum final]\\n', 'Lcom/google/ads/util/b$b;->j [B [access_flags=private final]\\n', 'Lcom/mobclic"
+p63
+sg5
+S'CHANGED (JI 0.0%)'
+p64
+sg7
+F0
+sa.

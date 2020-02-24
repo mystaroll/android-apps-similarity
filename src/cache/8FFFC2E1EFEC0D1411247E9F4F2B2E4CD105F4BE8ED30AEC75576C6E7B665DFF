@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.WAKE_LOCK', 'android.permission.WRITE_EXTERNAL_STORAGE', 'android.permission.ACCESS_WIFI_STATE'])"
+p24
+sg5
+S'CHANGED (JI 50.0%)'
+p25
+sg7
+F50
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.west.eryga.ere.MyActivity', 'com.feiwo.coverscreen.WA', 'android.sreyua.net.TseyActivity', 'com.feiwo.coverscreen.SA'])"
+p33
+sg5
+S'CHANGED (JI 33.33%)'
+p34
+sg7
+F33.329999999999998
+sa(dp35
+g3
+S"\nDELETED set(['META-INF/CERT.RSA', 'META-INF/CERT.SF'])\n---\nADDED set(['META-INF/ABC_KEYS.SF', 'META-INF/ABC_KEYS.RSA', 'assets/pc/icp.dat', 'assets/bin/v2.dat'])"
+p36
+sg5
+S'CHANGED (JI 86.05%)'
+p37
+sg7
+F86.049999999999997
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.sreyua.net.TseuActivity', 'com.west.eryga.ere.MyService'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.west.eryga.ere.MyReceiver', 'com.feiwo.coverscreen.SR', 'android.sreyua.net.GseuActivity'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/io/FileNotFoundException;', u'Landroid/widget/ImageView;', u'Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;', u'Landroid/support/v4/widget/SearchViewCompatHoneycomb$1;', u'Lcom/weoy/reksxy/ui/g;', u'Lcom/feiwo/coverscreen/h;', u'Lcom/west/eryga/ere/ui/c;', u'Landroid/support/v4/content/ModernAsyncTask$InternalHandler;', u'Ljava/lang/reflect/Modifier;', u'Landroid/support/v4/view/MenuItemCompat$IcsMenuVersionImpl;', u'Lcom/feiwo/coverscreen/C;', u'Landroid/support/v4/view/ViewCompat$BaseViewCompatImpl;', u'Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderKitKatImpl$1;', u'Lcom/feiwo/coverscreen/a/F;', u'Landroid/support/v4/os/EnvironmentCompatKitKat;', u'Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;', u'Ljava/util/LinkedHashMap;', u'Landroid/support/v4/view/ViewGroupCompatHC;', u'Landroid/support/v4/content/IntentCompat$IntentCompatImplHC;', u'Landroid/view/GestureDetector$OnDoubleTapListener;',"
+p45
+sg5
+S'CHANGED (JI 38.11%)'
+p46
+sg7
+F38.109999999999999
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Landroid/support/v4/util/SimpleArrayMap;->toString()Ljava/lang/String;', u'Lcom/west/eryga/ere/r/a;->d(Landroid/content/Context; Ljava/lang/String;)Z', u'Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;->update(Landroid/support/v4/app/ActivityOptionsCompat;)V', u'Landroid/sreyua/net/TseuActivity;->onCreate(Landroid/os/Bundle;)V', u'Landroid/support/v4/app/ListFragment;->setListShown(Z)V', u'Landroid/support/v4/util/MapCollections$KeySet;->remove(Ljava/lang/Object;)Z', u'Landroid/support/v4/view/MarginLayoutParamsCompatJellybeanMr1;->isMarginRelative(Landroid/view/ViewGroup$MarginLayoutParams;)Z', u'Landroid/support/v4/app/FragmentManagerImpl;->dispatchLowMemory()V', u'Landroid/support/v4/app/DialogFragment;->dismiss()V', u'Lcom/feiwo/coverscreen/z;->c()V', u'Landroid/support/v4/widget/ViewDragHelper;->processTouchEvent(Landroid/view/MotionEvent;)V', u'Landroid/support/v4/app/NavUtils$NavUtilsImplJB;->getParentActivityName(Landroid/content/Context; Landroid/co"
+p48
+sg5
+S'CHANGED (JI 29.65%)'
+p49
+sg7
+F29.649999999999999
+sa(dp50
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lair/EscapeStoneHouse/AppEntry;->tsTseRseiew()V'])"
+p51
+sg5
+S'CHANGED (JI 99.95%)'
+p52
+sg7
+F99.950000000000003
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Landroid/support/v4/util/SimpleArrayMap;->toString()Ljava/lang/String;', u'Lcom/west/eryga/ere/r/a;->d(Landroid/content/Context; Ljava/lang/String;)Z', u'Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context; I)V', u'Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;->update(Landroid/support/v4/app/ActivityOptionsCompat;)V', u'Landroid/util/SparseArray;->remove(I)V', u'Landroid/view/accessibility/AccessibilityRecord;->setToIndex(I)V', u'Landroid/support/v4/app/ListFragment;->setListShown(Z)V', u'Landroid/view/accessibility/AccessibilityManager;->addAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeListener;)Z', u'Landroid/print/pdf/PrintedPdfDocument;->close()V', u'Lcom/feiwo/coverscreen/SA;->requestWindowFeature(I)Z', u'Landroid/support/v4/widget/ViewDragHelper;->processTouchEvent(Landroid/view/MotionEvent;)V', u'Landroid/support/v4/widget/AutoScrollHelper;->setRelativeEdges(F F)Landroid/s"
+p54
+sg5
+S'CHANGED (JI 34.25%)'
+p55
+sg7
+F34.25
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/util/List;->indexOf(Ljava/lang/Object;)I', u'Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context; I)V', u'Landroid/util/SparseArray;->remove(I)V', u'Landroid/content/Context;->obtainStyledAttributes(I [I)Landroid/content/res/TypedArray;', u'Landroid/os/Bundle;->keySet()Ljava/util/Set;', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Landroid/view/GestureDetector;->setIsLongpressEnabled(Z)V', u'Ljava/io/FileInputStream;->close()V', u'Landroid/view/ViewGroup;->getId()I', u'Ljava/io/FileOutputStream;-><init>(Ljava/io/FileDescriptor;)V', u'Landroid/widget/TextView;->setTextSize(I F)V', u'Landroid/os/Handler;->sendEmptyMessageDelayed(I J)Z', u'Ljava/io/RandomAccessFile;->seek(J)V', u'Landroid/os/Bundle;->putParcelable(Ljava/lang/String; Landroid/os/Parcelable;)V', u'Landroid/graphics/Canvas;->rotate(F)V', u'Landroid/content/Intent;->makeRestartActivityTask(Landroid/content/ComponentName;)Landroid/con"
+p57
+sg5
+S'CHANGED (JI 85.25%)'
+p58
+sg7
+F85.25
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Content-Range', u'package:', u'\\u5e7f\\u544a\\u6b63\\u5728\\u83b7\\u53d6\\u4e2d\\uff0c\\u6b64\\u6b21\\u8c03\\u7528\\u5ffd\\u7565', u'\\xdf\\xd8', u'\\u5df2\\u52a0\\u8f7d >> ', u'AppInfo [apkName=', u'; text: ', u'weburl', u'getScript', u' did not call through to super.onViewStateRestored()', u' mTag=', u'failWrite: Got exception:', u',imageHeight: ', u'mnc', u' at index ', u' did not call through to super.onDestroyView()', u', screenOnSwitchDelay: ', u',outContainerWidth: ', u'Finished Retaining in ', u' index requested: ', u'/clientinfo', u'this should only be called when the cursor is valid', u'NO_ASYNC_TASK', u'android.intent.extra.KEY_EVENT', u's\\xc0\\x84\\x86\\x97\\xa2\\xbfe', u'  Stopping: ', u'getMessage', u'\\u5bf8\\u893a\\u5bf3\\u627d', u'ViewPager', u'\\xeb\\x98\\x91', u'\\u670d\\u52a1\\u5668\\u8fd4\\u56de\\uff08sendAppInstall\\uff09\\uff1a', u'Already attached', u'  ', u'OP_REPLACE: adding=', u'setChildrenDrawingOrderEnabled', u'ACTION_PREVIOUS_HTML_ELEMENT', u' has cleared index: ', u'errorMessage > ', u"
+p60
+sg5
+S'CHANGED (JI 50.38%)'
+p61
+sg7
+F50.380000000000003
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/west/eryga/ere/g/a;->a Landroid/os/PowerManager$WakeLock; [access_flags=static]\\n', 'Lcom/west/eryga/ere/r/b;->aF [B [access_flags=public static final]\\n', 'Lcom/west/eryga/ere/r/b;->w [B [access_flags=public static final]\\n', 'Lcom/west/eryga/ere/p/a;->aK Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/weoy/reksxy/d;->k Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/weoy/reksxy/ao;->w I [access_flags=protected]\\n', 'Lcom/feiwo/coverscreen/a/c;->a Lcom/feiwo/coverscreen/a/c; [access_flags=private static]\\n', 'Landroid/support/v4/app/Fragment;->mContainer Landroid/view/ViewGroup; [access_flags=0x0]\\n', 'Lcom/west/eryga/ere/h/b;->n [B [access_flags=private]\\n', 'Lcom/weoy/reksxy/i;->o Z [access_flags=public]\\n', 'Landroid/support/v4/widget/ViewDragHelper;->mCallback Landroid/support/v4/widget/ViewDragHelper$Callback; [access_flags=private final]\\n', 'Lcom/west/eryga/ere/k/h;->b Ljava/util/Map; [access_flags=private]\\n', 'Lcom/west/eryga/ere/f/g"
+p63
+sg5
+S'CHANGED (JI 31.19%)'
+p64
+sg7
+F31.190000000000001
+sa.

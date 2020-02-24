@@ -2,6 +2,7 @@
 cache:
   paths:
     - src/data/apks
+    - src/cache
     - .pip
 download_data:
   script:

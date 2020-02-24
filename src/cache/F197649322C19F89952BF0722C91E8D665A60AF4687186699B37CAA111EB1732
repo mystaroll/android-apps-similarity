@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 1!=18'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 1.0!=2.1'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 4!=9'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: 8!=None'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 8!=9'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.DISABLE_KEYGUARD', 'android.permission.RECEIVE_BOOT_COMPLETED', 'android.permission.READ_PHONE_STATE', 'android.permission.READ_LOGS', 'android.permission.READ_EXTERNAL_STORAGE', 'com.android.alarm.permission.SET_ALARM', 'android.permission.ACCESS_COARSE_LOCATION', 'android.permission.BROADCAST_STICKY', 'android.permission.WRITE_SETTINGS', 'android.permission.CHANGE_CONFIGURATION', 'android.permission.ACCESS_FINE_LOCATION', 'android.permission.VIBRATE', 'android.permission.CAMERA', 'android.permission.ACCESS_DOWNLOAD_MANAGER', 'android.permission.WAKE_LOCK', 'android.permission.GET_TASKS', 'android.permission.CHANGE_WIFI_STATE', 'android.permission.RECORD_AUDIO', 'com.android.browser.permission.READ_HISTORY_BOOKMARKS', 'android.permission.MOUNT_UNMOUNT_FILESYSTEMS', 'android.permission.RESTART_PACKAGES', 'android.permission.WRITE_EXTERNAL_STORAGE', 'android.permission.DOWNLOAD_WITHOUT_NOTIFICATION'])"
+p24
+sg5
+S'CHANGED (JI 11.54%)'
+p25
+sg7
+F11.539999999999999
+sa(dp26
+g3
+S'DIFFERENT: com.kc8.ladkindle!=com.hf'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: LAD!=ChinaWeather'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.gamesalad.common.plugins.KeyboardInputActivity', 'com.gamesalad.player.GSGameWrapperActivity'])\n---\nADDED set(['com.hf.activity.VideoPlayActivity', 'com.baidu.frontia.activity.share.FrontiaSocialOAuthActivity', 'com.hf.activity.IndicesItemDetailActivity', 'com.hf.activity.WeatherMapActivity', 'com.hf.activity.UpdateBackgroundActivity', 'com.hf.activity.MapActivity', 'com.hf.activity.VideoActivity', 'com.hf.activity.WindIntroduceActivity', 'com.hf.activity.GuideActivity', 'com.baidu.mobads.appoffers.OffersActivity', 'com.hf.activity.HelpActivity', 'com.baidu.mobads.AppActivity', 'com.hf.activity.WarningListActivity', 'com.hf.activity.IndicesSelectActivity', 'com.baidu.frontia.activity.share.FrontiaLocalShareActivity', 'com.hf.activity.InitDefaultActivity', 'com.hf.activity.TabActivity', 'com.hf.preference.SettingActivity', 'com.umeng.update.UpdateDialogActivity', 'com.hf.activity.LogoActivity', 'com.hf.activity.WarningItemActivity', 'com.baidu.frontia.activity.share.FrontiaQQFriendShareReceiverActivity'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set(['assets/game.gameproj/actors/67.xml', 'assets/game.gameproj/images/465.png', 'assets/game.gameproj/images/19.png', 'assets/game.gameproj/images/164.png', 'assets/game.gameproj/images/41.png', 'assets/game.gameproj/images/326.png', 'assets/game.gameproj/actors/29.xml', 'assets/game.gameproj/images/206.png', 'assets/game.gameproj/images/218.png', 'assets/game.gameproj/images/446.png', 'assets/game.gameproj/images/31.png', 'assets/game.gameproj/images/378.png', 'assets/game.gameproj/sounds/22.ogg', 'assets/game.gameproj/images/291.png', 'assets/game.gameproj/images/306.png', 'assets/game.gameproj/sounds/15.ogg', 'assets/game.gameproj/images/281.png', 'assets/game.gameproj/images/222.png', 'assets/game.gameproj/images/162.png', 'assets/game.gameproj/images/47.png', 'assets/game.gameproj/sounds/30.ogg', 'assets/game.gameproj/images/243.png', 'assets/game.gameproj/images/87.png', 'assets/game.gameproj/images/53.png', 'assets/game.gameproj/images/367.png', 'assets/game.gameproj/actors/89\n---\nADDED set([u'res/drawable/abs__list_selector_background_transition_holo_dark.xml', u'res/drawable/abs__btn_cab_done_holo_light.xml', u'res/drawable-hdpi/guide_add_city.png', u'res/drawable-hdpi/umeng_xp_detail365.png', u'res/drawable-hdpi/hf_video_select.png', u'res/drawable-hdpi/widget_lei.png', u'res/drawable-hdpi/abs__spinner_ab_focused_holo_light.9.png', u'res/drawable/ad_button_bg.xml', u'assets/logo_l.png', u'res/drawable-hdpi/day29.png', u'res/drawable-hdpi/umeng_xp_btn_gradient_dark_grey.xml', u'res/drawable-hdpi/umeng_xp_shape_gradient_grey_1.xml', u'res/drawable/umeng_update_button_check_selector.xml', u'res/drawable-hdpi/day14.png', u'res/drawable-hdpi/day00.png', u'res/drawable-hdpi/day29_mini.png', u'res/drawable-hdpi/umeng_xp_seek.png', u'res/layout/trend.xml', u'res/drawable-mdpi/abs__ic_cab_done_holo_dark.png', u'res/layout/weather_notify_layout.xml', u'assets/cfg/h/DVDirectory.cfg', u'res/drawable-hdpi/indices_select_ok_pressed.9.png', u'res/drawable-mdpi/abs__spinner_ab_pre"
+p36
+sg5
+S'CHANGED (JI 0.23%)'
+p37
+sg7
+F0.23000000000000001
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.umeng.common.net.DownloadingService', 'cn.com.weather.util.TrafficStatsService', 'com.hf.widget.TimeService', 'com.baidu.location.f'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.hf.service.SystemReceiver', 'com.hf.unofficial.UnOfficialReceiver', 'com.hf.service.WeatherReceiver', 'com.hf.widget.HFWeatherWidget4_2', 'com.hf.service.NotifyReceiver', 'com.hf.widget.HFWeatherWidget4_1'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Lcom/amazon/android/framework/prompt/PromptManager;', u'Lcom/amazon/android/framework/prompt/i;', u'Lcom/amazon/android/l/a;', u'Lcom/gamesalad/common/R$attr;', u'Lcom/amazon/android/h/b;', u'Lcom/amazon/android/b/a;', u'Lcom/flurry/android/c;', u'Lcom/gamesalad/common/SingleTouchHandler$3;', u'Lcom/flurry/android/d;', u'Lcom/amazon/android/m/a;', u'Lcom/amazon/android/framework/context/a;', u'Lcom/amazon/venezia/command/SuccessResult;', u'Lcom/flurry/android/ah;', u'Lorg/apache/http/ProtocolVersion;', u'Ljava/io/FilterOutputStream;', u'Ljava/util/concurrent/BlockingQueue;', u'Lcom/localytics/android/JsonObjects$BlobHeader$Attributes;', u'Lcom/amazon/android/e;', u'Lcom/flurry/android/j;', u'Lcom/gamesalad/player/R$style;', u'Lcom/amazon/venezia/command/ExceptionResult;', u'Lcom/google/android/apps/analytics/NetworkDispatcher$DispatcherThread;', u'Lcom/flurry/android/ac;', u'Lcom/amazon/mas/kiwi/util/Base64;', u'Lcom/amazon/venezia/command/ExceptionResult$Stub$Proxy;', u'Lcom/ga\n---\nADDED set([u'Lcom/baidu/platform/comapi/map/t$b;', u'Lcom/umeng/common/util/a;', u'Landroid/support/v4/widget/SearchViewCompatHoneycomb$1;', u'Lcom/umeng/newxp/view/E;', u'Lcom/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter;', u'Lcom/hf/activity/WarningItemActivity;', u'Lcom/umeng/newxp/common/h;', u'Lcom/hf/data/HFAction;', u'Lcom/umeng/common/net/d$b;', u'Lcom/baidu/mobads/appoffers/OffersView;', u'Lcom/hf/preference/SettingActivity$2;', u'Landroid/graphics/drawable/ClipDrawable;', u'Lcom/hf/widget/TimeService$ScreenReceiver;', u'Lcom/umeng/newxp/view/aX;', u'Lcom/baidu/pcs/BaiduPCSActionBase;', u'Lcom/baidu/android/pushservice/PushManager$25;', u'Landroid/support/v4/content/IntentCompat$IntentCompatImplHC;', u'Landroid/text/method/ScrollingMovementMethod;', u'Lcom/actionbarsherlock/ActionBarSherlock;', u'Lcom/baidu/platform/comapi/basestruct/b;', u'Landroid/support/v4/app/FragmentManager$OnBackStackChangedListener;', u'Lnet/simonvt/menudrawer/SinusoidalInterpolator;', u'Lcom"
+p45
+sg5
+S'CHANGED (JI 6.33%)'
+p46
+sg7
+F6.3300000000000001
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/amazon/android/framework/task/command/h;->a()Ljava/lang/String;', u'Lcom/localytics/android/LocalyticsSession$Pair;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V', u'Lcom/google/android/apps/analytics/HitStore;->setAnonymizeIp(Z)V', u'Lcom/amazon/android/framework/task/command/c;->doCreate(Landroid/app/Activity;)Landroid/app/Dialog;', u'Lcom/gamesalad/common/SingleTouchHandler$2;->run()V', u'Lcom/amazon/venezia/command/DecisionResult$Stub$Proxy;->getDisplayableName()Ljava/lang/String;', u'Lcom/amazon/android/framework/prompt/SimplePrompt;->doAction()V', u'Lcom/google/android/apps/analytics/Transaction;-><init>(Lcom/google/android/apps/analytics/Transaction$Builder;)V', u'Lcom/flurry/android/CallbackEvent;->setMessage(Ljava/lang/String;)V', u'Lcom/amazon/android/r/a;->onSuccess(Lcom/amazon/venezia/command/SuccessResult;)V', u'Lcom/amazon/android/framework/task/pipeline/d;->run()V', u'Lcom/flurry/android/u;->c(Ljava/lang/String;)Ljava/util/List;', u'Lcom/flurry/android/u;->\n---\nADDED set([u'Lcom/umeng/common/net/p;->a(Ljava/io/File;)J', u'Lcn/com/weather/sns/auth/AuthDialog$AuthWebViewClient;-><init>(Lcn/com/weather/sns/auth/AuthDialog;)V', u'Landroid/support/v4/app/ListFragment;->setListShown(Z)V', u'Lcom/baidu/location/LocationClient;->a(I)V', u'Lcom/umeng/newxp/view/ExchangeViewManager;-><init>(Landroid/content/Context; Lcom/umeng/newxp/controller/ExchangeDataService;)V', u'Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet;->isStarted()Z', u'Lcom/baidu/mapapi/map/Ground;->setPosition(Lcom/baidu/platform/comapi/basestruct/GeoPoint; I I)V', u'Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;->access$2(Lcom/actionbarsherlock/internal/widget/IcsListPopupWindow;)Lcom/actionbarsherlock/internal/widget/PopupWindowCompat;', u'Lcom/baidu/mobads/appoffers/j;-><clinit>()V', u'Lcom/umeng/newxp/view/P;->c(Lcom/umeng/newxp/view/P;)Z', u'Landroid/support/v4/view/PagerTabStrip;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V', u'Lcom/h"
+p48
+sg5
+S'CHANGED (JI 0.0%)'
+p49
+sg7
+F0
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/amazon/android/framework/task/command/h;->a()Ljava/lang/String;', u'Lcom/gamesalad/common/SingleTouchHandler$2;->run()V', u'Lcom/amazon/venezia/command/DecisionResult$Stub$Proxy;->getDisplayableName()Ljava/lang/String;', u'Lcom/google/android/apps/analytics/Transaction;-><init>(Lcom/google/android/apps/analytics/Transaction$Builder;)V', u'Lcom/flurry/android/u;->c(Ljava/lang/String;)Ljava/util/List;', u'Lcom/flurry/android/u;->m()Lcom/flurry/android/AdImage;', u'Lcom/flurry/android/u;->a(Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/amazon/android/o/a;-><clinit>()V', u'Lcom/google/android/apps/analytics/Event;->setVisits(I)V', u'Lcom/localytics/android/LocalyticsSession$UploadHandler;->uploadSessions(Ljava/lang/String; Ljava/lang/String;)Z', u'Lcom/amazon/venezia/command/FailureResult$Stub$Proxy;->getDisplayableMessage()Ljava/lang/String;', u'Lcom/amazon/android/framework/task/pipeline/b;-><init>(Lcom/amazon/android/framework/task/pipeline/e;)V', u'Lcom/gamesalad/common/\n---\nADDED set([u'Lcn/com/weather/sns/auth/AuthDialog$AuthWebViewClient;-><init>(Lcn/com/weather/sns/auth/AuthDialog;)V', u'Landroid/support/v4/app/ListFragment;->setListShown(Z)V', u'Lcom/baidu/location/LocationClient;->a(I)V', u'Lcom/umeng/newxp/view/ExchangeViewManager;-><init>(Landroid/content/Context; Lcom/umeng/newxp/controller/ExchangeDataService;)V', u'Landroid/util/SparseArray;->remove(I)V', u'Lcom/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet;->isStarted()Z', u'Lcom/hf/utils/Util;-><init>()V', u'Lcom/actionbarsherlock/widget/ShareActionProvider$ShareMenuItemOnMenuItemClickListener;->onMenuItemClick(Lcom/actionbarsherlock/view/MenuItem;)Z', u'Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;->update(Landroid/support/v4/app/ActivityOptionsCompat;)V', u'Lcom/actionbarsherlock/internal/widget/IcsSpinner;->setPromptId(I)V', u'Lcom/hf/activity/TabActivity;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;', u'Landroid/view/acc"
+p54
+sg5
+S'CHANGED (JI 2.66%)'
+p55
+sg7
+F2.6600000000000001
+sa(dp56
+g3
+S"\nDELETED set([u'Landroid/widget/EditText;->requestFocus()Z', u'Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;', u'Landroid/widget/ImageView;->setMaxHeight(I)V', u'Landroid/media/MediaPlayer;->pause()V', u'Landroid/app/Activity;->showDialog(I)V', u'Ljava/util/Date;->toString()Ljava/lang/String;', u'Landroid/webkit/WebView;->loadData(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;', u'Ljavax/microedition/khronos/opengles/GL10;->glClear(I)V', u'Ljava/util/Collections;->shuffle(Ljava/util/List;)V', u'Landroid/util/Log;->isLoggable(Ljava/lang/String; I)Z', u'Ljava/lang/Class;->desiredAssertionStatus()Z', u'Landroid/app/Application;->bindService(Landroid/content/Intent; Landroid/content/ServiceConnection; I)Z', u'Ljava/util/Collections;->addAll(Ljava/util/Collection; [Ljava/lang/Object;)Z', u'Landroid/app/Dialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V', u'Ljava/lang/Char\n---\nADDED set([u'Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context; I)V', u'Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;', u'Landroid/view/View;->post(Ljava/lang/Runnable;)Z', u'Landroid/widget/RelativeLayout;->getChildCount()I', u'Landroid/content/Context;->obtainStyledAttributes(I [I)Landroid/content/res/TypedArray;', u'Ljava/util/List;->indexOf(Ljava/lang/Object;)I', u'Landroid/graphics/Canvas;->drawText(Ljava/lang/String; F F Landroid/graphics/Paint;)V', u'Landroid/media/MediaPlayer;->setAudioStreamType(I)V', u'Landroid/os/Bundle;->keySet()Ljava/util/Set;', u'Landroid/os/Looper;->myLooper()Landroid/os/Looper;', u'Landroid/webkit/WebSettings;->setLayoutAlgorithm(Landroid/webkit/WebSettings$LayoutAlgorithm;)V', u'Landroid/webkit/WebViewClient;->onReceivedError(Landroid/webkit/WebView; I Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/view/View;->postInvalidateOnAnimation()V', u'Landroid/widget/TextView;->setBackgroundResource(I)V', u'Ljava/lang/Character"
+p57
+sg5
+S'CHANGED (JI 28.59%)'
+p58
+sg7
+F28.59
+sa(dp59
+g3
+S'\nDELETED set([u\'&aip=1\', u\'Cannot find offer \', u\', at time: \', u\'&ats=\', u\'DrmFreeApplicationLaunchTaskWorkflow\', u\'IOExceptions only come from GZipping, which is turned off: \', u\'Token data: \', u\'Sending Broadcast!!!!: \', u\'unknown error (\', u\'processed_in_blob\', u\'Cannot find hook: \', u\'attrs\', u\'Your version of the Amazon Appstore appears to be out of date.  Please visit Amazon.com to install the latest version of the Appstore.\', u\'Opening new session\', u\'item_count\', u\'Error inserting custom variable on downgrade: \', u\'Cannot decode null source array.\', u\'&utmul=%s-%s\', u\'itemSKU must not be empty or null\', u\'LAST\', u\', System uptimeMillis: \', u\'X509\', u\'Class<?> target\', u\'Base64 input not properly padded.\', u\'ObfuscationManagerImpl\', u\'engine32.luo\', u\'attributes\', u\'threadDump\', u\'Host\', u\'Failed to populate field: \', u\'cv_index\', u\'key cannot be null or empty\', u\', prompt: \', u\'api_key\', u\'DROP TABLE IF EXISTS referrer;\', u\'Persistent file loaded\', u\'FileNotFoundException for \', u\'/loc\n---\nADDED set([u\'req config value:\', u\'===============\', u\':\\tFailed to send message. StatusCode = \', u\'umeng_xp_actionBar\', u\'Input array too big, the output array would be bigger (\', u"Salary Parameter can\'t be null", u\'/BaiduMapSDK/cache\', u\'Request data from second-cache..\', u\'all\', u\'AdManager.getCS\', u\'share_history.xml\', u\'left_bottom_latitude\', u\'saveAPK getContentLength \', u\'strkey\', u\'map is null or empty in onEvent\', u\'android.permission.INTERNET\', u\'failWrite: Got exception:\', u\'umeng_common_patch_finish\', u\'Empty promoters found. Report aborted.\', u\'trace true check fail\', u\'intro_\', u\' at index \', u\' did not call through to super.onDestroyView()\', u\'15.mp4\', u\' index requested: \', u\'http://myspace0%s.weather.com.cn/comment/upload\', u\'android.intent.extra.KEY_EVENT\', u\'mobclick_agent_cached_\', u\'umeng_xp_action_open\', u\'action_msg\', u\'endtime\', u\' base fragment #\', u\'https://api.weibo.com/2/users/show.json\', u\'bd09ll2gcj\', u\'umeng_xp_icon_open\', u\'appkey\', u\'iconarrownorid\', u\'umeng'
+p60
+sg5
+S'CHANGED (JI 1.87%)'
+p61
+sg7
+F1.8700000000000001
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/amazon/android/framework/util/KiwiLogger;->ERROR_ON Z [access_flags=public static]\\n', 'Lcom/flurry/android/v;->e J [access_flags=0x0]\\n', 'Lcom/gamesalad/common/GameRenderer$1;->val$fps F [access_flags=synthetic final]\\n', 'Lcom/flurry/android/ac;->a Landroid/widget/TextView; [access_flags=private synthetic]\\n', 'Lcom/gamesalad/common/GSPlayerActivity;->_view Lcom/gamesalad/common/GSPlayerView; [access_flags=protected]\\n', 'Lcom/amazon/android/framework/task/command/f;->b Ljava/lang/String; [access_flags=final]\\n', 'Lcom/gamesalad/common/AssetHelper;->_context Landroid/content/Context; [access_flags=protected]\\n', 'Lcom/amazon/android/framework/task/command/l;->c Landroid/content/Intent; [access_flags=final]\\n', 'Lcom/google/android/apps/analytics/Transaction;->totalCost D [access_flags=private final]\\n', 'Lcom/amazon/android/i/a;->a Lcom/amazon/android/i/b; [access_flags=private synthetic]\\n', 'Lcom/google/android/apps/analytics/NetworkDispatcher;->googleAnalyticsHost Lorg\n---\nADDED set(['Lcom/baidu/android/pushservice/PushManager$8;->d I [access_flags=private synthetic final]\\n', 'Lcom/baidu/android/pushservice/PushManager$29;->a Landroid/content/Context; [access_flags=private synthetic final]\\n', 'Lcom/baidu/mobads/a/b;->b Ljava/net/Proxy; [access_flags=private static final]\\n', 'Lcom/baidu/platform/comapi/map/o;->q I [access_flags=private static final]\\n', 'Lcom/hf/Fragment/TrendFragment;->mContainer Landroid/widget/LinearLayout; [access_flags=private]\\n', 'Lcom/hf/Fragment/WeatherFragment;->mCityId Ljava/lang/String; [access_flags=private]\\n', 'Lcom/baidu/mapapi/utils/b;->a Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/baidu/platform/comapi/map/o$a;->c F [access_flags=0x0]\\n', 'Lcom/baidu/location/LocationClient;->byte Lcom/baidu/location/LocationClient$b; [access_flags=private]\\n', 'Lcom/umeng/common/Res;->j Ljava/lang/Class; [access_flags=private static]\\n', 'Lcom/actionbarsherlock/internal/widget/CapitalizingTextView;->R_styleable_TextView"
+p63
+sg5
+S'CHANGED (JI 0.0%)'
+p64
+sg7
+F0
+sa.

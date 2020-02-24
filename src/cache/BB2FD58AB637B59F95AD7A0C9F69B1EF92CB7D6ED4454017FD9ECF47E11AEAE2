@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 1!=23'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 1.0!=2.5.9'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 5!=14'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: None!=19'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 5!=19'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set(['android.permission.ACCESS_NETWORK_STATE'])\n---\nADDED set(['android.permission.WRITE_EXTERNAL_STORAGE'])"
+p24
+sg5
+S'CHANGED (JI 33.33%)'
+p25
+sg7
+F33.329999999999998
+sa(dp26
+g3
+S'DIFFERENT: com.gameneeti.game.premiumleague!=com.happymaau.MathRef'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: 20-20 Premium League!=Math Ref'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.facebook.LoginActivity', 'com.gameneeti.game.premiumleague.PlayerNames', 'com.gameneeti.game.premiumleague.InHouseAd', 'com.gameneeti.game.premiumleague.LogoActivity', 'com.gameneeti.game.premiumleague.SelectTeam', 'com.gameneeti.game.premiumleague.HelpPage', 'com.gameneeti.game.premiumleague.Instrctions', 'com.gameneeti.game.premiumleague.Aboutus', 'com.gameneeti.game.premiumleague.Toss', 'com.gameneeti.game.premiumleague.Game', 'com.gameneeti.game.premiumleague.Ads', 'com.google.ads.AdActivity', 'com.gameneeti.game.premiumleague.Menu', 'com.gameneeti.game.premiumleague.Bowlling', 'com.gameneeti.game.premiumleague.GameResult', 'com.gameneeti.game.premiumleague.GameBall', 'com.gameneeti.game.premiumleague.MenuPage', 'com.gameneeti.game.premiumleague.Front', 'com.gameneeti.game.premiumleague.SeriesResult', 'com.gameneeti.game.premiumleague.ScoreHigh'])\n---\nADDED set(['com.happymaau.MathRef..Tools.UnitConverterDetailViewActivity', 'com.happymaau.MathRef..Tools.AlgebraExponentialSolverActivity', 'com.happymaau.MathRef..Tools.UnitConverterActivity', 'com.happymaau.MathRef..ToolsViewActivity', 'com.happymaau.MathRef..Tools.AlgebraComplexSolverActivity', 'com.happymaau.MathRef..MainActivity', 'com.happymaau.MathRef..UnitConverterWebWidget', 'com.happymaau.MathRef..Tools.TrigRefAngleSolverActivity', 'com.happymaau.MathRef..Tools.AlgebraLine2SolverActivity', 'com.happymaau.MathRef..Tools.AlgebraQuadraticSolverActivity', 'com.happymaau.MathRef..Tools.TrigInverseAngleSolverActivity', 'com.happymaau.MathRef..Tools.GeometryCircleSolverActivity', 'com.happymaau.MathRef..Tools.StatsZSolverActivity', 'com.happymaau.MathRef..Tools.GeometryTriangleSolverActivity', 'com.happymaau.MathRef..Tools.TrigAngleDegreeConverterActivity'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set([u'res/drawable-hdpi/com_facebook_button_grey_normal.9.png', u'assets/gfx/menu_bg.png', u'res/drawable-xhdpi/com_facebook_button_grey_pressed.9.png', u'assets/gfx/Australia.png', u'assets/gfx/nzBol2.png', u'assets/gfx/over_1.png', u'assets/gfx/zimbabe.png', u'assets/gfx/mhelp1.png', u'res/drawable-hdpi/com_facebook_picker_magnifier.png', u'res/drawable/adclose.png', u'assets/gfx/zim5.2.png', u'assets/gfx/pakBol1.png', u'res/drawable-hdpi/com_facebook_logo.png', u'assets/mfx/run.ogg', u'assets/gfx/southafrica.png', u'assets/gfx/bangBol2.png', u'assets/gfx/tweeter.png', u'res/drawable-xhdpi/com_facebook_inverse_icon.png', u'assets/gfx/play SL_2.png', u'assets/gfx/facebook.png', u'dsn.mf', u'assets/gfx/sri 4.png', u'assets/gfx/box.png', u'assets/gfx/matchtie.png', u'assets/gfx/bang2.2.png', u'jsr305_annotations/v0_r47/V0_r47.gwt.xml', u'assets/gfx/nzBol3.png', u'assets/gfx/one.png', u'assets/gfx/wi out.png', u'res/drawable-xhdpi/com_facebook_button_blue_pressed.9.png', u'assets/gfx/en\n---\nADDED set([u'assets/Derivatives/Examples/EQ_3.png', u'assets/Discrete/Relation/EQ_2.png', u'assets/Trig/Identities/EQ_36.png', u'assets/IntegrTable/Trig/EQ_15.png', u'assets/Algebra/PreAlgebra/EQ_10.png', u'assets/Geometry/Theorems/Circles/EQ_5.png', u'assets/Algebra/Examples/EQ_3.png', u'assets/Algebra/Divisibility/EQ_9.png', u'assets/IntegrTable/Trig/EQ_7.png', u'assets/LinAlg/Det/EQ_3.png', u'assets/IntegrTable/TrigExponentials/EQ_5.png', u'assets/Algebra/Divisibility/EQ_15.png', u'assets/Algebra/Zero/EQ_5.png', u'assets/Physics/PhysicalConstants/EQ_7.png', u'assets/empty.html', u'assets/Physics/Waves/EQ_8.png', u'assets/Chem/ThermoChem/EQ_4.png', u'assets/Algebra/PreAlgebra/EQ_0.png', u'assets/Algorithms/Definitions/EQ_21.png', u'assets/Series/Binomial/EQ_2.png', u'assets/Algebra/GraphingFunctions/EQ_10.png', u'assets/Discrete/Props/EQ_14.png', u'assets/Trig/Functions/EQ_1.png', u'assets/Algebra/General/EX_11.png', u'assets/Geometry/Surfaces/EQ_5.png', u'assets/Trig/HyperIdentities/EQ_19"
+p36
+sg5
+S'CHANGED (JI 0.59%)'
+p37
+sg7
+F0.58999999999999997
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.happymaau.MathRef.UnitConverterWidget'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Ljava/io/FileNotFoundException;', u'Lorg/anddev/andengine/util/path/ITiledMap;', u'Lorg/anddev/andengine/entity/particle/modifier/ExpireModifier;', u'Ljava/security/Security;', u'Lcom/gameneeti/game/premiumleague/SelectTeam$6;', u'Ljavax/mail/FolderNotFoundException;', u'Lorg/anddev/andengine/opengl/texture/atlas/bitmap/source/decorator/BaseBitmapTextureAtlasSourceDecorator$TextureAtlasSourceDecoratorOptions;', u'Lcom/sun/mail/imap/IMAPFolder$18;', u'Lcom/sun/mail/imap/protocol/Namespaces$Namespace;', u'Ltwitter4j/internal/http/HttpResponseListener;', u'Ljavax/mail/EventQueue$QueueElement;', u'Lorg/anddev/andengine/entity/scene/background/AutoParallaxBackground;', u'Lorg/anddev/andengine/entity/scene/menu/item/TextMenuItem;', u'Lcom/facebook/widget/PickerFragment$4;', u'Lcom/facebook/TestSession$FqlResponse;', u'Ljavax/mail/event/FolderEvent;', u'Lcom/gameneeti/game/premiumleague/GameBall$5;', u'Ltwitter4j/Location;', u'Lorg/anddev/andengine/ui/dialog/GenericInputDialogBuilder$1\n---\nADDED set([u'Lcom/happymaau/MathRef/Tools/UnitConverterDetailView$InputOnItemSelectedListener;', u'Lcom/happymaau/MathRef/Tools/AlgebraComplexSolverActivity$3;', u'Lcom/happymaau/MathRef/Tools/UnitConverterDetailView$5;', u'Lcom/happymaau/MathRef/R$bool;', u'Lcom/happymaau/MathRef/UnitConverterWebWidget$12;', u'Lcom/happymaau/MathRef/Tools/UnitConverterDetailViewActivity$OutputOnItemSelectedListener;', u'Lcom/happymaau/MathRef/UnitConverterWebWidget$6;', u'Lcom/happymaau/MathRef/R$attr;', u'Lcom/happymaau/MathRef/Tools/UnitConverterDetailViewActivity$7;', u'Lcom/happymaau/MathRef/R$layout;', u'Lcom/happymaau/MathRef/Tools/UnitConverterDetailViewActivity$15;', u'Lcom/happymaau/MathRef/UnitConverterWebWidget;', u'Lcom/happymaau/MathRef/Tools/AlgebraQuadraticSolverActivity;', u'Lcom/happymaau/MathRef/Equation$1;', u'Lcom/happymaau/MathRef/PrimeViewController;', u'Lcom/happymaau/MathRef/EquationDatasource$1;', u'Lcom/happymaau/MathRef/Level2ViewController;', u'Lcom/happymaau/MathRef/Tools/Algebr"
+p45
+sg5
+S'CHANGED (JI 12.37%)'
+p46
+sg7
+F12.369999999999999
+sa(dp47
+g3
+S"\nDELETED set([u'Ltwitter4j/internal/http/HttpClientConfiguration;->getHttpProxyUser()Ljava/lang/String;', u'Lcom/facebook/model/GraphObject$Factory$GraphObjectListImpl;->put(I Ljava/lang/Object;)V', u'Lcom/sun/mail/iap/Response;->peekByte()B', u'Lcom/facebook/widget/WebDialog;->setUpWebView(I)V', u'Lcom/facebook/widget/PlacePickerFragment$SearchTextWatcher;-><init>(Lcom/facebook/widget/PlacePickerFragment; Lcom/facebook/widget/PlacePickerFragment$SearchTextWatcher;)V', u'Ltwitter4j/conf/ConfigurationBase;->fixRestBaseURL()V', u'Lcom/sun/mail/pop3/POP3Message;->addHeaderLine(Ljava/lang/String;)V', u'Lorg/anddev/andengine/opengl/texture/source/ITextureAtlasSource;->getTexturePositionY()I', u'Lcom/gameneeti/game/premiumleague/SelectTeam;->access$94(Lcom/gameneeti/game/premiumleague/SelectTeam; Lorg/anddev/andengine/entity/text/ChangeableText;)V', u'Lcom/gameneeti/game/premiumleague/Game;->access$12(Lcom/gameneeti/game/premiumleague/Game; I)V', u'Ltwitter4j/conf/PropertyConfiguration;->dumpConfigur\n---\nADDED set([u'Lcom/happymaau/MathRef/Tools/TrigRefAngleSolver$2;-><init>(Lcom/happymaau/MathRef/Tools/TrigRefAngleSolver;)V', u'Lcom/happymaau/MathRef/EquationDatastore;->copyDataBase()V', u'Lcom/happymaau/MathRef/EquationDatasource$1;->compare(Lcom/happymaau/MathRef/Equation; Lcom/happymaau/MathRef/Equation;)I', u'Lcom/happymaau/MathRef/TouchImageView$ScaleListener;-><init>(Lcom/happymaau/MathRef/TouchImageView; Lcom/happymaau/MathRef/TouchImageView$ScaleListener;)V', u'Lcom/happymaau/MathRef/TouchImageView;-><init>(Landroid/content/Context; Landroid/util/AttributeSet;)V', u'Lcom/happymaau/MathRef/Tools/UnitConverterDetailView;->setupView(I)V', u'Lcom/happymaau/MathRef/Tools/AlgebraComplexSolverActivity;->onCreate(Landroid/os/Bundle;)V', u'Lcom/happymaau/MathRef/Tools/UnitConverterDetailViewActivity$12;-><init>(Lcom/happymaau/MathRef/Tools/UnitConverterDetailViewActivity;)V', u'Lcom/happymaau/MathRef/Tools/GeometryCircleSolverActivity;-><init>()V', u'Lcom/happymaau/MathRef/Tools/GeometryTria"
+p48
+sg5
+S'CHANGED (JI 10.26%)'
+p49
+sg7
+F10.26
+sa(dp50
+g3
+S"\nDELETED set([u'Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;->build(Landroid/support/v4/app/NotificationCompat$Builder;)Landroid/app/Notification;', u'Landroid/support/v4/view/ViewCompat;->postOnAnimation(Landroid/view/View; Ljava/lang/Runnable;)V', u'Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;->obtain(Landroid/view/View; I)Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;', u'Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;->setMovementGranularities(I)V', u'Landroid/support/v4/view/ViewCompat;->postOnAnimationDelayed(Landroid/view/View; Ljava/lang/Runnable; J)V', u'Landroid/support/v4/view/PagerAdapter;->getPageWidth(I)F', u'Landroid/support/v4/view/ViewCompat;->getImportantForAccessibility(Landroid/view/View;)I', u'Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityNodeInfoImpl;->isAccessibilityFocused(Ljava/lang/Object;)Z', u'Landroid/support/v4/view/ViewCompat;->postInvalidateOnAn\n---\nADDED set([u'Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;->getSource(Ljava/lang/Object;)Ljava/lang/Object;', u'Landroid/support/v4/app/ActivityCompatHoneycomb;->startActivities(Landroid/app/Activity; [Landroid/content/Intent;)V', u'Landroid/support/v4/app/NotificationCompat$NotificationCompatImplHoneycomb;->getNotification(Landroid/support/v4/app/NotificationCompat$Builder;)Landroid/app/Notification;', u'Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityNodeInfoIcsImpl;->getChild(Ljava/lang/Object; I)Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;', u'Landroid/support/v4/app/FragmentPagerAdapter;->makeFragmentName(I I)Ljava/lang/String;', u'Landroid/support/v4/app/FragmentTransaction;->replace(I Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;', u'Landroid/support/v4/app/FragmentManagerImpl;->moveToState(Landroid/support/v4/app/Fragment; I I I)V', u'Landroid/support/v4"
+p51
+sg5
+S'CHANGED (JI 90.94%)'
+p52
+sg7
+F90.939999999999998
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/facebook/model/GraphObject$Factory$GraphObjectListImpl;->put(I Ljava/lang/Object;)V', u'Landroid/util/SparseArray;->remove(I)V', u'Lcom/sun/mail/iap/Response;->peekByte()B', u'Lcom/facebook/widget/WebDialog;->setUpWebView(I)V', u'Ltwitter4j/conf/PropertyConfiguration;->dumpConfiguration()V', u'Lorg/anddev/andengine/entity/sprite/Sprite;->setScaleCenter(F F)V', u'Lorg/anddev/andengine/entity/scene/menu/animator/BaseMenuAnimator;-><init>(Lorg/anddev/andengine/util/HorizontalAlign; F Lorg/anddev/andengine/util/modifier/ease/IEaseFunction;)V', u'Ltwitter4j/internal/org/json/JSONObject;->put(Ljava/lang/String; D)Ltwitter4j/internal/org/json/JSONObject;', u'Lorg/anddev/andengine/util/modifier/ease/EaseCubicIn;->getInstance()Lorg/anddev/andengine/util/modifier/ease/EaseCubicIn;', u'Lorg/anddev/andengine/opengl/view/RenderSurfaceView;->setMeasuredDimension(I I)V', u'Ljavax/mail/internet/MimeBodyPart;->setContent(Ljavax/mail/Multipart;)V',\n---\nADDED set([u'Landroid/widget/EditText;->requestFocus()Z', u'Lcom/happymaau/MathRef/ArticleFragment$ArticleViews;->values()[Lcom/happymaau/MathRef/ArticleFragment$ArticleViews;', u'Lcom/happymaau/MathRef/LeafViewController$1;->onGlobalLayout()V', u'Ljava/lang/Float;->isNaN(F)Z', u'Lcom/happymaau/MathRef/TouchImageView;->performClick()Z', u'Lcom/happymaau/MathRef/MainActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;', u'Landroid/support/v4/app/HCSparseArray;->indexOfValue(Ljava/lang/Object;)I', u'Lcom/happymaau/MathRef/Tools/GeometryCircleSolver$1;->onClick(Landroid/view/View;)V', u'Landroid/support/v4/app/HCSparseArray;->delete(I)V', u'Lcom/happymaau/MathRef/Tools/UnitConverterDetailViewActivity$8;-><init>(Lcom/happymaau/MathRef/Tools/UnitConverterDetailViewActivity;)V', u'Lcom/happymaau/MathRef/Tools/TrigRefAngleSolver$2;-><init>(Lcom/happymaau/MathRef/Tools/TrigRefAngleSolver;)V', u'Lcom/happymaau/MathRef/UnitConverterWebWidget$4;->onClick(Landroid/view/View;)V', u'Landroid/"
+p54
+sg5
+S'CHANGED (JI 12.57%)'
+p55
+sg7
+F12.57
+sa(dp56
+g3
+S"\nDELETED set([u'Ljava/util/List;->indexOf(Ljava/lang/Object;)I', u'Ljava/io/OutputStream;->write([B)V', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; I)Landroid/content/Intent;', u'Ljava/lang/StringBuilder;->replace(I I Ljava/lang/String;)Ljava/lang/StringBuilder;', u'Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V', u'Landroid/content/Context;->obtainStyledAttributes(I [I)Landroid/content/res/TypedArray;', u'Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V', u'Landroid/webkit/WebViewClient;->onReceivedError(Landroid/webkit/WebView; I Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/util/SparseArray;->remove(I)V', u'Landroid/webkit/WebSettings;->setUserAgentString(Ljava/lang/String;)V', u'Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I', u'Landroid/support/v4/view/ViewCompat$ViewCompatImpl;->setHasTransientState(Landroid/view/View; Z)V', u'Landroid/app/Notification$Builder;->build()Landroid/app/Notification;', u'Ljava/util/Map;->putAll(Ljava/util/M\n---\nADDED set([u'Landroid/widget/EditText;->requestFocus()Z', u'Ljava/lang/Math;->cos(D)D', u'Ljava/lang/Float;->isNaN(F)Z', u'Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;', u'Landroid/support/v4/app/FragmentPagerAdapter;->makeFragmentName(I I)Ljava/lang/String;', u'Landroid/support/v4/app/FragmentManager;->popBackStack(Ljava/lang/String; I)V', u'Landroid/widget/LinearLayout;->removeAllViews()V', u'Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityNodeInfoIcsImpl;->getParent(Ljava/lang/Object;)Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;', u'Landroid/widget/ImageView;->setClickable(Z)V', u'Ljava/lang/Math;->round(D)J', u'Landroid/os/Parcel;->writeByte(B)V', u'Landroid/support/v4/app/ListFragment;->onAttach(Landroid/app/Activity;)V', u'Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityNodeInfoIcsImpl;->getChild(Ljava/lang/Object; I)Landroid/support/v4/view/accessibility/AccessibilityNode"
+p57
+sg5
+S'CHANGED (JI 74.28%)'
+p58
+sg7
+F74.280000000000001
+sa(dp59
+g3
+S'\nDELETED set([u\'\\x00\', u\'isLoadAdTaskSuccessful() called when isLoadAdTaskDone() is false.\', u\' data from asset: \', u\'favorites/list.json\', u\'onAdClicked()\', u\'basic_info\', u\'DELAY\', u\'SUPPRESS_SSO\', u\'android.permission.INTERNET\', u\'DEBUG: enable IMAP events\', u\'&iota;\', u\'GoogleAdMobDoritosLife\', u\'&#920;\', u\'10.png\', u\'getMessage\', u\'api_key\', u\'11111111111111111111111111\', u\'fb_dialog_outcome\', u\'DEBUG IMAP: parsing multipart\', u\', or a \', u\'An error occurred while loading a URL in AdWebView:\', u\'renderMode\', u\'us-ascii\', u\'d MMM\', u\'YFROG\', u\'text/calendar\', u\', applicationOnlyAuthEnabled=\', u\'&#8658;\', u\'/Android/data/\', u", responseAsString=\'", u\'dddddddddddddddddddddddddddddddd\', u\'errors\', u\'MimetypesFileTypeMap: load DEF\', u\'    got content-handler\', u\'\\\\Noinferiors\', u\'Transformation{[\', u\'&#\', u\'granularity\', u"BasicAuthorization{userId=\'", u\'Session: an attempt was made to request new permissions for a session that has been closed.\', u\'Search failed\', u\', userMentionEntities=\', u\'d\n---\nADDED set([u\'Light Years\', u\'Kilogram Meters\', u\'/EX_\', u\'yd\\xb2\', u\'FORCE\', u\'POWER\', u\'Circumference: \', u\'cu m\', u\'Nautical Miles\', u\'Day\', u\'Database loading completed!\', u\'Area: \', u\'tst_ASA\', u\'Gigabyte\', u\'GB\', u\'Stones\', u\'Square Feet\', u\'Angle A: \', u\'Pounds/Square Inch\', u\'Quadratic\', u\'Side c: \', u\'tift_acos\', u\'VOLUME\', u\'AlgebraComplexSolver\', u\'tst_AAS\', u\'Slope 1 : \', u\'Circle\', u\'negative x axis\', u\'TEMPERATURE\', u\'Square Yard\', u\'section\', u\'Angle C2: \', u\'cm\\xb2\', u\'Square Miles\', u\'tift_atan\', u"SELECT * FROM Equations WHERE name LIKE \'%", u\'K\', u\'Acute Angle : \', u\'x<sup><small>2</small></sup> + \', u\'Length of Chord BC: \', u\'MB\', u\'Angle Converter\', u\'Acres\', u\'Long Tons (UK)\', u\'tift_asin\', u\'tools\', u\'kW-h\', u\'Kelvin\', u\'Slope 2 is undefined (vertical line)\', u\'mipmin\', u\'Lines are coincident\', u\'searchTags\', u\' bmHeight : \', u\'pft\', u\'Millimeters\', u\' OR \', u\'Byte\', u\'z = \', u\'mg\', u\'Complex Solver\', u\'mm\', u\'equation\', u\'mi\', u\'tbsp\', u\'erg\', u\'kg-m\', u\'angle converte'
+p60
+sg5
+S'CHANGED (JI 6.58%)'
+p61
+sg7
+F6.5800000000000001
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/google/ads/internal/g;->l Z [access_flags=private]\\n', 'Lcom/gameneeti/game/premiumleague/R$styleable;->com_facebook_friend_picker_fragment [I [access_flags=public static final]\\n', 'Lcom/google/ads/internal/g;->a Ljava/util/LinkedList; [access_flags=private final]\\n', 'Lorg/apache/harmony/awt/datatransfer/DataProvider;->urlFlavor Ljava/awt/datatransfer/DataFlavor; [access_flags=public static final]\\n', 'Lcom/gameneeti/game/premiumleague/GameResult;->sti Landroid/content/Intent; [access_flags=0x0]\\n', 'Ljavax/mail/Session;->props Ljava/util/Properties; [access_flags=private final]\\n', 'Lorg/anddev/andengine/util/ByteBufferOutputStream;->mCount I [access_flags=protected]\\n', 'Lcom/sun/mail/imap/IMAPStore;->minIdleTime I [access_flags=private]\\n', 'Lorg/anddev/andengine/util/levelstats/LevelStatsDBConnector$1;->val$pLevelID I [access_flags=private synthetic final]\\n', 'Lcom/google/ads/util/g$a$4;->a Landroid/webkit/JsPromptResult; [access_flags=synthetic final]\\n', 'Lcom/gamen\n---\nADDED set(['Lcom/happymaau/MathRef/TouchImageView;->matrix Landroid/graphics/Matrix; [access_flags=0x0]\\n', 'Lcom/happymaau/MathRef/Tools/GeometryTriangleSolverActivity;->inputA_Name Landroid/widget/TextView; [access_flags=private]\\n', 'Lcom/happymaau/MathRef/Tools/AlgebraLine2Solver;->textView Landroid/widget/TextView; [access_flags=private]\\n', 'Lcom/happymaau/MathRef/Tools/AlgebraComplexSolver;->inputT Landroid/widget/EditText; [access_flags=private]\\n', 'Lcom/happymaau/MathRef/AboutDetailView$Callback;->this$0 Lcom/happymaau/MathRef/AboutDetailView; [access_flags=synthetic final]\\n', 'Lcom/happymaau/MathRef/Tools/GeometryTriangleSolver;->$SWITCH_TABLE$com$happymaau$MathRef$Tools$GeometryTriangleSolver$TriangleSolverTypes [I [access_flags=private synthetic static]\\n', 'Lcom/happymaau/MathRef/Tools/GeometryTriangleSolverActivity$TriangleSolverTypes;->tst_SSS Lcom/happymaau/MathRef/Tools/GeometryTriangleSolverActivity$TriangleSolverTypes; [access_flags=public static enum final]\\n', 'Lcom/ha"
+p63
+sg5
+S'CHANGED (JI 6.0%)'
+p64
+sg7
+F6
+sa.

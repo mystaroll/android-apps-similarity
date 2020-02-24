@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'DIFFERENT: 2.5.4!=1.0'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 6!=1'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: 17!=None'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 17!=1'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set(['android.permission.GET_TASKS', 'android.permission.READ_PHONE_STATE', 'android.permission.WRITE_EXTERNAL_STORAGE'])\n---\nADDED set([])"
+p24
+sg5
+S'CHANGED (JI 40.0%)'
+p25
+sg7
+F40
+sa(dp26
+g3
+S'DIFFERENT: com.bakno.IslandRacerLite!=com.ipanda.botafogototal'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: Island Racer Lite!=Botafogo Total'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.millennialmedia.android.VideoPlayer', 'com.mobclix.android.sdk.MobclixBrowserActivity', 'com.unity3d.player.UnityPlayerNativeActivity', 'com.unity3d.player.UnityPlayerProxyActivity', 'com.unity3d.player.UnityPlayerActivity', 'com.unity3d.player.VideoPlayer', 'com.millennialmedia.android.MMAdViewOverlayActivity', 'com.google.ads.AdActivity'])\n---\nADDED set(['com.ipanda.botafogototal..ShowDescription', 'com.ipanda.botafogototal..AppMain', 'com.ipanda.botafogototal..TwitterAuth', 'com.ipanda.botafogototal..Twitter', 'com.ipanda.botafogototal..Classificacao', 'com.admob.android.ads.AdMobActivity', 'com.ipanda.botafogototal..Jogos', 'com.ipanda.botafogototal..Splash'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set(['assets/bin/Data/sharedassets0.assets.split3', 'assets/bin/Data/sharedassets0.assets.split2', 'assets/bin/Data/sharedassets0.assets.split1', 'assets/bin/Data/sharedassets0.assets.split0', 'res/drawable-ldpi/app_icon.png', 'assets/bin/Data/sharedassets7.assets', 'assets/bin/Data/sharedassets6.assets.split1', 'assets/bin/Data/sharedassets6.assets.split0', 'assets/bin/Data/sharedassets6.assets.split3', 'assets/bin/Data/sharedassets6.assets.split2', 'assets/bin/Data/sharedassets8.assets.split12', 'assets/bin/Data/sharedassets8.assets.split11', 'assets/bin/Data/sharedassets8.assets.split10', 'lib/armeabi-v7a/libunity.so', 'assets/bin/Data/unity default resources', 'assets/bin/Data/Managed/UnityEngine.dll', 'assets/bin/Data/Managed/UnityScript.Lang.dll', 'assets/bin/Data/sharedassets4.assets.split9', 'assets/bin/Data/sharedassets4.assets.split8', 'assets/bin/Data/Managed/ICSharpCode.SharpZipLib.dll', 'assets/bin/Data/sharedassets4.assets.split3', 'assets/bin/Data/sharedassets4.assets.sp\n---\nADDED set(['res/drawable-hdpi/menu_jogos.png', 'res/drawable-ldpi/icon.png', 'res/drawable-hdpi/images.jpg', 'res/drawable-hdpi/menu_noticias.png', 'res/drawable/twitter.png', 'res/layout/main.xml', 'res/drawable-hdpi/menu_classifica.png', 'res/layout/showdescription.xml', 'res/layout/item_noimage_white.xml', 'res/layout/splash.xml', 'res/layout/classificacao.xml', 'res/drawable-mdpi/icon.png', 'res/layout/item_dark.xml', 'res/drawable/icon.png', 'res/layout/item_white.xml', 'res/drawable-hdpi/menu_atualizar.png', 'res/drawable-hdpi/stub.png', 'res/layout/twitter.xml', 'res/layout/item_noimage_dark.xml', 'res/drawable-hdpi/images_bkg.jpg'])"
+p36
+sg5
+S'CHANGED (JI 4.55%)'
+p37
+sg7
+F4.5499999999999998
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.admob.android.ads.analytics.InstallReceiver'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Ljava/io/FileNotFoundException;', u'Lcom/millennialmedia/android/BasicCachedAd;', u'Lcom/millennialmedia/android/MMAdViewWebOverlay$6;', u'Lcom/google/ads/util/i$d;', u'Lcom/mobclix/android/sdk/MobclixJavascriptInterface$2;', u'Lcom/unity3d/player/UnityPlayer$19$1;', u'Lcom/google/ads/internal/c$e;', u'Lcom/unity3d/player/p$1;', u'Lcom/unity3d/player/t$2;', u'Lcom/google/ads/util/c;', u'Lcom/mobclix/android/sdk/MobclixJavascriptInterface$11;', u'Ljava/io/StringBufferInputStream;', u'Lcom/mobclix/android/sdk/MobclixBrowserActivity$MobclixVideoView$ButtonOnClickListener;', u'Landroid/view/SurfaceView;', u'Lcom/unity3d/player/UnityJavaRunnable;', u'Landroid/widget/TableLayout$LayoutParams;', u'Lcom/unity3d/player/UnityPlayer$17;', u'Lcom/millennialmedia/android/VideoPlayer$13;', u'Ljava/util/LinkedHashMap;', u'Lcom/bakno/googleverificator/ServiceBinder$2;', u'Ljava/io/FilterOutputStream;', u'Lcom/unity3d/player/k;', u'Lcom/google/ads/util/g;', u'Lcom/google/ads/internal/f$1;', u'La\n---\nADDED set([u'Landroid/widget/PopupWindow;', u'Lcom/admob/android/ads/z$a$1;', u'Lcom/admob/android/ads/w;', u'Ljava/util/PriorityQueue;', u'Lcom/admob/android/ads/AdView$a;', u'Ljava/util/StringTokenizer;', u'Lcom/admob/android/ads/ac$g;', u'Landroid/view/animation/AnimationUtils;', u'Lcom/ipanda/botafogototal/R;', u'Lcom/ipanda/botafogototal/ImageLoader$PhotoToLoad;', u'Ljava/util/GregorianCalendar;', u'Ljavax/xml/parsers/SAXParser;', u'Lcom/ipanda/botafogototal/AppMain;', u'Landroid/widget/BaseAdapter;', u'Lcom/ipanda/botafogototal/AppMain$1;', u'Loauth/signpost/OAuth;', u'Loauth/signpost/commonshttp/HttpRequestAdapter;', u'Lcom/admob/android/ads/o;', u'Landroid/net/NetworkInfo$State;', u'Lcom/admob/android/ads/InterstitialAd$e;', u'Lcom/admob/android/ads/s$b;', u'Lcom/ipanda/botafogototal/Twitter;', u'Lcom/admob/android/ads/ab;', u'Loauth/signpost/OAuthConsumer;', u'Loauth/signpost/signature/AuthorizationHeaderSigningStrategy;', u'Lcom/ipanda/botafogototal/ImageLoader$PhotosLoader;', u'Lo"
+p45
+sg5
+S'CHANGED (JI 13.62%)'
+p46
+sg7
+F13.619999999999999
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/millennialmedia/android/AdDatabaseHelper;->shouldShowBottomBar(Ljava/lang/String;)Z', u'Lcom/unity3d/player/x$a;-><init>()V', u'Lcom/mobclix/android/sdk/MobclixCreative$OpenAllocationPage;->fireDevTrackingPixels()V', u'Lcom/google/ads/util/b;->d(Ljava/lang/String;)V', u'Lcom/google/ads/internal/d;->a(J)V', u'Lcom/millennialmedia/android/MillennialMediaView$1;-><init>(Lcom/millennialmedia/android/MillennialMediaView;)V', u'Lcom/google/ads/internal/d;-><init>(Lcom/google/ads/m; Z)V', u'Lcom/google/ads/ae;-><clinit>()V', u'Lcom/millennialmedia/android/MillennialMediaView;->stopPlayback()V', u'Lcom/unity3d/player/UnityPlayer$20;-><init>(Lcom/unity3d/player/UnityPlayer;)V', u'Lcom/unity3d/player/e$1$1;-><init>(Lcom/unity3d/player/e$1; I)V', u'Lcom/mobclix/android/sdk/MobclixBrowserActivity$MobclixVideoView$4;-><init>(Lcom/mobclix/android/sdk/MobclixBrowserActivity$MobclixVideoView;)V', u'Lcom/google/ads/internal/i;->onPageFinished(Land\n---\nADDED set([u'Lcom/admob/android/ads/z;->b()V', u'Lcom/admob/android/ads/i;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Lcom/admob/android/ads/h; I Ljava/util/Map; Ljava/lang/String;)V', u'Lcom/ipanda/botafogototal/readers/EspnRSSReader;-><init>()V', u'Lcom/ipanda/botafogototal/parsers/Parser;->parsePubDate(Ljava/lang/String; Lcom/ipanda/botafogototal/RSSItem;)V', u'Lcom/admob/android/ads/AdView;->setRequestInterval(I)V', u'Loauth/signpost/exception/OAuthException;-><init>(Ljava/lang/Throwable;)V', u'Lcom/ipanda/botafogototal/Splash$2;->onClick(Landroid/content/DialogInterface; I)V', u'Lcom/admob/android/ads/k;->a(Lcom/admob/android/ads/j;)V', u'Lcom/admob/android/ads/j$a;-><clinit>()V', u'Lcom/admob/android/ads/j;->b(I)Lorg/json/JSONArray;', u'Loauth/signpost/AbstractOAuthProvider;->handleUnexpectedResponse(I Loauth/signpost/http/HttpResponse;)V', u'Lcom/admob/android/ads/j;->a(Landroid/graphics/PointF; Landroid/graphics/PointF; Landroid/view/View; Landroid/graphics/Rect"
+p48
+sg5
+S'CHANGED (JI 0.0%)'
+p49
+sg7
+F0
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/google/ads/AdView;->stopLoading()V', u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Lcom/mobclix/android/sdk/MobclixBrowserActivity$MobclixVideoView;->removeView(Landroid/view/View;)V', u'Lorg/xmlpull/v1/XmlPullParserFactory;->setNamespaceAware(Z)V', u'Lcom/mobclix/android/sdk/MobclixCreative$OpenAllocationPage;->fireDevTrackingPixels()V', u'Landroid/media/MediaPlayer;->setAudioStreamType(I)V', u'Lcom/millennialmedia/android/MillennialMediaView$1;-><init>(Lcom/millennialmedia/android/MillennialMediaView;)V', u'Lcom/google/ads/AdActivity;->b(Ljava/util/HashMap; Lcom/google/ads/internal/d;)V', u'Lcom/millennialmedia/android/MillennialMediaView;->stopPlayback()V', u'Lcom/millennialmedia/android/VideoPlayer;->getIntent()Landroid/content/Intent;', u'Lcom/mobclix/android/sdk/MobclixCreative$Rotate3dAnimation;->applyTransformation(F Landroid/view/animation/Transformation;)V', u'Lcom/mobclix/android/sdk/MobclixBrowserActivity$MobclixVideoView$4;-><init>(Lcom/mobclix/androi\n---\nADDED set([u'Lcom/admob/android/ads/AdView;->startAnimation(Landroid/view/animation/Animation;)V', u'Lcom/admob/android/ads/i;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Lcom/admob/android/ads/h; I Ljava/util/Map; Ljava/lang/String;)V', u'Lcom/ipanda/botafogototal/readers/EspnRSSReader;-><init>()V', u'Loauth/signpost/exception/OAuthException;-><init>(Ljava/lang/Throwable;)V', u'Landroid/widget/ImageView;->setMaxHeight(I)V', u'Loauth/signpost/commonshttp/HttpResponseAdapter;->getReasonPhrase()Ljava/lang/String;', u'Landroid/os/Bundle;->keySet()Ljava/util/Set;', u'Loauth/signpost/signature/PlainTextMessageSigner;->getTokenSecret()Ljava/lang/String;', u'Lorg/xml/sax/XMLReader;->setContentHandler(Lorg/xml/sax/ContentHandler;)V', u'Lcom/admob/android/ads/u;->d()V', u'Lcom/admob/android/ads/AdView;->invalidate()V', u'Lcom/ipanda/botafogototal/AppMain;->onCreate(Landroid/os/Bundle;)V', u'Lcom/ipanda/botafogototal/ImageLoader$PhotosLoader;->start()V', u'Lcom/admob/android/ads/A"
+p54
+sg5
+S'CHANGED (JI 7.52%)'
+p55
+sg7
+F7.5199999999999996
+sa(dp56
+g3
+S"\nDELETED set([u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; I)Landroid/content/Intent;', u'Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V', u'Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/location/Location;->getSpeed()F', u'Landroid/webkit/WebViewClient;->onReceivedError(Landroid/webkit/WebView; I Ljava/lang/String; Ljava/lang/String;)V', u'Ljava/util/Arrays;->sort([I)V', u'Ljava/io/FileInputStream;->close()V', u'Landroid/widget/VideoView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V', u'Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;', u'Ljava/util/Map;->putAll(Ljava/util/Map;)V', u'Landroid/widget/RelativeLayout;->setId(I)V', u'Ljava/math/BigInteger;-><init>([B)V', u'Landroid/view/KeyEvent;->getScanCode()I', u'Ljava/util/Date;->getDate()I', u'Landroid/app/Activity;->addContentView(Landroid/vie\n---\nADDED set([u'Landroid/widget/RelativeLayout;->onKeyUp(I Landroid/view/KeyEvent;)Z', u'Landroid/os/Bundle;->keySet()Ljava/util/Set;', u'Landroid/widget/ImageView;->setMaxHeight(I)V', u'Landroid/graphics/Rect;->contains(I I)Z', u'Landroid/view/View;->invalidate()V', u'Ljava/lang/String;->getChars(I I [C I)V', u'Ljava/net/HttpURLConnection;->getURL()Ljava/net/URL;', u'Landroid/graphics/Canvas;->setDrawFilter(Landroid/graphics/DrawFilter;)V', u'Ljava/io/ObjectInputStream;->defaultReadObject()V', u'Lorg/json/JSONObject;->toString(I)Ljava/lang/String;', u'Landroid/view/animation/ScaleAnimation;-><init>(F F F F F F)V', u'Ljava/util/Hashtable;->keySet()Ljava/util/Set;', u'Ljava/lang/UnsupportedOperationException;-><init>()V', u'Landroid/widget/ImageView;->getTag()Ljava/lang/Object;', u'Ljava/lang/NullPointerException;-><init>()V', u'Landroid/app/AlertDialog$Builder;->setMultiChoiceItems([Ljava/lang/CharSequence; [Z Landroid/content/DialogInterface$OnMultiChoiceClickListener;)Landroid/app/AlertDialog"
+p57
+sg5
+S'CHANGED (JI 37.06%)'
+p58
+sg7
+F37.060000000000002
+sa(dp59
+g3
+S'\nDELETED set([u\'isLoadAdTaskSuccessful() called when isLoadAdTaskDone() is false.\', u\'Cannot show interstitial because it is not loaded and ready.\', u\'onAdClicked()\', u\'prefix\', u\'asian\', u\'software_env\', u\'bad base-64\', u\'  %s: %d\\n\', u\'account_name\', u\'GoogleAdMobDoritosLife\', u\'Image already being sent.\', u\'fWidth\', u\'com.android.vending.licensing.ILicenseResultListener\', u\'Not running Unity from an Activity; ignored...\', u\'processName\', u\'mPlayer\', u\'Disabling hardware acceleration on collapsing MRAID WebView.\', u\'Adding contacts is unsupported by this Android SDK Level.\', u\'Advertisement is trying to use vibrator but permissions are missing.\', u"{\'event\': \'canplaythrough\', \'duration\': \'", u\'com.google.ads.AdSize\', u\'slideLeft\', u\' in database?: \', u\'currentActivity\', u\': Ad size has been disabled on the Mobclix Developer Dashboard\', u\' is not known!\', u\'New ad has expiration date in the past. Not downloading ad content. Remove any expired content from the filesystem.\', u\'An error occurred \n---\nADDED set([u\'Could not read basic animation: could not interpret keyPath(\', u\'ESPN\', u\'skip\', u\' from now.\', u\'.*[0-9A-Za-z].*\', u\'-._~\', u\'isGoneWithoutAd\', u\' at index \', u\'LazyList\', u\'G1\', u\'tv\', u\'tt\', u\'tu\', u\'tr\', u\'request_secret\', u\'to\', u\'tf\', u\' [\', u\'ta\', u\'assetsDidFailToLoad()\', u\' totalBytes \', u\'ptc\', u\'exception caught in RefreshHandler.run(), \', u\'P\', u\'request_token\', u\'exception: \', u\'Cannot requestFreshAd() when the AdView is not visible.  Call AdView.setVisibility(View.VISIBLE) first.\', u\'dim\', u\'start index\', u\'com.admob.android.ads\', u\'[SIGNPOST] \', u\'exception caught in AdMobURLConnector.run(), \', u\'item\', u\'%s (%s) must not be negative\', u\'OAUTH\', u"Unexpected low surrogate character \'", u\'VIEW\', u\'CLICK_TO_CANVAS\', u\'&z\', u\'exception caught in Ad$ViewAdd.run(), \', u\' failed, url \', u\'GAZETA\', u\'com.admob.android.ads.AdMobActivity must be registered in your AndroidManifest.xml file.\', u\'Unhandled exception raised in your InterstitialAdListener.onFailedToReceiveInter'
+p60
+sg5
+S'CHANGED (JI 4.58%)'
+p61
+sg7
+F4.5800000000000001
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/unity3d/player/UnityPlayer;->p Landroid/os/PowerManager$WakeLock; [access_flags=private]\\n', 'Lcom/mobclix/android/sdk/MobclixBrowserActivity$MobclixBrowser$3;->this$1 Lcom/mobclix/android/sdk/MobclixBrowserActivity$MobclixBrowser; [access_flags=synthetic final]\\n', 'Lcom/mobclix/android/sdk/Mobclix;->encodedOdin1 Ljava/lang/String; [access_flags=private]\\n', 'Lcom/google/ads/util/c$c;->g Z [access_flags=synthetic static final]\\n', 'Lcom/unity3d/player/UnityPlayer$12;->b Z [access_flags=private synthetic]\\n', 'Lcom/bakno/googleverificator/ServiceBinder;->myInstance Lcom/bakno/googleverificator/ServiceBinder; [access_flags=private]\\n', 'Lcom/mobclix/android/sdk/MobclixCreative$HTMLPage;->MOVE_THRESHOLD_DP F [access_flags=private final]\\n', 'Lcom/mobclix/android/sdk/MobclixAdView;->openAllocationList Ljava/util/ArrayList; [access_flags=0x0]\\n', 'Lcom/unity3d/player/w;->l I [access_flags=private]\\n', 'Lcom/mobclix/android/sdk/MobclixFullScreenAdView;->screenHeight I [access_fla\n---\nADDED set(['Lcom/admob/android/ads/b;->f Z [access_flags=private static]\\n', 'Lcom/admob/android/ads/InterstitialAd$Event;->SCREEN_CHANGE Lcom/admob/android/ads/InterstitialAd$Event; [access_flags=public static enum final]\\n', 'Lcom/admob/android/ads/u;->e Lcom/admob/android/ads/u$a; [access_flags=private]\\n', 'Lcom/admob/android/ads/InterstitialAd$Event;->POST_ROLL Lcom/admob/android/ads/InterstitialAd$Event; [access_flags=public static enum final]\\n', 'Lcom/ipanda/botafogototal/RSSItem;->_pubdate Ljava/lang/String; [access_flags=private]\\n', 'Lcom/admob/android/ads/j$d;->a Ljava/lang/ref/WeakReference; [access_flags=private]\\n', 'Lcom/admob/android/ads/AdView;->n Z [access_flags=private]\\n', 'Lcom/google/gdata/util/common/base/PercentEscaper;->UPPER_HEX_DIGITS [C [access_flags=private static final]\\n', 'Lcom/ipanda/botafogototal/AppMain$DialogButtonClickHandler;->this$0 Lcom/ipanda/botafogototal/AppMain; [access_flags=synthetic final]\\n', 'Lcom/admob/android/ads/AdManager;->h Landroid/loca"
+p63
+sg5
+S'CHANGED (JI 0.0%)'
+p64
+sg7
+F0
+sa.

@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.android.launcher.permission.INSTALL_SHORTCUT', 'android.permission.SYSTEM_ALERT_WINDOW', 'android.permission.GET_TASKS', 'android.permission.READ_PHONE_STATE'])"
+p24
+sg5
+S'CHANGED (JI 66.67%)'
+p25
+sg7
+F66.670000000000002
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.qq.fr.Pb', 'com.qq.grt.Tid', 'com.qq.dr.Dc', 'com.qq.bse.Fab'])"
+p33
+sg5
+S'CHANGED (JI 33.33%)'
+p34
+sg7
+F33.329999999999998
+sa(dp35
+g3
+S"\nDELETED set([u'res/drawable-xxxhdpi/bs5_icon.png', u'manifest'])\n---\nADDED set(['res/drawable-640dpi/bs5_icon.png'])"
+p36
+sg5
+S'CHANGED (JI 97.74%)'
+p37
+sg7
+F97.739999999999995
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.qq.dr.Du', 'com.qq.grt.Tiv', 'com.qq.bse.Fau', 'com.qq.fr.Pt'])"
+p39
+sg5
+S'CHANGED (JI 20.0%)'
+p40
+sg7
+F20
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.qq.grt.Tiu', 'com.qq.fr.Ps', 'com.qq.dr.Dt', 'com.qq.bse.Fat'])"
+p42
+sg5
+S'CHANGED (JI 20.0%)'
+p43
+sg7
+F20
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/qq/grt/c/b;', u'Ljava/util/Calendar;', u'Lcom/qq/dr/d/m;', u'Lcom/qq/dr/k;', u'Lcom/qq/fr/ab;', u'Lcom/qq/grt/b/d;', u'Lcom/qq/grt/c/k;', u'Lcom/qq/dr/r;', u'Ljava/util/LinkedHashMap;', u'Lcom/qq/dr/b/e;', u'Lcom/qq/fr/u;', u'Lcom/qq/fr/d/c;', u'Lcom/qq/dr/b/q;', u'Lcom/qq/fr/c/c;', u'Lcom/qq/dr/l;', u'Lcom/qq/grt/a/f;', u'Lcom/qq/grt/d/e;', u'Lcom/qq/dr/e/d;', u'Lcom/qq/bse/c/e;', u'Landroid/widget/ListView;', u'Lcom/qq/dr/b/n;', u'Lcom/qq/bse/a/i;', u'Lcom/qq/dr/c/e;', u'Lcom/qq/grt/a/h;', u'Lcom/qq/fr/Pt;', u'Lcom/qq/fr/b/f;', u'Lcom/qq/fr/r;', u'Lcom/qq/dr/d/t;', u'Lcom/qq/grt/a/a;', u'Lcom/qq/dr/e;', u'Lcom/qq/fr/c/d;', u'Lcom/qq/grt/c/p;', u'Lcom/qq/dr/w;', u'Lcom/qq/bse/d/g;', u'Lcom/qq/bse/j;', u'Lcom/qq/fr/at;', u'Lcom/qq/dr/ac;', u'Lcom/qq/bse/e;', u'Lcom/qq/bse/Fat;', u'Lcom/qq/dr/b/s;', u'Lcom/qq/bse/d/h;', u'Lcom/qq/dr/a/e;', u'Ljava/util/concurrent/ConcurrentHashMap;', u'Lcom/qq/fr/af;', u'Lcom/qq/fr/a/c;', u'Lcom/qq/grt/c/n;', u'Lcom/qq/dr/d/i;', u'Lcom/qq/fr"
+p45
+sg5
+S'CHANGED (JI 61.67%)'
+p46
+sg7
+F61.670000000000002
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/qq/fr/az;->b(Lcom/qq/fr/aj;)Ljava/lang/String;', u'Lcom/qq/dr/t;->d()V', u'Lcom/qq/dr/Dc;->onCreate(Landroid/os/Bundle;)V', u'Lcom/qq/dr/e/h;->b(Landroid/content/Context; Ljava/lang/Class;)Ljava/lang/Class;', u'Lcom/qq/grt/c/q;-><init>(Landroid/content/SharedPreferences; Landroid/content/Context; Ljava/lang/Class;)V', u'Lcom/qq/dr/d/n;->a(Landroid/view/MotionEvent; I)Z', u'Lcom/qq/bse/d/c;->a(Landroid/content/Context; I)V', u'Lcom/qq/grt/c/l;->a(Landroid/content/Context; Ljava/lang/String;)Landroid/graphics/Bitmap;', u'Lcom/qq/dr/b/d;->b(Ljava/lang/String; Ljava/lang/String;)Ljava/io/InputStream;', u'Lcom/qq/fr/c/d;-><init>(Lcom/qq/fr/c/c;)V', u'Lcom/qq/fr/az;->c(Landroid/content/Context; Ljava/lang/String;)Z', u'Lcom/qq/fr/m;->a(Landroid/os/Message;)V', u'Lcom/qq/fr/Pb;->onKeyDown(I Landroid/view/KeyEvent;)Z', u'Lcom/qq/dr/b/f;->b()Ljava/lang/String;', u'Lcom/qq/grt/b/b;-><init>()V', u'Lcom/qq/grt/c/n;->l(Landroid/content/Context;)Z', u'Lcom/qq/bse/c/e;->a(Ljava/lang/Strin"
+p48
+sg5
+S'CHANGED (JI 58.51%)'
+p49
+sg7
+F58.509999999999998
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/qq/fr/az;->b(Lcom/qq/fr/aj;)Ljava/lang/String;', u'Lcom/qq/dr/t;->d()V', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Lcom/qq/grt/a/a;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;', u'Lcom/qq/dr/e/h;->b(Landroid/content/Context; Ljava/lang/Class;)Ljava/lang/Class;', u'Lcom/qq/grt/c/q;-><init>(Landroid/content/SharedPreferences; Landroid/content/Context; Ljava/lang/Class;)V', u'Lcom/qq/grt/c/l;->a(Landroid/content/Context; Ljava/lang/String;)Landroid/graphics/Bitmap;', u'Lcom/qq/dr/z;->getItem(I)Ljava/lang/Object;', u'Lcom/qq/fr/m;->a(Landroid/os/Message;)V', u'Lcom/qq/fr/Pb;->onKeyDown(I Landroid/view/KeyEvent;)Z', u'Lcom/qq/dr/b/f;->b()Ljava/lang/String;', u'Lcom/qq/grt/c/n;->l(Landroid/content/Context;)Z', u'Lcom/qq/bse/c/e;->a(Ljava/lang/String; I)Z', u'Lcom/qq/grt/c/n;->F(Landroid/content/Context;)Landroid/content/SharedPreferences;', u'Lcom/qq/fr/d;-><init>(Lcom/qq/fr/c;)V', u'Ljava/net/Ht"
+p54
+sg5
+S'CHANGED (JI 60.52%)'
+p55
+sg7
+F60.520000000000003
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/util/Random;-><init>()V', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; I)Landroid/content/Intent;', u'Landroid/app/Activity;->getPackageName()Ljava/lang/String;', u'Ljava/security/MessageDigest;->update([B)V', u'Landroid/widget/Button;->setTextColor(I)V', u'Ljava/lang/String;->toString()Ljava/lang/String;', u'Landroid/view/View;->clearFocus()V', u'Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;', u'Ljava/io/File;-><init>(Ljava/lang/String; Ljava/lang/String;)V', u'Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;', u'Ljava/util/List;->contains(Ljava/lang/Object;)Z', u'Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V', u'Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;', u'Landroid/widget/ProgressBar;->getMax()I', u'Landroid/widget/Button;->setBackgroundDrawable(Landroid/grap"
+p57
+sg5
+S'CHANGED (JI 93.68%)'
+p58
+sg7
+F93.680000000000007
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'x\\u72d9\\u67c0y', u's\\xa9\\xea\\xf5\\xf2e', u'android.intent.category.HOME', u'x\\xe3\\xea\\xd3\\xe8\\xfb\\u010dy', u'x\\xec\\xef\\xe6\\xe3\\u010c\\u0102y', u's\\xe4\\xfc\\xe4\\xfa\\xf4\\u0106\\xf5\\u0102\\u010b\\xd7\\xff\\xfae', u'x\\xed\\xfd\\u0108\\xfb\\u010a\\xd7\\xf1\\xdb\\xf8\\xf7y', u'x\\xc1\\xf5\\xfb\\xf0y', u' [', u's\\xe4\\xf7\\xf9\\xef\\xe0\\xd9\\xe2\\u0100\\u0103\\xca\\u0108\\xfa\\xd6e', u'x\\xf5\\xb6\\xd2\\xc7\\xbcy', u's\\xe0\\xdd\\xe6\\xeee', u' %', u'x\\u0111\\xfc\\xf7\\xeby', u'x\\u0107\\xe3\\xe5\\u010e\\xf4\\xff\\xf2\\xdb\\u0106\\xf3\\xe6y', u'x\\xf7\\xff\\u0100\\u0103\\xe4\\xf7\\x94\\xed\\xfd\\xf9\\u010by', u'x\\u4e94\\u901b\\u5bfa\\u629dy', u's\\xaa\\xed\\xe6\\xfb\\xdc\\xc2\\xe5\\xfe\\u0112\\xd7e', u'x\\xfd\\xf3\\u0104\\xf8\\xfc\\xf2\\xa3\\xde\\u0108\\u0109\\xf5y', u'android.intent.category.LAUNCHER', u's\\u7fcc\\u7f65\\u5f87\\u5ebf\\uff87\\u4e9e\\u8ffe\\u671f\\u50fae', u's\\xcd\\xea\\xf3\\xee\\xe0e', u'x\\xeey', u's\\xef\\xea\\xece', u'x\\xf2\\xf6\\u0100\\u0101\\xe4\\xec\\xe4\\xf8\\xf8\\xf4\\u010ay', u'x\\xf9\\xef\\xf4\\xf8\\u0105\\xd7\\xf1\\xd5\\xf1\\xf4y', u'x\\u0112\\xd7\\u0101\\xe1\\xdcy', u'p', u's\\xed\\u0100e"
+p60
+sg5
+S'CHANGED (JI 60.97%)'
+p61
+sg7
+F60.969999999999999
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/qq/fr/v;->u Ljava/lang/String; [access_flags=public static]\\n', 'Lcom/qq/dr/e/b;->bM Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/qq/dr/u;->a Lcom/qq/dr/t; [access_flags=synthetic final]\\n', 'Lcom/qq/fr/w;->b Ljava/lang/String; [access_flags=public]\\n', 'Lcom/qq/bse/c/b;->X Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/qq/grt/b/d;->h I [access_flags=public]\\n', 'Lcom/qq/bse/c/g;->e Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/qq/dr/d/a;->u Landroid/view/View$OnClickListener; [access_flags=private]\\n', 'Lcom/qq/bse/c/b;->Q Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/qq/grt/c/h;->az Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/qq/grt/b/d;->n Ljava/lang/String; [access_flags=public]\\n', 'Lcom/qq/grt/c/h;->al Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/qq/fr/t;->i I [access_flags=public]\\n', 'Lcom/qq/bse/Fab;->a Z [access_flags=public static]\\n', 'Lcom/qq/dr/e/b;->a"
+p63
+sg5
+S'CHANGED (JI 34.8%)'
+p64
+sg7
+F34.799999999999997
+sa.

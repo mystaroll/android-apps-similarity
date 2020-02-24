@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S'EQUAL (JI 100%)'
+p24
+sg5
+S'EQUAL (JI 100%)'
+p25
+sg7
+I100
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S'EQUAL (JI 100%)'
+p33
+sg5
+S'EQUAL (JI 100%)'
+p34
+sg7
+I100
+sa(dp35
+g3
+S"\nDELETED set(['META-INF/CERT.SF', 'META-INF/CERT.RSA'])\n---\nADDED set([u'META-INF/9A48089E.SF', u'META-INF/9A48089E.RSA'])"
+p36
+sg5
+S'CHANGED (JI 97.69%)'
+p37
+sg7
+F97.689999999999998
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S'EQUAL (JI 100%)'
+p42
+sg5
+S'EQUAL (JI 100%)'
+p43
+sg7
+I100
+sa(dp44
+g3
+S"\nDELETED set([u'Ljava/lang/Throwable;', u'Landroid/text/Editable;', u'LLogCatBroadcaster;', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000000;', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000001;', u'Ljava/io/BufferedReader;', u'Ljava/lang/StringBuffer;', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000002;', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000003;', u'Ljava/lang/Process;', u'Ljava/lang/NoClassDefFoundError;', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000004;', u'Ljava/io/InputStreamReader;'])\n---\nADDED set([u'Lcom/mirasmithy/epochlauncher/MainActivity$5;', u'Lcom/mirasmithy/epochlauncher/MainActivity$4;', u'Lcom/mirasmithy/epochlauncher/MainActivity$3;', u'Lcom/mirasmithy/epochlauncher/MainActivity$2;', u'Lcom/mirasmithy/epochlauncher/MainActivity$1;'])"
+p45
+sg5
+S'CHANGED (JI 97.67%)'
+p46
+sg7
+F97.670000000000002
+sa(dp47
+g3
+S"\nDELETED set([u'LLogCatBroadcaster;-><init>(Landroid/content/Context;)V', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000004;-><init>(Lcom/mirasmithy/epochlauncher/MainActivity;)V', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000000;-><init>(Lcom/mirasmithy/epochlauncher/MainActivity;)V', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000002;-><init>(Lcom/mirasmithy/epochlauncher/MainActivity;)V', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000001;-><init>(Lcom/mirasmithy/epochlauncher/MainActivity;)V', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000004;->onTouch(Landroid/view/View; Landroid/view/MotionEvent;)Z', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000003;->onScroll(Landroid/widget/AbsListView; I I I)V', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000000;->onGlobalLayout()V', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000002;->onTouch(Landroid/view/View; Landroid/view/MotionEvent;)Z', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000003;-><init>(Lcom/mira\n---\nADDED set([u'Lcom/mirasmithy/epochlauncher/MainActivity$3;->onTouch(Landroid/view/View; Landroid/view/MotionEvent;)Z', u'Lcom/mirasmithy/epochlauncher/MainActivity$2;-><init>(Lcom/mirasmithy/epochlauncher/MainActivity;)V', u'Lcom/mirasmithy/epochlauncher/MainActivity$2;->onLongClick(Landroid/view/View;)Z', u'Lcom/mirasmithy/epochlauncher/MainActivity$5;->onTouch(Landroid/view/View; Landroid/view/MotionEvent;)Z', u'Lcom/mirasmithy/epochlauncher/MainActivity$1;->onGlobalLayout()V', u'Lcom/mirasmithy/epochlauncher/MainActivity$1;-><init>(Lcom/mirasmithy/epochlauncher/MainActivity;)V', u'Lcom/mirasmithy/epochlauncher/MainActivity$4;-><init>(Lcom/mirasmithy/epochlauncher/MainActivity;)V', u'Lcom/mirasmithy/epochlauncher/MainActivity$5;-><init>(Lcom/mirasmithy/epochlauncher/MainActivity;)V', u'Lcom/mirasmithy/epochlauncher/MainActivity$4;->onScroll(Landroid/widget/AbsListView; I I I)V', u'Lcom/mirasmithy/epochlauncher/MainActivity$3;-><init>(Lcom/mirasmithy/epochlauncher/MainActivity;)V'])"
+p48
+sg5
+S'CHANGED (JI 99.35%)'
+p49
+sg7
+F99.349999999999994
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/mirasmithy/epochlauncher/MainActivity$100000004;-><init>(Lcom/mirasmithy/epochlauncher/MainActivity;)V', u'Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;', u'Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000002;->onTouch(Landroid/view/View; Landroid/view/MotionEvent;)Z', u'Landroid/text/Editable;->toString()Ljava/lang/String;', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000000;->onGlobalLayout()V', u'Lcom/mirasmithy/epochlauncher/MainActivity$100000000;-><init>(Lcom/mirasmithy/epochlauncher/MainActivity;)V', u'Ljava/lang/Process;->getInputStream()Ljava/io/InputStream;', u'Ljava/io/BufferedReader;-><init>(Ljava/io/Reader; I)V', u'Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;', u'Ljava/lang/StringBuffer;-><init>()V', u'LLogCatBroadcaster;->start(Landroid/content/Context;)V', u'LLogCatBroadcaster;->run()V', u'LLogCatBroadcaster;-><init>(\n---\nADDED set([u'Lcom/mirasmithy/epochlauncher/MainActivity$1;-><init>(Lcom/mirasmithy/epochlauncher/MainActivity;)V', u'Lcom/mirasmithy/epochlauncher/MainActivity$2;-><init>(Lcom/mirasmithy/epochlauncher/MainActivity;)V', u'Lcom/mirasmithy/epochlauncher/MainActivity$2;->onLongClick(Landroid/view/View;)Z', u'Lcom/mirasmithy/epochlauncher/MainActivity$5;->onTouch(Landroid/view/View; Landroid/view/MotionEvent;)Z', u'Ljava/lang/String;->hashCode()I', u'Lcom/mirasmithy/epochlauncher/MainActivity$1;->onGlobalLayout()V', u'Lcom/mirasmithy/epochlauncher/MainActivity$3;->onTouch(Landroid/view/View; Landroid/view/MotionEvent;)Z', u'Lcom/mirasmithy/epochlauncher/MainActivity$4;-><init>(Lcom/mirasmithy/epochlauncher/MainActivity;)V', u'Lcom/mirasmithy/epochlauncher/MainActivity$5;-><init>(Lcom/mirasmithy/epochlauncher/MainActivity;)V', u'Ljava/util/List;->iterator()Ljava/util/Iterator;', u'Lcom/mirasmithy/epochlauncher/MainActivity$4;->onScroll(Landroid/widget/AbsListView; I I I)V', u'Lcom/mirasmithy/epoch"
+p54
+sg5
+S'CHANGED (JI 99.2%)'
+p55
+sg7
+F99.200000000000003
+sa(dp56
+g3
+S"\nDELETED set([u'Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;', u'Landroid/view/View;->getClass()Ljava/lang/Class;', u'Ljava/lang/Boolean;-><init>(Z)V', u'Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;', u'Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V'])\n---\nADDED set([u'Ljava/util/List;->iterator()Ljava/util/Iterator;', u'Ljava/lang/String;->hashCode()I'])"
+p57
+sg5
+S'CHANGED (JI 99.86%)'
+p58
+sg7
+F99.859999999999999
+sa(dp59
+g3
+S"\nDELETED set([u'android.widget.TextView', u'com.aide.runtime.VIEW_LOGCAT_ENTRY', u'lines', u'com.mirasmithy.epochlauncher.AppInfo', u'com.aide.ui', u'logcat -v threadtime', u'com.mirasmithy.epochlauncher.FakeLauncher'])\n---\nADDED set([])"
+p60
+sg5
+S'CHANGED (JI 99.05%)'
+p61
+sg7
+F99.049999999999997
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/mirasmithy/epochlauncher/MainActivity$100000004;->this$0 Lcom/mirasmithy/epochlauncher/MainActivity; [access_flags=private final]\\n', 'LLogCatBroadcaster;->started Z [access_flags=private static]\\n', 'Lcom/mirasmithy/epochlauncher/MainActivity$100000002;->this$0 Lcom/mirasmithy/epochlauncher/MainActivity; [access_flags=private final]\\n', 'LLogCatBroadcaster;->context Landroid/content/Context; [access_flags=private]\\n', 'Lcom/mirasmithy/epochlauncher/MainActivity$100000001;->this$0 Lcom/mirasmithy/epochlauncher/MainActivity; [access_flags=private final]\\n', 'Lcom/mirasmithy/epochlauncher/MainActivity$100000003;->this$0 Lcom/mirasmithy/epochlauncher/MainActivity; [access_flags=private final]\\n', 'Lcom/mirasmithy/epochlauncher/MainActivity$100000000;->this$0 Lcom/mirasmithy/epochlauncher/MainActivity; [access_flags=private final]\\n'])\n---\nADDED set(['Lcom/mirasmithy/epochlauncher/MainActivity$5;->this$0 Lcom/mirasmithy/epochlauncher/MainActivity; [access_flags=synthetic final]\\n', 'Lcom/mirasmithy/epochlauncher/MainActivity$3;->this$0 Lcom/mirasmithy/epochlauncher/MainActivity; [access_flags=synthetic final]\\n', 'Lcom/mirasmithy/epochlauncher/MainActivity$4;->this$0 Lcom/mirasmithy/epochlauncher/MainActivity; [access_flags=synthetic final]\\n', 'Lcom/mirasmithy/epochlauncher/MainActivity$1;->this$0 Lcom/mirasmithy/epochlauncher/MainActivity; [access_flags=synthetic final]\\n', 'Lcom/mirasmithy/epochlauncher/MainActivity$2;->this$0 Lcom/mirasmithy/epochlauncher/MainActivity; [access_flags=synthetic final]\\n'])"
+p63
+sg5
+S'CHANGED (JI 98.78%)'
+p64
+sg7
+F98.780000000000001
+sa.

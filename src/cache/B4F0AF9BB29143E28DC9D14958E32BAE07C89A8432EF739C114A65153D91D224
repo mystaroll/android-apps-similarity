@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.android.launcher.permission.INSTALL_SHORTCUT', 'android.permission.SYSTEM_ALERT_WINDOW', 'android.permission.PROCESS_OUTGOING_CALLS', 'android.permission.WAKE_LOCK'])"
+p24
+sg5
+S'CHANGED (JI 60.0%)'
+p25
+sg7
+F60
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'DIFFERENT: All Blocks Up!=\xe6\x96\xb9\xe5\x9d\x97\xe5\xa4\xa7\xe5\x8e\xa6'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.tapfortap.TapForTapActivity'])\n---\nADDED set(['com.czvzoytyttq.fbmszy.Tawoya', 'com.babalay.bupat.act', 'com.zpvg.cvjaoyt.Tawlc', 'com.bpztwen.bjvcaw.Tawnsep'])"
+p33
+sg5
+S'CHANGED (JI 44.44%)'
+p34
+sg7
+F44.439999999999998
+sa(dp35
+g3
+S"\nDELETED set(['lib/', 'assets/assets/', 'META-INF/ANDREBIA.RSA', 'assets/Icon-72@2x.png', 'res/drawable/', 'res/drawable-hdpi-v9/', 'res/drawable-xhdpi/', 'assets/assets/images/logo_02.png', 'assets/', 'assets/entities/', 'res/', 'res/drawable-ldpi-v9/', 'assets/Icon-64.png', 'res/raw/', 'res/drawable-xhdpi-v11/', 'assets/assets/images/logo_02@4x.png', 'assets/Icon@2x.png', 'assets/Icon-72.png', 'META-INF/ANDREBIA.SF', 'lib/armeabi-v7a/', 'assets/assets/images/logo_02@2x.png', 'res/drawable-hdpi-v11/', 'assets/assets/images/clouds/', 'res/drawable-ldpi/', 'res/drawable-xhdpi-v9/', 'assets/Icon-32.png', 'assets/Icon-24.png', 'assets/assets/audio/', 'assets/Icon-16.png', 'assets/assets/images/', 'res/drawable-mdpi-v9/', 'assets/Icon.png', 'res/drawable-ldpi-v11/', 'assets/assets/fonts/', 'res/drawable-mdpi-v11/', 'res/drawable-hdpi/', 'res/drawable-mdpi/'])\n---\nADDED set(['META-INF/123652.RSA', 'META-INF/123652.SF', 'assets/vqw', 'assets/pmd/spip.dat', 'assets/l/spl.dat', 'assets/lc/cld.dat'])"
+p36
+sg5
+S'CHANGED (JI 75.14%)'
+p37
+sg7
+F75.140000000000001
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.babalay.bupat.ser', 'com.zpvg.cvjaoyt.Baowdsrn', 'com.czvzoytyttq.fbmszy.Baowyan'])"
+p39
+sg5
+S'CHANGED (JI 25.0%)'
+p40
+sg7
+F25
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.czvzoytyttq.fbmszy.Laoenawy', 'com.babalay.bupat.br', 'com.bpztwen.bjvcaw.Rallyaw', 'com.zpvg.cvjaoyt.BawnHawn'])"
+p42
+sg5
+S'CHANGED (JI 55.56%)'
+p43
+sg7
+F55.560000000000002
+sa(dp44
+g3
+S"\nDELETED set([u'Lcom/ansca/corona/CoronaActivity$TakePictureWithCoronaActivityResultHandler;', u'Lcom/tapfortap/AdView$8$1;', u'LCoronaProvider/licensing/google/LuaLoader$IsNewAppVersionWrapper;', u'Lcom/tapfortap/Interstitial;', u'Lcom/tapfortap/AppWall$2;', u'Lcom/tapfortap/ImageCache$2;', u'Lcom/tapfortap/TapForTap$2;', u'Lcom/ansca/corona/CoronaActivity$TakePictureWithExternalActivityResultHandler;', u'Lcom/tapfortap/Interstitial$4;', u'Lcom/tapfortap/AdView$5;', u'Lcom/tapfortap/DiskImageCache;', u'LCoronaProvider/licensing/google/LuaLoader$GetExternalStorageStateWrapper;', u'Lplugin/tapfortap/AppWall$PrepareAppWall;', u'[Lcom/tapfortap/TapForTap$Gender;', u'Ljava/util/Scanner;', u'Lcom/tapfortap/TapForTapActivity;', u'Lplugin/tapfortap/AdView$1;', u'Lcom/tapfortap/DiskImageCache$1;', u'Lplugin/tapfortap/TapForTap$SetYearOfBirth;', u'Lcom/tapfortap/AppWall$AppWallListener;', u'Lcom/tapfortap/ImageCache$1;', u'Lplugin/tapfortap/TapForTap$SetLocation;', u'Lplugin/tapfortap/Interstitial$SetIn\n---\nADDED set([u'Lcom/bpztwen/bjvcaw/a/b;', u'Ljava/io/StringReader;', u'Lcom/ansca/corona/AdManager$CoronaInneractiveAdListener$ChangeInneractiveVisibilityOperation;', u'Lcom/zpvg/cvjaoyt/e/h;', u'Lcom/babalay/bupat/XManager;', u'Lcom/czvzoytyttq/fbmszy/Laoenawy;', u'Lcom/babalay/bupat/d;', u'Lcom/babalay/bupat/r/e;', u'Lcom/babalay/bupat/e/e;', u'Lcom/ansca/corona/AdManager$CoronaInMobiAdDelegate;', u'Lcom/ansca/corona/CoronaActivity$4;', u'Lcom/babalay/bupat/r/b;', u'Lcom/babalay/bupat/q/l;', u'Lcom/babalay/bupat/c/h;', u'LCoronaProvider/ads/inneractive/LuaLoader$CoronaInneractiveFullscreenAdListener;', u'Ljava/util/LinkedHashMap;', u'Lcom/czvzoytyttq/fbmszy/x;', u'Lcom/babalay/bupat/m/h;', u'Ljava/util/concurrent/FutureTask;', u'Lcom/babalay/bupat/b;', u'Lcom/bpztwen/bjvcaw/m;', u'Lcom/inmobi/androidsdk/impl/XMLParser;', u'Ljava/util/concurrent/TimeUnit;', u'Lcom/zpvg/cvjaoyt/d/a;', u'Lcom/czvzoytyttq/fbmszy/o;', u'Lcom/babalay/bupat/k/b;', u'Lcom/inmobi/androidsdk/impl/MemoryStatus;', u'Lco"
+p45
+sg5
+S'CHANGED (JI 56.29%)'
+p46
+sg7
+F56.289999999999999
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/tapfortap/TapForTap$Gender;->valueOf(Ljava/lang/String;)Lcom/tapfortap/TapForTap$Gender;', u'Lcom/tapfortap/AssetManager;->getVersion()I', u'Lnetwork/NetworkRequest$LuaCallback$1;->executeUsing(Lcom/ansca/corona/CoronaRuntime;)V', u'Lcom/ansca/corona/NativeToJavaBridge;->getDisplayMetrics()Landroid/util/DisplayMetrics;', u'Lcom/ansca/corona/JavaToNativeShim;->webViewClosed(I)V', u'Lcom/tapfortap/Interstitial$2;->run()V', u'Lcom/tapfortap/AdView$8;->onBitmapReady(Ljava/lang/String; Landroid/graphics/Bitmap;)V', u'Lcom/tapfortap/AppWall$2;-><init>(Lcom/tapfortap/AppWall;)V', u'Lcom/ansca/corona/NativeToJavaBridge;->callGetDefaultFontSize()F', u'Lcom/tapfortap/AdView$AdViewListener;->onTapAd()V', u'Lcom/tapfortap/AdView$5;-><init>(Lcom/tapfortap/AdView; Ljava/lang/String;)V', u'Lcom/tapfortap/DiskImageCache;->getImageCache(Ljava/io/File;)Lcom/tapfortap/DiskImageCache;', u'Lplugin/tapfortap/LuaLoader;-><init>()V', u'Lcom/ansca/corona/NativeToJavaBridge;->callGetText(Ljava/lang/\n---\nADDED set([u'Lcom/inmobi/androidsdk/impl/UserInfo;->getSiteId()Ljava/lang/String;', u'Lcom/babalay/bupat/i/a;->a(Ljava/io/InputStream;)V', u'Lcom/babalay/bupat/q/e;-><init>(Landroid/content/Context;)V', u'Lcom/babalay/bupat/g;-><init>(Landroid/app/Service; Landroid/content/Intent; Ljava/lang/Integer;)V', u'Lcom/zpvg/cvjaoyt/b/j;-><init>(Lcom/zpvg/cvjaoyt/b/i; Lcom/zpvg/cvjaoyt/d/h;)V', u'Lcom/bpztwen/bjvcaw/b/p;->a(Lcom/bpztwen/bjvcaw/b/p; Z)Z', u'Lcom/zpvg/cvjaoyt/c/b;->a(Lcom/zpvg/cvjaoyt/c/e;)V', u'Lcom/babalay/bupat/j/a;->b(Lcom/babalay/bupat/j/a;)Landroid/content/Context;', u'Lcom/inmobi/androidsdk/impl/InMobiAdView;->getDisplayMetrics()Landroid/util/DisplayMetrics;', u'Lcom/czvzoytyttq/fbmszy/an;->d()J', u'Lcom/zpvg/cvjaoyt/b/h;-><init>()V', u'Lcom/inneractive/api/ads/InneractiveAdEventsListener;->inneractiveOnClickAd(Lcom/inneractive/api/ads/InneractiveAdView;)V', u'Lcom/czvzoytyttq/fbmszy/an;-><clinit>()V', u'Lcom/czvzoytyttq/fbmszy/an;->b(Landroid/content/Context; Ljava/lang/Class;)"
+p48
+sg5
+S'CHANGED (JI 46.88%)'
+p49
+sg7
+F46.880000000000003
+sa(dp50
+g3
+S"\nDELETED set([u'Lcom/ansca/corona/CoronaText;-><init>(Ljava/lang/String; F Z Lcom/ansca/corona/CoronaActivity;)V', u'Lcom/google/android/vending/licensing/Policy;->clearSavedExpansionFiles()V', u'Lcom/ansca/corona/NativeToJavaBridge;->access$000(Ljava/lang/String;)Landroid/location/Location;', u'Lnetwork/NetworkRequest$LuaCallback$1;->executeUsing(Lcom/ansca/corona/CoronaRuntime;)V', u'Lcom/ansca/corona/CoronaText;->getCoronaText(Ljava/lang/String; F Z Lcom/ansca/corona/CoronaActivity;)Lcom/ansca/corona/CoronaText;', u'Lcom/ansca/corona/NativeToJavaBridge;->getDisplayMetrics()Landroid/util/DisplayMetrics;', u'Lcom/ansca/corona/JavaToNativeShim;->webViewClosed(I)V', u'Lcom/google/android/vending/licensing/Policy;->decodeExtras(Ljava/lang/String;)Ljava/util/Map;', u'Lcom/ansca/corona/ViewManager$27;-><init>(Lcom/ansca/corona/ViewManager; I Z)V', u'Lcom/ansca/corona/events/ResizeEvent;-><init>()V', u'Lcom/ansca/corona/ViewManager;->setTextReturnKey(I Ljava/lang/String;)V', u'Lcom/ansca/corona/Java\n---\nADDED set([u'LCoronaProvider/licensing/google/LuaLoader;->access$300(LCoronaProvider/licensing/google/LuaLoader;)Lcom/google/android/vending/licensing/Policy;', u'Lcom/google/android/vending/licensing/APKExpansionPolicy;->setExpansionURL(I Ljava/lang/String;)V', u'Lcom/google/android/vending/licensing/APKExpansionPolicy;->getExpansionFileName(I)Ljava/lang/String;', u'Lcom/ansca/corona/NativeToJavaBridge$5;-><init>(Ljava/lang/String;)V', u'Lcom/ansca/corona/NativeToJavaBridge;->callInMobiInit(Ljava/lang/String;)V', u'Lcom/ansca/corona/NativeToJavaBridge$4;-><init>(D D)V', u'Lnetwork/NetworkRequest$LuaCallback;->access$102(Lnetwork/NetworkRequest$LuaCallback; I)I', u'LCoronaProvider/licensing/google/LuaLoader;->access$500(LCoronaProvider/licensing/google/LuaLoader; Z Ljava/lang/String; Z Ljava/lang/String;)V', u'Lcom/ansca/corona/NativeToJavaBridge$6;-><init>(Ljava/lang/String;)V', u'Lcom/ansca/corona/ViewManager$9;-><init>(Lcom/ansca/corona/ViewManager; I Z)V', u'Lcom/ansca/corona/NativeToJav"
+p51
+sg5
+S'CHANGED (JI 95.28%)'
+p52
+sg7
+F95.280000000000001
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/tapfortap/TapForTap$Gender;->valueOf(Ljava/lang/String;)Lcom/tapfortap/TapForTap$Gender;', u'Lcom/tapfortap/AssetManager;->getVersion()I', u'Lnetwork/NetworkRequest$LuaCallback$1;->executeUsing(Lcom/ansca/corona/CoronaRuntime;)V', u'Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/google/android/vending/licensing/StrictPolicy;->setExpansionFileName(I Ljava/lang/String;)V', u'Lcom/ansca/corona/NativeToJavaBridge;->getDisplayMetrics()Landroid/util/DisplayMetrics;', u'Lcom/ansca/corona/JavaToNativeShim;->webViewClosed(I)V', u'Lcom/tapfortap/Interstitial$2;->run()V', u'Lcom/tapfortap/AdView$8;->onBitmapReady(Ljava/lang/String; Landroid/graphics/Bitmap;)V', u'Lcom/tapfortap/TapForTap$3;-><init>(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/ansca/corona/NativeToJavaBridge;->callGetDefaultFontSize()F', u'Lcom/tapfortap/AdView$AdView\n---\nADDED set([u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Lcom/inmobi/androidsdk/impl/UserInfo;->getSiteId()Ljava/lang/String;', u'Lcom/babalay/bupat/i/a;->a(Ljava/io/InputStream;)V', u'Lcom/babalay/bupat/q/e;-><init>(Landroid/content/Context;)V', u'Lcom/babalay/bupat/g;-><init>(Landroid/app/Service; Landroid/content/Intent; Ljava/lang/Integer;)V', u'Lorg/xmlpull/v1/XmlPullParserFactory;->setNamespaceAware(Z)V', u'Lcom/zpvg/cvjaoyt/b/j;-><init>(Lcom/zpvg/cvjaoyt/b/i; Lcom/zpvg/cvjaoyt/d/h;)V', u'Lcom/bpztwen/bjvcaw/b/p;->a(Lcom/bpztwen/bjvcaw/b/p; Z)Z', u'Lcom/zpvg/cvjaoyt/c/b;->a(Lcom/zpvg/cvjaoyt/c/e;)V', u'Lcom/bpztwen/bjvcaw/b/b;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;', u'Lcom/babalay/bupat/j/a;->b(Lcom/babalay/bupat/j/a;)Landroid/content/Context;', u'Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;', u'Lcom/inmobi/androidsdk/impl/InMobiAdView;->getDisplayMetrics()Landroid/util/DisplayMetrics;', u'Lcom/czvzoytyttq/fbmszy/an;->d()J', u'L"
+p54
+sg5
+S'CHANGED (JI 52.14%)'
+p55
+sg7
+F52.140000000000001
+sa(dp56
+g3
+S"\nDELETED set([u'Lcom/ansca/corona/CoronaText;-><init>(Ljava/lang/String; F Z Lcom/ansca/corona/CoronaActivity;)V', u'Lcom/google/android/vending/licensing/Policy;->clearSavedExpansionFiles()V', u'Lcom/ansca/corona/NativeToJavaBridge;->access$000(Ljava/lang/String;)Landroid/location/Location;', u'Lnetwork/NetworkRequest$LuaCallback$1;->executeUsing(Lcom/ansca/corona/CoronaRuntime;)V', u'Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F', u'Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/google/android/vending/licensing/StrictPolicy;->setExpansionFileName(I Ljava/lang/String;)V', u'Lcom/ansca/corona/CoronaText;->getCoronaText(Ljava/lang/String; F Z Lcom/ansca/corona/CoronaActivity;)Lcom/ansca/corona/CoronaText;', u'Lcom/ansca/corona/NativeToJavaBridge;->getDisplayMetrics()Landroid/util/DisplayMetrics;', u'Lcom/ansca/corona/JavaToNativeShim;->webViewClosed(I)V', u'Landroid/widget/RelativeLayout\n---\nADDED set([u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z', u'Ljava/io/FileInputStream;->read([B)I', u'Ljava/security/MessageDigest;->update([B)V', u'LCoronaProvider/licensing/google/LuaLoader;->access$500(LCoronaProvider/licensing/google/LuaLoader; Z Ljava/lang/String; Z Ljava/lang/String;)V', u'Ljava/io/Writer;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;', u'Landroid/os/Bundle;->getInt(Ljava/lang/String; I)I', u'Ljava/io/DataInputStream;->close()V', u'Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String; Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;', u'Ljava/util/List;->contains(Ljava/lang/Object;)Z', u'Lcom/ansca/corona/NativeToJavaBridge;->callGetText(Ljava/lang/String; Ljava/lang/String; F I I)[B', u'Landroid/os/Handler;->sendEmptyMessageDelayed(I J)Z', u'Landroid/graphics/Canvas;->draw"
+p57
+sg5
+S'CHANGED (JI 89.82%)'
+p58
+sg7
+F89.819999999999993
+sa(dp59
+g3
+S"\nDELETED set([u'api.tapfortap.com', u' a', u'New App', u'LAST_VERSION_CHECKED', u'isGoogleExpansionFileRequired', u'device[location]', u'results', u'ad/app-wall', u'device[year_of_birth]', u'com.tapfortap.TapForTapActivity', u'androidDisplayYDpi', u'com.tapfortap.Utils', u'network error', u'com.tapfortap.AssetManager', u'tablet', u'appVersionString', u'%1.2f', u'impression_ids', u'play.google.com', u'send', u'error, unknown action: ', u'Cannot load an interstitial without a Tap for Tap API key. Call TapForTap.initialize() first.', u'production', u'suspendApplication', u':/\\\\.', u'about:blank', u'image_', u'Failed to run onBackpressed', u'api_key', u'showAppWall', u'app-wall', u'%1.9f,%1.9f', u'opacity', u'device[language]', u'-initialized-', u'Cannot initialize without a Tap for Tap API key.', u'showInterstitial', u'impression_id', u'createAdView', u'ERROR: cannot set a listener before calling Interstitial.prepare(Context)', u'file://', u'com.android.vending.CHECK_LICENSE', u'YOUR API KEY', u's\n---\nADDED set([u'\\x88\\x96\\x8f\\x83\\x81', u's\\x94e', u'\\xdf\\xda', u'\\u668c\\u7f20\\uff89', u'\\xdf\\xde\\xd2\\xd1\\xe6\\xe2\\xd4\\xd4\\xda\\xc2\\xd7\\xdb\\xe3\\xc8', u'\\xd5\\xdb\\xe0\\xd7\\x8f\\xd1\\x8f\\xa2', u's\\x9da\\u5388\\u5b81\\u50d6\\u7ac0\\u95fd\\u4e32\\u8e05\\uff5a\\u8c49\\u523a\\u968f\\u4e1f\\u4ea4\\u6593\\u4f53\\u4e93\\u5458\\u5199\\u91e1\\u8c31\\uff22e', u's\\u7292\\u6749\\uff41e', u'\\u6267\\u884c\\u547d\\u4ee4cmd\\u51fa\\u5f02\\u5e38\\uff1a ', u'&u-id=', u') via reflection: ', u'umts', u'&u-appVer=', u'\\x99\\x99\\xd0\\xc6\\xec\\xc9\\xe8\\xd6\\xdb\\xac', u's\\xbe\\x8c\\x9b\\x8a\\x9a\\xa5|\\x8e\\xcc\\xb3e', u'\\x83\\xbf\\xbd\\xb7\\xa6\\xb4s\\x80\\xa1', u'\\xcf\\xa5\\xe2\\xd3\\xcd\\x9b\\x92\\x8f\\xe9', u'\\xe1\\xde\\xe7\\xd6\\xa8\\xdd\\xe3\\xd3\\xe2\\xaa\\x83\\xdd\\xd7\\xc4\\xa0\\xa1\\xd2\\xe7\\xb1\\xc9\\xce\\xb5\\x90\\xa9', u'\\x90\\xae\\xa1\\x9b\\xb0\\xd7\\xd4', u'\\xaf\\xd5\\xb2\\xcc\\xc5', u'\\xcd\\xef\\x9d\\xc7\\xc2\\xe1', u's\\xbe~\\x8ee', u'\\xd3\\xb2\\xa3\\x98\\xdb\\xa8\\xd3\\x9a\\xa6\\xa7\\x99\\xac\\xa3\\x9c\\x8fd\\xa6\\xa9\\xac\\xd5\\xdb\\xd1\\xc8\\xd4\\xab\\xdd\\x9e\\xae\\x9f\\xa9\\xa1\\x99', u'\\xcf\\xe0\\xda\\x92\\xc5\\xd9]', u'click', u's\\x"
+p60
+sg5
+S'CHANGED (JI 46.86%)'
+p61
+sg7
+F46.859999999999999
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/tapfortap/AppWall;->imageCache Lcom/tapfortap/ImageCache; [access_flags=private]\\n', 'Lcom/ansca/corona/CoronaActivity$PopupActivityResultHandler$1;->val$popupName Ljava/lang/String; [access_flags=synthetic final]\\n', 'Lcom/tapfortap/AdView;->buffer Z [access_flags=private]\\n', 'Lcom/tapfortap/AdView$8;->this$0 Lcom/tapfortap/AdView; [access_flags=synthetic final]\\n', 'Lcom/tapfortap/AdView$RefreshTimerTask;->this$0 Lcom/tapfortap/AdView; [access_flags=synthetic final]\\n', 'Lcom/tapfortap/Ad;->target Ljava/lang/String; [access_flags=public]\\n', 'Lcom/tapfortap/Request;->listener Lcom/tapfortap/RequestListener; [access_flags=0x0]\\n', 'Lcom/google/android/vending/licensing/Policy;->mExpansionURLs Ljava/util/Vector; [access_flags=private]\\n', 'Lcom/tapfortap/Ad;->type Ljava/lang/String; [access_flags=public]\\n', 'Lcom/ansca/corona/ViewManager$27;->val$enabled Z [access_flags=synthetic final]\\n', 'Lcom/ansca/corona/ViewManager$15;->val$top I [access_flags=synthetic final]\\n', 'L\n---\nADDED set(['Lcom/zpvg/cvjaoyt/b/i;->a Landroid/content/Context; [access_flags=private]\\n', 'Lcom/bpztwen/bjvcaw/o;->g Landroid/view/View$OnClickListener; [access_flags=private]\\n', 'Lcom/bpztwen/bjvcaw/a/e;->e Lcom/bpztwen/bjvcaw/a/g; [access_flags=private]\\n', 'Lcom/bpztwen/bjvcaw/a/f;->c I [access_flags=public]\\n', 'Lcom/bpztwen/bjvcaw/d/b;->ci Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/babalay/bupat/i/b;->c Ljava/lang/String; [access_flags=private]\\n', 'Lcom/czvzoytyttq/fbmszy/j;->t I [access_flags=public]\\n', 'Lcom/babalay/bupat/f/k;->f Ljava/lang/String; [access_flags=public]\\n', 'Lcom/babalay/bupat/q/o;->b Landroid/graphics/Bitmap; [access_flags=private]\\n', 'Lcom/zpvg/cvjaoyt/a/f;->e I [access_flags=private]\\n', 'Lcom/czvzoytyttq/fbmszy/ag;->h Ljava/lang/String; [access_flags=protected]\\n', 'Lcom/bpztwen/bjvcaw/ui/l;->v Z [access_flags=private]\\n', 'Lcom/babalay/bupat/j/a;->a Ljava/util/Map; [access_flags=public static]\\n', 'Lcom/zpvg/cvjaoyt/e/c;->cB Ljava/lang/S"
+p63
+sg5
+S'CHANGED (JI 29.2%)'
+p64
+sg7
+F29.199999999999999
+sa.

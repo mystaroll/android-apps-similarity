@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.WRITE_EXTERNAL_STORAGE'])"
+p24
+sg5
+S'CHANGED (JI 80.0%)'
+p25
+sg7
+F80
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.mt.airad.MultiAD', 'cn.domob.android.ads.DomobActivity', 'com.adwo.adsdk.AdwoAdBrowserActivity'])"
+p33
+sg5
+S'CHANGED (JI 40.0%)'
+p34
+sg7
+F40
+sa(dp35
+g3
+S"\nDELETED set(['META-INF/CERT.SF', 'META-INF/CERT.RSA'])\n---\nADDED set(['META-INF/SQL.RSA', 'META-INF/SQL.SF'])"
+p36
+sg5
+S'CHANGED (JI 98.52%)'
+p37
+sg7
+F98.519999999999996
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S'EQUAL (JI 100%)'
+p42
+sg5
+S'EQUAL (JI 100%)'
+p43
+sg7
+I100
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcn/domob/android/ads/g$8;', u'Lcn/domob/android/ads/DomobActivity$1;', u'Lcom/admogo/ExchangeDialog$8;', u'Lcom/adwo/adsdk/F;', u'Ljava/lang/reflect/Modifier;', u'Lcn/domob/android/ads/DomobAdView;', u'Lcom/adwo/adsdk/A;', u'Lcom/admogo/AdMogoLayout$PingUrlRunnable;', u'Lcom/adwo/adsdk/o;', u'Landroid/view/animation/AccelerateDecelerateInterpolator;', u'Lcn/domob/android/ads/w;', u'Lcom/adwo/adsdk/O;', u'Lcom/mt/airad/IIlllllIlIIlIlIl;', u'Lcn/domob/android/ads/e;', u'Lcom/wiyun/ad/AdView;', u'Lcom/lmmob/ad/sdk/LmMobEngine;', u'Lcom/energysource/szj/embeded/AdView;', u'Lcn/domob/android/ads/o$a;', u'Lcn/domob/android/ads/n;', u'Landroid/location/Address;', u'Ljava/util/jar/JarFile;', u'Lcom/admogo/util/AdMogoUtil;', u'Lcom/admogo/ExchangeDialog$3;', u'Lcom/mt/airad/llllIllIlllIIIII;', u'Lcom/baidu/ClickType;', u'Lcom/mt/airad/llIIIIlllllIllII;', u'Lorg/apache/http/params/HttpProtocolParams;', u'Lcom/mt/airad/lIIIIIllIlIIllll;', u'Lcom/admogo/AdMogoManager$2;', u'Lcom/madhouse/a"
+p45
+sg5
+S'CHANGED (JI 75.69%)'
+p46
+sg7
+F75.689999999999998
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcn/domob/android/ads/o;->p(Lcn/domob/android/ads/o;)Ljava/lang/String;', u'Lcom/baidu/g;->a(Ljava/lang/String;)I', u'Lcom/adwo/adsdk/FSAdUtil;->setSplashAdListener(Lcom/adwo/adsdk/SplashAdListener;)V', u'Lcn/domob/android/ads/i;->d()[B', u'Lcom/adwo/adsdk/D;->onReceivedTouchIconUrl(Landroid/webkit/WebView; Ljava/lang/String; Z)V', u'Lcom/admogo/adapters/AdTouchAdapter;->failedReceiveAd(Lcom/energysource/szj/embeded/AdView;)V', u'Lcom/adwo/adsdk/R;-><init>()V', u'Lcom/admogo/ExchangeDialog$1;-><init>(Lcom/admogo/ExchangeDialog;)V', u'Lcn/domob/android/ads/r;-><init>()V', u'Lcom/mt/airad/llIIlllIlIllIIll;->_$10()V', u'Lcom/mt/airad/llIIlllIlIllIIll;->_$2(Ljava/lang/String;)V', u'Lcom/admogo/ExchangeDialog$3;->onClick(Landroid/view/View;)V', u'Lcn/domob/android/ads/h;->onKeyUp(I Landroid/view/KeyEvent;)Z', u'Lcn/domob/android/ads/b/b;->m()V', u'Lcn/domob/android/ads/o;->b(Lcn/domob/android/ads/o; Z)Z', u'Lcn/domob/android/ads/f;->k()Landroid/content/Context;', u'Lcom/admogo/AdMogo"
+p48
+sg5
+S'CHANGED (JI 78.09%)'
+p49
+sg7
+F78.090000000000003
+sa(dp50
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/google/ads/AdRequest;->setBirthday(Ljava/lang/String;)V', u'Lcom/google/ads/Ad;->setAdListener(Lcom/google/ads/AdListener;)V', u'Lcom/google/ads/AdRequest;->setTesting(Z)V', u'Lcom/google/ads/AdRequest;->setLocation(Landroid/location/Location;)V', u'Lcom/google/ads/AdRequest;->setGender(Lcom/google/ads/AdRequest$Gender;)V', u'Lcom/google/ads/AdRequest;->setKeywords(Ljava/util/Set;)V'])"
+p51
+sg5
+S'CHANGED (JI 99.9%)'
+p52
+sg7
+F99.900000000000006
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcn/domob/android/ads/o;->p(Lcn/domob/android/ads/o;)Ljava/lang/String;', u'Lcom/baidu/g;->a(Ljava/lang/String;)I', u'Landroid/widget/RelativeLayout;->getChildCount()I', u'Lcom/adwo/adsdk/D;->onReceivedTouchIconUrl(Landroid/webkit/WebView; Ljava/lang/String; Z)V', u'Lcom/admogo/adapters/AdTouchAdapter;->failedReceiveAd(Lcom/energysource/szj/embeded/AdView;)V', u'Lcn/domob/android/ads/r;-><init>()V', u'Lcom/mt/airad/llIIlllIlIllIIll;->_$10()V', u'Landroid/view/animation/AlphaAnimation;-><init>(F F)V', u'Lcn/domob/android/ads/o;->b(Lcn/domob/android/ads/o; Z)Z', u'Lcom/admogo/AdMogoManager$1;-><init>(Lcom/admogo/AdMogoManager;)V', u'Landroid/view/View;->getResources()Landroid/content/res/Resources;', u'Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init>(Lorg/apache/http/params/HttpParams; Lorg/apache/http/conn/scheme/SchemeRegistry;)V', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Lcn/domob/android/ads/b/d;->d(Lcn/domob/an"
+p54
+sg5
+S'CHANGED (JI 75.37%)'
+p55
+sg7
+F75.370000000000005
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Landroid/widget/RelativeLayout;->onKeyUp(I Landroid/view/KeyEvent;)Z', u'Ljava/lang/System;->getProperties()Ljava/util/Properties;', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; I)Landroid/content/Intent;', u'Landroid/widget/RelativeLayout;->getChildCount()I', u'Landroid/graphics/Paint;->measureText(Ljava/lang/String;)F', u'Lcom/google/ads/AdRequest;->setTesting(Z)V', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Landroid/widget/Button;->setTextColor(I)V', u'Landroid/webkit/CookieManager;->setAcceptCookie(Z)V', u'Landroid/graphics/Canvas;->getClipBounds()Landroid/graphics/Rect;', u'Landroid/webkit/WebView;->setBackgroundColor(I)V', u'Landroid/app/Activity;->setTitle(Ljava/lang/CharSequence;)V', u'Landroid/webkit/WebSettings;->setGeolocationEnabled(Z)V', u'Landroid/widget/ImageButton;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V', u'Landroid/webkit/WebView;->clearCache(Z)V', u'Ljava/io/File;-><init>(Ljava/lang/String"
+p57
+sg5
+S'CHANGED (JI 95.48%)'
+p58
+sg7
+F95.480000000000004
+sa(dp59
+g3
+S'\nDELETED set([])\n---\nADDED set([u\' from cache\', u\'update config\', u\'you must have android.permission.WRITE_EXTERNAL_STORAGE permission !\', u\'AdManager.getCS\', u\'/com/admogo/assets/adsmogo_btn_bg_prs.png\', u\'ZestADZ failure\', u\'No IMEI\', u\'conf db has already been initialized!\', u\'adShow\', u\'recycle\', u\'China\', u\'connection return error:\', u\'DomobSDK\\u7f3a\\u5c11\\u5fc5\\u8981Activity\', u\'Greystripe Full Screen failure\', u\'set ad url:\', u\'inapp_fs\', u\'Showing Impression:\\n nid: %s\\n Type: %s\', u\'In onInterceptTouchEvent(), but mogo or mogo.link is null\', u\'AD is disabled on web server.\', u\')&z=22\', u\'build view with markup.\', u\'Q8tFVImbNuvsmBwWwdqsPE6jsRQsSPkQ\', u\'refresh.png\', u\'Smart failure\', u\'MdotM Finished\', u\'[ airAD closed ]\', u\'failed to init DomobAdManager!\', u\'failed to load backup default resources!\', u\'10.0.0.172\', u\'.htm\', u\'blue\', u\'Refreshes must be at least \', u\'\\u662f\', u\', try again!\', u\'": \', u\'SmartMAD on Ad Status\', u\'failed to get touch events!\', u\'Millennial success\', u\'Showing impFailed:\\n n'
+p60
+sg5
+S'CHANGED (JI 53.11%)'
+p61
+sg7
+F53.109999999999999
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/adwo/adsdk/m;->g Z [access_flags=protected static]\\n', 'Lcom/admogo/adapters/BaiduJsonAdapter$UpdateBaiduRunnable;->baiduAdapter Lcom/admogo/adapters/BaiduJsonAdapter; [access_flags=private]\\n', 'Lcom/mt/airad/IlllIllIlllIIIII;->_$1 Lcom/mt/airad/MultiAD; [access_flags=synthetic final]\\n', 'Lcn/domob/android/ads/f;->b I [access_flags=private]\\n', 'Lcom/adwo/adsdk/V;->F I [access_flags=private]\\n', 'Lcom/admogo/obj/Custom;->appDes Ljava/lang/String; [access_flags=public]\\n', 'Lcom/admogo/ExchangeDialog;->px60 I [access_flags=private]\\n', 'Lcom/admogo/adapters/YoumiAdapter;->activity Landroid/app/Activity; [access_flags=private]\\n', 'Lcn/domob/android/ads/j;->a I [access_flags=private]\\n', 'Lcom/admogo/DataBackup;->mDbHelper Lcom/admogo/DataBackup$DatabaseHelper; [access_flags=private]\\n', 'Lcn/domob/android/ads/g;->u Ljava/lang/String; [access_flags=private]\\n', 'Lcom/admogo/adapters/LSenseAdapter;->adView Lcom/l/adlib_android/AdView; [access_flags=private]\\n', 'Lcom/adwo/ads"
+p63
+sg5
+S'CHANGED (JI 67.59%)'
+p64
+sg7
+F67.590000000000003
+sa.

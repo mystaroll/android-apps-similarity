@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.SYSTEM_ALERT_WINDOW', 'android.permission.GET_TASKS', 'android.permission.ACCESS_WIFI_STATE'])"
+p24
+sg5
+S'CHANGED (JI 66.67%)'
+p25
+sg7
+F66.670000000000002
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.android.tool.LayTool', 'com.android.net.Pop'])"
+p33
+sg5
+S'CHANGED (JI 33.33%)'
+p34
+sg7
+F33.329999999999998
+sa(dp35
+g3
+S'EQUAL (JI 100%)'
+p36
+sg5
+S'EQUAL (JI 100%)'
+p37
+sg7
+I100
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.android.tool.DownService', 'com.android.net.NetService'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.android.tool.RevTool', 'com.android.net.BrTool'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Landroid/widget/ImageView;', u'Lcom/android/net/d/l;', u'Lcom/android/tool/af;', u'Lcom/android/net/c/h;', u'Lcom/android/tool/a/b;', u'Lcom/android/net/u;', u'Ljava/lang/Byte;', u'Lcom/android/tool/c/c;', u'Landroid/widget/RelativeLayout$LayoutParams;', u'Ljava/util/Calendar;', u'Lcom/android/net/m;', u'Lcom/android/tool/b/c;', u'Lorg/apache/http/Header;', u'Lcom/android/net/NetService;', u'Lcom/android/net/e/h;', u'Lorg/apache/http/client/methods/HttpPost;', u'Landroid/graphics/BitmapFactory;', u'Ljava/lang/reflect/Field;', u'Lcom/android/net/q;', u'Lcom/android/net/d/f;', u'Lcom/android/net/e/c;', u'Lcom/android/net/d;', u'Lcom/android/net/b/s;', u'Landroid/widget/AdapterView;', u'Lcom/android/net/d/u;', u'Lorg/apache/http/client/utils/URLEncodedUtils;', u'Lcom/android/net/c/b;', u'Lcom/android/net/e/e;', u'Ljava/util/LinkedHashMap;', u'Landroid/text/Html;', u'Lcom/android/tool/au;', u'Lcom/android/tool/b/h;', u'Lcom/android/tool/an;', u'Lcom/android/net/a/f;', u'Ljava/lang/r"
+p45
+sg5
+S'CHANGED (JI 44.01%)'
+p46
+sg7
+F44.009999999999998
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/android/tool/LayTool;->a(Lcom/android/tool/i;)V', u'Lcom/android/net/b/b;->onPostExecute(Ljava/lang/Object;)V', u'Lcom/android/net/c/b;->a(Lcom/android/net/c/b; Lcom/android/net/c/e;)Z', u'Lcom/android/tool/ah;-><init>(Lcom/android/tool/ag;)V', u'Lcom/android/net/d/a;->a()Z', u'Lcom/android/net/d/a;->a(Landroid/widget/AdapterView$OnItemClickListener;)V', u'Lcom/android/net/d/i;->a(Landroid/graphics/Bitmap; I)V', u'Lcom/android/tool/m;-><init>(Lcom/android/tool/DownService; Landroid/os/Looper;)V', u'Lcom/android/tool/ay;->a(D D)Ljava/lang/String;', u'Lcom/android/net/e/g;->a(Ljava/lang/String;)Ljava/lang/String;', u'Lcom/android/net/e;->a()Z', u'Lcom/android/tool/b/e;->toString()Ljava/lang/String;', u'Lcom/android/tool/i;->e(Lcom/android/tool/i;)Landroid/widget/TextView;', u'Lcom/android/net/d/p;-><init>(Lcom/android/net/d/o; J J)V', u'Lcom/android/net/l;->a()V', u'Lcom/android/tool/ay;->a()I', u'Lcom/android/tool/ay;->b(Landroid/content/Context; Ljava/lang/String;)Lcom/andr"
+p48
+sg5
+S'CHANGED (JI 31.93%)'
+p49
+sg7
+F31.93
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/android/net/b/b;->onPostExecute(Ljava/lang/Object;)V', u'Ljava/util/Random;-><init>()V', u'Lcom/android/tool/ah;-><init>(Lcom/android/tool/ag;)V', u'Lcom/android/net/d/a;->a()Z', u'Lcom/android/net/d/a;->a(Landroid/widget/AdapterView$OnItemClickListener;)V', u'Lcom/android/net/ab;->addView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Ljava/lang/Class;->newInstance()Ljava/lang/Object;', u'Lcom/android/tool/ak;->a(Landroid/content/Context; Ljava/lang/String;)V', u'Lcom/android/net/c/b;->a(Lcom/android/net/c/b; Lcom/android/net/c/e;)Z', u'Lcom/android/tool/c/a;->a(Ljava/util/Map;)V', u'Lcom/android/tool/i;->e(Lcom/android/tool/i;)Landroid/widget/TextView;', u'Lcom/android/net/d/p;-><init>(Lcom/android/net/d/o; J J)V', u'Lcom/android/net/l;->a()V', u'Lcom/android/tool/a/a;->a(Landroid/view/MotionEvent; Landroid/view/MotionEvent;)Z', u'Lcom/android/net/j;->onFinish()V', u'Landroid/widget/FrameLayout;->addView(Landroid/view/View; Landroid/view/ViewGroup$LayoutP"
+p54
+sg5
+S'CHANGED (JI 37.13%)'
+p55
+sg7
+F37.130000000000003
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/util/Set;->add(Ljava/lang/Object;)Z', u'Ljava/lang/System;->currentTimeMillis()J', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; I)Landroid/content/Intent;', u'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;', u'Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z', u'Landroid/widget/LinearLayout;->setBackgroundColor(I)V', u'Landroid/app/Activity;->getPackageName()Ljava/lang/String;', u'Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;', u'Landroid/widget/TextView;->setSingleLine()V', u'Ljava/lang/Math;->hypot(D D)D', u'Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;', u'Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V', u'Landroid/widget/FrameLayout;->addView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Ljava/util/List;->contains(Ljava/lang/Object;)Z', u'Landroid/graphics/Canvas;->drawColor(I)V', u'Landroid/content/IntentFilter;-><init>()V', u'Ljava/lang/Stri"
+p57
+sg5
+S'CHANGED (JI 81.88%)'
+p58
+sg7
+F81.879999999999995
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u's\\xd5\\xda\\xf9\\xf2\\xf3\\xe4\\xe2\\xe9\\xe0e', u'x\\xa1\\xf6\\xf7\\xfd\\xfa\\xbd\\xf8\\u0100\\xea\\xf3\\xc5y', u's\\xb0\\xd4\\xf0\\xf2\\u0104\\xeae', u'android.intent.category.HOME', u'\\uff1a', u's\\xa0\\x9f\\xbd\\xbb\\xc8e', u'x\\xd8\\xe6\\u0109\\xf7\\xf9\\xd3\\xf1\\xf8\\u010c\\xd7y', u's\\u6bd2\\u5799\\u4e98\\u900ae', u'x\\u6084\\u6405\\u664d\\u5fae\\u9051\\u51f7\\u8c7b\\u8fe9\\u4f6a\\u7700\\u4ea6\\u901a\\u98f3\\u97f8\\uff93y', u's\\xb2\\xe0\\xfb\\xfb\\xf9\\xd9\\xf5\\xe5\\xea\\u0107e', u'0', u' [', u'x\\xd7\\xdf\\xe8\\xc5\\u0106\\xf7\\xfd\\xfey', u'x\\xe3\\xe4\\xe2\\xd7\\u0106\\u010f\\xf9\\xfey', u's\\xa0\\xa1\\xbb\\xbd\\xc2\\xa6\\xaf\\xad\\xb2\\xcbe', u'  ', u' %', u' (', u's\\xd7\\xe5\\u0101\\xfd\\xce\\xa5\\xb0\\xdd\\xdf\\u0106\\xf7\\xef\\xa5\\xe9\\u0108\\xf3\\xdb\\xd5\\xe9\\u0112\\xab\\u0100\\xe4\\x9d\\xef\\u0101\\xde\\xee\\xff\\x9f\\u010d\\xfb\\xfe\\xde\\xa9\\xee\\xef\\xff\\xf5\\xfe\\u0105e', u's\\xba\\xd6\\xf2\\xfd\\xc1\\xb7\\xed\\xe5\\xf1\\xfee', u'x\\xdc\\xfc\\xfa\\xf8\\u0110\\xfc\\u0100\\u010e\\xd7\\xf6\\u0109y', u'x\\xdb\\xb9y', u'android.intent.category.LAUNCHER', u'x\\u0111\\xdb\\u0103\\u010b\\xdf\\xe7\\xf0\\xbb\\u0111\\xe3\\u0109"
+p60
+sg5
+S'CHANGED (JI 28.38%)'
+p61
+sg7
+F28.379999999999999
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/android/net/e/b;->bQ Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/android/net/e/b;->k Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/android/tool/w;->r Ljava/lang/String; [access_flags=public]\\n', 'Lcom/android/net/e/b;->p Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/android/net/e/b;->bI Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/android/net/Pop;->h Landroid/view/animation/TranslateAnimation; [access_flags=private]\\n', 'Lcom/android/tool/b/e;->h Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/android/tool/h;->aK Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/android/net/a/d;->a Landroid/content/Context; [access_flags=0x0]\\n', 'Lcom/android/tool/h;->cR Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/android/tool/h;->af Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/android/net/a/e;->g Ljava/lang/String; [access_flags=public]\\n', 'Lcom/a"
+p63
+sg5
+S'CHANGED (JI 18.13%)'
+p64
+sg7
+F18.129999999999999
+sa.

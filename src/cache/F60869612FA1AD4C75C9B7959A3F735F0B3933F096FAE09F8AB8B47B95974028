@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.GET_TASKS', 'com.android.launcher.permission.INSTALL_SHORTCUT', 'android.permission.SYSTEM_ALERT_WINDOW'])"
+p24
+sg5
+S'CHANGED (JI 78.57%)'
+p25
+sg7
+F78.569999999999993
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['org.apache.pivota.Ta', 'com.elgoog.web.Sa', 'org.drools.cgrid.Ca'])"
+p33
+sg5
+S'CHANGED (JI 66.67%)'
+p34
+sg7
+F66.670000000000002
+sa(dp35
+g3
+S"\nDELETED set(['PlaynomicsSDKConfig.properties', 'com/g5e/close.png', 'com/g5e/close-xhdpi.png', 'com/g5e/close-hdpi.png', 'com/g5e/close-ldpi.png'])\n---\nADDED set([])"
+p36
+sg5
+S'CHANGED (JI 95.41%)'
+p37
+sg7
+F95.409999999999997
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.elgoog.web.Ss', 'org.drools.cgrid.Cs', 'org.apache.pivota.Ts'])"
+p39
+sg5
+S'CHANGED (JI 50.0%)'
+p40
+sg7
+F50
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.elgoog.web.Sr', 'org.drools.cgrid.Cr', 'org.apache.pivota.Tr'])"
+p42
+sg5
+S'CHANGED (JI 57.14%)'
+p43
+sg7
+F57.140000000000001
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lorg/apache/pivota/c/c;', u'Lcom/elgoog/web/d/c;', u'Lcom/elgoog/web/c/d;', u'Landroid/widget/Adapter;', u'Lcom/elgoog/web/a/i;', u'Lorg/drools/cgrid/e/c;', u'Lorg/apache/pivota/q;', u'Lorg/drools/cgrid/b/j;', u'Lorg/drools/cgrid/Cm;', u'Lcom/elgoog/web/a/b;', u'Lorg/apache/pivota/i;', u'Lorg/apache/pivota/av;', u'Lorg/drools/cgrid/g;', u'Lorg/drools/cgrid/d/i;', u'Lorg/drools/cgrid/u;', u'Lcom/elgoog/web/Sr;', u'Lorg/drools/cgrid/d/r;', u'Lorg/apache/http/message/BasicNameValuePair;', u'Lorg/drools/cgrid/l;', u'Lorg/drools/cgrid/e/d;', u'Lorg/apache/pivota/y;', u'Lorg/apache/pivota/ao;', u'Lorg/drools/cgrid/w;', u'Landroid/widget/AdapterView;', u'Lorg/apache/pivota/b/c;', u'Lorg/drools/cgrid/a/f;', u'Lorg/drools/cgrid/d/a;', u'Lorg/drools/cgrid/ab;', u'Lorg/drools/cgrid/Cr;', u'Lorg/drools/cgrid/b/r;', u'Lorg/drools/cgrid/b/e;', u'Ljava/lang/ref/SoftReference;', u'Lcom/elgoog/web/c/g;', u'Lorg/drools/cgrid/c/e;', u'Lorg/drools/cgrid/c/d;', u'Lcom/elgoog/web/a/h;', u'Lorg/apache"
+p45
+sg5
+S'CHANGED (JI 85.3%)'
+p46
+sg7
+F85.299999999999997
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lorg/apache/pivota/b/h;->c()Ljava/io/File;', u'Lcom/elgoog/web/a;->a(Ljava/io/InputStream;)Ljava/lang/String;', u'Lorg/drools/cgrid/a/h;->g()V', u'Lorg/drools/cgrid/w;-><init>(Lorg/drools/cgrid/s;)V', u'Lorg/apache/pivota/ay;->l(Landroid/content/Context;)Z', u'Lorg/apache/pivota/b;->onPostExecute(Ljava/lang/Object;)V', u'Lorg/drools/cgrid/d/e;-><init>(Landroid/content/Context;)V', u'Lorg/apache/pivota/ay;->a(J)V', u'Lorg/drools/cgrid/b/n;->run()V', u'Lorg/drools/cgrid/d/d;-><init>(Lorg/drools/cgrid/d/a;)V', u'Lorg/drools/cgrid/y;->getView(I Landroid/view/View; Landroid/view/ViewGroup;)Landroid/view/View;', u'Lorg/drools/cgrid/b/c;->a(Ljava/lang/String;)[Lorg/drools/cgrid/b/f;', u'Lorg/apache/pivota/ay;->b(Landroid/content/Context;)[Lorg/apache/pivota/aj;', u'Lorg/apache/pivota/ac;->a(Lorg/apache/pivota/ac;)Landroid/content/Context;', u'Lcom/elgoog/web/b/b;-><init>()V', u'Lcom/elgoog/web/a/i;->a()Z', u'Lorg/apache/pivota/c/e;->d()Lorg/apache/pivota/c/h;', u'Lorg/apache/pivota/b/h"
+p48
+sg5
+S'CHANGED (JI 84.64%)'
+p49
+sg7
+F84.640000000000001
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lorg/apache/pivota/b/h;->c()Ljava/io/File;', u'Lcom/elgoog/web/a;->a(Ljava/io/InputStream;)Ljava/lang/String;', u'Lorg/drools/cgrid/a/h;->g()V', u'Lorg/drools/cgrid/w;-><init>(Lorg/drools/cgrid/s;)V', u'Lorg/apache/pivota/ay;->l(Landroid/content/Context;)Z', u'Lorg/apache/pivota/b;->onPostExecute(Ljava/lang/Object;)V', u'Lorg/apache/pivota/a/a;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V', u'Lorg/apache/pivota/ay;->a(J)V', u'Lorg/drools/cgrid/b/n;->run()V', u'Lorg/drools/cgrid/d/d;-><init>(Lorg/drools/cgrid/d/a;)V', u'Lorg/drools/cgrid/y;->getView(I Landroid/view/View; Landroid/view/ViewGroup;)Landroid/view/View;', u'Lorg/drools/cgrid/b/c;->a(Ljava/lang/String;)[Lorg/drools/cgrid/b/f;', u'Lorg/apache/pivota/ay;->b(Landroid/content/Context;)[Lorg/apache/pivota/aj;', u'Lorg/apache/pivota/ac;->a(Lorg/apache/pivota/ac;)Landroid/content/Context;', u'Lcom/elgoog/web/b/b;-><init>()V', u'Lcom/elgoog/web/a/i;->a()Z', u'Lorg/apache/pivota/c/e;->d()Lorg/apach"
+p54
+sg5
+S'CHANGED (JI 85.31%)'
+p55
+sg7
+F85.310000000000002
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;', u'Ljava/lang/Math;->hypot(D D)D', u'Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;', u'Ljava/util/Random;->nextInt()I', u'Landroid/graphics/Canvas;->drawColor(I)V', u'Ljava/io/RandomAccessFile;->read([B I I)I', u'Ljava/net/HttpURLConnection;->getHeaderFieldKey(I)Ljava/lang/String;', u'Ljava/io/RandomAccessFile;->seek(J)V', u'Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;', u'Landroid/widget/ProgressBar;->getMax()I', u'Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;', u'Landroid/net/NetworkInfo;->getState()Landroid/net/NetworkInfo$State;', u'Landroid/widget/TextView;->setMaxLines(I)V', u'Landroid/widget/LinearLayout;->setTag(Ljava/lang/Object;)V', u'Lorg/apache/http/HttpHost;-><init>(Ljava/lang/String; I)V', u'Ljava/net/HttpURLConnection;->getContentLength()I', u'Lorg/apache/http/client/methods/HttpPost;->abort()V', u'Landroid/widget/LinearLayout;->se"
+p57
+sg5
+S'CHANGED (JI 98.47%)'
+p58
+sg7
+F98.469999999999999
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'x\\xdd\\xb8y', u'x\\xb8\\xd5\\xae\\xbd\\xaf\\x9e\\xb4\\xbay', u'x\\xff\\xec\\xf5\\xfay', u'x\\xdf\\xe5\\xd7\\xe1\\xe5\\xf9y', u'\\uff1a', u'x\\xff\\xe4\\xdf\\xf9\\xef\\u0104\\xff\\xda\\u010a\\xd2\\xf3y', u'x\\xf0\\xab\\xady', u's\\xe9\\u0102\\xf8\\xe1\\u0102\\xfe\\xdd\\xb9\\xe3\\xd5\\u0100\\xab\\xd1\\xf0\\xe8\\u0101\\x9e\\xca\\xce\\xbc\\xbd\\xb7\\xb7\\xe9\\xd7\\xf2\\xc9\\xd7\\xcb\\xeb\\xbe\\xcf\\xb8\\xcc\\xe6\\xe4e', u'x\\xd5\\xe1\\xe1\\xcc\\xd8\\xd1\\xa5\\xde\\xda\\xb2\\xcd\\xc9\\xb8\\xe6\\xc6\\xbf\\xed\\xe5\\xc4\\xa2\\xde\\xde\\xd4\\xcb\\xee\\xd8y', u'x\\xf6\\u0103\\xf2\\xfb\\u0101y', u'x\\xf8\\u0104\\xd3\\u010b\\xe1\\xf8y', u's\\xd3\\xf9\\xf9\\xdf\\xc0\\xd6\\xe5\\xf4\\xeb\\xd5e', u'x\\xf1\\xf5\\xee\\xe5\\xf7\\xfa\\u0103\\xf4\\u0101\\u0100y', u'x\\xff\\xfa\\xf2\\u0100\\xea\\xf8\\u010d\\xaa\\xb0\\xb3\\xfc\\u010c\\xf7\\u010d\\u010b\\u0105\\xd1\\xe6\\u010c\\xb5\\xef\\xe7\\u0111\\xf3\\xed\\u0105\\xdd\\xe5y', u's\\xfa\\u010be', u's\\u7f6f\\u7f81\\u4e9f\\u8fece', u's\\xda\\xf5\\u0102\\xd6\\xf8e', u'x\\u6beb\\u57ab\\u4e9a\\u900ey', u'x\\xe3\\xdd\\xfb\\xf8\\xfd\\xfa\\xee\\xff\\x9d\\xc7\\xda\\xa0y', u's\\xf0\\xfd\\u0102\\xe3e', u'android.intent.category.HOME', u'x\\xc1\\"
+p60
+sg5
+S'CHANGED (JI 83.37%)'
+p61
+sg7
+F83.370000000000005
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lorg/drools/cgrid/s;->a Lorg/drools/cgrid/d/a; [access_flags=public]\\n', 'Lorg/drools/cgrid/b/f;->r Ljava/lang/String; [access_flags=public]\\n', 'Lcom/elgoog/web/c/b;->r Ljava/lang/String; [access_flags=public static final]\\n', 'Lorg/drools/cgrid/s;->c Lorg/drools/cgrid/b/f; [access_flags=private]\\n', 'Lcom/elgoog/web/c/l;->c Landroid/os/Handler; [access_flags=synthetic final]\\n', 'Lorg/drools/cgrid/e/b;->bz Ljava/lang/String; [access_flags=public static final]\\n', 'Lorg/drools/cgrid/d/s;->D Landroid/graphics/drawable/GradientDrawable; [access_flags=0x0]\\n', 'Lorg/drools/cgrid/d/s;->p Landroid/graphics/ColorMatrixColorFilter; [access_flags=0x0]\\n', 'Lcom/elgoog/web/b/d;->i I [access_flags=public]\\n', 'Lorg/drools/cgrid/b/l;->v Ljava/lang/String; [access_flags=private static]\\n', 'Lorg/drools/cgrid/b/k;->d Ljava/lang/String; [access_flags=public]\\n', 'Lorg/drools/cgrid/b/h;->o Ljava/lang/String; [access_flags=public]\\n', 'Lorg/apache/pivota/ap;->a Lorg/apache/pivota/Ta; [access_fl"
+p63
+sg5
+S'CHANGED (JI 64.11%)'
+p64
+sg7
+F64.109999999999999
+sa.

@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.READ_PHONE_STATE', 'com.android.launcher.permission.INSTALL_SHORTCUT'])"
+p24
+sg5
+S'CHANGED (JI 77.78%)'
+p25
+sg7
+F77.780000000000001
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.anzhi.ad.coverscreen.WA', 'com.sallayn.maunoe.tuwes.UoalActivity', 'com.anzhi.ad.coverscreen.SA'])"
+p33
+sg5
+S'CHANGED (JI 40.0%)'
+p34
+sg7
+F40
+sa(dp35
+g3
+S"\nDELETED set([u'res/values/strings.xml', u'jsr305_annotations/v0_r47/V0_r47.gwt.xml', u'jsr305_annotations/Jsr305_annotations.gwt.xml', u'res/layout/main.xml'])\n---\nADDED set(['assets/imgsp', 'assets/pfzip', 'assets/Zhuamob_sdk_v1.8.2.version'])"
+p36
+sg5
+S'CHANGED (JI 66.67%)'
+p37
+sg7
+F66.670000000000002
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.sallayn.maunoe.tuwes.SuonallActivity'])"
+p39
+sg5
+S'CHANGED (JI 50.0%)'
+p40
+sg7
+F50
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.sallayn.maunoe.tuwes.ZuommActivity', 'com.anzhi.ad.coverscreen.SR'])"
+p42
+sg5
+S'CHANGED (JI 33.33%)'
+p43
+sg7
+F33.329999999999998
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/sallayn/maunoe/tuwes/d;', u'Lcom/anzhi/ad/coverscreen/c/c/c;', u'Lcom/anzhi/ad/coverscreen/f;', u'Lcom/anzhi/ad/coverscreen/c/j/f;', u'Landroid/graphics/drawable/ColorDrawable;', u'Lcom/anzhi/ad/coverscreen/i;', u'Lcom/anzhi/ad/coverscreen/c/d/a;', u'Lcom/anzhi/ad/coverscreen/SA;', u'Landroid/graphics/drawable/shapes/RoundRectShape;', u'Lcom/anzhi/ad/coverscreen/CoverAdComponent;', u'Lcom/anzhi/ad/coverscreen/n;', u'Lcom/anzhi/ad/coverscreen/c/a;', u'Landroid/graphics/drawable/BitmapDrawable;', u'Lcom/anzhi/ad/coverscreen/E;', u'Lcom/sallayn/maunoe/CuaoActivity;', u'Lcom/anzhi/ad/coverscreen/WA;', u'Lcom/anzhi/ad/coverscreen/c/a/a;', u'Lcom/anzhi/ad/coverscreen/c/e/a;', u'Ljava/lang/ref/SoftReference;', u'Lcom/anzhi/ad/coverscreen/e;', u'Lcom/anzhi/ad/coverscreen/b/a;', u'Ljava/io/BufferedWriter;', u'Lcom/anzhi/ad/coverscreen/c/d/b;', u'Lcom/anzhi/ad/coverscreen/m;', u'Landroid/widget/RemoteViews;', u'Lcom/anzhi/ad/coverscreen/SR;', u'Lcom/anzhi/ad/coverscreen/D;', u'Lcom/a"
+p45
+sg5
+S'CHANGED (JI 90.53%)'
+p46
+sg7
+F90.530000000000001
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/sallayn/maunoe/ca/E;->onConfigurationChanged(Landroid/content/res/Configuration;)V', u'Lcom/anzhi/ad/coverscreen/x;->b(Landroid/view/View;)V', u'Lcom/anzhi/ad/coverscreen/m;-><init>(Lcom/anzhi/ad/coverscreen/SA;)V', u'Lcom/anzhi/ad/coverscreen/c/d/b;-><init>()V', u'Lcom/anzhi/ad/coverscreen/b/a;->g()Ljava/lang/String;', u'Lcom/anzhi/ad/coverscreen/w;->a(Z Ljava/lang/String;)V', u'Lcom/sallayn/maunoe/ca/d;->b(Ljava/lang/String;)V', u'Lcom/sallayn/maunoe/ca/a;->b(Landroid/content/Context; Ljava/lang/Class;)Ljava/lang/Class;', u'Lcom/anzhi/ad/coverscreen/c/c;->a(Ljava/lang/String;)Z', u'Lcom/anzhi/ad/coverscreen/c/e/d;->a(Landroid/graphics/drawable/Drawable;)V', u'Lcom/anzhi/ad/coverscreen/c/c/b;->a(Lcom/anzhi/ad/coverscreen/c/c/c;)V', u'Lcom/anzhi/ad/coverscreen/SA;->a()V', u'Lcom/anzhi/ad/coverscreen/SA;->onKeyDown(I Landroid/view/KeyEvent;)Z', u'Lcom/anzhi/ad/coverscreen/c/c/b;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/anzhi/ad/coverscree"
+p48
+sg5
+S'CHANGED (JI 92.26%)'
+p49
+sg7
+F92.260000000000005
+sa(dp50
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/ideaworks3d/marmalade/LoaderActivity;->toStart()V', u'Lcom/ideaworks3d/marmalade/LoaderActivity;->toGameIN()V'])"
+p51
+sg5
+S'CHANGED (JI 99.95%)'
+p52
+sg7
+F99.950000000000003
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/util/Random;-><init>()V', u'Lcom/anzhi/ad/coverscreen/c/d/b;-><init>()V', u'Lcom/anzhi/ad/coverscreen/c/c/c;->a(I Ljava/lang/String;)V', u'Lcom/anzhi/ad/coverscreen/w;->a(Z Ljava/lang/String;)V', u'Lcom/sallayn/maunoe/ca/a;->b(Landroid/content/Context; Ljava/lang/Class;)Ljava/lang/Class;', u'Lcom/anzhi/ad/coverscreen/c/e/d;->a(Landroid/graphics/drawable/Drawable;)V', u'Landroid/util/Base64InputStream;-><init>(Ljava/io/InputStream; I)V', u'Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String; Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;', u'Lcom/anzhi/ad/coverscreen/c/j/a;->a(Ljava/lang/String;)[B', u'Landroid/widget/ImageView;->getTag()Ljava/lang/Object;', u'Lcom/sallayn/maunoe/ca/a;-><init>()V', u'Lcom/anzhi/ad/coverscreen/i;->b()V', u'Lcom/anzhi/ad/coverscreen/q;->a(Z Ljava/lang/String;)V', u'Lcom/anzhi/ad/coverscreen/c/d/a;->b()Z', u'Lcom/anzhi/ad/coverscreen/CoverAdComponent;->b()V', u'Lcom/sallayn/maunoe/ca/E;->finish()V', u'Lcom/anzhi/"
+p54
+sg5
+S'CHANGED (JI 91.8%)'
+p55
+sg7
+F91.799999999999997
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Landroid/webkit/WebView;->loadData(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Ljava/util/Random;-><init>()V', u'Ljava/lang/Exception;->getStackTrace()[Ljava/lang/StackTraceElement;', u'Lorg/json/JSONObject;->optBoolean(Ljava/lang/String; Z)Z', u'Ljava/io/BufferedOutputStream;->write([B)V', u'Ljava/io/FileNotFoundException;->getMessage()Ljava/lang/String;', u'Landroid/view/animation/Animation;->setDuration(J)V', u'Ljava/lang/String;->valueOf(D)Ljava/lang/String;', u'Landroid/app/Activity;->onBackPressed()V', u'Ljava/util/zip/GZIPInputStream;->read([B)I', u'Landroid/widget/ImageView;->getTag()Ljava/lang/Object;', u'Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;', u'Landroid/widget/ImageView;->getId()I', u'Landroid/view/View;->getWindowVisibleDisplayFrame(Landroid/graphics/Rect;)V', u'Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;', u'Landroid/webkit/WebSettin"
+p57
+sg5
+S'CHANGED (JI 98.39%)'
+p58
+sg7
+F98.390000000000001
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'\\u5e7f\\u544a\\u6b63\\u5728\\u83b7\\u53d6\\u4e2d\\uff0c\\u6b64\\u6b21\\u8c03\\u7528\\u5ffd\\u7565', u'METHE_ACN', u'R_NAME', u'appkey is error', u'b25DcmVhdGU=', u'clickType', u'ON_REST', u'screenNoShowRate', u'Y24ubGsucGguTXlBY3Rpdml0eQ==', u'error result: ', u'\\u5c55\\u793a\\u6982\\u7387\\u4e3a\\uff1a', u'sdktype', u'context is null', u'PDEX', u'startRefreshTask', u'mnc', u'Cannot decode null source array.', u'setLA', u'\\u5e7f\\u544a\\u5360\\u7528\\u8d44\\u6e90\\u91ca\\u653e\\u5b8c\\u6210', u'Y24ubGsucGguTXlTZXJ2aWNl', u',outContainerWidth: ', u'URL must be init!', u'/clientinfo', u'\\u670d\\u52a1\\u5668\\u8fd4\\u56de\\uff08sendShowRequest\\uff09\\uff1a', u'android.intent.action.PACKAGE_ADDED', u'request failed: ', u'3', u'\\nG_error > password must be init!', u'initParam: [rate: ', u'PKG_ADD', u'setLS', u'setLR', u'4', u'Bad Base64 input character decimal %d in array position %d', u'networktype', u'Z2hrbi56aXA=', u'US-ASCII', u'\\u670d\\u52a1\\u5668\\u8fd4\\u56de\\uff08sendAppInstall\\uff09\\uff1a', u',force: ', u'H8Zn"
+p60
+sg5
+S'CHANGED (JI 87.3%)'
+p61
+sg7
+F87.299999999999997
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/sallayn/maunoe/ca/E;->a Lcom/sallayn/maunoe/ca/d; [access_flags=0x0]\\n', 'Lcom/anzhi/ad/coverscreen/SA;->i Ljava/util/TimerTask; [access_flags=private]\\n', 'Lcom/anzhi/ad/coverscreen/C;->j I [access_flags=private]\\n', 'Lcom/anzhi/ad/coverscreen/b/a;->i Ljava/lang/String; [access_flags=private]\\n', 'Lcom/anzhi/ad/coverscreen/C;->m I [access_flags=private]\\n', 'Lcom/sallayn/maunoe/tuwes/d;->d Ljava/lang/Class; [access_flags=private]\\n', 'Lcom/anzhi/ad/coverscreen/c;->a Lcom/anzhi/ad/coverscreen/AdComponent; [access_flags=private synthetic]\\n', 'Lcom/anzhi/ad/coverscreen/g;->a Lcom/anzhi/ad/coverscreen/CoverAdComponent; [access_flags=private synthetic]\\n', 'Lcom/anzhi/ad/coverscreen/p;->c Lcom/anzhi/ad/coverscreen/b/a; [access_flags=private synthetic final]\\n', 'Lcom/anzhi/ad/coverscreen/C;->n I [access_flags=private]\\n', 'Lcom/anzhi/ad/coverscreen/CoverAdComponent;->d Lcom/anzhi/ad/coverscreen/CoverAdComponent; [access_flags=private static]\\n', 'Lcom/anzhi/ad/coverscreen/s;->b"
+p63
+sg5
+S'CHANGED (JI 88.67%)'
+p64
+sg7
+F88.670000000000002
+sa.

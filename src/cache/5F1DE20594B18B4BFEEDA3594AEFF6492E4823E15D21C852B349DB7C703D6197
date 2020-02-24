@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.ACCESS_NETWORK_STATE', 'android.permission.WRITE_EXTERNAL_STORAGE', 'android.permission.ACCESS_WIFI_STATE'])"
+p24
+sg5
+S'CHANGED (JI 50.0%)'
+p25
+sg7
+F50
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['cn.domob.android.ads.DomobActivity'])"
+p33
+sg5
+S'CHANGED (JI 96.97%)'
+p34
+sg7
+F96.969999999999999
+sa(dp35
+g3
+S'EQUAL (JI 100%)'
+p36
+sg5
+S'EQUAL (JI 100%)'
+p37
+sg7
+I100
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S'EQUAL (JI 100%)'
+p42
+sg5
+S'EQUAL (JI 100%)'
+p43
+sg7
+I100
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcn/domob/android/ads/g$8;', u'Lcn/domob/android/ads/DomobActivity$1;', u'Lcn/domob/android/ads/f;', u'Lcn/domob/android/a/a$b;', u'Ljava/lang/Process;', u'Lcn/domob/android/ads/DomobActivity;', u'Lcn/domob/android/ads/p$13;', u'Ljava/util/Calendar;', u'Lcn/domob/android/ads/s$a;', u'Lcn/domob/android/ads/y$a;', u'Landroid/graphics/drawable/LayerDrawable;', u'Lcn/domob/android/ads/DomobAdView;', u'Lcn/domob/android/ads/v$4;', u'Lcn/domob/android/ads/o;', u'Lcn/domob/android/ads/w$1;', u'Lcn/domob/android/ads/g$7;', u'Lcn/domob/android/ads/p$3;', u'Lcn/domob/android/ads/b/a;', u'Lcn/domob/android/ads/b/d$1;', u'Lcn/domob/android/ads/w;', u'Lcn/domob/android/ads/h$d;', u'Lcn/domob/android/ads/g$9;', u'Lcn/domob/android/a/a;', u'Lcn/domob/android/ads/g$c;', u'Lcn/domob/android/ads/e;', u'Lcn/domob/android/ads/g$1;', u'Lcn/domob/android/ads/g$b;', u'Landroid/app/Notification;', u'Ljava/lang/Character;', u'Lcn/domob/android/ads/n;', u'Ljavax/net/ssl/SSLContext;', u'Lcn/domob/android/"
+p45
+sg5
+S'CHANGED (JI 85.07%)'
+p46
+sg7
+F85.069999999999993
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcn/domob/android/ads/DomobAdView;->d()Lcn/domob/android/ads/DomobAdView$e;', u'Lcn/domob/android/ads/DomobAdManager;->getPublisherId(Landroid/content/Context;)Ljava/lang/String;', u'Lcn/domob/android/ads/f;-><init>(Landroid/content/Context; Landroid/util/AttributeSet; Lcn/domob/android/ads/DomobAdView; Z)V', u'Lcn/domob/android/ads/f;->b()Z', u'Lcn/domob/android/ads/p;->c(Lcn/domob/android/ads/p; Z)Z', u'Lcn/domob/android/ads/r;-><init>()V', u'Lcn/domob/android/ads/B;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Lcn/domob/android/ads/b; I Ljava/util/Map; Ljava/lang/String;)V', u'Lcn/domob/android/ads/DomobAdView$e;-><init>(Lcn/domob/android/ads/DomobAdView;)V', u'Lcn/domob/android/ads/b/d;->onMeasure(I I)V', u'Lcn/domob/android/ads/t;->c()J', u'Lcn/domob/android/ads/g;->a(Lorg/json/JSONObject;)V', u'Lcn/domob/android/ads/h;->onKeyUp(I Landroid/view/KeyEvent;)Z', u'Lcn/domob/android/ads/p$b;-><init>(Lcn/domob/android/ads/p;)V', u'Lcn/domob/"
+p48
+sg5
+S'CHANGED (JI 84.37%)'
+p49
+sg7
+F84.370000000000005
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcn/domob/android/ads/DomobAdView;->d()Lcn/domob/android/ads/DomobAdView$e;', u'Lcn/domob/android/ads/DomobAdManager;->getPublisherId(Landroid/content/Context;)Ljava/lang/String;', u'Ljava/lang/Character;->isLetter(C)Z', u'Lcn/domob/android/ads/i;->d()[B', u'Lcn/domob/android/ads/f;->b()Z', u'Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Lcn/domob/android/ads/p;->c(Lcn/domob/android/ads/p; Z)Z', u'Lcn/domob/android/ads/r;-><init>()V', u'Landroid/graphics/drawable/GradientDrawable;->setAlpha(I)V', u'Lcn/domob/android/ads/B;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Lcn/domob/android/ads/b; I Ljava/util/Map; Ljava/lang/String;)V', u'Lcn/domob/android/ads/DomobAdView$e;-><init>(Lcn/domob/android/ads/DomobAdView;)V', u'Lcn/domob/android/ads/b/d;->getPaddingLeft()I', u'Lcn/domob/android/ads/t;->c()J', u'Lcn/domob/android/ads/g;->a(Lorg/json/JS"
+p54
+sg5
+S'CHANGED (JI 84.97%)'
+p55
+sg7
+F84.969999999999999
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z', u'Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/view/animation/TranslateAnimation;-><init>(F F F F)V', u'Landroid/webkit/WebView;->enablePlatformNotifications()V', u'Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;', u'Landroid/view/View;->getResources()Landroid/content/res/Resources;', u'Ljava/lang/String;->lastIndexOf(I)I', u'Landroid/os/Handler;->sendEmptyMessageDelayed(I J)Z', u'Ljava/io/File;->getCanonicalFile()Ljava/io/File;', u'Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I', u'Ljava/io/FileInputStream;-><init>(Ljava/lang/String;)V', u'Ljava/io/File;->getAbsoluteFile()Ljava/io/File;', u'Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V', u'Landroid/os/SystemClock;->sleep(J)V', u'Landroid/widget/ProgressBar;->setProgress(I)V', u'Landroid/"
+p57
+sg5
+S'CHANGED (JI 97.21%)'
+p58
+sg7
+F97.209999999999994
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'download_overflow', u'\\u8fde\\u63a5\\u4e0b\\u8f7d\\u5730\\u5740\\u9519\\u8bef', u'GetVisibility:', u' from cache', u'_avg_time', u'you must have android.permission.WRITE_EXTERNAL_STORAGE permission !', u'Check WindowsFocus:', u',fileName=', u'build view with markup.', u' s', u'WindowFocus:', u'::', u'you must have android.permission.READ_PHONE_STATE permission !', u'Update _avg_time succeeds', u'rom', u'Get User Agent:', u'ver', u'get_task_list', u'load ', u'\\u66f4\\u65b0\\u63d0\\u9192', u'AD view is not null and mHandler is not null, call DomobAdView.mHandler.post(adView.getUpdateViewThread()) ', u'conf db has already been initialized!', u'ts', u'key_value_conf', u'tManager is not null', u'smsto:', u'Get UUID from conf db:', u'-1,-1,emulator', u'_res_ver', u'Current system timestamp = ', u'connection return error:', u'DomobSDK\\u7f3a\\u5c11\\u5fc5\\u8981Activity', u'downloading', u'update cid:', u'doAction -> start.', u'softsize=', u'inapp_fs', u'GIF', u'\\u8fd4\\u56delocation\\u7684\\u7cbe\\u5ea"
+p60
+sg5
+S'CHANGED (JI 64.87%)'
+p61
+sg7
+F64.870000000000005
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcn/domob/android/ads/f;->r Landroid/os/Handler; [access_flags=private]\\n', 'Lcn/domob/android/ads/j;->a I [access_flags=private]\\n', 'Lcn/domob/android/ads/h;->x J [access_flags=private]\\n', 'Lcn/domob/android/ads/b/d;->h Lcn/domob/android/ads/b/d$a; [access_flags=private]\\n', 'Lcn/domob/android/ads/DomobAdView$a;->b Lcn/domob/android/ads/DomobAdView; [access_flags=private]\\n', 'Lcn/domob/android/ads/p;->s Ljava/lang/String; [access_flags=private]\\n', 'Lcn/domob/android/a/f;->f Z [access_flags=private]\\n', 'Lcn/domob/android/ads/DomobAdView;->j Lcn/domob/android/ads/f; [access_flags=private]\\n', 'Lcn/domob/android/ads/g;->j Ljava/lang/String; [access_flags=private]\\n', 'Lcn/domob/android/ads/p;->f Landroid/widget/RelativeLayout; [access_flags=private]\\n', 'Lcn/domob/android/ads/p;->B Ljava/lang/String; [access_flags=private]\\n', 'Lcn/domob/android/ads/b/d$b;->c Lcn/domob/android/ads/b/d$b; [access_flags=public static enum final]\\n', 'Lcn/domob/android/ads/i;->b Ljava/net/Proxy; "
+p63
+sg5
+S'CHANGED (JI 78.95%)'
+p64
+sg7
+F78.950000000000003
+sa.

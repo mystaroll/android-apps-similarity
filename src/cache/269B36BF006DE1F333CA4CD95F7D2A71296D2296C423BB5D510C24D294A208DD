@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 20101016!=10002'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 2.1!=1.0.2'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 3!=10'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: None!=17'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 3!=17'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set(['android.permission.RECEIVE_BOOT_COMPLETED', 'com.android.launcher.permission.UNINSTALL_SHORTCUT', 'android.permission.CLEAR_APP_USER_DATA', 'android.permission.ACCESS_COARSE_LOCATION', 'android.permission.CALL_PHONE', 'android.permission.READ_PHONE_STATE', 'android.permission.READ_SMS', 'android.permission.WRITE_CONTACTS', 'com.android.browser.permission.WRITE_HISTORY_BOOKMARKS', 'com.android.launcher.permission.INSTALL_SHORTCUT', 'android.permission.WRITE_SMS', 'android.permission.DELETE_CACHE_FILES', 'android.permission.READ_CONTACTS', 'com.android.browser.permission.READ_HISTORY_BOOKMARKS', 'android.permission.CLEAR_APP_CACHE', 'android.permission.RESTART_PACKAGES', 'android.permission.GET_PACKAGE_SIZE'])\n---\nADDED set(['android.permission.WAKE_LOCK', 'android.permission.ACCESS_NETWORK_STATE', 'android.permission.INTERNET'])"
+p24
+sg5
+S'CHANGED (JI 0.0%)'
+p25
+sg7
+F0
+sa(dp26
+g3
+S'DIFFERENT: com.iwidsets.clear.manager!=com.mvcstudios.jurassicrun'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: AndClear!=Jurassic Run'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.iwidsets.clear.manager..gui.ClearCallLogActivity', 'com.iwidsets.clear.manager..gui.ClearCommonActivity', 'com.iwidsets.clear.manager..gui.SettingsActivity', 'com.iwidsets.clear.manager..gui.ClearMessagesActivity', 'com.iwidsets.clear.manager..Splash', 'com.iwidsets.clear.manager..gui.ClearTracesActivity', 'com.iwidsets.clear.manager.ClearManager', 'com.iwidsets.clear.manager..gui.ClearTempFilesActivity', 'com.iwidsets.clear.manager..gui.ClearApplicationActivity'])\n---\nADDED set(['com.unity3d.player.UnityPlayerNativeActivity', 'com.unity3d.player.UnityPlayerProxyActivity', 'com.chartboost.sdk.CBImpressionActivity', 'com.unity3d.player.UnityPlayerActivity', 'com.chartboost.sdk.CBDialogActivity', 'com.unity3d.player.VideoPlayer'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set(['res/layout/app_info_item.xml', 'res/layout/msg_info_item.xml', 'lib/', 'res/drawable/maps_image.png', 'res/drawable/call_image.png', 'res/drawable/top_scrollbar_horizontal_track.xml', 'res/drawable/youtube_image.png', 'res/anim/footer_appear.xml', 'res/drawable/inbox_image.png', 'META-INF/ANDROID_.RSA', 'res/layout/msdialog.xml', 'res/drawable/imagetop.xml', 'res/drawable/topbarhighlight.png', 'res/drawable/skyfire_image.png', 'res/drawable/icon.png', 'res/drawable/imagebottom.xml', 'res/layout/bottomscrolltab.xml', 'res/drawable/smsicon.png', 'res/drawable/imagemid.xml', 'res/xml/settings.xml', 'res/drawable/bottom_scrollbar_horizontal_thumb.xml', 'res/layout/calllog_info_item.xml', 'res/drawable/splash.png', 'res/anim/tran_splash.xml', 'res/layout/application.xml', 'res/drawable/menu_help.png', 'res/drawable/menu_cancel.png', 'lib/armeabi/libandclear.so', 'res/drawable/download_image.png', 'res/anim/footer_disappear.xml', 'res/anim/tran_in.xml', 'res/drawable/scrollbar_vertical\n---\nADDED set([u'assets/bin/Data/sharedassets7.assets.resS', u'assets/bin/Data/04e1eaa622af8494394e7fafb5d31568', u'assets/bin/Data/sharedassets1.assets', u'assets/bin/Data/sharedassets3.assets.resS', u'assets/bin/Data/sharedassets1.assets.resS', u'assets/bin/Data/sharedassets7.assets', u'lib/armeabi-v7a/libmono.so', u'assets/bin/Data/level16', u'assets/bin/Data/Managed/Assembly-UnityScript-firstpass.dll', u'assets/bin/Data/level15', u'assets/bin/Data/sharedassets15.assets', u'assets/bin/Data/level22', u'assets/bin/Data/level20', u'assets/bin/Data/level21', u'lib/armeabi-v7a/libunity.so', u'assets/bin/Data/unity default resources', u'assets/bin/Data/sharedassets8.assets', u'assets/bin/Data/Managed/UnityEngine.dll', u'assets/bin/Data/sharedassets14.assets', u'assets/bin/Data/84268af06f8dcf740bf08044dcf8af69', u'assets/bin/Data/sharedassets12.assets', u'assets/bin/Data/splash.png', u'assets/bin/Data/sharedassets18.assets', u'assets/bin/Data/sharedassets16.assets', u'assets/bin/Data/sharedassets15."
+p36
+sg5
+S'CHANGED (JI 2.48%)'
+p37
+sg7
+F2.48
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S'EQUAL (JI 100%)'
+p42
+sg5
+S'EQUAL (JI 100%)'
+p43
+sg7
+I100
+sa(dp44
+g3
+S"\nDELETED set([u'Landroid/preference/CheckBoxPreference;', u'Las;', u'Landroid/view/animation/AnimationUtils;', u'Laj;', u'Lcom/iwidsets/clear/manager/gui/ClearCommonActivity;', u'Lj;', u'Lo;', u'Lb;', u'Landroid/app/ActivityGroup;', u'Ly;', u'Lac;', u'Lcom/iwidsets/clear/manager/AndClearApplication;', u'Landroid/content/Intent$ShortcutIconResource;', u'Landroid/content/pm/IPackageStatsObserver$Stub$Proxy;', u'Lar;', u'Landroid/view/LayoutInflater;', u'Lcom/iwidsets/clear/manager/Exec;', u'Lai;', u'Ld;', u'Landroid/content/pm/PackageStats;', u'Lk;', u'Landroid/content/pm/IPackageDataObserver;', u'Landroid/os/Message;', u'Lz;', u'Lcom/iwidsets/clear/manager/core/ui/BottomScrollableActivity;', u'Lc;', u'Landroid/content/pm/ApplicationInfo;', u'Landroid/preference/PreferenceManager;', u'Lab;', u'Lr;', u'Lcom/iwidsets/clear/manager/Splash;', u'Landroid/widget/ListView;', u'Laq;', u'Lt;', u'Lah;', u'Lcom/iwidsets/clear/manager/core/ui/RadioStateDrawable;', u'Landroid/widget/Toast;', u'Ll;', u'Landroi\n---\nADDED set([u'Ljava/io/FileNotFoundException;', u'Lcom/flurry/android/aq;', u'Lcom/flurry/org/codehaus/jackson/map/ser/StdSerializers$UtilDateSerializer;', u'Lcom/flurry/org/apache/avro/file/DataFileReader12;', u'Lcom/flurry/android/fe;', u'Lcom/flurry/org/codehaus/jackson/map/HandlerInstantiator;', u'Lcom/flurry/android/cm;', u'Lcom/flurry/android/c;', u'Lcom/chartboost/sdk/impl/z;', u'Lcom/chartboost/sdk/impl/n$a;', u'Lcom/flurry/org/codehaus/jackson/map/deser/StdDeserializer$CalendarDeserializer;', u'Lcom/unity3d/player/UnityJavaRunnable;', u'Lcom/unity3d/player/UnityPlayer$17;', u'Ljava/util/LinkedHashMap;', u'Lcom/chartboost/sdk/impl/ao;', u'Lcom/unity3d/player/k;', u'Lcom/flurry/org/codehaus/jackson/map/Deserializers$Base;', u'Lcom/flurry/org/codehaus/jackson/map/deser/std/PrimitiveArrayDeserializers$StringDeser;', u'Lcom/unity3d/player/a/l;', u'Lcom/flurry/org/apache/avro/data/ErrorBuilder;', u'Lcom/flurry/org/codehaus/jackson/util/TokenBuffer;', u'Landroid/media/AudioTrack;', u'Ljava/"
+p45
+sg5
+S'CHANGED (JI 2.84%)'
+p46
+sg7
+F2.8399999999999999
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/iwidsets/clear/manager/gui/ClearTracesActivity;->h()V', u'Lcom/iwidsets/clear/manager/gui/ClearTempFilesActivity;->a(Ljava/lang/String; [Ljava/lang/String;)V', u'Lcom/iwidsets/clear/manager/gui/ClearTracesActivity;->b(Lcom/iwidsets/clear/manager/gui/ClearTracesActivity;)V', u'Lj;-><init>(Landroid/content/Context;)V', u'Lae;->b(J)V', u'Lah;->a()I', u'Lcom/iwidsets/clear/manager/AndClearApplication;->a()Lj;', u'Lcom/iwidsets/clear/manager/gui/ClearTempFilesActivity;->a(Lcom/iwidsets/clear/manager/gui/ClearTempFilesActivity; I Ljava/lang/String;)V', u'Lcom/iwidsets/clear/manager/core/ui/ScrollableTabActivity;->startGroupActivity(Ljava/lang/String; Landroid/content/Intent;)V', u'Lcom/iwidsets/clear/manager/gui/ClearCommonActivity;->onCreate(Landroid/os/Bundle;)V', u'Lcom/iwidsets/clear/manager/gui/ClearCommonActivity;->h()V', u'Ls;->a()Z', u'Lcom/iwidsets/clear/manager/gui/ClearCallLogActivity;->onCreateContextMenu(Landroid/view/ContextMenu; Landroid/view/View; Landroid/view/Co\n---\nADDED set([u'Lcom/flurry/org/codehaus/jackson/map/MapperConfig$Base;->withDateFormat(Ljava/text/DateFormat;)Lcom/flurry/org/codehaus/jackson/map/MapperConfig$Base;', u'Lcom/flurry/org/codehaus/jackson/map/ser/ScalarSerializerBase;-><init>(Ljava/lang/Class; Z)V', u'Lcom/flurry/android/FrequencyCapInfo$Builder;->hasPreviousCap()Z', u'Lcom/flurry/android/cx;->isAutoSyncEnabled()Z', u'Lcom/flurry/android/AdSpaceLayout$Builder;->hasAdWidth()Z', u'Lcom/flurry/org/codehaus/jackson/map/jsontype/impl/AsArrayTypeSerializer;->writeTypeSuffixForArray(Ljava/lang/Object; Lcom/flurry/org/codehaus/jackson/JsonGenerator;)V', u'Lcom/flurry/android/SdkAdLog$Builder;->getSessionId()Ljava/lang/Long;', u'Lcom/flurry/org/codehaus/jackson/map/ser/FilteredBeanPropertyWriter;-><init>()V', u'Lcom/chartboost/sdk/impl/p$b;-><clinit>()V', u'Lcom/flurry/org/codehaus/jackson/node/NodeCursor$Array;->currentHasChildren()Z', u'Lcom/flurry/org/codehaus/jackson/map/ObjectMapper;->writerWithType(Lcom/flurry/org/codehaus/jackson/"
+p48
+sg5
+S'CHANGED (JI 0.0%)'
+p49
+sg7
+F0
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/iwidsets/clear/manager/gui/ClearTempFilesActivity;->a(Ljava/lang/String; [Ljava/lang/String;)V', u'Lj;-><init>(Landroid/content/Context;)V', u'Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Lcom/iwidsets/clear/manager/gui/ClearMessagesActivity;->registerForContextMenu(Landroid/view/View;)V', u'Lcom/iwidsets/clear/manager/gui/ClearTempFilesActivity;->a(Lcom/iwidsets/clear/manager/gui/ClearTempFilesActivity; I Ljava/lang/String;)V', u'Lcom/iwidsets/clear/manager/gui/ClearCommonActivity;->h()V', u'Lcom/iwidsets/clear/manager/gui/ClearCallLogActivity;->onCreateContextMenu(Landroid/view/ContextMenu; Landroid/view/View; Landroid/view/ContextMenu$ContextMenuInfo;)V', u'Lcom/iwidsets/clear/manager/gui/ClearCallLogActivity;->startActivityForResult(Landroid/content/Intent; I)V', u'Lcom/iwidsets/clear/manager/gui/ClearTempFilesActivity;->b(Lcom/iwidsets/clear/ma\n---\nADDED set([u'Lcom/flurry/org/codehaus/jackson/map/MapperConfig$Base;->withDateFormat(Ljava/text/DateFormat;)Lcom/flurry/org/codehaus/jackson/map/MapperConfig$Base;', u'Lcom/flurry/org/codehaus/jackson/map/ser/ScalarSerializerBase;-><init>(Ljava/lang/Class; Z)V', u'Lcom/flurry/android/FrequencyCapInfo$Builder;->hasPreviousCap()Z', u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Lcom/flurry/android/AdSpaceLayout$Builder;->hasAdWidth()Z', u'Lcom/flurry/org/codehaus/jackson/map/jsontype/impl/AsArrayTypeSerializer;->writeTypeSuffixForArray(Ljava/lang/Object; Lcom/flurry/org/codehaus/jackson/JsonGenerator;)V', u'Lcom/flurry/android/SdkAdLog$Builder;->getSessionId()Ljava/lang/Long;', u'Lcom/flurry/org/codehaus/jackson/map/ser/FilteredBeanPropertyWriter;-><init>()V', u'Lcom/chartboost/sdk/impl/p$b;-><clinit>()V', u'Lcom/flurry/org/codehaus/jackson/node/NodeCursor$Array;->currentHasChildren()Z', u'Lcom/flurry/org/codehaus/jackson/map/ObjectMapper;->writerWithType(Lcom/flurry/org/codehaus/jack"
+p54
+sg5
+S'CHANGED (JI 1.11%)'
+p55
+sg7
+F1.1100000000000001
+sa(dp56
+g3
+S"\nDELETED set([u'Landroid/app/Activity;->onCreateContextMenu(Landroid/view/ContextMenu; Landroid/view/View; Landroid/view/ContextMenu$ContextMenuInfo;)V', u'Ljava/lang/Character;->isWhitespace(C)Z', u'Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V', u'Ljava/lang/Object;->notify()V', u'Ljava/io/File;->isFile()Z', u'Ljava/lang/Thread;->setName(Ljava/lang/String;)V', u'Ljava/lang/Object;->wait()V', u'Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;', u'Landroid/graphics/Canvas;->drawText(Ljava/lang/String; F F Landroid/graphics/Paint;)V', u'Landroid/graphics/Canvas;->drawColor(I)V', u'Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V', u'Ljava/io/FileOutputStream;-><init>(Ljava/io/FileDescriptor;)V', u'Landroid/widget/TextView;->setText(I)V', u'Landroid/widget/LinearLayout;->startA\n---\nADDED set([u'Ljava/lang/Character;->isLetter(C)Z', u'Ljava/util/List;->indexOf(Ljava/lang/Object;)I', u'Landroid/os/Bundle;->keySet()Ljava/util/Set;', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; I)Landroid/content/Intent;', u'Landroid/app/Activity;->getComponentName()Landroid/content/ComponentName;', u'Landroid/view/Window;->setGravity(I)V', u'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;', u'Landroid/app/Activity;->addContentView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Ljava/lang/reflect/Method;->getGenericExceptionTypes()[Ljava/lang/reflect/Type;', u'Ljava/lang/Object;->wait(J)V', u'Landroid/os/Looper;->myLooper()Landroid/os/Looper;', u'Landroid/content/SharedPreferences;->getLong(Ljava/lang/String; J)J', u'Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;', u'Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;', u'Ljava/io/FileInputStream;->close()V', u'Ljava/lang/Math;->round(D)J', u"
+p57
+sg5
+S'CHANGED (JI 22.71%)'
+p58
+sg7
+F22.710000000000001
+sa(dp59
+g3
+S'\nDELETED set([u\'getManager onDestroy\', u\'android.content.pm.IPackageDataObserver\', u\'.~tmp\', u\'mobi.mgeek.TunnyBrowser\', u\'InstalledAppsActivity\', u\'clearCallLog\', u\'RootManager\', u\'com.android.settings.ApplicationPkgName\', u\'smsCheckBox\', u\'.Splash\', u\'android.content.pm.IPackageStatsObserver\', u\'DataTemp\', u\'android.intent.extra.shortcut.ICON_RESOURCE\', u\'shortcut\', u\'Input reader\', u\'AppInfoAdapter error\', u\'/system/bin/sh -\', u\'read\', u\'/data/data/\', u\'android.intent.category.LAUNCHER\', u\'.tmp~\', u\'/sdcard\', u\'/files/cache\', u\'SDTemp\', u\'p\', u\'permission denied\', u\'historyCheckBox\', u\'ls -l\', u\'android.intent.action.MAIN\', u\'tmp\', u\'com.uc.browser\', u\'cookiesCheckBox\', u\'content://call_log/calls\', u\'AppInfoAdapter\', u\'Invalid package stats from PackageManager\', u\'onDestroy\', u\'SystemTemp\', u\'calllogCheckBox\', u\'org.mozilla.fennec\', u\'su\\r\', u\'PackageStats\', u\'clearSearch\', u\'rm \', u\'yyyy-MM-dd HH:mm:ss\', u\'address\', u\'com.android.launcher.action.INSTALL_SHORTCUT\', u\'. Make sure to create a \n---\nADDED set([u\'org.bson.ObjectId\', u\', needed \', u\'cannot set requested orientation without restarting activity, requestedOrientation = \', u\'[anySetter]\', u"Internal error. Block wasn\'t deleted with id = ", u\' into a char element of char array\', u\'Replacing param eso with: \', u\'android.permission.INTERNET\', u\'FlurryDataSenderBlockInfo\', u\'  %s: %d\\n\', u\' AAx\', u\'aliases\', u\'No field named \', u\' in field \', u\'android.opengl.GLSurfaceView$GLWrapper\', u\'Not running Unity from an Activity; ignored...\', u\'SERVER_DB\', u\'banner ad holder layout params = \', u\'============SERVER DATA==================\', u\'failed to perform directOpen action: no url in \', u\'ANGLE_90\', u\'@\', u\'Can not construct EnumMap; generic (key) type not available\', u\'NO_MATCH\', u\'GR\', u\'Multipart boundary may not be null\', u"\' (for ", u\'Replacing param ats with: \', u\'void\', u\'Launch Options Bundle is present \', u\' is not known!\', u\'IS_GETTER\', u\'The context must be set through the Chartboost method onCreate() before calling showInt'
+p60
+sg5
+S'CHANGED (JI 0.59%)'
+p61
+sg7
+F0.58999999999999997
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/iwidsets/clear/manager/core/ui/BottomScrollableActivity;->bottomLayoutParams Landroid/widget/RadioGroup$LayoutParams; [access_flags=private]\\n', 'Lcom/iwidsets/clear/manager/gui/ClearTracesActivity;->s Landroid/widget/Button; [access_flags=private]\\n', 'Lu;->b [B [access_flags=private]\\n', 'Lcom/iwidsets/clear/manager/gui/ClearTempFilesActivity;->G Ljava/lang/Thread; [access_flags=private]\\n', 'Lv;->e Landroid/content/Context; [access_flags=private]\\n', 'Lcom/iwidsets/clear/manager/gui/ClearApplicationActivity;->c Lv; [access_flags=private]\\n', 'Lcom/iwidsets/clear/manager/gui/ClearMessagesActivity;->c Lar; [access_flags=private]\\n', 'Lcom/iwidsets/clear/manager/gui/ClearCallLogActivity;->d Landroid/widget/ListView; [access_flags=private]\\n', 'Laa;->d Ljava/util/List; [access_flags=private]\\n', 'Lcom/iwidsets/clear/manager/gui/ClearTracesActivity;->f Ls; [access_flags=private]\\n', 'Lab;->a Lcom/iwidsets/clear/manager/gui/ClearTracesActivity; [access_flags=synthetic final]\\n'\n---\nADDED set(['Lcom/flurry/org/apache/avro/Schema$NamedSchema;->doc Ljava/lang/String; [access_flags=final]\\n', 'Lcom/chartboost/sdk/impl/k;->c Ljava/lang/String; [access_flags=public]\\n', 'Lcom/chartboost/sdk/impl/ai$a;->l Ljava/lang/String; [access_flags=public final]\\n', 'Lcom/flurry/org/codehaus/jackson/map/annotate/JsonSerialize$Inclusion;->NON_NULL Lcom/flurry/org/codehaus/jackson/map/annotate/JsonSerialize$Inclusion; [access_flags=public static enum final]\\n', 'Lcom/unity3d/player/a/k;->d Ljava/lang/String; [access_flags=public]\\n', 'Lcom/flurry/android/df;->dK Lcom/flurry/android/responses/AppCloudCommonOperationResponseHandler; [access_flags=private synthetic]\\n', 'Lcom/unity3d/player/c;->a Landroid/content/ContextWrapper; [access_flags=protected final]\\n', 'Lcom/chartboost/sdk/Chartboost;->z Z [access_flags=private]\\n', 'Lcom/flurry/org/codehaus/jackson/map/ser/StdSerializerProvider;->DEFAULT_NULL_KEY_SERIALIZER Lcom/flurry/org/codehaus/jackson/map/JsonSerializer; [access_flags=public"
+p63
+sg5
+S'CHANGED (JI 0.0%)'
+p64
+sg7
+F0
+sa.

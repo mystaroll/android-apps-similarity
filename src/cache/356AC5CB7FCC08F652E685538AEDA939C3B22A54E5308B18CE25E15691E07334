@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'DIFFERENT: 4!=8'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: None!=16'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 4!=16'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.READ_PHONE_STATE'])"
+p24
+sg5
+S'CHANGED (JI 66.67%)'
+p25
+sg7
+F66.670000000000002
+sa(dp26
+g3
+S'DIFFERENT: com.free.pump!=com.radical.qdansanguo'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: pump)Hyper(problems!=q\xe5\xbc\xb9\xe4\xb8\x89\xe5\x9b\xbd'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.free.pump..pumpfree', 'com.google.ads.AdActivity'])\n---\nADDED set(['com.ansca.corona.CameraActivity', 'com.openfeint.internal.ui.Settings', 'com.zong.android.engine.web.ZongWebView', 'com.adknowledge.superrewards.ui.activities.SRPaymentMethodsActivity', 'com.ansca.corona.VideoActivity', 'com.openfeint.internal.ui.IntroFlow', 'com.ansca.corona.CoronaActivity', 'com.openfeint.internal.ui.NativeBrowser', 'com.adknowledge.superrewards.ui.activities.SRWebViewActivity', 'com.adknowledge.superrewards.ui.activities.SROfferPaymentActivity', 'com.openfeint.api.ui.Dashboard', 'com.adknowledge.superrewards.ui.activities.SRDirectPaymentActivity'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set(['assembly-descriptor.xml', 'META-INF/CERT.RSA', 'res/raw/pump.mp3', 'res/layout/main.xml', 'META-INF/CERT.SF'])\n---\nADDED set(['assets/Images/bg/eff/402.png', 'com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MG', 'assets/Images/zh/menu/6/lock/4.png', 'assets/Images/zh/open/msg6.png', 'res/drawable/of_native_loader_progress_01.png', 'assets/Images/body/sk/s4.png', 'assets/Images/ui/num/n8/+.png', 'assets/Images/ui/num/n5/5.png', 'assets/Images/ui/loading/border.png', 'com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_VU', 'assets/Images/en/menu/soldier/senglu.png', 'assets/Images/en/help/1/1.png', 'assets/Images/ui/menu/lv/lv5.png', 'assets/Images/zh/help/2/5.png', 'assets/Images/en/menu/5/sk/7.png', 'assets/Images/zh/menu/tab3_over.png', 'assets/Images/zh/help/1/2.png', 'assets/Images/ui/menu/7/top2_over.png', 'assets/Images/bg/eff/401.png', 'assets/Images/body/p/long.png', 'assets/Images/zh/menu/tab3.png', 'assets/Images/zh/menu/br.png', 'assets/Images/zh/menu/soldier/', 'assets/Images/ui/menu/6/', 'assets/Music/jineng_3.mp3', 'com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt"
+p36
+sg5
+S'CHANGED (JI 0.56%)'
+p37
+sg7
+F0.56000000000000005
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.ansca.corona.CoronaService', 'com.zong.android.engine.process.ZongServiceProcess'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.ansca.corona.notifications.AlarmManagerBroadcastReceiver', 'com.ansca.corona.purchasing.GoogleStoreBroadcastReceiver', 'com.ansca.corona.SystemStartupBroadcastReceiver', 'com.ansca.corona.notifications.StatusBarBroadcastReceiver'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Lcom/google/gson/bi;', u'[Lcom/google/gson/ModifyFirstLetterNamingPolicy$LetterModifier;', u'Lcom/google/gson/ab$a;', u'Lu$b;', u'Lcom/google/gson/k;', u'Lj;', u'Lcom/google/gson/JsonDeserializer;', u'Lcom/google/gson/s;', u'Lcom/google/gson/ah;', u'Lcom/google/gson/al;', u'Ljava/util/TreeSet;', u'Lcom/free/pump/pumpfree;', u'Lcom/google/gson/as;', u'Lcom/google/gson/f$v;', u'Ljava/lang/reflect/WildcardType;', u'Lcom/google/gson/f$o;', u'Lcom/google/gson/q$a;', u'Lb;', u'Lcom/google/gson/JsonArray;', u'La$1;', u'Lcom/free/pump/R$attr;', u'Lcom/google/gson/y$b;', u'Lcom/google/gson/z;', u'Lcom/free/pump/R$string;', u'Lcom/google/ads/AdSize;', u'Lv$b;', u'Ljava/sql/Date;', u'Lcom/google/gson/f$ac;', u'Lcom/google/gson/InstanceCreator;', u'Lcom/google/gson/ac;', u'Lcom/google/gson/ObjectNavigator$Visitor;', u'Lcom/google/gson/JsonObject;', u'Lcom/google/gson/f$x;', u'Lk;', u'Lcom/google/gson/ModifyFirstLetterNamingPolicy$LetterModifier;', u'Lcom/google/gson/ar;', u'Lcom/google/gson\n---\nADDED set([u'Ljava/io/FileNotFoundException;', u'Lcom/ansca/corona/CoronaSensorManager$AccelerometerMonitor$TimerHandler;', u'Lcom/flurry/android/c;', u'Lcom/openfeint/api/resource/CurrentUser;', u'Lcom/openfeint/internal/OpenFeintInternal$7;', u'Lcom/openfeint/internal/SyncedStore;', u'Lcom/openfeint/api/resource/Score$5;', u'[Lorg/codehaus/jackson/JsonToken;', u'Lcom/adknowledge/superrewards/R$raw;', u'Lzongfuscated/w$4;', u'Lcom/naef/jnlua/DefaultConverter$4;', u'Lcom/openfeint/internal/resource/BlobUploadParameters$3;', u'Ljava/util/concurrent/TimeUnit;', u'Lcom/ansca/corona/purchasing/StoreTransactionState;', u'Lcom/google/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;', u'Lcom/inmobi/androidsdk/impl/MemoryStatus;', u'Landroid/util/Xml;', u'Lcom/adknowledge/superrewards/model/SRMethodType;', u'Lcom/openfeint/api/resource/Score$6;', u'Lcom/ansca/corona/NativeToJavaBridge$3;', u'[Lcom/adknowledge/superrewards/web/SRRequest$Command;', u'Lcom/ansca/corona/CoronaSensorManager$1;', u'Lcom/a"
+p45
+sg5
+S'CHANGED (JI 6.06%)'
+p46
+sg7
+F6.0599999999999996
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/google/gson/JsonElement;->getAsJsonNull()Lcom/google/gson/JsonNull;', u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/google/gson/ag;-><init>()V', u'Lf;->p()Ljava/lang/String;', u'Lcom/google/gson/ab$a;->c()V', u'Lw;-><init>()V', u'Ld;->b()V', u'Lcom/google/gson/annotations/SerializedName;->value()Ljava/lang/String;', u'Lcom/google/gson/JsonPrimitive;->getAsBoolean()Z', u'Lcom/google/gson/ab$b;->a(Ljava/lang/String; Z)V', u'Lcom/google/gson/r;-><init>(Lcom/google/gson/an; Lcom/google/gson/aq; Lcom/google/gson/ai;)V', u'Lcom/google/gson/JsonElement;->a()Ljava/lang/Object;', u'Lcom/google/gson/au;->b(Ljava/lang/Class;)Ljava/lang/Class;', u'Lh$a;-><init>(Ld;)V', u'Lcom/google/gson/y$a;-><init>()V', u'Lu;->d(Landroid/content/Context;)Ljava/lang/String;', u'Lc;->onProgressUpdate([Ljava/lang/Object;)V', u'Lc;->a([Lcom/google/ads/AdRequest;)Lcom/google/ads/AdRequest$ErrorCode;', u'Lt;->d(Ljava/lang/String;)V', u'Lcom/google/gson/ObjectNavigator$Visitor;->visitObjectField(Lcom/g\n---\nADDED set([u'Lcom/ansca/corona/ViewManager;->removeAllMapViewMarkers(I)V', u'Lcom/naef/jnlua/script/LuaScriptEngine;->loadChunk(Ljava/lang/String; Ljavax/script/ScriptContext;)V', u'Lcom/inmobi/androidsdk/impl/UserInfo;->getSiteId()Ljava/lang/String;', u'Lcom/openfeint/internal/ui/IntroFlow$IntroFlowActionHandler;->getEmail(Ljava/util/Map;)V', u'Lcom/adknowledge/superrewards/model/SROffer;->setGeoAvailability(Ljava/lang/String;)V', u'Lorg/apache/commons/codec/binary/StringUtils;->getBytesUtf16Le(Ljava/lang/String;)[B', u'Lcom/zong/android/engine/task/PaymentProcessorTask;->c()Ljava/lang/String;', u'Lcom/openfeint/internal/ui/WebViewCache$ManifestItem;-><init>(Ljava/lang/String; Ljava/lang/String;)V', u'Lzongfuscated/F;->a(Ljava/lang/Boolean;)V', u'Lcom/openfeint/internal/resource/LongResourceProperty;->copy(Lcom/openfeint/internal/resource/Resource; Lcom/openfeint/internal/resource/Resource;)V', u'Lcom/ansca/corona/Controller;->saveBitmap(Landroid/graphics/Bitmap; Landroid/net/Uri;)Z', u'Lco"
+p48
+sg5
+S'CHANGED (JI 0.0%)'
+p49
+sg7
+F0
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/google/gson/JsonElement;->getAsJsonNull()Lcom/google/gson/JsonNull;', u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/google/gson/ar;-><init>(Ljava/lang/reflect/Type; [Ljava/lang/reflect/Type; Ljava/lang/reflect/Type;)V', u'Lcom/google/gson/annotations/SerializedName;->value()Ljava/lang/String;', u'Lc;->a(Lcom/google/ads/AdRequest$ErrorCode;)V', u'Lcom/google/gson/r;-><init>(Lcom/google/gson/an; Lcom/google/gson/aq; Lcom/google/gson/ai;)V', u'Lcom/google/gson/JsonPrimitive;-><init>(Ljava/lang/Boolean;)V', u'Landroid/widget/VideoView;->setVideoPath(Ljava/lang/String;)V', u'Lc;->a([Lcom/google/ads/AdRequest;)Lcom/google/ads/AdRequest$ErrorCode;', u'Lt;->d(Ljava/lang/String;)V', u'Lcom/google/ads/AdView;->a(Landroid/app/Activity; Lcom/google/ads/AdSize; Ljava/lang/String;)V', u'Lcom/google/gson/reflect/TypeToken;->hashCode()I', u'Lcom/google/gson/p;->startVisitingObject(Ljava/lang/Object;)V', u'Lcom/google/gson/f;->a()Lcom/google/gson/aq;', u'Lcom/google/gson/x;->getTarget(\n---\nADDED set([u'Lcom/naef/jnlua/script/LuaScriptEngine;->loadChunk(Ljava/lang/String; Ljavax/script/ScriptContext;)V', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Lcom/adknowledge/superrewards/model/SROffer;->setGeoAvailability(Ljava/lang/String;)V', u'Lcom/zong/android/engine/task/PaymentProcessorTask;->c()Ljava/lang/String;', u'Lcom/openfeint/internal/ui/WebViewCache$ManifestItem;-><init>(Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Lcom/openfeint/internal/resource/LongResourceProperty;->copy(Lcom/openfeint/internal/resource/Resource; Lcom/openfeint/internal/resource/Resource;)V', u'Lzongfuscated/b;->e(Ljava/lang/String;)V', u'Lcom/openfeint/internal/resource/NestedResourceProperty;-><init>(Ljava/lang/Class;)V', u'Landroid/database/sqlite/SQLiteStatement;->bindLong(I J)V', u'Lorg/codehaus/jackso"
+p54
+sg5
+S'CHANGED (JI 3.12%)'
+p55
+sg7
+F3.1200000000000001
+sa(dp56
+g3
+S"\nDELETED set([u'Ljava/lang/Character;->isLetter(C)Z', u'Ljava/lang/Class;->getGenericInterfaces()[Ljava/lang/reflect/Type;', u'Ljava/lang/Class;->isMemberClass()Z', u'Ljava/lang/Error;->getMessage()Ljava/lang/String;', u'Ljava/lang/Object;->notify()V', u'Landroid/widget/VideoView;->setVideoPath(Ljava/lang/String;)V', u'Ljava/lang/Object;->wait(J)V', u'Landroid/os/Bundle;->putSerializable(Ljava/lang/String; Ljava/io/Serializable;)V', u'Ljava/lang/Character;->toLowerCase(C)C', u'Landroid/widget/LinearLayout;->setGravity(I)V', u'Landroid/net/Uri;->getAuthority()Ljava/lang/String;', u'Ljava/lang/Character;->charCount(I)I', u'Ljava/lang/RuntimeException;-><init>()V', u'Landroid/webkit/WebSettings;->setUserAgentString(Ljava/lang/String;)V', u'Ljava/text/DateFormat;->getDateTimeInstance()Ljava/text/DateFormat;', u'Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V', u'Landroid/widget/TextView;-><init>(Landroid/content/Context;)V', u'Ljava/lang/Class;->getAnnotation(Ljava/lang/Class;)Ljava/la\n---\nADDED set([u'Ljava/lang/System;->getProperties()Ljava/util/Properties;', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; I)Landroid/content/Intent;', u'Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V', u'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Ljava/security/MessageDigest;->update([B)V', u'Ljava/util/Date;->toString()Ljava/lang/String;', u'Landroid/os/Bundle;->putLong(Ljava/lang/String; J)V', u'Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z', u'Landroid/webkit/WebViewClient;->onReceivedError(Landroid/webkit/WebView; I Ljava/lang/String; Ljava/lang/String;)V', u'Ljava/util/regex/Matcher;->end()I', u'Landroid/os/Bundle;->putInt(Ljava/lang/String; I)V', u'Ljava/io/IOException;-><init>(Ljava/lang/String;)V', u'Landroid/webkit/WebSettings;->setGeolocat"
+p57
+sg5
+S'CHANGED (JI 33.56%)'
+p58
+sg7
+F33.560000000000002
+sa(dp59
+g3
+S'\nDELETED set([u\',serializers:\', u\'Cannot show interstitial because it is not loaded and ready.\', u\'/video\', u\'Unhandled exception while forwarding install intents. Possibly lost some install information.\', u\' to Json\', u\'admob.com\', u\'afma_notify_dt\', u\'adUnitId\', u\'Received log message: <"string": "\', u\' given the type \', u\' "\', u\'Dalvik\', u\'minute\', u\'http://market.android.com/details\', u\'p\', u\'Attempted to modify an unmodifiable map.\', u\'cap\', u\'currentAdManager is null while trying to destroy AdActivity.\', u\'Launching AdActivity.\', u\'VIBRATE\', u\'X-Afma-Timeout\', u\'IOException connecting to ad url.\', u\'Ad clicked.\', u\'errors\', u\' is not a valid JSON field name.\', u\'Invalid response code: \', u\'":"\', u\'u_audio\', u\'net\', u"javascript:AFMA_ReceiveMessage(\'onhide\');", u\'Could not get redirect location from a 302 redirect.\', u\'Received ad url: <"url": "\', u\'The JsonDeserializer \', u\'AdLoader InterruptedException while loading the HTML: \', u\'<HEX>\', u\'currentAdManager is null while trying to call o\n---\nADDED set([u\'if (OF.page) OF.refresh();\', u\'auth.expireSession failed\', u\'Creditcard\', u\'DELAY\', u\'umts\', u\'&u-appVer=\', u\'REQUEST_ID\', u\' at index \', u\'processPremiumSMS (shortcode, body)\', u\'webui/images/intro.games.hdpi.png\', u\'clientRef\', u\', needed \', u\'Unknown App Id\', u\' Picture \', u\' in read-only mode\', u\'GW\', u\'GU\', u\'GT\', u\'GR\', u\'GQ\', u"\' (for ", u\'Set Offer with URL of \', u\'loginUser\', u\'EXPAND event\', u"\' not supported", u\'GY\', u\'GG\', u\'GF\', u\'GE\', u\'GD\', u\'write number\', u\'GB\', u\'GA\', u\'GN\', u\'GM\', u\'GL\', u\'Camera not found.\', u\'forceOffline = TRUE\', u\'GH\', u\'USER_CANCELED\', u\'Default-Landscape.png\', u\'mdpi\', u\'Presence\', u\'intro/\', u\' starting at \', u\'Time to get the GPS location...\', u\'$\', u\' GB\', u\'webui/images/frame.small.hdpi.png\', u\'ic_menu_camera\', u\'onFailedToReceiveAd\', u\'Message Send was Sucessful\', u\'netOpName\', u\'Qlen must >= 3\', u\'9774d56d682e549c\', u\'geo_availability\', u\'key must not be null\', u\'class %s does not implement Comparable\', u\'webui/images/space.grid.hd'
+p60
+sg5
+S'CHANGED (JI 2.45%)'
+p61
+sg7
+F2.4500000000000002
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/google/gson/h;->a [C [access_flags=private static final]\\n', 'Lcom/google/gson/aa;->c [J [access_flags=static final]\\n', 'Lcom/google/gson/f;->a Lcom/google/gson/f$g; [access_flags=private static final]\\n', 'Lcom/google/gson/FieldAttributes;->g Ljava/lang/String; [access_flags=private final]\\n', 'Lcom/google/ads/InterstitialAd;->a Ld; [access_flags=private]\\n', 'Lcom/google/gson/f;->s Lcom/google/gson/f$r; [access_flags=private static final]\\n', 'Lc;->m Z [access_flags=private]\\n', 'Lcom/google/gson/ad;->e Lcom/google/gson/aj; [access_flags=private final]\\n', 'Lcom/google/gson/c;->a Ljava/lang/String; [access_flags=private final]\\n', 'Lu;->h Ljava/lang/String; [access_flags=private static]\\n', 'Lcom/google/gson/h;->c Ljava/util/Set; [access_flags=private static final]\\n', 'Lcom/google/gson/FieldNamingPolicy;->UPPER_CAMEL_CASE Lcom/google/gson/FieldNamingPolicy; [access_flags=public static enum final]\\n', 'Lcom/google/ads/AdRequest$ErrorCode;->NETWORK_ERROR Lcom/google/ads/Ad\n---\nADDED set(['Lcom/zong/android/engine/provider/E164;->MO Lcom/zong/android/engine/provider/E164; [access_flags=public static enum final]\\n', 'Lcom/ansca/corona/events/NetworkRequestEvent;->myIsError Z [access_flags=private]\\n', 'Lorg/codehaus/jackson/util/TextBuffer;->_segmentSize I [access_flags=private]\\n', 'Lcom/ansca/corona/events/MediaEvent$Event;->LoadSound Lcom/ansca/corona/events/MediaEvent$Event; [access_flags=public static enum final]\\n', 'Lcom/openfeint/api/resource/Achievement$1;->val$cb Lcom/openfeint/api/resource/Achievement$ListCB; [access_flags=synthetic final]\\n', 'Lcom/ansca/corona/ViewManager$19;->val$id I [access_flags=synthetic final]\\n', 'Lcom/adknowledge/superrewards/model/SRType;->FREE Lcom/adknowledge/superrewards/model/SRType; [access_flags=public static enum final]\\n', 'Lcom/openfeint/internal/request/Client$3;->this$0 Lcom/openfeint/internal/request/Client; [access_flags=synthetic final]\\n', 'Lcom/ansca/corona/Controller$8;->this$0 Lcom/ansca/corona/Controller; [ac"
+p63
+sg5
+S'CHANGED (JI 0.0%)'
+p64
+sg7
+F0
+sa.

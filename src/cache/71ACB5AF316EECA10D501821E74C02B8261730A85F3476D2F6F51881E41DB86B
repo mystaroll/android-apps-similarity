@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.android.launcher.permission.INSTALL_SHORTCUT', 'android.permission.ACCESS_WIFI_STATE', 'android.permission.WAKE_LOCK', 'android.permission.READ_PHONE_STATE'])"
+p24
+sg5
+S'CHANGED (JI 60.0%)'
+p25
+sg7
+F60
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.anzhi.ad.coverscreen.SA', 'com.anzhi.ad.coverscreen.WA', 'com.kira.ylp4a.kid.KiateActivity'])"
+p33
+sg5
+S'CHANGED (JI 66.67%)'
+p34
+sg7
+F66.670000000000002
+sa(dp35
+g3
+S"\nDELETED set([u'com/sessionm/resources/icn_mportal_on.png', u'com/sessionm/resources/icn_mportal_off.png'])\n---\nADDED set(['assets/Zhuamob_sdk_v1.8.2.version', 'assets/l/l.dat'])"
+p36
+sg5
+S'CHANGED (JI 99.03%)'
+p37
+sg7
+F99.030000000000001
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.kira.ylp4a.kid.FounitActivity'])"
+p39
+sg5
+S'CHANGED (JI 50.0%)'
+p40
+sg7
+F50
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.kira.ylp4a.kid.TiverBlaeActivity', 'com.anzhi.ad.coverscreen.SR'])"
+p42
+sg5
+S'CHANGED (JI 50.0%)'
+p43
+sg7
+F50
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/kira/ylp4a/kid/c/f;', u'Lcom/anzhi/ad/coverscreen/c/c/c;', u'Lcom/anzhi/ad/coverscreen/f;', u'Lcom/anzhi/ad/coverscreen/c/j/f;', u'Lcom/kira/ylp4a/kid/a/e;', u'Ljava/util/Calendar;', u'Lcom/anzhi/ad/coverscreen/c/d/a;', u'Lcom/anzhi/ad/coverscreen/SA;', u'Lcom/anzhi/ad/coverscreen/CoverAdComponent;', u'Lcom/kira/ylp4a/kid/b/m;', u'Landroid/widget/BaseAdapter;', u'Lcom/kira/ylp4a/kid/ads/AdsActivity;', u'Lcom/anzhi/ad/coverscreen/n;', u'Lcom/anzhi/ad/coverscreen/c/a;', u'Lcom/kira/ylp4a/kid/e/g;', u'Lcom/anzhi/ad/coverscreen/E;', u'Lcom/kira/ylp4a/kid/KiateActivity;', u'Lcom/kira/ylp4a/kid/p;', u'Lcom/kira/ylp4a/kid/TiverBlaeActivity;', u'Lcom/kira/ylp4a/kid/i;', u'Lcom/kira/ylp4a/kid/b/b;', u'Lcom/kira/ylp4a/kid/b/j;', u'Lcom/anzhi/ad/coverscreen/WA;', u'Lcom/kira/ylp4a/kid/a;', u'Lcom/anzhi/ad/coverscreen/c/a/a;', u'Lcom/kira/ylp4a/kid/c/c;', u'Lcom/anzhi/ad/coverscreen/c/e/a;', u'Lcom/anzhi/ad/coverscreen/e;', u'Lcom/anzhi/ad/coverscreen/b/a;', u'Landroid/view/LayoutInfla"
+p45
+sg5
+S'CHANGED (JI 88.19%)'
+p46
+sg7
+F88.189999999999998
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/kira/ylp4a/kid/a/b;->b()Z', u'Lcom/kira/ylp4a/kid/e/h;->h(Landroid/content/Context; Ljava/lang/String;)Lcom/kira/ylp4a/kid/d/h;', u'Lcom/kira/ylp4a/kid/e/b;->c([B)I', u'Lcom/anzhi/ad/coverscreen/c/i/b;->a()Ljava/lang/String;', u'Lcom/anzhi/ad/coverscreen/c/c/c;->a(I Ljava/lang/String;)V', u'Lcom/anzhi/ad/coverscreen/w;->a(Z Ljava/lang/String;)V', u'Lcom/kira/ylp4a/kid/c/d;->run()V', u'Lcom/kira/ylp4a/kid/a/b;->c(Lcom/kira/ylp4a/kid/a/f;)V', u'Lcom/kira/ylp4a/kid/e/h;->b(Ljava/lang/String;)Ljava/lang/String;', u'Lcom/anzhi/ad/coverscreen/c/e/d;->a(Landroid/graphics/drawable/Drawable;)V', u'Lcom/anzhi/ad/coverscreen/c/j/a;->a(Ljava/lang/String;)[B', u'Lcom/kira/ylp4a/kid/a/b;->e(Lcom/kira/ylp4a/kid/a/f;)V', u'Lcom/anzhi/ad/coverscreen/i;->b()V', u'Lcom/anzhi/ad/coverscreen/q;->a(Z Ljava/lang/String;)V', u'Lcom/anzhi/ad/coverscreen/c/d/a;->b()Z', u'Lcom/anzhi/ad/coverscreen/CoverAdComponent;->b()V', u'Lcom/kira/ylp4a/kid/c/b;->a()Lcom/kira/ylp4a/kid/c/c;', u'Lcom/anzhi/ad/cove"
+p48
+sg5
+S'CHANGED (JI 86.91%)'
+p49
+sg7
+F86.909999999999997
+sa(dp50
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/sonybmg/pinballrockshd/RockPinballActivity;->toStart()V', u'Lcom/sonybmg/pinballrockshd/RockPinballActivity;->toGameIN()V'])"
+p51
+sg5
+S'CHANGED (JI 99.96%)'
+p52
+sg7
+F99.959999999999994
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Lcom/kira/ylp4a/kid/c/h;->a(Ljava/lang/String;)Ljava/lang/String;', u'Lcom/anzhi/ad/coverscreen/w;->a(Z Ljava/lang/String;)V', u'Lcom/kira/ylp4a/kid/c/d;->run()V', u'Lcom/anzhi/ad/coverscreen/c/e/d;->a(Landroid/graphics/drawable/Drawable;)V', u'Lcom/anzhi/ad/coverscreen/c/j/a;->a(Ljava/lang/String;)[B', u'Lcom/anzhi/ad/coverscreen/CoverAdComponent;->b()V', u'Lcom/kira/ylp4a/kid/c/b;->a()Lcom/kira/ylp4a/kid/c/c;', u'Lcom/anzhi/ad/coverscreen/c/e/a;->a()Lcom/anzhi/ad/coverscreen/c/e/a;', u'Ljava/lang/String;->toUpperCase()Ljava/lang/String;', u'Lcom/kira/ylp4a/kid/c/c;->peek()Ljava/lang/Object;', u'Lcom/kira/ylp4a/kid/l;->d(Lcom/kira/ylp4a/kid/l;)I', u'Lcom/anzhi/ad/coverscreen/c/c;->b()Ljava/lang/String;', u'Lcom/kira/ylp4a/kid/a;->a(I)V', u'Lorg/apache/http/HttpHost;-><init>(Ljava/lang/String; I)V', u'Landroid/widget/FrameLayout;->addView(Landroid/view/View; I I)V', u'Lcom/kira/ylp4a/kid/l;->c(Lc"
+p54
+sg5
+S'CHANGED (JI 87.1%)'
+p55
+sg7
+F87.099999999999994
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/sonybmg/pinballrockshd/RockPinballActivity;->toGameIN()V', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Landroid/webkit/WebView;->enablePlatformNotifications()V', u'Landroid/widget/ImageView;->setClickable(Z)V', u'Ljava/io/FileInputStream;->close()V', u'Ljava/util/zip/GZIPOutputStream;->write([B)V', u'Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;', u'Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String; Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;', u'Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;', u'Landroid/widget/ImageView;->getTag()Ljava/lang/Object;', u'Landroid/view/View;->getWindowVisibleDisplayFrame(Landroid/graphics/Rect;)V', u'Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V', u'Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;', u'Landroid/graphics/drawable/NinePatchDrawabl"
+p57
+sg5
+S'CHANGED (JI 97.75%)'
+p58
+sg7
+F97.75
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'DROP TABLE IF EXISTS ldownloads', u'\\u5e7f\\u544a\\u6b63\\u5728\\u83b7\\u53d6\\u4e2d\\uff0c\\u6b64\\u6b21\\u8c03\\u7528\\u5ffd\\u7565', u'\\u5df2\\u52a0\\u8f7d >> ', u's\\x9da\\u5388\\u5b81\\u50d6\\u7ac0\\u95fd\\u4e32\\u8e05\\uff5a\\u8c49\\u523a\\u968f\\u4e1f\\u4ea4\\u6593\\u4f53\\u4e93\\u5458\\u5199\\u91e1\\u8c31\\uff22e', u's\\u7292\\u6749\\uff41e', u'sdktype', u'ldownloads', u'startRefreshTask', u',outContainerWidth: ', u'/clientinfo', u's\\u4e77\\u65a4e', u's\\xc6@Qe', u'receiver networkInfo == ', u'requestId', u'\\u670d\\u52a1\\u5668\\u8fd4\\u56de\\uff08sendAppInstall\\uff09\\uff1a', u'  ', u's\\u4efc\\uff29\\u655d\\u85f8\\u59ab\\u4ecc\\uff0a\\u4ef3\\u689e\\u97b0\\u5441\\u4eff\\u51b8\\u6b40\\u625c\\u5f0c\\u5543\\xc6e', u'filePath', u'check image cache: ', u's\\u5bd3\\u88e2e', u'chid---->', u'sx~\\x97\\x94e', u'ctwap:cdma', u'\\u4e0b\\u8f7d\\u5b8c\\u6210\\uff0c\\u70b9\\u51fb\\u5b89\\u88c5', u' \\n', u'p', u'mmmsg -- ', u'-1', u's\\u7f31\\u7f0a\\u4e32\\u8fa6e', u'bytes=0-', u's\\xb6\\x87\\x92e', u'iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAGXRFWHRTb2Z0d2FyZQBB"
+p60
+sg5
+S'CHANGED (JI 85.57%)'
+p61
+sg7
+F85.569999999999993
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/kira/ylp4a/kid/b/e;->w I [access_flags=public]\\n', 'Lcom/kira/ylp4a/kid/ads/e;->c Lcom/kira/ylp4a/kid/ads/h; [access_flags=private]\\n', 'Lcom/kira/ylp4a/kid/ads/m;->a Landroid/widget/LinearLayout; [access_flags=private]\\n', 'Lcom/anzhi/ad/coverscreen/SA;->i Ljava/util/TimerTask; [access_flags=private]\\n', 'Lcom/anzhi/ad/coverscreen/C;->j I [access_flags=private]\\n', 'Lcom/anzhi/ad/coverscreen/C;->m I [access_flags=private]\\n', 'Lcom/kira/ylp4a/kid/b/e;->d Ljava/lang/String; [access_flags=public]\\n', 'Lcom/anzhi/ad/coverscreen/C;->n I [access_flags=private]\\n', 'Lcom/kira/ylp4a/kid/e/c;->n Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/kira/ylp4a/kid/d/h;->e B [access_flags=public]\\n', 'Lcom/kira/ylp4a/kid/e/h;->d Ljava/lang/Object; [access_flags=private static]\\n', 'Lcom/anzhi/ad/coverscreen/b/a;->k Ljava/lang/String; [access_flags=private]\\n', 'Lcom/kira/ylp4a/kid/b;->a Landroid/content/Context; [access_flags=synthetic final]\\n', 'Lcom/anzhi/ad/coverscreen/"
+p63
+sg5
+S'CHANGED (JI 81.35%)'
+p64
+sg7
+F81.349999999999994
+sa.

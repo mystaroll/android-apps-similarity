@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'DIFFERENT: 1.1!=1.0'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set(['android.permission.VIBRATE'])\n---\nADDED set(['android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'])"
+p24
+sg5
+S'CHANGED (JI 25.0%)'
+p25
+sg7
+F25
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S'EQUAL (JI 100%)'
+p33
+sg5
+S'EQUAL (JI 100%)'
+p34
+sg7
+I100
+sa(dp35
+g3
+S"\nDELETED set(['res/menu/menu.xml', 'res/drawable/listitem_background_normal.9.png', 'res/drawable/b4.jpg', 'res/drawable/calendar.png'])\n---\nADDED set(['res/drawable/weather_thunder_showers.png'])"
+p36
+sg5
+S'CHANGED (JI 87.5%)'
+p37
+sg7
+F87.5
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S'EQUAL (JI 100%)'
+p42
+sg5
+S'EQUAL (JI 100%)'
+p43
+sg7
+I100
+sa(dp44
+g3
+S"\nDELETED set([u'Ljava/net/URI;', u'Landroid/util/AttributeSet;', u'Ljava/lang/ref/WeakReference;', u'Lcom/admob/android/ads/d$e;', u'Lcom/admob/android/ads/AdView$a;', u'Ljava/util/StringTokenizer;', u'Landroid/widget/RelativeLayout$LayoutParams;', u'Landroid/graphics/Canvas;', u'Ljava/util/Hashtable;', u'Landroid/webkit/WebSettings;', u'Landroid/graphics/BitmapFactory;', u'Landroid/view/MenuInflater;', u'Landroid/view/animation/ScaleAnimation;', u'Landroid/view/KeyEvent;', u'Ljava/io/FileOutputStream;', u'Lcom/admob/android/ads/d$1;', u'Lcom/admob/android/ads/g$b;', u'Landroid/view/animation/AccelerateDecelerateInterpolator;', u'Lcom/admob/android/ads/f;', u'Landroid/view/animation/Animation;', u'Ljava/util/concurrent/Executors;', u'Landroid/graphics/Matrix;', u'Landroid/view/WindowManager$LayoutParams;', u'Lcom/admob/android/ads/d$d;', u'Landroid/view/animation/Transformation;', u'Landroid/widget/ProgressBar;', u'Landroid/view/animation/TranslateAnimation;', u'Lcom/admob/android/ads/n;', u'La\n---\nADDED set([u'Lloongmobile/WeatherForecast/WebserviceHelper$ForecastParseException;', u'Landroid/widget/ListView;'])"
+p45
+sg5
+S'CHANGED (JI 38.59%)'
+p46
+sg7
+F38.590000000000003
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/admob/android/ads/e;->a(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Lorg/json/JSONObject; Lcom/admob/android/ads/h;)Lcom/admob/android/ads/r;', u'Lcom/admob/android/ads/i;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Lcom/admob/android/ads/h; I Ljava/util/Map; Ljava/lang/String;)V', u'Lcom/admob/android/ads/d$e;-><init>(Ljava/lang/String; Z)V', u'Lcom/admob/android/ads/AdView;->setRequestInterval(I)V', u'Lcom/admob/android/ads/AdView;->a(Landroid/content/Context;)Z', u'Lcom/admob/android/ads/u;-><init>()V', u'Lcom/admob/android/ads/AdView;->a()V', u'Lcom/admob/android/ads/AdView;->c(Lcom/admob/android/ads/AdView; Lcom/admob/android/ads/g;)Lcom/admob/android/ads/g;', u'Lcom/admob/android/ads/g$c;-><init>(Lcom/admob/android/ads/g;)V', u'Lcom/admob/android/ads/AdView;->isGoneWithoutAd()Z', u'Lcom/admob/android/ads/d;->a(Landroid/os/Bundle; Ljava/lang/String; Lorg/json/JSONArray;)V', u'Lcom/admob/android/ads/AdView;->c()Z', u'Lcom/admob/android/\n---\nADDED set([u'Lloongmobile/WeatherForecast/WebserviceHelper;->updateForecasts(Landroid/content/Context; Landroid/net/Uri; I)V', u'Lloongmobile/WeatherForecast/WebserviceHelper$ForecastParseException;-><init>(Ljava/lang/String; Ljava/lang/Throwable;)V', u'Lloongmobile/WeatherForecast/WebserviceHelper$ForecastParseException;-><init>(Ljava/lang/String;)V', u'Lloongmobile/WeatherForecast/ForecastUtils;->notificationAdd(Landroid/content/Context; Ljava/lang/String;)V', u'Lloongmobile/WeatherForecast/ForecastUtils;->notificationCancel(Landroid/content/Context;)V', u'Lloongmobile/WeatherForecast/WebserviceHelper;->parseResponse(Landroid/content/Context; Ljava/lang/String;)Ljava/util/List;', u'Lloongmobile/WeatherForecast/WebserviceHelper;->queryLocation(Landroid/content/Context; Ljava/lang/String;)Ljava/util/List;'])"
+p48
+sg5
+S'CHANGED (JI 18.2%)'
+p49
+sg7
+F18.199999999999999
+sa(dp50
+g3
+S"\nDELETED set([u'Lloongmobile/WeatherForecast/WebserviceHelper;->update(Landroid/content/Context; Landroid/net/Uri;)V', u'Lloongmobile/WeatherForecast/DetailsActivity;->update()V', u'Lloongmobile/WeatherForecast/WebserviceHelper;->parseResponseToGetUpgradeInfo(Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;', u'Lloongmobile/WeatherForecast/ForecastUtils;->formatStringWrap(Ljava/lang/String;)Ljava/lang/String;', u'Lloongmobile/WeatherForecast/DetailsActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z', u'Lloongmobile/WeatherForecast/ForecastProvider;->hasEntry(Landroid/database/sqlite/SQLiteDatabase; Ljava/lang/String;)Z', u'Lloongmobile/WeatherForecast/ForecastUtils;->AdNotificationCancel(Landroid/content/Context;)V', u'Lloongmobile/WeatherForecast/ForecastUtils;->upgradeNotificationCancel(Landroid/content/Context;)V', u'Lloongmobile/WeatherForecast/WebserviceHelper;->parseResponseToGetAlmanac(Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;', u'Lloongmobile/Weath\n---\nADDED set([u'Lloongmobile/WeatherForecast/WebserviceHelper;->updateForecasts(Landroid/content/Context; Landroid/net/Uri; I)V', u'Lloongmobile/WeatherForecast/ForecastUtils;->notificationAdd(Landroid/content/Context; Ljava/lang/String;)V', u'Lloongmobile/WeatherForecast/ForecastUtils;->notificationCancel(Landroid/content/Context;)V', u'Lloongmobile/WeatherForecast/WebserviceHelper;->parseResponse(Landroid/content/Context; Ljava/lang/String;)Ljava/util/List;', u'Lloongmobile/WeatherForecast/WebserviceHelper;->queryLocation(Landroid/content/Context; Ljava/lang/String;)Ljava/util/List;'])"
+p51
+sg5
+S'CHANGED (JI 77.66%)'
+p52
+sg7
+F77.659999999999997
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/admob/android/ads/AdView;->startAnimation(Landroid/view/animation/Animation;)V', u'Lcom/admob/android/ads/i;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Lcom/admob/android/ads/h; I Ljava/util/Map; Ljava/lang/String;)V', u'Lcom/admob/android/ads/d$e;-><init>(Ljava/lang/String; Z)V', u'Lcom/admob/android/ads/AdView;->invalidate()V', u'Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;', u'Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V', u'Lcom/admob/android/ads/AdView;->a(Landroid/content/Context;)Z', u'Lcom/admob/android/ads/u;-><init>()V', u'Lcom/admob/android/ads/AdView;->a()V', u'Ljava/lang/StringBuilder;-><init>()V', u'Lcom/admob/android/ads/AdView;->c()Z', u'Landroid/view/animation/AlphaAnimation;-><init>(F F)V', u'Landroid/view/animation/ScaleAnimation;-><init>(F F F F F F)V', u'Lcom/admob/android/ads/d;->c(Lorg/json/JSONObject;)Z', u'Ljava/lang/String;->length()I', u'Landroid/webkit/WebSettings;->setUserAgentString(Ljava/lan\n---\nADDED set([u'Lloongmobile/WeatherForecast/WebserviceHelper;->updateForecasts(Landroid/content/Context; Landroid/net/Uri; I)V', u'Lloongmobile/WeatherForecast/WebserviceHelper$ForecastParseException;-><init>(Ljava/lang/String; Ljava/lang/Throwable;)V', u'Lloongmobile/WeatherForecast/ForecastUtils;->notificationAdd(Landroid/content/Context; Ljava/lang/String;)V', u'Lloongmobile/WeatherForecast/ForecastUtils;->notificationCancel(Landroid/content/Context;)V', u'Landroid/text/format/Time;->set(J)V', u'Lloongmobile/WeatherForecast/WebserviceHelper;->parseResponse(Landroid/content/Context; Ljava/lang/String;)Ljava/util/List;', u'Lloongmobile/WeatherForecast/WebserviceHelper$ForecastParseException;-><init>(Ljava/lang/String;)V', u'Lloongmobile/WeatherForecast/DetailsActivity;->getResources()Landroid/content/res/Resources;', u'Lloongmobile/WeatherForecast/DetailsActivity;->getListView()Landroid/widget/ListView;', u'Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemCl"
+p54
+sg5
+S'CHANGED (JI 26.08%)'
+p55
+sg7
+F26.079999999999998
+sa(dp56
+g3
+S"\nDELETED set([u'Lorg/json/JSONObject;->optDouble(Ljava/lang/String; D)D', u'Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;', u'Lloongmobile/WeatherForecast/WebserviceHelper;->parseResponseToGetUpgradeInfo(Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;', u'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;', u'Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V', u'Lloongmobile/WeatherForecast/ForecastUtils;->formatStringWrap(Ljava/lang/String;)Ljava/lang/String;', u'Ljava/util/Date;->toString()Ljava/lang/String;', u'Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent; I)Landroid/content/pm/ResolveInfo;', u'Ljava/lang/StringBuilder;-><init>()V', u'Landroid/os/Bundle;->putLong(Ljava/lang/String; J)V', u'Lorg/json/JSONObject;->optBoolean(Ljava/lang/String; Z)Z', u'Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;', u'Lloongmobile/WeatherForecast/Foreca\n---\nADDED set([u'Lloongmobile/WeatherForecast/WebserviceHelper;->updateForecasts(Landroid/content/Context; Landroid/net/Uri; I)V', u'Lloongmobile/WeatherForecast/ForecastUtils;->notificationAdd(Landroid/content/Context; Ljava/lang/String;)V', u'Lloongmobile/WeatherForecast/ForecastUtils;->notificationCancel(Landroid/content/Context;)V', u'Landroid/text/format/Time;->set(J)V', u'Lloongmobile/WeatherForecast/WebserviceHelper;->parseResponse(Landroid/content/Context; Ljava/lang/String;)Ljava/util/List;', u'Lloongmobile/WeatherForecast/DetailsActivity;->getResources()Landroid/content/res/Resources;', u'Lloongmobile/WeatherForecast/DetailsActivity;->getListView()Landroid/widget/ListView;', u'Lloongmobile/WeatherForecast/WebserviceHelper;->queryLocation(Landroid/content/Context; Ljava/lang/String;)Ljava/util/List;'])"
+p57
+sg5
+S'CHANGED (JI 68.23%)'
+p58
+sg7
+F68.230000000000004
+sa(dp59
+g3
+S"\nDELETED set([u'Could not read basic animation: could not interpret keyPath(', u' from now.', u'android.permission.INTERNET', u'isGoneWithoutAd', u'\\u6d88\\u606f\\u901a\\u77e5', u' ', u'could not open connection to url ', u'tv', u'tt', u'to', u'tf', u'ta', u': ', u'rc', u'P', u'getPublisherId returning null publisher id.  Please set the publisher id in AndroidManifest.xml or using AdManager.setPublisherId(String)', u'Cannot requestFreshAd() when the AdView is not visible.  Call AdView.setVisibility(View.VISIBLE) first.', u'com.admob.android.ads', u'exception caught in AdMobURLConnector.run(), ', u'http://r.admob.com/ad_source.php', u'Trying to get locations from GPS.', u'CLICK_TO_CANVAS', u'exception caught in Ad$ViewAdd.run(), ', u'onSaveInstanceState()', u'onFocusChanged(', u'video', u'Ad response came from server ', u'Ad clicked.', u'Refreshes must be at least ', u'bdc', u'url was null', u' y=', u'backgroundColor', u'AdView.setRequestInterval(', u'Unhandled exception placing AdContainer into Ad\n---\nADDED set([u', in ', u'Requesting next update at ', u'/weather_forwidget2.php?p=%s&v=%s&city=%s', u'?from=20101', u'CREATE TABLE appwidgets (_id INTEGER PRIMARY KEY,location TEXT,lastUpdated INTEGER,configured INTEGER);', u'Calculated next update too early, throttling for a few minutes'])"
+p60
+sg5
+S'CHANGED (JI 27.93%)'
+p61
+sg7
+F27.93
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/admob/android/ads/o;->e Ljava/util/Properties; [access_flags=private]\\n', 'Lcom/admob/android/ads/d;->D Lcom/admob/android/ads/d$b; [access_flags=private]\\n', 'Lcom/admob/android/ads/o;->b Landroid/content/Context; [access_flags=private static]\\n', 'Lcom/admob/android/ads/d$g;->b Landroid/widget/RelativeLayout$LayoutParams; [access_flags=public]\\n', 'Lcom/admob/android/ads/g;->i F [access_flags=private static]\\n', 'Lcom/admob/android/ads/g;->b Landroid/widget/ProgressBar; [access_flags=protected]\\n', 'Lcom/admob/android/ads/AdView;->n Z [access_flags=private]\\n', 'Lloongmobile/WeatherForecast/ForecastProvider;->ID_PROJECTION [Ljava/lang/String; [access_flags=private static final]\\n', 'Lcom/admob/android/ads/g;->d Ljava/util/Vector; [access_flags=private]\\n', 'Lcom/admob/android/ads/AdView$c$1;->b Lcom/admob/android/ads/AdView; [access_flags=private synthetic]\\n', 'Lcom/admob/android/ads/d;->F D [access_flags=private]\\n', 'Lcom/admob/android/ads/d;->g Landroid/graphics/PointF\n---\nADDED set([])"
+p63
+sg5
+S'CHANGED (JI 16.97%)'
+p64
+sg7
+F16.969999999999999
+sa.

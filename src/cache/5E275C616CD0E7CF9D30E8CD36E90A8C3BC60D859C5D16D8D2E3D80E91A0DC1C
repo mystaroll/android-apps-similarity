@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.android.launcher.permission.INSTALL_SHORTCUT', 'android.permission.ACCESS_WIFI_STATE', 'android.permission.READ_PHONE_STATE', 'android.permission.WRITE_EXTERNAL_STORAGE'])"
+p24
+sg5
+S'CHANGED (JI 50.0%)'
+p25
+sg7
+F50
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.nutuo.UsnTslwn', 'com.nutuo.woton.rauvw.UlwuAser'])"
+p33
+sg5
+S'CHANGED (JI 71.43%)'
+p34
+sg7
+F71.430000000000007
+sa(dp35
+g3
+S"\nDELETED set(['META-INF/CERT.DSA'])\n---\nADDED set(['assets/Zhuamob_sdk_v1.8.2.version', 'assets/img.dat', 'assets/pfzip', 'META-INF/CERT.RSA', 'assets/l/l.dat'])"
+p36
+sg5
+S'CHANGED (JI 94.59%)'
+p37
+sg7
+F94.590000000000003
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.nutuo.SsauVsnom', 'com.nutuo.woton.rauvw.CoukUanm'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.nutuo.woton.rauvw.TurkCoue', 'com.nutuo.ZuwoRsum'])"
+p42
+sg5
+S'CHANGED (JI 33.33%)'
+p43
+sg7
+F33.329999999999998
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/nutuo/e/e;', u'Lcom/nutuo/c;', u'Lcom/nutuo/b/l;', u'Lcom/nutuo/f/c;', u'Landroid/graphics/Canvas;', u'Lorg/apache/http/Header;', u'Lcom/nutuo/f/k;', u'Lcom/nutuo/c/h;', u'Landroid/widget/BaseAdapter;', u'Lcom/nutuo/woton/d;', u'Landroid/graphics/drawable/BitmapDrawable;', u'Lcom/nutuo/b/e;', u'Lorg/apache/http/message/BasicNameValuePair;', u'Lcom/nutuo/b/h;', u'Lcom/nutuo/woton/rauvw/VsinKoan;', u'Landroid/os/Message;', u'Lcom/nutuo/a/f;', u'Lcom/nutuo/d/e;', u'Lcom/nutuo/c/e;', u'Lcom/nutuo/g;', u'Lcom/nutuo/f/b;', u'Lcom/nutuo/woton/rauvw/b;', u'Lcom/nutuo/d/c;', u'Ljava/io/BufferedWriter;', u'Lcom/nutuo/f/j;', u'Lcom/nutuo/e/b;', u'Landroid/widget/TableRow$LayoutParams;', u'Lorg/apache/http/client/methods/HttpGet;', u'Lcom/nutuo/k;', u'Lcom/nutuo/b/d;', u'Lcom/nutuo/p;', u'Landroid/graphics/NinePatch;', u'Landroid/widget/RemoteViews;', u'Landroid/os/AsyncTask;', u'Ljava/security/NoSuchAlgorithmException;', u'Ljava/util/zip/ZipInputStream;', u'Landroid/widget/Gallery$Lay"
+p45
+sg5
+S'CHANGED (JI 75.11%)'
+p46
+sg7
+F75.109999999999999
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/nutuo/f/d;-><init>(Lcom/nutuo/f/a;)V', u'Lcom/nutuo/f/m;->a(Landroid/graphics/drawable/Drawable;)V', u'Lcom/nutuo/e/h;->b(Landroid/content/Context; Ljava/lang/String; I)Ljava/io/File;', u'Lcom/nutuo/WsunHsun;->setLChId(Landroid/content/Context; Ljava/lang/String;)V', u'Lcom/nutuo/f/f;-><init>(Lcom/nutuo/f/e;)V', u'Lcom/nutuo/e/h;->d(Landroid/content/Context;)Ljava/lang/String;', u'Lcom/nutuo/d/a;->b(Landroid/content/Context; Lcom/nutuo/d/h;)Landroid/content/Intent;', u'Lcom/nutuo/woton/rauvw/VsinKoan;-><init>()V', u'Lcom/nutuo/d/c;-><init>(Lcom/nutuo/d/b; Lcom/nutuo/d/h;)V', u'Lcom/nutuo/f/i;->a()Ljava/util/List;', u'Lcom/nutuo/b/g;->a(Landroid/content/Context;)Ljava/lang/String;', u'Lcom/nutuo/e/h;->b(Ljava/lang/String; Ljava/lang/String;)Z', u'Lcom/nutuo/e/h;->a(Landroid/content/Context; Ljava/io/File; I)Landroid/content/Intent;', u'Lcom/nutuo/e/h;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; I)V', u'Lcom/nutuo/woton/rauvw/a;-><init>()V', u'Lcom/nutu"
+p48
+sg5
+S'CHANGED (JI 75.84%)'
+p49
+sg7
+F75.840000000000003
+sa(dp50
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/unity3d/player/UnityPlayerProxyActivity;->toStuo()V', u'Lcom/unity3d/player/UnityPlayerProxyActivity;->toStart()V'])"
+p51
+sg5
+S'CHANGED (JI 99.88%)'
+p52
+sg7
+F99.879999999999995
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/nutuo/e/h;->d(Ljava/lang/String;)Z', u'Ljava/util/Random;-><init>()V', u'Lcom/nutuo/f/d;-><init>(Lcom/nutuo/f/a;)V', u'Lcom/nutuo/woton/d;->a(Ljava/lang/String; Ljava/lang/Object; Ljava/lang/Class;)Ljava/lang/Object;', u'Lcom/nutuo/e/h;->l(Landroid/content/Context;)Z', u'Lcom/nutuo/f/m;->a(Landroid/graphics/drawable/Drawable;)V', u'Lcom/nutuo/e/h;->b(Landroid/content/Context; Ljava/lang/String; I)Ljava/io/File;', u'Lcom/nutuo/WsunHsun;->setLChId(Landroid/content/Context; Ljava/lang/String;)V', u'Lcom/nutuo/f/f;-><init>(Lcom/nutuo/f/e;)V', u'Lcom/nutuo/f/i;-><init>(Lcom/nutuo/f/n;)V', u'Lcom/nutuo/e/b;->a(I)[B', u'Ljava/util/zip/GZIPOutputStream;->write([B)V', u'Lcom/nutuo/e/h;->d(Landroid/content/Context;)Ljava/lang/String;', u'Lcom/nutuo/UsnTslwn;->onCreate(Landroid/os/Bundle;)V', u'Lcom/nutuo/ZuwoRsum;->onReceive(Landroid/content/Context; Landroid/content/Intent;)V', u'Lcom/nutuo/d/a;->b(Landroid/content/Context; Lcom/nutuo/d/h;)Landroid/content/Intent;', u'Lcom/nutuo/k;-"
+p54
+sg5
+S'CHANGED (JI 75.6%)'
+p55
+sg7
+F75.599999999999994
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;', u'Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z', u'Landroid/app/Activity;->getPackageName()Ljava/lang/String;', u'Landroid/widget/Button;->setTextColor(I)V', u'Ljava/io/BufferedOutputStream;->write([B)V', u'Landroid/widget/ImageView;->setClickable(Z)V', u'Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;', u'Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V', u'Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;', u'Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V', u'Landroid/widget/Button;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V', u'Ljava/lang/String;->toUpperCase()Ljava/lang/String;', u'Ljava/io/File;->getAbsoluteFile()Ljava/io/File;', u'Landroid/net/NetworkInfo;->getState()Landroid/net/NetworkInfo$State;', u'Landroid/content/Context;->unregisterRec"
+p57
+sg5
+S'CHANGED (JI 95.39%)'
+p58
+sg7
+F95.390000000000001
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'DROP TABLE IF EXISTS ldownloads', u'1.0.4', u's\\u4e55\\u8f9a\\u5bb3\\u6239e', u's\\u7f9b\\u7ef9\\u8ffb\\u5707\\u65db\\u70ff\\u6579\\u6393\\u4e5f\\u6bb1\\u78c0e', u's\\x9da\\u5388\\u5b81\\u50d6\\u7ac0\\u95fd\\u4e32\\u8e05\\uff5a\\u8c49\\u523a\\u968f\\u4e1f\\u4ea4\\u6593\\u4f53\\u4e93\\u5458\\u5199\\u91e1\\u8c31\\uff22e', u's\\u7292\\u6749\\uff41e', u'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)', u's\\u5250\\u4ec8\\u7f00\\u6734\\u53f9e', u's\\u4e55\\u8f9a\\u4e54W\\te', u'manager', u'url = ? and file = ?', u'afin', u'asacn', u', captureUrls=', u'Cannot decode null source array.', u'asac', u's\\xb6\\x87\\x92\\x88\\xa2\\xb5p\\x8c\\xbe\\xb3\\xb1\\x80\\x97\\x80pk\\xcd\\xba\\xafre', u'30238c874f0a4462a8f8cc58022fb7c0', u'android.intent.action.CREATE_SHORTCUT', u', bannerImageUrl=', u's\\u6757\\u52be\\u568f\\u4e36\\u655d\\u6347\\u65b6\\u70de\\uff5e\\u921b\\u6602\\u4e25\\u8fa8e', u'android.intent.action.PACKAGE_ADDED', u'shortcut', u'chid--"
+p60
+sg5
+S'CHANGED (JI 78.81%)'
+p61
+sg7
+F78.810000000000002
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/nutuo/e/c;->M Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/nutuo/l;->d Lcom/nutuo/d/h; [access_flags=private]\\n', 'Lcom/nutuo/woton/rauvw/b;->e [B [access_flags=private static final]\\n', 'Lcom/nutuo/b/g;->c Ljava/lang/String; [access_flags=public]\\n', 'Lcom/nutuo/b/g;->v Ljava/lang/String; [access_flags=private static]\\n', 'Lcom/nutuo/UsnTslwn;->f Landroid/view/animation/TranslateAnimation; [access_flags=private]\\n', 'Lcom/nutuo/b/g;->b Ljava/lang/String; [access_flags=public]\\n', 'Lcom/nutuo/e/c;->ae Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/nutuo/d/h;->t Ljava/lang/String; [access_flags=public]\\n', 'Lcom/nutuo/f/a;->c Landroid/widget/LinearLayout; [access_flags=private]\\n', 'Lcom/nutuo/e/c;->o Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/nutuo/woton/rauvw/c;->b Ljava/lang/String; [access_flags=static]\\n', 'Lcom/nutuo/d/g;->a Ljava/lang/String; [access_flags=public]\\n', 'Lcom/nutuo/f/a;->J Landroid/widget/ImageView"
+p63
+sg5
+S'CHANGED (JI 69.09%)'
+p64
+sg7
+F69.090000000000003
+sa.

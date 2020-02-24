@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.ACCESS_FINE_LOCATION', 'android.permission.READ_PHONE_STATE', 'android.permission.SYSTEM_ALERT_WINDOW', 'com.android.launcher.permission.INSTALL_SHORTCUT', 'android.permission.ACCESS_COARSE_LOCATION', 'android.permission.WAKE_LOCK', 'android.permission.GET_TASKS'])"
+p24
+sg5
+S'CHANGED (JI 41.67%)'
+p25
+sg7
+F41.670000000000002
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set(['com.google.ads.AdActivity'])\n---\nADDED set(['com.transfer.srcut.Sa', 'com.transfer.analysis.DisplayActivity', 'com.transfer.madserve.Ta', 'com.transfer.analysis.MyActivity', 'com.transfer.tool.Ca'])"
+p33
+sg5
+S'CHANGED (JI 25.0%)'
+p34
+sg7
+F25
+sa(dp35
+g3
+S"\nDELETED set(['META-INF/FRUITSMO.SF', 'META-INF/FRUITSMO.RSA'])\n---\nADDED set([u'lib/armeabi/libUIL.so', u'assets/n.img', u'META-INF/CERT.SF', u'assets/pc/icp.dat', u'lib/x86/libUIL.so', u'META-INF/CERT.RSA'])"
+p36
+sg5
+S'CHANGED (JI 84.31%)'
+p37
+sg7
+F84.310000000000002
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.transfer.madserve.Ts', 'com.transfer.srcut.Ss', 'com.transfer.analysis.MyService', 'com.transfer.tool.Cs'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.android.feedback.FeedbackReceiver', 'com.transfer.srcut.Sr', 'com.transfer.analysis.bk', 'com.transfer.tool.Cr', 'com.transfer.madserve.Tr', 'com.transfer.analysis.AlarmReceiver', 'com.transfer.analysis.MyReceiver'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Ljava/io/DataInput;', u'Lcom/google/ads/g;', u'Lcom/google/ads/util/i$a;', u'[Lcom/google/ads/ai$b;', u'Ljava/lang/ref/WeakReference;', u'Lcom/flurry/android/InstallReceiver;', u'Lcom/google/ads/util/i$d;', u'Lcom/flurry/android/k;', u'Lcom/google/ads/g$a;', u'Lcom/google/ads/util/g$b;', u'Lcom/flurry/android/t;', u'Lcom/google/ads/util/b$a;', u'Lcom/google/ads/internal/AdWebView;', u'Lcom/flurry/android/c;', u'Lcom/google/ads/internal/c$e;', u'Lcom/google/ads/util/f;', u'[Lcom/google/ads/util/b$a;', u'Lcom/google/ads/s;', u'Lcom/google/ads/ae;', u'Lcom/flurry/android/d;', u'Lcom/google/ads/internal/h;', u'Lcom/google/ads/ai$a;', u'Lcom/google/ads/internal/c$d;', u'Ljava/lang/UnsupportedOperationException;', u'Lcom/google/ads/a;', u'Lcom/google/ads/e$8;', u'Lcom/flurry/android/ah;', u'Lcom/google/ads/internal/i;', u'Lcom/google/ads/internal/a;', u'Lcom/google/ads/c$1;', u'Lcom/google/ads/util/g$a$1;', u'Lcom/google/ads/mediation/customevent/CustomEventExtras;', u'Lcom/flurry/and\n---\nADDED set([u'Lcom/transfer/tool/b/f;', u'Lcom/transfer/srcut/Sa;', u'Lcom/transfer/tool/b/r;', u'Lcom/android/feedback/d;', u'Lcom/transfer/srcut/c/f;', u'Lcom/transfer/analysis/bk;', u'Lcom/transfer/tool/a/e;', u'Lcom/transfer/tool/c/a;', u'Lcom/transfer/tool/d/i;', u'Lcom/transfer/madserve/al;', u'Lcom/transfer/madserve/n;', u'Lcom/transfer/tool/d;', u'Lcom/transfer/madserve/e;', u'Lcom/transfer/analysis/w;', u'Lcom/transfer/analysis/bh;', u'Lcom/transfer/madserve/w;', u'Lcom/transfer/analysis/a;', u'Lcom/transfer/analysis/ui/k;', u'Lcom/transfer/tool/o;', u'Lcom/transfer/analysis/AlarmReceiver;', u'Lcom/transfer/madserve/d/c;', u'Lcom/transfer/madserve/p;', u'Lcom/transfer/srcut/f;', u'Lcom/transfer/madserve/ac;', u'Lcom/transfer/tool/d/r;', u'Lcom/transfer/tool/d/g;', u'Ljava/util/zip/GZIPOutputStream;', u'Lcom/transfer/madserve/aq;', u'Lcom/transfer/tool/y;', u'Lcom/transfer/tool/q;', u'Lcom/transfer/srcut/a/a;', u'Lcom/transfer/tool/v;', u'Lcom/transfer/analysis/h;', u'Lcom/transfer/ma"
+p45
+sg5
+S'CHANGED (JI 42.39%)'
+p46
+sg7
+F42.390000000000001
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/google/ads/util/b;->d(Ljava/lang/String;)V', u'Lcom/google/ads/internal/d;->a(J)V', u'Lcom/google/ads/internal/d;->p()Z', u'Lcom/google/ads/AdActivity;->b(Ljava/util/HashMap; Lcom/google/ads/internal/d;)V', u'Lcom/flurry/android/w;-><init>()V', u'Lcom/google/ads/internal/i;->onPageFinished(Landroid/webkit/WebView; Ljava/lang/String;)V', u'Lcom/google/ads/util/b;->c(Ljava/lang/String;)V', u'Lcom/google/ads/e$4;->run()V', u'Lcom/flurry/android/FlurryAgent;->e(Lcom/flurry/android/FlurryAgent;)Lcom/flurry/android/v;', u'Lcom/google/ads/e$1;-><init>(Lcom/google/ads/e; Lcom/google/ads/c; Lcom/google/ads/AdRequest;)V', u'Lcom/google/ads/internal/a;->a(Landroid/net/Uri; Ljava/util/HashMap;)Ljava/lang/String;', u'Lcom/google/ads/internal/AdWebView;->d()Lcom/google/ads/AdActivity;', u'Lcom/google/ads/AdRequest$ErrorCode;->valueOf(Ljava/lang/String;)Lcom/google/ads/AdRequest$ErrorCode;', u'Lcom/google/ads/k;->onReceivedAd(Lcom/google/ads/med\n---\nADDED set([u'Lcom/transfer/tool/e/h;->b(Ljava/lang/String; Ljava/lang/String;)Z', u'Lcom/transfer/tool/h;-><init>(Lcom/transfer/tool/g;)V', u'Lcom/transfer/madserve/x;->a()Z', u'Lcom/transfer/madserve/b/e;->toString()Ljava/lang/String;', u'Lcom/transfer/srcut/f;-><init>()V', u'Lcom/transfer/tool/u;-><init>(Lcom/transfer/tool/s;)V', u'Lcom/transfer/tool/y;->a(Lcom/transfer/tool/y;)Landroid/content/Context;', u'Lcom/transfer/analysis/am;->b()Ljava/lang/String;', u'Lcom/transfer/analysis/bh;-><init>()V', u'Lcom/transfer/tool/a/h;->a(Ljava/lang/String;)V', u'Lcom/transfer/tool/b/f;-><init>()V', u'Lcom/transfer/madserve/i;->d()V', u'Lcom/transfer/analysis/ao;->onPostExecute(Ljava/lang/Object;)V', u'Lcom/transfer/madserve/a;-><init>()V', u'Lcom/transfer/srcut/b/g;->b(Ljava/lang/Class; Ljava/lang/String;)[Lcom/transfer/srcut/b/c;', u'Lcom/transfer/tool/l;->handleMessage(Landroid/os/Message;)V', u'Lcom/transfer/analysis/a/h;->a()V', u'Lcom/transfer/tool/f;->a(Landroid/content/Context;)Lcom/transfer/"
+p48
+sg5
+S'CHANGED (JI 27.21%)'
+p49
+sg7
+F27.210000000000001
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/google/ads/AdView;->stopLoading()V', u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Lcom/google/ads/util/b;->d(Ljava/lang/String;)V', u'Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/google/ads/internal/d;->a(J)V', u'Landroid/widget/VideoView;->setVideoPath(Ljava/lang/String;)V', u'Lcom/flurry/android/FlurryAgent;->e()Ljava/lang/String;', u'Lcom/google/ads/AdActivity;->b(Ljava/util/HashMap; Lcom/google/ads/internal/d;)V', u'Lcom/flurry/android/w;-><init>()V', u'Lcom/google/ads/internal/i;->onPageFinished(Landroid/webkit/WebView; Ljava/lang/String;)V', u'Lcom/google/ads/util/b;->c(Ljava/lang/String;)V', u'Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V', u'Landroid/webkit/WebSettings;->setUserAgentString(Ljava/lang/String;)V', u'Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;', u'Ljava/util/Map;->putAll(Ljava/util/Map;)V', u'Lcom/google/ads/e$4;->\n---\nADDED set([u'Lcom/transfer/madserve/x;->a()Z', u'Lcom/transfer/tool/e/h;->b(Ljava/lang/String; Ljava/lang/String;)Z', u'Lcom/transfer/tool/u;-><init>(Lcom/transfer/tool/s;)V', u'Lcom/transfer/analysis/am;->b()Ljava/lang/String;', u'Lcom/transfer/srcut/d/d;-><init>(Landroid/app/Activity;)V', u'Lcom/transfer/tool/a/h;->a(Ljava/lang/String;)V', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Lcom/transfer/madserve/a;-><init>()V', u'Lcom/transfer/analysis/a/h;->a()V', u'Lcom/transfer/tool/f;->a(Landroid/content/Context;)Lcom/transfer/tool/f;', u'Lcom/transfer/tool/e/a;->c(Landroid/content/Context; I)Landroid/graphics/drawable/Drawable;', u'Lcom/transfer/analysis/ah;->a(Lorg/json/JSONObject;)V', u'Lcom/transfer/analysis/a/h;->size()I', u'Lcom/transfer/srcut/g;->a()Lcom/transfer/srcut/g;', u'Ljava/lang/String;->toUpperCase()Ljava/lang/String;', u'Lcom/transfer/analysis/b;->b(Landroid/content/Context; Lcom/transfer/analysis/ah;)V', u'Lcom/"
+p54
+sg5
+S'CHANGED (JI 36.0%)'
+p55
+sg7
+F36
+sa(dp56
+g3
+S"\nDELETED set([u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V', u'Landroid/widget/ImageView;->setMaxHeight(I)V', u'Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I', u'Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Ljava/lang/Object;->notify()V', u'Ljava/lang/Object;->wait(J)V', u'Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent; I)Landroid/content/pm/ResolveInfo;', u'Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;', u'Landroid/util/Log;->isLoggable(Ljava/lang/String; I)Z', u'Ljava/io/IOException;-><init>(Ljava/lang/String;)V', u'Ljava/lang/Math;->round(D)J', u'Ljava/util/Set;->addAll(Ljava/util/Collection;)Z', u'Landroid/webkit/WebSettings;->setUserAgentString(Ljava/lang/String;)V', u'Ljava/lang/Integer;->toString(I I)Ljava/lang/String;', u'L\n---\nADDED set([u'Ljava/util/Random;-><init>()V', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;', u'Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z', u'Landroid/database/Cursor;->close()V', u'Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;', u'Ljava/io/FileOutputStream;->write([B I I)V', u'Ljava/lang/Math;->hypot(D D)D', u'Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;', u'Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V', u'Ljava/util/Random;->nextInt()I', u'Landroid/graphics/Canvas;->drawColor(I)V', u'Ljava/lang/NullPointerException;-><init>()V', u'Ljava/net/HttpURLConnection;->getHeaderFieldKey(I)Ljava/lang/String;', u'Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V', u'Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;', u'Landroid/graphic"
+p57
+sg5
+S'CHANGED (JI 83.72%)'
+p58
+sg7
+F83.719999999999999
+sa(dp59
+g3
+S'\nDELETED set([u\'pto\', u\'gw\', u\'Cannot find offer \', u\'isLoadAdTaskSuccessful() called when isLoadAdTaskDone() is false.\', u\'&ats=\', u\'Cannot show interstitial because it is not loaded and ready.\', u\'/video\', u\'onAdClicked()\', u\'@gw_adnetrefresh@\', u\'Cannot find hook: \', u\'Ads\', u\'android.permission.INTERNET\', u\'bad base-64\', u\'Unable to ping the URL: \', u\'GoogleAdMobDoritosLife\', u\'Using loadUrl.  adBaseUrl: \', u\'afma_notify_dt\', u"\'. Expected something starting with \'application/json\'. Aborting mediation.", u\'show\', u\'mraid_interstitial_path\', u\'mad_hac\', u\'Ad with bad image: \', u\'drt_include\', u\') ad to show interstitial: \', u\'Disabling hardware acceleration on collapsing MRAID WebView.\', u\'Unknown\', u\'http://e.admob.com/imp?ad_loc=@gw_adlocid@&qdata=@gw_qdata@&ad_network_id=@gw_adnetid@&js=@gw_sdkver@&session_id=@gw_sessid@&seq_num=@gw_seqnum@&nr=@gw_adnetrefresh@&adt=@gw_adt@&aec=@gw_aec@\', u\'Received log message: <"string": "\', u"{\'event\': \'canplaythrough\', \'duration\': \'", u\'Event count in\n---\nADDED set([u\'s\\xfc\\xf5\\xfb\\xec\\xf9e\', u\'x\\u4ea2\\u9001\\u5bff\\u6281y\', u\'s\\xf0\\u0100\\xfb\\xf0\\xce\\xb0\\xb5\\xed\\xef\\xee\\xf7\\u0108\\xa6\\xfb\\xfe\\xdf\\xdc\\xf7\\xe6\\xef\\xc2\\xe3\\xef\\xb2\\xeb\\xe8\\xf8\\xfb\\xef\\xa8\\xfc\\xf5\\u010c\\xb3\\xf4\\xf5\\xfa\\xe5\\u0107\\xe1e\', u\'x\\xd4\\xbe\\u53e4\\u5bcc\\u511f\\u7b07\\u9665\\u4e86\\u8e4f\\uff87\\u8c88\\u52b0\\u96d8\\u4e81\\u4f1b\\u65f6\\u4f79\\u4ed1\\u5480\\u51fb\\u9265\\u8c53\\uff86y\', u\'x\\xd2\\xd8\\xf4\\xe6\\xea\\xee\\xe1y\', u\'&packageName=\', u\'s\\xeb\\xf4\\xe8\\xee\\u0102\\xe6\\xf2\\xb9\\xf4\\xe5e\', u\'\\uff1a\', u\'s\\xcb\\xf4\\xe8\\xf2\\u0107\\xe6\\xfae\', u\'getMessage\', u\'x\\uff9e\\u6196\\u8a45\\u4ea7\\u95a8\\uff8d\\u72f3\\u6192\\u641c\\u83c7\\u7f66\\u4fd1\\uff7a\\u4ea7\\u8ff8\\u57c1\\u57d0\\uff8ey\', u\' [\', u\'x\\xd2\\xd7\\xdd\\xf1\\xd9\\xf9\\xe5y\', u\'s\\xf6\\xf1\\xfb\\xf7\\u0103\\xf3\\xf1\\xeb\\xf4\\xef\\xf4\\u0109e\', u\'s\\xfe\\xf5\\xfa\\xe9\\xf6\\xea\\xf2\\xf5\\xff\\xfae\', u\'\\xdb\\xd2\\xd2\\xdd\\xd4\\xbd\\xd4\\xdb\\xdd\\xbf\\xe1\\xd0\\xe9\\x93\', u\'  \', u\'x\\xd9\\xe3\\xc3y\', u\' %\', u\'\\xcb\', u\'getSerialNumberForUser\', u\'x\\u67a7\\u533c\\u56f5\\u4ea2\\u65b7\\u6393\\u6624\\u7135\\uffa6\\u925c'
+p60
+sg5
+S'CHANGED (JI 32.26%)'
+p61
+sg7
+F32.259999999999998
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/google/ads/internal/g;->l Z [access_flags=private]\\n', 'Lcom/google/ads/internal/g;->a Ljava/util/LinkedList; [access_flags=private final]\\n', 'Lcom/google/ads/ag;->a Lcom/google/ads/internal/a; [access_flags=private static final]\\n', 'Lcom/google/ads/af;->d [Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/google/ads/util/g$a$4;->a Landroid/webkit/JsPromptResult; [access_flags=synthetic final]\\n', 'Lcom/flurry/android/v;->p Z [access_flags=private]\\n', 'Lcom/google/ads/ag$c;->a Z [access_flags=private final]\\n', 'Lcom/google/ads/j;->b Z [access_flags=private]\\n', 'Lcom/flurry/android/ab;->b J [access_flags=0x0]\\n', 'Lcom/flurry/android/a;->d Ljava/lang/String; [access_flags=0x0]\\n', 'Lcom/google/ads/internal/g;->f J [access_flags=private static]\\n', 'Lcom/google/ads/internal/a;->c Ljava/util/Map; [access_flags=public static final]\\n', 'Lcom/flurry/android/o;->e Z [access_flags=private]\\n', 'Lcom/google/ads/ag$a;->b Landroid/content/SharedPreferences$Editor; [\n---\nADDED set(['Lcom/transfer/madserve/h;->aY Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/transfer/tool/m;->f I [access_flags=private]\\n', 'Lcom/transfer/madserve/b/e;->i Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/transfer/analysis/b/b;->a Ljava/util/Map; [access_flags=private static]\\n', 'Lcom/transfer/analysis/ui/i;->u Landroid/view/View$OnClickListener; [access_flags=private]\\n', 'Lcom/transfer/analysis/MyManager;->manager Lcom/transfer/analysis/MyManager; [access_flags=private static]\\n', 'Lcom/transfer/srcut/c/b;->aX Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/transfer/tool/Cm;->id Ljava/lang/String; [access_flags=private]\\n', 'Lcom/transfer/madserve/h;->P Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/transfer/analysis/s;->N I [access_flags=protected]\\n', 'Lcom/transfer/tool/m;->c Landroid/os/Handler; [access_flags=private]\\n', 'Lcom/transfer/analysis/a;->c Landroid/content/Context; [access_flags=private]\\n', 'Lc"
+p63
+sg5
+S'CHANGED (JI 19.51%)'
+p64
+sg7
+F19.510000000000002
+sa.

@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 6!=18975'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 1.03!=1.0 (Build 1445)'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 8!=10'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: None!=17'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 8!=17'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set(['android.permission.CHANGE_NETWORK_STATE', 'android.permission.READ_EXTERNAL_STORAGE', 'com.jie.GameEmpireUniverse.hohopay.permission.JPUSH_MESSAGE', 'android.permission.ACCESS_WIFI_STATE', 'android.permission.READ_PHONE_STATE', 'android.permission.VIBRATE', 'android.permission.RECEIVE_USER_PRESENT', 'android.permission.SYSTEM_ALERT_WINDOW', 'android.permission.ACCESS_LOCATION_EXTRA_COMMANDS', 'android.permission.WAKE_LOCK', 'android.permission.GET_TASKS', 'android.permission.CHANGE_WIFI_STATE', 'android.permission.MOUNT_UNMOUNT_FILESYSTEMS'])\n---\nADDED set(['com.android.vending.BILLING'])"
+p24
+sg5
+S'CHANGED (JI 26.32%)'
+p25
+sg7
+F26.32
+sa(dp26
+g3
+S'DIFFERENT: com.jie.GameEmpireUniverse.hohopay!=com.sonybmg.pinballrockshd'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: \xe6\x98\x9f\xe9\x99\x85\xe5\xb8\x9d\xe5\x9b\xbd!=Pinball Rocks'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.jie.GameEmpireUniverse.hohopay..StartActivity', 'com.jie.GameEmpireUniverse.hohopay..GameNotifyCenter', 'com.jie.GameEmpireUniverse.hohopay..wxapi.WXEntryActivity', 'cn.jpush.android.ui.PushActivity', 'com.jie.GameEmpireUniverse.hohopay..GameEmpireUniverse', 'cn.sharesdk.framework.ShareSDKUIShell'])\n---\nADDED set(['com.sonybmg.pinballrockshd.RockPinballSplash', 'com.playhaven.src.publishersdk.content.PHContentView', 'com.sonybmg.pinballrockshd.RockPinballActivity', 'v2.com.playhaven.interstitial.PHInterstitialActivity', 'com.scoreloop.client.android.core.ui.ProxyActivity', 'com.sessionm.ui.SessionMActivity'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set(['assets/Ui_resources/chuan_wu.png', 'assets/Ui_resources/logo_star_4.png', 'assets/Ui_resources/world_scene_island.png', 'assets/RightShipNode19.ccbi', 'res/drawable-xhdpi/ic_launcher.png', 'assets/Ui_resources/port_effect.pvr.ccz', 'res/drawable-hdpi/dialog_cut_line.png', 'assets/CharacterLayer.ccbi', 'assets/PointsNode.ccbi', 'assets/LeftShipNode8.ccbi', 'assets/Ui_resources/port_effect.plist', 'assets/fight3.mp3', 'assets/background.mp3', 'assets/CharacterBar.ccbi', 'res/drawable-hdpi/refresh.9.png', 'res/drawable-xhdpi/logo_shortmessage.png', 'assets/Marker Felt.ttf', 'assets/ShipmxLayer.ccbi', 'assets/LeftAni.ccbi', 'assets/Ui_resources/logo_star_6.png', 'assets/Ui_resources/logo_ch_bg.png', 'assets/HomeLayer.ccbi', 'assets/PointsShipNode.ccbi', 'assets/Zhihuizhongxin1.ccbi', 'assets/LeftShipNode5.ccbi', 'assets/SetFleetSelectNode.ccbi', 'assets/IslandStateLayer.ccbi', 'assets/LeftShipNode20.ccbi', 'res/drawable-xhdpi/logo_renren.png', 'assets/Ui_resources/empty.png', 'res/la\n---\nADDED set([u'lib/armeabi-v7a/librockpinball_jni.so', u'assets/Res/banners/game_theme_3.AcDc.512.png', u'assets/Res/achievements/achievement.AcDc.007.512.png', u'assets/Res/achievements/achievement.Rock.011.512.png', u'assets/Res/banners/game_music.Slayer.512.png', u'assets/Res/banners/menu_theme.AcDc.512.png', u'assets/Res/images/PRPlayButton_09.png', u'assets/Res/achievements/achievement.001.128.png', u'assets/Res/achievements/achievement.Rock.002.128.png', u'assets/Res/images/cheats_button_multiball.png', u'assets/Res/images/vqgroup_c4.png', u'assets/Res/banners/demo_theme.AliceInChains.256.png', u'assets/Res/images/vqgroup_c8.png', u'assets/Res/banners/game_music_2.Slayer.256.png', u'assets/Res/images/cheats_button_ballsaver_hi.png', u'assets/Res/images/bv_icon.png', u'assets/Res/achievements/achievement.AcDc.012.128.png', u'assets/Res/textures/buy.256.png', u'assets/Res/images/vqbutton_back4.png', u'assets/Res/achievements/achievement.AcDc.017.128.png', u'assets/Res/achievements/achievem"
+p36
+sg5
+S'CHANGED (JI 1.39%)'
+p37
+sg7
+F1.3899999999999999
+sa(dp38
+g3
+S"\nDELETED set(['cn.jpush.android.service.DownloadService', 'cn.jpush.android.service.PushService'])\n---\nADDED set(['com.sonybmg.pinballrockshd..OBBDownloaderService'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set(['cn.jpush.android.service.PushReceiver', 'com.jie.GameEmpireUniverse.hohopay.MyReceiver', 'cn.jpush.android.service.AlarmReceiver'])\n---\nADDED set(['com.sessionm.cpi.PackageReceiver', 'com.sonybmg.pinballrockshd..OBBAlarmReceiver'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Lorg/cocos2dx/lib/Cocos2dxEditText;', u'Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;', u'Landroid/support/v4/widget/SearchViewCompatHoneycomb$1;', u'Lcom/umeng/common/net/g;', u'Lcn/sharesdk/wechat/utils/WXTextObject;', u'Lcom/umeng/common/net/a$a;', u'Lcn/sharesdk/framework/b/b/b;', u'Ljava/util/Calendar;', u'Ljava/io/UnsupportedEncodingException;', u'Lm/framework/ui/widget/asyncview/BitmapProcessor$WorkerThread$1;', u'Lcn/sharesdk/framework/utils/f;', u'Lcn/sharesdk/tencent/weibo/g$a;', u'Lcn/jpush/android/ui/h;', u'Lcom/umeng/common/net/d$b;', u'Landroid/support/v4/content/ModernAsyncTask$InternalHandler;', u'Ljava/lang/reflect/Modifier;', u'Landroid/util/AttributeSet;', u'Lm/framework/network/ResponseCallback;', u'Lm/framework/ui/widget/pulltorefresh/PullToRefreshView;', u'Lcn/sharesdk/system/email/Email$ShareParams;', u'Lm/framework/ui/widget/asyncview/BitmapProcessor;', u'Lcom/umeng/update/UpdateResponse;', u'Lm/framework/ui/widget/slidingmenu/SlidingMenu$2;'\n---\nADDED set([u'Lcom/scoreloop/client/android/core/util/Formats;', u'Lcom/sessionm/a/a/g$1;', u'Lcom/sessionm/ui/SessionMActivity;', u'Lcom/sessionm/jakewharton/DiskLruCache$Snapshot;', u'[Lcom/playhaven/src/publishersdk/content/PHPurchase$Resolution;', u'Lcom/sessionm/ui/fragment/ActivityFragment$3$1;', u'Lcom/scoreloop/client/android/core/socialprovider/twitter/c$1;', u'Lcom/scoreloop/client/android/core/model/Device$State;', u'Lcom/scoreloop/client/android/core/controller/PaymentController$a;', u'Landroid/graphics/drawable/shapes/RoundRectShape;', u'Lcom/gameprom/iab/Base64;', u'Lv2/com/playhaven/views/interstitial/PHCloseButton$1;', u'Lv2/com/playhaven/views/badge/PHBadgeRenderer;', u'Lcom/scoreloop/client/android/core/controller/PendingPaymentProcessor$b;', u'Lcom/sessionm/ui/SessionMViewContainer$2;', u'Lcom/gameprom/allpinball/AllPinballScoreLoopAgent$1;', u'Lcom/scoreloop/client/android/core/model/PaymentProvider;', u'Lv2/com/playhaven/interstitial/requestbridge/bridges/ContentRequestTo"
+p45
+sg5
+S'CHANGED (JI 10.05%)'
+p46
+sg7
+F10.050000000000001
+sa(dp47
+g3
+S"\nDELETED set([u'Landroid/support/v4/app/ListFragment;->setListShown(Z)V', u'Lcn/sharesdk/framework/authorize/AuthorizeAdapter;->getTitleLayout()Lcn/sharesdk/framework/TitleLayout;', u'Lcom/alipay/android/app/IAlixPay;->unregisterCallback(Lcom/alipay/android/app/IRemoteServiceCallback;)V', u'Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;->update(Landroid/support/v4/app/ActivityOptionsCompat;)V', u'Lcn/sharesdk/tencent/weibo/e;->e(Lcn/sharesdk/tencent/weibo/e;)Lcn/sharesdk/framework/authorize/AuthorizeListener;', u'Landroid/support/v4/app/ShareCompat$IntentReader;->getEmailCc()[Ljava/lang/String;', u'Landroid/support/v4/app/FragmentManagerImpl;->dispatchLowMemory()V', u'Lcn/sharesdk/ShareSDKUtils;->throwableToMap(Ljava/lang/Throwable;)Ljava/util/HashMap;', u'Landroid/support/v4/app/FragmentActivity$NonConfigurationInstances;-><init>()V', u'Landroid/support/v4/widget/ViewDragHelper;->processTouchEvent(Landroid/view/MotionEvent;)V', u'Landroid/support/v4/app/NavUtils$NavUtilsI\n---\nADDED set([u'Lcom/sessionm/core/Config$ServerType;->values()[Lcom/sessionm/core/Config$ServerType;', u'Lcom/scoreloop/client/android/core/model/Challenge;->getContenderScore()Lcom/scoreloop/client/android/core/model/Score;', u'Lv2/com/playhaven/requests/crashreport/PHCrashReport$Urgency;->valueOf(Ljava/lang/String;)Lv2/com/playhaven/requests/crashreport/PHCrashReport$Urgency;', u'Lcom/scoreloop/client/android/core/controller/GameController$a;->b()Lorg/json/JSONObject;', u'Lcom/sessionm/a/f$a;->j(Ljava/lang/String;)Lcom/sessionm/a/f$a;', u'Lcom/sessionm/core/Session;->onActivityStop(Landroid/app/Activity;)V', u'Lcom/scoreloop/client/android/core/paymentprovider/googlemarket/BillingDelegateManager;-><init>()V', u'Lcom/gameprom/allpinball/AllPinballResourceManager;->logWarn(Ljava/lang/String;)V', u'Lcom/scoreloop/client/android/core/daemon/SxException$Code;->valueOf(Ljava/lang/String;)Lcom/scoreloop/client/android/core/daemon/SxException$Code;', u'Lv2/com/playhaven/model/PHContent$TransitionTyp"
+p48
+sg5
+S'CHANGED (JI 0.0%)'
+p49
+sg7
+F0
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([u'Landroid/support/v4/app/ListFragment;->setListShown(Z)V', u'Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;->update(Landroid/support/v4/app/ActivityOptionsCompat;)V', u'Landroid/util/SparseArray;->remove(I)V', u'Landroid/view/accessibility/AccessibilityRecord;->setToIndex(I)V', u'Landroid/support/v4/app/ShareCompat$IntentReader;->getEmailCc()[Ljava/lang/String;', u'Landroid/view/accessibility/AccessibilityManager;->addAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeListener;)Z', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Lcn/sharesdk/ShareSDKUtils;->throwableToMap(Ljava/lang/Throwable;)Ljava/util/HashMap;', u'Landroid/support/v4/widget/ViewDragHelper;->processTouchEvent(Landroid/view/MotionEvent;)V', u'Lcn/jpush/android/service/g;->run()V', u'Lorg/cocos2dx/lib/Cocos2dxRenderer;->handleActionMove([I [F [F)V', u'Lcn/sharesdk/tencent/weibo/e;->e(Lcn/sharesdk/ten\n---\nADDED set([u'Lcom/sessionm/core/Config$ServerType;->values()[Lcom/sessionm/core/Config$ServerType;', u'Lcom/scoreloop/client/android/core/model/Challenge;->getContenderScore()Lcom/scoreloop/client/android/core/model/Score;', u'Landroid/view/ViewGroup;->removeAllViews()V', u'Lv2/com/playhaven/requests/crashreport/PHCrashReport$Urgency;->valueOf(Ljava/lang/String;)Lv2/com/playhaven/requests/crashreport/PHCrashReport$Urgency;', u'Lcom/scoreloop/client/android/core/controller/GameController$a;->b()Lorg/json/JSONObject;', u'[Lv2/com/playhaven/interstitial/requestbridge/bridges/ContentRequestToInterstitialBridge$InterstitialEvent;->clone()Ljava/lang/Object;', u'Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/sessionm/api/ext/SessionM;->prepareAdvertisement()V', u'Lcom/scoreloop/client/android/core/addon/RSSFeed;->a(Lcom/scoreloop/client/android/core/addon/RSSFeed; Lcom/scoreloop/client/android/c"
+p54
+sg5
+S'CHANGED (JI 5.5%)'
+p55
+sg7
+F5.5
+sa(dp56
+g3
+S"\nDELETED set([u'Landroid/util/SparseArray;->remove(I)V', u'Landroid/content/Context;->obtainStyledAttributes(I [I)Landroid/content/res/TypedArray;', u'Landroid/content/ContentProvider;->attachInfo(Landroid/content/Context; Landroid/content/pm/ProviderInfo;)V', u'Landroid/webkit/WebChromeClient;->onReceivedIcon(Landroid/webkit/WebView; Landroid/graphics/Bitmap;)V', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Landroid/view/View;->postInvalidateOnAnimation()V', u'Landroid/widget/TextView;->setBackgroundResource(I)V', u'Ljava/util/HashMap;->clone()Ljava/lang/Object;', u'Landroid/content/Intent;->getByteArrayExtra(Ljava/lang/String;)[B', u'Ljava/io/File;-><init>(Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/os/Message;->obtain(Landroid/os/Handler; I I I)Landroid/os/Message;', u'Ljava/lang/Character;->digit(C I)I', u'Landroid/webkit/WebSettings;->setUserAgentString(Ljava/lang/String;)V', u'Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphi\n---\nADDED set([u'Ljava/lang/System;->getProperties()Ljava/util/Properties;', u'Ljava/io/Writer;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;', u'Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/net/URI;)V', u'Ljava/lang/StringBuilder;->replace(I I Ljava/lang/String;)Ljava/lang/StringBuilder;', u'Ljava/lang/SecurityException;->printStackTrace()V', u'Ljava/io/FileInputStream;->read([B)I', u'Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/app/Activity;->addContentView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Landroid/graphics/drawable/NinePatchDrawable;->getMinimumWidth()I', u'Landroid/content/res/AssetFileDescriptor;->getParcelFileDescriptor()Landroid/os/ParcelFileDescriptor;', u'Lorg/json/JSONObject;->names()Lorg/json/JSONArray;', u'Landroid/webkit/WebSettings;->setLayoutAlgorithm(Landroid/webkit/WebSettings$LayoutAlgorithm;)V', u'Landroid/webkit/WebViewCl"
+p57
+sg5
+S'CHANGED (JI 40.89%)'
+p58
+sg7
+F40.890000000000001
+sa(dp59
+g3
+S'\nDELETED set([u\'B\\x19-\\x19*T\', u\':\\tFailed to send message. StatusCode = \', u\'\\x0e}B\', u\'https://open.t.qq.com/api/t/add\', u\'saveAPK getContentLength \', u\'class name : ----\', u\' mTag=\', u\'failWrite: Got exception:\', u\'umeng_common_patch_finish\', u\'\\\\Wg\\x08\\x12\\\\_g\\x1d\', u\'imgurl\', u\' at index \', u\' did not call through to super.onDestroyView()\', u\'setOverScrollMode\', u\' index requested: \', u\'tweet\', u\'F\\x10k\', u\'vl]\\x02af\\x7fP\\x1e$2kB\\x1e(aj\', u\'charset=\', u\'\\x0e}BCq\', u\'\\x17APK(\\x0eKV^<\\x1fcpW\', u\'\\x00:\', u\'https://api.weibo.com/2/users/show.json\', u\'\\x17U5fB\', u\'OCT\', u\'getActivityName\', u\'j0\\x17z9i8\\nk5f>\\x13l"`5\\tj&h?u\', u\'SUCCEEDED\', u\'mId or mTs is not initialized\', u\'WechatFavorite\', u\' mStateSaved=\', u\'%Hy\\x02e"U}\', u\' mContainerId=#\', u\'android.support.PARENT_ACTIVITY\', u\'(key TEXT PRIMARY KEY,value TEXT);\', u\'YixinMoments\', u\'MAR\', u\'Try to use the dev info of WechatMoments, this will cause Id and SortId field are always 0.\', u\'MAY\', u\'\\x04\\x02;\\\\\\x16:\\x02&KQ2G3JY:G\\x11z\\x0cw\', u\'Auth\n---\nADDED set([u\'Score mode does not match challenge mode\', u\'MadePurchase\', u\'Unknown descriptor: \', u"Can\'t start async operation (", u\'android.permission.INTERNET\', u\'REQUEST_ID\', u\'Intent with no response code, assuming OK (known issue)\', u\'The game paramter must not be null\', u\'token_secret\', u\'ALTER TABLE scores ADD COLUMN result REAL;\', u\'cannot access game modes without a game\', u\'format.money\', u\'com.paypal.android.MEP.PayPal\', u\'Javascript: \', u\'device[platform_version]\', u\'Querying SKU details.\', u\'Obtaining User Info...\', u\'com.android.vending.licensing.ILicenseResultListener\', u\'BUG: either purchaseData or dataSignature is null\', u\'start_handshake\', u\'Host\', u\'Header not found (invalid data or key):\', u\'internal error: no _user set\', u\'_sessionM_HandleSessionFailedMessage\', u\'GT\', u\'GR\', u\'IS_NOT\', u\'inapp_signed_data\', u\'Unpacking resources...\', u"can\'t insert new row", u\'*** RewardDelegate is not implemented. If you are using rewards this needs to be implemented.\', u\'no network co'
+p60
+sg5
+S'CHANGED (JI 3.59%)'
+p61
+sg7
+F3.5899999999999999
+sa(dp62
+g3
+S"\nDELETED set(['Lcn/sharesdk/framework/authorize/g;->c Lcn/sharesdk/framework/authorize/AuthorizeAdapter; [access_flags=private]\\n', 'Lcom/alipay/android/app/sdk/ResultStatus;->NETWORK_ERROR Lcom/alipay/android/app/sdk/ResultStatus; [access_flags=public static enum final]\\n', 'Lorg/cocos2dx/lib/Cocos2dxEditBoxDialog$1;->this$0 Lorg/cocos2dx/lib/Cocos2dxEditBoxDialog; [access_flags=synthetic final]\\n', 'Lorg/cocos2dx/lib/Cocos2dxMusic;->mCurrentPath Ljava/lang/String; [access_flags=private]\\n', 'Lcn/sharesdk/wechat/utils/WechatHelper$ShareParams;->shareType I [access_flags=public]\\n', 'Landroid/support/v4/app/Fragment;->mContainer Landroid/view/ViewGroup; [access_flags=0x0]\\n', 'Lcn/sharesdk/framework/b/b/f$a;->e Ljava/util/ArrayList; [access_flags=public]\\n', 'Landroid/support/v4/app/ActionBarDrawerToggleHoneycomb$SetIndicatorInfo;->upIndicatorView Landroid/widget/ImageView; [access_flags=public]\\n', 'Landroid/support/v4/app/LoaderManagerImpl;->mWho Ljava/lang/String; [access_flags=final]\\n', 'L\n---\nADDED set(['Lcom/google/android/vending/expansion/downloader/impl/DownloadNotification;->mContext Landroid/content/Context; [access_flags=private final]\\n', 'Lcom/scoreloop/client/android/core/controller/GamesController$a;->e Lcom/scoreloop/client/android/core/model/User; [access_flags=private final]\\n', 'Lcom/scoreloop/client/android/core/server/Request$State;->COMPLETED Lcom/scoreloop/client/android/core/server/Request$State; [access_flags=public static enum final]\\n', 'Lcom/sessionm/api/ActivityListener$UserAction;->OTHER Lcom/sessionm/api/ActivityListener$UserAction; [access_flags=public static enum final]\\n', 'Lcom/scoreloop/client/android/core/settings/CommonSettings$TermsOfService;->a Ljava/lang/Class; [access_flags=public static final]\\n', 'Lcom/gameprom/allpinball/AllPinballGLRenderer;->mOldTime D [access_flags=private]\\n', 'Lcom/scoreloop/client/android/core/daemon/pps/PPSMessage;->b Lcom/scoreloop/client/android/core/daemon/pps/PPSChangeType; [access_flags=private]\\n', 'Lcom/score"
+p63
+sg5
+S'CHANGED (JI 0.0%)'
+p64
+sg7
+F0
+sa.

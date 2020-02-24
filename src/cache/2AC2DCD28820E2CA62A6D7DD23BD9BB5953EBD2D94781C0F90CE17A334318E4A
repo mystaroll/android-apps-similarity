@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 1000!=1000002'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 1.0!=1.0.2'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: 10!=13'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 10!=13'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.READ_PHONE_STATE'])"
+p24
+sg5
+S'CHANGED (JI 66.67%)'
+p25
+sg7
+F66.670000000000002
+sa(dp26
+g3
+S'DIFFERENT: ltd.pte.wavea.recreation!=air.richcarparkingANDROID'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: RECREATION!=Rich Car Parking'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['ltd.pte.wavea.recreation..Recreation'])\n---\nADDED set(['air.richcarparkingANDROID..AppEntry'])"
+p33
+sg5
+S'CHANGED (JI 33.33%)'
+p34
+sg7
+F33.329999999999998
+sa(dp35
+g3
+S"\nDELETED set([u'res/drawable/op_4.png', u'res/drawable/e_45.png', u'res/drawable/e_61.png', u'res/drawable/e_40.png', u'res/drawable/w_35.png', u'res/drawable/item_06.png', u'res/drawable/w_59.png', u'res/drawable/w_58.png', u'res/drawable/op_ed_8.png', u'res/drawable/e_15.png', u'res/drawable/op_0.png', u'res/drawable/w_05.png', u'res/drawable/sousa_3_zh.png', u'res/drawable/item_04.png', u'res/drawable/op_2.png', u'res/drawable/w_07_ko.png', u'res/drawable/e_37.png', u'res/drawable/e_48.png', u'res/drawable/e_49.png', u'res/drawable/e_17.png', u'res/drawable/e_13.png', u'res/drawable/w_02.png', u'res/drawable/item_11.png', u'res/drawable/e_71.png', u'res/drawable/e_70.png', u'res/drawable/w_52.png', u'res/drawable/e_35.png', u'res/drawable/item_icon_2_1.png', u'res/drawable/s_26.png', u'res/drawable/n_08.png', u'res/drawable/e_02.png', u'res/drawable/item_02.png', u'res/drawable/item_18.png', u'res/raw/se12.mp3', u'res/drawable/item_13.png', u'res/drawable/w_58_zh.png', u'res/drawable/w_37.pn\n---\nADDED set(['assets/META-INF/AIR/extensions/com.milkmangames.extensions.AdMob/docs/com.milkmangames.nativeextensions.events.xml', 'assets/META-INF/AIR/extensions/com.milkmangames.extensions.AdMob/catalog.xml', 'assets/rich_car_parking_ANDROID.swf', 'res/drawable-xxhdpi/icon.png', 'assets/META-INF/AIR/extensions/com.milkmangames.extensions.AdMob/docs/com.milkmangames.nativeextensions.xml', 'lib/armeabi-v7a/libNativeABI.so', 'res/raw/debuginfo', 'assets/META-INF/AIR/extensions/com.milkmangames.extensions.AdMob/META-INF/ANE/Android-ARM/extension.xml', 'res/drawable-xhdpi/ouya_icon.png', 'assets/META-INF/AIR/extensions/com.milkmangames.extensions.AdMob/library.swf', 'res/drawable-xhdpi/icon.png', 'assets/AppIconsForPublish/ICON_48.png', 'assets/META-INF/AIR/extensions/com.milkmangames.extensions.AdMob/docs/packages.dita', 'res/raw/rgba8888', 'assets/META-INF/AIR/extensions/com.milkmangames.extensions.AdMob/META-INF/ANE/Android-ARM/library.swf', 'assets/AppIconsForPublish/ICON_72.png', 'assets/App"
+p36
+sg5
+S'CHANGED (JI 2.18%)'
+p37
+sg7
+F2.1800000000000002
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S'EQUAL (JI 100%)'
+p42
+sg5
+S'EQUAL (JI 100%)'
+p43
+sg7
+I100
+sa(dp44
+g3
+S"\nDELETED set([u'Landroid/widget/ImageView;', u'Landroid/text/InputFilter$LengthFilter;', u'Lltd/pte/wavea/recreation/am;', u'Ljava/util/StringTokenizer;', u'Lltd/pte/wavea/recreation/k;', u'Ljava/util/TreeSet;', u'[Lcom/google/ads/d;', u'Lltd/pte/wavea/recreation/ad;', u'Landroid/view/SurfaceHolder;', u'Landroid/view/SurfaceView;', u'Lcom/google/ads/am;', u'Lltd/pte/wavea/recreation/s;', u'Lltd/pte/wavea/recreation/r;', u'Lltd/pte/wavea/recreation/OptionView;', u'Landroid/view/LayoutInflater;', u'Lcom/google/ads/an;', u'Lltd/pte/wavea/recreation/an;', u'Lltd/pte/wavea/recreation/j;', u'Lltd/pte/wavea/recreation/ae;', u'[Lcom/google/ads/e;', u'Lltd/pte/wavea/recreation/c;', u'Lltd/pte/wavea/recreation/z;', u'Landroid/media/MediaPlayer;', u'Lcom/google/ads/a/b;', u'Ljava/util/Random;', u'Lltd/pte/wavea/recreation/u;', u'Lcom/google/ads/ao;', u'Lcom/google/ads/ap;', u'Lltd/pte/wavea/recreation/ao;', u'Landroid/view/GestureDetector;', u'Lltd/pte/wavea/recreation/m;', u'Ljava/lang/reflect/Array;', u\n---\nADDED set([u'Lcom/google/ads/util/i$a;', u'Lcom/google/ads/e$8;', u'Lcom/google/ads/internal/a;', u'Ljava/lang/Byte;', u'Ljava/util/Calendar;', u'Lcom/google/ads/util/b$a;', u'Lcom/google/ads/internal/AdWebView;', u'Lcom/google/ads/internal/c$e;', u'Ljava/util/Hashtable;', u'Lcom/milkmangames/extensions/android/AdMobDestroyAdFunction;', u'Lcom/milkmangames/extensions/android/AdMobGetTestDeviceIDFunction;', u'Lcom/google/ads/mediation/customevent/CustomEventAdapter$a;', u'Ljava/lang/UnsupportedOperationException;', u'Landroid/telephony/TelephonyManager;', u'Landroid/view/KeyEvent;', u'Lcom/google/ads/internal/i;', u'Lcom/google/ads/c$1;', u'Lcom/google/ads/util/g$a$1;', u'Lcom/google/ads/mediation/admob/AdMobAdapter;', u'Landroid/content/res/Resources$Theme;', u'Lcom/milkmangames/extensions/android/AdMobInitAdMobFunction;', u'Lcom/google/ads/util/h$a;', u'Lcom/google/ads/mediation/NetworkExtras;', u'Landroid/os/Process;', u'Lcom/adobe/fre/FREObject$CFREObjectWrapper;', u'Lcom/google/ads/AdSiz"
+p45
+sg5
+S'CHANGED (JI 30.86%)'
+p46
+sg7
+F30.859999999999999
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/google/ads/aj;-><init>()V', u'Lcom/google/ads/ag;->a(Lcom/google/ads/u; Ljava/util/HashMap; Landroid/webkit/WebView;)V', u'Lltd/pte/wavea/recreation/k;->onCheckedChanged(Landroid/widget/CompoundButton; Z)V', u'Lcom/google/ads/w;->l()V', u'Lcom/google/ads/w;->b(Ljava/lang/String;)V', u'Lltd/pte/wavea/recreation/ac;-><init>(Lltd/pte/wavea/recreation/Recreation;)V', u'Lcom/google/ads/x;->a()V', u'Lltd/pte/wavea/recreation/Recreation;->e(Lltd/pte/wavea/recreation/Recreation;)Z', u'Lltd/pte/wavea/recreation/t;-><init>(Lltd/pte/wavea/recreation/Recreation;)V', u'Lcom/google/ads/am;-><init>()V', u'Lltd/pte/wavea/recreation/OptionView;->onFinishInflate()V', u'Lcom/google/ads/l;-><init>(Ljava/lang/String; I Ljava/lang/String;)V', u'Lcom/google/ads/ao;->run()V', u'Lltd/pte/wavea/recreation/Prefs;-><init>()V', u'Lcom/google/ads/al;-><init>()V', u'Lltd/pte/wavea/recreation/k;-><init>(Lltd/pte/wavea/recreation/OptionView;)V', u'Lcom/google/ads/u;->a(Ljava/lang/String;)V', u'Lltd/pte/wav\n---\nADDED set([u'Lair/richcarparkingANDROID/AppEntry;->launchMarketPlaceForAIR()V', u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/google/ads/internal/AdVideoView$a;->a()V', u'Lcom/google/ads/AdActivity$StaticMethodWrapper;->launchAdActivity(Lcom/google/ads/internal/d; Lcom/google/ads/internal/e;)V', u'Lcom/google/ads/util/AdUtil;->c(Ljava/lang/String;)Ljava/lang/String;', u'Lcom/google/ads/d;->a(Lcom/google/ads/c; I)V', u'Lcom/google/ads/internal/AdWebView;->stopLoading()V', u'Lcom/google/ads/searchads/SearchAdRequest;-><init>()V', u'Lcom/google/ads/e$1;-><init>(Lcom/google/ads/e; Lcom/google/ads/c; Lcom/google/ads/AdRequest;)V', u'Lcom/google/ads/j;->onLeaveApplication(Lcom/google/ads/mediation/MediationBannerAdapter;)V', u'Lcom/google/ads/internal/a;->a(Landroid/net/Uri; Ljava/util/HashMap;)Ljava/lang/String;', u'Lcom/google/ads/ae$c;-><init>(Landroid/webkit/WebView; Z)V', u'Lcom/adobe/fre/FREArray;-><init>(Ljava/lang/String; [Lcom/adobe/fre/FREObject;)V', u'Lcom/google/ads/util/i$a;-><in"
+p48
+sg5
+S'CHANGED (JI 4.09%)'
+p49
+sg7
+F4.0899999999999999
+sa(dp50
+g3
+S"\nDELETED set([u'Lcom/google/ads/h;->b(Landroid/webkit/WebView;)V', u'Lcom/google/ads/ag;->a(Lcom/google/ads/u; Ljava/util/HashMap; Landroid/webkit/WebView;)V', u'Lcom/google/ads/v;->b()Ljava/lang/String;', u'Lcom/google/ads/aa;->b()V', u'Lcom/google/ads/u;->d()V', u'Lcom/google/ads/w;->b(Ljava/lang/String;)V', u'Lcom/google/ads/AdView;-><init>(Landroid/app/Activity; Lcom/google/ads/f; Ljava/lang/String;)V', u'Lcom/google/ads/x;->a()V', u'Lcom/google/ads/u;->a(J)V', u'Lcom/google/ads/util/f;->b(Landroid/content/Context; Landroid/util/DisplayMetrics;)I', u'Lcom/google/ads/l;-><init>(Ljava/lang/String; I Ljava/lang/String;)V', u'Lcom/google/ads/d;-><init>(Ljava/lang/String; I Ljava/lang/String;)V', u'Lcom/google/ads/u;->a(Ljava/lang/String;)V', u'Lcom/google/ads/e;-><clinit>()V', u'Lcom/google/ads/u;->p()V', u'Lcom/google/ads/o;->a(Z)V', u'Lcom/google/ads/aa;->c()V', u'Lcom/google/ads/ac;-><init>()V', u'Lcom/google/ads/f;-><clinit>()V', u'Lcom/google/ads/util/a;-><init>(Ljava/lang/String; I)V', u'\n---\nADDED set([u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/google/ads/util/e;->a(Landroid/content/Context; F I)I', u'Lcom/google/ads/util/AdUtil;->c(Ljava/lang/String;)Ljava/lang/String;', u'Lcom/google/ads/n;->a(Lcom/google/ads/internal/d; Ljava/util/HashMap; Landroid/webkit/WebView;)V', u'Lcom/google/ads/d;->a(Lcom/google/ads/c; I)V', u'Lcom/google/ads/j;->onLeaveApplication(Lcom/google/ads/mediation/MediationBannerAdapter;)V', u'Lcom/google/ads/z;-><init>()V', u'Lcom/google/ads/util/d;->equals(Ljava/lang/Object;)Z', u'Lcom/google/ads/af;->a(Landroid/content/Context;)Z', u'Lcom/google/ads/ae;-><clinit>()V', u'Lcom/google/ads/ae;->a(Landroid/app/Activity;)V', u'Lcom/google/ads/AdView;->a(Landroid/app/Activity; Lcom/google/ads/AdSize; Ljava/lang/String;)V', u'Lcom/google/ads/h;->a(Lcom/google/ads/h;)Lcom/google/ads/mediation/MediationAdapter;', u'Lcom/google/ads/util/d;->hashCode()I', u'Lcom/google/ads/v;-><init>()V', u'Lcom/google/ads/c;->j()Lcom/google/ads/internal/h;', u'Lcom/google/ad"
+p51
+sg5
+S'CHANGED (JI 12.37%)'
+p52
+sg7
+F12.369999999999999
+sa(dp53
+g3
+S"\nDELETED set([u'Landroid/widget/EditText;->requestFocus()Z', u'Ljava/util/Random;-><init>()V', u'Lltd/pte/wavea/recreation/k;->onCheckedChanged(Landroid/widget/CompoundButton; Z)V', u'Lltd/pte/wavea/recreation/HowToPlay;->startAnimation(Landroid/view/animation/Animation;)V', u'Ljava/util/Arrays;->sort([I)V', u'Ljava/util/List;->get(I)Ljava/lang/Object;', u'Ljava/util/TreeSet;->add(Ljava/lang/Object;)Z', u'Lltd/pte/wavea/recreation/ae;->getHolder()Landroid/view/SurfaceHolder;', u'Lltd/pte/wavea/recreation/k;-><init>(Lltd/pte/wavea/recreation/OptionView;)V', u'Lcom/google/ads/z;->getContext()Landroid/content/Context;', u'Lltd/pte/wavea/recreation/Recreation;->h()V', u'Landroid/widget/SeekBar;->setMax(I)V', u'Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;', u'Landroid/view/GestureDetector$SimpleOnGestureListener;-><init>()V', u'Lltd/pte/wavea/recreation/an;->a(Ljava/lang/String;)V', u'Lcom/google/ads/ae;-><init>()V', u'Lltd/pte/wavea/recreation/Recreation;->a(I I I I)V', u'Ljava/l\n---\nADDED set([u'Lair/richcarparkingANDROID/AppEntry;->launchMarketPlaceForAIR()V', u'Lcom/google/ads/AdView;->stopLoading()V', u'Lair/richcarparkingANDROID/AppEntry;->onKeyMultiple(I I Landroid/view/KeyEvent;)Z', u'Lcom/google/ads/util/AdUtil;->c(Ljava/lang/String;)Ljava/lang/String;', u'Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V', u'Lcom/google/ads/e$8;-><init>(Lcom/google/ads/e; Lcom/google/ads/h; Landroid/view/View; Lcom/google/ads/f;)V', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Lcom/google/ads/searchads/SearchAdRequest;-><init>()V', u'Lcom/google/ads/e$1;-><init>(Lcom/google/ads/e; Lcom/google/ads/c; Lcom/google/ads/AdRequest;)V', u'Lair/richcarparkingANDROID/AppEntry;->KillSelf()V', u'Lcom/google/ads/internal/d;-><init>(Lcom/google/ads/m; Z)V', u'Lcom/google/ads/ae;-><clinit>()V', u'Lcom/google/ads/mediation/MediationAdRequest;->getBirthday()Ljava/util/Date;', u'Lcom/google/ads/f;->a()Ljava/lang/String;', u'Lcom/google/ads/AdView;->a"
+p54
+sg5
+S'CHANGED (JI 17.11%)'
+p55
+sg7
+F17.109999999999999
+sa(dp56
+g3
+S"\nDELETED set([u'Landroid/widget/EditText;->requestFocus()Z', u'Lcom/google/ads/ag;->a(Lcom/google/ads/u; Ljava/util/HashMap; Landroid/webkit/WebView;)V', u'Ljava/lang/String;-><init>()V', u'Lcom/google/ads/w;->l()V', u'Lcom/google/ads/x;->a()V', u'Ljava/util/List;->get(I)Ljava/lang/Object;', u'Lcom/google/ads/l;-><init>(Ljava/lang/String; I Ljava/lang/String;)V', u'Landroid/widget/RelativeLayout;->onFinishInflate()V', u'Ljava/lang/Integer;->compareTo(Ljava/lang/Integer;)I', u'Lcom/google/ads/z;->getContext()Landroid/content/Context;', u'Lcom/google/ads/e;-><clinit>()V', u'Lcom/google/ads/o;->a(Z)V', u'Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;', u'Lcom/google/ads/f;-><clinit>()V', u'Lcom/google/ads/o;->a(Ljava/lang/String;)V', u'Lcom/google/ads/ae;-><init>()V', u'Lcom/google/ads/y;-><init>(Lcom/google/ads/x;)V', u'Lcom/google/ads/t;-><init>(Lcom/google/ads/o; Lcom/google/ads/u; Ljava/util/LinkedList; I)V', u'Lcom/google/ads/s;-><init>(Lcom/google/ads/o; Ljava/lang/String;)V\n---\nADDED set([u'Lcom/google/ads/AdView;->stopLoading()V', u'Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;', u'Lcom/google/ads/util/AdUtil;->c(Ljava/lang/String;)Ljava/lang/String;', u'Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Landroid/app/Activity;->addContentView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Lcom/google/ads/j;->onLeaveApplication(Lcom/google/ads/mediation/MediationBannerAdapter;)V', u'Lcom/google/ads/AdActivity;->b(Ljava/util/HashMap; Lcom/google/ads/internal/d;)V', u'Lcom/google/ads/ae;-><clinit>()V', u'Landroid/app/Activity;->onPanelClosed(I Landroid/view/Menu;)V', u'Lcom/google/ads/aa;->run()V', u'Lcom/google/ads/AdView;->a(Landroid/app/Activity; Lcom/google/ads/AdSize; Ljava/lang/String;)V', u'Lcom/google/ads/AdView;->getParent()Landroid/view/ViewParent;', u'Lcom/google/ads/util/d;->hashCode()I', u'Lcom/google/ads/v;-><init>()V', u'Lcom/googl"
+p57
+sg5
+S'CHANGED (JI 35.83%)'
+p58
+sg7
+F35.829999999999998
+sa(dp59
+g3
+S'\nDELETED set([u\'clear A\', u\', prevScriptAnalysisRow:\', u\'. answer:\', u\'statusBarHeight:\', u\', btn_back_level: 104\', u\', btn_back_level: 103\', u\', height\', u\'input_method\', u\', b:\', u\'DrawMessage after: \', u\'R19\', u\', height:\', u\', R24: \', u\', sh:\', u\' \', u\', type:1\', u\'20\', u\'Activity was null when responding to +1 action\', u\'onDoubleTapEvent found, click on A\', u\'DrawRegist b4: \', u\'NEXT\', u\'window\', u\'R38\', u\'R39\', u\'drawEditText no:\', u\'AdView missing required XML attribute "adSize".\', u\', value:\', u\', device_density: \', u\', waitTime: \', u\'waitGame scene: \', u\'--hm_flag compare is true: \', u\'PREVIOUS\', u\'after g \', u\'R1\', u\'R3\', u\', x=\', u\'dg\', u\'AFMA_buildAdURL(\', u\'L\', u\', file_name: \', u\'P\', u\', depth=\', u\'T\', u\'do not save game when exit at N000, N050 or is_auto=false. is_auto: \', u\'beforeOnDraw btn_left_pos_y: \', u\'dg_\', u\'AREA HIT touch position: \', u\'btn_save_01\', u\'sousa_\', u\'DrawMessage messageStrings = \', u\'R24\', u\', r:\', u\'DrawFlag b4: \', u\' exitloop: \', u\'item popup hotspot: \', u\n---\nADDED set([u\'isLoadAdTaskSuccessful() called when isLoadAdTaskDone() is false.\', u\'Set parent top\', u\'RECEIVED_AD\', u\'Cannot show interstitial because it is not loaded and ready.\', u\'onAdClicked()\', u\'Set parent bottom\', u\'@gw_adnetrefresh@\', u\'Assertion failed.\', u\'bad base-64\', u\'[adMobEx]\', u"\'. Expected something starting with \'application/json\'. Aborting mediation.", u\'mad_hac\', u\'SCREEN_DISMISSED\', u\') ad to show interstitial: \', u\'Disabling hardware acceleration on collapsing MRAID WebView.\', u\'onActivityResult\', u\' user set IAB_MRECT, applying AdSize.IAB_MRECT=\', u\'flash.utils.ByteArray\', u\' (\', u"\', for the special share location parameter from mediation server", u\'ac_padding\', u\'Set parent left\', u\'IOException fetching MRAID JS.\', u\' (?)\', u\'Required Server Option(s) missing: \', u\'maxTotalAppCacheQuotaInBytes\', u\'Ad size was not set before getHeight() was called.\', u\'ffiInit\', u\'onLowMemory\', u\') AppleWebKit/0.0 (KHTML, like \', u\' user set BANNER, applying AdSize.BANNER=\', u\'onCrea'
+p60
+sg5
+S'CHANGED (JI 36.7%)'
+p61
+sg7
+F36.700000000000003
+sa(dp62
+g3
+S"\nDELETED set(['Lltd/pte/wavea/recreation/Recreation;->K I [access_flags=public final]\\n', 'Lltd/pte/wavea/recreation/Recreation;->bG I [access_flags=private final]\\n', 'Lcom/google/ads/z;->b Lcom/google/ads/f; [access_flags=private]\\n', 'Lltd/pte/wavea/recreation/Recreation;->ao Ljava/lang/String; [access_flags=public final]\\n', 'Lltd/pte/wavea/recreation/Recreation;->B Z [access_flags=0x0]\\n', 'Lcom/google/ads/o;->h Ljava/util/LinkedList; [access_flags=private]\\n', 'Lltd/pte/wavea/recreation/Recreation;->a [[I [access_flags=0x0]\\n', 'Lltd/pte/wavea/recreation/ak;->b I [access_flags=private]\\n', 'Lcom/google/ads/c;->h Z [access_flags=private]\\n', 'Lltd/pte/wavea/recreation/ab;->h I [access_flags=private synthetic final]\\n', 'Lcom/google/ads/o;->c Lcom/google/ads/n; [access_flags=private]\\n', 'Lltd/pte/wavea/recreation/Recreation;->z I [access_flags=0x0]\\n', 'Lltd/pte/wavea/recreation/Recreation;->ay I [access_flags=0x0]\\n', 'Lltd/pte/wavea/recreation/Recreation;->X I [access_flags=0x0]\\n', 'Llt\n---\nADDED set(['Lcom/google/ads/searchads/SearchAdRequest$BorderType;->NONE Lcom/google/ads/searchads/SearchAdRequest$BorderType; [access_flags=public static enum final]\\n', 'Lcom/google/ads/c;->a Ljava/util/Map; [access_flags=private static final]\\n', 'Lcom/google/ads/util/c$c;->g Z [access_flags=synthetic static final]\\n', 'Lcom/google/ads/internal/c;->c Ljava/lang/String; [access_flags=private]\\n', 'Lcom/google/ads/ag$c;->a Lcom/google/ads/internal/d; [access_flags=private]\\n', 'Lcom/google/ads/internal/d;->r Ljava/util/LinkedList; [access_flags=private]\\n', 'Lcom/google/ads/internal/d;->n Landroid/content/SharedPreferences; [access_flags=private]\\n', 'Lcom/google/ads/util/c$c;->h [B [access_flags=private static final]\\n', 'Lcom/google/ads/AdRequest;->d Lcom/google/ads/AdRequest$Gender; [access_flags=private]\\n', 'Lcom/google/ads/internal/j$a;->a Landroid/gesture/GestureStore; [access_flags=private final]\\n', 'Lcom/google/ads/AdActivity;->k J [access_flags=private]\\n', 'Lcom/google/ads/intern"
+p63
+sg5
+S'CHANGED (JI 1.2%)'
+p64
+sg7
+F1.2
+sa.

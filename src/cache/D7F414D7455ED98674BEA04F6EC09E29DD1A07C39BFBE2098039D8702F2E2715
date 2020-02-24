@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S'EQUAL (JI 100%)'
+p24
+sg5
+S'EQUAL (JI 100%)'
+p25
+sg7
+I100
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S'EQUAL (JI 100%)'
+p33
+sg5
+S'EQUAL (JI 100%)'
+p34
+sg7
+I100
+sa(dp35
+g3
+S"\nDELETED set([u'META-INF/CERT.SF', u'META-INF/CERT.RSA'])\n---\nADDED set([u'META-INF/DB91C412.RSA', u'META-INF/DB91C412.SF'])"
+p36
+sg5
+S'CHANGED (JI 99.81%)'
+p37
+sg7
+F99.810000000000002
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S'EQUAL (JI 100%)'
+p42
+sg5
+S'EQUAL (JI 100%)'
+p43
+sg7
+I100
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lorg/kontalk/ui/CountryCodesAdapter$1;', u'[Lorg/kontalk/client/Protocol$UserStatusFlags;', u'Lcom/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$1;', u'Lcom/actionbarsherlock/widget/ActivityChooserModel$1;', u'[Lorg/kontalk/client/Protocol$RegistrationResponse$RegistrationStatus;', u'Lcom/actionbarsherlock/internal/widget/IcsAbsSpinner$1;', u'[Lorg/kontalk/client/Protocol$MessageAckResponse$Entry$MessageAckStatus;', u'Lorg/kontalk/client/Protocol$1;', u'Lcom/actionbarsherlock/internal/view/menu/ActionMenuPresenter$1;', u'Lorg/kontalk/service/NetworkStateReceiver$1;', u'Landroid/telephony/PhoneNumberUtils;', u'[Lorg/kontalk/client/Protocol$UserPresenceSubscribeResponse$UserPresenceStatus;', u'[Lorg/kontalk/client/Protocol$UserPresence$UserEvent;', u'[Lorg/kontalk/client/Protocol$ValidationCodeResponse$ValidationCodeStatus;', u'Lcom/actionbarsherlock/internal/widget/IcsAdapterView$1;', u'Lcom/actionbarsherlock/internal/widget/PopupWindowCompat;', u'[Lor"
+p45
+sg5
+S'CHANGED (JI 98.15%)'
+p46
+sg7
+F98.150000000000006
+sa(dp47
+g3
+S"\nDELETED set([u'Lorg/kontalk/client/Protocol$UserPresenceSubscribeRequest;->access$5(Lorg/kontalk/client/Protocol$UserPresenceSubscribeRequest; I)V', u'Lorg/kontalk/util/SyncerUI;->access$0(Lorg/kontalk/util/SyncerUI$SyncMonitorTask;)V', u'Lorg/kontalk/client/Protocol$UserLookupResponse$Entry;->access$8(Lorg/kontalk/client/Protocol$UserLookupResponse$Entry; I)V', u'Lcom/actionbarsherlock/internal/view/menu/MenuPopupHelper;->onViewDetachedFromWindow(Landroid/view/View;)V', u'Lorg/kontalk/client/Protocol$ValidationCodeResponse;->access$4(Lorg/kontalk/client/Protocol$ValidationCodeResponse; Lorg/kontalk/client/Protocol$ValidationCodeResponse$ValidationCodeStatus;)V', u'Lcom/actionbarsherlock/internal/app/ActionBarImpl;->access$7(Lcom/actionbarsherlock/internal/app/ActionBarImpl;)Landroid/content/Context;', u'Lorg/kontalk/client/Protocol$ReceiptMessage$Builder;->access$11(Lorg/kontalk/client/Protocol$ReceiptMessage$Builder;)Lorg/kontalk/client/Protocol$ReceiptMessage;', u'Lcom/actionbarsherlock/int\n---\nADDED set([u'Lcom/actionbarsherlock/internal/widget/IcsAdapterView;->access$200(Lcom/actionbarsherlock/internal/widget/IcsAdapterView;)V', u'Lorg/kontalk/client/Protocol$UserPresenceSubscribeRequest$Builder;->clone()Lcom/google/protobuf/AbstractMessageLite$Builder;', u'Lorg/kontalk/client/Protocol$ServerList$Builder;->clone()Ljava/lang/Object;', u'Lcom/actionbarsherlock/internal/widget/IcsAdapterView;->access$000(Lcom/actionbarsherlock/internal/widget/IcsAdapterView; Landroid/os/Parcelable;)V', u'Lcom/actionbarsherlock/view/MenuInflater;->access$300(Lcom/actionbarsherlock/view/MenuInflater;)[Ljava/lang/Object;', u'Lorg/kontalk/client/Protocol$UserLookupRequest;-><init>(Lorg/kontalk/client/Protocol$UserLookupRequest$Builder; Lorg/kontalk/client/Protocol$1;)V', u'Lcom/actionbarsherlock/widget/SearchView;->access$1200(Lcom/actionbarsherlock/widget/SearchView;)V', u'Lorg/kontalk/ui/MessagingPreferences;->access$202(Ljava/lang/String;)Ljava/lang/String;', u'Lorg/kontalk/client/Protocol$MessageAck"
+p48
+sg5
+S'CHANGED (JI 89.49%)'
+p49
+sg7
+F89.489999999999995
+sa(dp50
+g3
+S"\nDELETED set([u'Lorg/kontalk/client/Protocol$UserPresenceSubscribeRequest;->access$5(Lorg/kontalk/client/Protocol$UserPresenceSubscribeRequest; I)V', u'Lorg/kontalk/util/SyncerUI;->access$0(Lorg/kontalk/util/SyncerUI$SyncMonitorTask;)V', u'Lorg/kontalk/client/Protocol$UserLookupResponse$Entry;->access$8(Lorg/kontalk/client/Protocol$UserLookupResponse$Entry; I)V', u'Lcom/actionbarsherlock/internal/view/menu/MenuPopupHelper;->onViewDetachedFromWindow(Landroid/view/View;)V', u'Lorg/kontalk/client/Protocol$ValidationCodeResponse;->access$4(Lorg/kontalk/client/Protocol$ValidationCodeResponse; Lorg/kontalk/client/Protocol$ValidationCodeResponse$ValidationCodeStatus;)V', u'Lcom/actionbarsherlock/internal/app/ActionBarImpl;->access$7(Lcom/actionbarsherlock/internal/app/ActionBarImpl;)Landroid/content/Context;', u'Lorg/kontalk/client/Protocol$ReceiptMessage$Builder;->access$11(Lorg/kontalk/client/Protocol$ReceiptMessage$Builder;)Lorg/kontalk/client/Protocol$ReceiptMessage;', u'Lcom/actionbarsherlock/int\n---\nADDED set([u'Lcom/actionbarsherlock/internal/widget/IcsAdapterView;->access$200(Lcom/actionbarsherlock/internal/widget/IcsAdapterView;)V', u'Lorg/kontalk/client/Protocol$UserPresenceSubscribeRequest$Builder;->clone()Lcom/google/protobuf/AbstractMessageLite$Builder;', u'Lorg/kontalk/client/Protocol$ServerList$Builder;->clone()Ljava/lang/Object;', u'Lcom/actionbarsherlock/internal/widget/IcsAdapterView;->access$000(Lcom/actionbarsherlock/internal/widget/IcsAdapterView; Landroid/os/Parcelable;)V', u'Lcom/actionbarsherlock/view/MenuInflater;->access$300(Lcom/actionbarsherlock/view/MenuInflater;)[Ljava/lang/Object;', u'Lorg/kontalk/client/Protocol$UserLookupRequest;-><init>(Lorg/kontalk/client/Protocol$UserLookupRequest$Builder; Lorg/kontalk/client/Protocol$1;)V', u'Lcom/actionbarsherlock/widget/SearchView;->access$1200(Lcom/actionbarsherlock/widget/SearchView;)V', u'Lorg/kontalk/ui/MessagingPreferences;->access$202(Ljava/lang/String;)Ljava/lang/String;', u'Lorg/kontalk/client/Protocol$MessageAck"
+p51
+sg5
+S'CHANGED (JI 89.65%)'
+p52
+sg7
+F89.650000000000006
+sa(dp53
+g3
+S"\nDELETED set([u'Lorg/kontalk/client/Protocol$UserPresenceSubscribeRequest;->access$5(Lorg/kontalk/client/Protocol$UserPresenceSubscribeRequest; I)V', u'Lorg/kontalk/util/SyncerUI;->access$0(Lorg/kontalk/util/SyncerUI$SyncMonitorTask;)V', u'Lorg/kontalk/client/Protocol$AuthenticateResponse;->access$4(Lorg/kontalk/client/Protocol$AuthenticateResponse; Z)V', u'Lorg/kontalk/client/Protocol$UserLookupResponse$Entry;->access$8(Lorg/kontalk/client/Protocol$UserLookupResponse$Entry; I)V', u'Lcom/actionbarsherlock/internal/view/menu/MenuPopupHelper;->onViewDetachedFromWindow(Landroid/view/View;)V', u'Lorg/kontalk/client/Protocol$ValidationCodeResponse;->access$4(Lorg/kontalk/client/Protocol$ValidationCodeResponse; Lorg/kontalk/client/Protocol$ValidationCodeResponse$ValidationCodeStatus;)V', u'Lcom/actionbarsherlock/internal/app/ActionBarImpl;->access$7(Lcom/actionbarsherlock/internal/app/ActionBarImpl;)Landroid/content/Context;', u'Lorg/kontalk/client/Protocol$ReceiptMessage$Builder;->access$11(Lorg/kon\n---\nADDED set([u'Lcom/actionbarsherlock/internal/widget/IcsAdapterView;->access$200(Lcom/actionbarsherlock/internal/widget/IcsAdapterView;)V', u'Lorg/kontalk/client/Protocol$UserPresenceSubscribeRequest$Builder;->clone()Lcom/google/protobuf/AbstractMessageLite$Builder;', u'Lorg/kontalk/client/Protocol$ServerList$Builder;->clone()Ljava/lang/Object;', u'Lcom/actionbarsherlock/internal/widget/IcsAdapterView;->access$000(Lcom/actionbarsherlock/internal/widget/IcsAdapterView; Landroid/os/Parcelable;)V', u'Lcom/actionbarsherlock/view/MenuInflater;->access$300(Lcom/actionbarsherlock/view/MenuInflater;)[Ljava/lang/Object;', u'Lorg/kontalk/client/Protocol$UserLookupRequest;-><init>(Lorg/kontalk/client/Protocol$UserLookupRequest$Builder; Lorg/kontalk/client/Protocol$1;)V', u'Lcom/actionbarsherlock/widget/SearchView;->access$1200(Lcom/actionbarsherlock/widget/SearchView;)V', u'Lorg/kontalk/ui/MessagingPreferences;->access$202(Ljava/lang/String;)Ljava/lang/String;', u'Lorg/kontalk/client/Protocol$MessageAck"
+p54
+sg5
+S'CHANGED (JI 91.93%)'
+p55
+sg7
+F91.930000000000007
+sa(dp56
+g3
+S"\nDELETED set([u'Lorg/kontalk/client/Protocol$UserPresenceSubscribeRequest;->access$5(Lorg/kontalk/client/Protocol$UserPresenceSubscribeRequest; I)V', u'Lorg/kontalk/util/SyncerUI;->access$0(Lorg/kontalk/util/SyncerUI$SyncMonitorTask;)V', u'Lorg/kontalk/client/Protocol$AuthenticateResponse;->access$4(Lorg/kontalk/client/Protocol$AuthenticateResponse; Z)V', u'Lorg/kontalk/client/Protocol$UserLookupResponse$Entry;->access$8(Lorg/kontalk/client/Protocol$UserLookupResponse$Entry; I)V', u'Lcom/actionbarsherlock/internal/view/menu/MenuPopupHelper;->onViewDetachedFromWindow(Landroid/view/View;)V', u'Lorg/kontalk/client/Protocol$ValidationCodeResponse;->access$4(Lorg/kontalk/client/Protocol$ValidationCodeResponse; Lorg/kontalk/client/Protocol$ValidationCodeResponse$ValidationCodeStatus;)V', u'Lcom/actionbarsherlock/internal/app/ActionBarImpl;->access$7(Lcom/actionbarsherlock/internal/app/ActionBarImpl;)Landroid/content/Context;', u'Lorg/kontalk/client/Protocol$ReceiptMessage$Builder;->access$11(Lorg/kon\n---\nADDED set([u'Lcom/actionbarsherlock/internal/widget/IcsAdapterView;->access$200(Lcom/actionbarsherlock/internal/widget/IcsAdapterView;)V', u'Lorg/kontalk/client/Protocol$UserPresenceSubscribeRequest$Builder;->clone()Lcom/google/protobuf/AbstractMessageLite$Builder;', u'Lorg/kontalk/client/Protocol$ServerList$Builder;->clone()Ljava/lang/Object;', u'Lcom/actionbarsherlock/internal/widget/IcsAdapterView;->access$000(Lcom/actionbarsherlock/internal/widget/IcsAdapterView; Landroid/os/Parcelable;)V', u'Lcom/actionbarsherlock/view/MenuInflater;->access$300(Lcom/actionbarsherlock/view/MenuInflater;)[Ljava/lang/Object;', u'Lorg/kontalk/client/Protocol$UserLookupRequest;-><init>(Lorg/kontalk/client/Protocol$UserLookupRequest$Builder; Lorg/kontalk/client/Protocol$1;)V', u'Lcom/actionbarsherlock/widget/SearchView;->access$1200(Lcom/actionbarsherlock/widget/SearchView;)V', u'Lorg/kontalk/ui/MessagingPreferences;->access$202(Ljava/lang/String;)Ljava/lang/String;', u'Lorg/kontalk/client/Protocol$MessageAck"
+p57
+sg5
+S'CHANGED (JI 92.25%)'
+p58
+sg7
+F92.25
+sa(dp59
+g3
+S"\nDELETED set([u'[hasFeature] featureId: ', u', flags: ', u'[getMenuInflater]', u'[requestFeature] returning ', u'[dispatchPrepareOptionsMenu] android.view.Menu: ', u'[generateLayout]', u'[callbackOptionsItemSelected] item: ', u'Returning ', u'[<ctor>] activity: ', u', menu: ', u'[onCreatePanelMenu] fragments create result: ', u'Got <activity>', u'[onCreatePanelMenu] returning ', u'[dispatchOptionsItemSelected] item: ', u'[dispatchKeyEvent] event: ', u'setSelectedNavigationIndex not valid for current navigation mode', u'Got <application>', u'[addContentView] view: ', u'[setUiOptions] uiOptions: ', u'[dispatchCreateOptionsMenu] android.view.Menu: ', u'[dispatchCreateOptionsMenu] returning true', u'[setProgress] progress: ', u'[dispatchKeyEvent] returning true', u'[dispatchPanelClosed] featureId: ', u'[onMenuItemSelected] featureId: ', u'[onMenuItemSelected] returning ', u'ResourcesCompat', u'[dispatchPostResume]', u'[hasFeature] returning ', u'[dispatchPrepareOptionsMenu] menu: ', u'Registering '\n---\nADDED set([u'invalid number for region ', u'not a well formed SMS address', u'setSelectedNavigationItem not valid for current navigation mode', u'mOnScrollChangedListener'])"
+p60
+sg5
+S'CHANGED (JI 94.95%)'
+p61
+sg7
+F94.950000000000003
+sa(dp62
+g3
+S"\nDELETED set(['Lorg/kontalk/client/Protocol$LoginResponse$LoginStatus;->ENUM$VALUES [Lorg/kontalk/client/Protocol$LoginResponse$LoginStatus; [access_flags=private synthetic static final]\\n', 'Lorg/kontalk/ui/CodeValidation$1;->val$e Ljava/lang/Throwable; [access_flags=private synthetic final]\\n', 'Lorg/kontalk/client/Protocol$ValidationCodeResponse$ValidationCodeStatus;->ENUM$VALUES [Lorg/kontalk/client/Protocol$ValidationCodeResponse$ValidationCodeStatus; [access_flags=private synthetic static final]\\n', 'Lorg/kontalk/ui/NumberValidation$7;->val$token Ljava/lang/CharSequence; [access_flags=private synthetic final]\\n', 'Lorg/kontalk/ui/NumberValidation$3;->val$ccList Lorg/kontalk/ui/CountryCodesAdapter; [access_flags=private synthetic final]\\n', 'Lorg/kontalk/ui/ConversationListFragment$2;->val$ctx Landroid/content/Context; [access_flags=private synthetic final]\\n', 'Lorg/kontalk/client/Protocol$RegistrationResponse$RegistrationStatus;->ENUM$VALUES [Lorg/kontalk/client/Protocol$RegistrationResp\n---\nADDED set(['Lorg/kontalk/ui/ConversationListFragment$3;->val$threadId J [access_flags=synthetic final]\\n', 'Lorg/kontalk/client/Protocol$UserInfoUpdateResponse$UserInfoUpdateStatus;->$VALUES [Lorg/kontalk/client/Protocol$UserInfoUpdateResponse$UserInfoUpdateStatus; [access_flags=private synthetic static final]\\n', 'Lorg/kontalk/ui/MessagingNotification$1;->val$isNew Z [access_flags=synthetic final]\\n', 'Lorg/kontalk/client/Protocol$RegistrationResponse$RegistrationStatus;->$VALUES [Lorg/kontalk/client/Protocol$RegistrationResponse$RegistrationStatus; [access_flags=private synthetic static final]\\n', 'Lcom/actionbarsherlock/internal/widget/PopupWindowCompat;->superListenerField Ljava/lang/reflect/Field; [access_flags=private static final]\\n', 'Lorg/kontalk/ui/MessagingNotification$1;->val$context Landroid/content/Context; [access_flags=synthetic final]\\n', 'Lorg/kontalk/ui/RevalidateActivity$2;->val$res Lorg/kontalk/client/Protocol$ValidationCodeResponse; [access_flags=synthetic final]\\n', 'L"
+p63
+sg5
+S'CHANGED (JI 96.86%)'
+p64
+sg7
+F96.859999999999999
+sa.

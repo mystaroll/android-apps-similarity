@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'DIFFERENT: 1.01!=10.01'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.ACCESS_FINE_LOCATION', 'android.permission.RECEIVE_BOOT_COMPLETED', 'android.permission.READ_PHONE_STATE', 'android.permission.INTERNET', 'android.permission.ACCESS_NETWORK_STATE', 'android.permission.ACCESS_COARSE_LOCATION'])"
+p24
+sg5
+S'CHANGED (JI 14.29%)'
+p25
+sg7
+F14.289999999999999
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.eoemobile.api.feedback.SimpleFeedbackActivity', 'com.eoemobile.api.msg.MsgManagerActivity'])"
+p33
+sg5
+S'CHANGED (JI 66.67%)'
+p34
+sg7
+F66.670000000000002
+sa(dp35
+g3
+S"\nDELETED set([])\n---\nADDED set(['res/layout/eoesdk_update_status_bar_latest_event_content.xml', 'res/layout/eoesdk_update_status_bar_ongoing_event_progress_bar.xml', 'res/drawable/eoesdk_update_stat_sys_download_complete.png'])"
+p36
+sg5
+S'CHANGED (JI 90.91%)'
+p37
+sg7
+F90.909999999999997
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.eoemobile.api.stat.EoeService', 'com.eoemobile.api.msg.MsgService'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.eoemobile.api.msg.MsgReceiver', 'com.eoemobile.api.stat.EoeReceiver'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/io/FileNotFoundException;', u'Landroid/widget/ImageView;', u'Ljava/lang/ref/WeakReference;', u'Landroid/widget/RelativeLayout$LayoutParams;', u'Ljava/lang/Process;', u'Lcom/flurry/android/c;', u'Lcom/gfan/sdk/statistics/ConnectDBUtil;', u'Landroid/text/TextUtils;', u'Lcom/mobclick/android/UmengFeedback;', u'Lcom/admob/android/ads/o;', u'Lcom/flurry/android/d;', u'Lcom/eoemobile/api/a/a;', u'Landroid/database/Cursor;', u'Landroid/view/animation/AccelerateDecelerateInterpolator;', u'Ljava/util/concurrent/FutureTask;', u'Landroid/widget/RatingBar;', u'Lcom/eoemobile/api/b/b;', u'Lcom/eoemobile/api/pay/PayWaitingActivity;', u'Ljava/util/Calendar;', u'Landroid/os/Message;', u'Lcom/eoemobile/api/feedback/b;', u'Landroid/app/ProgressDialog;', u'Lcom/eoemobile/api/b/e;', u'Lcom/mobclick/android/MobclickAgent;', u'Lorg/xml/sax/helpers/DefaultHandler;', u'Ljava/io/FileReader;', u'Lcom/mobclick/android/g;', u'Lcom/admob/android/ads/view/AdMobWebView$a;', u'Lcom/eoemobile/api/update/d"
+p45
+sg5
+S'CHANGED (JI 14.9%)'
+p46
+sg7
+F14.9
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/flurry/android/b;-><init>(Lcom/flurry/android/FlurryAgent;)V', u'Lcom/admob/android/ads/i;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Lcom/admob/android/ads/h; I Ljava/util/Map; Ljava/lang/String;)V', u'Lcom/admob/android/ads/d$e;-><init>(Ljava/lang/String; Z)V', u'Lcom/flurry/android/a;->run()V', u'Lcom/gfan/sdk/statistics/CommentActivity;->access$1(Lcom/gfan/sdk/statistics/CommentActivity;)Landroid/app/ProgressDialog;', u'Lcom/eoemobile/api/update/d;->a(Lcom/eoemobile/api/update/d;)Lcom/eoemobile/api/update/ApkVersion;', u'Lcom/admob/android/ads/AdView;->a(Landroid/content/Context;)Z', u'Lcom/admob/android/ads/u;-><init>()V', u'Lbander/fileman/DialogFactory$3;-><init>(Lbander/fileman/DialogFactory;)V', u'Lcom/admob/android/ads/AdView;->a()V', u'Lcom/eoemobile/api/stat/EoeCrashHandler;->c(Lcom/eoemobile/api/stat/EoeCrashHandler;)Ljava/lang/String;', u'Lcom/admob/android/ads/AdView;->c()Z', u'Lcom/gfan/sdk/statistics/Collector;->access$2()Ljava/lang/St"
+p48
+sg5
+S'CHANGED (JI 6.51%)'
+p49
+sg7
+F6.5099999999999998
+sa(dp50
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lbander/fileman/Properties;->onPause()V', u'Lbander/fileman/Main;->getResourceStr(I)Ljava/lang/String;', u'Lbander/fileman/Preferences;->onPause()V', u'Lbander/fileman/Preferences;->onResume()V', u'Lbander/fileman/Preferences;->onStart()V', u'Lbander/fileman/Properties;->onStart()V', u'Lbander/fileman/Main;->onStart()V', u'Lbander/fileman/Main;->onStop()V', u'Lbander/fileman/TextViewer;->onStart()V', u'Lbander/fileman/TextViewer;->onStop()V', u'Lbander/fileman/Main;->getDialogMessage(Lcom/eoemobile/api/update/ApkVersion;)Ljava/lang/String;', u'Lbander/fileman/Preferences;->onStop()V', u'Lbander/fileman/Main;->getAppVersionCode(Landroid/content/Context;)I', u'Lbander/fileman/Main;->onFail(Ljava/lang/Object;)V', u'Lbander/fileman/Main;->onSuccess(Ljava/lang/Object;)V', u'Lbander/fileman/Properties;->onStop()V', u'Lbander/fileman/Main;->onPause()V'])"
+p51
+sg5
+S'CHANGED (JI 81.91%)'
+p52
+sg7
+F81.909999999999997
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/admob/android/ads/d$e;-><init>(Ljava/lang/String; Z)V', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Lcom/flurry/android/a;->run()V', u'Lcom/gfan/sdk/statistics/CommentActivity;->setResult(I)V', u'Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V', u'Lcom/admob/android/ads/AdView;->a(Landroid/content/Context;)Z', u'Lcom/admob/android/ads/AdView;->a()V', u'Ljava/lang/Class;->newInstance()Ljava/lang/Object;', u'Lorg/xml/sax/XMLReader;->setContentHandler(Lorg/xml/sax/ContentHandler;)V', u'Ljava/lang/StringBuilder;-><init>()V', u'Lcom/eoemobile/api/b/a;->a(Landroid/content/Context; Ljava/lang/String; I)Ljava/lang/String;', u'Lcom/eoemobile/api/a/b;->a(Lcom/eoemobile/api/a/b; Ljava/lang/Thread;)V', u'Lcom/eoemobile/api/c/b;-><init>(Ljava/lang/String; Ljava/lang/"
+p54
+sg5
+S'CHANGED (JI 10.79%)'
+p55
+sg7
+F10.789999999999999
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Ljava/io/FileInputStream;->read([B)I', u'Ljava/lang/Object;->notify()V', u'Ljava/lang/String;->charAt(I)C', u'Ljava/util/Date;->toString()Ljava/lang/String;', u'Ljava/lang/StringBuilder;-><init>()V', u'Landroid/os/Bundle;->putLong(Ljava/lang/String; J)V', u'Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;', u'Ljava/lang/System;->currentTimeMillis()J', u'Ljava/io/FileOutputStream;->write([B)V', u'Ljava/io/FileOutputStream;->write([B I I)V', u'Ljava/io/FileInputStream;->close()V', u'Ljava/io/File;-><init>(Ljava/lang/String; Ljava/lang/String;)V', u'Ljava/lang/String;->hashCode()I', u'Landroid/widget/TextView;-><init>(Landroid/content/Context;)V', u'Ljava/nio/channels/FileChannel;->map(Ljava/nio/channels/FileChannel$MapMode; J J)Ljava/nio/MappedByteBuffer;', u'Lbander/fileman/Main;->onSuccess(Ljava/lang/Object;)V', u'Landroid/widget/TextView;->setLayoutParams(Landr"
+p57
+sg5
+S'CHANGED (JI 55.48%)'
+p58
+sg7
+F55.479999999999997
+sa(dp59
+g3
+S'\nDELETED set([])\n---\nADDED set([u\'sdk_stat_txtfiles\', u\'eoesdk_feedback_title\', u\'Could not read basic animation: could not interpret keyPath(\', u\'","appkey":"\', u\'msgs\', u\'Unknown\', u\'eoesdk_update_appIcon\', u\': \', u\'jsonp_url\', u\'code\', u\'{"msgtype":"errorinfo","body":\', u\'android.permission.INTERNET\', u\'DROP TABLE IF EXISTS intents\', u\'eoesdk_feedback_gender_femail\', u\'eoesdk_feedback_submit_fail\', u"Phone\'s user-agent is:  ", u\'-d\', u\'ver\', u\'eoeSDK insert habit data result : \', u\'?latestver=\', u\'tv\', u\'tt\', u\'eoesdk_pay_down\', u\'send\', u\'to\', u\'-v\', u\'eoesdk_update_times\', u\'-s\', u\'text\', u\'tf\', u\'31-35\\u5c81\', u\'\\\\.\\\\d+\', u\'api_key\', u\'exception caught in AdClickThread.run(), \', u\'ta\', u\'eoesdk_feedback_submit\', u\'string\', u\'onEndSession called from different application package, expected: \', u\'filePath\', u\' from now.\', u\'com.gfan.sdk.activityPauseTime\', u\'notify_url="\', u\'app_start_time=\', u\'P\', u\'Content-Disposition: form-data; name="\', u\'","cpid":"\', u\'eoesdk_update_failedclick\', u\'eoesdk_pay_fail_syste'
+p60
+sg5
+S'CHANGED (JI 6.86%)'
+p61
+sg7
+F6.8600000000000003
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/admob/android/ads/o;->e Ljava/util/Properties; [access_flags=private]\\n', 'Lcom/eoemobile/api/msg/b;->b I [access_flags=private final]\\n', 'Lcom/eoemobile/api/a/h;->b Landroid/content/Context; [access_flags=private final]\\n', 'Lcom/flurry/android/a;->a Landroid/content/Context; [access_flags=private synthetic]\\n', 'Lcom/mobclick/android/MobclickAgent;->a Lcom/mobclick/android/MobclickAgent; [access_flags=private static final]\\n', 'Lcom/eoemobile/api/Constants;->SEPARATOR Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/admob/android/ads/g;->i F [access_flags=private static]\\n', 'Lcom/admob/android/ads/AdView;->n Z [access_flags=private]\\n', 'Lcom/eoemobile/api/b/a;->k Ljava/util/HashMap; [access_flags=public static]\\n', 'Lcom/gfan/sdk/statistics/Collector;->hander Landroid/os/Handler; [access_flags=private static]\\n', 'Lcom/eoemobile/api/stat/EoeCrashHandler;->h Ljava/lang/String; [access_flags=private]\\n', 'Lcom/eoemobile/api/feedback/b;->a Lcom/android/inter"
+p63
+sg5
+S'CHANGED (JI 3.57%)'
+p64
+sg7
+F3.5699999999999998
+sa.

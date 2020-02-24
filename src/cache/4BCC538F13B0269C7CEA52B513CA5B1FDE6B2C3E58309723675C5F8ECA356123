@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_WIFI_STATE', 'android.permission.CHANGE_WIFI_STATE', 'android.permission.WRITE_EXTERNAL_STORAGE'])"
+p24
+sg5
+S'CHANGED (JI 55.56%)'
+p25
+sg7
+F55.560000000000002
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['cn.domob.android.ads.DomobActivity', 'com.adwo.adsdk.AdwoAdBrowserActivity', 'com.adwo.adsdk.AdwoSplashAdActivity', 'com.tencent.mobwin.MobinWINBrowserActivity'])"
+p33
+sg5
+S'CHANGED (JI 55.56%)'
+p34
+sg7
+F55.560000000000002
+sa(dp35
+g3
+S'EQUAL (JI 100%)'
+p36
+sg5
+S'EQUAL (JI 100%)'
+p37
+sg7
+I100
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S'EQUAL (JI 100%)'
+p42
+sg5
+S'EQUAL (JI 100%)'
+p43
+sg7
+I100
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'LMobWin/cnst/FUNCTION_CLICK;', u'Lcn/domob/android/ads/g$8;', u'Lcn/domob/android/ads/DomobActivity$1;', u'Lcom/adwo/adsdk/ErrorCode;', u'LMobWin/ReqActivateApp;', u'Lcn/domob/android/a/a$a;', u'Ljava/util/Calendar;', u'Lcom/adwo/adsdk/F;', u'Lcom/qq/jce/wup/WupInfo;', u'Ljavax/crypto/NoSuchPaddingException;', u'Landroid/graphics/drawable/ClipDrawable;', u'Lcn/domob/android/ads/DomobAdView;', u'Lcom/adwo/adsdk/A;', u'LMobWin/SettingVersions;', u'Lcom/admogo/AdMogoLayout$PingUrlRunnable;', u'Lcom/adwo/adsdk/o;', u'LMobWin/AppColorsSetting;', u'Lcn/domob/android/ads/w;', u'LMobWin/cnst/FUNCTION_APP_LAUNCH;', u'Lcn/domob/android/ads/p$10;', u'LLBSAPIProtocol/Measure;', u'Lcom/adwo/adsdk/O;', u'LMobWin/ReqAppLaunch;', u'Lcn/domob/android/ads/e;', u'Lcom/tencent/mobwin/core/b/a;', u'Lcom/wiyun/ad/AdView;', u'Ljava/security/InvalidKeyException;', u'LMobWin/ADClickInfo;', u'Lcom/energysource/szj/embeded/AdView;', u'Lcn/domob/android/ads/n;', u'Landroid/location/Address;', u'Lcom/tencen"
+p45
+sg5
+S'CHANGED (JI 41.91%)'
+p46
+sg7
+F41.909999999999997
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/tencent/mobwin/core/a/e;->d(Landroid/content/Context; Ljava/lang/String;)I', u'Lcom/qq/jce/wup/UniPacket;->a(Ljava/lang/StringBuilder; I)V', u'Lcom/adwo/adsdk/FSAdUtil;->setSplashAdListener(Lcom/adwo/adsdk/SplashAdListener;)V', u'Lcom/adwo/adsdk/D;->run()V', u'Lcom/admogo/adapters/AdTouchAdapter;->failedReceiveAd(Lcom/energysource/szj/embeded/AdView;)V', u'Lcom/tencent/mobwin/core/g;->r(Lcom/tencent/mobwin/core/g;)V', u'Lcom/qq/a/a/i;-><init>()V', u'Lcom/admogo/ExchangeDialog$1;-><init>(Lcom/admogo/ExchangeDialog;)V', u'Lcn/domob/android/ads/r;-><init>()V', u'LMobWin/UserLocation;->clone()Ljava/lang/Object;', u'Lcom/admogo/ExchangeDialog$5;->onTouch(Landroid/view/View; Landroid/view/MotionEvent;)Z', u'Lcn/domob/android/ads/b/b;->m()V', u'Lcom/qq/a/a/c;->a(Z Z)Z', u'Lcom/admogo/adapters/MdotMAdapter;->click()V', u'Lcom/qq/a/a/h;->a(Ljava/lang/Object;)Lcom/qq/a/a/h;', u'Lcom/admogo/AdMogoManager$1;-><init>(Lcom/admogo/AdMogoManager;)V', u'Lcom/tencent/mobwin/core/v;->d(Landro"
+p48
+sg5
+S'CHANGED (JI 30.08%)'
+p49
+sg7
+F30.079999999999998
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/io/OutputStream;->write([B)V', u'Landroid/widget/RelativeLayout;->getChildCount()I', u'Lcom/adwo/adsdk/D;->run()V', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Lcom/admogo/adapters/AdTouchAdapter;->failedReceiveAd(Lcom/energysource/szj/embeded/AdView;)V', u'Lcn/domob/android/ads/r;-><init>()V', u'Lcom/tencent/mobwin/core/view/d;->handleMessage(Landroid/os/Message;)V', u'LMobWin/UserLocation;->clone()Ljava/lang/Object;', u'Lcom/admogo/adapters/MdotMAdapter;->click()V', u'Lcom/admogo/AdMogoManager$1;-><init>(Lcom/admogo/AdMogoManager;)V', u'Lcom/tencent/mobwin/core/view/b;-><init>(Landroid/graphics/Bitmap; I)V', u'Landroid/view/View;->getResources()Landroid/content/res/Resources;', u'Lcom/admogo/adapters/MobWINAdapter;->finish()V', u'Lcom/admogo/adapters/AdTouchAdapter;->click()V', u'Lcn/domob/android/ads/x;->setFlipInterval(I)V', u'Lcom/qq/a/a/h;->a([Z)Lcom/qq/a/a/h;', u'Lcn/domob/android/ads/b/d;->d(Lcn/domob/android/ads/b/d;)Landr"
+p54
+sg5
+S'CHANGED (JI 37.09%)'
+p55
+sg7
+F37.090000000000003
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/lang/System;->getProperties()Ljava/util/Properties;', u'Ljava/util/Set;->add(Ljava/lang/Object;)Z', u'Landroid/app/ActivityManager;->getMemoryInfo(Landroid/app/ActivityManager$MemoryInfo;)V', u'Landroid/graphics/Bitmap;->setDensity(I)V', u'Ljava/io/OutputStream;->write([B)V', u'Landroid/webkit/WebView;->onTrackballEvent(Landroid/view/MotionEvent;)Z', u'Landroid/widget/RelativeLayout;->getChildCount()I', u'Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z', u'Landroid/webkit/WebChromeClient;->onReceivedIcon(Landroid/webkit/WebView; Landroid/graphics/Bitmap;)V', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Ljava/security/MessageDigest;->update([B)V', u'Ljava/lang/Float;->floatToIntBits(F)I', u'Landroid/widget/Button;->setTextColor(I)V', u'Ljava/lang/String;->charAt(I)C', u'Landroid/graphics/drawable/GradientDrawable;->setAlpha(I)V', u'Landroid/webkit/WebViewClient;->onReceivedError(Landroid/webkit/WebView; I Ljava/lang/String; Ljava/"
+p57
+sg5
+S'CHANGED (JI 84.14%)'
+p58
+sg7
+F84.140000000000001
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u' from cache', u'you must have android.permission.WRITE_EXTERNAL_STORAGE permission !', u'Client built:   ', u'AppColorSetting.titleColor', u'/com/admogo/assets/adsmogo_btn_bg_prs.png', u'ZestADZ failure', u'you must have android.permission.READ_PHONE_STATE permission !', u'Update _avg_time succeeds', u'Get User Agent:', u'\\u66f4\\u65b0\\u63d0\\u9192', u'com.energysource.szj.embeded.AdView', u'tManager is not null', u'Get UUID from conf db:', u'http://cus.adsmogo.com/Exchange.ashx?appid=%s&adtype=%s&country=%s&client=2&uuid=%s&network=%s', u'Current system timestamp = ', u'MobWIN onAdClick', u'connection return error:', u'DomobSDK\\u7f3a\\u5c11\\u5fc5\\u8981Activity', u'Greystripe Full Screen failure', u'http://serv.adsmogo.net/AppVersion.ashx?appid=%s', u'activation', u'inapp_fs', u'Showing Impression:\\n nid: %s\\n Type: %s', u'In onInterceptTouchEvent(), but mogo or mogo.link is null', u'AD is disabled on web server.', u')&z=22', u'Https req:', u'Q8tFVImbNuvsmBwWwdqsPE6jsRQsSPkQ', u'ER"
+p60
+sg5
+S'CHANGED (JI 30.05%)'
+p61
+sg7
+F30.050000000000001
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/adwo/adsdk/Y;->a I [access_flags=protected static]\\n', 'Lcom/adwo/adsdk/AdwoAdView;->f Landroid/os/Handler; [access_flags=private static]\\n', 'Lcn/domob/android/ads/p;->s Ljava/lang/String; [access_flags=private]\\n', 'Lcom/admogo/adapters/BaiduJsonAdapter$UpdateBaiduRunnable;->baiduAdapter Lcom/admogo/adapters/BaiduJsonAdapter; [access_flags=private]\\n', 'Lcom/tencent/mobwin/core/view/c;->o I [access_flags=private]\\n', 'Lcom/admogo/AsyncImageLoader;->handler Landroid/os/Handler; [access_flags=private final]\\n', 'Lcom/admogo/obj/Update;->date Ljava/lang/String; [access_flags=public]\\n', 'LMobWin/AppSettings;->f LMobWin/AppColorsSetting; [access_flags=public]\\n', 'Lcom/admogo/adapters/YoumiAdapter;->activity Landroid/app/Activity; [access_flags=private]\\n', 'Lcom/tencent/mobwin/core/A;->I LMobWin/ResReportAdPlayInfo; [access_flags=static]\\n', 'Lcom/tencent/mobwin/core/g;->ad Lcom/tencent/mobwin/AdView; [access_flags=private]\\n', 'Lcn/domob/android/ads/p;->g Landroid/widget/Rel"
+p63
+sg5
+S'CHANGED (JI 31.98%)'
+p64
+sg7
+F31.98
+sa.

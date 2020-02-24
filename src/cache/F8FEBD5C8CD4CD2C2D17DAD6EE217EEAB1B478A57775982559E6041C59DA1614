@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 1!=4'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 1.0!=@7F040001'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 6!=7'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: 16!=None'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 16!=7'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set(['android.permission.WAKE_LOCK'])\n---\nADDED set(['android.permission.VIBRATE', 'android.permission.READ_PHONE_STATE'])"
+p24
+sg5
+S'CHANGED (JI 40.0%)'
+p25
+sg7
+F40
+sa(dp26
+g3
+S'DIFFERENT: com.binarythinkers.plunkthetinyball!=com.tuesdayquest.hungrycat'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: Plunk The TINY Ball!=Hungry Cat Mahjong'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.unity3d.player.VideoPlayer', 'com.unity3d.player.UnityPlayerNativeActivity', 'com.unity3d.player.UnityPlayerProxyActivity', 'com.unity3d.player.UnityPlayerActivity'])\n---\nADDED set(['com.tuesdayquest.hungrycat.activity.MainActivity'])"
+p33
+sg5
+S'CHANGED (JI 16.67%)'
+p34
+sg7
+F16.670000000000002
+sa(dp35
+g3
+S"\nDELETED set([u'assets/bin/Data/level16', u'res/drawable-ldpi/app_icon.png', u'assets/bin/Data/sharedassets7.assets', u'assets/bin/Data/level15', u'assets/bin/Data/sharedassets15.assets', u'lib/armeabi-v7a/libunity.so', u'assets/bin/Data/unity default resources', u'assets/bin/Data/sharedassets8.assets', u'assets/bin/Data/Managed/UnityEngine.dll', u'assets/bin/Data/Managed/Mono.Security.dll', u'res/drawable-xxhdpi/app_icon.png', u'assets/bin/Data/sharedassets16.assets', u'assets/bin/Data/sharedassets4.assets.split9', u'assets/bin/Data/sharedassets4.assets.split8', u'lib/armeabi-v7a/libmain.so', u'assets/bin/Data/sharedassets4.assets.split3', u'assets/bin/Data/sharedassets4.assets.split2', u'assets/bin/Data/sharedassets4.assets.split1', u'assets/bin/Data/sharedassets4.assets.split0', u'assets/bin/Data/sharedassets4.assets.split7', u'assets/bin/Data/sharedassets14.assets.split0', u'assets/bin/Data/sharedassets4.assets.split5', u'assets/bin/Data/sharedassets4.assets.split4', u'assets/bin/Data/share\n---\nADDED set(['assets/spr/scoreloop_button.png', 'assets/spr/043.png', 'assets/spr/special03.png', 'assets/spr/027.png', 'assets/spr/button_next_00.png', 'assets/spr/016.png', 'assets/spr/achievement_26.png', 'assets/spr/achievement_27.png', 'res/drawable-mdpi/icon.png', 'assets/spr/064.png', 'assets/spr/070.png', 'assets/spr/021.png', 'assets/spr/020.png', 'assets/spr/selector.png', 'assets/mfx/select_invalid.ogg', 'assets/spr/bg_04.jpg', 'assets/spr/feed_the_cat_boss.png', 'assets/spr/052.png', 'assets/spr/achievement_06.png', 'assets/spr/048.png', 'assets/mfx/pop_sardine.ogg', 'assets/spr/063.png', 'assets/spr/015.png', 'assets/spr/054.png', 'assets/spr/055.png', 'assets/spr/slot_level_03.png', 'assets/spr/071.png', 'assets/spr/achievement_18.png', 'assets/spr/achievement_notification.png', 'assets/spr/bonus_moustache.png', 'assets/spr/achievement_29.png', 'assets/spr/achievement_08.png', 'assets/spr/slot_level_05.png', 'assets/spr/009.png', 'assets/spr/053.png', 'assets/spr/ui_team.png', 'a"
+p36
+sg5
+S'CHANGED (JI 1.7%)'
+p37
+sg7
+F1.7
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S'EQUAL (JI 100%)'
+p42
+sg5
+S'EQUAL (JI 100%)'
+p43
+sg7
+I100
+sa(dp44
+g3
+S"\nDELETED set([u'Lcom/google/ads/util/i$a;', u'Lcom/google/ads/e$8;', u'Landroid/graphics/drawable/ColorDrawable;', u'Lcom/unity3d/player/t$1;', u'Landroid/view/InputDevice;', u'Landroid/view/animation/AnimationUtils;', u'Lcom/unity3d/player/ReflectionHelper$1;', u'Lcom/unity3d/player/UnityPlayer$5;', u'Landroid/text/method/TextKeyListener;', u'Lcom/google/ads/internal/AdWebView;', u'Lcom/google/ads/util/g$a;', u'Ljava/lang/Thread$UncaughtExceptionHandler;', u'Lcom/unity3d/player/UnityPlayer$19$1;', u'Lcom/google/ads/internal/c$e;', u'Lcom/unity3d/player/t;', u'Lcom/google/ads/util/f;', u'Lcom/microeyes/admob/AdmobActivity$2$4;', u'Ljava/lang/reflect/Modifier;', u'Lcom/google/ads/ae;', u'Lcom/unity3d/player/UnityPlayer;', u'Lcom/google/ads/mediation/customevent/CustomEventAdapter$a;', u'Landroid/webkit/JsPromptResult;', u'Lcom/unity3d/player/UnityPlayer$27;', u'Lcom/unity3d/player/NativeLoader;', u'Lcom/google/ads/internal/i;', u'Lcom/unity3d/player/UnityPlayer$17;', u'Lcom/google/ads/c$1;', u'L\n---\nADDED set([u'Ljava/io/FileNotFoundException;', u'Lorg/anddev/andengine/util/path/ITiledMap;', u'Lcom/scoreloop/client/android/core/util/Formats;', u'Lorg/anddev/andengine/entity/particle/modifier/ExpireModifier;', u'Lorg/anddev/andengine/opengl/texture/atlas/bitmap/source/decorator/shape/IBitmapTextureAtlasSourceDecoratorShape;', u'Lcom/tuesdayquest/hungrycat/scene/HighscoresScene$4;', u'Lcom/tuesdayquest/engine/TuesdayLayoutGameActivity$2;', u'Lorg/anddev/andengine/entity/sprite/batch/SpriteGroup;', u'Lorg/anddev/andengine/util/modifier/ease/IEaseFunction;', u'Ljava/lang/Process;', u'Lorg/anddev/andengine/util/sort/InsertionSorter;', u'Lcom/tuesdayquest/engine/AbstractLoadingScene$1;', u'Lorg/anddev/andengine/opengl/texture/atlas/bitmap/source/decorator/BaseBitmapTextureAtlasSourceDecorator$TextureAtlasSourceDecoratorOptions;', u'[Lcom/scoreloop/client/android/core/model/User$b;', u'Lcom/tuesdayquest/andengine/ui/NewButton;', u'Lcom/scoreloop/client/android/core/controller/GameController$a;"
+p45
+sg5
+S'CHANGED (JI 12.02%)'
+p46
+sg7
+F12.02
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/google/ads/c;-><clinit>()V', u'Lcom/google/ads/util/AdUtil;->c(Ljava/lang/String;)Ljava/lang/String;', u'Lcom/google/ads/util/d;-><clinit>()V', u'Lcom/google/ads/util/b;->d(Ljava/lang/String;)V', u'Lcom/unity3d/player/UnityPlayer;->n(Lcom/unity3d/player/UnityPlayer;)V', u'Lcom/google/ads/e$1;-><init>(Lcom/google/ads/e; Lcom/google/ads/c; Lcom/google/ads/AdRequest;)V', u'Lcom/unity3d/player/e$1;->run()V', u'Lcom/google/ads/AdActivity;->b(Ljava/util/HashMap; Lcom/google/ads/internal/d;)V', u'Lcom/google/ads/ae;-><clinit>()V', u'Lcom/google/ads/mediation/MediationAdRequest;->getBirthday()Ljava/util/Date;', u'Lcom/google/ads/f;->a()Ljava/lang/String;', u'Lcom/unity3d/player/UnityPlayer$20;-><init>(Lcom/unity3d/player/UnityPlayer;)V', u'Lcom/unity3d/player/j;->a()I', u'Lcom/google/ads/internal/AdWebView;->a()V', u'Lcom/google/ads/internal/i;->onPageFinished(Landroid/webkit/WebView; Ljava/lang/String;)V', u'Lcom/unity3d/player/w;->u(Lcom/unity3d/player/w;)[F', u'Lcom/google/ads/u\n---\nADDED set([u'Lorg/anddev/andengine/ui/dialog/GenericInputDialogBuilder$2;-><init>(Lorg/anddev/andengine/ui/dialog/GenericInputDialogBuilder;)V', u'Lcom/scoreloop/client/android/core/model/Challenge;->getContenderScore()Lcom/scoreloop/client/android/core/model/Score;', u'Lorg/anddev/andengine/entity/modifier/MoveXModifier;->deepCopy()Lorg/anddev/andengine/entity/modifier/MoveXModifier;', u'Lorg/anddev/andengine/sensor/accelerometer/AccelerometerData;->toString()Ljava/lang/String;', u'Lcom/scoreloop/client/android/core/controller/RequestControllerException;->hasDetail(I)Z', u'Lcom/tuesdayquest/hungrycat/scene/GameScene$7;-><init>(Lcom/tuesdayquest/hungrycat/scene/GameScene; Z)V', u'Lcom/scoreloop/client/android/core/controller/ScoreController;->b(Lcom/scoreloop/client/android/core/controller/ScoreController;)Lcom/scoreloop/client/android/core/persistence/LocalScoreStore;', u'Lcom/scoreloop/client/android/core/persistence/DbAchievementsStore$a;->onCreate(Landroid/database/sqlite/SQLiteDatabase;"
+p48
+sg5
+S'CHANGED (JI 1.61%)'
+p49
+sg7
+F1.6100000000000001
+sa(dp50
+g3
+S"\nDELETED set([u'Lcom/google/ads/c;-><clinit>()V', u'Lcom/google/ads/util/AdUtil;->c(Ljava/lang/String;)Ljava/lang/String;', u'Lcom/google/ads/n;->a(Lcom/google/ads/internal/d; Ljava/util/HashMap; Landroid/webkit/WebView;)V', u'Lcom/google/ads/d;->a(Lcom/google/ads/c; I)V', u'Lcom/google/ads/util/b;->d(Ljava/lang/String;)V', u'Lcom/google/ads/j;->onLeaveApplication(Lcom/google/ads/mediation/MediationBannerAdapter;)V', u'Lcom/google/ads/util/b$a;-><clinit>()V', u'Lcom/google/ads/f;->a()Ljava/lang/String;', u'Lcom/google/ads/aa;->run()V', u'Lcom/google/ads/h;->a(Lcom/google/ads/h;)Lcom/google/ads/mediation/MediationAdapter;', u'Lcom/google/ads/util/b;->a(Ljava/lang/String; I)Z', u'Lcom/google/ads/c;->j()Lcom/google/ads/internal/h;', u'Lcom/google/ads/j;->onDismissScreen(Lcom/google/ads/mediation/MediationBannerAdapter;)V', u'Lcom/google/ads/util/b;->c(Ljava/lang/String;)V', u'Lcom/google/ads/b;-><init>()V', u'Lcom/google/ads/AdRequest;->a()Lcom/google/ads/mediation/admob/AdMobAdapterExtras;', u'Lc\n---\nADDED set([u'Lcom/google/ads/d;-><init>(Landroid/app/Activity; Lcom/google/ads/Ad; Lcom/google/ads/AdSize; Ljava/lang/String; Z)V', u'Lcom/google/ads/util/a;->b(Ljava/lang/String; Ljava/lang/Throwable;)V', u'Lcom/google/ads/d;->A()Z', u'Lcom/google/ads/k;-><init>()V', u'Lcom/google/ads/d;->a(Lcom/google/ads/AdRequest$ErrorCode;)V', u'Lcom/google/ads/i;->c()V', u'Lcom/google/ads/util/b$b;-><clinit>()V', u'Lcom/google/ads/w;-><init>(Ljava/lang/String; Landroid/content/Context;)V', u'Lcom/google/ads/d;->q()V', u'Lcom/google/ads/d;->i()Lcom/google/ads/h;', u'Lcom/google/ads/h;->destroy()V', u'Lcom/google/ads/d;->B()V', u'Lcom/google/ads/b;-><init>(Lcom/google/ads/c; Lcom/google/ads/d;)V', u'Lcom/google/ads/f;->m()Z', u'Lcom/google/ads/d;->j()Lcom/google/ads/i;', u'Lcom/google/ads/g;->a(Z)V', u'Lcom/google/ads/d;->p()Z', u'Lcom/google/ads/b;->run()V', u'Lcom/google/ads/d;->a(Ljava/lang/Runnable;)V', u'Lcom/google/ads/d;->e()Landroid/app/Activity;', u'Lcom/google/ads/f;->p()Ljava/lang/String;', u'"
+p51
+sg5
+S'CHANGED (JI 22.16%)'
+p52
+sg7
+F22.16
+sa(dp53
+g3
+S"\nDELETED set([u'Lorg/xmlpull/v1/XmlPullParserFactory;->newInstance()Lorg/xmlpull/v1/XmlPullParserFactory;', u'Lcom/unity3d/player/v;->setImageBitmap(Landroid/graphics/Bitmap;)V', u'Landroid/widget/FrameLayout;->onTouchEvent(Landroid/view/MotionEvent;)Z', u'Landroid/view/ViewGroup;->removeAllViews()V', u'Lorg/xmlpull/v1/XmlPullParserFactory;->setNamespaceAware(Z)V', u'Landroid/view/Window;->setGravity(I)V', u'Lcom/google/ads/util/b;->d(Ljava/lang/String;)V', u'Lcom/google/ads/e$1;-><init>(Lcom/google/ads/e; Lcom/google/ads/c; Lcom/google/ads/AdRequest;)V', u'Lcom/google/ads/AdActivity;->b(Ljava/util/HashMap; Lcom/google/ads/internal/d;)V', u'Lcom/google/ads/ae;-><clinit>()V', u'Lcom/unity3d/player/UnityPlayer$20;-><init>(Lcom/unity3d/player/UnityPlayer;)V', u'Lcom/unity3d/player/j;->a()I', u'Lcom/google/ads/internal/AdWebView;->a()V', u'Lcom/google/ads/internal/i;->onPageFinished(Landroid/webkit/WebView; Ljava/lang/String;)V', u'Ljava/util/Arrays;->sort([I)V', u'Lcom/unity3d/player/w;->u(Lcom/un\n---\nADDED set([u'Lorg/anddev/andengine/opengl/texture/atlas/bitmap/source/decorator/LinearGradientFillBitmapTextureAtlasSourceDecorator$LinearGradientDirection;->getFromX(I)I', u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Lorg/anddev/andengine/opengl/texture/atlas/bitmap/source/decorator/BaseBitmapTextureAtlasSourceDecorator$TextureAtlasSourceDecoratorOptions;->getInsetBottom()F', u'Landroid/util/SparseArray;->remove(I)V', u'Lorg/anddev/andengine/entity/modifier/MoveXModifier;->deepCopy()Lorg/anddev/andengine/entity/modifier/MoveXModifier;', u'Lorg/anddev/andengine/sensor/accelerometer/AccelerometerData;->toString()Ljava/lang/String;', u'Lcom/scoreloop/client/android/core/controller/RequestControllerException;->hasDetail(I)Z', u'Lcom/tuesdayquest/hungrycat/scene/GameScene$7;-><init>(Lcom/tuesdayquest/hungrycat/scene/GameScene; Z)V', u'Lcom/scoreloop/client/android/core/controller/ScoreController;->b(Lcom/scoreloop/client/android/core/controller/ScoreController;)Lcom/scoreloop/client/a"
+p54
+sg5
+S'CHANGED (JI 6.34%)'
+p55
+sg7
+F6.3399999999999999
+sa(dp56
+g3
+S"\nDELETED set([u'Lcom/google/ads/c;-><clinit>()V', u'Lcom/google/ads/util/AdUtil;->c(Ljava/lang/String;)Ljava/lang/String;', u'Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V', u'Lcom/google/ads/AdActivity;->b(Ljava/util/HashMap; Lcom/google/ads/internal/d;)V', u'Lcom/google/ads/AdRequest;->getGender()Lcom/google/ads/AdRequest$Gender;', u'Ljava/util/Arrays;->sort([I)V', u'Landroid/widget/FrameLayout;->onTouchEvent(Landroid/view/MotionEvent;)Z', u'Ljava/io/FileInputStream;->close()V', u'Lcom/google/ads/util/b;->c(Ljava/lang/String;)V', u'Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;', u'Ljava/util/Map;->putAll(Ljava/util/Map;)V', u'Landroid/widget/FrameLayout;->requestLayout()V', u'Lcom/google/ads/util/b;->d(Ljava/lang/String;)V', u'Ljava/math/BigInteger;-><init>([B)V', u'Landroid/view/KeyEvent;->getScanCode()I', u'Landroid/app/Activity;->addContentView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Landroid/view/SurfaceView;->setVisibility(I)V', u'Landroid/view\n---\nADDED set([u'Landroid/os/Bundle;->keySet()Ljava/util/Set;', u'Ljava/io/OutputStream;->write([B)V', u'Lcom/google/ads/d;-><init>(Landroid/app/Activity; Lcom/google/ads/Ad; Lcom/google/ads/AdSize; Ljava/lang/String; Z)V', u'Ljavax/microedition/khronos/egl/EGL10;->eglSwapBuffers(Ljavax/microedition/khronos/egl/EGLDisplay; Ljavax/microedition/khronos/egl/EGLSurface;)Z', u'Lorg/json/JSONObject;->names()Lorg/json/JSONArray;', u'Lcom/google/ads/d;->A()Z', u'Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;', u'Landroid/webkit/WebViewClient;->onReceivedError(Landroid/webkit/WebView; I Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/google/ads/d;->a(Lcom/google/ads/AdRequest$ErrorCode;)V', u'Landroid/widget/FrameLayout;->addView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Lcom/google/ads/b;-><init>(Lcom/google/ads/c; Lcom/google/ads/d;)V', u'Lcom/google/ads/d;->j()Lcom/google/ads/i;', u'Lcom/google/ads/g;->a(Z)V', u'Landroid/graphics/Color;->parseColor(Ljava/"
+p57
+sg5
+S'CHANGED (JI 38.96%)'
+p58
+sg7
+F38.960000000000001
+sa(dp59
+g3
+S'\nDELETED set([u\'   Orientation: \', u\'.obb\', u\'isLoadAdTaskSuccessful() called when isLoadAdTaskDone() is false.\', u\'/cache\', u\'onAdClicked()\', u\'@gw_adnetrefresh@\', u\'updateVideoLayout\', u\'Assertion failed.\', u\'android.permission.VIBRATE not available?\', u\'  %s: %d\\n\', u\' AAx\', u\'EGL_COVERAGE_BUFFERS_NV\', u"\'. Expected something starting with \'application/json\'. Aborting mediation.", u\'\\n\\nActual\\nm32bit: \', u\'Visible Adv\', u\'mad_hac\', u\') ad to show interstitial: \', u\'Disabling hardware acceleration on collapsing MRAID WebView.\', u\'Request not registered in AdvertisementHandler\', u\'4.2.0f4\', u\'): \', u\' is not known!\', u\'ac_padding\', u\'IOException fetching MRAID JS.\', u\' (?)\', u\'Re-enabling hardware acceleration for a banner after reading constants.\', u\'eglGetDisplay failed\', u\'FMODStreamBlocker\', u\'\\nmRedSize: \', u\'EGL_LUMINANCE_SIZE\', u\'Required Server Option(s) missing: \', u\'com.unity3d.player.UnityPlayerActivity\', u\'Hiding Adv OUTER\', u\'EGL_SAMPLES\', u\'Ad size was not set before getHeight()\n---\nADDED set([u\'button_menu_back_01.png\', u\'mode_count\', u\'BUDDY\', u\'Score mode does not match challenge mode\', u\'run(): publish() failed\\n\', u\'/service/users/%s/detail\', u\'SCORE_2\', u\'Coins\', u\'pCollisionCallback must not be null!\', u\'00:00\', u\'invalid value, should be in: \', u\'last_name\', u\' should not be null. Using default \', u\'button_theme_selection_04.png\', u\' MD5(\', u"Observer can\'t be null", u\'A_8\', u\'user must not be null\', u\'token_secret\', u\'/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq\', u"There\'s no previous range", u\'cannot access game modes without a game\', u\'bonus_time.png\', u\'invalid game argument\', u\'button_retry_01.png\', u\'Request already enqueued or executing\', u\'currency.name.plural\', u\'com/facebook/android/facebook_icon.png\', u\'base64\', u\'Base64 input not properly padded.\', u\'AES/CBC/PKCS7Padding\', u\'using shared device id from: \', u\'Info.plist.checksum\', u\'special0\', u\'device\', u\'RequestCallback.onRequestCompleted: request cancelled: \', u\'Search list or user is req'
+p60
+sg5
+S'CHANGED (JI 20.32%)'
+p61
+sg7
+F20.32
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/unity3d/player/ae;->b Lcom/unity3d/player/UnityPlayer; [access_flags=private final]\\n', 'Lcom/unity3d/player/UnityPlayer;->p Landroid/os/PowerManager$WakeLock; [access_flags=private]\\n', 'Lorg/fmod/FMODAudioDevice;->c Lorg/fmod/FMODAudioDevice$a; [access_flags=private bridge]\\n', 'Lcom/google/ads/ac;->d [Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/unity3d/player/UnityPlayer;->i Landroid/os/Bundle; [access_flags=private]\\n', 'Lcom/google/ads/internal/d;->r Ljava/util/LinkedList; [access_flags=private]\\n', 'Lcom/google/ads/internal/d;->n Landroid/content/SharedPreferences; [access_flags=private]\\n', 'Lorg/fmod/FMODAudioDevice$a;->b Ljava/lang/Object; [access_flags=private]\\n', 'Lcom/microeyes/admob/AdmobActivity;->hasGotAdv Z [access_flags=static]\\n', 'Lcom/google/ads/AdRequest;->d Lcom/google/ads/AdRequest$Gender; [access_flags=private]\\n', 'Lcom/google/ads/internal/j$a;->a Landroid/gesture/GestureStore; [access_flags=private final]\\n', 'Lcom/google/ads/Ad\n---\nADDED set(['Lcom/scoreloop/client/android/core/model/User$Gender;->UNKNOWN Lcom/scoreloop/client/android/core/model/User$Gender; [access_flags=public static enum final]\\n', 'Lcom/tuesdayquest/hungrycat/activity/MainActivity;->entityToRemoveList Ljava/util/ArrayList; [access_flags=private]\\n', 'Lcom/scoreloop/client/android/core/model/ScoreFormatter$ScoreFormatKey;->a Lcom/scoreloop/client/android/core/model/ScoreFormatter$a; [access_flags=private]\\n', 'Lorg/anddev/andengine/entity/scene/Scene;->mOnSceneTouchListenerBindingEnabled Z [access_flags=private]\\n', 'Lcom/scoreloop/client/android/core/controller/AchievementsController;->f Lcom/scoreloop/client/android/core/model/AwardList; [access_flags=private]\\n', 'Lcom/scoreloop/client/android/core/server/Request$State;->COMPLETED Lcom/scoreloop/client/android/core/server/Request$State; [access_flags=public static enum final]\\n', 'Lcom/tuesdayquest/hungrycat/scene/GameScene;->currentBoard Lcom/tuesdayquest/hungrycat/CurrentBoard; [access_flags=pr"
+p63
+sg5
+S'CHANGED (JI 1.41%)'
+p64
+sg7
+F1.4099999999999999
+sa.

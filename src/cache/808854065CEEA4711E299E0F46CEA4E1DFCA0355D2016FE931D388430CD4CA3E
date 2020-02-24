@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.SYSTEM_ALERT_WINDOW', 'android.permission.ACCESS_WIFI_STATE', 'android.permission.WAKE_LOCK', 'android.permission.GET_TASKS', 'android.permission.WRITE_EXTERNAL_STORAGE'])"
+p24
+sg5
+S'CHANGED (JI 37.5%)'
+p25
+sg7
+F37.5
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.tuckli.btum.TareActivity', 'com.tuckli.cterl.neat.RTawwn', 'com.tuckli.cterl.Tawre', 'com.tuckli.Dweker'])"
+p33
+sg5
+S'CHANGED (JI 33.33%)'
+p34
+sg7
+F33.329999999999998
+sa(dp35
+g3
+S"\nDELETED set(['META-INF/CERT.RSA', 'META-INF/CERT.SF'])\n---\nADDED set(['META-INF/ABC_KEYS.SF', 'META-INF/ABC_KEYS.RSA', 'assets/12.dat', 'assets/bin/v.dat', 'assets/11.dat', 'assets/l/l.dat'])"
+p36
+sg5
+S'CHANGED (JI 77.14%)'
+p37
+sg7
+F77.140000000000001
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.tuckli.CaerActivity', 'com.tuckli.cterl.Kaeril', 'com.tuckli.btum.Gaeinw', 'com.tuckli.cterl.neat.BllwiActivity'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.tuckli.BeiRsen', 'com.tuckli.btum.RewTawe', 'com.tuckli.cterl.REawsn', 'com.tuckli.cterl.neat.CawuActivity'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/io/FileNotFoundException;', u'Lcom/tuckli/btum/d/j;', u'Landroid/widget/ImageView;', u'Lcom/tuckli/btum/e/c;', u'Lcom/tuckli/cterl/o;', u'Landroid/os/PowerManager;', u'Lcom/tuckli/e/c;', u'Lcom/tuckli/cterl/e/a;', u'Lcom/tuckli/cterl/g/ab;', u'Lcom/tuckli/b;', u'Lcom/tuckli/crec/b;', u'Lcom/tuckli/crec/k;', u'Lcom/tuckli/btum/j;', u'Lcom/tuckli/btum/d/c;', u'Ljava/util/LinkedHashMap;', u'Lcom/tuckli/btum/b/m;', u'Lcom/tuckli/cterl/cote/a;', u'Lcom/tuckli/b/c;', u'Lcom/tuckli/cterl/c/j;', u'Lcom/tuckli/d/c;', u'Lcom/tuckli/e/g;', u'Lcom/tuckli/crec/e;', u'Lcom/tuckli/cterl/e/j;', u'Lcom/tuckli/cterl/g/ae;', u'Lcom/tuckli/cterl/g/f;', u'Lcom/tuckli/cterl/cote/f;', u'Lcom/tuckli/btum/q;', u'Lcom/tuckli/cterl/f/h;', u'Lcom/tuckli/btum/b/d;', u'Lcom/tuckli/cterl/neat/d/a;', u'Lcom/tuckli/cterl/neat/c/e;', u'Landroid/widget/ListView;', u'Lcom/tuckli/cterl/h;', u'Lcom/tuckli/cterl/neat/r;', u'Lcom/tuckli/btum/d/q;', u'Lcom/tuckli/cterl/neat/ay;', u'Lcom/tuckli/cterl/neat/b/e;', u"
+p45
+sg5
+S'CHANGED (JI 39.71%)'
+p46
+sg7
+F39.710000000000001
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/tuckli/cterl/c/j;->run()V', u'Lcom/tuckli/cterl/cote/o;->onClick(Landroid/view/View;)V', u'Lcom/tuckli/cterl/g/g;->c(Lcom/tuckli/cterl/g/g;)Z', u'Lcom/tuckli/cterl/c/b;->doInBackground([Ljava/lang/Object;)Ljava/lang/Object;', u'Lcom/tuckli/a;->a(Lcom/tuckli/a/f; I)V', u'Lcom/tuckli/a/b;->d(Lcom/tuckli/a/f;)V', u'Lcom/tuckli/cterl/a/c;->b(Ljava/lang/String;)V', u'Lcom/tuckli/cterl/e/j;->a([B)[Lcom/tuckli/cterl/e/j;', u'Lcom/tuckli/cterl/c/c;->a(Ljava/lang/String; [B)Ljava/io/InputStream;', u'Lcom/tuckli/btum/d/p;-><init>(Lcom/tuckli/btum/d/o; J J)V', u'Lcom/tuckli/cterl/g/g;->c(I)V', u'Lcom/tuckli/cterl/b/b;->d(Lcom/tuckli/cterl/b/f;)V', u'Lcom/tuckli/cterl/neat/af;->a()Lorg/json/JSONObject;', u'Lcom/tuckli/cterl/b/f;->m()Ljava/lang/String;', u'Lcom/tuckli/m;-><init>(Lcom/tuckli/j;)V', u'Lcom/tuckli/BartActivity;->stopMessage(Landroid/content/Context;)V', u'Lcom/tuckli/cterl/cote/n;->c(Lcom/tuckli/cterl/cote/n;)Ljava/util/List;', u'Lcom/tuckli/cterl/e/g;->a(Landroid/content/"
+p48
+sg5
+S'CHANGED (JI 30.36%)'
+p49
+sg7
+F30.359999999999999
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/tuckli/cterl/c/j;->run()V', u'Lcom/tuckli/cterl/cote/o;->onClick(Landroid/view/View;)V', u'Lcom/tuckli/cterl/d/c;-><init>(Lcom/tuckli/cterl/d/b;)V', u'Lcom/tuckli/btum/l;->a(Lcom/tuckli/btum/l; I)V', u'Lcom/tuckli/cterl/e/j;->a([B)[Lcom/tuckli/cterl/e/j;', u'Lcom/tuckli/cterl/g/g;->c(I)V', u'Lcom/tuckli/cterl/b/b;->d(Lcom/tuckli/cterl/b/f;)V', u'Lcom/tuckli/cterl/neat/af;->a()Lorg/json/JSONObject;', u'Lcom/tuckli/m;-><init>(Lcom/tuckli/j;)V', u'Lcom/tuckli/BartActivity;->stopMessage(Landroid/content/Context;)V', u'Lcom/tuckli/cterl/a/i;->addView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Lcom/tuckli/cterl/e/g;->a(Landroid/content/Context; Lcom/tuckli/cterl/b/f; Lcom/tuckli/cterl/b/a;)V', u'Lcom/tuckli/cterl/cote/k;->onClick(Landroid/view/View;)V', u'Lcom/tuckli/btum/e/h;->c(Landroid/content/Context; Lcom/tuckli/btum/b/f;)Z', u'Lcom/tuckli/cterl/c/g;->a(Lorg/json/JSONObject;)V', u'Lcom/tuckli/crec/a;->a(F)V', u'Lcom/tuckli/cterl/a/i;->addView(Landroid/vi"
+p54
+sg5
+S'CHANGED (JI 34.31%)'
+p55
+sg7
+F34.310000000000002
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/lang/System;->currentTimeMillis()J', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; I)Landroid/content/Intent;', u'Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z', u'Landroid/app/Activity;->getPackageName()Ljava/lang/String;', u'Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;', u'Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;', u'Ljava/util/List;->get(I)Ljava/lang/Object;', u'Ljava/lang/Math;->hypot(D D)D', u'Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;', u'Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V', u'Landroid/widget/FrameLayout;->addView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Ljava/util/List;->contains(Ljava/lang/Object;)Z', u'Landroid/graphics/Canvas;->drawColor(I)V', u'Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V', u'Ljava/lang/String;-><init>([B)V', u'Landroid/graphics/Color;->parseColor(Ljava/lang/St"
+p57
+sg5
+S'CHANGED (JI 87.79%)'
+p58
+sg7
+F87.790000000000006
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'\\xc2\\xd8\\xd9', u'\\xcf\\xd9\\xe0\\xcb\\xdb\\xda\\xd0\\xde\\xe1\\xdc\\xcc\\x9c\\xd3', u'x\\xf0\\xdc\\u0105\\xd3\\xfe\\xdc\\xf0\\xf9\\xf6y', u'x\\u7bf8\\u4f57y', u's\\xed\\xf6\\xd4\\xe1\\xe0\\xc6\\xe5\\xeb\\xd8\\xa8\\xb2\\u0102\\u0107\\xdb\\xe1\\u0103\\xba\\xf7\\xf4\\xdf\\xf4\\xb0\\x94\\u0102\\xe2\\xf5\\xfc\\xfc\\xa0\\xfa\\u0107\\u010b\\xf0\\xf1\\x9d\\x9a\\xe9\\u010a\\xfe\\u0105\\xf2\\xbe\\xf8\\xf9\\xee\\xf3\\xfe\\xc0\\xaf\\xf7\\xe0\\u0109\\xe9\\xe8\\xfb\\xef\\xe9\\u0103\\u010e\\u010c\\xc5\\u0107\\xaf\\xf1\\xf4\\u0108\\xed\\u010a\\xee\\xf3\\u0103\\xed\\xb5\\xfc\\xe2\\xe1\\u0100\\xf1\\x9e\\xa0\\xf0\\xe6\\u010f\\u0109\\xe4\\xf6\\xcf\\u0101\\xfe\\xfa\\xe2\\xaf\\u0100\\xe3\\xe5\\xeb\\xb8\\u0107\\xdf\\xff\\xac\\x9a\\xf7\\xee\\xfc\\xea\\xdf\\xd8\\xe7\\xf7\\xec\\xfc\\u0103\\xcd\\xf6\\u0108\\xf9\\xb4\\xf5\\u0111\\xc4\\xf1\\xfd\\xef\\xda\\xf6\\xf6\\u0103\\xe4\\xe7\\xf5\\u0112\\xc0\\x9e\\xfc\\xfa\\xfb\\xfd\\u0101\\xf5\\xdd\\xf0\\xf9\\xe8\\xfc\\xbc\\u0112\\x9e\\xff\\xe7\\x9e\\xe8\\xde\\xe5\\xff\\xaf\\xbf\\xf8\\xf2\\xde\\u010b\\u0100\\xd7\\xff\\u0110\\xf2\\xf3\\u0105\\xac\\xf7\\xc9\\xeb\\u0110\\xc5\\xf5\\xe3\\xe6\\u0106\\u0104\\xfc\\xd6\\xe6\\xe7\\u0108\\xfc\\xae\\xb6\\xd0\\xfd\\xf8\\xeb\\xfc\\xf0\\xd0\\u01"
+p60
+sg5
+S'CHANGED (JI 55.1%)'
+p61
+sg7
+F55.100000000000001
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/tuckli/e/c;->cv Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/tuckli/btum/Gaeinw;->d Landroid/os/Looper; [access_flags=private]\\n', 'Lcom/tuckli/cterl/b/d;->c Lcom/tuckli/cterl/b/e; [access_flags=private]\\n', 'Lcom/tuckli/cterl/neat/at;->m Ljava/lang/String; [access_flags=protected]\\n', 'Lcom/tuckli/btum/e/b;->r Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/tuckli/e/c;->bl Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/tuckli/cterl/neat/h;->aZ Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/tuckli/cterl/f/d;->R [B [access_flags=public static final]\\n', 'Lcom/tuckli/cterl/f/e;->bn Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/tuckli/cterl/f/d;->bU [B [access_flags=public static final]\\n', 'Lcom/tuckli/btum/e/b;->bl Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/tuckli/cterl/f/e;->aB Ljava/lang/String; [access_flags=public static final]\\n', 'Lcom/tuckli/d/h;->I I [access_fla"
+p63
+sg5
+S'CHANGED (JI 14.03%)'
+p64
+sg7
+F14.029999999999999
+sa.

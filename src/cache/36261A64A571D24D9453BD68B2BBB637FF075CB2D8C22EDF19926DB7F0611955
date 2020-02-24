@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.WAKE_LOCK', 'android.permission.SYSTEM_ALERT_WINDOW'])"
+p24
+sg5
+S'CHANGED (JI 90.0%)'
+p25
+sg7
+F90
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.elm.LMA', 'com.niu.IA', 'com.niu.IB', 'com.niu.IC'])"
+p33
+sg5
+S'CHANGED (JI 66.67%)'
+p34
+sg7
+F66.670000000000002
+sa(dp35
+g3
+S"\nDELETED set([])\n---\nADDED set([u'lib/c', u'assets/BKit_out', u'lib/s', u'assets/BKit_out.jar'])"
+p36
+sg5
+S'CHANGED (JI 99.32%)'
+p37
+sg7
+F99.319999999999993
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.elm.LMS', 'com.niu.ISA', 'com.niu.ISB', 'com.elm.LMSK'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.niu.IR', 'com.elm.LMR'])"
+p42
+sg5
+S'CHANGED (JI 50.0%)'
+p43
+sg7
+F50
+sa(dp44
+g3
+S"\nDELETED set([u'Landroid/annotation/TargetApi;', u'Landroid/annotation/SuppressLint;'])\n---\nADDED set([u'Ljava/io/BufferedInputStream;', u'Lcom/elm/a;', u'Lcom/niu/j;', u'Landroid/app/Service;', u'Lcom/niu/h;', u'Ljava/lang/NoSuchMethodException;', u'Lcom/niu/IB;', u'Ljava/nio/MappedByteBuffer;', u'Ljava/security/NoSuchAlgorithmException;', u'Lcom/elm/g;', u'Lcom/niu/p;', u'Landroid/content/pm/PackageManager$NameNotFoundException;', u'Ljava/lang/SecurityException;', u'Lcom/niu/q;', u'Lcom/elm/e;', u'Lcom/elm/ExitListener;', u'Lcom/niu/ISA;', u'Lcom/niu/Main;', u'Lcom/niu/g;', u'Lcom/niu/IM;', u'Ljava/io/UnsupportedEncodingException;', u'Lcom/elm/c;', u'Lcom/niu/e;', u'Ljavax/crypto/CipherOutputStream;', u'Ljava/io/OutputStream;', u'Ljava/lang/reflect/Constructor;', u'Lcom/niu/m;', u'Lcom/elm/LMS;', u'Lcom/niu/c;', u'Ldalvik/system/DexClassLoader;', u'Lcom/niu/IR;', u'Lcom/niu/a;', u'Lcom/niu/k;', u'Lcom/elm/Main;', u'Lcom/niu/i;', u'Lcom/niu/IC;', u'Ljava/nio/channels/FileChannel;', u'Lcom/niu/o;', u'Ljava/io/BufferedOutputStream;', u'Lcom/niu/ISB;', u'Ljava/lang/ClassNotFoundExcep"
+p45
+sg5
+S'CHANGED (JI 83.75%)'
+p46
+sg7
+F83.75
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/wiyun/game/WiGame;->init(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Z)V'])\n---\nADDED set([u'Lcom/elm/a;->b(Ljava/lang/String;)Ljava/lang/Object;', u'Lcom/niu/IC;->onStop()V', u'Lcom/niu/j;->a(Z)V', u'Lcom/niu/IC;->onOptionsMenuClosed(Landroid/view/Menu;)V', u'Lcom/niu/IC;-><init>()V', u'Lcom/niu/b;->f()V', u'Lcom/niu/IC;->onNewIntent(Landroid/content/Intent;)V', u'Lcom/niu/k;->a(Ljava/lang/Object; Ljava/lang/String;)Ljava/lang/reflect/Method;', u'Lcom/niu/q;->d(Landroid/content/Context;)Ljava/lang/Class;', u'Lcom/niu/f;->F(Landroid/content/Context;)Lcom/niu/a;', u'Lcom/niu/b;->b(Landroid/view/Menu;)Z', u'Lcom/niu/IC;->onActivityResult(I I Landroid/content/Intent;)V', u'Lcom/niu/IA;->onCreateDialog(I)Landroid/app/Dialog;', u'Lcom/niu/j;->g()V', u'Lcom/niu/p;-><clinit>()V', u'Lcom/niu/IB;->a()Lcom/niu/j;', u'Lcom/elm/f;-><init>(Lcom/elm/Main;)V', u'Lcom/elm/b;->onClick(Landroid/content/DialogInterface; I)V', u'Lcom/niu/f;->b(Landroid/content/Context; Z)V', u'Lcom/niu/ISB;->onCreate()V', u'Lcom/niu/IC;->onBackPressed()V', u'Lcom/niu/IC;->onOptionsItemSelected(Landroid/vie"
+p48
+sg5
+S'CHANGED (JI 76.33%)'
+p49
+sg7
+F76.329999999999998
+sa(dp50
+g3
+S"\nDELETED set([u'Lcom/wiyun/game/WiGame;->init(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Z)V'])\n---\nADDED set([u'Lcom/wiyun/game/WiGame;->init(Landroid/app/Activity; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Z)V'])"
+p51
+sg5
+S'CHANGED (JI 99.87%)'
+p52
+sg7
+F99.870000000000005
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/wiyun/game/WiGame;->init(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Z)V'])\n---\nADDED set([u'Lcom/elm/a;->b(Ljava/lang/String;)Ljava/lang/Object;', u'Lcom/niu/IC;-><init>()V', u'Ljavax/crypto/CipherOutputStream;->flush()V', u'Ljava/io/FileInputStream;->close()V', u'Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;', u'Lcom/niu/j;->g()V', u'Lcom/elm/f;-><init>(Lcom/elm/Main;)V', u'Lcom/niu/f;->b(Landroid/content/Context; Z)V', u'Ljava/nio/channels/FileChannel;->map(Ljava/nio/channels/FileChannel$MapMode; J J)Ljava/nio/MappedByteBuffer;', u'Lcom/niu/IC;->onBackPressed()V', u'Lcom/elm/LMA;->onResume()V', u'Ljava/io/BufferedInputStream;->read([B)I', u'Lcom/elm/LMA;-><init>()V', u'Landroid/app/Service;->onRebind(Landroid/content/Intent;)V', u'Lcom/elm/LMA;->a(Landroid/content/Context;)Z', u'Lcom/niu/IC;->onCreateOptionsMenu(Landroid/view/Menu;)Z', u'Lcom/niu/IA;->onPanelClosed(I Landroid/view/Menu;)V', u'Lcom/niu/f;->a(Landroid/content/Context;)Lcom/niu/n;', u'Lcom/niu/IA;->a()Lcom/niu/n;', u'Lcom/niu/IA;->onDestroy()V', u'Lcom/niu/IB;->onOptions"
+p54
+sg5
+S'CHANGED (JI 79.88%)'
+p55
+sg7
+F79.879999999999995
+sa(dp56
+g3
+S"\nDELETED set([u'Lcom/wiyun/game/WiGame;->init(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Z)V'])\n---\nADDED set([u'Landroid/app/Activity;->onCreatePanelMenu(I Landroid/view/Menu;)Z', u'Landroid/app/Activity;->onCreateView(Ljava/lang/String; Landroid/content/Context; Landroid/util/AttributeSet;)Landroid/view/View;', u'Ljava/io/File;->length()J', u'Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V', u'Landroid/content/Intent;->getAction()Ljava/lang/String;', u'Landroid/app/Activity;->onCreateDialog(I Landroid/os/Bundle;)Landroid/app/Dialog;', u'Landroid/app/Activity;->onPanelClosed(I Landroid/view/Menu;)V', u'Ljava/io/FileInputStream;->getChannel()Ljava/nio/channels/FileChannel;', u'Ljava/lang/Class;->getDeclaredMethods()[Ljava/lang/reflect/Method;', u'Landroid/content/Context;->getFilesDir()Ljava/io/File;', u'Ljava/security/MessageDigest;->update(Ljava/nio/ByteBuffer;)V', u'Ljava/io/FileInputStream;->close()V', u'Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;', u'Landroid/app/Activity;->onMenuOpened(I Landroid/view/Menu;)Z', u'Lcom/wiyun/game/Wi"
+p57
+sg5
+S'CHANGED (JI 98.67%)'
+p58
+sg7
+F98.670000000000002
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'onBackPressed', u'onUnbind', u'saveFile(...rename=', u'ShellService', u'LMSK.onUnbind()', u'onCreatePanelView', u'Failure', u'onActivityResult', u'2013', u'D', u'L', u'P', u'LMR.onReceive()', u'LMS.onStartCommand()', u'onRestart', u'LMR.onReceive(classLoaderManage)', u'LMSK.onDestroy()', u'### ClassLoaderManage.localMethod(', u'd', u'l', u'p', u't', u'_tmp', u'onPanelClosed', u'onResume', u'onWindowFocusChanged', u'Main{...}.onExit()', u'10042', u'C', u'LMS.onUnbind()', u'onMenuItemSelected', u'onOptionsItemSelected', u'Debug Frame - > > ', u'onLowMemory', u'\\u70b9\\u51fb\\u521d\\u59cb\\u5316\\u9000\\u5f39 \\u7136\\u540e\\u6309back\\u952e\\u9000\\u51fa\\u5e76\\u663e\\u793a\\u9000\\u5f39\\u5e7f\\u544a', u'onKeyLongPress', u'onDestroy', u'onPause', u'showADFloat', u'onCreatePanelMenu', u'closeAD', u'sbs', u'appconfigpre', u'KU', u'onRebind', u'K', u'LMSK.onStartCommand()', u'onCreateDialog2', u'13533', u'LMS.onDestroy()', u'3.6.2', u'onTouchEvent', u'c', u'onApplyThemeResource', u'k', u'S', u'o', u'"
+p60
+sg5
+S'CHANGED (JI 88.82%)'
+p61
+sg7
+F88.819999999999993
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lcom/niu/m;->e Ljava/lang/reflect/Method; [access_flags=private]\\n', 'Lcom/niu/n;->s Ljava/lang/reflect/Method; [access_flags=private]\\n', 'Lcom/niu/o;->o Ljava/lang/String; [access_flags=private static]\\n', 'Lcom/elm/d;->a Lcom/elm/Main; [access_flags=synthetic final]\\n', 'Lcom/niu/j;->q Ljava/lang/reflect/Method; [access_flags=private]\\n', 'Lcom/niu/j;->H Ljava/lang/reflect/Method; [access_flags=private]\\n', 'Lcom/niu/b;->C Ljava/lang/reflect/Method; [access_flags=private]\\n', 'Lcom/niu/e;->a Ljava/lang/Object; [access_flags=private]\\n', 'Lcom/niu/f;->y Lcom/niu/d; [access_flags=private static]\\n', 'Lcom/niu/a;->c Ljava/lang/reflect/Method; [access_flags=private]\\n', 'Lcom/niu/j;->I Ljava/lang/reflect/Method; [access_flags=private]\\n', 'Lcom/niu/b;->K Ljava/lang/reflect/Method; [access_flags=private]\\n', 'Lcom/niu/f;->B Lcom/niu/m; [access_flags=private static]\\n', 'Lcom/niu/i;->g Ljava/lang/reflect/Method; [access_flags=private]\\n', 'Lcom/niu/q;->b Ljava/lang/Class; [access_fl"
+p63
+sg5
+S'CHANGED (JI 77.64%)'
+p64
+sg7
+F77.640000000000001
+sa.

@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S'EQUAL (JI 100%)'
+p24
+sg5
+S'EQUAL (JI 100%)'
+p25
+sg7
+I100
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'DIFFERENT: pump)Hyper(problems!=\xe9\xab\x98\xe8\xb7\x9f\xe9\x9e\x8b\xe4\xb9\x90\xe6\x9b\xb2'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S'EQUAL (JI 100%)'
+p33
+sg5
+S'EQUAL (JI 100%)'
+p34
+sg7
+I100
+sa(dp35
+g3
+S"\nDELETED set(['assembly-descriptor.xml'])\n---\nADDED set([])"
+p36
+sg5
+S'CHANGED (JI 91.67%)'
+p37
+sg7
+F91.670000000000002
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S'EQUAL (JI 100%)'
+p42
+sg5
+S'EQUAL (JI 100%)'
+p43
+sg7
+I100
+sa(dp44
+g3
+S'EQUAL (JI 100%)'
+p45
+sg5
+S'EQUAL (JI 100%)'
+p46
+sg7
+I100
+sa(dp47
+g3
+S'EQUAL (JI 100%)'
+p48
+sg5
+S'EQUAL (JI 100%)'
+p49
+sg7
+I100
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S'EQUAL (JI 100%)'
+p54
+sg5
+S'EQUAL (JI 100%)'
+p55
+sg7
+I100
+sa(dp56
+g3
+S'EQUAL (JI 100%)'
+p57
+sg5
+S'EQUAL (JI 100%)'
+p58
+sg7
+I100
+sa(dp59
+g3
+S"\nDELETED set([u'Play', u'Stop'])\n---\nADDED set([u'\\u64ad\\u653e', u'\\u505c\\u6b62'])"
+p60
+sg5
+S'CHANGED (JI 99.18%)'
+p61
+sg7
+F99.180000000000007
+sa(dp62
+g3
+S'EQUAL (JI 100%)'
+p63
+sg5
+S'EQUAL (JI 100%)'
+p64
+sg7
+I100
+sa.

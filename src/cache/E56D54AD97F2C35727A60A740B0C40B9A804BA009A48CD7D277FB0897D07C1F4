@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 30!=8'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 1.29!=v3.4'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 3!=6'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: None!=15'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 3!=15'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set(['android.permission.READ_PHONE_STATE'])\n---\nADDED set(['android.permission.SYSTEM_ALERT_WINDOW', 'android.permission.RESTART_PACKAGES'])"
+p24
+sg5
+S'CHANGED (JI 50.0%)'
+p25
+sg7
+F50
+sa(dp26
+g3
+S'DIFFERENT: com.roidgame.zombieville!=com.Fitness.Pro3D'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: zombieville!=3D\xe5\x81\xa5\xe8\xba\xab\xe5\xb0\x88\xe5\xae\xb6'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.roidgame.zombieville.GameActivity', 'com.scoreloop.client.android.ui.BuddiesScreenActivity', 'com.scoreloop.client.android.ui.ChallengesScreenActivity', 'com.scoreloop.client.android.ui.component.challenge.ChallengeListActivity', 'com.scoreloop.client.android.ui.component.achievement.AchievementHeaderActivity', 'com.scoreloop.client.android.ui.LeaderboardsScreenActivity', 'com.scoreloop.client.android.ui.component.score.ScoreHeaderActivity', 'com.roidgame.zombieville.WeaponActivity', 'com.scoreloop.client.android.ui.component.news.NewsHeaderActivity', 'com.scoreloop.client.android.ui.ProfileScreenActivity', 'com.scoreloop.client.android.ui.component.entry.EntryListActivity', 'com.scoreloop.client.android.ui.PostScoreOverlayActivity', 'com.scoreloop.client.android.ui.component.user.UserDetailListActivity', 'com.scoreloop.client.android.ui.component.news.NewsListActivity', 'com.scoreloop.client.android.ui.component.market.MarketListActivity', 'com.scoreloop.client.android.ui.Ac\n---\nADDED set(['com.samsung.fitness.ui.TrackedActivity', 'com.samsung.fitness.ui.TestBMIActivity', 'com.samsung.fitness.ui.SettingActivity', 'com.samsung.fitness.ui.DetailActivity', 'com.samsung.fitness.ui.WebActivity', 'com.samsung.fitness.ui.SplashActivity', 'com.samsung.fitness.ui.PlanActivity', 'com.samsung.fitness.ui.PlayActivity', 'com.samsung.fitness.ui.MainActivity', 'com.samsung.fitness.ui.HertActivity', 'com.samsung.fitness.ui.MeasurementsActivity', 'com.samsung.fitness.ui.InfomationActivity', 'com.samsung.fitness.ui.HomeScreen', 'com.samsung.fitness.ui.TestListActivity'])"
+p33
+sg5
+S'CHANGED (JI 1.75%)'
+p34
+sg7
+F1.75
+sa(dp35
+g3
+S"\nDELETED set([u'res/drawable/r_m_r_7.png', u'res/drawable/r_bf_r_2_saw.png', u'res/drawable/r_s_r_7_mg.png', u'res/drawable/r_m_r_1_ft.png', u'res/drawable/r_d_r_1_mg2.png', u'res/drawable/r_m_r_8_hg3.png', u'res/drawable/options_bg.jpg', u'res/drawable-hdpi/sl_checkbox_checked.png', u'res/drawable/moreapp.png', u'res/drawable/z_d_r_4.png', u'res/raw/buy.ogg', u'res/drawable/r_m_r_8_rf.png', u'res/drawable/z1_b_l_2.png', u'res/drawable/r_m_r_4_rf.png', u'res/drawable/r_m_r_8_ft.png', u'res/drawable/sl_icon_next.png', u'res/drawable/r_d_r_1_mg3.png', u'res/drawable/sl_checkbox_checked.png', u'res/drawable/machinegun_bullet.png', u'res/drawable/r_s_r_2_rf2.png', u'res/drawable/rifle2_0.png', u'res/drawable-ldpi/sl_tab_active.png', u'res/drawable/r_bfm_r_1_mg2.png', u'res/drawable/r_d_r_4_hg2.png', u'res/drawable/heavy_weapon4_0.png', u'res/drawable/r_m_r_8_rf2.png', u'res/drawable/r_s_r_6_rf.png', u'res/drawable/r_m_r_1_saw.png', u'res/drawable/r_bfm_r_2_hg3.png', u'res/drawable/saw_1.png', u'res\n---\nADDED set(['assets/stills/7e7e949e5ab3bce5677cdb20c9a95139.jpg', 'assets/thumbnails/7e7dc3ab044a70e5f328015c4dabc0a7.png', 'assets/thumbnails/a7ce0f74daea87d70fd2b39d2a8758e7.png', 'assets/thumbnails/6509329f155f04cd3e228e61ab3ed934.jpg', 'assets/thumbnails/3fdae17a8b2d787aaaf94fe90d37baee.png', 'res/drawable-xhdpi/play.png', 'assets/stills/ba9507cd07cd1c57eff0766af324ffed.jpg', 'res/raw/gl001.mp4', 'assets/thumbnails/cdb99631ba6573c336f66f2a98b3e8ae.png', 'assets/thumbnails/2264e3aad2405d34dd2b0efe0afafbfc.png', 'res/drawable-hdpi/info.png', 'assets/thumbnails/da6be959123b167bc88ee74e3d6b47d5.jpg', 'assets/thumbnails/4e6157e8bd8e9776fef875416ebe0f2f.png', 'assets/thumbnails/23959172b5ad0376af15d0116542d938.jpg', 'assets/thumbnails/c2b862e81e57bc1c613185f4fb28f785.jpg', 'assets/thumbnails/a79820efcab1d46215966f99f1ea6610.png', 'assets/thumbnails/85fbc09cba9349ba5f243f07d914ccb3.png', 'assets/thumbnails/709321a3c10f15528003fd1f7399dfd5.jpg', 'assets/thumbnails/2600cc84f7fdaaa9e41504b57e6311c8"
+p36
+sg5
+S'CHANGED (JI 0.38%)'
+p37
+sg7
+F0.38
+sa(dp38
+g3
+S'EQUAL (JI 100%)'
+p39
+sg5
+S'EQUAL (JI 100%)'
+p40
+sg7
+I100
+sa(dp41
+g3
+S'EQUAL (JI 100%)'
+p42
+sg5
+S'EQUAL (JI 100%)'
+p43
+sg7
+I100
+sa(dp44
+g3
+S"\nDELETED set([u'Lcom/scoreloop/client/android/core/model/Device$State;', u'Lcom/roidgame/zombieville/MyProjectApplication;', u'Ljava/util/Calendar;', u'Lcom/scoreloop/client/android/ui/util/ImageDownloader$FlushedInputStream;', u'Lcom/scoreloop/client/android/core/util/Formats;', u'Lcom/scoreloop/client/android/ui/framework/PagingListAdapter;', u'Lcom/scoreloop/client/android/core/persistence/DbAchievementsStore$a;', u'Lcom/scoreloop/client/android/ui/component/challenge/ChallengeSettingsEditListItem;', u'Lcom/scoreloop/client/android/ui/util/Base64$OutputStream;', u'[Lcom/scoreloop/client/android/core/model/User$b;', u'Lcom/scoreloop/client/android/ui/component/challenge/ChallengeControlsListItem$OnControlObserver;', u'Lcom/scoreloop/client/android/core/controller/GameController$a;', u'Lcom/roidgame/zombieville/GameActivity$5;', u'Landroid/view/SurfaceHolder;', u'Landroid/view/SurfaceView;', u'Lcom/scoreloop/client/android/core/settings/Settings$Facebook;', u'Lcom/scoreloop/client/android/core\n---\nADDED set([u'Ljava/io/FileNotFoundException;', u'Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;', u'Lcom/google/analytics/tracking/android/y;', u'Landroid/support/v4/app/y;', u'Lcom/samsung/fitness/ui/PlayActivity;', u'Landroid/support/v4/view/bd;', u'Lcom/samsung/fitness/ui/ag;', u'Ljava/lang/reflect/Modifier;', u'Lcom/google/ads/m$a;', u'Lcom/samsung/fitness/ui/MyApp;', u'Landroid/support/v4/view/al;', u'Lcom/google/analytics/tracking/android/CampaignTrackingReceiver;', u'Landroid/view/animation/AlphaAnimation;', u'Lcom/google/analytics/tracking/android/ap;', u'Lcom/samsung/fitness/widget/WheelView;', u'Lcom/google/analytics/tracking/android/ay;', u'Landroid/support/v4/content/d;', u'Landroid/support/v4/view/az;', u'Landroid/database/sqlite/SQLiteCursor;', u'Landroid/support/v4/view/bc;', u'Landroid/support/v4/widget/i;', u'Landroid/support/v4/view/au;', u'Lcom/google/analytics/tracking/android/bo;', u'Landroid/util/Xml;', u'Lcom/google/ads/internal/k$a$1;', u'Landroid/support/"
+p45
+sg5
+S'CHANGED (JI 22.57%)'
+p46
+sg7
+F22.57
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/scoreloop/client/android/core/model/Session;->getUser()Lcom/scoreloop/client/android/core/model/User;', u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/scoreloop/client/android/core/model/Award;->d()Ljava/lang/String;', u'Lcom/scoreloop/client/android/ui/component/profile/ProfileSettingsListActivity$RequestType;->values()[Lcom/scoreloop/client/android/ui/component/profile/ProfileSettingsListActivity$RequestType;', u'Lcom/scoreloop/client/android/ui/component/challenge/ChallengeCreateListActivity;->onRefresh(I)V', u'Lcom/roidgame/zombieville/GameActivity;->onPause()V', u'Lcom/scoreloop/client/android/core/controller/GameController$a;->b()Lorg/json/JSONObject;', u'Lcom/scoreloop/client/android/ui/framework/ValueStore;->getObserverMap()Ljava/util/Map;', u'Lcom/scoreloop/client/android/ui/framework/BaseActivity;->onStart()V', u'Lcom/scoreloop/client/android/core/controller/ScoreController;->b(Lcom/scoreloop/client/android/core/controller/ScoreController;)Lcom/scoreloop/clien\n---\nADDED set([u'Lcom/google/analytics/tracking/android/o;->a()J', u'Landroid/support/v4/app/m;->c(I)I', u'Lcom/google/analytics/tracking/android/aq;->a(Z)V', u'Lcom/samsung/fitness/ui/PlayActivity;->l(Lcom/samsung/fitness/ui/PlayActivity;)Z', u'Lcom/google/analytics/tracking/android/bo;->a(Ljava/lang/String;)Ljava/util/Map;', u'Landroid/support/v4/view/ax;->a(Landroid/view/ViewConfiguration;)I', u'Landroid/support/v4/app/FragmentActivity;->b()V', u'Lcom/google/analytics/tracking/android/ag;->e(Lcom/google/analytics/tracking/android/ag;)Lcom/google/analytics/tracking/android/av;', u'Lcom/google/analytics/tracking/android/ac;-><init>(Lcom/google/analytics/tracking/android/x;)V', u'Landroid/support/v4/view/ViewPager;->f()V', u'Lcom/google/analytics/tracking/android/c;->a(Ljava/util/Map; J Ljava/lang/String; Ljava/util/List;)V', u'Landroid/support/v4/view/ViewPager;->a(F)Z', u'Lcom/samsung/fitness/ui/PlanActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z', u'Lcom/samsung/fitness/ui/myImageV"
+p48
+sg5
+S'CHANGED (JI 7.66%)'
+p49
+sg7
+F7.6600000000000001
+sa(dp50
+g3
+S"\nDELETED set([u'Lcom/google/ads/ac;->run()V', u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/google/ads/AdActivity$StaticMethodWrapper;->launchAdActivity(Lcom/google/ads/internal/d; Lcom/google/ads/internal/e;)V', u'Lcom/google/ads/util/AdUtil;->c(Ljava/lang/String;)Ljava/lang/String;', u'Lcom/google/ads/j;->onLeaveApplication(Lcom/google/ads/mediation/MediationBannerAdapter;)V', u'Lcom/google/ads/internal/a;->a(Landroid/net/Uri; Ljava/util/HashMap;)Ljava/lang/String;', u'Lcom/google/ads/internal/d;-><init>(Lcom/google/ads/m; Z)V', u'Lcom/google/ads/ae;-><clinit>()V', u'Lcom/google/ads/internal/AdVideoView;->setSrc(Ljava/lang/String;)V', u'Lcom/google/ads/internal/a$2;->b()Ljava/lang/Object;', u'Lcom/google/ads/mediation/customevent/CustomEventInterstitial;->showInterstitial()V', u'Lcom/google/ads/internal/d;->a(Ljava/util/List; Ljava/lang/String;)V', u'Lcom/google/ads/mediation/MediationBannerListener;->onClick(Lcom/google/ads/mediation/MediationBannerAdapter;)V', u'Lcom/google/ads/AdActiv\n---\nADDED set([u'Lcom/google/ads/internal/i;->onReceivedError(Landroid/webkit/WebView; I Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/google/ads/AdRequest;->a(Lcom/google/ads/mediation/NetworkExtras;)Lcom/google/ads/AdRequest;', u'Lcom/google/ads/doubleclick/DfpExtras;->a(Ljava/lang/String; Ljava/lang/Object;)Lcom/google/ads/mediation/admob/AdMobAdapterExtras;', u'Lcom/google/ads/mediation/admob/AdMobAdapter$b;->b()V', u'Lcom/google/ads/x;->c(Ljava/util/HashMap; Ljava/lang/String; Lcom/google/ads/util/i$c;)V', u'Lcom/google/ads/util/c$b;-><init>([B)V', u'Lcom/google/ads/q;-><clinit>()V', u'Lcom/google/ads/mediation/admob/AdMobAdapter$a;->c()V', u'Lcom/google/ads/internal/g;->s()J', u'Lcom/google/ads/ab;-><init>()V', u'Lcom/google/ads/mediation/admob/AdMobAdapter$a;-><init>(Lcom/google/ads/mediation/admob/AdMobAdapter; B)V', u'Lcom/google/ads/internal/g;->z()V', u'Lcom/google/ads/mediation/admob/AdMobAdapter;->a(Lcom/google/ads/mediation/MediationBannerListener; Landroid/app/Activity; Lcom/go"
+p51
+sg5
+S'CHANGED (JI 44.91%)'
+p52
+sg7
+F44.909999999999997
+sa(dp53
+g3
+S"\nDELETED set([u'Lcom/google/ads/AdView;->stopLoading()V', u'Landroid/widget/Toast;-><init>(Landroid/content/Context;)V', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Lcom/roidgame/zombieville/HelpActivity;->setContentView(I)V', u'Lcom/roidgame/zombieville/GameActivity;->onPause()V', u'Lcom/scoreloop/client/android/core/controller/GameController$a;->b()Lorg/json/JSONObject;', u'Lcom/scoreloop/client/android/ui/framework/ValueStore;->getObserverMap()Ljava/util/Map;', u'Lcom/scoreloop/client/android/ui/framework/TextButtonDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V', u'Lcom/scoreloop/client/android/core/controller/ScoreController;->b(Lcom/scoreloop/client/android/core/controller/ScoreController;)Lcom/scoreloop/client/android/core/persistence/LocalScoreStore;', u'Lcom/scoreloop/client/android/core/persistence/DbAchievementsStore$a;->onCreate(Landroid/database/sqlite/SQLiteDatabase;)V', u'Landroid/\n---\nADDED set([u'Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context; I)V', u'Lcom/google/analytics/tracking/android/o;->a()J', u'Lcom/google/analytics/tracking/android/aq;->a(Z)V', u'Lcom/samsung/fitness/ui/PlayActivity;->l(Lcom/samsung/fitness/ui/PlayActivity;)Z', u'Ljava/lang/InterruptedException;->toString()Ljava/lang/String;', u'Landroid/support/v4/view/ax;->a(Landroid/view/ViewConfiguration;)I', u'Landroid/widget/TextView;->setBackgroundResource(I)V', u'Lcom/google/analytics/tracking/android/ag;->e(Lcom/google/analytics/tracking/android/ag;)Lcom/google/analytics/tracking/android/av;', u'Lcom/google/analytics/tracking/android/ac;-><init>(Lcom/google/analytics/tracking/android/x;)V', u'Landroid/view/animation/AlphaAnimation;-><init>(F F)V', u'Ljava/util/TreeSet;->add(Ljava/lang/Object;)Z', u'Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;', u'Lcom/samsung/fitness/ui/myImageView;-><init>(Landroid/content/Context; Landroid/util/AttributeSet;)V',"
+p54
+sg5
+S'CHANGED (JI 12.93%)'
+p55
+sg7
+F12.93
+sa(dp56
+g3
+S"\nDELETED set([u'Lcom/google/ads/ac;->run()V', u'Lcom/google/ads/AdView;->stopLoading()V', u'Ljava/util/List;->indexOf(Ljava/lang/Object;)I', u'Landroid/os/Bundle;->keySet()Ljava/util/Set;', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Lcom/google/ads/util/AdUtil;->c(Ljava/lang/String;)Ljava/lang/String;', u'Ljava/util/Date;->setTime(J)V', u'Landroid/widget/Toast;-><init>(Landroid/content/Context;)V', u'Landroid/media/MediaPlayer;->setAudioStreamType(I)V', u'Lcom/google/ads/internal/d;-><init>(Lcom/google/ads/m; Z)V', u'Lcom/google/ads/ae;-><clinit>()V', u'Landroid/app/AlertDialog$Builder;->setItems(I Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;', u'Landroid/webkit/WebViewClient;->onReceivedError(Landroid/webkit/WebView; I Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/database/sqlite/SQLiteOpenHelper;->close()V', u'Lcom/google/ads/util/f;->b()Ljava/lang/Object;', u'Lcom/google/ads/util/g;\n---\nADDED set([u'Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context; I)V', u'Landroid/content/Context;->obtainStyledAttributes(I [I)Landroid/content/res/TypedArray;', u'Ljava/lang/InterruptedException;->toString()Ljava/lang/String;', u'Landroid/os/Looper;->myLooper()Landroid/os/Looper;', u'Landroid/view/View;->postInvalidateOnAnimation()V', u'Landroid/widget/TextView;->setBackgroundResource(I)V', u'Lcom/google/ads/searchads/SearchAdRequest;->a(Lcom/google/ads/mediation/NetworkExtras;)Lcom/google/ads/AdRequest;', u'Ljava/io/FileInputStream;->close()V', u'Lcom/google/ads/AdActivity;->a(Lcom/google/ads/internal/d;)Lcom/google/ads/internal/d;', u'Landroid/view/View;->getResources()Landroid/content/res/Resources;', u'Lcom/google/ads/internal/b;-><init>(Ljava/lang/String; Ljava/lang/Throwable;)V', u'Landroid/widget/TextView;->setTextSize(I F)V', u'Lcom/google/ads/internal/g;->r()V', u'Lcom/google/ads/n;->b()Z', u'Landroid/os/Bundle;->putParcelable(Ljava/lang/String; Landroid/os/Parc"
+p57
+sg5
+S'CHANGED (JI 48.02%)'
+p58
+sg7
+F48.020000000000003
+sa(dp59
+g3
+S'\nDELETED set([u\'pto\', u\'created_at\', u\'mode_count\', u\'BUDDY\', u\'Score mode does not match challenge mode\', u\'run(): publish() failed\\n\', u\'com.scoreloop.client.android.ui.component.news.NewsListActivity\', u\'gun1Level\', u\'Coins\', u\'ScoreloopUI\', u\'mode extra parameter on LeaderboardsScreenActivity is out of range [\', u\'numberBuddies\', u\'invalid value, should be in: \', u\'manager\', u\'code\', u\' should not be null. Using default \', u\'restoreEmail\', u\' MD5(\', u"Observer can\'t be null", u\'user must not be null\', u\'token_secret\', u\'ui.format.score.socialnetworkpost\', u\'              > \', u\'cannot access game modes without a game\', u\'invalid game argument\', u\'sessionUserValues\', u\'Request already enqueued or executing\', u\'currency.name.plural\', u\'com/facebook/android/facebook_icon.png\', u\'+40\', u\'AES/CBC/PKCS7Padding\', u\'userImageUrl\', u"Trying to evaluate JS in a WebView that isn\'t an AdWebView", u\'using shared device id from: \', u\'Info.plist.checksum\', u\'tracker\', u\'device\', u\'http://community.scorelo\n---\nADDED set([u\'disableNativeScroll\', u"{\'version\': \'afma-sdk-a-v6.4.1\'}", u\'  \\u9ad4\\u91cd\\uff1a\', u\'appendQueueTime\', u\'\\u76f8\\u95dc\\u61c9\\u7528\', u\'TRACK_SOCIAL\', u\' mTag=\', u\'Failure saving state: \', u\'Google Analytics will not start up.\', u\'detach: \', u\'...no network connectivity\', u\'\\u5b8c\\u6210\\u8a13\\u7df4\', u\' at index \', u\' did not call through to super.onDestroyView()\', u\'ga_dispatchPeriod\', u\'CONSTRUCT_RAW_EXCEPTION\', u\'tx\', u\'ty\', u\'bad_ad_report_path\', u\'service disconnected: \', u\'tr\', u\'appVersion\', u\'Failed Connect\', u\'Host\', u\'av\', u\'ti\', u\'No destination: discarding hit: \', u"select count(*) from activitydef where actdefid in (select actdefid from actinst where planid=(\'", u\'td\', u\'ta\', u\' #\', u\'bound to service\', u\'SettingActivity\', u\'hits cannot be null\', u\'AppUID\', u\'Error writing to clientId file.\', u\'hitType\', u\' mStateSaved=\', u\'Called doRetain when not started: \', u\'Error opening database for requestNumHitsPending\', u\' mContainerId=#\', u\' mRetaining=\', u\'Pre-Eclair does '
+p60
+sg5
+S'CHANGED (JI 24.48%)'
+p61
+sg7
+F24.48
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/scoreloop/client/android/core/model/User$Gender;->UNKNOWN Lcom/scoreloop/client/android/core/model/User$Gender; [access_flags=public static enum final]\\n', 'Lcom/roidgame/zombieville/sprite/House;->centerX I [access_flags=public]\\n', 'Lcom/scoreloop/client/android/ui/component/user/UserHeaderActivity;->_canRemoveBuddy Z [access_flags=private]\\n', 'Lcom/scoreloop/client/android/core/model/User$b;->a [Lcom/scoreloop/client/android/core/model/User$b; [access_flags=private synthetic static final]\\n', 'Lcom/scoreloop/client/android/ui/framework/BaseActivity;->_currentScreenValues Lcom/scoreloop/client/android/ui/framework/ValueStore; [access_flags=private]\\n', 'Lcom/scoreloop/client/android/core/controller/AchievementsController;->f Lcom/scoreloop/client/android/core/model/AwardList; [access_flags=private]\\n', 'Lcom/scoreloop/client/android/core/server/Request$State;->COMPLETED Lcom/scoreloop/client/android/core/server/Request$State; [access_flags=public static enum final]\\n', 'L\n---\nADDED set(['Lcom/google/ads/internal/g;->l Z [access_flags=private]\\n', 'Lcom/google/ads/al;->a Ljava/lang/String; [access_flags=private]\\n', 'Lcom/samsung/fitness/ui/SettingActivity;->k [I [access_flags=private]\\n', 'Lcom/google/ads/internal/g;->a Ljava/util/LinkedList; [access_flags=private final]\\n', 'Lcom/google/ads/e;->c Ljava/lang/Object; [access_flags=private final]\\n', 'Lcom/samsung/fitness/ui/PlayActivity;->f Landroid/widget/ImageView; [access_flags=private]\\n', 'Landroid/support/v4/widget/x;->a I [access_flags=private]\\n', 'Lcom/google/ads/internal/f;->a Lcom/google/ads/l; [access_flags=private final]\\n', 'Lcom/google/ads/ag;->bB I [access_flags=0x0]\\n', 'Lcom/samsung/fitness/ui/m;->b Lcom/samsung/fitness/ui/m; [access_flags=private]\\n', 'Lcom/samsung/fitness/ui/aq;->c Landroid/app/Dialog; [access_flags=private synthetic final]\\n', 'Landroid/support/v4/view/bi;->d F [access_flags=0x0]\\n', 'Lcom/samsung/fitness/widget/WheelView;->w Ljava/util/List; [access_flags=private]\\n', 'Lcom/s"
+p63
+sg5
+S'CHANGED (JI 5.94%)'
+p64
+sg7
+F5.9400000000000004
+sa.

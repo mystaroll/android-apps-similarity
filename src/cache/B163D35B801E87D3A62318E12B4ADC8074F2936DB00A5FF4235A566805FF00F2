@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'DIFFERENT: 1!=114'
+p4
+sS'not_detailed'
+p5
+S'CHANGED'
+p6
+sS'score'
+p7
+I0
+sa(dp8
+g3
+S'DIFFERENT: 1.0!=1.1.1'
+p9
+sg5
+S'CHANGED'
+p10
+sg7
+I0
+sa(dp11
+g3
+S'DIFFERENT: 8!=3'
+p12
+sg5
+S'CHANGED'
+p13
+sg7
+I0
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'DIFFERENT: 11!=13'
+p18
+sg5
+S'CHANGED'
+p19
+sg7
+I0
+sa(dp20
+g3
+S'DIFFERENT: 11!=13'
+p21
+sg5
+S'CHANGED'
+p22
+sg7
+I0
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.ACCESS_FINE_LOCATION', 'android.permission.READ_PHONE_STATE', 'android.permission.WRITE_EXTERNAL_STORAGE', 'com.android.vending.BILLING', 'android.permission.ACCESS_COARSE_LOCATION'])"
+p24
+sg5
+S'CHANGED (JI 28.57%)'
+p25
+sg7
+F28.57
+sa(dp26
+g3
+S'DIFFERENT: com.stroofrunner.activity!=com.polarbit.rthunderlite'
+p27
+sg5
+S'CHANGED'
+p28
+sg7
+I0
+sa(dp29
+g3
+S'DIFFERENT: Stickman Roof Running!=Raging Thunder'
+p30
+sg5
+S'CHANGED'
+p31
+sg7
+I0
+sa(dp32
+g3
+S"\nDELETED set(['com.stroofrunner.activity.GameActivity', 'com.google.android.gms.ads.AdActivity'])\n---\nADDED set(['com.millennialmedia.android.MMAdViewOverlayActivity', 'com.millennialmedia.android.VideoPlayer', 'com.inmobi.androidsdk.IMBrowserActivity', 'com.nexage.android.NexageActivity', 'com.mobfox.sdk.InAppWebView', 'com.polarbit.rthunderlite..rthunderlite', 'com.greystripe.android.sdk.AdView', 'com.mopub.mobileads.MoPubActivity', 'com.google.ads.AdActivity'])"
+p33
+sg5
+S'CHANGED (JI 0.0%)'
+p34
+sg7
+F0
+sa(dp35
+g3
+S"\nDELETED set([u'assets/gfx/main/build1.png', u'assets/gfx/main/build8.png', u'res/drawable-xhdpi/ic_launcher.png', u'assets/gfx/main/fix3.png', u'res/drawable-ldpi/ic_launcher.png', u'assets/gfx/splash.png', u'assets/gfx/main/mid2.png', u'assets/gfx/main/player.png', u'res/drawable-hdpi/ic_launcher.png', u'assets/sfx/window.ogg', u'lib/armeabi/libxmp.so', u'assets/sfx/run.mp3', u'assets/ads/menuno.png', u'assets/ads/menuboard.png', u'META-INF/CERT.RSA', u'res/drawable-mdpi/ic_launcher.png', u'assets/gfx/menu/exit.png', u'assets/gfx/main/build4.png', u'assets/gfx/main/menu_exit.png', u'assets/sfx/plane.ogg', u'assets/gfx/menu/logo.png', u'lib/x86/libandenginephysicsbox2dextension.so', u'assets/sfx/bird.ogg', u'assets/gfx/main/ad4.png', u'assets/sfx/jump.ogg', u'assets/gfx/main/build5.png', u'assets/gfx/main/adhandle.png', u'assets/gfx/main/build6.png', u'assets/gfx/main/fix1.png', u'assets/sfx/hit.ogg', u'assets/gfx/main/trail.png', u'assets/ads/ad1.png', u'assets/gfx/main/plane.png', u'assets/a\n---\nADDED set(['META-INF/FUSE.SF', 'com/nexage/android/interstitial/assets/infoEnabled.png', 'assets/millennial_close_disabled.png', 'assets/millennial_close.png', 'assets/millennial_left_arrow_disabled.png', 'com/nexage/android/interstitial/assets/Spin9.png', 'assets/test_ad.png', 'com/nexage/android/interstitial/assets/Spin1.png', 'com/nexage/android/interstitial/assets/Spin3.png', 'bitmaps/next_arrow_active.png', 'bitmaps/bkgrnd.png', 'bitmaps/next_arrow_inactive.png', 'res/drawable/icon.png', 'bitmaps/previous_arrow_active.png', 'assets/millennial_right_arrow_disabled.png', 'META-INF/FUSE.RSA', 'com/nexage/android/interstitial/assets/Spin6.png', 'assets/millennial_left_arrow.png', 'bitmaps/refresh.png', 'com/nexage/android/interstitial/assets/close.png', 'com/nexage/android/interstitial/assets/Spin11.png', 'com/adwhirl/assets/ad_frame.gif', 'com/nexage/android/interstitial/assets/replay.png', 'com/nexage/android/interstitial/assets/Spin0.png', 'com/nexage/android/interstitial/assets/skip.png"
+p36
+sg5
+S'CHANGED (JI 3.51%)'
+p37
+sg7
+F3.5099999999999998
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.polarbit.fuse.inapp.BillingService'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.admob.android.ads.analytics.InstallReceiver', 'com.polarbit.fuse.inapp.BillingReceiver'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([u'Lorg/andengine/opengl/texture/atlas/ITextureAtlas$ITextureAtlasStateListener;', u'Lcom/google/android/gms/wallet/h;', u'Lcom/google/android/gms/internal/gn$a;', u'Lorg/andengine/entity/particle/initializer/BaseTripleValueParticleInitializer;', u'Lcom/google/android/gms/internal/dg$1$2;', u'Lcom/google/android/gms/maps/internal/h$a;', u'Lcom/google/android/gms/internal/fl$m;', u'Lcom/google/android/gms/maps/model/LatLngBounds;', u'Lorg/andengine/util/adt/data/operator/IntOperator$3;', u'Lorg/andengine/opengl/shader/source/CriteriaShaderSource;', u'Lcom/google/android/gms/drive/query/internal/c;', u'Lcom/google/android/gms/internal/gm$b;', u'Lcom/google/android/gms/internal/bf$1;', u'Lcom/google/android/gms/maps/internal/o;', u'Lcom/handrush/tiledmap/BirdSprite$1;', u'Lcom/google/android/gms/plus/PlusOneButtonWithPopup;', u'Lorg/andengine/opengl/vbo/DrawType;', u'Lorg/andengine/util/HashUtils;', u'Ljava/util/concurrent/BlockingQueue;', u'Lcom/badlogic/gdx/physics/box2d/joints/Revo\n---\nADDED set([u'Ljava/io/FileNotFoundException;', u'[Lcom/polarbit/fuse/inapp/Consts$PurchaseState;', u'Lcom/nexage/android/NexageAdManager;', u'Lcom/millennialmedia/android/BasicCachedAd;', u'Lcom/millennialmedia/android/MMAdViewWebOverlay$6;', u'Lcom/polarbit/fuse/AdDefs;', u'Lcom/inmobi/androidsdk/IMBrowserActivity$4;', u'Lcom/adserver/adview/VisibilityButtonRunnable;', u'Lcom/greystripe/android/sdk/y;', u'Lcom/nexage/android/interstitial/VideoAd$4;', u'Lcom/nexage/android/sdks/AdMobAd$CreateAD;', u'Lcom/polarbit/fuse/inapp/ResponseHandler$1;', u'Lcom/mopub/mobileads/MillennialAdapter$2;', u'Lcom/google/ads/h;', u'Lcom/google/ads/z$c;', u'Lcom/inmobi/androidsdk/IMAdView$2;', u'Lcom/nexage/android/sdkmanager/SDKAdapterBase;', u'Lcom/adwhirl/adapters/CustomAdapter$FetchCustomRunnable;', u'Lcom/millennialmedia/android/MMAdViewWebOverlay$NonConfigurationInstance;', u'Lcom/google/ads/LatencyTracker;', u'Ljava/util/concurrent/FutureTask;', u'Lcom/inmobi/androidsdk/IMAdView$5;', u'Lcom/nexage/andro"
+p45
+sg5
+S'CHANGED (JI 5.36%)'
+p46
+sg7
+F5.3600000000000003
+sa(dp47
+g3
+S"\nDELETED set([u'Lcom/google/android/gms/maps/internal/c;->eA()Lcom/google/android/gms/maps/model/internal/a;', u'Lorg/andengine/util/adt/list/ShiftList;->remove(I)Ljava/lang/Object;', u'Lcom/google/android/gms/maps/internal/n$a$a;-><init>(Landroid/os/IBinder;)V', u'Lcom/google/android/gms/internal/bm;-><init>(Lcom/google/android/gms/internal/q; Lcom/google/android/gms/internal/bn; Lcom/google/android/gms/internal/bq; Lcom/google/android/gms/internal/cw; I Lcom/google/android/gms/internal/cu;)V', u'Lcom/google/android/gms/common/data/b;->isDataValid()Z', u'Lcom/google/android/gms/internal/v;->writeToParcel(Landroid/os/Parcel; I)V', u'Lorg/andengine/util/adt/spatial/quadtree/IntQuadTree$IntQuadTreeNode;->getYMax()I', u'Lcom/google/android/gms/drive/internal/OnDownloadProgressResponse;->cR()J', u'Lcom/google/android/gms/ads/mediation/customevent/CustomEventExtras;->setExtra(Ljava/lang/String; Ljava/lang/Object;)V', u'Lcom/google/android/gms/internal/w;->createFromParcel(Landroid/os/Parcel;)Ljava/l\n---\nADDED set([u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/polarbit/fuse/FuseTouch$EclairAndBeyond$Holder;->access$100()Lcom/polarbit/fuse/FuseTouch$EclairAndBeyond;', u'Lcom/inmobi/androidsdk/impl/UserInfo;->getSiteId()Ljava/lang/String;', u'Lcom/google/ads/d;-><init>(Landroid/app/Activity; Lcom/google/ads/Ad; Lcom/google/ads/AdSize; Ljava/lang/String; Z)V', u'Lcom/nexage/android/sdkmanager/SDKAdapterBase;->setBannerViewListener(Ljava/lang/Object; Ljava/lang/Object;)V', u'Lorg/ormma/view/OrmmaView$ViewState;-><clinit>()V', u'Lcom/millennialmedia/android/MillennialMediaView$1;-><init>(Lcom/millennialmedia/android/MillennialMediaView;)V', u'Lcom/mobfox/sdk/Base64;->encode([B I)[C', u'Lcom/nexage/android/sdks/InMobiAd$ViewClass;-><init>()V', u'Lcom/greystripe/android/sdk/BridgeLib;->startActivity(Landroid/content/Intent;)V', u'Lcom/millennialmedia/android/MillennialMediaView;->stopPlayback()V', u'Lcom/inmobi/androidsdk/ai/container/IMWebView;->onAttachedToWindow()V', u'Lcom/greystripe/andro"
+p48
+sg5
+S'CHANGED (JI 0.07%)'
+p49
+sg7
+F0.070000000000000007
+sa(dp50
+g3
+S"\nDELETED set([u'Lcom/google/ads/AdSize;->getWidthInPixels(Landroid/content/Context;)I', u'Lcom/google/ads/AdSize;->hashCode()I', u'Lcom/google/ads/AdSize;->findBestSize([Lcom/google/ads/AdSize;)Lcom/google/ads/AdSize;', u'Lcom/google/ads/AdSize;-><init>(Lcom/google/android/gms/ads/AdSize;)V', u'Lcom/google/ads/AdSize;->isFullWidth()Z', u'Lcom/google/ads/AdSize;->isSizeAppropriate(I I)Z', u'Lcom/google/ads/AdSize;->getHeightInPixels(Landroid/content/Context;)I', u'Lcom/google/ads/AdSize;->equals(Ljava/lang/Object;)Z', u'Lcom/google/ads/AdSize;->isAutoHeight()Z'])\n---\nADDED set([u'Lcom/google/ads/AdRequest;->setBirthday(Ljava/lang/String;)V', u'Lcom/google/ads/AdRequest;->setTesting(Z)V', u'Lcom/google/ads/AdRequest;->setLocation(Landroid/location/Location;)V', u'Lcom/google/ads/AdRequest;->isTestDevice(Landroid/content/Context;)Z', u'Lcom/google/ads/AdRequest;-><clinit>()V', u'Lcom/google/ads/AdRequest;->setGender(Lcom/google/ads/AdRequest$Gender;)V', u'Lcom/google/ads/AdRequest;->addKeyword(Ljava/lang/String;)V', u'Lcom/google/ads/AdRequest;->getRequestMap(Landroid/content/Context;)Ljava/util/Map;', u'Lcom/google/ads/AdRequest;->addExtra(Ljava/lang/String; Ljava/lang/Object;)V', u'Lcom/google/ads/AdRequest;->setKeywords(Ljava/util/Set;)V', u'Lcom/google/ads/AdRequest;->addTestDevice(Ljava/lang/String;)V'])"
+p51
+sg5
+S'CHANGED (JI 42.86%)'
+p52
+sg7
+F42.859999999999999
+sa(dp53
+g3
+S"\nDELETED set([u'Lorg/andengine/util/adt/list/ShiftList;->remove(I)Ljava/lang/Object;', u'Landroid/util/SparseArray;->remove(I)V', u'Lcom/google/android/gms/common/data/b;->isDataValid()Z', u'Lorg/andengine/util/adt/spatial/quadtree/IntQuadTree$IntQuadTreeNode;->getYMax()I', u'Lorg/andengine/entity/text/Text;->getFont()Lorg/andengine/opengl/font/IFont;', u'Lorg/andengine/util/SAXUtils;->getIntAttribute(Lorg/xml/sax/Attributes; Ljava/lang/String; I)I', u'Lcom/google/android/gms/internal/ia$2;->a(Lcom/google/android/gms/common/api/Api$a;)V', u'Lcom/google/android/gms/internal/bm;-><init>(Lcom/google/android/gms/internal/q; Lcom/google/android/gms/internal/bn; Lcom/google/android/gms/internal/bq; Lcom/google/android/gms/internal/cw; I Lcom/google/android/gms/internal/cu;)V', u'Lcom/google/android/gms/internal/ei;->setTypeface(Landroid/graphics/Typeface;)V', u'Lorg/andengine/extension/physics/box2d/PhysicsWorld;->destroyBody(Lcom/badlogic/gdx/physics/box2d/Body;)V', u'Lorg/andengine/opengl/font/Font\n---\nADDED set([u'Lcom/google/ads/AdView;->stopLoading()V', u'Lcom/polarbit/fuse/FuseTouch$EclairAndBeyond$Holder;->access$100()Lcom/polarbit/fuse/FuseTouch$EclairAndBeyond;', u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Lcom/inmobi/androidsdk/impl/UserInfo;->getSiteId()Ljava/lang/String;', u'Ljava/io/OutputStream;->write([B)V', u'Lorg/xmlpull/v1/XmlPullParserFactory;->setNamespaceAware(Z)V', u'Lcom/nexage/android/NexageAdLayout$1;->onLoadResource(Landroid/webkit/WebView; Ljava/lang/String;)V', u'Lcom/nexage/android/sdkmanager/SDKAdapterBase;->setBannerViewListener(Ljava/lang/Object; Ljava/lang/Object;)V', u'Lorg/ormma/view/OrmmaView$ViewState;-><clinit>()V', u'Lcom/google/ads/GoogleAdOverlay;->setContentView(Landroid/view/View;)V', u'Landroid/media/MediaPlayer;->setAudioStreamType(I)V', u'Lcom/millennialmedia/android/MillennialMediaView$1;-><init>(Lcom/millennialmedia/android/MillennialMediaView;)V', u'Lcom/mobfox/sdk/Base64;->encode([B I)[C', u'Lcom/nexage/android/sdks/InMobiAd$ViewC"
+p54
+sg5
+S'CHANGED (JI 2.65%)'
+p55
+sg7
+F2.6499999999999999
+sa(dp56
+g3
+S"\nDELETED set([u'Landroid/os/Bundle;->keySet()Ljava/util/Set;', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/io/Serializable;)Landroid/content/Intent;', u'Ljava/lang/StringBuilder;->indexOf(Ljava/lang/String;)I', u'Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V', u'Landroid/app/PendingIntent;->equals(Ljava/lang/Object;)Z', u'Landroid/os/Looper;->myLooper()Landroid/os/Looper;', u'Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;', u'Landroid/os/Bundle;->clear()V', u'Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;', u'Ljava/io/FileOutputStream;-><init>(Ljava/io/FileDescriptor;)V', u'Landroid/content/Intent;->writeToParcel(Landroid/os/Parcel; I)V', u'Ljava/util/ArrayList;->ensureCapacity(I)V', u'Ljava/math/BigInteger;-><init>([B)V', u'Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;', u'Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I', u'Ljava/lang/Float;->floatToIntBits(F)I', u'Landroid/os/Parcel;->readB\n---\nADDED set([u'Landroid/app/ActivityManager;->getMemoryInfo(Landroid/app/ActivityManager$MemoryInfo;)V', u'Ljava/io/OutputStream;->write([B)V', u'Landroid/widget/RelativeLayout;->getChildCount()I', u'Lcom/google/ads/AdRequest;->setTesting(Z)V', u'Landroid/media/MediaPlayer;->setAudioStreamType(I)V', u'Ljavax/microedition/khronos/egl/EGL10;->eglSwapBuffers(Ljavax/microedition/khronos/egl/EGLDisplay; Ljavax/microedition/khronos/egl/EGLSurface;)Z', u'Landroid/webkit/WebViewClient;->onReceivedError(Landroid/webkit/WebView; I Ljava/lang/String; Ljava/lang/String;)V', u'Landroid/widget/FrameLayout;->onTouchEvent(Landroid/view/MotionEvent;)Z', u'Landroid/view/View;->post(Ljava/lang/Runnable;)Z', u'Ljava/io/FileInputStream;->close()V', u'Landroid/app/Activity;->setTitle(Ljava/lang/CharSequence;)V', u'Landroid/widget/MediaController;->setMediaPlayer(Landroid/widget/MediaController$MediaPlayerControl;)V', u'Landroid/os/Handler;->sendEmptyMessageDelayed(I J)Z', u'Landroid/widget/RelativeLayout;->setId(I)"
+p57
+sg5
+S'CHANGED (JI 37.17%)'
+p58
+sg7
+F37.170000000000002
+sa(dp59
+g3
+S'\nDELETED set([u\'Required server option missing: \', u\'Failed to get the current AdSize.\', u\' data from asset: \', u\'b2_tensileParticle\', u\'pLength must be >= 0.\', u\'SignInButton\', u\' following declaration within the <application> element: \', u\'b2_particleContactListenerParticle\', u\'onDestroyView not allowed on MapViewDelegate\', u\'b2_particleGroupNeedsUpdateDepth\', u\'STATUS_NO_INFO_IN_DATABASE\', u\'Could not get info for ad overlay.\', u"Missing \'to\'", u\'b2_waterParticle\', u\'Sending text message: %s to: %s\', u\'No server options fields detected. To suppress this message either add a field with the @Parameter annotation, or override the load() method.\', u\'Populating Scene...\', u\'UTF-8 not supported.\', u\'cemetary\', u\'invalid quality: \', u\'Tilt needs to be between 0 and 90 inclusive\', u\'FormattedScore\', u\'com.google.android.gms.plus.internal.IPlusCallbacks\', u\'loadAd must be called on the main UI thread.\', u\'objectgroup\', u\'school\', u\'com.google.android.gms.cast.metadata.RELEASE_DATE\', u\'SCENE_ACCOMPLIS\n---\nADDED set([u\'Cannot show interstitial because it is not loaded and ready.\', u\'file:/\', u\'umts\', u\'&u-appVer=\', u\'d(id2)\', u\'REQUEST_ID\', u\'ZestADZ failure\', u\'Bad Phone Number\', u\'GoogleAdMobDoritosLife\', u\'window.mraidview.fireChangeEvent({ orientation: \', u\'MobFox SDK Version:1.2\', u\'getHistorySize: \', u\'Ormma onFinishedLoading\', u\'. You must manually call for ads.\', u\'Could not handle custom intent: \', u\'onFinishFetchAd!\', u\'cacheComplete\', u\'WebView\', u\'http://mob.adwhirl.com/getInfo.php?appid=%s&appver=%d&client=2\', u\', bannerWidth=\', u\'Advertisement is trying to use vibrator but permissions are missing.\', u"{\'event\': \'canplaythrough\', \'duration\': \'", u\'com.google.ads.AdSize\', u\' in database?: \', u\'inapp_signed_data\', u\'An error occurred while loading a URL in AdWebView:\', u\'No "enabled" parameter in a controls video gmsg.\', u\'mopubSettings\', u\'&platform=\', u\'Conversion track failed: ClientProtocolException (no signal?)\', u\'d(id12)\', u\'removeProperty(%s)\', u\' GB\', u\'testmode\', u\'Range:\''
+p60
+sg5
+S'CHANGED (JI 4.67%)'
+p61
+sg7
+F4.6699999999999999
+sa(dp62
+g3
+S"\nDELETED set(['Lcom/badlogic/gdx/physics/box2d/MassData;->I F [access_flags=public]\\n', 'Lcom/google/android/gms/internal/ib;->Fd Lcom/google/android/gms/internal/ib; [access_flags=private]\\n', 'Lcom/google/android/gms/plus/model/moments/ItemScope$Builder;->Er Lcom/google/android/gms/internal/ib; [access_flags=private]\\n', 'Lorg/andengine/util/experiment/ExperimentManager;->mExperimentsData Ljava/lang/String; [access_flags=private]\\n', 'Lcom/google/android/gms/dynamic/a;->sv Lcom/google/android/gms/dynamic/d; [access_flags=private final]\\n', 'Lcom/google/android/gms/plus/model/moments/ItemScope$Builder;->EB Ljava/util/List; [access_flags=private]\\n', 'Lcom/google/android/gms/drive/query/internal/FieldOnlyFilter;->kg I [access_flags=final]\\n', 'Lcom/google/android/gms/internal/fh;->rI Lcom/google/android/gms/drive/metadata/MetadataField; [access_flags=public static final]\\n', 'Lcom/google/android/gms/internal/ig$d;->Eq Ljava/util/Set; [access_flags=private final]\\n', 'Lcom/google/android/gms/int\n---\nADDED set(['Lcom/adwhirl/obj/Extra;->cycleTime I [access_flags=public]\\n', 'Lcom/nexage/android/sdks/InMobiAd;->m_AppActivity Landroid/app/Activity; [access_flags=private final]\\n', 'Lcom/nexage/android/NexageAdManager;->s_ReqPostCode Ljava/lang/String; [access_flags=private static]\\n', 'Lcom/greystripe/android/sdk/AccelerometerController;->d [F [access_flags=private]\\n', 'Lcom/nexage/android/sdks/GoogleAdMobProvider;->genders [Ljava/lang/Object; [access_flags=protected]\\n', 'Lcom/mobfox/sdk/AdType;->IMAGE Lcom/mobfox/sdk/AdType; [access_flags=public static enum final]\\n', 'Lcom/inmobi/androidsdk/impl/UserInfo;->md5AndroidId Ljava/lang/String; [access_flags=private]\\n', 'Lcom/millennialmedia/android/MMAdView;->gender Ljava/lang/String; [access_flags=0x0]\\n', 'Lcom/millennialmedia/android/VideoImage;->toAlpha F [access_flags=0x0]\\n', 'Lcom/inmobi/androidsdk/IMAdView;->prevAdFetchTimestamp J [access_flags=private]\\n', 'Lcom/millennialmedia/android/HttpGetRequest;->getRequest Lorg/apache/http/c"
+p63
+sg5
+S'CHANGED (JI 0.15%)'
+p64
+sg7
+F0.14999999999999999
+sa.

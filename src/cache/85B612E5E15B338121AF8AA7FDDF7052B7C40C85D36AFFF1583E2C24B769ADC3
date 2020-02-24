@@ -1,0 +1,185 @@
+(lp1
+(dp2
+S'detailed'
+p3
+S'EQUAL'
+p4
+sS'not_detailed'
+p5
+S'EQUAL'
+p6
+sS'score'
+p7
+I100
+sa(dp8
+g3
+S'EQUAL'
+p9
+sg5
+S'EQUAL'
+p10
+sg7
+I100
+sa(dp11
+g3
+S'EQUAL'
+p12
+sg5
+S'EQUAL'
+p13
+sg7
+I100
+sa(dp14
+g3
+S'EQUAL'
+p15
+sg5
+S'EQUAL'
+p16
+sg7
+I100
+sa(dp17
+g3
+S'EQUAL'
+p18
+sg5
+S'EQUAL'
+p19
+sg7
+I100
+sa(dp20
+g3
+S'EQUAL'
+p21
+sg5
+S'EQUAL'
+p22
+sg7
+I100
+sa(dp23
+g3
+S"\nDELETED set([])\n---\nADDED set(['android.permission.ACCESS_FINE_LOCATION', 'android.permission.RECEIVE_BOOT_COMPLETED', 'android.permission.SYSTEM_ALERT_WINDOW', 'android.permission.READ_LOGS', 'android.permission.ACCESS_COARSE_LOCATION', 'android.permission.WAKE_LOCK', 'android.permission.GET_TASKS', 'android.permission.ACCESS_WIFI_STATE', 'android.permission.READ_PHONE_STATE', 'android.permission.WRITE_EXTERNAL_STORAGE', 'com.android.vending.BILLING', 'android.permission.GET_ACCOUNTS'])"
+p24
+sg5
+S'CHANGED (JI 14.29%)'
+p25
+sg7
+F14.289999999999999
+sa(dp26
+g3
+S'EQUAL'
+p27
+sg5
+S'EQUAL'
+p28
+sg7
+I100
+sa(dp29
+g3
+S'EQUAL'
+p30
+sg5
+S'EQUAL'
+p31
+sg7
+I100
+sa(dp32
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.kuguo.ad.MainActivity', 'com.kuguo.ad.BoutiqueActivity', 'net.crazymedia.iad.AdPushActivity'])"
+p33
+sg5
+S'CHANGED (JI 40.0%)'
+p34
+sg7
+F40
+sa(dp35
+g3
+S"\nDELETED set([u'META-INF/CERT.SF', u'META-INF/CERT.RSA', u'res/raw/version.dat.txt'])\n---\nADDED set(['assets/kuguo_res/kuguo.png', 'assets/kuguo_res/kuguo_side.png', 'assets/kuguo_res/360.png', 'assets/AGENCYR.TTF', 'META-INF/RANGFEI.RSA', 'assets/kuguo_res/kuguo_top.png', 'assets/kuguo_res/push_cancel_btn_pressed.png', 'assets/kuguo_res/confirm_btn_pressed.png', 'assets/kuguo_res/installed.png', 'assets/AGENCYB.TTF', 'assets/kuguo_res/download_btn2.png', 'assets/kuguo_res/confirm_btn.png', 'assets/kuguo_res/snapshot_empty.png', 'assets/kuguo_res/push_cancel_btn.png', 'META-INF/RANGFEI.SF', 'assets/kuguo_res/icon.png', 'res/raw/version.txt', 'assets/kuguo_res/kuguo_side2.png', 'assets/kuguo_res/download_btn2_pressed.png', 'assets/kuguo_res/rating_half.png', 'assets/kuguo_res/rating_empty.png', 'assets/kuguo_res/spot_light.png', 'assets/kuguo_res/rating_full.png', 'assets/kuguo_res/fold_arrow.png', 'assets/kuguo_res/spot_default.png', 'assets/kuguo_res/kuguo_top_pressed.png'])"
+p36
+sg5
+S'CHANGED (JI 93.08%)'
+p37
+sg7
+F93.079999999999998
+sa(dp38
+g3
+S"\nDELETED set([])\n---\nADDED set(['net.crazymedia.iad.AdPushService', 'com.kuguo.ad.MainService'])"
+p39
+sg5
+S'CHANGED (JI 0.0%)'
+p40
+sg7
+F0
+sa(dp41
+g3
+S"\nDELETED set([])\n---\nADDED set(['com.kuguo.ad.MainReceiver', 'net.crazymedia.iad.AdPushReceiver'])"
+p42
+sg5
+S'CHANGED (JI 0.0%)'
+p43
+sg7
+F0
+sa(dp44
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Ljava/io/FileNotFoundException;', u'Lcom/kuguo/ad/a;', u'Ljava/net/URI;', u'Lcom/umeng/common/net/g;', u'Landroid/widget/Adapter;', u'Landroid/graphics/drawable/ColorDrawable;', u'Lcom/umeng/common/net/a$a;', u'Ljava/lang/Byte;', u'Lcom/kuguo/ad/ad;', u'Ljava/lang/Process;', u'Lnet/crazymedia/iad/b/p;', u'Lcom/kuguo/ui/a;', u'Landroid/os/RemoteException;', u'Landroid/widget/BaseAdapter;', u'Lorg/apache/http/client/methods/HttpPost;', u'Ljava/util/zip/InflaterInputStream;', u'Lorg/apache/http/client/methods/HttpUriRequest;', u'Lcom/kuguo/ad/x;', u'Lnet/crazymedia/iad/a/a;', u'Lorg/apache/http/message/BasicNameValuePair;', u'Lcom/umeng/common/b/d;', u'Lcom/kuguo/ad/al;', u'Lnet/crazymedia/iad/d/e;', u'Lnet/crazymedia/iad/d/t;', u'Landroid/widget/AdapterView;', u'Ljava/io/FileOutputStream;', u'Lcom/umeng/common/c;', u'Lcom/umeng/common/net/f$b;', u'Lorg/apache/http/client/methods/HttpGet;', u'Lcom/umeng/analytics/b;', u'Landroid/telephony/TelephonyManager;', u'Ljava/util/LinkedHash"
+p45
+sg5
+S'CHANGED (JI 42.11%)'
+p46
+sg7
+F42.109999999999999
+sa(dp47
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/umeng/common/b/b;-><init>()V', u'Lnet/crazymedia/iad/b/n;->b()V', u'Lnet/crazymedia/iad/b/f;->a()Lnet/crazymedia/iad/b/e;', u'Lcom/kuguo/ad/s;->c()V', u'Lnet/crazymedia/iad/c;-><init>(Lnet/crazymedia/iad/AdPushActivity;)V', u'Lcom/kuguo/ad/n;->getCount()I', u'Lnet/crazymedia/iad/d/u;->a(Landroid/graphics/Bitmap; Ljava/lang/String;)Z', u'Lcom/kuguo/ad/a;->a(Landroid/content/Context; Ljava/lang/String;)Lcom/kuguo/ad/o;', u'Lcom/umeng/common/b/a;->d(Ljava/lang/String;)[B', u'Lnet/crazymedia/iad/b/b;->a(Landroid/content/Context;)Z', u'Lnet/crazymedia/iad/d/p;->a(Landroid/content/Context;)V', u'Lnet/crazymedia/iad/d/q;->b()Landroid/content/Context;', u'Lcom/umeng/common/net/c;-><init>(Lcom/umeng/common/net/c;)V', u'Lnet/crazymedia/iad/b/s;->c()Lnet/crazymedia/iad/b/e;', u'Lnet/crazymedia/iad/AdPushManager;-><clinit>()V', u'Lcom/kuguo/b/h;->a(Ljava/lang/String; Ljava/lang/Object;)V', u'Lcom/kuguo/ad/a;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; I)V', u'Lco"
+p48
+sg5
+S'CHANGED (JI 32.36%)'
+p49
+sg7
+F32.359999999999999
+sa(dp50
+g3
+S'EQUAL (JI 100%)'
+p51
+sg5
+S'EQUAL (JI 100%)'
+p52
+sg7
+I100
+sa(dp53
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lcom/umeng/common/b/b;-><init>()V', u'Lorg/apache/http/HttpEntity;->getContentLength()J', u'Ljava/io/OutputStream;->write([B)V', u'Landroid/widget/GridView;->setPadding(I I I I)V', u'Landroid/view/ViewGroup;->removeAllViews()V', u'Lnet/crazymedia/iad/b/n;->b()V', u'Lnet/crazymedia/iad/b/b;->a(Landroid/content/Context;)Z', u'Lnet/crazymedia/iad/d/p;->a(Landroid/content/Context;)V', u'Lnet/crazymedia/iad/d/q;->b()Landroid/content/Context;', u'Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;', u'Lnet/crazymedia/iad/b/s;->c()Lnet/crazymedia/iad/b/e;', u'Lnet/crazymedia/iad/AdPushManager;-><clinit>()V', u'Lcom/kuguo/ad/m;-><init>(Lcom/kuguo/ad/n;)V', u'Landroid/widget/FrameLayout;->addView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Landroid/os/Message;->obtain(Landroid/os/Handler; I I I)Landroid/os/Message;', u'Lcom/umeng/analytics/MobclickAgent$b;-><clinit>()V', u'Lcom/umeng/analytics/MobclickAgent;->flush(Landroid/content/Context;)V', u'Lcom/umeng/co"
+p54
+sg5
+S'CHANGED (JI 36.47%)'
+p55
+sg7
+F36.469999999999999
+sa(dp56
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;', u'Landroid/content/Intent;->putExtra(Ljava/lang/String; I)Landroid/content/Intent;', u'Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z', u'Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;', u'Ljava/security/MessageDigest;->update([B)V', u'Landroid/os/Bundle;->putLong(Ljava/lang/String; J)V', u'Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;', u'Ljava/lang/Math;->round(D)J', u'Landroid/widget/FrameLayout;->addView(Landroid/view/View; Landroid/view/ViewGroup$LayoutParams;)V', u'Ljava/util/List;->contains(Ljava/lang/Object;)Z', u'Landroid/os/Handler;->sendEmptyMessageDelayed(I J)Z', u'Ljava/util/Date;->getDate()I', u'Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I', u'Ljava/util/List;->remove(Ljava/lang/Object;)Z', u'Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;', u'Ljava/net/HttpURLConnection;->setConnectTimeout(I)V', u'Landroid/content/C"
+p57
+sg5
+S'CHANGED (JI 80.51%)'
+p58
+sg7
+F80.510000000000005
+sa(dp59
+g3
+S"\nDELETED set([])\n---\nADDED set([u'Exception occurred in ReportMessageHandler', u'Input array too big, the output array would be bigger (', u':\\tFailed to send message. StatusCode = ', u'-----------------downloadsize == ', u'http://ugc.map.soso.com/rgeoc/?lnglat=%s,%s&reqsrc=wb', u'CHANNEL_NAME=', u'Unknown', u'advertState: ', u'event duration less than 0 in ekvEvnetEnd', u'application/json', u'results', u'adIndex', u'com.google.android.apps.maps', u'saveAPK getContentLength ', u'StartingAlertService', u'BIND_FROM_NET', u'\\u7248\\u672c: ', u'\\uff1a', u'update ad status ', u'umeng_common_progress_bar', u'-d', u'])', u'nextRequest', u'crazymedia_cp_app_data', u' \\u4e0b\\u8f7d\\u5931\\u8d25\\uff0c\\u8bf7\\u68c0\\u67e5\\u7f51\\u7edc\\u3002', u'ts', u'com.qihoo360.mobilesafe', u'exception in onlineConfigInternal', u'smsto:', u'kuguo_res/rating_empty.png', u'-p', u'-s', u'\\u7c7b\\u578b\\uff1a', u'-----------status: ', u'duration is not valid in onEventDuration(map)', u'activities', u'  ', u'unexpected null context in invokehander f"
+p60
+sg5
+S'CHANGED (JI 41.75%)'
+p61
+sg7
+F41.75
+sa(dp62
+g3
+S"\nDELETED set([])\n---\nADDED set(['Lnet/crazymedia/iad/c/a;->c Ljava/lang/String; [access_flags=public]\\n', 'Lcom/kuguo/ad/o;->A I [access_flags=protected]\\n', 'Lcom/kuguo/a/e;->i Ljava/lang/String; [access_flags=public]\\n', 'Lcom/umeng/analytics/a;->d J [access_flags=static]\\n', 'Lcom/kuguo/ad/h;->f Landroid/widget/ImageView; [access_flags=private]\\n', 'Lcom/umeng/analytics/a;->i Z [access_flags=static]\\n', 'Lcom/kuguo/ad/ab;->b Lcom/kuguo/ad/ap; [access_flags=private]\\n', 'Lcom/kuguo/c/c;->a Ljava/util/Map; [access_flags=private static]\\n', 'Lcom/kuguo/ad/u;->a Lcom/kuguo/ad/g; [access_flags=synthetic final]\\n', 'Lcom/kuguo/ui/Workspace;->d Landroid/graphics/Bitmap; [access_flags=private static]\\n', 'Lcom/kuguo/b/d;->b Ljava/util/List; [access_flags=private]\\n', 'Lnet/crazymedia/iad/d/o;->b Z [access_flags=public static]\\n', 'Lcom/kuguo/ad/ac;->d Landroid/graphics/drawable/Drawable; [access_flags=private]\\n', 'Lcom/kuguo/a/d;->b Ljava/io/File; [access_flags=private]\\n', 'Lnet/crazymedia/iad/b/i;->c Landroid/os/B"
+p63
+sg5
+S'CHANGED (JI 46.22%)'
+p64
+sg7
+F46.219999999999999
+sa.
