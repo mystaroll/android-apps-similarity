@@ -3,3 +3,4 @@
 src/data/apks/*
 session.ag
 src/report
+src/cache
