@@ -194,6 +194,8 @@ def download_if_not_exists(hash):
 
 # sys.exit(0)
 comparisons = []
+if not os.path.exists("cache"):
+    os.makedirs("cache")
 with open('data/common_with_groundtruth.txt') as f:
     for line in f.readlines():
         [original_apk_hash, repackaged_apk_hash,
