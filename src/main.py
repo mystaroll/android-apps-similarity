@@ -18,6 +18,12 @@ THRESHOLD = 57
 DIFF_CHAR_LIMIT = 1000
 execution_time = datetime.now().strftime("%Y-%m-%d-%H:%M")
 
+apks_dir = "data/apks"
+if not os.path.exists("cache"):
+    os.makedirs("cache")
+if not os.path.exists(apks_dir):
+    os.makedirs(apks_dir)
+apks_list = os.listdir(apks_dir)
 
 # print 'Checking existing session'
 # SESSION_FILENAME = 'session.ag'
@@ -171,8 +177,7 @@ ground_truth_header = ['Ref.',
                        'Tool Result',
                        'Tool Conclusion']
 
-apks_dir = "data/apks"
-apks_list = os.listdir(apks_dir)
+
 
 
 def download_if_not_exists(hash):
@@ -194,10 +199,9 @@ def download_if_not_exists(hash):
 
 # sys.exit(0)
 comparisons = []
-if not os.path.exists("cache"):
-    os.makedirs("cache")
+skipped_lines = [] # some apks are not analyzable by androguard, we exclude them
 with open('data/common_with_groundtruth.txt') as f:
-    for line in f.readlines():
+    for line in f.readlines()[:1]:
         [original_apk_hash, repackaged_apk_hash,
          grnd_is_similar] = line.strip().split(',')
         print chalk.bold(
@@ -215,10 +219,15 @@ with open('data/common_with_groundtruth.txt') as f:
                 comparisons = cPickle.load(file)
         else:
             print "Running comparisons"
-            a1, d1, dx1 = androguard.misc.AnalyzeAPK(
-                "./data/apks/%s.apk" % original_apk_hash)
-            a2, d2, dx2 = androguard.misc.AnalyzeAPK(
-                "./data/apks/%s.apk" % repackaged_apk_hash)
+            try:
+                a1, d1, dx1 = androguard.misc.AnalyzeAPK(
+                    "./data/apks/%s.apk" % original_apk_hash)
+                a2, d2, dx2 = androguard.misc.AnalyzeAPK(
+                    "./data/apks/%s.apk" % repackaged_apk_hash)
+            except:
+                print "Androguard failed to analyze this pair, excluding it.."
+                skipped_lines += [line]
+                continue
 
             # COMPARISONS
             comparisons = [
@@ -360,5 +369,7 @@ with open('data/common_with_groundtruth.txt') as f:
 summary_report.write("\nFINAL ANALYSIS TABLE: \n")
 summary_report.write(tabulate(analysis_rows, headers=analysis_header, tablefmt="grid"))
 summary_report.write(tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid"))
+summary_report.write("\n\nExcluded pairs because of androguard exceptions\n%s"%"\n".join(skipped_lines))
 summary_report.close()
+print "Summary file saved in: %s"%summary_report.name
 
