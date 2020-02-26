@@ -309,7 +309,7 @@ with open('data/groundtruth.txt') as f:
         print 'Fields: %s' % comparisons[19]['detailed']
         print '========================= CURRENT ANALYSIS ========================='
 
-        analysis_rows = analysis_rows + [[chalk.blue(chalk.bold("%s" % original_apk_hash[:10]))] +
+        analysis_rows = analysis_rows + [[chalk.blue(chalk.bold("%s,%s" % (original_apk_hash[:10], repackaged_apk_hash[:10])))] +
                                          map(lambda comparison: comparison['not_detailed'], comparisons) +
                                          [grnd_is_similar]]
 
@@ -318,7 +318,7 @@ with open('data/groundtruth.txt') as f:
         avg_score = sum(
             map(lambda x: x['score'], comparisons)) / len(comparisons)
         tool_result = "SIMILAR" if avg_score >= THRESHOLD else "NOT_SIMILAR"
-        ground_truth_rows = ground_truth_rows + [[chalk.blue(chalk.bold("%s" % original_apk_hash[:10])),
+        ground_truth_rows = ground_truth_rows + [[chalk.blue(chalk.bold("%s,%s" % (original_apk_hash[:10], repackaged_apk_hash[:10]))),
                                                   grnd_is_similar,
                                                   avg_score,
                                                   chalk.bold(chalk.red(
