@@ -10,7 +10,7 @@ parser = argparse.ArgumentParser(
     description='This script downloads a dataset containing pairs of (original,repackaged) apk\'s')
 
 
-parser.add_argument("-s", default="common_with_groundtruth.txt",
+parser.add_argument("-s", default="groundtruth.txt",
                     help="Source list of pairs")
 parser.add_argument("-l",
                     help="Download only first {l} pairs of the source list", type=int)

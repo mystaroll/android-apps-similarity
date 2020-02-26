@@ -200,7 +200,7 @@ def download_if_not_exists(hash):
 # sys.exit(0)
 comparisons = []
 skipped_lines = [] # some apks are not analyzable by androguard, we exclude them
-with open('data/common_with_groundtruth.txt') as f:
+with open('data/groundtruth.txt') as f:
     for line in f.readlines():
         [original_apk_hash, repackaged_apk_hash,
          grnd_is_similar] = line.strip().split(',')
