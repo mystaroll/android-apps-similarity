@@ -10,6 +10,7 @@ import os
 import urllib2
 import hashlib
 import cPickle
+import csv
 
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -371,5 +372,13 @@ summary_report.write(tabulate(analysis_rows, headers=analysis_header, tablefmt="
 summary_report.write(tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid"))
 summary_report.write("\n\nExcluded pairs because of androguard exceptions\n%s"%"\n".join(skipped_lines))
 summary_report.close()
+with open(summary_report.name + '(a).csv', 'wb') as csv_file:
+    wr = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
+    wr.writerow(analysis_header)
+    wr.writerows(analysis_rows)
+with open(summary_report.name + '(b).csv', 'wb') as csv_file:
+    wr = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
+    wr.writerow(ground_truth_header)
+    wr.writerows(ground_truth_rows)
 print "Summary file saved in: %s"%summary_report.name
 
