@@ -15,7 +15,7 @@ import csv
 reload(sys)
 sys.setdefaultencoding('utf8')
 VERSION = "0.0.1" # useful for caching
-THRESHOLD = 57
+THRESHOLD = 50
 DIFF_CHAR_LIMIT = 1000
 execution_time = datetime.now().strftime("%Y-%m-%d-%H:%M")
 
@@ -364,8 +364,8 @@ with open('data/groundtruth.txt') as f:
         print analysis_table + "\n" + summary_threshold
         summary_report.write(analysis_table + "\n" + summary_threshold)
         # setting threshold to recommended
-        if recommended_threshold != "ND":
-            THRESHOLD = recommended_threshold
+        # if recommended_threshold != "ND":
+        #     THRESHOLD = recommended_threshold
 
 summary_report.write("\nFINAL ANALYSIS TABLE: \n")
 summary_report.write(tabulate(analysis_rows, headers=analysis_header, tablefmt="grid"))
