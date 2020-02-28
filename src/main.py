@@ -15,7 +15,7 @@ import csv
 reload(sys)
 sys.setdefaultencoding('utf8')
 VERSION = "0.0.1" # useful for caching
-THRESHOLD = 70
+THRESHOLD = 80
 DIFF_CHAR_LIMIT = 1000
 execution_time = datetime.now().strftime("%Y-%m-%d-%H:%M")
 
