@@ -6,7 +6,7 @@ chardet==3.0.4
 cliapp==1.20170827
 Click==7.0
 colorama==0.4.3
-cryptography==2.1.4
+cryptography==2.3
 cycler==0.10.0
 decorator==4.4.1
 enum34==1.1.6
