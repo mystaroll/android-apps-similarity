@@ -94,20 +94,29 @@ def jaccard_similarity_lists(list1, list2):
 #     str1 = set(str1.split())
 #     str2 = set(str2.split())
 #     return float(len(str1 & str2)) / len(str1 | str2)
+def chunks(l, n):
+    for i in range(0, len(l), n):
+        yield l[i:i + n]
 
+def chuncked_table(rows):
+    LIMIT_ROWS = 100
+    #generating columns
+    header = ["" for i in range((len(rows) / LIMIT_ROWS) + (1 if len(rows) % LIMIT_ROWS != 0 else 0))]
+    # print "headers " + str(header) + " rows" + str(list(chunks(rows,  len(header))))
+    return tabulate(chunks(rows, len(header)), header) # tabulate(rows, header)
 
 def compare_lists(l1, l2):
     difference1 = set(l1).difference(l2)
     difference2 = set(l2).difference(l1)
 
-    cardinalities = u"\n |l1|=%s,|l2|=%s, diff: +%s -%s, |l1 \u2229 l2|=%s\n" % (len(l1), len(l2), len(difference1), len(difference2), len(set(l1).intersection(set(l2))))
+    cardinalities = u"\n |l1|=%s,|l2|=%s, diff: -%s +%s, |l1 \u2229 l2|=%s\n" % (len(l1), len(l2), len(difference1), len(difference2), len(set(l1).intersection(set(l2))))
     def result(print_difference):
         if len(difference1) == 0 and len(difference2) == 0:
             return ( cardinalities if print_difference else "") + "EQUAL (JI %s%%)" % jaccard_similarity_lists(l1, l2)
 
         if print_difference:
             return cardinalities + '\nDELETED %s\n---\nADDED %s' % (str(difference1)[:DIFF_CHAR_LIMIT],
-                                                                    str(difference2)[:DIFF_CHAR_LIMIT])
+                                                                    chuncked_table(list(difference2)))
         else:
             return 'CHANGED (JI %s%%)' % jaccard_similarity_lists(l1, l2)
 
@@ -210,11 +219,11 @@ def download_if_not_exists(hash):
         print "Download completed\n"
 
 
-# sys.exit(0)
+# sys.exit(1)
 comparisons = []
 skipped_lines = []  # some apks are not analyzable by androguard, we exclude them
 with open('data/groundtruth.txt') as f:
-    for num, line in enumerate(f.readlines()[:2]):
+    for num, line in enumerate(f.readlines()):
         [original_apk_hash, repackaged_apk_hash,
          grnd_is_similar] = line.strip().split(',')
         print chalk.bold(
@@ -245,10 +254,6 @@ with open('data/groundtruth.txt') as f:
             # COMPARISONS
             comparisons = [
                 compare_strings(
-                    a1.get_package(), a2.get_package()),
-                compare_strings(
-                    a1.get_app_name(), a2.get_app_name()),
-                compare_strings(
                     a1.get_androidversion_code(), a2.get_androidversion_code()),
                 compare_strings(
                     a1.get_androidversion_name(), a2.get_androidversion_name()),
@@ -262,6 +267,10 @@ with open('data/groundtruth.txt') as f:
                     a1.get_effective_target_sdk_version(), a2.get_effective_target_sdk_version()),
                 compare_lists(
                     a1.get_permissions(), a2.get_permissions()),
+                compare_strings(
+                    a1.get_package(), a2.get_package()),
+                compare_strings(
+                    a1.get_app_name(), a2.get_app_name()),
                 compare_lists(
                     a1.get_activities(), a2.get_activities()),
                 compare_lists(
@@ -286,6 +295,10 @@ with open('data/groundtruth.txt') as f:
                 cPickle.dump(comparisons, file)
 
         print '=============================================='
+        print 'Package name: \n-----------\n  %s' % comparisons[7]['detailed']
+        print '\n=============================================='
+        print 'APP name:  \n-----------\n %s' % comparisons[8]['detailed']
+        print '\n=============================================='
         print 'Android version code: %s' % comparisons[0]['detailed']
         print 'Android version name: %s' % comparisons[1]['detailed']
         print 'Min SDK version: %s' % comparisons[2]['detailed']
