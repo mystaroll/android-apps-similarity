@@ -94,16 +94,17 @@ def jaccard_similarity_lists(list1, list2):
 #     str1 = set(str1.split())
 #     str2 = set(str2.split())
 #     return float(len(str1 & str2)) / len(str1 | str2)
+
 def chunks(l, n):
     for i in range(0, len(l), n):
         yield l[i:i + n]
 
 def chuncked_table(rows):
-    LIMIT_ROWS = 100
+    LIMIT_ROWS = 500
     #generating columns
     header = ["" for i in range((len(rows) / LIMIT_ROWS) + (1 if len(rows) % LIMIT_ROWS != 0 else 0))]
     # print "headers " + str(header) + " rows" + str(list(chunks(rows,  len(header))))
-    return tabulate(chunks(rows, len(header)), header) # tabulate(rows, header)
+    return tabulate(chunks(rows, len(header)), header) if len(rows)>0 else "[]" # tabulate(rows, header)
 
 def compare_lists(l1, l2):
     difference1 = set(l1).difference(l2)
@@ -115,7 +116,7 @@ def compare_lists(l1, l2):
             return ( cardinalities if print_difference else "") + "EQUAL (JI %s%%)" % jaccard_similarity_lists(l1, l2)
 
         if print_difference:
-            return cardinalities + '\nDELETED %s\n---\nADDED %s' % (str(difference1)[:DIFF_CHAR_LIMIT],
+            return cardinalities + '\nDELETED %s\n---\nADDED %s' % ( chuncked_table(list(difference1)),#str(difference1)[:DIFF_CHAR_LIMIT],
                                                                     chuncked_table(list(difference2)))
         else:
             return 'CHANGED (JI %s%%)' % jaccard_similarity_lists(l1, l2)
