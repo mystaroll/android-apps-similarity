@@ -18,7 +18,7 @@ sys.setdefaultencoding('utf8')
 
 VERSION = "0.0.2"  # useful for caching
 THRESHOLD = 80
-DIFF_CHAR_LIMIT = 100000
+DIFF_LIMIT = 5000
 execution_time = datetime.now().strftime("%Y-%m-%d-%H:%M")
 
 apks_dir = "data/apks"
@@ -89,7 +89,6 @@ def jaccard_similarity_lists(list1, list2):
     return round((float(inter_len) / union_len) * 100, 2) if union_len > 0 else 0.0
 
 
-
 # def jaccard_similarity_strings(str1, str2):
 #     str1 = set(str1.split())
 #     str2 = set(str2.split())
@@ -99,25 +98,34 @@ def chunks(l, n):
     for i in range(0, len(l), n):
         yield l[i:i + n]
 
-def chuncked_table(rows):
-    LIMIT_ROWS = 500
-    #generating columns
-    header = ["" for i in range((len(rows) / LIMIT_ROWS) + (1 if len(rows) % LIMIT_ROWS != 0 else 0))]
+
+def chuncked_table(header, rows):
+    LIMIT_COLUMNS = 100
+    LIMIT_TOTAL_ROWS = 500
+    rows = rows[:LIMIT_TOTAL_ROWS]
+    # generating columns
+    header = [header for i in range(
+        (len(rows) / LIMIT_COLUMNS) + (1 if len(rows) % LIMIT_COLUMNS != 0 else 0))]
+    header = header[:1]
     # print "headers " + str(header) + " rows" + str(list(chunks(rows,  len(header))))
-    return tabulate(chunks(rows, len(header)), header) if len(rows)>0 else "[]" # tabulate(rows, header)
+    # tabulate(rows, header)
+    return tabulate(chunks([unicode(x) for x in rows], len(header)), header) if len(rows) > 0 else "[]"
+
 
 def compare_lists(l1, l2):
     difference1 = set(l1).difference(l2)
     difference2 = set(l2).difference(l1)
 
-    cardinalities = u"\n |l1|=%s,|l2|=%s, diff: -%s +%s, |l1 \u2229 l2|=%s\n" % (len(l1), len(l2), len(difference1), len(difference2), len(set(l1).intersection(set(l2))))
+    cardinalities = u"\n |l1|=%s,|l2|=%s, diff: -%s +%s, |l1 \u2229 l2|=%s\n" % (len(
+        l1), len(l2), len(difference1), len(difference2), len(set(l1).intersection(set(l2))))
+
     def result(print_difference):
         if len(difference1) == 0 and len(difference2) == 0:
-            return ( cardinalities if print_difference else "") + "EQUAL (JI %s%%)" % jaccard_similarity_lists(l1, l2)
+            return (cardinalities if print_difference else "") + "EQUAL (JI %s%%)" % jaccard_similarity_lists(l1, l2)
 
         if print_difference:
-            return cardinalities + '\nDELETED %s\n---\nADDED %s' % ( chuncked_table(list(difference1)),#str(difference1)[:DIFF_CHAR_LIMIT],
-                                                                    chuncked_table(list(difference2)))
+            return cardinalities + u'\nDELETED %s\n---\nADDED %s' % (str(difference1)[:DIFF_LIMIT],
+                                                                     str(difference2)[:DIFF_LIMIT])  # chuncked_table("ADDED", list(difference2)))
         else:
             return 'CHANGED (JI %s%%)' % jaccard_similarity_lists(l1, l2)
 
@@ -130,13 +138,13 @@ def compare_strings(s1, s2):
     def result(print_difference):
         if s1 != s2:
             if print_difference:
-                return 'DIFFERENT: %s!=%s' % (str(s1)[:DIFF_CHAR_LIMIT], str(s2)[:DIFF_CHAR_LIMIT])
-            else: return 'CHANGED'
-        else: return "EQUAL %s" % s1 if print_difference else ""
+                return 'DIFFERENT: %s!=%s' % (str(s1), str(s2))
+            else:
+                return 'CHANGED'
+        else:
+            return "EQUAL %s" % s1 if print_difference else ""
 
     return to_detailed_dict(result(True), result(False), 0 if s1 != s2 else 100)
-
-
 
 
 def represent_methods(dx, restrict_classes=None, only_internal=True):
@@ -146,7 +154,6 @@ def represent_methods(dx, restrict_classes=None, only_internal=True):
         ).get_descriptor()),
         filter(lambda mth: restrict_classes == None or mth.get_method().class_name in restrict_classes,
                filter(lambda method: not(method.is_external() and only_internal), dx.get_methods())))
-
 
 
 def compare_methods_common_classes(dx1, dx2, only_internal=True):
@@ -207,9 +214,11 @@ def download_if_not_exists(hash):
     global apks_dir, apks_list
     if (hash + ".apk" in apks_list):
         with open(apks_dir + "/" + hash + ".apk", "rb") as existing_apk:
-            hash_in_file = hashlib.sha256(existing_apk.read()).hexdigest().upper()
+            hash_in_file = hashlib.sha256(
+                existing_apk.read()).hexdigest().upper()
         if hash_in_file != hash:
-            print "\n File exists but no equal hashes: %s, %s" % (hash, hash_in_file)
+            print "\n File exists but no equal hashes: %s, %s" % (
+                hash, hash_in_file)
         else:
             return
 
@@ -225,16 +234,19 @@ comparisons = []
 skipped_lines = []  # some apks are not analyzable by androguard, we exclude them
 with open('data/groundtruth.txt') as f:
     for num, line in enumerate(f.readlines()):
+        if len(sys.argv) > 1 and str(num) != sys.argv[1]:
+            continue
         [original_apk_hash, repackaged_apk_hash,
          grnd_is_similar] = line.strip().split(',')
         print chalk.bold(
             "\n\n###(%s)###  ########################### Analyzing pair of dataset: [%s],[%s] ####################################") % (
-                  num, chalk.blue(chalk.bold(original_apk_hash)), chalk.bold(repackaged_apk_hash))
+            num, chalk.blue(chalk.bold(original_apk_hash)), chalk.bold(repackaged_apk_hash))
 
         download_if_not_exists(original_apk_hash)
         download_if_not_exists(repackaged_apk_hash)
 
-        cache_filename = hashlib.sha256(bytes(original_apk_hash + repackaged_apk_hash + VERSION)).hexdigest().upper()
+        cache_filename = hashlib.sha256(
+            bytes(original_apk_hash + repackaged_apk_hash + VERSION)).hexdigest().upper()
 
         if os.path.exists("./cache/" + cache_filename):
             print "CACHED getting results...."
@@ -358,7 +370,8 @@ with open('data/groundtruth.txt') as f:
         accuracy = "%d" % (round((float(len(filter(lambda v: v == chalk.bold(chalk.green("RIGHT")), map(
             lambda row: row[4], ground_truth_rows)))) / len(ground_truth_rows)) * 100, 2)) if len(
             ground_truth_rows) > 0 else "NA"
-        print tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid")
+        print tabulate(ground_truth_rows,
+                       headers=ground_truth_header, tablefmt="grid")
 
         # average between min of similar and max of non similar
         similar_rows = filter(
@@ -378,10 +391,13 @@ with open('data/groundtruth.txt') as f:
 
         summary_threshold = "\n======= CURRENT THRESHOLD %s%% ======= F1 SCORE: %s%% ======= RECOMMENDED THRESHOLD %s%%  == MAX_NON_SIM: %s%% MIN_SIM. %s%% \n" % (
             chalk.blue(THRESHOLD),
-            round((float(2 * TP) / (2 * TP + FN + FP)) * 100, 2) if 2 * TP + FN + FP > 0 else "ND",
+            round((float(2 * TP) / (2 * TP + FN + FP)) *
+                  100, 2) if 2 * TP + FN + FP > 0 else "ND",
             chalk.bold(recommended_threshold),
-            max(map(lambda row: row[2], not_similar_rows)) if len(not_similar_rows) > 0 else "ND",
-            min(map(lambda row: row[2], similar_rows)) if len(similar_rows) > 0 else "ND"
+            max(map(lambda row: row[2], not_similar_rows)) if len(
+                not_similar_rows) > 0 else "ND",
+            min(map(lambda row: row[2], similar_rows)) if len(
+                similar_rows) > 0 else "ND"
         )
         analysis_table = tabulate([
             ["TOOL_SIMILAR", "TP(%s)" % TP, "FP(%s)" % FP],
@@ -395,9 +411,12 @@ with open('data/groundtruth.txt') as f:
         #     THRESHOLD = recommended_threshold
 
 summary_report.write("\nFINAL ANALYSIS TABLE: \n")
-summary_report.write(tabulate(analysis_rows, headers=analysis_header, tablefmt="grid"))
-summary_report.write(tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid"))
-summary_report.write("\n\nExcluded pairs because of androguard exceptions\n%s" % "\n".join(skipped_lines))
+summary_report.write(
+    tabulate(analysis_rows, headers=analysis_header, tablefmt="grid"))
+summary_report.write(
+    tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid"))
+summary_report.write(
+    "\n\nExcluded pairs because of androguard exceptions\n%s" % "\n".join(skipped_lines))
 summary_report.close()
 with open(summary_report.name + '(a).csv', 'wb') as csv_file:
     wr = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
