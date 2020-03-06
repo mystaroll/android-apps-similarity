@@ -5,3 +5,5 @@ session.ag
 src/report
 src/cache
 .pip
+src/LiteRadar/Data/Decompiled/*
+src/LiteRadar/log_libradar.txt
