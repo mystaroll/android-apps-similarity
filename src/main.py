@@ -11,12 +11,14 @@ import urllib2
 import hashlib
 import cPickle
 import csv
+sys.path.append("LiteRadar") # this is where your python file exists
+from literadar import LibRadarLite
 
 reload(sys)
 sys.setdefaultencoding('utf8')
 
 
-VERSION = "0.0.2"  # useful for caching
+VERSION = "0.0.3"  # useful for caching
 THRESHOLD = 80
 DIFF_LIMIT = 5000
 execution_time = datetime.now().strftime("%Y-%m-%d-%H:%M")
@@ -147,28 +149,29 @@ def compare_strings(s1, s2):
     return to_detailed_dict(result(True), result(False), 0 if s1 != s2 else 100)
 
 
-def represent_methods(dx, restrict_classes=None, only_internal=True):
+def represent_methods(dx, restrict_classes=None, exclude_package=None, only_internal=True):
     return map(
         lambda internal_method: "%s->%s%s" % (internal_method.get_method().class_name, internal_method.get_method(
         ).get_name(), internal_method.get_method(
         ).get_descriptor()),
-        filter(lambda mth: restrict_classes == None or mth.get_method().class_name in restrict_classes,
+
+        filter(lambda mth: (restrict_classes == None or mth.get_method().class_name in restrict_classes) and (exclude_package==None or all(not (str(lib) in str(mth)) for lib in exclude_package)),
                filter(lambda method: (method.is_external() and not only_internal) or (not method.is_external() and only_internal), dx.get_methods())))
 
 
 def compare_methods_common_classes(dx1, dx2, only_internal=True):
     # type: (any, any) -> dict
     union_classes = set(dx1.classes).intersection(set(dx2.classes))
-    meths_dx1 = represent_methods(dx1, union_classes, only_internal)
-    meths_dx2 = represent_methods(dx2, union_classes, only_internal)
+    meths_dx1 = represent_methods(dx1, union_classes, None, only_internal)
+    meths_dx2 = represent_methods(dx2, union_classes, None, only_internal)
 
     return compare_lists(meths_dx1, meths_dx2)
 
 
 def compare_methods(dx1, dx2, only_internals=True):
     # type: (androguard.misc.Analysis, androguard.misc.Analysis) -> dict
-    meths_dx1 = represent_methods(dx1, None, only_internals)
-    meths_dx2 = represent_methods(dx2, None, only_internals)
+    meths_dx1 = represent_methods(dx1, None,None, only_internals)
+    meths_dx2 = represent_methods(dx2, None,None, only_internals)
 
     return compare_lists(meths_dx1, meths_dx2)
 
@@ -239,7 +242,7 @@ with open('data/groundtruth.txt') as f:
         [original_apk_hash, repackaged_apk_hash,
          grnd_is_similar] = line.strip().split(',')
         print chalk.bold(
-            "\n\n###(%s)###  ########################### Analyzing pair of dataset: [%s],[%s] ####################################") % (
+            "\n\n###(%s)###  ########################### Analyzing pair of dataset: [%s,%s] ####################################") % (
             num, chalk.blue(chalk.bold(original_apk_hash)), chalk.bold(repackaged_apk_hash))
 
         download_if_not_exists(original_apk_hash)
@@ -251,7 +254,7 @@ with open('data/groundtruth.txt') as f:
         if os.path.exists("./cache/" + cache_filename):
             print "CACHED getting results...."
             with open("./cache/" + cache_filename, "rb") as file:
-                comparisons = cPickle.load(file)
+                external_libraries, comparisons = cPickle.load(file)
         else:
             print "Running comparisons"
             try:
@@ -259,10 +262,18 @@ with open('data/groundtruth.txt') as f:
                     "./data/apks/%s.apk" % original_apk_hash)
                 a2, d2, dx2 = androguard.misc.AnalyzeAPK(
                     "./data/apks/%s.apk" % repackaged_apk_hash)
+
+                lrd = LibRadarLite("./data/apks/%s.apk" % original_apk_hash)
+                res_lib_radar_a1 = [lib["Package"] for lib in lrd.compare()]
+                lrd = LibRadarLite("./data/apks/%s.apk" % repackaged_apk_hash)
+                res_lib_radar_a2 = [lib["Package"] for lib in lrd.compare()]
+
+                external_libraries = set(res_lib_radar_a1).union(res_lib_radar_a2)
             except:
                 print "Androguard failed to analyze this pair, excluding it.."
                 skipped_lines += [line]
                 continue
+
 
             # COMPARISONS
             comparisons = [
@@ -305,12 +316,17 @@ with open('data/groundtruth.txt') as f:
         if not os.path.exists("./cache/" + cache_filename):
             print "CACHING...."
             with open("./cache/" + cache_filename, "wb") as file:
-                cPickle.dump(comparisons, file)
+                cPickle.dump((external_libraries,comparisons), file)
 
+        print '\n=================LIBS Apk1 and apk2=============================\n'
+        print external_libraries
         for i, comparison in enumerate(comparisons):
             print '\n=============================================='
             print '%s: \n-----------\n  %s' % (analysis_header[i +
                                                                1], comparison['detailed'])
+
+
+        print "\n\n=============== CURRENT ANALYSIS =============== \n\n"
 
         analysis_rows = analysis_rows + [
             [str(num)] +
