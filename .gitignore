@@ -7,4 +7,4 @@ src/cache
 .pip
 src/LiteRadar/Data/Decompiled/*
 src/LiteRadar/log_libradar.txt
-src/log_libradar.txt
+*/log_libradar.txt

@@ -155,23 +155,23 @@ def represent_methods(dx, restrict_classes=None, exclude_package=None, only_inte
         ).get_name(), internal_method.get_method(
         ).get_descriptor()),
 
-        filter(lambda mth: (restrict_classes == None or mth.get_method().class_name in restrict_classes) and (exclude_package==None or all(not (str(lib) in str(mth)) for lib in exclude_package)),
+        filter(lambda mth: (restrict_classes == None or mth.get_method().class_name in restrict_classes) and (exclude_package==None or all( not (str(lib) in str(mth)) for lib in exclude_package)),
                filter(lambda method: (method.is_external() and not only_internal) or (not method.is_external() and only_internal), dx.get_methods())))
 
 
-def compare_methods_common_classes(dx1, dx2, only_internal=True):
+def compare_methods_common_classes(dx1, dx2, excluded_libraries=None, only_internal=True):
     # type: (any, any) -> dict
     union_classes = set(dx1.classes).intersection(set(dx2.classes))
-    meths_dx1 = represent_methods(dx1, union_classes, None, only_internal)
-    meths_dx2 = represent_methods(dx2, union_classes, None, only_internal)
+    meths_dx1 = represent_methods(dx1, union_classes, excluded_libraries, only_internal)
+    meths_dx2 = represent_methods(dx2, union_classes, excluded_libraries, only_internal)
 
     return compare_lists(meths_dx1, meths_dx2)
 
 
-def compare_methods(dx1, dx2, only_internals=True):
+def compare_methods(dx1, dx2,  excluded_libraries=None, only_internals=True):
     # type: (androguard.misc.Analysis, androguard.misc.Analysis) -> dict
-    meths_dx1 = represent_methods(dx1, None,None, only_internals)
-    meths_dx2 = represent_methods(dx2, None,None, only_internals)
+    meths_dx1 = represent_methods(dx1, None, excluded_libraries, only_internals)
+    meths_dx2 = represent_methods(dx2, None, excluded_libraries, only_internals)
 
     return compare_lists(meths_dx1, meths_dx2)
 
@@ -305,10 +305,10 @@ with open('data/groundtruth.txt') as f:
                     a1.get_receivers(), a2.get_receivers()),
                 compare_lists(
                     dx1.classes, dx2.classes),
-                compare_methods(dx1, dx2),
-                compare_methods_common_classes(dx1, dx2),
-                compare_methods(dx1, dx2, False),
-                compare_methods_common_classes(dx1, dx2, False),
+                compare_methods(dx1, dx2, external_libraries),
+                compare_methods_common_classes(dx1, dx2, external_libraries),
+                compare_methods(dx1, dx2, external_libraries, False),
+                compare_methods_common_classes(dx1, dx2, external_libraries, False),
                 compare_lists(dx1.strings, dx2.strings),
                 compare_fields(dx1, dx2)
             ]
