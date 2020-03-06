@@ -343,9 +343,9 @@ with open('data/groundtruth.txt') as f:
         not_similar_rows = filter(
             lambda row: row[1] == "NOT_SIMILAR", ground_truth_rows)
         recommended_threshold = round(float(
-            min(map(lambda row: (row[0], row[2]), similar_rows))
+            min(map(lambda row: row[2], similar_rows))
             +
-            max(map(lambda row: (row[0], row[2]), not_similar_rows))
+            max(map(lambda row: row[2], not_similar_rows))
         ) / 2, 2) if len(similar_rows) > 0 and len(not_similar_rows) > 0 else "ND"
 
         TP = len(filter(lambda row: row[4] == "RIGHT", similar_rows))
