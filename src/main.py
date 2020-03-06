@@ -142,7 +142,7 @@ def compare_strings(s1, s2):
             else:
                 return 'CHANGED'
         else:
-            return "EQUAL %s" % s1 if print_difference else ""
+            return "EQUAL %s" % (s1 if print_difference else "")
 
     return to_detailed_dict(result(True), result(False), 0 if s1 != s2 else 100)
 
@@ -153,7 +153,7 @@ def represent_methods(dx, restrict_classes=None, only_internal=True):
         ).get_name(), internal_method.get_method(
         ).get_descriptor()),
         filter(lambda mth: restrict_classes == None or mth.get_method().class_name in restrict_classes,
-               filter(lambda method: not(method.is_external() and only_internal), dx.get_methods())))
+               filter(lambda method: (method.is_external() and not only_internal) or (not method.is_external() and only_internal), dx.get_methods())))
 
 
 def compare_methods_common_classes(dx1, dx2, only_internal=True):
@@ -183,23 +183,23 @@ def compare_fields(dx1, dx2):
 analysis_rows, ground_truth_rows = [], []
 analysis_header = ['Ref.',
                    'package',
-                   'appname',
+                   'AppName',
                    'And. vcode',
                    'And. vname',
-                   'minsdk',
-                   'maxsdk',
-                   'targetsdk',
-                   'efftarget',
-                   'permissions',
-                   'activities',
+                   'MinSDK',
+                   'MaxSDK',
+                   'TargetSDK',
+                   'Eff.TargetSDK',
+                   'Permissions',
+                   'Activities',
                    'Resources',
                    'Services',
                    'Receivers',
                    'Classes',
-                   'Methods All',
-                   'Methods Common cls',
-                   'Methods All(ext)',
-                   'Meths Com. cls(ext)',
+                   'Methods Int. Classes',
+                   'Methods Int. Common Classes',
+                   'Methods Ext. Classes',
+                   'Methods Ext. Common Classes',
                    'Strings',
                    'Fields',
                    'GRND TRUTH']
@@ -267,6 +267,10 @@ with open('data/groundtruth.txt') as f:
             # COMPARISONS
             comparisons = [
                 compare_strings(
+                    a1.get_package(), a2.get_package()),
+                compare_strings(
+                    a1.get_app_name(), a2.get_app_name()),
+                compare_strings(
                     a1.get_androidversion_code(), a2.get_androidversion_code()),
                 compare_strings(
                     a1.get_androidversion_name(), a2.get_androidversion_name()),
@@ -280,10 +284,6 @@ with open('data/groundtruth.txt') as f:
                     a1.get_effective_target_sdk_version(), a2.get_effective_target_sdk_version()),
                 compare_lists(
                     a1.get_permissions(), a2.get_permissions()),
-                compare_strings(
-                    a1.get_package(), a2.get_package()),
-                compare_strings(
-                    a1.get_app_name(), a2.get_app_name()),
                 compare_lists(
                     a1.get_activities(), a2.get_activities()),
                 compare_lists(
@@ -307,49 +307,13 @@ with open('data/groundtruth.txt') as f:
             with open("./cache/" + cache_filename, "wb") as file:
                 cPickle.dump(comparisons, file)
 
-        print '=============================================='
-        print 'Package name: \n-----------\n  %s' % comparisons[7]['detailed']
-        print '\n=============================================='
-        print 'APP name:  \n-----------\n %s' % comparisons[8]['detailed']
-        print '\n=============================================='
-        print 'Android version code: %s' % comparisons[0]['detailed']
-        print 'Android version name: %s' % comparisons[1]['detailed']
-        print 'Min SDK version: %s' % comparisons[2]['detailed']
-        print 'Max SDK version: %s' % comparisons[3]['detailed']
-        print 'Target SDK version: %s' % comparisons[4]['detailed']
-        print 'Effective Target SDK version: %s' % comparisons[5]['detailed']
-        print '\n=============================================='
-        print "Permissions: \n-----------\n %s" % comparisons[6]['detailed']
-        print '\n=============================================='
-        print 'Package name: \n-----------\n  %s' % comparisons[7]['detailed']
-        print '\n=============================================='
-        print 'APP name:  \n-----------\n %s' % comparisons[8]['detailed']
-        print '\n=============================================='
-        print 'Activities: \n-----------\n  %s' % comparisons[9]['detailed']
-        print '\n=============================================='
-        print 'Resources:  \n-----------\n %s' % comparisons[10]['detailed']
-        print '\n=============================================='
-        print 'Services: \n-----------\n  %s' % comparisons[11]['detailed']
-        print '\n=============================================='
-        print 'Receivers:  \n-----------\n %s' % comparisons[12]['detailed']
-        print '\n=============================================='
-        print 'Classes:  \n-----------\n %s' % comparisons[13]['detailed']
-        print '\n=============================================='
-        print 'Methods: \n-----------\n  %s' % comparisons[14]['detailed']
-        print '\n=============================================='
-        print 'Methods Common classes: \n-----------\n  %s' % comparisons[15]['detailed']
-        print '\n=============================================='
-        print '(ext. incl.) Methods: \n-----------\n  %s' % comparisons[16]['detailed']
-        print '\n=============================================='
-        print '(ext. incl.) Methods Common classes:  \n-----------\n %s' % comparisons[17]['detailed']
-        print '\n=============================================='
-        print 'Strings: \n-----------\n  %s' % comparisons[18]['detailed']
-        print '\n=============================================='
-        print 'Fields: \n-----------\n  %s' % comparisons[19]['detailed']
-        print '\n========================= CURRENT ANALYSIS ========================='
+        for i, comparison in enumerate(comparisons):
+            print '\n=============================================='
+            print '%s: \n-----------\n  %s' % (analysis_header[i +
+                                                               1], comparison['detailed'])
 
         analysis_rows = analysis_rows + [
-            [chalk.blue(chalk.bold("%s,%s" % (original_apk_hash[:10], repackaged_apk_hash[:10])))] +
+            [str(num)] +
             map(lambda comparison: comparison['not_detailed'], comparisons) +
             [grnd_is_similar]]
 
@@ -379,9 +343,9 @@ with open('data/groundtruth.txt') as f:
         not_similar_rows = filter(
             lambda row: row[1] == "NOT_SIMILAR", ground_truth_rows)
         recommended_threshold = round(float(
-            min(map(lambda row: row[2], similar_rows))
+            min(map(lambda row: (row[0], row[2]), similar_rows))
             +
-            max(map(lambda row: row[2], not_similar_rows))
+            max(map(lambda row: (row[0], row[2]), not_similar_rows))
         ) / 2, 2) if len(similar_rows) > 0 and len(not_similar_rows) > 0 else "ND"
 
         TP = len(filter(lambda row: row[4] == "RIGHT", similar_rows))
@@ -389,15 +353,20 @@ with open('data/groundtruth.txt') as f:
         FP = len(filter(lambda row: row[4] == "WRONG", not_similar_rows))
         FN = len(filter(lambda row: row[4] == "WRONG", similar_rows))
 
-        summary_threshold = "\n======= CURRENT THRESHOLD %s%% ======= F1 SCORE: %s%% ======= RECOMMENDED THRESHOLD %s%%  == MAX_NON_SIM: %s%% MIN_SIM. %s%% \n" % (
+        max_non_similar = max(map(lambda row: (row[0], row[2]), not_similar_rows), key=lambda x: x[1]) if len(
+            not_similar_rows) > 0 else "ND"
+        min_similar = min(map(lambda row: (row[0], row[2]), similar_rows), key=lambda x: x[1]) if len(
+            similar_rows) > 0 else "ND"
+
+        summary_threshold = "\n======= CURRENT THRESHOLD %s%% ======= F1 SCORE: %s%% ======= RECOMMENDED THRESHOLD %s%%  == MAX_NON_SIM(id %s): %s%% MIN_SIM(id %s). %s%% \n" % (
             chalk.blue(THRESHOLD),
             round((float(2 * TP) / (2 * TP + FN + FP)) *
                   100, 2) if 2 * TP + FN + FP > 0 else "ND",
             chalk.bold(recommended_threshold),
-            max(map(lambda row: row[2], not_similar_rows)) if len(
-                not_similar_rows) > 0 else "ND",
-            min(map(lambda row: row[2], similar_rows)) if len(
-                similar_rows) > 0 else "ND"
+            max_non_similar[0],
+            max_non_similar[1],
+            min_similar[0],
+            min_similar[1]
         )
         analysis_table = tabulate([
             ["TOOL_SIMILAR", "TP(%s)" % TP, "FP(%s)" % FP],
