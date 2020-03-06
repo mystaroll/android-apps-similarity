@@ -18,7 +18,7 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 
-VERSION = "0.0.3"  # useful for caching
+VERSION = "0.0.4"  # useful for caching
 THRESHOLD = 80
 DIFF_LIMIT = 5000
 execution_time = datetime.now().strftime("%Y-%m-%d-%H:%M")
