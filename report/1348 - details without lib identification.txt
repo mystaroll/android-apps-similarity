@@ -1,0 +1,159 @@
+###(1347)###  ########################### Analyzing pair of dataset: [AB6789178D7A8AD92C54FB2DB06656A8DBA8FA11EFAAEAF2FC886E1B01CEC89D,AB6F46463D66A1EBFE243B5110F0E21CA62381050891CA9595D1F3FD9456A0A4] ####################################
+Running comparisons
+CACHING....
+
+=================LIBS Apk1 and apk2=============================
+
+set([u'Lcom/chartboost/sdk', u'Lorg/fmod', u'Lcom/unity3d'])
+
+==============================================
+package: 
+-----------
+  DIFFERENT: com.naquatic.solitaireZen!=com.RhemaGroup.AndyAdventure.en.lite
+
+==============================================
+AppName: 
+-----------
+  DIFFERENT: Solitaire Zen!=Andy Adventure LITE
+
+==============================================
+And. vcode: 
+-----------
+  EQUAL 2
+
+==============================================
+And. vname: 
+-----------
+  EQUAL 1.0.1
+
+==============================================
+MinSDK: 
+-----------
+  DIFFERENT: 6!=7
+
+==============================================
+MaxSDK: 
+-----------
+  EQUAL None
+
+==============================================
+TargetSDK: 
+-----------
+  EQUAL 16
+
+==============================================
+Eff.TargetSDK: 
+-----------
+  EQUAL 16
+
+==============================================
+Permissions: 
+-----------
+  
+ |l1|=1,|l2|=1, diff: -1 +1, |l1 ∩ l2|=0
+
+DELETED set(['android.permission.INTERNET'])
+---
+ADDED set(['android.permission.WRITE_EXTERNAL_STORAGE'])
+
+==============================================
+Activities: 
+-----------
+  
+ |l1|=5,|l2|=4, diff: -1 +0, |l1 ∩ l2|=4
+
+DELETED set(['com.chartboost.sdk.CBDialogActivity'])
+---
+ADDED set([])
+
+==============================================
+Resources: 
+-----------
+  
+ |l1|=146,|l2|=48, diff: -119 +21, |l1 ∩ l2|=27
+
+DELETED set(['assets/bin/Data/519f4b953594d49b986be7af1b336b8d', 'assets/bin/Data/9c382f3afd48f47a9b11c5d586382f6d', 'META-INF/KEYSTORE.SF', 'assets/bin/Data/4ef311fc6acde4f7ea0a8c6ca864271c', 'res/drawable-ldpi/app_icon.png', 'assets/bin/Data/7d094cc87537a4e06867ba281bb99395', 'assets/bin/Data/ce0085e46130e4e3398fc636b1118d7f', 'assets/bin/Data/0fb05e98a037a470eaf385ff2d1368f7', 'assets/bin/Data/a33572f461e2a44489993449cd19fc81', 'assets/bin/Data/10dc5f7298c2a4124925eb65c1bffc53', 'assets/bin/Data/1ebec08713960431bb643191fa15b38f', 'assets/bin/Data/510c674d29b0c4e4e86c1a1afe007a02', 'assets/bin/Data/1467b8b0abcbf43b9ba52bf310d06386', 'assets/bin/Data/ab6e64e5717ae4b5e95ba7d614c3decd', 'assets/bin/Data/281d04f1591034ff6becbcfb5e3191ab', 'assets/bin/Data/9b1171f045b8546018fe59cf8e0eb299', 'assets/bin/Data/e6b961ab478214f3ab61b2c7f009b410', 'assets/bin/Data/34b0e8520f7a24f718caf2c150d942ba', 'assets/bin/Data/0a152a1a53e0d49f5884478386e14ae2', 'assets/bin/Data/f8d232aeab4b84173a4b90eacd7f7be5', 'assets/bin/Data/d3d2ae117f16c4ca68c2027de74b74e6', 'assets/bin/Data/5f8679d365b094637b75df88bba5c525', 'assets/bin/Data/1ea9914ba1d8348328df25574a535e48', 'assets/bin/Data/7b0f02c660d81449897609edd4c34960', 'assets/bin/Data/8441c5bfe7d684415a89eafac149f0dc', 'assets/bin/Data/b3437c13bd1234c13861cc343e036fa2', 'assets/bin/Data/151ee7417ee5a4b08a0754867c9073c8', 'assets/bin/Data/5c8b6d5025e0141729a3e05c4fa168be', 'assets/bin/Data/c3950c9b7f3d54582b24c14ce6d24284', 'assets/bin/Data/a0e774f060ed94c0fb7f5a81185ac092', 'assets/bin/Data/93304cad270f6443288d96e30c211fc5', 'assets/bin/Data/0000000000000000e000000000000000', 'assets/bin/Data/53e110a12dd4640978560dabf3ba3ed9', 'assets/bin/Data/a42d5af4677d043feb9fb2ac86b869f7', 'assets/bin/Data/f037b122bd99c41028c41bc4c78f8f55', 'assets/bin/Data/a1025b91c3d604cbf9db0c215fe85a27', 'assets/bin/Data/7609ec1e31ce041e9a64d07d7d2acf32', 'assets/bin/Data/357369ed36ef044a3ab957284ccc191e', 'assets/bin/Data/656c86dd0471a49aeae81a0a40c3391d', 'assets/bin/Data/ad6cadadb616c45559c14e0d25316690', 'assets/bin/Data/cb93944e412544091b8ddce1e08e1d1e', 'assets/bin/Data/7d53ab5e14dbc41ee9ed8f8728231a05', 'assets/bin/Data/bbc3538c40f9f4c468cda430aed70468', 'assets/bin/Data/6100effc173804d5f94ea808b885487f', 'assets/bin/Data/2aedc29d469c5481993e87e9c00fe059', 'assets/bin/Data/060f972e012b04af7b7f68bea9cc3596', 'assets/bin/Data/23bffa1490ea94882bfe15269cba7702', 'assets/bin/Data/dbbb4a38a4f5b4b0082ea34a417bdd61', 'assets/bin/Data/09b38da0a17da4dcea6bdf95dd68eef6', 'assets/bin/Data/ff5d9841f537b4cf098022800a4ebeb6', 'assets/bin/Data/890edc8e88ffe421a85a1f9c443269e7', 'assets/bin/Data/04bc098c3389740b8804856132c004bb', 'assets/bin/Data/b88c3e4033a0149e19c360aa7acf47bb', 'assets/bin/Data/810d5525a797f4a628915ffc209f63d5', 'assets/bin/Data/aeb2faa42d2694fedb2ec4531cf3335b', 'assets/bin/Data/23a12758d1d4644e5ba1db75ddfc2d4d', 'assets/bin/Data/965ec52ac879c4328ae04f0dd0ed042d', 'assets/bin/Data/4947bcd0c908e4d8f972b44f47f1449f', 'META-INF/KEYSTORE.RSA', 'assets/bin/Data/0b5fcc07955e2485db9a524a5a62be9f', 'assets/bin/Data/db82cd7822f6f4f5095471939b08093b', 'assets/bin/Data/1abf853793b55424d8eeca5c7765a735', 'assets/bin/Data/1057a08dcab9546199357d073ae56d79', 'assets/bin/Data/ae4646a634d6740c8abec5f82633821a', 'assets/bin/Data/776043eb7c5af4b1bb32098185257f28', 'assets/bin/Data/b8f615b889a654f4db10a36a73cf1fbc', 'assets/bin/Data/8fb45d20327a447218bc656aba81d32c', 'assets/bin/Data/e266693fbb07d432484772135a3c96bd', 'assets/bin/Data/d6995e90b62574cb984c07169a20a2b0', 'assets/bin/Data/a8feaf74480224497a44ac8f4ed3f26a', 'assets/bin/Data/a07c61d6440ef48a4b15ef41360bd280', 'assets/bin/Data/155aafbd6d42f48f886d775c0e90f81e', 'assets/bin/Data/c2028e27ab14f4fbba666a00298419ba', 'assets/bin/Data/515a6affa798e4fdf914f6b5060a20db', 'assets/bin/Data/505bf1acc49704047aa79fd2e1c0ec8f', 'assets/bin/Data/8a8b16f8d709d449c986d3e08e90d9b0', 'assets/bin/Data/24c01d43cc80747e9a288b2b8ed3139e', 'assets/bin/Data/6b909dcae87a54667aeb04cd158ec099', 'assets/bin/Data/8e9e40716e03b46908eb1403bd330fea', 'assets/bin/Data/Managed/System.Core.dll', 'assets/bin/Data/bff6a7596989f48d78b7f54f9ee5b09c', 'assets/bin/Data/8c56d3d313eb044dd9ddacec2bd7f177', 'assets/bin/Data/0b0584334cd0d43dc97b69f64f79bef1', 'res/drawable-xhdpi/app_icon.png', 'assets/bin/Data/09f7652e38b8e4065ade462e92391398', 'assets/bin/Data/d983758b89d82412dac27c04627b7558', 'assets/bin/Data/e33ad4c8fc7cd4c43afd6f9344dafae3', 'assets/bin/Data/9f98b57e867b74042a52d77fe09d77a7', 'assets/bin/Data/b7b9a7ae5999247db80f69f4989dc772', 'assets/bin/Data/0761afc3d005f41428353dacdeae7f9a', 'assets/bin/Data/09c6cf700e3db4f1187c1fc916f2b265', 'assets/bin/Data/bf84468b4b2a84b6ea3defe16ce6402d', 'assets/bin/Data/74e9448d1862b428eb43e99af070b128', 'assets/bin/Data/a0a7fecdc970b4cde8e99f08d3fd2e68', 'assets/bin/Data/8574bc87830a048cca10c0868dafbd32', 'assets/bin/Data/4d40236113baf4f9da0a909dc9ab8d8d', 'assets/bin/Data/5300e7fabecac476ba306f951034c75e', 'assets/bin/Data/18d2302613bcf4af89b42663712e8a75'
+---
+ADDED set(['assets/bin/Data/sharedassets3.assets', 'assets/bin/Data/sharedassets6.assets', 'assets/bin/Data/sharedassets7.assets', 'META-INF/ANDY_ADV.SF', 'assets/bin/Data/sharedassets8.assets', 'META-INF/ANDY_ADV.RSA', 'assets/bin/Data/sharedassets2.assets', 'assets/bin/Data/sharedassets5.assets', 'assets/bin/Data/sharedassets10.assets', 'assets/bin/Data/sharedassets4.assets', 'assets/bin/Data/sharedassets9.assets', 'assets/bin/Data/Managed/Assembly-CSharp.dll', 'assets/bin/Data/level9', 'assets/bin/Data/level8', 'assets/bin/Data/level3', 'assets/bin/Data/level2', 'assets/bin/Data/level1', 'assets/bin/Data/level7', 'assets/bin/Data/level6', 'assets/bin/Data/level5', 'assets/bin/Data/level4'])
+
+==============================================
+Services: 
+-----------
+  
+ |l1|=0,|l2|=0, diff: -0 +0, |l1 ∩ l2|=0
+EQUAL (JI 100%)
+
+==============================================
+Receivers: 
+-----------
+  
+ |l1|=0,|l2|=0, diff: -0 +0, |l1 ∩ l2|=0
+EQUAL (JI 100%)
+
+==============================================
+Classes: 
+-----------
+  
+ |l1|=325,|l2|=255, diff: -70 +0, |l1 ∩ l2|=255
+
+DELETED set([u'Lorg/apache/http/params/BasicHttpParams;', u'Ljavax/net/ssl/SSLSocketFactory;', u'Ljava/io/BufferedReader;', u'Lcom/chartboost/sdk/CBAPIConnection$TrustingSocketFactory;', u'Ljava/lang/reflect/InvocationTargetException;', u'Lcom/chartboost/sdk/ChartBoostDelegate;', u'Lcom/chartboost/sdk/ChartBoost;', u'Lorg/apache/http/params/HttpProtocolParams;', u'Lcom/chartboost/sdk/CBAPIRequest;', u'Lcom/chartboost/sdk/CBConstants;', u'Lcom/chartboost/sdk/ChartBoost$GenericConnection;', u'Landroid/graphics/drawable/Drawable;', u'Lorg/apache/http/params/HttpConnectionParams;', u'Lcom/prime31/ChartBoostPlugin$1;', u'Ljava/security/MessageDigest;', u'Landroid/webkit/WebSettings;', u'Ljava/util/TreeSet;', u'Lcom/chartboost/sdk/CBWebView;', u'Lcom/prime31/ChartBoostPlugin$5;', u'Lorg/apache/http/conn/scheme/PlainSocketFactory;', u'Lorg/apache/http/message/BasicNameValuePair;', u'Lorg/apache/http/impl/client/DefaultHttpClient;', u'Lcom/prime31/ChartBoostPlugin$4;', u'Ljava/lang/IllegalAccessException;', u'Ljava/io/UnsupportedEncodingException;', u'Lcom/prime31/ChartBoostPlugin$3;', u'Lcom/chartboost/sdk/CBAnalytics$TransactionConnection;', u'Lorg/apache/http/conn/scheme/SchemeRegistry;', u'Lcom/chartboost/sdk/CBDialogActivity$1;', u'Lcom/chartboost/sdk/CBAPIConnection$TrustingSocketFactory$1;', u'Lorg/apache/http/conn/scheme/Scheme;', u'Lorg/apache/http/conn/ssl/SSLSocketFactory;', u'Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;', u'Ljava/util/Locale;', u'Lcom/chartboost/sdk/CBDialogActivity;', u'Ljava/math/BigDecimal;', u'Lcom/chartboost/sdk/CBWebViewClient$RegisterClickConnection;', u'Ljava/net/URLEncoder;', u'Ljava/lang/StringBuffer;', u'Lcom/prime31/ChartBoostPlugin;', u'Lcom/chartboost/sdk/CBAnalytics;', u'Lorg/apache/http/HttpEntity;', u'Landroid/webkit/WebViewClient;', u'Lcom/chartboost/sdk/CBAPIConnection;', u'Ljava/security/KeyStore;', u'Lorg/apache/http/StatusLine;', u'Landroid/webkit/WebView;', u'Lorg/json/JSONObject;', u'Lcom/chartboost/sdk/CBWebView$CBViewType;', u'Landroid/view/ViewManager;', u'Lcom/prime31/ChartBoostPlugin$2;', u'Landroid/app/ProgressDialog;', u'Ljava/net/URLDecoder;', u'Lcom/chartboost/sdk/ChartBoost$LoadDataConnection;', u'Landroid/os/AsyncTask;', u'Lorg/json/JSONTokener;', u'Ljavax/net/ssl/SSLContext;', u'Lcom/chartboost/sdk/CBWebViewClient;', u'Lcom/chartboost/sdk/CBAPIConnection$1;', u'Ljava/io/FileWriter;', u'Lcom/chartboost/sdk/CBWebView$1;', u'Lcom/chartboost/sdk/CBWebView$CBViewState;', u'Lorg/apache/http/client/methods/HttpPost;', u'Lorg/apache/http/HttpResponse;', u'Lorg/apache/http/client/entity/UrlEncodedFormEntity;', u'Ljava/util/UUID;', u'Ljava/lang/NoSuchFieldException;', u'Ljava/io/InputStreamReader;', u'Lorg/apache/http/client/HttpClient;', u'Lcom/chartboost/sdk/CBUtility;'])
+---
+ADDED set([])
+
+==============================================
+Methods Int. Classes: 
+-----------
+  
+ |l1|=706,|l2|=546, diff: -160 +0, |l1 ∩ l2|=546
+
+DELETED set([u'Lcom/chartboost/sdk/CBAnalytics;->trackEvent(Ljava/lang/String; D)Ljava/lang/Boolean;', u'Lcom/chartboost/sdk/CBWebViewClient;->access$0(Lcom/chartboost/sdk/CBWebViewClient; Ljava/lang/String;)V', u'Lcom/prime31/ChartBoostPlugin;-><init>()V', u'Lcom/chartboost/sdk/CBWebView;->getState()Lcom/chartboost/sdk/CBWebView$CBViewState;', u'Lcom/chartboost/sdk/CBAPIConnection;->onPostExecute(Lorg/json/JSONObject;)V', u'Lcom/chartboost/sdk/ChartBoost;->hasCachedInterstitial()Z', u'Lcom/chartboost/sdk/ChartBoostDelegate;->didCloseInterstitial(Landroid/view/View;)V', u'Lcom/chartboost/sdk/ChartBoost;->cacheMoreApps()V', u'Lcom/chartboost/sdk/CBAPIRequest;->getQuery()Ljava/util/Map;', u'Lcom/chartboost/sdk/ChartBoost;->cacheInterstitial(Ljava/lang/String;)V', u'Lcom/chartboost/sdk/CBDialogActivity$1;-><init>(Lcom/chartboost/sdk/CBDialogActivity;)V', u'Lcom/chartboost/sdk/CBWebView;->setState(Lcom/chartboost/sdk/CBWebView$CBViewState;)V', u'Lcom/chartboost/sdk/CBWebView$CBViewState;-><clinit>()V', u'Lcom/prime31/ChartBoostPlugin;->UnitySendMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/chartboost/sdk/CBAnalytics;->trackEvent(Ljava/lang/String; D Ljava/util/Map;)Ljava/lang/Boolean;', u'Lcom/chartboost/sdk/ChartBoostDelegate;->shouldDisplayInterstitial(Landroid/view/View;)Z', u'Lcom/prime31/ChartBoostPlugin;->showMoreApps()V', u'Lcom/prime31/ChartBoostPlugin;->cacheInterstitial(Ljava/lang/String;)V', u'Lcom/chartboost/sdk/ChartBoost;->getAppId()Ljava/lang/String;', u'Lcom/chartboost/sdk/CBAPIConnection;->onPostExecute(Ljava/lang/Object;)V', u'Lcom/chartboost/sdk/ChartBoost;->putConnection(Lcom/chartboost/sdk/CBWebView$CBViewType; Ljava/lang/String; Lcom/chartboost/sdk/ChartBoost$LoadDataConnection;)V', u'Lcom/chartboost/sdk/ChartBoost;->setConnectionTimeout(I)V', u'Lcom/chartboost/sdk/CBUtility;-><init>()V', u'Lcom/chartboost/sdk/CBWebView$CBViewState;->values()[Lcom/chartboost/sdk/CBWebView$CBViewState;', u'Lcom/chartboost/sdk/ChartBoost;->clearCache()V', u'Lcom/chartboost/sdk/CBWebViewClient$RegisterClickConnection;->onPostExecute(Lorg/json/JSONObject;)V', u'Lcom/chartboost/sdk/CBAnalytics;->trackEvent(Ljava/lang/String;)Ljava/lang/Boolean;', u'Lcom/chartboost/sdk/CBAPIConnection;-><init>(Landroid/content/Context;)V', u'Lcom/prime31/ChartBoostPlugin$5;->run()V', u'Lcom/prime31/ChartBoostPlugin;->hasCachedMoreApps()Z', u'Lcom/chartboost/sdk/CBWebView$CBViewType;-><init>(Ljava/lang/String; I)V', u'Lcom/chartboost/sdk/CBAPIConnection;->getEndpoint()Ljava/lang/String;', u'Lcom/chartboost/sdk/ChartBoost;->cacheInterstitial()V', u'Lcom/chartboost/sdk/CBWebView;-><init>(Landroid/content/Context; Lcom/chartboost/sdk/CBWebView$CBViewType;)V', u'Lcom/chartboost/sdk/CBAPIConnection;->onPreExecute()V', u'Lcom/chartboost/sdk/CBAPIRequest;-><init>(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/chartboost/sdk/CBAPIConnection$1;->onCancel(Landroid/content/DialogInterface;)V', u'Lcom/chartboost/sdk/CBConstants;-><init>()V', u'Lcom/chartboost/sdk/CBWebViewClient;->onReceivedError(Landroid/webkit/WebView; I Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/chartboost/sdk/CBDialogActivity;->display()V', u'Lcom/chartboost/sdk/ChartBoost;->showInterstitial()V', u'Lcom/chartboost/sdk/CBAPIConnection;->doInBackground([Ljava/lang/Object;)Ljava/lang/Object;', u'Lcom/chartboost/sdk/CBAPIConnection$TrustingSocketFactory$1;-><init>(Lcom/chartboost/sdk/CBAPIConnection$TrustingSocketFactory;)V', u'Lcom/chartboost/sdk/ChartBoost;->setAppSignature(Ljava/lang/String;)V', u'Lcom/chartboost/sdk/CBWebView$CBViewType;->values()[Lcom/chartboost/sdk/CBWebView$CBViewType;', u'Lcom/chartboost/sdk/CBWebView$CBViewState;-><init>(Ljava/lang/String; I)V', u'Lcom/chartboost/sdk/CBWebView;->getResponseContext()Lorg/json/JSONObject;', u'Lcom/chartboost/sdk/CBAPIConnection;->createHttpClient()Lorg/apache/http/client/HttpClient;', u'Lcom/chartboost/sdk/ChartBoost;->access$0(Lcom/chartboost/sdk/ChartBoost; Lcom/chartboost/sdk/CBWebView$CBViewType; Ljava/lang/String;)V', u'Lcom/chartboost/sdk/CBAnalytics;-><init>()V', u'Lcom/prime31/ChartBoostPlugin;->didDismissMoreApps(Landroid/view/View;)V', u'Lcom/chartboost/sdk/ChartBoostDelegate;->didClickMoreApps(Landroid/view/View;)V', u'Lcom/prime31/ChartBoostPlugin;->didFailToLoadInterstitial()V', u'Lcom/prime31/ChartBoostPlugin;->didClickInterstitial(Landroid/view/View;)V', u'Lcom/chartboost/sdk/CBWebView$1;-><init>(Lcom/chartboost/sdk/CBWebView;)V', u'Lcom/chartboost/sdk/ChartBoostDelegate;->shouldDisplayMoreApps(Landroid/view/View;)Z', u'Lcom/chartboost/sdk/CBAPIRequest;->sign(Ljava/lang/String; Ljava/lang/String;)V', u'Lcom/chartboost/sdk/ChartBoost;->showView(Lcom/chartboost/sdk/CBWebView$CBViewType; Ljava/lang/String; Ljava/lang/Boolean;)V', u'Lcom/chartboost/sdk/CBAPIConnection$TrustingSocketFactory;->createSocket()Ljava/net/Socket;', u'Lcom/chartboost/sdk/ChartBoost;->loadChartBoostView(Lorg/json/JSONObject; Lcom/chartboost/sdk/CBWebView$CBViewType;)V', u'Lcom/
+---
+ADDED set([])
+
+==============================================
+Methods Int. Common Classes: 
+-----------
+  
+ |l1|=546,|l2|=546, diff: -0 +0, |l1 ∩ l2|=546
+EQUAL (JI 100%)
+
+==============================================
+Methods Ext. Classes: 
+-----------
+  
+ |l1|=786,|l2|=653, diff: -133 +0, |l1 ∩ l2|=653
+
+DELETED set([u'Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V', u'Lcom/chartboost/sdk/ChartBoost$LoadDataConnection;->validateJson(Lorg/json/JSONObject;)V', u'Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;', u'Landroid/webkit/WebViewClient;->onReceivedError(Landroid/webkit/WebView; I Ljava/lang/String; Ljava/lang/String;)V', u'Lorg/apache/http/params/BasicHttpParams;-><init>()V', u'Lorg/apache/http/HttpResponse;->getStatusLine()Lorg/apache/http/StatusLine;', u'Ljava/util/Locale;->getDisplayLanguage()Ljava/lang/String;', u'Ljava/io/FileInputStream;->read()I', u'Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I', u'Ljava/math/BigDecimal;-><init>(D)V', u'Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z', u'Ljava/io/BufferedReader;->readLine()Ljava/lang/String;', u'Lorg/apache/http/HttpResponse;->getEntity()Lorg/apache/http/HttpEntity;', u'Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init>(Lorg/apache/http/params/HttpParams; Lorg/apache/http/conn/scheme/SchemeRegistry;)V', u'Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout(Lorg/apache/http/params/HttpParams; I)V', u'Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager; [Ljavax/net/ssl/TrustManager; Ljava/security/SecureRandom;)V', u'Landroid/graphics/drawable/Drawable;->setAlpha(I)V', u'Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;', u'Ljava/io/FileWriter;->write(Ljava/lang/String;)V', u'Ljava/lang/String;->replace(Ljava/lang/CharSequence; Ljava/lang/CharSequence;)Ljava/lang/String;', u'Lorg/json/JSONObject;-><init>(Lorg/json/JSONTokener;)V', u'Lcom/chartboost/sdk/CBWebView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V', u'Ljava/lang/NoSuchFieldException;->getMessage()Ljava/lang/String;', u'Lorg/apache/http/impl/client/DefaultHttpClient;-><init>()V', u'Ljava/net/URLEncoder;->encode(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;', u'Lorg/apache/http/conn/scheme/PlainSocketFactory;->getSocketFactory()Lorg/apache/http/conn/scheme/PlainSocketFactory;', u'Ljava/util/UUID;->toString()Ljava/lang/String;', u'Lorg/apache/http/conn/ssl/SSLSocketFactory;->setHostnameVerifier(Lorg/apache/http/conn/ssl/X509HostnameVerifier;)V', u'Ljava/net/URI;->getScheme()Ljava/lang/String;', u'Lcom/chartboost/sdk/CBDialogActivity;->requestWindowFeature(I)Z', u'Landroid/view/ViewManager;->removeView(Landroid/view/View;)V', u'Ljava/lang/reflect/InvocationTargetException;->getMessage()Ljava/lang/String;', u'Lorg/apache/http/conn/scheme/SchemeRegistry;->register(Lorg/apache/http/conn/scheme/Scheme;)Lorg/apache/http/conn/scheme/Scheme;', u'Ljavax/net/ssl/SSLSocketFactory;->createSocket()Ljava/net/Socket;', u'Ljava/lang/ClassNotFoundException;->getMessage()Ljava/lang/String;', u'Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V', u'Lcom/chartboost/sdk/CBDialogActivity;->finish()V', u'Ljava/io/File;->createNewFile()Z', u'Ljava/io/File;->isFile()Z', u'Ljava/math/BigDecimal;->setScale(I I)Ljava/math/BigDecimal;', u'Ljava/lang/StringBuffer;->length()I', u'Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;', u'Ljava/io/File;->delete()Z', u'Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;', u'Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;', u'Lcom/chartboost/sdk/ChartBoost$GenericConnection;->validateJson(Lorg/json/JSONObject;)V', u'Ljavax/net/ssl/SSLContext;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;', u'Ljava/security/MessageDigest;->digest([B)[B', u'Lorg/apache/http/StatusLine;->getStatusCode()I', u'Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;', u'Lcom/chartboost/sdk/CBWebView;->getSettings()Landroid/webkit/WebSettings;', u'Ljava/io/FileWriter;-><init>(Ljava/io/File; Z)V', u'Lcom/chartboost/sdk/CBAPIConnection;->cancel(Z)Z', u'Lcom/chartboost/sdk/ChartBoost$LoadDataConnection;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;', u'Lorg/json/JSONObject;-><init>(Ljava/util/Map;)V', u'Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;', u'Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout(Lorg/apache/http/params/HttpParams; I)V', u'Ljava/io/IOException;-><init>()V', u'Landroid/os/AsyncTask;-><init>()V', u'Ljava/lang/Boolean;->booleanValue()Z', u'Lorg/json/JSONTokener;-><init>(Ljava/lang/String;)V', u'Landroid/widget/RelativeLayout;->getBackground()Landroid/graphics/drawable/Drawable;', u'Lcom/chartboost/sdk/CBDialogActivity;->getWindow()Landroid/view/Window;', u'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;', u'Lcom/chartboost/sdk/CBWebViewClient$RegisterClickConnection;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;', u'Ljava/net/URLDecoder;->decode(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;', u'Ljava/lang/IllegalAccessException;->getMessage()Ljava/lang/String;', u'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;', u'Ljava/security/KeyStore;->getDefaultType()Ljava/lang/Str
+---
+ADDED set([])
+
+==============================================
+Methods Ext. Common Classes: 
+-----------
+  
+ |l1|=688,|l2|=653, diff: -35 +0, |l1 ∩ l2|=653
+
+DELETED set([u'Ljava/io/File;->isFile()Z', u'Landroid/widget/RelativeLayout;->setGravity(I)V', u'Ljava/lang/Enum;->valueOf(Ljava/lang/Class; Ljava/lang/String;)Ljava/lang/Enum;', u'Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;', u'Ljava/lang/String;->valueOf(D)Ljava/lang/String;', u'Ljava/io/File;->delete()Z', u'Landroid/widget/RelativeLayout;->setBackgroundColor(I)V', u'Ljava/util/Map;->keySet()Ljava/util/Set;', u'Ljava/io/FileInputStream;->read()I', u'Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I', u'Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z', u'Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;', u'Landroid/widget/RelativeLayout;->removeAllViews()V', u'Ljava/io/File;->getAbsolutePath()Ljava/lang/String;', u'Ljava/io/File;->createNewFile()Z', u'Landroid/widget/RelativeLayout;->post(Ljava/lang/Runnable;)Z', u'Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;', u'Ljava/lang/String;->replace(Ljava/lang/CharSequence; Ljava/lang/CharSequence;)Ljava/lang/String;', u'Ljava/lang/IllegalArgumentException;->getMessage()Ljava/lang/String;', u'Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V', u'Landroid/widget/RelativeLayout;->invalidate()V', u'Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;', u'Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;', u'Landroid/content/Context;->startActivity(Landroid/content/Intent;)V', u'Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V', u'Ljava/io/IOException;-><init>()V', u'Ljava/net/URI;->getScheme()Ljava/lang/String;', u'Ljava/lang/Boolean;->booleanValue()Z', u'Landroid/widget/RelativeLayout;->getParent()Landroid/view/ViewParent;', u'Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;', u'Landroid/widget/RelativeLayout;->getBackground()Landroid/graphics/drawable/Drawable;', u'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;', u'Ljava/lang/ClassNotFoundException;->getMessage()Ljava/lang/String;', u'Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;', u'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;'])
+---
+ADDED set([])
+
+==============================================
+Strings: 
+-----------
+  
+ |l1|=339,|l2|=217, diff: -122 +0, |l1 ∩ l2|=217
+
+DELETED set([u'show', u'Request response received: ', u'function: ', u'CBViewStateDisplayedByDefaultController', u'chartboost://close', u'uuid', u'title', u'bk_type', u'UnitySendMessage: ', u'Got an interstitial, adding to view!', u'to', u'returning _activity directly', u'controller:', u'sdk', u'error getting currentActivity: ', u'decoding: ', u'timestamp', u'UnitySendMessage', u'currentActivity', u'android-', u'CBViewTypeMoreApps', u'imei', u'text/html', u'h', u'Android Simulator', u'Handling chartboost:// request: ', u'html content is blank!', u'more_type', u'meta', u'close', u'ChartBoost', u'event', u'scale', u'com.unity3d.player.UnityPlayer', u'ffff', u'creative', u'https://www.chartboost.com/', u';', u'ChartBoostAndroidManager', u'ad_id', u'cgn', u'could not find UnitySendMessage method: ', u'ISO-8859-1', u'key', u'didFinishMoreApps', u'CBViewTypeInterstitial', u'product_id', u'language', u'country', u'&', u'w', u'signature', u'os', u'bk_cfgo', u'2.0.1', u'cb', u'app', u'\n', u'could not find UnityPlayer class: ', u'sending request click request', u'Exception on http request: ', u'api', u'message', u'chartboost', u'CBViewStateWaitingForDisplay', u'auid', u'didFinishInterstitial', u'%02x', u'unknown', u'cb_auid', u'JSON', u'https', u'type', u'didFailToLoadInterstitial', u'TLS', u'Chartboost context should be instance of activity', u'Default', u'dismiss', u'link', u'MD5', u'unkown exception occurred locating UnityPlayer.currentActivity: ', u'app:', u'currency', u'.json', u'value', u'ChartBoost.cb', u'Got More Apps, adding to view!', u'install', u'Android ', u'Loading...', u'Sideloading URL: ', u'didFailToLoadMoreApps', u'/Android/data/com.chartboost.sdk/files', u';signature:', u'Request failed: ', u';action:', u'Timeout less than minimum of 10000 milliseconds', u'closing interstitial ad', u', ', u'get', u'-', u'ChartBoost AdView', u'click', u'html', u'utf-8', u'=', u'Prime31', u'error generating request!', u'status', u'CBViewStateOther', u'http', u'STRING', u'handleChartBoostRequestForInterstitial', u'price', u'bundle', u'purchase', u'could not find currentActivity field: ', u'CBViewStateWaitingForDismissal', u'more', u'model', u'file:///android_asset/', u'quantity'])
+---
+ADDED set([])
+
+==============================================
+Fields: 
+-----------
+  
+ |l1|=479,|l2|=380, diff: -79 +0, |l1 ∩ l2|=346
+
+DELETED set(['Lcom/chartboost/sdk/ChartBoost;->activityHeight I [access_flags=protected]\n', 'Lcom/chartboost/sdk/CBWebView$1;->this$0 Lcom/chartboost/sdk/CBWebView; [access_flags=synthetic final]\n', 'Lcom/chartboost/sdk/ChartBoost;->cacheMap Ljava/util/Map; [access_flags=private]\n', 'Lcom/chartboost/sdk/CBAPIConnection;->shouldShowProgress Z [access_flags=public]\n', 'Lcom/chartboost/sdk/CBWebView$CBViewState;->ENUM$VALUES [Lcom/chartboost/sdk/CBWebView$CBViewState; [access_flags=private synthetic static final]\n', 'Lcom/chartboost/sdk/ChartBoost$LoadDataConnection;->location Ljava/lang/String; [access_flags=public]\n', 'Lcom/chartboost/sdk/CBAPIConnection;->httpClient Lorg/apache/http/client/HttpClient; [access_flags=private]\n', 'Lcom/chartboost/sdk/CBAPIConnection$1;->this$0 Lcom/chartboost/sdk/CBAPIConnection; [access_flags=synthetic final]\n', 'Lcom/chartboost/sdk/CBWebView$CBViewState;->CBViewStateDisplayedByDefaultController Lcom/chartboost/sdk/CBWebView$CBViewState; [access_flags=public static enum final]\n', 'Lcom/chartboost/sdk/CBAnalytics;->context Landroid/content/Context; [access_flags=private]\n', 'Lcom/chartboost/sdk/CBWebView$CBViewType;->CBViewTypeMoreApps Lcom/chartboost/sdk/CBWebView$CBViewType; [access_flags=public static enum final]\n', 'Lcom/prime31/ChartBoostPlugin$2;->val$location Ljava/lang/String; [access_flags=private synthetic final]\n', 'Lcom/chartboost/sdk/CBAPIConnection$TrustingSocketFactory;->this$0 Lcom/chartboost/sdk/CBAPIConnection; [access_flags=synthetic final]\n', 'Lcom/prime31/ChartBoostPlugin;->_unitySendMessageMethod Ljava/lang/reflect/Method; [access_flags=private]\n', 'Lcom/chartboost/sdk/CBWebView;->responseContext Lorg/json/JSONObject; [access_flags=private]\n', 'Lcom/chartboost/sdk/CBDialogActivity;->webViewClient Lcom/chartboost/sdk/CBWebViewClient; [access_flags=private]\n', 'Lcom/prime31/ChartBoostPlugin;->_unityPlayerActivityField Ljava/lang/reflect/Field; [access_flags=private]\n', 'Lcom/chartboost/sdk/ChartBoost;->timeoutRead I [access_flags=private static]\n', 'Lcom/chartboost/sdk/CBDialogActivity;->webView Lcom/chartboost/sdk/CBWebView; [access_flags=public]\n', 'Lcom/chartboost/sdk/ChartBoost;->connectionMap Ljava/util/Map; [access_flags=private]\n', 'Lcom/prime31/ChartBoostPlugin$1;->this$0 Lcom/prime31/ChartBoostPlugin; [access_flags=synthetic final]\n', 'Lcom/prime31/ChartBoostPlugin$3;->val$location Ljava/lang/String; [access_flags=private synthetic final]\n', 'Lcom/chartboost/sdk/ChartBoost;->preloadTime J [access_flags=public]\n', 'Lcom/chartboost/sdk/CBWebView$CBViewState;->CBViewStateOther Lcom/chartboost/sdk/CBWebView$CBViewState; [access_flags=public static enum final]\n', 'Lcom/chartboost/sdk/CBAPIConnection;->context Landroid/content/Context; [access_flags=protected]\n', 'Lcom/chartboost/sdk/ChartBoost$LoadDataConnection;->this$0 Lcom/chartboost/sdk/ChartBoost; [access_flags=synthetic final]\n', 'Lcom/chartboost/sdk/CBAPIRequest;->contextInfoObject Ljava/lang/Object; [access_flags=private]\n', 'Lcom/chartboost/sdk/CBAPIConnection$TrustingSocketFactory$1;->this$1 Lcom/chartboost/sdk/CBAPIConnection$TrustingSocketFactory; [access_flags=synthetic final]\n', 'Lcom/prime31/ChartBoostPlugin$1;->val$appId Ljava/lang/String; [access_flags=private synthetic final]\n', 'Lcom/chartboost/sdk/ChartBoost;->delegate Lcom/chartboost/sdk/ChartBoostDelegate; [access_flags=private]\n', 'Lcom/chartboost/sdk/CBWebView;->type Lcom/chartboost/sdk/CBWebView$CBViewType; [access_flags=private]\n', 'Lcom/chartboost/sdk/ChartBoost;->timeoutConnect I [access_flags=private static]\n', 'Lcom/chartboost/sdk/CBWebViewClient$RegisterClickConnection;->this$0 Lcom/chartboost/sdk/CBWebViewClient; [access_flags=synthetic final]\n', 'Lcom/chartboost/sdk/CBUtility;->ANDROID_AUID Ljava/lang/String; [access_flags=private static]\n', 'Lcom/chartboost/sdk/ChartBoost;->appId Ljava/lang/String; [access_flags=private]\n', 'Lcom/chartboost/sdk/CBWebView;->state Lcom/chartboost/sdk/CBWebView$CBViewState; [access_flags=private]\n', 'Lcom/chartboost/sdk/ChartBoost$LoadDataConnection;->viewType Lcom/chartboost/sdk/CBWebView$CBViewType; [access_flags=public]\n', 'Lcom/chartboost/sdk/ChartBoost;->sharedChartBoost Lcom/chartboost/sdk/ChartBoost; [access_flags=private static]\n', 'Lcom/chartboost/sdk/CBAPIConnection$TrustingSocketFactory;->sslContext Ljavax/net/ssl/SSLContext; [access_flags=0x0]\n', 'Lcom/chartboost/sdk/CBDialogActivity;->cbObject Lcom/chartboost/sdk/ChartBoost; [access_flags=protected]\n', 'Lcom/chartboost/sdk/CBWebView$CBViewState;->CBViewStateWaitingForDisplay Lcom/chartboost/sdk/CBWebView$CBViewState; [access_flags=public static enum final]\n', 'Lcom/chartboost/sdk/CBWebViewClient;->cbContainer Landroid/widget/RelativeLayout; [access_flags=private]\n', 'Lcom/chartboost/sdk/ChartBoost;->appSignature Ljava/lang/String; [access_flags=private]\n', 'Lcom/chartboost/sdk/CBWebViewClient;->context Landroid/content/Context; [access_flags=private]\n', 'Lcom/chartboost/sdk/CBAnalytics;->act
+---
+ADDED set([])
+

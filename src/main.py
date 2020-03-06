@@ -11,7 +11,7 @@ import urllib2
 import hashlib
 import cPickle
 import csv
-sys.path.append("LiteRadar") # this is where your python file exists
+sys.path.append("LiteRadar")  # this is where your python file exists
 from literadar import LibRadarLite
 
 reload(sys)
@@ -155,32 +155,77 @@ def represent_methods(dx, restrict_classes=None, exclude_package=None, only_inte
         ).get_name(), internal_method.get_method(
         ).get_descriptor()),
 
-        filter(lambda mth: (restrict_classes == None or mth.get_method().class_name in restrict_classes) and (exclude_package==None or all( not (str(lib) in str(mth)) for lib in exclude_package)),
+        filter(lambda mth: (restrict_classes == None or mth.get_method().class_name in restrict_classes) and (exclude_package == None or all(not (str(lib) in str(mth)) for lib in exclude_package)),
                filter(lambda method: (method.is_external() and not only_internal) or (not method.is_external() and only_internal), dx.get_methods())))
+
+
+def compare_classes(dx1, dx2, excluded_libraries):
+    cls1 = filter(lambda c: excluded_libraries == None or all(not (str(lib) in str(
+        c)) for lib in excluded_libraries), [str(cls) for cls in dx1.classes])
+    cls2 = filter(lambda c: excluded_libraries == None or all(not (str(lib) in str(
+        c)) for lib in excluded_libraries), [str(cls) for cls in dx1.classes])
+    return compare_lists(cls1, cls2)
 
 
 def compare_methods_common_classes(dx1, dx2, excluded_libraries=None, only_internal=True):
     # type: (any, any) -> dict
     union_classes = set(dx1.classes).intersection(set(dx2.classes))
-    meths_dx1 = represent_methods(dx1, union_classes, excluded_libraries, only_internal)
-    meths_dx2 = represent_methods(dx2, union_classes, excluded_libraries, only_internal)
+    meths_dx1 = represent_methods(
+        dx1, union_classes, excluded_libraries, only_internal)
+    meths_dx2 = represent_methods(
+        dx2, union_classes, excluded_libraries, only_internal)
 
     return compare_lists(meths_dx1, meths_dx2)
 
 
 def compare_methods(dx1, dx2,  excluded_libraries=None, only_internals=True):
     # type: (androguard.misc.Analysis, androguard.misc.Analysis) -> dict
-    meths_dx1 = represent_methods(dx1, None, excluded_libraries, only_internals)
-    meths_dx2 = represent_methods(dx2, None, excluded_libraries, only_internals)
+    meths_dx1 = represent_methods(
+        dx1, None, excluded_libraries, only_internals)
+    meths_dx2 = represent_methods(
+        dx2, None, excluded_libraries, only_internals)
 
     return compare_lists(meths_dx1, meths_dx2)
 
 
-def compare_fields(dx1, dx2):
+def compare_fields(dx1, dx2, excluded_libraries):
     # type: (any, any) -> dict
-    fields_dx1 = map(lambda f: str(f.get_field()), dx1.get_fields())
-    fields_dx2 = map(lambda f: str(f.get_field()), dx2.get_fields())
+    fields_dx1 = filter(lambda f: excluded_libraries == None or all(not (str(lib) in str(
+        f)) for lib in excluded_libraries), [str(field) for field in dx1.get_fields()])
+    fields_dx2 = filter(lambda f: excluded_libraries == None or all(not (str(lib) in str(
+        f)) for lib in excluded_libraries), [str(field) for field in dx2.get_fields()])
     return compare_lists(fields_dx1, fields_dx2)
+
+
+def compare_activities(a1, a2, excluded_libraries):
+    act1 = filter(lambda f: excluded_libraries == None or all(not (str(lib).replace(
+        '/', '.')[1:] in str(f)) for lib in excluded_libraries), a1.get_activities())
+    act2 = filter(lambda f: excluded_libraries == None or all(not (str(lib).replace(
+        '/', '.')[1:] in str(f)) for lib in excluded_libraries), a2.get_activities())
+    return compare_lists(act1, act2)
+
+
+
+def compare_services(a1, a2, excluded_libraries):
+    act1 = filter(lambda f: excluded_libraries == None or all(not (str(lib).replace(
+        '/', '.')[1:] in str(f)) for lib in excluded_libraries), a1.get_services())
+    act2 = filter(lambda f: excluded_libraries == None or all(not (str(lib).replace(
+        '/', '.')[1:] in str(f)) for lib in excluded_libraries), a2.get_services())
+    return compare_lists(act1, act2)
+
+def compare_receivers(a1, a2, excluded_libraries):
+    act1 = filter(lambda f: excluded_libraries == None or all(not (str(lib).replace(
+        '/', '.')[1:] in str(f)) for lib in excluded_libraries), a1.get_receivers())
+    act2 = filter(lambda f: excluded_libraries == None or all(not (str(lib).replace(
+        '/', '.')[1:] in str(f)) for lib in excluded_libraries), a2.get_receivers())
+    return compare_lists(act1, act2)
+
+def compare_resources(a1, a2, excluded_libraries):
+    act1 = filter(lambda f: excluded_libraries == None or all(not (str(lib)[1:] in str(f)) for lib in excluded_libraries), a1.get_files())
+    act2 = filter(lambda f: excluded_libraries == None or all(not (str(lib)[1:] in str(f)) for lib in excluded_libraries), a2.get_files())
+    return compare_lists(act1, act2)
+
+
 
 
 analysis_rows, ground_truth_rows = [], []
@@ -268,12 +313,12 @@ with open('data/groundtruth.txt') as f:
                 lrd = LibRadarLite("./data/apks/%s.apk" % repackaged_apk_hash)
                 res_lib_radar_a2 = [lib["Package"] for lib in lrd.compare()]
 
-                external_libraries = set(res_lib_radar_a1).union(res_lib_radar_a2)
+                external_libraries = set(
+                    res_lib_radar_a1).union(res_lib_radar_a2)
             except:
                 print "Androguard failed to analyze this pair, excluding it.."
                 skipped_lines += [line]
                 continue
-
 
             # COMPARISONS
             comparisons = [
@@ -295,28 +340,29 @@ with open('data/groundtruth.txt') as f:
                     a1.get_effective_target_sdk_version(), a2.get_effective_target_sdk_version()),
                 compare_lists(
                     a1.get_permissions(), a2.get_permissions()),
-                compare_lists(
-                    a1.get_activities(), a2.get_activities()),
+                compare_activities(
+                    a1, a2, external_libraries),
                 compare_lists(
                     a1.get_files(), a2.get_files()),
-                compare_lists(
-                    a1.get_services(), a2.get_services()),
-                compare_lists(
-                    a1.get_receivers(), a2.get_receivers()),
-                compare_lists(
-                    dx1.classes, dx2.classes),
+                compare_services(
+                    a1, a2, external_libraries),
+                compare_receivers(
+                    a1, a2, external_libraries),
+                compare_classes(
+                    dx1, dx2, external_libraries),
                 compare_methods(dx1, dx2, external_libraries),
                 compare_methods_common_classes(dx1, dx2, external_libraries),
                 compare_methods(dx1, dx2, external_libraries, False),
-                compare_methods_common_classes(dx1, dx2, external_libraries, False),
+                compare_methods_common_classes(
+                    dx1, dx2, external_libraries, False),
                 compare_lists(dx1.strings, dx2.strings),
-                compare_fields(dx1, dx2)
+                compare_fields(dx1, dx2, external_libraries)
             ]
 
         if not os.path.exists("./cache/" + cache_filename):
             print "CACHING...."
             with open("./cache/" + cache_filename, "wb") as file:
-                cPickle.dump((external_libraries,comparisons), file)
+                cPickle.dump((external_libraries, comparisons), file)
 
         print '\n=================LIBS Apk1 and apk2=============================\n'
         print external_libraries
@@ -324,7 +370,6 @@ with open('data/groundtruth.txt') as f:
             print '\n=============================================='
             print '%s: \n-----------\n  %s' % (analysis_header[i +
                                                                1], comparison['detailed'])
-
 
         print "\n\n=============== CURRENT ANALYSIS =============== \n\n"
 
