@@ -22,12 +22,27 @@
 
 import re
 import sys
-report_path = sys.argv[1]
 
-pair_id = sys.argv[2]
+if len(sys.argv) > 2 :
+    print "Reading details from file"
 
-with open(report_path) as f:
-    full_log = f.read()
-    start=full_log.find("###(%s)###" % pair_id)
-    end=full_log.find("CURRENT ANALYSIS",start )
-    print full_log[start:end]
+    report_path = sys.argv[1]
+
+    pair_id = sys.argv[2]
+
+    with open(report_path) as f:
+        full_log = f.read()
+        start=full_log.find("###(%s)###" % pair_id)
+        end=full_log.find("CURRENT ANALYSIS",start )
+        print full_log[start:end]
+else:
+    print "Reading details from stdin"
+    pair_id = sys.argv[1]
+    with sys.stdin as f:
+        full_log = f.read()
+        start=full_log.find("###(%s)###" % pair_id)
+        end=full_log.find("CURRENT ANALYSIS",start )
+        print full_log[start:end]
+
+# To get smaller details
+#grep -E -v "DELETED|ADDED|---|^[ ]*\$"

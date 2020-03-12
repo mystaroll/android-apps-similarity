@@ -20,6 +20,7 @@ sys.setdefaultencoding('utf8')
 
 VERSION = "0.0.4"  # useful for caching
 THRESHOLD = 80
+JI_OF_EMPTY_SETS = 5 # percent
 DIFF_LIMIT = 5000
 execution_time = datetime.now().strftime("%Y-%m-%d-%H:%M")
 
@@ -81,6 +82,8 @@ def to_detailed_dict(detailed, not_detailed=None, score=0):
 
 
 def jaccard_similarity_lists(list1, list2):
+    if len(list1) == 0 and len(list2) == 0:
+        return JI_OF_EMPTY_SETS
     s1 = set(list1)
     s2 = set(list2)
     if s1 == s2:
@@ -91,10 +94,10 @@ def jaccard_similarity_lists(list1, list2):
     return round((float(inter_len) / union_len) * 100, 2) if union_len > 0 else 0.0
 
 
-# def jaccard_similarity_strings(str1, str2):
-#     str1 = set(str1.split())
-#     str2 = set(str2.split())
-#     return float(len(str1 & str2)) / len(str1 | str2)
+def jaccard_similarity_strings(s1, s2):
+    if s1==s2==None or len(str(s1)) == 0 and len(str(s2)) == 0:
+        return JI_OF_EMPTY_SETS
+    return  0 if s1 != s2 else 100
 
 def chunks(l, n):
     for i in range(0, len(l), n):
@@ -146,7 +149,7 @@ def compare_strings(s1, s2):
         else:
             return "EQUAL %s" % (s1 if print_difference else "")
 
-    return to_detailed_dict(result(True), result(False), 0 if s1 != s2 else 100)
+    return to_detailed_dict(result(True), result(False), jaccard_similarity_strings(s1,s2))
 
 
 def represent_methods(dx, restrict_classes=None, exclude_package=None, only_internal=True):
@@ -316,7 +319,7 @@ with open('data/groundtruth.txt') as f:
                 external_libraries = set(
                     res_lib_radar_a1).union(res_lib_radar_a2)
             except:
-                print "Androguard failed to analyze this pair, excluding it.."
+                print "Androguard/LibRadar failed to analyze this pair, excluding it.."
                 skipped_lines += [line]
                 continue
 
