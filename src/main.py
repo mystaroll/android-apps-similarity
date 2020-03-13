@@ -18,7 +18,9 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 
-VERSION = "0.0.4"  # useful for caching
+VERSION_ANDROGUARD = "0.0.5"  # useful for caching androguard
+VERSION_LIBRADAR= "0.0.5"  # useful for caching libradar
+
 THRESHOLD = 80
 JI_OF_EMPTY_SETS = 5 # percent
 DIFF_LIMIT = 5000
@@ -279,6 +281,21 @@ def download_if_not_exists(hash):
             "https://androzoo.uni.lu/api/download?apikey=a52054307648be3c6b753eb55c093f4c2fa4b03e452f8ed245db653fee146cdd&sha256=%s" % hash).read())
         print "Download completed\n"
 
+def libradar_and_cache(apk_hash):
+    filename = hashlib.sha256(
+        bytes(apk_hash + VERSION_LIBRADAR)).hexdigest().upper()
+    if os.path.exists("./cache/" + filename):
+        print "CACHED(libradar) getting results... %s" % apk_hash
+        with open("./cache/" + filename, "rb") as file:
+            res = cPickle.load(file)
+    else:
+        lrd = LibRadarLite("./data/apks/%s.apk" % apk_hash)
+        res = [lib["Package"] for lib in lrd.compare()]
+
+        print "CACHING (libradar)... %s" %apk_hash
+        with open("./cache/" + filename , "wb") as file:
+            cPickle.dump(res, file)
+    return res
 
 # sys.exit(1)
 comparisons = []
@@ -297,78 +314,82 @@ with open('data/groundtruth.txt') as f:
         download_if_not_exists(repackaged_apk_hash)
 
         cache_filename = hashlib.sha256(
-            bytes(original_apk_hash + repackaged_apk_hash + VERSION)).hexdigest().upper()
+            bytes(original_apk_hash + repackaged_apk_hash + VERSION_ANDROGUARD)).hexdigest().upper()
 
-        if os.path.exists("./cache/" + cache_filename):
-            print "CACHED getting results...."
-            with open("./cache/" + cache_filename, "rb") as file:
-                external_libraries, comparisons = cPickle.load(file)
-        else:
-            print "Running comparisons"
-            try:
+
+        try:
+
+            # running libradar
+            res_libradar_a1 = libradar_and_cache(original_apk_hash)
+            res_libradar_a2 = libradar_and_cache(repackaged_apk_hash)
+
+            external_libraries = set(
+                res_libradar_a1).union(res_libradar_a2)
+
+            # running androguard
+            if os.path.exists("./cache/" + cache_filename):
+                print "CACHED(androguard) getting results...."
+                with open("./cache/" + cache_filename, "rb") as file:
+                    comparisons = cPickle.load(file)
+            else:
+                print "Running comparisons"
                 a1, d1, dx1 = androguard.misc.AnalyzeAPK(
                     "./data/apks/%s.apk" % original_apk_hash)
                 a2, d2, dx2 = androguard.misc.AnalyzeAPK(
                     "./data/apks/%s.apk" % repackaged_apk_hash)
 
-                lrd = LibRadarLite("./data/apks/%s.apk" % original_apk_hash)
-                res_lib_radar_a1 = [lib["Package"] for lib in lrd.compare()]
-                lrd = LibRadarLite("./data/apks/%s.apk" % repackaged_apk_hash)
-                res_lib_radar_a2 = [lib["Package"] for lib in lrd.compare()]
+                # COMPARISONS
+                comparisons = [
+                    compare_strings(
+                        a1.get_package(), a2.get_package()),
+                    compare_strings(
+                        a1.get_app_name(), a2.get_app_name()),
+                    compare_strings(
+                        a1.get_androidversion_code(), a2.get_androidversion_code()),
+                    compare_strings(
+                        a1.get_androidversion_name(), a2.get_androidversion_name()),
+                    compare_strings(
+                        a1.get_min_sdk_version(), a2.get_min_sdk_version()),
+                    compare_strings(
+                        a1.get_max_sdk_version(), a2.get_max_sdk_version()),
+                    compare_strings(
+                        a1.get_target_sdk_version(), a2.get_target_sdk_version()),
+                    compare_strings(
+                        a1.get_effective_target_sdk_version(), a2.get_effective_target_sdk_version()),
+                    compare_lists(
+                        a1.get_permissions(), a2.get_permissions()),
+                    compare_activities(
+                        a1, a2, external_libraries),
+                    compare_lists(
+                        a1.get_files(), a2.get_files()),
+                    compare_services(
+                        a1, a2, external_libraries),
+                    compare_receivers(
+                        a1, a2, external_libraries),
+                    compare_classes(
+                        dx1, dx2, external_libraries),
+                    compare_methods(dx1, dx2, external_libraries),
+                    compare_methods_common_classes(dx1, dx2, external_libraries),
+                    compare_methods(dx1, dx2, external_libraries, False),
+                    compare_methods_common_classes(
+                        dx1, dx2, external_libraries, False),
+                    compare_lists(dx1.strings, dx2.strings),
+                    compare_fields(dx1, dx2, external_libraries)
+                ]
+                print "CACHING(androguard)...."
+                with open("./cache/" + cache_filename, "wb") as file:
+                    cPickle.dump(comparisons, file)
 
-                external_libraries = set(
-                    res_lib_radar_a1).union(res_lib_radar_a2)
-            except:
-                print "Androguard/LibRadar failed to analyze this pair, excluding it.."
-                skipped_lines += [line]
-                continue
 
-            # COMPARISONS
-            comparisons = [
-                compare_strings(
-                    a1.get_package(), a2.get_package()),
-                compare_strings(
-                    a1.get_app_name(), a2.get_app_name()),
-                compare_strings(
-                    a1.get_androidversion_code(), a2.get_androidversion_code()),
-                compare_strings(
-                    a1.get_androidversion_name(), a2.get_androidversion_name()),
-                compare_strings(
-                    a1.get_min_sdk_version(), a2.get_min_sdk_version()),
-                compare_strings(
-                    a1.get_max_sdk_version(), a2.get_max_sdk_version()),
-                compare_strings(
-                    a1.get_target_sdk_version(), a2.get_target_sdk_version()),
-                compare_strings(
-                    a1.get_effective_target_sdk_version(), a2.get_effective_target_sdk_version()),
-                compare_lists(
-                    a1.get_permissions(), a2.get_permissions()),
-                compare_activities(
-                    a1, a2, external_libraries),
-                compare_lists(
-                    a1.get_files(), a2.get_files()),
-                compare_services(
-                    a1, a2, external_libraries),
-                compare_receivers(
-                    a1, a2, external_libraries),
-                compare_classes(
-                    dx1, dx2, external_libraries),
-                compare_methods(dx1, dx2, external_libraries),
-                compare_methods_common_classes(dx1, dx2, external_libraries),
-                compare_methods(dx1, dx2, external_libraries, False),
-                compare_methods_common_classes(
-                    dx1, dx2, external_libraries, False),
-                compare_lists(dx1.strings, dx2.strings),
-                compare_fields(dx1, dx2, external_libraries)
-            ]
+        except:
+            print "Androguard/LibRadar failed to analyze this pair, excluding it.."
+            skipped_lines += [line]
+            continue
 
-        if not os.path.exists("./cache/" + cache_filename):
-            print "CACHING...."
-            with open("./cache/" + cache_filename, "wb") as file:
-                cPickle.dump((external_libraries, comparisons), file)
 
         print '\n=================LIBS Apk1 and apk2=============================\n'
-        print external_libraries
+        print "APK1: %s\n APK2: %s" % (res_libradar_a1,res_libradar_a2)
+
         for i, comparison in enumerate(comparisons):
             print '\n=============================================='
             print '%s: \n-----------\n  %s' % (analysis_header[i +
