@@ -11,18 +11,35 @@ import urllib2
 import hashlib
 import cPickle
 import csv
+import time
+import argparse
+import multiprocessing
 sys.path.append("LiteRadar")  # this is where your python file exists
 from literadar import LibRadarLite
 
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-
 VERSION_ANDROGUARD = "0.0.5"  # useful for caching androguard
-VERSION_LIBRADAR= "0.0.5"  # useful for caching libradar
+VERSION_LIBRADAR = "0.0.5"  # useful for caching libradar
 
+
+
+
+parser = argparse.ArgumentParser(
+    description='This script runs the comparisons on the dataset')
+
+parser.add_argument("--empty",default=5,
+                    help="rate between 0 and 100 that represents J.I. to assign to equal empty strings and sets", type=int)
+parser.add_argument("--pair",
+                    help="run comparisons only for the provided index of the pair in the dataset", type=int)
+parser.add_argument("--processes", default = 8,
+                    help="number of processes to use", type=int)
+args = parser.parse_args()
+
+N_PROCESSES = args.processes
 THRESHOLD = 80
-JI_OF_EMPTY_SETS = 5 # percent
+JI_OF_EMPTY_SETS = args.empty
 DIFF_LIMIT = 5000
 execution_time = datetime.now().strftime("%Y-%m-%d-%H:%M")
 
@@ -42,7 +59,7 @@ apks_list = os.listdir(apks_dir)
 class Logger(object):
     def __init__(self):
         self.terminal = sys.stdout
-        self.log = open("./report/report-FULL-%s.txt" % execution_time, 'w')
+        self.log = open("./report/report-FULL-E%s-%s.txt" % (JI_OF_EMPTY_SETS, execution_time), 'w')
 
     def write(self, message):
         self.terminal.write(message)
@@ -57,7 +74,7 @@ class Object:
         self.__dict__.update(attributes)
 
 
-summary_report = open('./report/report-SUMMARY-%s.txt' % execution_time, 'w')
+summary_report = open('./report/report-SUMMARY-E%s-%s.txt' % (JI_OF_EMPTY_SETS, execution_time), 'w')
 sys.stdout = Logger()
 # chalk wrapper to print html tags
 chalk_html = Object(
@@ -97,9 +114,10 @@ def jaccard_similarity_lists(list1, list2):
 
 
 def jaccard_similarity_strings(s1, s2):
-    if s1==s2==None or len(str(s1)) == 0 and len(str(s2)) == 0:
+    if s1 == s2 == None or len(str(s1)) == 0 and len(str(s2)) == 0:
         return JI_OF_EMPTY_SETS
-    return  0 if s1 != s2 else 100
+    return 0 if s1 != s2 else 100
+
 
 def chunks(l, n):
     for i in range(0, len(l), n):
@@ -132,7 +150,8 @@ def compare_lists(l1, l2):
 
         if print_difference:
             return cardinalities + u'\nDELETED %s\n---\nADDED %s' % (str(difference1)[:DIFF_LIMIT],
-                                                                     str(difference2)[:DIFF_LIMIT])  # chuncked_table("ADDED", list(difference2)))
+                                                                     str(difference2)[
+                                                                     :DIFF_LIMIT])  # chuncked_table("ADDED", list(difference2)))
         else:
             return 'CHANGED (JI %s%%)' % jaccard_similarity_lists(l1, l2)
 
@@ -151,7 +170,7 @@ def compare_strings(s1, s2):
         else:
             return "EQUAL %s" % (s1 if print_difference else "")
 
-    return to_detailed_dict(result(True), result(False), jaccard_similarity_strings(s1,s2))
+    return to_detailed_dict(result(True), result(False), jaccard_similarity_strings(s1, s2))
 
 
 def represent_methods(dx, restrict_classes=None, exclude_package=None, only_internal=True):
@@ -160,8 +179,10 @@ def represent_methods(dx, restrict_classes=None, exclude_package=None, only_inte
         ).get_name(), internal_method.get_method(
         ).get_descriptor()),
 
-        filter(lambda mth: (restrict_classes == None or mth.get_method().class_name in restrict_classes) and (exclude_package == None or all(not (str(lib) in str(mth)) for lib in exclude_package)),
-               filter(lambda method: (method.is_external() and not only_internal) or (not method.is_external() and only_internal), dx.get_methods())))
+        filter(lambda mth: (restrict_classes == None or mth.get_method().class_name in restrict_classes) and (
+                    exclude_package == None or all(not (str(lib) in str(mth)) for lib in exclude_package)),
+               filter(lambda method: (method.is_external() and not only_internal) or (
+                           not method.is_external() and only_internal), dx.get_methods())))
 
 
 def compare_classes(dx1, dx2, excluded_libraries):
@@ -183,7 +204,7 @@ def compare_methods_common_classes(dx1, dx2, excluded_libraries=None, only_inter
     return compare_lists(meths_dx1, meths_dx2)
 
 
-def compare_methods(dx1, dx2,  excluded_libraries=None, only_internals=True):
+def compare_methods(dx1, dx2, excluded_libraries=None, only_internals=True):
     # type: (androguard.misc.Analysis, androguard.misc.Analysis) -> dict
     meths_dx1 = represent_methods(
         dx1, None, excluded_libraries, only_internals)
@@ -210,13 +231,13 @@ def compare_activities(a1, a2, excluded_libraries):
     return compare_lists(act1, act2)
 
 
-
 def compare_services(a1, a2, excluded_libraries):
     act1 = filter(lambda f: excluded_libraries == None or all(not (str(lib).replace(
         '/', '.')[1:] in str(f)) for lib in excluded_libraries), a1.get_services())
     act2 = filter(lambda f: excluded_libraries == None or all(not (str(lib).replace(
         '/', '.')[1:] in str(f)) for lib in excluded_libraries), a2.get_services())
     return compare_lists(act1, act2)
+
 
 def compare_receivers(a1, a2, excluded_libraries):
     act1 = filter(lambda f: excluded_libraries == None or all(not (str(lib).replace(
@@ -225,15 +246,17 @@ def compare_receivers(a1, a2, excluded_libraries):
         '/', '.')[1:] in str(f)) for lib in excluded_libraries), a2.get_receivers())
     return compare_lists(act1, act2)
 
+
 def compare_resources(a1, a2, excluded_libraries):
-    act1 = filter(lambda f: excluded_libraries == None or all(not (str(lib)[1:] in str(f)) for lib in excluded_libraries), a1.get_files())
-    act2 = filter(lambda f: excluded_libraries == None or all(not (str(lib)[1:] in str(f)) for lib in excluded_libraries), a2.get_files())
+    act1 = filter(
+        lambda f: excluded_libraries == None or all(not (str(lib)[1:] in str(f)) for lib in excluded_libraries),
+        a1.get_files())
+    act2 = filter(
+        lambda f: excluded_libraries == None or all(not (str(lib)[1:] in str(f)) for lib in excluded_libraries),
+        a2.get_files())
     return compare_lists(act1, act2)
 
 
-
-
-analysis_rows, ground_truth_rows = [], []
 analysis_header = ['Ref.',
                    'package',
                    'AppName',
@@ -281,6 +304,7 @@ def download_if_not_exists(hash):
             "https://androzoo.uni.lu/api/download?apikey=a52054307648be3c6b753eb55c093f4c2fa4b03e452f8ed245db653fee146cdd&sha256=%s" % hash).read())
         print "Download completed\n"
 
+
 def libradar_and_cache(apk_hash):
     filename = hashlib.sha256(
         bytes(apk_hash + VERSION_LIBRADAR)).hexdigest().upper()
@@ -292,23 +316,37 @@ def libradar_and_cache(apk_hash):
         lrd = LibRadarLite("./data/apks/%s.apk" % apk_hash)
         res = [lib["Package"] for lib in lrd.compare()]
 
-        print "CACHING (libradar)... %s" %apk_hash
-        with open("./cache/" + filename , "wb") as file:
+        print "CACHING (libradar)... %s" % apk_hash
+        with open("./cache/" + filename, "wb") as file:
             cPickle.dump(res, file)
     return res
 
-# sys.exit(1)
-comparisons = []
-skipped_lines = []  # some apks are not analyzable by androguard, we exclude them
+
+# sys.exit(1) # some apks are not analyzable by androguard, we exclude them
 with open('data/groundtruth.txt') as f:
-    for num, line in enumerate(f.readlines()):
-        if len(sys.argv) > 1 and str(num) != sys.argv[1]:
+    file_lines = f.readlines()
+
+manager = multiprocessing.Manager()
+analysis_rows, ground_truth_rows , skipped_lines  = manager.list(), manager.list(), manager.list()
+locks = manager.dict()
+
+def compare_ground_truth(groundtruth_lines, current_process):
+    global  skipped_lines, analysis_rows, ground_truth_rows, summary_report
+    for num, line in enumerate(groundtruth_lines[:8]):
+        if args.pair != None and num != args.pair:
             continue
+
+        if num % N_PROCESSES != current_process:
+            continue
+
+        prints = str()
+        prints += "Thread n°%s" % current_process
+
         [original_apk_hash, repackaged_apk_hash,
          grnd_is_similar] = line.strip().split(',')
-        print chalk.bold(
+        prints += chalk.bold(
             "\n\n###(%s)###  ########################### Analyzing pair of dataset: [%s,%s] ####################################") % (
-            num, chalk.blue(chalk.bold(original_apk_hash)), chalk.bold(repackaged_apk_hash))
+                      num, chalk.blue(chalk.bold(original_apk_hash)), chalk.bold(repackaged_apk_hash))
 
         download_if_not_exists(original_apk_hash)
         download_if_not_exists(repackaged_apk_hash)
@@ -316,98 +354,104 @@ with open('data/groundtruth.txt') as f:
         cache_filename = hashlib.sha256(
             bytes(original_apk_hash + repackaged_apk_hash + VERSION_ANDROGUARD)).hexdigest().upper()
 
+        pair_processed = False
+        for tries in range(3):
+            try:
+                # running libradar
+                res_libradar_a1 = libradar_and_cache(original_apk_hash)
+                res_libradar_a2 = libradar_and_cache(repackaged_apk_hash)
 
-        try:
+                external_libraries = set(
+                    res_libradar_a1).union(res_libradar_a2)
 
-            # running libradar
-            res_libradar_a1 = libradar_and_cache(original_apk_hash)
-            res_libradar_a2 = libradar_and_cache(repackaged_apk_hash)
+                # running androguard
+                if os.path.exists("./cache/" + cache_filename):
+                    prints += "CACHED(androguard) getting results...."
+                    with open("./cache/" + cache_filename, "rb") as file:
+                        comparisons = cPickle.load(file)
+                else:
+                    prints += "Running comparisons"
+                    a1, d1, dx1 = androguard.misc.AnalyzeAPK(
+                        "./data/apks/%s.apk" % original_apk_hash)
+                    a2, d2, dx2 = androguard.misc.AnalyzeAPK(
+                        "./data/apks/%s.apk" % repackaged_apk_hash)
 
-            external_libraries = set(
-                res_libradar_a1).union(res_libradar_a2)
+                    # COMPARISONS
+                    comparisons = [
+                        compare_strings(
+                            a1.get_package(), a2.get_package()),
+                        compare_strings(
+                            a1.get_app_name(), a2.get_app_name()),
+                        compare_strings(
+                            a1.get_androidversion_code(), a2.get_androidversion_code()),
+                        compare_strings(
+                            a1.get_androidversion_name(), a2.get_androidversion_name()),
+                        compare_strings(
+                            a1.get_min_sdk_version(), a2.get_min_sdk_version()),
+                        compare_strings(
+                            a1.get_max_sdk_version(), a2.get_max_sdk_version()),
+                        compare_strings(
+                            a1.get_target_sdk_version(), a2.get_target_sdk_version()),
+                        compare_strings(
+                            a1.get_effective_target_sdk_version(), a2.get_effective_target_sdk_version()),
+                        compare_lists(
+                            a1.get_permissions(), a2.get_permissions()),
+                        compare_activities(
+                            a1, a2, external_libraries),
+                        compare_lists(
+                            a1.get_files(), a2.get_files()),
+                        compare_services(
+                            a1, a2, external_libraries),
+                        compare_receivers(
+                            a1, a2, external_libraries),
+                        compare_classes(
+                            dx1, dx2, external_libraries),
+                        compare_methods(dx1, dx2, external_libraries),
+                        compare_methods_common_classes(dx1, dx2, external_libraries),
+                        compare_methods(dx1, dx2, external_libraries, False),
+                        compare_methods_common_classes(
+                            dx1, dx2, external_libraries, False),
+                        compare_lists(dx1.strings, dx2.strings),
+                        compare_fields(dx1, dx2, external_libraries)
+                    ]
+                    prints += "CACHING(androguard)...."
+                    with open("./cache/" + cache_filename, "wb") as file:
+                        cPickle.dump(comparisons, file)
 
-            # running androguard
-            if os.path.exists("./cache/" + cache_filename):
-                print "CACHED(androguard) getting results...."
-                with open("./cache/" + cache_filename, "rb") as file:
-                    comparisons = cPickle.load(file)
-            else:
-                print "Running comparisons"
-                a1, d1, dx1 = androguard.misc.AnalyzeAPK(
-                    "./data/apks/%s.apk" % original_apk_hash)
-                a2, d2, dx2 = androguard.misc.AnalyzeAPK(
-                    "./data/apks/%s.apk" % repackaged_apk_hash)
+                pair_processed = True
+                break;
+            except:
+                prints += "Androguard/LibRadar failed to analyze this pair, excluding it.."
+                pair_processed = False
+                time.sleep(3)
 
-                # COMPARISONS
-                comparisons = [
-                    compare_strings(
-                        a1.get_package(), a2.get_package()),
-                    compare_strings(
-                        a1.get_app_name(), a2.get_app_name()),
-                    compare_strings(
-                        a1.get_androidversion_code(), a2.get_androidversion_code()),
-                    compare_strings(
-                        a1.get_androidversion_name(), a2.get_androidversion_name()),
-                    compare_strings(
-                        a1.get_min_sdk_version(), a2.get_min_sdk_version()),
-                    compare_strings(
-                        a1.get_max_sdk_version(), a2.get_max_sdk_version()),
-                    compare_strings(
-                        a1.get_target_sdk_version(), a2.get_target_sdk_version()),
-                    compare_strings(
-                        a1.get_effective_target_sdk_version(), a2.get_effective_target_sdk_version()),
-                    compare_lists(
-                        a1.get_permissions(), a2.get_permissions()),
-                    compare_activities(
-                        a1, a2, external_libraries),
-                    compare_lists(
-                        a1.get_files(), a2.get_files()),
-                    compare_services(
-                        a1, a2, external_libraries),
-                    compare_receivers(
-                        a1, a2, external_libraries),
-                    compare_classes(
-                        dx1, dx2, external_libraries),
-                    compare_methods(dx1, dx2, external_libraries),
-                    compare_methods_common_classes(dx1, dx2, external_libraries),
-                    compare_methods(dx1, dx2, external_libraries, False),
-                    compare_methods_common_classes(
-                        dx1, dx2, external_libraries, False),
-                    compare_lists(dx1.strings, dx2.strings),
-                    compare_fields(dx1, dx2, external_libraries)
-                ]
-                print "CACHING(androguard)...."
-                with open("./cache/" + cache_filename, "wb") as file:
-                    cPickle.dump(comparisons, file)
-
-
-        except:
-            print "Androguard/LibRadar failed to analyze this pair, excluding it.."
-            skipped_lines += [line]
+        if not pair_processed:
+            skipped_lines.append(line)
             continue
 
-
-        print '\n=================LIBS Apk1 and apk2=============================\n'
-        print "APK1: %s\n APK2: %s" % (res_libradar_a1,res_libradar_a2)
+        prints += '\n=================LIBS Apk1 and apk2=============================\n'
+        prints += "APK1: %s\n APK2: %s" % (res_libradar_a1, res_libradar_a2)
 
         for i, comparison in enumerate(comparisons):
-            print '\n=============================================='
-            print '%s: \n-----------\n  %s' % (analysis_header[i +
-                                                               1], comparison['detailed'])
+            prints += '\n=============================================='
+            prints += '%s: \n-----------\n  %s' % (analysis_header[i +
+                                                                   1], comparison['detailed'])
 
-        print "\n\n=============== CURRENT ANALYSIS =============== \n\n"
+        prints += "\n\n=============== CURRENT ANALYSIS =============== \n\n"
 
-        analysis_rows = analysis_rows + [
+
+        analysis_rows.append(
             [str(num)] +
             map(lambda comparison: comparison['not_detailed'], comparisons) +
-            [grnd_is_similar]]
+            [grnd_is_similar])
 
-        print tabulate(analysis_rows, headers=analysis_header, tablefmt="grid")
+        prints += tabulate(analysis_rows, headers=analysis_header, tablefmt="grid")
 
         avg_score = sum(
             map(lambda x: x['score'], comparisons)) / len(comparisons)
+
         tool_result = "SIMILAR" if avg_score >= THRESHOLD else "NOT_SIMILAR"
-        ground_truth_rows = ground_truth_rows + [[chalk.blue(chalk.bold("%s" % num)),
+        ground_truth_rows.append([chalk.blue(chalk.bold("%s" % num)),
                                                   grnd_is_similar,
                                                   avg_score,
                                                   chalk.bold(chalk.red(
@@ -415,60 +459,71 @@ with open('data/groundtruth.txt') as f:
                                                       tool_result)),
                                                   chalk.bold(chalk.red(
                                                       "WRONG") if tool_result != grnd_is_similar else chalk.green(
-                                                      "RIGHT"))]]
-        accuracy = "%d" % (round((float(len(filter(lambda v: v == chalk.bold(chalk.green("RIGHT")), map(
-            lambda row: row[4], ground_truth_rows)))) / len(ground_truth_rows)) * 100, 2)) if len(
-            ground_truth_rows) > 0 else "NA"
-        print tabulate(ground_truth_rows,
-                       headers=ground_truth_header, tablefmt="grid")
+                                                      "RIGHT"))])
 
-        # average between min of similar and max of non similar
-        similar_rows = filter(
-            lambda row: row[1] == "SIMILAR", ground_truth_rows)
-        not_similar_rows = filter(
-            lambda row: row[1] == "NOT_SIMILAR", ground_truth_rows)
-        recommended_threshold = round(float(
-            min(map(lambda row: row[2], similar_rows))
-            +
-            max(map(lambda row: row[2], not_similar_rows))
-        ) / 2, 2) if len(similar_rows) > 0 and len(not_similar_rows) > 0 else "ND"
+        prints += tabulate(ground_truth_rows,
+                           headers=ground_truth_header, tablefmt="grid")
 
-        TP = len(filter(lambda row: row[4] == "RIGHT", similar_rows))
-        TN = len(filter(lambda row: row[4] == "RIGHT", not_similar_rows))
-        FP = len(filter(lambda row: row[4] == "WRONG", not_similar_rows))
-        FN = len(filter(lambda row: row[4] == "WRONG", similar_rows))
-
-        max_non_similar = max(map(lambda row: (row[0], row[2]), not_similar_rows), key=lambda x: x[1]) if len(
-            not_similar_rows) > 0 else "ND"
-        min_similar = min(map(lambda row: (row[0], row[2]), similar_rows), key=lambda x: x[1]) if len(
-            similar_rows) > 0 else "ND"
-
-        summary_threshold = "\n======= CURRENT THRESHOLD %s%% ======= F1 SCORE: %s%% ======= RECOMMENDED THRESHOLD %s%%  == MAX_NON_SIM(id %s): %s%% MIN_SIM(id %s). %s%% \n" % (
-            chalk.blue(THRESHOLD),
-            round((float(2 * TP) / (2 * TP + FN + FP)) *
-                  100, 2) if 2 * TP + FN + FP > 0 else "ND",
-            chalk.bold(recommended_threshold),
-            max_non_similar[0],
-            max_non_similar[1],
-            min_similar[0],
-            min_similar[1]
-        )
-        analysis_table = tabulate([
-            ["TOOL_SIMILAR", "TP(%s)" % TP, "FP(%s)" % FP],
-            ["TOOL_NOT_SIMILAR", "FN(%s)" % FN, "TN(%s)" % TN]
-        ], ["", "GND_SIMILAR", "GND_NOT_SIMILAR"], tablefmt="grid")
-
-        print analysis_table + "\n" + summary_threshold
-        summary_report.write(analysis_table + "\n" + summary_threshold)
+        print prints
         # setting threshold to recommended
         # if recommended_threshold != "ND":
         #     THRESHOLD = recommended_threshold
 
+def concurrent_process(lines):
+    processes = list()
+    for i in range(N_PROCESSES):
+        x = multiprocessing.Process(target=compare_ground_truth, args=[lines, i])
+        processes.append(x)
+        x.start()
+
+    for index, process in enumerate(processes):
+        process.join()
+
+concurrent_process(file_lines)
+concurrent_process(skipped_lines)
+
+# average between min of similar and max of non similar
+similar_rows = filter(
+    lambda row: row[1] == "SIMILAR", ground_truth_rows)
+not_similar_rows = filter(
+    lambda row: row[1] == "NOT_SIMILAR", ground_truth_rows)
+recommended_threshold = round(float(
+    min(map(lambda row: row[2], similar_rows))
+    +
+    max(map(lambda row: row[2], not_similar_rows))
+) / 2, 2) if len(similar_rows) > 0 and len(not_similar_rows) > 0 else "ND"
+
+TP = len(filter(lambda row: row[4] == "RIGHT", similar_rows))
+TN = len(filter(lambda row: row[4] == "RIGHT", not_similar_rows))
+FP = len(filter(lambda row: row[4] == "WRONG", not_similar_rows))
+FN = len(filter(lambda row: row[4] == "WRONG", similar_rows))
+
+max_non_similar = max(map(lambda row: (row[0], row[2]), not_similar_rows), key=lambda x: x[1]) if len(
+    not_similar_rows) > 0 else "ND"
+min_similar = min(map(lambda row: (row[0], row[2]), similar_rows), key=lambda x: x[1]) if len(
+    similar_rows) > 0 else "ND"
+
+summary_threshold = "\n======= CURRENT THRESHOLD %s%% ======= F1 SCORE: %s%% ======= RECOMMENDED THRESHOLD %s%%  == MAX_NON_SIM(id %s): %s%% MIN_SIM(id %s). %s%% \n" % (
+    chalk.blue(THRESHOLD),
+    round((float(2 * TP) / (2 * TP + FN + FP)) *
+          100, 2) if 2 * TP + FN + FP > 0 else "ND",
+    chalk.bold(recommended_threshold),
+    max_non_similar[0],
+    max_non_similar[1],
+    min_similar[0],
+    min_similar[1]
+)
+analysis_table = tabulate([
+    ["TOOL_SIMILAR", "TP(%s)" % TP, "FP(%s)" % FP],
+    ["TOOL_NOT_SIMILAR", "FN(%s)" % FN, "TN(%s)" % TN]
+], ["", "GND_SIMILAR", "GND_NOT_SIMILAR"], tablefmt="grid")
+
 summary_report.write("\nFINAL ANALYSIS TABLE: \n")
 summary_report.write(
     tabulate(analysis_rows, headers=analysis_header, tablefmt="grid"))
-summary_report.write(
+summary_report.write("\n"+
     tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid"))
+summary_report.write("\n"+analysis_table + "\n"+summary_threshold)
 summary_report.write(
     "\n\nExcluded pairs because of androguard exceptions\n%s" % "\n".join(skipped_lines))
 summary_report.close()
