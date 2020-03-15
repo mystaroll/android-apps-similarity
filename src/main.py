@@ -307,7 +307,7 @@ def download_if_not_exists(hash):
 
 def libradar_and_cache(apk_hash):
     filename = hashlib.sha256(
-        bytes(apk_hash + VERSION_LIBRADAR)).hexdigest().upper()
+        bytes(apk_hash + VERSION_LIBRADAR + str(JI_OF_EMPTY_SETS))).hexdigest().upper()
     if os.path.exists("./cache/" + filename):
         print "CACHED(libradar) getting results... %s" % apk_hash
         with open("./cache/" + filename, "rb") as file:
