@@ -307,7 +307,7 @@ def download_if_not_exists(hash):
 
 def libradar_and_cache(apk_hash):
     filename = hashlib.sha256(
-        bytes(apk_hash + VERSION_LIBRADAR + str(JI_OF_EMPTY_SETS))).hexdigest().upper()
+        bytes(apk_hash + VERSION_LIBRADAR)).hexdigest().upper()
     if os.path.exists("./cache/" + filename):
         print "CACHED(libradar) getting results... %s" % apk_hash
         with open("./cache/" + filename, "rb") as file:
@@ -352,7 +352,7 @@ def compare_ground_truth(groundtruth_lines, current_process):
         download_if_not_exists(repackaged_apk_hash)
 
         cache_filename = hashlib.sha256(
-            bytes(original_apk_hash + repackaged_apk_hash + VERSION_ANDROGUARD)).hexdigest().upper()
+            bytes(original_apk_hash + repackaged_apk_hash + VERSION_ANDROGUARD + str(JI_OF_EMPTY_SETS))).hexdigest().upper()
 
         pair_processed = False
         for tries in range(3):
