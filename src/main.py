@@ -332,7 +332,7 @@ locks = manager.dict()
 
 def compare_ground_truth(groundtruth_lines, current_process):
     global  skipped_lines, analysis_rows, ground_truth_rows, summary_report
-    for num, line in enumerate(groundtruth_lines[:8]):
+    for num, line in enumerate(groundtruth_lines):
         if args.pair != None and num != args.pair:
             continue
 
