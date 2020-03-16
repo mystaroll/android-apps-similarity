@@ -426,7 +426,7 @@ def compare_ground_truth(groundtruth_lines, current_process):
                 time.sleep(3)
 
         if not pair_processed:
-            skipped_lines.append((num,line))
+            skipped_lines.append(str((num,line)))
             continue
 
         prints += '\n=================LIBS Apk1 and apk2=============================\n'
@@ -525,7 +525,7 @@ summary_report.write("\n"+
     tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid"))
 summary_report.write("\n"+analysis_table + "\n"+summary_threshold)
 summary_report.write(
-    "\n\nExcluded pairs because of androguard exceptions\n%s" % "\n".join(skipped_lines))
+    "\n\nExcluded pairs because of androguard exceptions\n%s" % "\n".join((skipped_lines)))
 summary_report.close()
 with open(summary_report.name + '(a).csv', 'wb') as csv_file:
     wr = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
