@@ -330,7 +330,7 @@ manager = multiprocessing.Manager()
 analysis_rows, ground_truth_rows , skipped_lines  = manager.list(), manager.list(), manager.list()
 locks = manager.dict()
 
-def compare_ground_truth(groundtruth_lines, current_process):
+def compare_ground_truth(groundtruth_lines, current_process, skipp):
     global  skipped_lines, analysis_rows, ground_truth_rows, summary_report
     for num, line in enumerate(groundtruth_lines):
         if args.pair != None and num != args.pair:
@@ -426,7 +426,7 @@ def compare_ground_truth(groundtruth_lines, current_process):
                 time.sleep(3)
 
         if not pair_processed:
-            skipped_lines.append(line)
+            skipped_lines.append((num,line))
             continue
 
         prints += '\n=================LIBS Apk1 and apk2=============================\n'
@@ -480,7 +480,7 @@ def concurrent_process(lines):
         process.join()
 
 concurrent_process(file_lines)
-concurrent_process(skipped_lines)
+
 
 # average between min of similar and max of non similar
 similar_rows = filter(
