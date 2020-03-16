@@ -330,7 +330,7 @@ manager = multiprocessing.Manager()
 analysis_rows, ground_truth_rows , skipped_lines  = manager.list(), manager.list(), manager.list()
 locks = manager.dict()
 
-def compare_ground_truth(groundtruth_lines, current_process, skipp):
+def compare_ground_truth(groundtruth_lines, current_process):
     global  skipped_lines, analysis_rows, ground_truth_rows, summary_report
     for num, line in enumerate(groundtruth_lines):
         if args.pair != None and num != args.pair:
