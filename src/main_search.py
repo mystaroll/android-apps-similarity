@@ -5,9 +5,20 @@ import cPickle
 import os
 import hashlib
 from sklearn.feature_extraction import DictVectorizer
+from sklearn.metrics.pairwise import euclidean_distances
 import urllib2
+import argparse
+import sys
 
-VERSION = "0.0.1"
+VERSION = "0.0.2"
+VERSION_SEARCH = "0.0.2"
+
+parser = argparse.ArgumentParser(
+    description='Given a hash of an apk, this script searches for the most similar app in the dataset')
+
+parser.add_argument("-s", required=True,
+                    help="hash of the searched apk", type=str)
+args = parser.parse_args()
 
 apks_dir = "data/apks"
 if not os.path.exists("cache"):
@@ -16,15 +27,14 @@ if not os.path.exists(apks_dir):
     os.makedirs(apks_dir)
 apks_list = os.listdir(apks_dir)
 
+
 def download_if_not_exists(hash):
     global apks_dir, apks_list
     if (hash + ".apk" in apks_list):
-        with open(apks_dir+"/"+hash + ".apk", "rb") as existing_apk:
+        with open(apks_dir + "/" + hash + ".apk", "rb") as existing_apk:
             hash_in_file = hashlib.sha256(existing_apk.read()).hexdigest().upper()
-        if hash_in_file != hash:
-            print "\n File exists but no equal hashes: %s, %s" % (hash,hash_in_file)
-        else:
-            print "file apk exists, not downloading"
+        if hash_in_file == hash:  # print "\n File exists but no equal hashes: %s, %s" % (hash,hash_in_file)
+            # print "file apk exists, not downloading"
             return
 
     print "Apk not downloaded, downloading now...\n"
@@ -71,209 +81,240 @@ def compute_raw_feature_vector(a1):
         if not vector_feature_dict.has_key(permission):
             vector_feature_dict[permission] = 1
     return vector_feature_dict
+
+
 # build feature vector
 
 print "Getting feature vectors"
 vectors = []
 permissions = [
-  "android.permission.ACCEPT_HANDOVER",
-  "android.permission.ACCESS_BACKGROUND_LOCATION",
-  "android.permission.ACCESS_CHECKIN_PROPERTIES",
-  "android.permission.ACCESS_COARSE_LOCATION",
-  "android.permission.ACCESS_FINE_LOCATION",
-  "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
-  "android.permission.ACCESS_MEDIA_LOCATION",
-  "android.permission.ACCESS_NETWORK_STATE",
-  "android.permission.ACCESS_NOTIFICATION_POLICY",
-  "android.permission.ACCESS_WIFI_STATE",
-  "android.permission.ACCOUNT_MANAGER",
-  "android.permission.ACTIVITY_RECOGNITION",
-  "android.permission.ADD_VOICEMAIL",
-  "android.permission.ANSWER_PHONE_CALLS",
-  "android.permission.BATTERY_STATS",
-  "android.permission.BIND_ACCESSIBILITY_SERVICE",
-  "android.permission.BIND_APPWIDGET",
-  "android.permission.BIND_AUTOFILL_SERVICE",
-  "android.permission.BIND_CALL_REDIRECTION_SERVICE",
-  "android.permission.BIND_CARRIER_MESSAGING_CLIENT_SERVICE",
-  "android.permission.BIND_CARRIER_MESSAGING_SERVICE",
-  "android.permission.BIND_CARRIER_SERVICES",
-  "android.permission.BIND_CHOOSER_TARGET_SERVICE",
-  "android.permission.BIND_CONDITION_PROVIDER_SERVICE",
-  "android.permission.BIND_DEVICE_ADMIN",
-  "android.permission.BIND_DREAM_SERVICE",
-  "android.permission.BIND_INCALL_SERVICE",
-  "android.permission.BIND_INPUT_METHOD",
-  "android.permission.BIND_MIDI_DEVICE_SERVICE",
-  "android.permission.BIND_NFC_SERVICE",
-  "android.permission.BIND_NOTIFICATION_LISTENER_SERVICE",
-  "android.permission.BIND_PRINT_SERVICE",
-  "android.permission.BIND_QUICK_ACCESS_WALLET_SERVICE",
-  "android.permission.BIND_QUICK_SETTINGS_TILE",
-  "android.permission.BIND_REMOTEVIEWS",
-  "android.permission.BIND_SCREENING_SERVICE",
-  "android.permission.BIND_TELECOM_CONNECTION_SERVICE",
-  "android.permission.BIND_TEXT_SERVICE",
-  "android.permission.BIND_TV_INPUT",
-  "android.permission.BIND_VISUAL_VOICEMAIL_SERVICE",
-  "android.permission.BIND_VOICE_INTERACTION",
-  "android.permission.BIND_VPN_SERVICE",
-  "android.permission.BIND_VR_LISTENER_SERVICE",
-  "android.permission.BIND_WALLPAPER",
-  "android.permission.BLUETOOTH",
-  "android.permission.BLUETOOTH_ADMIN",
-  "android.permission.BLUETOOTH_PRIVILEGED",
-  "android.permission.BODY_SENSORS",
-  "android.permission.BROADCAST_PACKAGE_REMOVED",
-  "android.permission.BROADCAST_SMS",
-  "android.permission.BROADCAST_STICKY",
-  "android.permission.BROADCAST_WAP_PUSH",
-  "android.permission.CALL_COMPANION_APP",
-  "android.permission.CALL_PHONE",
-  "android.permission.CALL_PRIVILEGED",
-  "android.permission.CAMERA",
-  "android.permission.CAPTURE_AUDIO_OUTPUT",
-  "android.permission.CHANGE_COMPONENT_ENABLED_STATE",
-  "android.permission.CHANGE_CONFIGURATION",
-  "android.permission.CHANGE_NETWORK_STATE",
-  "android.permission.CHANGE_WIFI_MULTICAST_STATE",
-  "android.permission.CHANGE_WIFI_STATE",
-  "android.permission.CLEAR_APP_CACHE",
-  "android.permission.CONTROL_LOCATION_UPDATES",
-  "android.permission.DELETE_CACHE_FILES",
-  "android.permission.DELETE_PACKAGES",
-  "android.permission.DIAGNOSTIC",
-  "android.permission.DISABLE_KEYGUARD",
-  "android.permission.DUMP",
-  "android.permission.EXPAND_STATUS_BAR",
-  "android.permission.FACTORY_TEST",
-  "android.permission.FOREGROUND_SERVICE",
-  "android.permission.GET_ACCOUNTS",
-  "android.permission.GET_ACCOUNTS_PRIVILEGED",
-  "android.permission.GET_PACKAGE_SIZE",
-  "android.permission.GET_TASKS",
-  "android.permission.GLOBAL_SEARCH",
-  "android.permission.INSTALL_LOCATION_PROVIDER",
-  "android.permission.INSTALL_PACKAGES",
-  "android.permission.INSTALL_SHORTCUT",
-  "android.permission.INSTANT_APP_FOREGROUND_SERVICE",
-  "android.permission.INTERACT_ACROSS_PROFILES",
-  "android.permission.INTERNET",
-  "android.permission.KILL_BACKGROUND_PROCESSES",
-  "android.permission.LOCATION_HARDWARE",
-  "android.permission.MANAGE_DOCUMENTS",
-  "android.permission.MANAGE_EXTERNAL_STORAGE",
-  "android.permission.MANAGE_OWN_CALLS",
-  "android.permission.MASTER_CLEAR",
-  "android.permission.MEDIA_CONTENT_CONTROL",
-  "android.permission.MODIFY_AUDIO_SETTINGS",
-  "android.permission.MODIFY_PHONE_STATE",
-  "android.permission.MOUNT_FORMAT_FILESYSTEMS",
-  "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
-  "android.permission.NFC",
-  "android.permission.NFC_PREFERRED_PAYMENT_INFO",
-  "android.permission.NFC_TRANSACTION_EVENT",
-  "android.permission.PACKAGE_USAGE_STATS",
-  "android.permission.PERSISTENT_ACTIVITY",
-  "android.permission.PROCESS_OUTGOING_CALLS",
-  "android.permission.QUERY_ALL_PACKAGES",
-  "android.permission.READ_CALENDAR",
-  "android.permission.READ_CALL_LOG",
-  "android.permission.READ_CONTACTS",
-  "android.permission.READ_EXTERNAL_STORAGE",
-  "android.permission.READ_INPUT_STATE",
-  "android.permission.READ_LOGS",
-  "android.permission.READ_PHONE_NUMBERS",
-  "android.permission.READ_PHONE_STATE",
-  "android.permission.READ_PRECISE_PHONE_STATE",
-  "android.permission.READ_SMS",
-  "android.permission.READ_SYNC_SETTINGS",
-  "android.permission.READ_SYNC_STATS",
-  "android.permission.READ_VOICEMAIL",
-  "android.permission.REBOOT",
-  "android.permission.RECEIVE_BOOT_COMPLETED",
-  "android.permission.RECEIVE_MMS",
-  "android.permission.RECEIVE_SMS",
-  "android.permission.RECEIVE_WAP_PUSH",
-  "android.permission.RECORD_AUDIO",
-  "android.permission.REORDER_TASKS",
-  "android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND",
-  "android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND",
-  "android.permission.REQUEST_DELETE_PACKAGES",
-  "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
-  "android.permission.REQUEST_INSTALL_PACKAGES",
-  "android.permission.REQUEST_PASSWORD_COMPLEXITY",
-  "android.permission.RESTART_PACKAGES",
-  "android.permission.SEND_RESPOND_VIA_MESSAGE",
-  "android.permission.SEND_SMS",
-  "android.permission.SET_ALARM",
-  "android.permission.SET_ALWAYS_FINISH",
-  "android.permission.SET_ANIMATION_SCALE",
-  "android.permission.SET_DEBUG_APP",
-  "android.permission.SET_PREFERRED_APPLICATIONS",
-  "android.permission.SET_PROCESS_LIMIT",
-  "android.permission.SET_TIME",
-  "android.permission.SET_TIME_ZONE",
-  "android.permission.SET_WALLPAPER",
-  "android.permission.SET_WALLPAPER_HINTS",
-  "android.permission.SIGNAL_PERSISTENT_PROCESSES",
-  "android.permission.SMS_FINANCIAL_TRANSACTIONS",
-  "android.permission.START_VIEW_PERMISSION_USAGE",
-  "android.permission.STATUS_BAR",
-  "android.permission.SYSTEM_ALERT_WINDOW",
-  "android.permission.TRANSMIT_IR",
-  "android.permission.UNINSTALL_SHORTCUT",
-  "android.permission.UPDATE_DEVICE_STATS",
-  "android.permission.USE_BIOMETRIC",
-  "android.permission.USE_FINGERPRINT",
-  "android.permission.USE_FULL_SCREEN_INTENT",
-  "android.permission.USE_SIP",
-  "android.permission.VIBRATE",
-  "android.permission.WAKE_LOCK",
-  "android.permission.WRITE_APN_SETTINGS",
-  "android.permission.WRITE_CALENDAR",
-  "android.permission.WRITE_CALL_LOG",
-  "android.permission.WRITE_CONTACTS",
-  "android.permission.WRITE_EXTERNAL_STORAGE",
-  "android.permission.WRITE_GSERVICES",
-  "android.permission.WRITE_SECURE_SETTINGS",
-  "android.permission.WRITE_SETTINGS",
-  "android.permission.WRITE_SYNC_SETTINGS",
-  "android.permission.WRITE_VOICEMAIL"
+    "android.permission.ACCEPT_HANDOVER",
+    "android.permission.ACCESS_BACKGROUND_LOCATION",
+    "android.permission.ACCESS_CHECKIN_PROPERTIES",
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
+    "android.permission.ACCESS_MEDIA_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_NOTIFICATION_POLICY",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.ACCOUNT_MANAGER",
+    "android.permission.ACTIVITY_RECOGNITION",
+    "android.permission.ADD_VOICEMAIL",
+    "android.permission.ANSWER_PHONE_CALLS",
+    "android.permission.BATTERY_STATS",
+    "android.permission.BIND_ACCESSIBILITY_SERVICE",
+    "android.permission.BIND_APPWIDGET",
+    "android.permission.BIND_AUTOFILL_SERVICE",
+    "android.permission.BIND_CALL_REDIRECTION_SERVICE",
+    "android.permission.BIND_CARRIER_MESSAGING_CLIENT_SERVICE",
+    "android.permission.BIND_CARRIER_MESSAGING_SERVICE",
+    "android.permission.BIND_CARRIER_SERVICES",
+    "android.permission.BIND_CHOOSER_TARGET_SERVICE",
+    "android.permission.BIND_CONDITION_PROVIDER_SERVICE",
+    "android.permission.BIND_DEVICE_ADMIN",
+    "android.permission.BIND_DREAM_SERVICE",
+    "android.permission.BIND_INCALL_SERVICE",
+    "android.permission.BIND_INPUT_METHOD",
+    "android.permission.BIND_MIDI_DEVICE_SERVICE",
+    "android.permission.BIND_NFC_SERVICE",
+    "android.permission.BIND_NOTIFICATION_LISTENER_SERVICE",
+    "android.permission.BIND_PRINT_SERVICE",
+    "android.permission.BIND_QUICK_ACCESS_WALLET_SERVICE",
+    "android.permission.BIND_QUICK_SETTINGS_TILE",
+    "android.permission.BIND_REMOTEVIEWS",
+    "android.permission.BIND_SCREENING_SERVICE",
+    "android.permission.BIND_TELECOM_CONNECTION_SERVICE",
+    "android.permission.BIND_TEXT_SERVICE",
+    "android.permission.BIND_TV_INPUT",
+    "android.permission.BIND_VISUAL_VOICEMAIL_SERVICE",
+    "android.permission.BIND_VOICE_INTERACTION",
+    "android.permission.BIND_VPN_SERVICE",
+    "android.permission.BIND_VR_LISTENER_SERVICE",
+    "android.permission.BIND_WALLPAPER",
+    "android.permission.BLUETOOTH",
+    "android.permission.BLUETOOTH_ADMIN",
+    "android.permission.BLUETOOTH_PRIVILEGED",
+    "android.permission.BODY_SENSORS",
+    "android.permission.BROADCAST_PACKAGE_REMOVED",
+    "android.permission.BROADCAST_SMS",
+    "android.permission.BROADCAST_STICKY",
+    "android.permission.BROADCAST_WAP_PUSH",
+    "android.permission.CALL_COMPANION_APP",
+    "android.permission.CALL_PHONE",
+    "android.permission.CALL_PRIVILEGED",
+    "android.permission.CAMERA",
+    "android.permission.CAPTURE_AUDIO_OUTPUT",
+    "android.permission.CHANGE_COMPONENT_ENABLED_STATE",
+    "android.permission.CHANGE_CONFIGURATION",
+    "android.permission.CHANGE_NETWORK_STATE",
+    "android.permission.CHANGE_WIFI_MULTICAST_STATE",
+    "android.permission.CHANGE_WIFI_STATE",
+    "android.permission.CLEAR_APP_CACHE",
+    "android.permission.CONTROL_LOCATION_UPDATES",
+    "android.permission.DELETE_CACHE_FILES",
+    "android.permission.DELETE_PACKAGES",
+    "android.permission.DIAGNOSTIC",
+    "android.permission.DISABLE_KEYGUARD",
+    "android.permission.DUMP",
+    "android.permission.EXPAND_STATUS_BAR",
+    "android.permission.FACTORY_TEST",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.GET_ACCOUNTS",
+    "android.permission.GET_ACCOUNTS_PRIVILEGED",
+    "android.permission.GET_PACKAGE_SIZE",
+    "android.permission.GET_TASKS",
+    "android.permission.GLOBAL_SEARCH",
+    "android.permission.INSTALL_LOCATION_PROVIDER",
+    "android.permission.INSTALL_PACKAGES",
+    "android.permission.INSTALL_SHORTCUT",
+    "android.permission.INSTANT_APP_FOREGROUND_SERVICE",
+    "android.permission.INTERACT_ACROSS_PROFILES",
+    "android.permission.INTERNET",
+    "android.permission.KILL_BACKGROUND_PROCESSES",
+    "android.permission.LOCATION_HARDWARE",
+    "android.permission.MANAGE_DOCUMENTS",
+    "android.permission.MANAGE_EXTERNAL_STORAGE",
+    "android.permission.MANAGE_OWN_CALLS",
+    "android.permission.MASTER_CLEAR",
+    "android.permission.MEDIA_CONTENT_CONTROL",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.MODIFY_PHONE_STATE",
+    "android.permission.MOUNT_FORMAT_FILESYSTEMS",
+    "android.permission.MOUNT_UNMOUNT_FILESYSTEMS",
+    "android.permission.NFC",
+    "android.permission.NFC_PREFERRED_PAYMENT_INFO",
+    "android.permission.NFC_TRANSACTION_EVENT",
+    "android.permission.PACKAGE_USAGE_STATS",
+    "android.permission.PERSISTENT_ACTIVITY",
+    "android.permission.PROCESS_OUTGOING_CALLS",
+    "android.permission.QUERY_ALL_PACKAGES",
+    "android.permission.READ_CALENDAR",
+    "android.permission.READ_CALL_LOG",
+    "android.permission.READ_CONTACTS",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.READ_INPUT_STATE",
+    "android.permission.READ_LOGS",
+    "android.permission.READ_PHONE_NUMBERS",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.READ_PRECISE_PHONE_STATE",
+    "android.permission.READ_SMS",
+    "android.permission.READ_SYNC_SETTINGS",
+    "android.permission.READ_SYNC_STATS",
+    "android.permission.READ_VOICEMAIL",
+    "android.permission.REBOOT",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.RECEIVE_MMS",
+    "android.permission.RECEIVE_SMS",
+    "android.permission.RECEIVE_WAP_PUSH",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.REORDER_TASKS",
+    "android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND",
+    "android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND",
+    "android.permission.REQUEST_DELETE_PACKAGES",
+    "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    "android.permission.REQUEST_PASSWORD_COMPLEXITY",
+    "android.permission.RESTART_PACKAGES",
+    "android.permission.SEND_RESPOND_VIA_MESSAGE",
+    "android.permission.SEND_SMS",
+    "android.permission.SET_ALARM",
+    "android.permission.SET_ALWAYS_FINISH",
+    "android.permission.SET_ANIMATION_SCALE",
+    "android.permission.SET_DEBUG_APP",
+    "android.permission.SET_PREFERRED_APPLICATIONS",
+    "android.permission.SET_PROCESS_LIMIT",
+    "android.permission.SET_TIME",
+    "android.permission.SET_TIME_ZONE",
+    "android.permission.SET_WALLPAPER",
+    "android.permission.SET_WALLPAPER_HINTS",
+    "android.permission.SIGNAL_PERSISTENT_PROCESSES",
+    "android.permission.SMS_FINANCIAL_TRANSACTIONS",
+    "android.permission.START_VIEW_PERMISSION_USAGE",
+    "android.permission.STATUS_BAR",
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.TRANSMIT_IR",
+    "android.permission.UNINSTALL_SHORTCUT",
+    "android.permission.UPDATE_DEVICE_STATS",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.USE_FULL_SCREEN_INTENT",
+    "android.permission.USE_SIP",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_APN_SETTINGS",
+    "android.permission.WRITE_CALENDAR",
+    "android.permission.WRITE_CALL_LOG",
+    "android.permission.WRITE_CONTACTS",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.WRITE_GSERVICES",
+    "android.permission.WRITE_SECURE_SETTINGS",
+    "android.permission.WRITE_SETTINGS",
+    "android.permission.WRITE_SYNC_SETTINGS",
+    "android.permission.WRITE_VOICEMAIL"
 ]
 
-with open('data/groundtruth.txt') as f:
-    for line in f.readlines()[:2]:
+skipped_apks = []
+with open('data/groundtruth_search.txt') as f:
+    file_lines = f.readlines()[:5]
+    for line in file_lines:
         [original_apk_hash, repackaged_apk_hash,
          grnd_is_similar] = line.strip().split(',')
-
-
         cache_filename = "vect-" + hashlib.sha256(bytes(original_apk_hash + VERSION)).hexdigest().upper()
-        # if os.path.exists("./cache/" + cache_filename):
-        #     # print "CACHED getting results...."
-        #     with open("./cache/" + cache_filename, "rb") as file:
-        #         feature_vector = cPickle.load(file)
-        # else:
-        download_if_not_exists(original_apk_hash)
-        a1, d1, dx1 = androguard.misc.AnalyzeAPK(
-            "./data/apks/%s.apk" % original_apk_hash)
-        feature_vector = compute_raw_feature_vector(a1)
-        print "CACHING...."
-        with open("./cache/" + cache_filename, "wb") as file:
-            cPickle.dump(feature_vector, file)
-        vectors += [feature_vector]
+        if os.path.exists("./cache/" + cache_filename):
+            # print "FEATURE VECTOR CACHED getting results...."
+            with open("./cache/" + cache_filename, "rb") as file:
+                feature_vector = cPickle.load(file)
+        else:
+            try:
+                download_if_not_exists(original_apk_hash)
+                a1, d1, dx1 = androguard.misc.AnalyzeAPK(
+                    "./data/apks/%s.apk" % original_apk_hash)
+                feature_vector = compute_raw_feature_vector(a1)
+                # print "CACHING...."
+                with open("./cache/" + cache_filename, "wb") as file:
+                    cPickle.dump(feature_vector, file)
+            except:
+                print "Failed to get feature vector of apk %s, skipping.." % original_apk_hash
+                skipped_apks.append(original_apk_hash)
+                continue
+        vectors.append(feature_vector)
 
 # print(vector)#"\n".join(vector))
 vec = DictVectorizer()
 feature_vectors = vec.fit_transform(vectors).toarray()
 # print vectors
 
-searched_hash = "01195C7318FB8EFFA28DB5E32C46599C30C18B8743781C30470ADE92D83CAEA5"
-# with open("./data/apks/01195C7318FB8EFFA28DB5E32C46599C30C18B8743781C30470ADE92D83CAEA5.apk") as searched_apk:
+searched_hash = args.s
 print "Searching given hash %s" % searched_hash
 
-download_if_not_exists(searched_hash)
-a1, d1, dx1 = androguard.misc.AnalyzeAPK(
-    "./data/apks/%s.apk" % searched_hash)
+cache_filename = "search-" + hashlib.sha256(bytes(searched_hash + VERSION)).hexdigest().upper()
+if os.path.exists("./cache/" + cache_filename):
+    print "CACHED getting results...."
+    with open("./cache/" + cache_filename, "rb") as file:
+        searched_feature_vector_raw = cPickle.load(file)
+else:
+    try:
+        download_if_not_exists(searched_hash)
+        a1, d1, dx1 = androguard.misc.AnalyzeAPK(
+            "./data/apks/%s.apk" % searched_hash)
+        searched_feature_vector_raw = compute_raw_feature_vector(a1)
+        print "CACHING...."
+        with open("./cache/" + cache_filename, "wb") as file:
+            cPickle.dump(searched_feature_vector_raw, file)
 
-searched_feature_vector = vec.transform(compute_raw_feature_vector(a1)).toarray()
+    except urllib2.HTTPError as err:
+        print "Cannot download the searched hash from Androzoo %s" % str(err)
+        sys.exit(-1)
+    except Exception as err:
+        print "Error while analyzing the searched hash %s " % str(err)
+        sys.exit(-1)
+
+
+searched_feature_vector = vec.transform(searched_feature_vector_raw).toarray()
+euclidean_distances_vector = euclidean_distances(feature_vectors, searched_feature_vector)
+min_distance_idx = euclidean_distances_vector.argmin()
+print "The most similar (with least distance %s) APP is (index %s in the dataset) %s " % (
+                                                                    euclidean_distances_vector[min_distance_idx],
+                                                                    min_distance_idx,
+                                                                    str(file_lines[min_distance_idx].strip().split(',')[0]))
