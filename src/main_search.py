@@ -9,16 +9,21 @@ from sklearn.metrics.pairwise import euclidean_distances
 import urllib2
 import argparse
 import sys
+import ngram
 
 VERSION = "0.0.2"
-VERSION_SEARCH = "0.0.2"
+
 
 parser = argparse.ArgumentParser(
     description='Given a hash of an apk, this script searches for the most similar app in the dataset')
 
 parser.add_argument("-s", required=True,
                     help="hash of the searched apk", type=str)
+parser.add_argument("-ngrams", default=4,
+                    help="n grams to use for strings and sets", type=int)
+
 args = parser.parse_args()
+N_GRAMS = args.ngrams
 
 apks_dir = "data/apks"
 if not os.path.exists("cache"):
@@ -53,7 +58,24 @@ def represent_methods(dx, restrict_classes=None, only_internal=True):
                filter(lambda method: (not method.is_external()) or (not only_internal), dx.get_methods())))
 
 
-def compute_raw_feature_vector(a1):
+
+ng = ngram.NGram(N=N_GRAMS, pad_len=0)
+
+def string_to_feature_vector(key, string):
+    grams = ng.split(string)
+    res = dict()
+    for word in grams:
+        res[key+"-"+word] = 1
+    return res
+
+def list_to_feature_vector(key, lst):
+    grams = [lst[i:i + N_GRAMS] for i in xrange(len(lst) - N_GRAMS + 1)]
+    res = dict()
+    for gram in grams:
+        res[key + "-" + str(gram)] = 1
+    return res
+
+def compute_raw_feature_vector(a1, dx1):
     vector_feature_dict = {
         'And. vcode': str(a1.get_androidversion_code()),
         'And. vname': str(a1.get_androidversion_name()),
@@ -61,7 +83,7 @@ def compute_raw_feature_vector(a1):
         'maxsdk': str(a1.get_max_sdk_version()),
         'targetsdk': str(a1.get_target_sdk_version()),
         'efftarget': str(a1.get_effective_target_sdk_version()),
-        'package': str(a1.get_package()),
+        # 'package': str(a1.get_package()),
         # 'permissions': str(a1.get_permissions()),
         # str(a1.get_app_name())
         # a1.get_activities(),
@@ -74,6 +96,36 @@ def compute_raw_feature_vector(a1):
         # dx1.strings,
         # map(lambda f: str(f.get_field()), dx1.get_fields())
     }
+    # package name
+    vector_feature_dict.update(string_to_feature_vector("package", str(a1.get_package())))
+
+    # app name
+    vector_feature_dict.update(string_to_feature_vector("appname", str(a1.get_app_name())))
+
+    # activities
+    vector_feature_dict.update(list_to_feature_vector("activities", a1.get_activities()))
+
+    # resources files
+    vector_feature_dict.update(list_to_feature_vector("resfiles", a1.get_files()))
+
+    # services
+    vector_feature_dict.update(list_to_feature_vector("services", a1.get_services()))
+
+    # receivers
+    vector_feature_dict.update(list_to_feature_vector("receivers", a1.get_receivers()))
+
+    # methods
+    vector_feature_dict.update(list_to_feature_vector("services", represent_methods(dx1)))
+
+
+    # fields
+    vector_feature_dict.update(list_to_feature_vector("fields", map(lambda f: str(f.get_field()), dx1.get_fields())))
+
+    # strings
+    vector_feature_dict.update(list_to_feature_vector("strings", dx1.strings))
+
+
+    # Permissions
     for permission in permissions:
         if not vector_feature_dict.has_key(permission):
             vector_feature_dict[permission] = 0
@@ -270,7 +322,7 @@ with open('data/groundtruth_search.txt') as f:
                 download_if_not_exists(original_apk_hash)
                 a1, d1, dx1 = androguard.misc.AnalyzeAPK(
                     "./data/apks/%s.apk" % original_apk_hash)
-                feature_vector = compute_raw_feature_vector(a1)
+                feature_vector = compute_raw_feature_vector(a1,dx1)
                 # print "CACHING...."
                 with open("./cache/" + cache_filename, "wb") as file:
                     cPickle.dump(feature_vector, file)
@@ -288,7 +340,7 @@ feature_vectors = vec.fit_transform(vectors).toarray()
 searched_hash = args.s
 print "Searching given hash %s" % searched_hash
 
-cache_filename = "search-" + hashlib.sha256(bytes(searched_hash + VERSION)).hexdigest().upper()
+cache_filename = "vect-" + hashlib.sha256(bytes(searched_hash + VERSION)).hexdigest().upper()
 if os.path.exists("./cache/" + cache_filename):
     print "CACHED getting results...."
     with open("./cache/" + cache_filename, "rb") as file:
@@ -298,7 +350,7 @@ else:
         download_if_not_exists(searched_hash)
         a1, d1, dx1 = androguard.misc.AnalyzeAPK(
             "./data/apks/%s.apk" % searched_hash)
-        searched_feature_vector_raw = compute_raw_feature_vector(a1)
+        searched_feature_vector_raw = compute_raw_feature_vector(a1, dx1)
         print "CACHING...."
         with open("./cache/" + cache_filename, "wb") as file:
             cPickle.dump(searched_feature_vector_raw, file)
