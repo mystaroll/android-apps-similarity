@@ -51,11 +51,6 @@ if not os.path.exists(apks_dir):
 apks_list = os.listdir(apks_dir)
 
 
-# print 'Checking existing session'
-# SESSION_FILENAME = 'session.ag'
-# s = androguard.session.Load(SESSION_FILENAME) if os.path.exists(
-#     SESSION_FILENAME) else androguard.session.Session()
-
 class Logger(object):
     def __init__(self):
         self.terminal = sys.stdout
@@ -322,31 +317,30 @@ def libradar_and_cache(apk_hash):
     return res
 
 
-# sys.exit(1) # some apks are not analyzable by androguard, we exclude them
-with open('data/groundtruth.txt') as f:
-    file_lines = f.readlines()
-
-manager = multiprocessing.Manager()
-analysis_rows, ground_truth_rows , skipped_lines  = manager.list(), manager.list(), manager.list()
-locks = manager.dict()
-
-def compare_ground_truth(groundtruth_lines, current_process):
-    global  skipped_lines, analysis_rows, ground_truth_rows, summary_report
-    for num, line in enumerate(groundtruth_lines):
+def compare_ground_truth(groundtruth_lines, current_process, analysis_rows, ground_truth_rows, skipped_lines, locks):
+    for num, line in enumerate(groundtruth_lines[:16]):
         if args.pair != None and num != args.pair:
             continue
 
         if num % N_PROCESSES != current_process:
             continue
 
+        # Check if another process is using the same files
         prints = str()
-        prints += "Thread n°%s" % current_process
+        prints += "Process n°%s" % current_process
 
         [original_apk_hash, repackaged_apk_hash,
          grnd_is_similar] = line.strip().split(',')
         prints += chalk.bold(
             "\n\n###(%s)###  ########################### Analyzing pair of dataset: [%s,%s] ####################################") % (
                       num, chalk.blue(chalk.bold(original_apk_hash)), chalk.bold(repackaged_apk_hash))
+
+        # print "locks %s" % str(locks)
+        while original_apk_hash in locks or repackaged_apk_hash in locks:
+            print "Process %s: Another process is running the same file, waiting..." % current_process
+            time.sleep(3)
+        locks.append(original_apk_hash)
+        locks.append(repackaged_apk_hash)
 
         download_if_not_exists(original_apk_hash)
         download_if_not_exists(repackaged_apk_hash)
@@ -429,6 +423,12 @@ def compare_ground_truth(groundtruth_lines, current_process):
             skipped_lines.append(str((num,line)))
             continue
 
+
+        if original_apk_hash in locks:
+            locks.remove(original_apk_hash)
+        if repackaged_apk_hash in locks:
+            locks.remove(repackaged_apk_hash)
+
         prints += '\n=================LIBS Apk1 and apk2=============================\n'
         prints += "APK1: %s\n APK2: %s" % (res_libradar_a1, res_libradar_a2)
 
@@ -469,70 +469,79 @@ def compare_ground_truth(groundtruth_lines, current_process):
         # if recommended_threshold != "ND":
         #     THRESHOLD = recommended_threshold
 
-def concurrent_process(lines):
+
+def concurrent_process(lines, analysis_rows, ground_truth_rows, skipped_lines, locks):
     processes = list()
     for i in range(N_PROCESSES):
-        x = multiprocessing.Process(target=compare_ground_truth, args=[lines, i])
+        x = multiprocessing.Process(target=compare_ground_truth, args=[lines, i, analysis_rows, ground_truth_rows, skipped_lines, locks])
         processes.append(x)
         x.start()
 
     for index, process in enumerate(processes):
         process.join()
 
-concurrent_process(file_lines)
 
+if __name__ == '__main__':
+    with open('data/groundtruth.txt') as f:
+        file_lines = f.readlines()
 
-# average between min of similar and max of non similar
-similar_rows = filter(
-    lambda row: row[1] == "SIMILAR", ground_truth_rows)
-not_similar_rows = filter(
-    lambda row: row[1] == "NOT_SIMILAR", ground_truth_rows)
-recommended_threshold = round(float(
-    min(map(lambda row: row[2], similar_rows))
-    +
-    max(map(lambda row: row[2], not_similar_rows))
-) / 2, 2) if len(similar_rows) > 0 and len(not_similar_rows) > 0 else "ND"
+    manager = multiprocessing.Manager()
+    analysis_rows, ground_truth_rows , skipped_lines  = manager.list(), manager.list(), manager.list()
+    locks = manager.list()
 
-TP = len(filter(lambda row: row[4] == "RIGHT", similar_rows))
-TN = len(filter(lambda row: row[4] == "RIGHT", not_similar_rows))
-FP = len(filter(lambda row: row[4] == "WRONG", not_similar_rows))
-FN = len(filter(lambda row: row[4] == "WRONG", similar_rows))
+    concurrent_process(file_lines, analysis_rows, ground_truth_rows, skipped_lines, locks)
 
-max_non_similar = max(map(lambda row: (row[0], row[2]), not_similar_rows), key=lambda x: x[1]) if len(
-    not_similar_rows) > 0 else "ND"
-min_similar = min(map(lambda row: (row[0], row[2]), similar_rows), key=lambda x: x[1]) if len(
-    similar_rows) > 0 else "ND"
+    # average between min of similar and max of non similar
+    similar_rows = filter(
+        lambda row: row[1] == "SIMILAR", ground_truth_rows)
+    not_similar_rows = filter(
+        lambda row: row[1] == "NOT_SIMILAR", ground_truth_rows)
+    recommended_threshold = round(float(
+        min(map(lambda row: row[2], similar_rows))
+        +
+        max(map(lambda row: row[2], not_similar_rows))
+    ) / 2, 2) if len(similar_rows) > 0 and len(not_similar_rows) > 0 else "ND"
 
-summary_threshold = "\n======= CURRENT THRESHOLD %s%% ======= F1 SCORE: %s%% ======= RECOMMENDED THRESHOLD %s%%  == MAX_NON_SIM(id %s): %s%% MIN_SIM(id %s). %s%% \n" % (
-    chalk.blue(THRESHOLD),
-    round((float(2 * TP) / (2 * TP + FN + FP)) *
-          100, 2) if 2 * TP + FN + FP > 0 else "ND",
-    chalk.bold(recommended_threshold),
-    max_non_similar[0],
-    max_non_similar[1],
-    min_similar[0],
-    min_similar[1]
-)
-analysis_table = tabulate([
-    ["TOOL_SIMILAR", "TP(%s)" % TP, "FP(%s)" % FP],
-    ["TOOL_NOT_SIMILAR", "FN(%s)" % FN, "TN(%s)" % TN]
-], ["", "GND_SIMILAR", "GND_NOT_SIMILAR"], tablefmt="grid")
+    TP = len(filter(lambda row: row[4] == "RIGHT", similar_rows))
+    TN = len(filter(lambda row: row[4] == "RIGHT", not_similar_rows))
+    FP = len(filter(lambda row: row[4] == "WRONG", not_similar_rows))
+    FN = len(filter(lambda row: row[4] == "WRONG", similar_rows))
 
-summary_report.write("\nFINAL ANALYSIS TABLE: \n")
-summary_report.write(
-    tabulate(analysis_rows, headers=analysis_header, tablefmt="grid"))
-summary_report.write("\n"+
-    tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid"))
-summary_report.write("\n"+analysis_table + "\n"+summary_threshold)
-summary_report.write(
-    "\n\nExcluded pairs because of androguard exceptions\n%s" % "\n".join((skipped_lines)))
-summary_report.close()
-with open(summary_report.name + '(a).csv', 'wb') as csv_file:
-    wr = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
-    wr.writerow(analysis_header)
-    wr.writerows(analysis_rows)
-with open(summary_report.name + '(b).csv', 'wb') as csv_file:
-    wr = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
-    wr.writerow(ground_truth_header)
-    wr.writerows(ground_truth_rows)
-print "Summary file saved in: %s" % summary_report.name
+    max_non_similar = max(map(lambda row: (row[0], row[2]), not_similar_rows), key=lambda x: x[1]) if len(
+        not_similar_rows) > 0 else "ND"
+    min_similar = min(map(lambda row: (row[0], row[2]), similar_rows), key=lambda x: x[1]) if len(
+        similar_rows) > 0 else "ND"
+
+    summary_threshold = "\n======= CURRENT THRESHOLD %s%% ======= F1 SCORE: %s%% ======= RECOMMENDED THRESHOLD %s%%  == MAX_NON_SIM(id %s): %s%% MIN_SIM(id %s). %s%% \n" % (
+        chalk.blue(THRESHOLD),
+        round((float(2 * TP) / (2 * TP + FN + FP)) *
+              100, 2) if 2 * TP + FN + FP > 0 else "ND",
+        chalk.bold(recommended_threshold),
+        max_non_similar[0],
+        max_non_similar[1],
+        min_similar[0],
+        min_similar[1]
+    )
+    analysis_table = tabulate([
+        ["TOOL_SIMILAR", "TP(%s)" % TP, "FP(%s)" % FP],
+        ["TOOL_NOT_SIMILAR", "FN(%s)" % FN, "TN(%s)" % TN]
+    ], ["", "GND_SIMILAR", "GND_NOT_SIMILAR"], tablefmt="grid")
+
+    summary_report.write("\nFINAL ANALYSIS TABLE: \n")
+    summary_report.write(
+        tabulate(analysis_rows, headers=analysis_header, tablefmt="grid"))
+    summary_report.write("\n"+
+        tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid"))
+    summary_report.write("\n"+analysis_table + "\n"+summary_threshold)
+    summary_report.write(
+        "\n\nExcluded pairs because of androguard exceptions\n%s" % "\n".join((skipped_lines)))
+    summary_report.close()
+    with open(summary_report.name + '(a).csv', 'wb') as csv_file:
+        wr = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
+        wr.writerow(analysis_header)
+        wr.writerows(analysis_rows)
+    with open(summary_report.name + '(b).csv', 'wb') as csv_file:
+        wr = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
+        wr.writerow(ground_truth_header)
+        wr.writerows(ground_truth_rows)
+    print "Summary file saved in: %s" % summary_report.name

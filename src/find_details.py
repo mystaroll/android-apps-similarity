@@ -45,4 +45,7 @@ else:
         print full_log[start:end]
 
 # To get smaller details
-#grep -E -v "DELETED|ADDED|---|^[ ]*\$"
+# grep -E -v "DELETED|ADDED|---|^[ ]*\$"
+
+# sort by grnd_truth and score
+# grep -E ".*SIMILAR.*SIMILAR.*()" report/report-SUMMARY-E75... | sort -k4,6 | less
