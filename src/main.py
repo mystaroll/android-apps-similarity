@@ -27,21 +27,28 @@ VERSION_LIBRADAR = "0.0.5"  # useful for caching libradar
 
 
 parser = argparse.ArgumentParser(
-    description='This script runs the comparisons on the dataset')
+    description='This script runs the comparisons on a given dataset')
 
 parser.add_argument("--empty",default=5,
-                    help="rate between 0 and 100 that represents J.I. to assign to equal empty strings and sets", type=int)
+                    help="Rate between 0 and 100 that represents J.I. to assign to equal empty strings and sets", type=int)
 parser.add_argument("--pair",
-                    help="run comparisons only for the provided index of the pair in the dataset", type=int)
+                    help="Run comparisons only for the provided index of the pair in the dataset", type=int)
 parser.add_argument("--processes", default = 8,
-                    help="number of processes to use", type=int)
+                    help="Number of processes to use for multiprocessing, defaults to 8", type=int)
+parser.add_argument("--nocache", default = False,
+                    help="If given to any true value, comparisons will be recomputed ignoring the cache (if any)", type=bool)
+parser.add_argument("--output", default =  datetime.now().strftime("%Y-%m-%d-%H:%M"),
+                    help="Suffix of the reports, defaults to the current datetime", type=str)
+parser.add_argument("--dataset", default = 'data/groundtruth.txt',
+                    help="Path to the dataset to analyze", type=str)
+
 args = parser.parse_args()
 
 N_PROCESSES = args.processes
 THRESHOLD = 80
 JI_OF_EMPTY_SETS = args.empty
 DIFF_LIMIT = 5000
-execution_time = datetime.now().strftime("%Y-%m-%d-%H:%M")
+execution_time = args.output
 
 apks_dir = "data/apks"
 if not os.path.exists("cache"):
@@ -136,36 +143,35 @@ def compare_lists(l1, l2):
     difference1 = set(l1).difference(l2)
     difference2 = set(l2).difference(l1)
 
-    cardinalities = u"\n |l1|=%s,|l2|=%s, diff: -%s +%s, |l1 \u2229 l2|=%s\n" % (len(
+    cardinalities = u"|l1|=%s,|l2|=%s, diff: -%s +%s, |l1 \u2229 l2|=%s" % (len(
         l1), len(l2), len(difference1), len(difference2), len(set(l1).intersection(set(l2))))
 
     def result(print_difference):
         if len(difference1) == 0 and len(difference2) == 0:
-            return (cardinalities if print_difference else "") + "EQUAL (JI %s%%)" % jaccard_similarity_lists(l1, l2)
+            return ("EQUAL (%s%%) " % jaccard_similarity_lists(l1, l2)) + (cardinalities if print_difference else "")
 
         if print_difference:
-            return cardinalities + u'\nDELETED %s\n---\nADDED %s' % (str(difference1)[:DIFF_LIMIT],
+            return ('CHANGED (%s%%) ' % jaccard_similarity_lists(l1, l2)) + cardinalities  + u'\nDELETED %s\n---\nADDED %s' % (str(difference1)[:DIFF_LIMIT],
                                                                      str(difference2)[
                                                                      :DIFF_LIMIT])  # chuncked_table("ADDED", list(difference2)))
         else:
-            return 'CHANGED (JI %s%%)' % jaccard_similarity_lists(l1, l2)
+            return  'CHANGED (%s%%)' % jaccard_similarity_lists(l1, l2)
 
     return to_detailed_dict(result(True), result(False), jaccard_similarity_lists(l1,
                                                                                   l2))  # {"detailed": result(True), "not_detailed": result(False)}
 
 
 def compare_strings(s1, s2):
-    # type: (str, str) -> dict
+    similarity = jaccard_similarity_strings(s1, s2)
     def result(print_difference):
         if s1 != s2:
-            if print_difference:
-                return 'DIFFERENT: %s!=%s' % (str(s1), str(s2))
-            else:
-                return 'CHANGED'
-        else:
-            return "EQUAL %s" % (s1 if print_difference else "")
+            difference =  ('DIFFERENT: %s!=%s' % (str(s1), str(s2))) if print_difference else ""
 
-    return to_detailed_dict(result(True), result(False), jaccard_similarity_strings(s1, s2))
+            return 'CHANGED (%s%%) %s' % (similarity, difference)
+        else:
+            return "EQUAL(%s%%) %s" % (str(similarity),s1 if print_difference else "")
+
+    return to_detailed_dict(result(True), result(False), similarity)
 
 
 def represent_methods(dx, restrict_classes=None, exclude_package=None, only_internal=True):
@@ -301,7 +307,7 @@ def download_if_not_exists(hash):
 
 
 def libradar_and_cache(apk_hash):
-    filename = hashlib.sha256(
+    filename = "libradar-"+hashlib.sha256(
         bytes(apk_hash + VERSION_LIBRADAR)).hexdigest().upper()
     if os.path.exists("./cache/" + filename):
         print "CACHED(libradar) getting results... %s" % apk_hash
@@ -318,7 +324,9 @@ def libradar_and_cache(apk_hash):
 
 
 def compare_ground_truth(groundtruth_lines, current_process, analysis_rows, ground_truth_rows, skipped_lines, locks):
-    for num, line in enumerate(groundtruth_lines[:16]):
+    global args
+
+    for num, line in enumerate(groundtruth_lines):
         if args.pair != None and num != args.pair:
             continue
 
@@ -327,7 +335,7 @@ def compare_ground_truth(groundtruth_lines, current_process, analysis_rows, grou
 
         # Check if another process is using the same files
         prints = str()
-        prints += "Process n°%s" % current_process
+        print "Process n°%s" % current_process
 
         [original_apk_hash, repackaged_apk_hash,
          grnd_is_similar] = line.strip().split(',')
@@ -345,7 +353,7 @@ def compare_ground_truth(groundtruth_lines, current_process, analysis_rows, grou
         download_if_not_exists(original_apk_hash)
         download_if_not_exists(repackaged_apk_hash)
 
-        cache_filename = hashlib.sha256(
+        cache_filename = "androguard-" + hashlib.sha256(
             bytes(original_apk_hash + repackaged_apk_hash + VERSION_ANDROGUARD + str(JI_OF_EMPTY_SETS))).hexdigest().upper()
 
         pair_processed = False
@@ -359,7 +367,7 @@ def compare_ground_truth(groundtruth_lines, current_process, analysis_rows, grou
                     res_libradar_a1).union(res_libradar_a2)
 
                 # running androguard
-                if os.path.exists("./cache/" + cache_filename):
+                if os.path.exists("./cache/" + cache_filename) and not args.nocache:
                     prints += "CACHED(androguard) getting results...."
                     with open("./cache/" + cache_filename, "rb") as file:
                         comparisons = cPickle.load(file)
@@ -413,9 +421,10 @@ def compare_ground_truth(groundtruth_lines, current_process, analysis_rows, grou
                         cPickle.dump(comparisons, file)
 
                 pair_processed = True
-                break;
-            except:
+                break
+            except Exception as ex:
                 prints += "Androguard/LibRadar failed to analyze this pair, excluding it.."
+                print ex
                 pair_processed = False
                 time.sleep(3)
 
@@ -430,10 +439,10 @@ def compare_ground_truth(groundtruth_lines, current_process, analysis_rows, grou
             locks.remove(repackaged_apk_hash)
 
         prints += '\n=================LIBS Apk1 and apk2=============================\n'
-        prints += "APK1: %s\n APK2: %s" % (res_libradar_a1, res_libradar_a2)
+        prints += "APK1: %s\nAPK2: %s" % (res_libradar_a1, res_libradar_a2)
 
         for i, comparison in enumerate(comparisons):
-            prints += '\n=============================================='
+            prints += '\n==============================================\n'
             prints += '%s: \n-----------\n  %s' % (analysis_header[i +
                                                                    1], comparison['detailed'])
 
@@ -445,7 +454,7 @@ def compare_ground_truth(groundtruth_lines, current_process, analysis_rows, grou
             map(lambda comparison: comparison['not_detailed'], comparisons) +
             [grnd_is_similar])
 
-        prints += tabulate(analysis_rows, headers=analysis_header, tablefmt="grid")
+        prints += tabulate(analysis_rows, headers=analysis_header, tablefmt="grid") + "\n"
 
         avg_score = sum(
             map(lambda x: x['score'], comparisons)) / len(comparisons)
@@ -462,7 +471,7 @@ def compare_ground_truth(groundtruth_lines, current_process, analysis_rows, grou
                                                       "RIGHT"))])
 
         prints += tabulate(ground_truth_rows,
-                           headers=ground_truth_header, tablefmt="grid")
+                           headers=ground_truth_header, tablefmt="grid")+ "\n"
 
         print prints
         # setting threshold to recommended
@@ -482,7 +491,7 @@ def concurrent_process(lines, analysis_rows, ground_truth_rows, skipped_lines, l
 
 
 if __name__ == '__main__':
-    with open('data/groundtruth.txt') as f:
+    with open(args.dataset) as f:
         file_lines = f.readlines()
 
     manager = multiprocessing.Manager()

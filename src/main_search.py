@@ -82,19 +82,8 @@ def compute_raw_feature_vector(a1, dx1):
         'minsdk': str(a1.get_min_sdk_version()),
         'maxsdk': str(a1.get_max_sdk_version()),
         'targetsdk': str(a1.get_target_sdk_version()),
-        'efftarget': str(a1.get_effective_target_sdk_version()),
-        # 'package': str(a1.get_package()),
-        # 'permissions': str(a1.get_permissions()),
-        # str(a1.get_app_name())
-        # a1.get_activities(),
-        # a1.get_files(),
-        # a1.get_services(),
-        # a1.get_receivers(),
-        # dx1.classes,
-        # represent_methods(dx1, None, True),
-        # represent_methods(dx1, None, False),
-        # dx1.strings,
-        # map(lambda f: str(f.get_field()), dx1.get_fields())
+        'efftarget': str(a1.get_effective_target_sdk_version())
+
     }
     # package name
     vector_feature_dict.update(string_to_feature_vector("package", str(a1.get_package())))
