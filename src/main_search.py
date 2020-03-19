@@ -11,6 +11,9 @@ import argparse
 import sys
 import ngram
 
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 VERSION = "0.0.2"
 
 
@@ -19,9 +22,11 @@ parser = argparse.ArgumentParser(
 
 parser.add_argument("-s", required=True,
                     help="hash of the searched apk", type=str)
-parser.add_argument("-ngrams", default=4,
+parser.add_argument("--ngrams", default=4,
                     help="n grams to use for strings and sets", type=int)
 
+parser.add_argument("--nocache", default=False,
+                    help="If to use the cache", type=bool)
 args = parser.parse_args()
 N_GRAMS = args.ngrams
 
@@ -111,7 +116,7 @@ def compute_raw_feature_vector(a1, dx1):
     vector_feature_dict.update(list_to_feature_vector("fields", map(lambda f: str(f.get_field()), dx1.get_fields())))
 
     # strings
-    vector_feature_dict.update(list_to_feature_vector("strings", dx1.strings))
+    vector_feature_dict.update(list_to_feature_vector("strings", list(dx1.strings)))
 
 
     # Permissions
@@ -302,23 +307,23 @@ with open('data/groundtruth_search.txt') as f:
         [original_apk_hash, repackaged_apk_hash,
          grnd_is_similar] = line.strip().split(',')
         cache_filename = "vect-" + hashlib.sha256(bytes(original_apk_hash + VERSION)).hexdigest().upper()
-        if os.path.exists("./cache/" + cache_filename):
+        if os.path.exists("./cache/" + cache_filename) and not args.nocache:
             # print "FEATURE VECTOR CACHED getting results...."
             with open("./cache/" + cache_filename, "rb") as file:
                 feature_vector = cPickle.load(file)
         else:
-            try:
+            # try:
                 download_if_not_exists(original_apk_hash)
                 a1, d1, dx1 = androguard.misc.AnalyzeAPK(
                     "./data/apks/%s.apk" % original_apk_hash)
                 feature_vector = compute_raw_feature_vector(a1,dx1)
                 # print "CACHING...."
-                with open("./cache/" + cache_filename, "wb") as file:
-                    cPickle.dump(feature_vector, file)
-            except:
-                print "Failed to get feature vector of apk %s, skipping.." % original_apk_hash
-                skipped_apks.append(original_apk_hash)
-                continue
+                # with open("./cache/" + cache_filename, "wb") as file:
+                #     cPickle.dump(feature_vector, file)
+            # except:
+            #     print "Failed to get feature vector of apk %s, skipping.." % original_apk_hash
+            #     skipped_apks.append(original_apk_hash)
+            #     continue
         vectors.append(feature_vector)
 
 # print(vector)#"\n".join(vector))
@@ -330,7 +335,7 @@ searched_hash = args.s
 print "Searching given hash %s" % searched_hash
 
 cache_filename = "vect-" + hashlib.sha256(bytes(searched_hash + VERSION)).hexdigest().upper()
-if os.path.exists("./cache/" + cache_filename):
+if os.path.exists("./cache/" + cache_filename) and not args.nocache:
     print "CACHED getting results...."
     with open("./cache/" + cache_filename, "rb") as file:
         searched_feature_vector_raw = cPickle.load(file)
