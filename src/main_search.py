@@ -10,23 +10,27 @@ import urllib2
 import argparse
 import sys
 import ngram
+from datetime import datetime
+from tabulate import tabulate
 
 reload(sys)
 sys.setdefaultencoding('utf8')
 
+THRESHOLD = 50
 VERSION = "0.0.2"
-
 
 parser = argparse.ArgumentParser(
     description='Given a hash of an apk, this script searches for the most similar app in the dataset')
 
-parser.add_argument("-s", required=True,
-                    help="hash of the searched apk", type=str)
+parser.add_argument("-s",
+                    help="Search single hash", type=str)
 parser.add_argument("--ngrams", default=4,
                     help="n grams to use for strings and sets", type=int)
 
 parser.add_argument("--nocache", default=False,
                     help="If to use the cache", type=bool)
+parser.add_argument("--output", default=datetime.now().strftime("%Y%m%d%H%M"),
+                    help="Suffix for summary report", type=str)
 args = parser.parse_args()
 N_GRAMS = args.ngrams
 
@@ -63,22 +67,24 @@ def represent_methods(dx, restrict_classes=None, only_internal=True):
                filter(lambda method: (not method.is_external()) or (not only_internal), dx.get_methods())))
 
 
-
 ng = ngram.NGram(N=N_GRAMS, pad_len=0)
+
 
 def string_to_feature_vector(key, string):
     grams = ng.split(string)
     res = dict()
     for word in grams:
-        res[key+"-"+word] = 1
+        res[key + "-" + unicode(word, 'utf-8', 'ignore')] = 1
     return res
 
+
 def list_to_feature_vector(key, lst):
-    grams = [lst[i:i + N_GRAMS] for i in xrange(len(lst) - N_GRAMS + 1)]
+    # grams = [lst[i:i + N_GRAMS] for i in xrange(len(lst) - N_GRAMS + 1)]
     res = dict()
-    for gram in grams:
-        res[key + "-" + str(gram)] = 1
+    for el in lst:
+        res.update(string_to_feature_vector(key, str(el)))
     return res
+
 
 def compute_raw_feature_vector(a1, dx1):
     vector_feature_dict = {
@@ -111,13 +117,11 @@ def compute_raw_feature_vector(a1, dx1):
     # methods
     vector_feature_dict.update(list_to_feature_vector("services", represent_methods(dx1)))
 
-
     # fields
     vector_feature_dict.update(list_to_feature_vector("fields", map(lambda f: str(f.get_field()), dx1.get_fields())))
 
     # strings
     vector_feature_dict.update(list_to_feature_vector("strings", list(dx1.strings)))
-
 
     # Permissions
     for permission in permissions:
@@ -129,10 +133,49 @@ def compute_raw_feature_vector(a1, dx1):
     return vector_feature_dict
 
 
-# build feature vector
+def get_raw_feature_vector_from_hash(hash):
+    cache_filename = "vect-" + hashlib.sha256(bytes(hash + VERSION)).hexdigest().upper()
+    if os.path.exists("./cache/" + cache_filename) and not args.nocache:
+        # print "FEATURE VECTOR CACHED getting results...."
+        with open("./cache/" + cache_filename, "rb") as file:
+            feature_vector = cPickle.load(file)
+    else:
+        try:
+            download_if_not_exists(original_apk_hash)
+            a1, d1, dx1 = androguard.misc.AnalyzeAPK(
+                "./data/apks/%s.apk" % original_apk_hash)
+            feature_vector = compute_raw_feature_vector(a1, dx1)
+            print "CACHING...."
+            with open("./cache/" + cache_filename, "wb") as file:
+                cPickle.dump(feature_vector, file)
 
-print "Getting feature vectors"
-vectors = []
+        except urllib2.HTTPError as err:
+            print "Cannot download the hash from Androzoo %s" % str(err)
+            raise err
+        except Exception as err:
+            print "Failed to get feature vector of apk %s, skipping.. %s" % (hash, err)
+            raise err
+    return feature_vector
+
+
+def compute_distances_from_hash(hash):
+    global vec, feature_vectors
+    raw_feature_vec = get_raw_feature_vector_from_hash(hash)
+    searched_feature_vector = vec.transform(raw_feature_vec).toarray()
+    return euclidean_distances(feature_vectors, searched_feature_vector)
+
+
+# build feature vector
+vec = DictVectorizer()
+
+ground_truth_header = ['Ref.',
+                       'Ground Truth',
+                       'Distance',
+                       'Tool Result',
+                       'Tool Conclusion']
+raw_features = []
+feature_vectors = []
+ground_truth_rows = []
 permissions = [
     "android.permission.ACCEPT_HANDOVER",
     "android.permission.ACCESS_BACKGROUND_LOCATION",
@@ -300,67 +343,76 @@ permissions = [
     "android.permission.WRITE_VOICEMAIL"
 ]
 
+print "Getting feature vectors"
+
 skipped_apks = []
 with open('data/groundtruth_search.txt') as f:
-    file_lines = f.readlines()[:5]
+    file_lines = f.readlines()
     for line in file_lines:
         [original_apk_hash, repackaged_apk_hash,
          grnd_is_similar] = line.strip().split(',')
-        cache_filename = "vect-" + hashlib.sha256(bytes(original_apk_hash + VERSION)).hexdigest().upper()
-        if os.path.exists("./cache/" + cache_filename) and not args.nocache:
-            # print "FEATURE VECTOR CACHED getting results...."
-            with open("./cache/" + cache_filename, "rb") as file:
-                feature_vector = cPickle.load(file)
-        else:
-            # try:
-                download_if_not_exists(original_apk_hash)
-                a1, d1, dx1 = androguard.misc.AnalyzeAPK(
-                    "./data/apks/%s.apk" % original_apk_hash)
-                feature_vector = compute_raw_feature_vector(a1,dx1)
-                # print "CACHING...."
-                # with open("./cache/" + cache_filename, "wb") as file:
-                #     cPickle.dump(feature_vector, file)
-            # except:
-            #     print "Failed to get feature vector of apk %s, skipping.." % original_apk_hash
-            #     skipped_apks.append(original_apk_hash)
-            #     continue
-        vectors.append(feature_vector)
+        try:
+            raw_feature = get_raw_feature_vector_from_hash(original_apk_hash)
+        except:
+            skipped_apks.append(line)
+            continue
+        raw_features.append(raw_feature)
 
 # print(vector)#"\n".join(vector))
-vec = DictVectorizer()
-feature_vectors = vec.fit_transform(vectors).toarray()
+feature_vectors = vec.fit_transform(raw_features).toarray()
 # print vectors
 
-searched_hash = args.s
-print "Searching given hash %s" % searched_hash
 
-cache_filename = "vect-" + hashlib.sha256(bytes(searched_hash + VERSION)).hexdigest().upper()
-if os.path.exists("./cache/" + cache_filename) and not args.nocache:
-    print "CACHED getting results...."
-    with open("./cache/" + cache_filename, "rb") as file:
-        searched_feature_vector_raw = cPickle.load(file)
+if args.s != None:
+    searched_hash = args.s
+    print "Searching given hash %s" % searched_hash
+    euclidean_distances_vector = compute_distances_from_hash(searched_hash)
+    min_distance_idx = euclidean_distances_vector.argmin()
+    if euclidean_distances_vector[min_distance_idx] <= THRESHOLD:
+        print "The given app is similar to (with distance %s) %s (index %s in the dataset) " % (
+            euclidean_distances_vector[min_distance_idx],
+            str(file_lines[min_distance_idx].strip().split(',')[0]),
+            min_distance_idx)
+    else:
+        print "The searched app has no similar app in the dataset"
 else:
-    try:
-        download_if_not_exists(searched_hash)
-        a1, d1, dx1 = androguard.misc.AnalyzeAPK(
-            "./data/apks/%s.apk" % searched_hash)
-        searched_feature_vector_raw = compute_raw_feature_vector(a1, dx1)
-        print "CACHING...."
-        with open("./cache/" + cache_filename, "wb") as file:
-            cPickle.dump(searched_feature_vector_raw, file)
+    for num, line in enumerate(file_lines):
+        [original_apk_hash, repackaged_apk_hash,
+         grnd_is_similar] = line.strip().split(',')
+        print "Searching (idx %s), repackaged app %s " % (num, repackaged_apk_hash)
+        euclidean_distances_vector = compute_distances_from_hash(repackaged_apk_hash)
+        min_distance_idx = euclidean_distances_vector.argmin()
+        grnd_truth_result = "SIMILAR(%s)" % num if grnd_is_similar == "SIMILAR" else "NOT_SIMILAR"
+        tool_result = "SIMILAR(%s)" % min_distance_idx if euclidean_distances_vector[
+                                                              min_distance_idx] <= THRESHOLD else "NOT_SIMILAR"
+        ground_truth_rows.append(
+            [num,
+             grnd_truth_result,
+             euclidean_distances_vector[min_distance_idx],
+             tool_result,
+             "RIGHT" if grnd_truth_result == tool_result else "WRONG"])
 
-    except urllib2.HTTPError as err:
-        print "Cannot download the searched hash from Androzoo %s" % str(err)
-        sys.exit(-1)
-    except Exception as err:
-        print "Error while analyzing the searched hash %s " % str(err)
-        sys.exit(-1)
+    with open('./report/report-search-SUMMARY-%s.txt' % (args.output), 'w') as summary_report:
+        prints= ""
+        prints += tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid")
+        prints += "\nTotal wrong tool results: %s" % len(filter(lambda row: row[4] == "WRONG", ground_truth_rows))
 
 
-searched_feature_vector = vec.transform(searched_feature_vector_raw).toarray()
-euclidean_distances_vector = euclidean_distances(feature_vectors, searched_feature_vector)
-min_distance_idx = euclidean_distances_vector.argmin()
-print "The most similar (with least distance %s) APP is (index %s in the dataset) %s " % (
-                                                                    euclidean_distances_vector[min_distance_idx],
-                                                                    min_distance_idx,
-                                                                    str(file_lines[min_distance_idx].strip().split(',')[0]))
+        similar_rows = filter(lambda row: "SIMILAR" in row[1][:7], ground_truth_rows)
+        not_similar_rows = filter(lambda row: "NOT_SIMILAR" in row[1], ground_truth_rows)
+
+        TP = len(filter(lambda row: "SIMILAR" in (row[3])[:7], similar_rows))
+        TN = len(filter(lambda row: "NOT_SIMILAR" in row[3], not_similar_rows))
+        FP = len(filter(lambda row: "SIMILAR" in (row[3])[:7], not_similar_rows))
+        FN = len(filter(lambda row: "NOT_SIMILAR" in row[3], similar_rows))
+
+        prints +="\n" + tabulate([
+            ["TOOL_SIMILAR", "TP(%s)" % TP, "FP(%s)" % FP],
+            ["TOOL_NOT_SIMILAR", "FN(%s)" % FN, "TN(%s)" % TN]
+        ], ["", "GND_SIMILAR", "GND_NOT_SIMILAR"], tablefmt="grid")
+
+        prints += "\n F1 SCORE: %s\n" %  round((float(2 * TP) / (2 * TP + FN + FP)) *
+              100, 2) if 2 * TP + FN + FP > 0 else "ND"
+        prints += "\nSkipped lines: " + "\n".join(skipped_apks)
+        summary_report.write(prints)
+        print prints
