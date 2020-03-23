@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # encoding=utf8
 
+from literadar import LibRadarLite
 import androguard.misc
 import androguard.core
 from tabulate import tabulate
@@ -15,7 +16,6 @@ import time
 import argparse
 import multiprocessing
 sys.path.append("LiteRadar")  # this is where your python file exists
-from literadar import LibRadarLite
 
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -24,22 +24,20 @@ VERSION_ANDROGUARD = "0.0.5"  # useful for caching androguard
 VERSION_LIBRADAR = "0.0.5"  # useful for caching libradar
 
 
-
-
 parser = argparse.ArgumentParser(
     description='This script runs the comparisons on a given dataset')
 
-parser.add_argument("--empty",default=5,
+parser.add_argument("--empty", default=5,
                     help="Rate between 0 and 100 that represents J.I. to assign to equal empty strings and sets", type=int)
 parser.add_argument("--pair",
                     help="Run comparisons only for the provided index of the pair in the dataset", type=int)
-parser.add_argument("--processes", default = 8,
+parser.add_argument("--processes", default=8,
                     help="Number of processes to use for multiprocessing, defaults to 8", type=int)
-parser.add_argument("--nocache", default = False,
+parser.add_argument("--nocache", default=False,
                     help="If given to any true value, comparisons will be recomputed ignoring the cache (if any)", type=bool)
-parser.add_argument("--output", default =  datetime.now().strftime("%Y-%m-%d-%H:%M"),
+parser.add_argument("--output", default=datetime.now().strftime("%Y-%m-%d-%H:%M"),
                     help="Suffix of the reports, defaults to the current datetime", type=str)
-parser.add_argument("--dataset", default = 'data/groundtruth.txt',
+parser.add_argument("--dataset", default='data/groundtruth.txt',
                     help="Path to the dataset to analyze", type=str)
 
 args = parser.parse_args()
@@ -61,7 +59,8 @@ apks_list = os.listdir(apks_dir)
 class Logger(object):
     def __init__(self):
         self.terminal = sys.stdout
-        self.log = open("./report/report-FULL-E%s-%s.txt" % (JI_OF_EMPTY_SETS, execution_time), 'w')
+        self.log = open("./report/report-FULL-E%s-%s.txt" %
+                        (JI_OF_EMPTY_SETS, execution_time), 'w')
 
     def write(self, message):
         self.terminal.write(message)
@@ -76,7 +75,8 @@ class Object:
         self.__dict__.update(attributes)
 
 
-summary_report = open('./report/report-SUMMARY-E%s-%s.txt' % (JI_OF_EMPTY_SETS, execution_time), 'w')
+summary_report = open('./report/report-SUMMARY-E%s-%s.txt' %
+                      (JI_OF_EMPTY_SETS, execution_time), 'w')
 sys.stdout = Logger()
 # chalk wrapper to print html tags
 chalk_html = Object(
@@ -151,11 +151,10 @@ def compare_lists(l1, l2):
             return ("EQUAL (%s%%) " % jaccard_similarity_lists(l1, l2)) + (cardinalities if print_difference else "")
 
         if print_difference:
-            return ('CHANGED (%s%%) ' % jaccard_similarity_lists(l1, l2)) + cardinalities  + u'\nDELETED %s\n---\nADDED %s' % (str(difference1)[:DIFF_LIMIT],
-                                                                     str(difference2)[
-                                                                     :DIFF_LIMIT])  # chuncked_table("ADDED", list(difference2)))
+            return ('CHANGED (%s%%) ' % jaccard_similarity_lists(l1, l2)) + cardinalities + u'\nDELETED %s\n---\nADDED %s' % (str(difference1)[:DIFF_LIMIT],
+                                                                                                                              str(difference2)[:DIFF_LIMIT])  # chuncked_table("ADDED", list(difference2)))
         else:
-            return  'CHANGED (%s%%)' % jaccard_similarity_lists(l1, l2)
+            return 'CHANGED (%s%%)' % jaccard_similarity_lists(l1, l2)
 
     return to_detailed_dict(result(True), result(False), jaccard_similarity_lists(l1,
                                                                                   l2))  # {"detailed": result(True), "not_detailed": result(False)}
@@ -163,13 +162,15 @@ def compare_lists(l1, l2):
 
 def compare_strings(s1, s2):
     similarity = jaccard_similarity_strings(s1, s2)
+
     def result(print_difference):
         if s1 != s2:
-            difference =  ('DIFFERENT: %s!=%s' % (str(s1), str(s2))) if print_difference else ""
+            difference = ('DIFFERENT: %s!=%s' %
+                          (str(s1), str(s2))) if print_difference else ""
 
             return 'CHANGED (%s%%) %s' % (similarity, difference)
         else:
-            return "EQUAL(%s%%) %s" % (str(similarity),s1 if print_difference else "")
+            return "EQUAL(%s%%) %s" % (str(similarity), s1 if print_difference else "")
 
     return to_detailed_dict(result(True), result(False), similarity)
 
@@ -181,9 +182,9 @@ def represent_methods(dx, restrict_classes=None, exclude_package=None, only_inte
         ).get_descriptor()),
 
         filter(lambda mth: (restrict_classes == None or mth.get_method().class_name in restrict_classes) and (
-                    exclude_package == None or all(not (str(lib) in str(mth)) for lib in exclude_package)),
-               filter(lambda method: (method.is_external() and not only_internal) or (
-                           not method.is_external() and only_internal), dx.get_methods())))
+            exclude_package == None or all(not (str(lib) in str(mth)) for lib in exclude_package)),
+            filter(lambda method: (method.is_external() and not only_internal) or (
+                   not method.is_external() and only_internal), dx.get_methods())))
 
 
 def compare_classes(dx1, dx2, excluded_libraries):
@@ -250,10 +251,12 @@ def compare_receivers(a1, a2, excluded_libraries):
 
 def compare_resources(a1, a2, excluded_libraries):
     act1 = filter(
-        lambda f: excluded_libraries == None or all(not (str(lib)[1:] in str(f)) for lib in excluded_libraries),
+        lambda f: excluded_libraries == None or all(
+            not (str(lib)[1:] in str(f)) for lib in excluded_libraries),
         a1.get_files())
     act2 = filter(
-        lambda f: excluded_libraries == None or all(not (str(lib)[1:] in str(f)) for lib in excluded_libraries),
+        lambda f: excluded_libraries == None or all(
+            not (str(lib)[1:] in str(f)) for lib in excluded_libraries),
         a2.get_files())
     return compare_lists(act1, act2)
 
@@ -341,7 +344,7 @@ def compare_ground_truth(groundtruth_lines, current_process, analysis_rows, grou
          grnd_is_similar] = line.strip().split(',')
         prints += chalk.bold(
             "\n\n###(%s)###  ########################### Analyzing pair of dataset: [%s,%s] ####################################") % (
-                      num, chalk.blue(chalk.bold(original_apk_hash)), chalk.bold(repackaged_apk_hash))
+            num, chalk.blue(chalk.bold(original_apk_hash)), chalk.bold(repackaged_apk_hash))
 
         # print "locks %s" % str(locks)
         while original_apk_hash in locks or repackaged_apk_hash in locks:
@@ -409,7 +412,8 @@ def compare_ground_truth(groundtruth_lines, current_process, analysis_rows, grou
                         compare_classes(
                             dx1, dx2, external_libraries),
                         compare_methods(dx1, dx2, external_libraries),
-                        compare_methods_common_classes(dx1, dx2, external_libraries),
+                        compare_methods_common_classes(
+                            dx1, dx2, external_libraries),
                         compare_methods(dx1, dx2, external_libraries, False),
                         compare_methods_common_classes(
                             dx1, dx2, external_libraries, False),
@@ -429,9 +433,8 @@ def compare_ground_truth(groundtruth_lines, current_process, analysis_rows, grou
                 time.sleep(3)
 
         if not pair_processed:
-            skipped_lines.append(str((num,line)))
+            skipped_lines.append(str((num, line)))
             continue
-
 
         if original_apk_hash in locks:
             locks.remove(original_apk_hash)
@@ -448,30 +451,30 @@ def compare_ground_truth(groundtruth_lines, current_process, analysis_rows, grou
 
         prints += "\n\n=============== CURRENT ANALYSIS =============== \n\n"
 
-
         analysis_rows.append(
             [str(num)] +
             map(lambda comparison: comparison['not_detailed'], comparisons) +
             [grnd_is_similar])
 
-        prints += tabulate(analysis_rows, headers=analysis_header, tablefmt="grid") + "\n"
+        prints += tabulate(analysis_rows,
+                           headers=analysis_header, tablefmt="grid") + "\n"
 
         avg_score = sum(
             map(lambda x: x['score'], comparisons)) / len(comparisons)
 
         tool_result = "SIMILAR" if avg_score >= THRESHOLD else "NOT_SIMILAR"
         ground_truth_rows.append([chalk.blue(chalk.bold("%s" % num)),
-                                                  grnd_is_similar,
-                                                  avg_score,
-                                                  chalk.bold(chalk.red(
-                                                      tool_result) if tool_result != grnd_is_similar else chalk.green(
-                                                      tool_result)),
-                                                  chalk.bold(chalk.red(
-                                                      "WRONG") if tool_result != grnd_is_similar else chalk.green(
-                                                      "RIGHT"))])
+                                  grnd_is_similar,
+                                  avg_score,
+                                  chalk.bold(chalk.red(
+                                      tool_result) if tool_result != grnd_is_similar else chalk.green(
+                                      tool_result)),
+                                  chalk.bold(chalk.red(
+                                      "WRONG") if tool_result != grnd_is_similar else chalk.green(
+                                      "RIGHT"))])
 
         prints += tabulate(ground_truth_rows,
-                           headers=ground_truth_header, tablefmt="grid")+ "\n"
+                           headers=ground_truth_header, tablefmt="grid") + "\n"
 
         print prints
         # setting threshold to recommended
@@ -482,7 +485,8 @@ def compare_ground_truth(groundtruth_lines, current_process, analysis_rows, grou
 def concurrent_process(lines, analysis_rows, ground_truth_rows, skipped_lines, locks):
     processes = list()
     for i in range(N_PROCESSES):
-        x = multiprocessing.Process(target=compare_ground_truth, args=[lines, i, analysis_rows, ground_truth_rows, skipped_lines, locks])
+        x = multiprocessing.Process(target=compare_ground_truth, args=[
+                                    lines, i, analysis_rows, ground_truth_rows, skipped_lines, locks])
         processes.append(x)
         x.start()
 
@@ -495,10 +499,12 @@ if __name__ == '__main__':
         file_lines = f.readlines()
 
     manager = multiprocessing.Manager()
-    analysis_rows, ground_truth_rows , skipped_lines  = manager.list(), manager.list(), manager.list()
+    analysis_rows, ground_truth_rows, skipped_lines = manager.list(
+    ), manager.list(), manager.list()
     locks = manager.list()
 
-    concurrent_process(file_lines, analysis_rows, ground_truth_rows, skipped_lines, locks)
+    concurrent_process(file_lines, analysis_rows,
+                       ground_truth_rows, skipped_lines, locks)
 
     # average between min of similar and max of non similar
     similar_rows = filter(
@@ -539,8 +545,8 @@ if __name__ == '__main__':
     summary_report.write("\nFINAL ANALYSIS TABLE: \n")
     summary_report.write(
         tabulate(analysis_rows, headers=analysis_header, tablefmt="grid"))
-    summary_report.write("\n"+
-        tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid"))
+    summary_report.write("\n" +
+                         tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid"))
     summary_report.write("\n"+analysis_table + "\n"+summary_threshold)
     summary_report.write(
         "\n\nExcluded pairs because of androguard exceptions\n%s" % "\n".join((skipped_lines)))
