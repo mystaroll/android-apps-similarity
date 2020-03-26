@@ -1,20 +1,22 @@
 #!/usr/bin/env python
 # encoding=utf8
 import androguard.misc
-import cPickle
+import pickle
 import os
 import hashlib
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.metrics.pairwise import euclidean_distances
-import urllib2
+import urllib
 import argparse
 import sys
 import ngram
 from datetime import datetime
 from tabulate import tabulate
+import gc
+import multiprocessing as mp
 
-reload(sys)
-sys.setdefaultencoding('utf8')
+# reload(sys)
+# sys.setdefaultencoding('utf8')
 
 VERSION = "0.0.2"
 
@@ -25,7 +27,7 @@ parser.add_argument("-s",
                     help="Search single hash", type=str)
 parser.add_argument("--ngrams", default=4,
                     help="n grams to use for strings and sets", type=int)
-parser.add_argument("--processes", default = 8,
+parser.add_argument("--processes", default = 2,
                     help="Number of processes to use for multiprocessing, defaults to 8", type=int)
 parser.add_argument("--nocache", default=False,
                     help="If to use the cache", type=bool)
@@ -55,11 +57,11 @@ def download_if_not_exists(hash):
             # print "file apk exists, not downloading"
             return
 
-    print "Apk not downloaded, downloading now...\n"
+    print("Apk not downloaded, downloading now...\n")
     with open(apks_dir + "/" + hash + ".apk", "wb") as fapk:
-        fapk.write(urllib2.urlopen(
+        fapk.write(urllib.urlopen(
             "https://androzoo.uni.lu/api/download?apikey=a52054307648be3c6b753eb55c093f4c2fa4b03e452f8ed245db653fee146cdd&sha256=%s" % hash).read())
-        print "Download completed\n"
+        print("Download completed\n")
 
 
 def represent_methods(dx, restrict_classes=None, only_internal=True):
@@ -134,28 +136,28 @@ def compute_raw_feature_vector(a1, dx1):
             vector_feature_dict[permission] = 1
     return vector_feature_dict
 
-
+# @profile
 def get_raw_feature_vector_from_hash(hash):
-    cache_filename = "vect-" + hashlib.sha256(bytes(hash + VERSION)).hexdigest().upper()
+    cache_filename = "vect-" + hashlib.sha256(bytes(hash + VERSION, encoding='utf8')).hexdigest().upper()
     if os.path.exists("./cache/" + cache_filename) and not args.nocache:
         # print "FEATURE VECTOR CACHED getting results...."
         with open("./cache/" + cache_filename, "rb") as file:
-            feature_vector = cPickle.load(file)
+            feature_vector = pickle.load(file)
     else:
         try:
             download_if_not_exists(hash)
             a1, d1, dx1 = androguard.misc.AnalyzeAPK(
                 "./data/apks/%s.apk" % hash)
             feature_vector = compute_raw_feature_vector(a1, dx1)
-            print "CACHING...."
+            print("CACHING....")
             with open("./cache/" + cache_filename, "wb") as file:
-                cPickle.dump(feature_vector, file)
+                pickle.dump(feature_vector, file)
 
-        except urllib2.HTTPError as err:
-            print "Cannot download the hash from Androzoo %s" % str(err)
+        except urllib.HTTPError as err:
+            print("Cannot download the hash from Androzoo %s" % str(err))
             raise err
         except Exception as err:
-            print "Failed to get feature vector of apk %s, skipping.. %s" % (hash, err)
+            print("Failed to get feature vector of apk %s, skipping.. %s" % (hash, err))
             raise err
     return feature_vector
 
@@ -339,12 +341,13 @@ permissions = [
     "android.permission.WRITE_VOICEMAIL"
 ]
 
+# @profile
 def build_raw_feature_vector(opts):
         dataset_line, use_repackaged=opts
         raw_feature = None
         skipped_apk = ""
         num,line = dataset_line
-        print "Process running line: %s" % ( num)
+        print("Process running line: %s" % ( num))
         [original_apk_hash,repackaged_apk_hash,_] = line.strip().split(',')
         hash_to_use = repackaged_apk_hash if use_repackaged else original_apk_hash
         try:
@@ -354,15 +357,14 @@ def build_raw_feature_vector(opts):
         
         return (num, raw_feature, skipped_apk)
 
-
-
+# @profile
 def evaluate(file_lines, vec, feature_vectors):
     ground_truth_rows = []
     skipped_apks = set()
     for num, line in file_lines:
         [_, repackaged_apk_hash,
          gnd] = line.strip().split(',')
-        print "Searching (idx %s), repackaged app %s " % (num, repackaged_apk_hash)
+        print("Searching (idx %s), repackaged app %s " % (num, repackaged_apk_hash))
         try:
             euclidean_distances_vector = compute_distances_from_hash(vec, feature_vectors, repackaged_apk_hash)
             min_distance_idx = euclidean_distances_vector.argmin()
@@ -378,38 +380,45 @@ def evaluate(file_lines, vec, feature_vectors):
                 "RIGHT" if grnd_truth_result == tool_result else "WRONG"]
             ground_truth_rows.append(
               row  )
-            print row
+            print(row)
         except:
             skipped_apks.add(repackaged_apk_hash)
             continue
     return ground_truth_rows, skipped_apks
 
 def concurrent_process(target, opts_lst):
-    from multiprocessing import Pool
     """ chunk_size = 10 #trying to fix the memory leak
     res = []
     for chunkidx in range(0, len(opts_lst),chunk_size):
         p = Pool(N_PROCESSES,maxtasksperchild=10)
         res.extend(p.map(target, opts_lst[chunkidx:chunkidx+chunk_size]))
         p.close() """
-    p = Pool(N_PROCESSES)
-    return p.map(target, opts_lst)
-   
+    p = mp.Pool(N_PROCESSES, maxtasksperchild=20)#, initializer=init_proces
+    res= p.map(target, opts_lst)
+    p.close()
+    return res
 
-if __name__ == '__main__':
+def init_process():
+    global results
+    results = None
+    del results
+    gc.collect()
+
+
+def main():
+    mp.set_start_method('spawn')
     vec = DictVectorizer()
     with open('data/groundtruth_search.txt') as f:
-        file_lines = list(enumerate(f.readlines()))#[672:683]
+        file_lines = list(enumerate(f.readlines()))
     raw_features = []
     skipped_apks = set()
 
-    print "Getting feature vectors.."
+    print("Getting feature vectors..")
     #use single processing because of memory leaks
-
-    results = map(build_raw_feature_vector, [(fn,True) for fn in file_lines])
-    # concurrent_process(build_raw_feature_vector, [(fn,False) for fn in file_lines])
-    # concurrent_process(build_raw_feature_vector, [(fn,True) for fn in file_lines]) 
-    map(build_raw_feature_vector, [(fn,False) for fn in file_lines])
+    #map(build_raw_feature_vector, [(fn,True) for fn in file_lines])
+    results = concurrent_process(build_raw_feature_vector, [(fn,False) for fn in file_lines])
+    concurrent_process(build_raw_feature_vector, [(fn,True) for fn in file_lines]) 
+    #map(build_raw_feature_vector, [(fn,True) for fn in file_lines])
     # after this the raw feature vectors are cached thus the evaluation call later has only IO overhead (and distance computing)
     
     for result in results:
@@ -421,37 +430,37 @@ if __name__ == '__main__':
 
     
     feature_vectors = vec.fit_transform(raw_features).toarray()
-
-
+    del raw_features
+    del results
     
     
     if args.s != None:
         searched_hash = args.s
-        print "Searching given hash %s" % searched_hash
+        print("Searching given hash %s" % searched_hash)
         euclidean_distances_vector = compute_distances_from_hash(vec, feature_vectors, searched_hash)
         min_distance_idx = euclidean_distances_vector.argmin()
         if euclidean_distances_vector[min_distance_idx] <= THRESHOLD:
-            print "The given app is similar to (with distance %s) %s (index %s in the dataset) " % (
+            print("The given app is similar to (with distance %s) %s (index %s in the dataset) " % (
                 euclidean_distances_vector[min_distance_idx],
                 str(list(file_lines)[min_distance_idx][1].strip().split(',')[0]),
-                min_distance_idx)
+                min_distance_idx))
         else:
-            print "The searched app has no similar app in the dataset"
+            print("The searched app has no similar app in the dataset")
     else:
-        print "Evaluating dataset.."
+        print("Evaluating dataset..")
         ground_truth_rows,skipped_searched_apks = evaluate(file_lines, vec, feature_vectors)
         with open('./report/report-search-SUMMARY-%s.txt' % (args.output), 'w') as summary_report:
             prints= ""
             prints += tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid")
-            prints += "\nTotal wrong tool results: %s" % len(filter(lambda row: row[4] == "WRONG", ground_truth_rows))
+            prints += "\nTotal wrong tool results: %s" % len(list(filter(lambda row: row[4] == "WRONG", ground_truth_rows)))
 
-            similar_rows = filter(lambda row: "SIMILAR" in row[1][:7], ground_truth_rows)
-            not_similar_rows = filter(lambda row: "NOT_SIMILAR" in row[1], ground_truth_rows)
+            similar_rows = list(filter(lambda row: "SIMILAR" in row[1][:7], ground_truth_rows))
+            not_similar_rows = list(filter(lambda row: "NOT_SIMILAR" in row[1], ground_truth_rows))
 
-            TP = len(filter(lambda row: "SIMILAR" in (row[3])[:7], similar_rows))
-            TN = len(filter(lambda row: "NOT_SIMILAR" in row[3], not_similar_rows))
-            FP = len(filter(lambda row: "SIMILAR" in (row[3])[:7], not_similar_rows))
-            FN = len(filter(lambda row: "NOT_SIMILAR" in row[3], similar_rows))
+            TP = len(list(filter(lambda row: "SIMILAR" in (row[3])[:7], similar_rows)))
+            TN = len(list(filter(lambda row: "NOT_SIMILAR" in row[3], not_similar_rows)))
+            FP = len(list(filter(lambda row: "SIMILAR" in (row[3])[:7], not_similar_rows)))
+            FN = len(list(filter(lambda row: "NOT_SIMILAR" in row[3], similar_rows)))
 
             prints +="\n" + tabulate([
                 ["TOOL_SIMILAR", "TP(%s)" % TP, "FP(%s)" % FP],
@@ -466,4 +475,7 @@ if __name__ == '__main__':
             prints += "\nSkipped apks in building feature vectors: " + "\n".join(skipped_apks)
             prints += "\nSkipped apks in evaluating the dataset: " + "\n".join(skipped_searched_apks)
             summary_report.write(prints)
-            print prints    
+            print(prints)
+
+if __name__ == '__main__':
+    main()
