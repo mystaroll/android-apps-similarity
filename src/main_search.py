@@ -12,12 +12,10 @@ import sys
 import ngram
 from datetime import datetime
 from tabulate import tabulate
-import multiprocessing
 
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-THRESHOLD = 50
 VERSION = "0.0.2"
 
 parser = argparse.ArgumentParser(
@@ -33,11 +31,13 @@ parser.add_argument("--nocache", default=False,
                     help="If to use the cache", type=bool)
 parser.add_argument("--output", default=datetime.now().strftime("%Y%m%d%H%M"),
                     help="Suffix for summary report", type=str)
-
+parser.add_argument("--threshold", default=100,
+                    help="Euclidean distance threshold to use for considering two apps similar", type=int)
 args = parser.parse_args()
 N_GRAMS = args.ngrams
 N_PROCESSES = args.processes
 
+THRESHOLD = args.threshold
 apks_dir = "data/apks"
 if not os.path.exists("cache"):
     os.makedirs("cache")
@@ -71,10 +71,8 @@ def represent_methods(dx, restrict_classes=None, only_internal=True):
                filter(lambda method: (not method.is_external()) or (not only_internal), dx.get_methods())))
 
 
-ng = ngram.NGram(N=N_GRAMS, pad_len=0)
-
-
 def string_to_feature_vector(key, string):
+    ng = ngram.NGram(N=N_GRAMS, pad_len=0)
     grams = ng.split(string)
     res = dict()
     for word in grams:
@@ -166,17 +164,6 @@ def compute_distances_from_hash(vectorizer,feature_vectors,hash):
     raw_feature_vec = get_raw_feature_vector_from_hash(hash)
     searched_feature_vector = vectorizer.transform(raw_feature_vec).toarray()
     return euclidean_distances(feature_vectors, searched_feature_vector)
-
-
-def concurrent_process(target, *process_args):
-    processes = list()
-    for i in range(N_PROCESSES):
-        x = multiprocessing.Process(target=target, args=[i]+list(process_args))
-        processes.append(x)
-        x.start()
-
-    for index, process in enumerate(processes):
-        process.join()
 
 
 # build feature vector
@@ -352,62 +339,86 @@ permissions = [
     "android.permission.WRITE_VOICEMAIL"
 ]
 
-
-def build_raw_feature_vectors(current_process, file_lines, raw_features, skipped_apks):
-    for num,line in enumerate(file_lines):
-        if num % N_PROCESSES != current_process:
-            continue
-        # print "Process: %s" % current_process
-        [original_apk_hash,_,_] = line.strip().split(',')
+def build_raw_feature_vector(opts):
+        dataset_line, use_repackaged=opts
+        raw_feature = None
+        skipped_apk = ""
+        num,line = dataset_line
+        print "Process running line: %s" % ( num)
+        [original_apk_hash,repackaged_apk_hash,_] = line.strip().split(',')
+        hash_to_use = repackaged_apk_hash if use_repackaged else original_apk_hash
         try:
-            raw_feature = get_raw_feature_vector_from_hash(original_apk_hash)
+            raw_feature = get_raw_feature_vector_from_hash(hash_to_use)
         except:
-            skipped_apks.append(original_apk_hash)
-            continue
-        raw_features.append(raw_feature)
+            skipped_apk = hash_to_use
+        
+        return (num, raw_feature, skipped_apk)
 
 
-def evaluate(current_process, file_lines, vec, feature_vectors, ground_truth_rows, skipped_apks):
-    for num, line in enumerate(file_lines):
-        if num % N_PROCESSES != current_process:
-            continue
 
+def evaluate(file_lines, vec, feature_vectors):
+    ground_truth_rows = []
+    skipped_apks = set()
+    for num, line in file_lines:
         [_, repackaged_apk_hash,
-         grnd_is_similar] = line.strip().split(',')
+         gnd] = line.strip().split(',')
         print "Searching (idx %s), repackaged app %s " % (num, repackaged_apk_hash)
         try:
             euclidean_distances_vector = compute_distances_from_hash(vec, feature_vectors, repackaged_apk_hash)
             min_distance_idx = euclidean_distances_vector.argmin()
 
-            grnd_truth_result = "SIMILAR(%s)" % num if grnd_is_similar == "SIMILAR" else "NOT_SIMILAR"
-            tool_result = "SIMILAR(%s)" % min_distance_idx if euclidean_distances_vector[
+            grnd_truth_result = "SIMILAR(%s)" % num if gnd == "SIMILAR" else "NOT_SIMILAR"
+            tool_result = "SIMILAR(%s)" % file_lines[min_distance_idx][0] if euclidean_distances_vector[
                                                                 min_distance_idx] <= THRESHOLD else "NOT_SIMILAR"
-            ground_truth_rows.append(
-                [num,
+            
+            row = [num,
                 grnd_truth_result,
                 euclidean_distances_vector[min_distance_idx],
                 tool_result,
-                "RIGHT" if grnd_truth_result == tool_result else "WRONG"])
+                "RIGHT" if grnd_truth_result == tool_result else "WRONG"]
+            ground_truth_rows.append(
+              row  )
+            print row
         except:
-            skipped_apks.append(repackaged_apk_hash)
+            skipped_apks.add(repackaged_apk_hash)
             continue
+    return ground_truth_rows, skipped_apks
 
-
+def concurrent_process(target, opts_lst):
+    from multiprocessing import Pool
+    chunk_size = 10 #trying to fix the memory leak
+    res = []
+    for chunkidx in range(0, len(opts_lst),chunk_size):
+        p = Pool(N_PROCESSES,maxtasksperchild=10)
+        res.extend(p.map(target, opts_lst[chunkidx:chunkidx+chunk_size]))
+        p.close()
+    return res
+   
 
 if __name__ == '__main__':
     vec = DictVectorizer()
-    manager = multiprocessing.Manager()
     with open('data/groundtruth_search.txt') as f:
-        file_lines = f.readlines()
-    raw_features = manager.list()
-    ground_truth_rows = manager.list()
-    skipped_apks = manager.list()
-    skipped_searched_apks = manager.list()
+        file_lines = list(enumerate(f.readlines()))
+    raw_features = []
+    skipped_apks = set()
 
     print "Getting feature vectors.."
-    concurrent_process(build_raw_feature_vectors, file_lines, raw_features, skipped_apks)
+    results = concurrent_process(build_raw_feature_vector, [(fn,False) for fn in file_lines])
+    concurrent_process(build_raw_feature_vector, [(fn,True) for fn in file_lines]) 
+    # after this the raw feature vectors are cached thus the evaluation call later has only IO overhead (and distance computing)
+    
+    for result in results:
+        (num,raw_feature,skipped_apk) = result
+        if raw_feature != None:
+            raw_features.insert(num,raw_feature) #
+        else:
+            skipped_apks.add(skipped_apk)
+
+    
     feature_vectors = vec.fit_transform(raw_features).toarray()
 
+
+    
     
     if args.s != None:
         searched_hash = args.s
@@ -417,20 +428,17 @@ if __name__ == '__main__':
         if euclidean_distances_vector[min_distance_idx] <= THRESHOLD:
             print "The given app is similar to (with distance %s) %s (index %s in the dataset) " % (
                 euclidean_distances_vector[min_distance_idx],
-                str(file_lines[min_distance_idx].strip().split(',')[0]),
+                str(list(file_lines)[min_distance_idx][1].strip().split(',')[0]),
                 min_distance_idx)
         else:
             print "The searched app has no similar app in the dataset"
     else:
         print "Evaluating dataset.."
-        concurrent_process(evaluate, file_lines, vec, feature_vectors, ground_truth_rows, skipped_searched_apks)
-
-    
+        ground_truth_rows,skipped_searched_apks = evaluate(file_lines, vec, feature_vectors)
         with open('./report/report-search-SUMMARY-%s.txt' % (args.output), 'w') as summary_report:
             prints= ""
             prints += tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid")
             prints += "\nTotal wrong tool results: %s" % len(filter(lambda row: row[4] == "WRONG", ground_truth_rows))
-
 
             similar_rows = filter(lambda row: "SIMILAR" in row[1][:7], ground_truth_rows)
             not_similar_rows = filter(lambda row: "NOT_SIMILAR" in row[1], ground_truth_rows)
@@ -447,7 +455,10 @@ if __name__ == '__main__':
 
             prints += "\n F1 SCORE: %s\n" %  (round((float(2 * TP) / (2 * TP + FN + FP)) *
                 100, 2) if 2 * TP + FN + FP > 0 else "ND")
+            prints +="\nMAX_DISTANCE_SIMILAR: %s" % max(map(lambda row: row[2], similar_rows)) if len(similar_rows) >0 else "ND"
+            prints +="\nMIN_DISTANCE_NON_SIMILAR: %s" % min(map(lambda row: row[2], not_similar_rows)) if len(not_similar_rows) >0 else "ND"
+
             prints += "\nSkipped apks in building feature vectors: " + "\n".join(skipped_apks)
-            prints += "\nSkipped apks in evaluating the dataset: " + "\n".join(skipped_apks)
+            prints += "\nSkipped apks in evaluating the dataset: " + "\n".join(skipped_searched_apks)
             summary_report.write(prints)
-            print prints
+            print prints    

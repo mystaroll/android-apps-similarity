@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # encoding=utf8
 
-from literadar import LibRadarLite
 import androguard.misc
 import androguard.core
 from tabulate import tabulate
@@ -15,7 +14,8 @@ import csv
 import time
 import argparse
 import multiprocessing
-sys.path.append("LiteRadar")  # this is where your python file exists
+sys.path.append("LiteRadar")  
+from literadar import LibRadarLite
 
 reload(sys)
 sys.setdefaultencoding('utf8')
