@@ -12,9 +12,8 @@ import sys
 import ngram
 from datetime import datetime
 from tabulate import tabulate
-import gc
+# import ray
 import multiprocessing as mp
-
 # reload(sys)
 # sys.setdefaultencoding('utf8')
 
@@ -341,7 +340,7 @@ permissions = [
     "android.permission.WRITE_VOICEMAIL"
 ]
 
-# @profile
+# @ray.remote
 def build_raw_feature_vector(opts):
         dataset_line, use_repackaged=opts
         raw_feature = None
@@ -396,17 +395,12 @@ def concurrent_process(target, opts_lst):
     p = mp.Pool(N_PROCESSES, maxtasksperchild=20)#, initializer=init_proces
     res= p.map(target, opts_lst)
     p.close()
-    return res
-
-def init_process():
-    global results
-    results = None
-    del results
-    gc.collect()
+    
+    return ""
 
 
 def main():
-    mp.set_start_method('spawn')
+    # ray.init()
     vec = DictVectorizer()
     with open('data/groundtruth_search.txt') as f:
         file_lines = list(enumerate(f.readlines()))
@@ -414,10 +408,14 @@ def main():
     skipped_apks = set()
 
     print("Getting feature vectors..")
+
+    concurrent_process(build_raw_feature_vector, [(fn,True) for fn in file_lines]) 
+    results = concurrent_process(build_raw_feature_vector, [(fn,False) for fn in file_lines])
+
     #use single processing because of memory leaks
     #map(build_raw_feature_vector, [(fn,True) for fn in file_lines])
-    results = concurrent_process(build_raw_feature_vector, [(fn,False) for fn in file_lines])
-    concurrent_process(build_raw_feature_vector, [(fn,True) for fn in file_lines]) 
+    # ray.get([build_raw_feature_vector.remote((fn,True)) for fn in file_lines])
+    # results = ray.get([build_raw_feature_vector.remote((fn,False)) for fn in file_lines])
     #map(build_raw_feature_vector, [(fn,True) for fn in file_lines])
     # after this the raw feature vectors are cached thus the evaluation call later has only IO overhead (and distance computing)
     
@@ -432,7 +430,6 @@ def main():
     feature_vectors = vec.fit_transform(raw_features).toarray()
     del raw_features
     del results
-    
     
     if args.s != None:
         searched_hash = args.s
