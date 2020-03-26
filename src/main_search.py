@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding=utf8
 import androguard.misc
-import _pickle as cPickle
+import cPickle
 import os
 import hashlib
 from sklearn.feature_extraction import DictVectorizer
@@ -12,6 +12,7 @@ import sys
 import ngram
 from datetime import datetime
 from tabulate import tabulate
+import gc
 # import ray
 import multiprocessing as mp
 # reload(sys)
@@ -34,6 +35,8 @@ parser.add_argument("--output", default=datetime.now().strftime("%Y%m%d%H%M"),
                     help="Suffix for summary report", type=str)
 parser.add_argument("--threshold", default=100,
                     help="Euclidean distance threshold to use for considering two apps similar", type=int)
+parser.add_argument("-n",
+                    help="Evaluate only the first n lines of the dataset", type=int)
 args = parser.parse_args()
 N_GRAMS = args.ngrams
 N_PROCESSES = args.processes
@@ -392,7 +395,7 @@ def concurrent_process(target, opts_lst):
         p = Pool(N_PROCESSES,maxtasksperchild=10)
         res.extend(p.map(target, opts_lst[chunkidx:chunkidx+chunk_size]))
         p.close() """
-    p = mp.Pool(N_PROCESSES, maxtasksperchild=20)#, initializer=init_proces
+    p = mp.Pool(N_PROCESSES, maxtasksperchild=100)#, initializer=init_proces
     res= p.map(target, opts_lst)
     p.close()
     
@@ -403,6 +406,7 @@ def main():
     vec = DictVectorizer()
     with open('data/groundtruth_search.txt') as f:
         file_lines = list(enumerate(f.readlines()))
+        file_lines = file_lines[:args.n if args.n != None else len(file_lines)]
     raw_features = []
     skipped_apks = set()
 
@@ -429,6 +433,8 @@ def main():
     feature_vectors = vec.fit_transform(raw_features).toarray()
     del raw_features
     del results
+    results =  raw_features = None
+    gc.collect()
     
     if args.s != None:
         searched_hash = args.s
