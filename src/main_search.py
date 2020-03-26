@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding=utf8
 import androguard.misc
-import cPickle
+import _pickle as cPickle
 import os
 import hashlib
 from sklearn.feature_extraction import DictVectorizer
