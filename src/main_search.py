@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding=utf8
 import androguard.misc
-import pickle
+import _pickle as cPickle
 import os
 import hashlib
 from sklearn.feature_extraction import DictVectorizer
@@ -26,7 +26,7 @@ parser.add_argument("-s",
                     help="Search single hash", type=str)
 parser.add_argument("--ngrams", default=4,
                     help="n grams to use for strings and sets", type=int)
-parser.add_argument("--processes", default = 2,
+parser.add_argument("--processes", default = 8,
                     help="Number of processes to use for multiprocessing, defaults to 8", type=int)
 parser.add_argument("--nocache", default=False,
                     help="If to use the cache", type=bool)
@@ -141,7 +141,7 @@ def get_raw_feature_vector_from_hash(hash):
     if os.path.exists("./cache/" + cache_filename) and not args.nocache:
         # print "FEATURE VECTOR CACHED getting results...."
         with open("./cache/" + cache_filename, "rb") as file:
-            feature_vector = pickle.load(file)
+            feature_vector = cPickle.load(file)
     else:
         try:
             download_if_not_exists(hash)
@@ -150,7 +150,7 @@ def get_raw_feature_vector_from_hash(hash):
             feature_vector = compute_raw_feature_vector(a1, dx1)
             print("CACHING....")
             with open("./cache/" + cache_filename, "wb") as file:
-                pickle.dump(feature_vector, file)
+                cPickle.dump(feature_vector, file)
 
         except urllib.HTTPError as err:
             print("Cannot download the hash from Androzoo %s" % str(err))
@@ -396,8 +396,7 @@ def concurrent_process(target, opts_lst):
     res= p.map(target, opts_lst)
     p.close()
     
-    return ""
-
+    return res
 
 def main():
     # ray.init()
