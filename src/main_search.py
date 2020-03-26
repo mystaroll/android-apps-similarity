@@ -386,25 +386,30 @@ def evaluate(file_lines, vec, feature_vectors):
 
 def concurrent_process(target, opts_lst):
     from multiprocessing import Pool
-    chunk_size = 10 #trying to fix the memory leak
+    """ chunk_size = 10 #trying to fix the memory leak
     res = []
     for chunkidx in range(0, len(opts_lst),chunk_size):
         p = Pool(N_PROCESSES,maxtasksperchild=10)
         res.extend(p.map(target, opts_lst[chunkidx:chunkidx+chunk_size]))
-        p.close()
-    return res
+        p.close() """
+    p = Pool(N_PROCESSES)
+    return p.map(target, opts_lst)
    
 
 if __name__ == '__main__':
     vec = DictVectorizer()
     with open('data/groundtruth_search.txt') as f:
-        file_lines = list(enumerate(f.readlines()))
+        file_lines = list(enumerate(f.readlines()))#[672:683]
     raw_features = []
     skipped_apks = set()
 
     print "Getting feature vectors.."
-    results = concurrent_process(build_raw_feature_vector, [(fn,False) for fn in file_lines])
-    concurrent_process(build_raw_feature_vector, [(fn,True) for fn in file_lines]) 
+    #use single processing because of memory leaks
+
+    results = map(build_raw_feature_vector, [(fn,True) for fn in file_lines])
+    # concurrent_process(build_raw_feature_vector, [(fn,False) for fn in file_lines])
+    # concurrent_process(build_raw_feature_vector, [(fn,True) for fn in file_lines]) 
+    map(build_raw_feature_vector, [(fn,False) for fn in file_lines])
     # after this the raw feature vectors are cached thus the evaluation call later has only IO overhead (and distance computing)
     
     for result in results:
@@ -455,8 +460,8 @@ if __name__ == '__main__':
 
             prints += "\n F1 SCORE: %s\n" %  (round((float(2 * TP) / (2 * TP + FN + FP)) *
                 100, 2) if 2 * TP + FN + FP > 0 else "ND")
-            prints +="\nMAX_DISTANCE_SIMILAR: %s" % max(map(lambda row: row[2], similar_rows)) if len(similar_rows) >0 else "ND"
-            prints +="\nMIN_DISTANCE_NON_SIMILAR: %s" % min(map(lambda row: row[2], not_similar_rows)) if len(not_similar_rows) >0 else "ND"
+            prints +="\nMAX_DISTANCE_SIMILAR: %s" % (max(map(lambda row: row[2], similar_rows)) if len(similar_rows) >0 else "ND")
+            prints +="\nMIN_DISTANCE_NON_SIMILAR: %s" % (min(map(lambda row: row[2], not_similar_rows)) if len(not_similar_rows) >0 else "ND")
 
             prints += "\nSkipped apks in building feature vectors: " + "\n".join(skipped_apks)
             prints += "\nSkipped apks in evaluating the dataset: " + "\n".join(skipped_searched_apks)
