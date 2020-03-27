@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding=utf8
 import androguard.misc
-import _pickle as cPickle
+import cPickle
 import os
 import hashlib
 from sklearn.feature_extraction import DictVectorizer
@@ -402,7 +402,7 @@ def main():
     # ray.init()
     vec = DictVectorizer()
     with open('data/groundtruth_search.txt') as f:
-        file_lines = list(enumerate(f.readlines()))
+        file_lines = list(enumerate(f.readlines()))[:10]
     raw_features = []
     skipped_apks = set()
 
