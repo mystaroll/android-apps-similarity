@@ -27,7 +27,7 @@ parser = argparse.ArgumentParser(
 parser.add_argument("-s",
                     help="Search single hash", type=str)
 
-parser.add_argument("--dataset",default='data/groundtruth_search_extra_slim.txt',
+parser.add_argument("--dataset",default='data/groundtruth_search_slim.txt',
                     help="Dataset path", type=str)
 parser.add_argument("--ngrams", default=4,
                     help="n grams to use for strings and sets", type=int)
