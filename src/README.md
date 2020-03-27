@@ -65,3 +65,7 @@ Other than the pairwise comparison, a search model has been studied. The script 
                             Euclidean distance threshold to use for considering
                             two apps similar
       -n N                  Evaluate only the first n lines of the dataset
+
+## Extras
+
+Script `./find_details.py [path_to_full_log] [id_pair]` shows the comparison details of a pair
