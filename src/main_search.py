@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding=utf8
 import androguard.misc
-import _pickle as cPickle
+import cPickle
 import os
 import hashlib
 from sklearn.feature_extraction import DictVectorizer
@@ -15,8 +15,9 @@ from tabulate import tabulate
 import gc
 # import ray
 import multiprocessing as mp
-# reload(sys)
-# sys.setdefaultencoding('utf8')
+
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 VERSION = "0.0.2"
 
@@ -25,6 +26,9 @@ parser = argparse.ArgumentParser(
 
 parser.add_argument("-s",
                     help="Search single hash", type=str)
+
+parser.add_argument("--dataset",default='data/groundtruth_search_extra_slim.txt',
+                    help="Dataset path", type=str)
 parser.add_argument("--ngrams", default=4,
                     help="n grams to use for strings and sets", type=int)
 parser.add_argument("--processes", default = 8,
@@ -140,7 +144,7 @@ def compute_raw_feature_vector(a1, dx1):
 
 # @profile
 def get_raw_feature_vector_from_hash(hash):
-    cache_filename = "vect-" + hashlib.sha256(bytes(hash + VERSION, encoding='utf8')).hexdigest().upper()
+    cache_filename = "vect-" + hashlib.sha256(bytes(hash + VERSION)).hexdigest().upper()
     if os.path.exists("./cache/" + cache_filename) and not args.nocache:
         # print "FEATURE VECTOR CACHED getting results...."
         with open("./cache/" + cache_filename, "rb") as file:
@@ -360,33 +364,33 @@ def build_raw_feature_vector(opts):
         return (num, raw_feature, skipped_apk)
 
 # @profile
-def evaluate(file_lines, vec, feature_vectors):
-    ground_truth_rows = []
-    skipped_apks = set()
-    for num, line in file_lines:
-        [_, repackaged_apk_hash,
-         gnd] = line.strip().split(',')
-        print("Searching (idx %s), repackaged app %s " % (num, repackaged_apk_hash))
-        try:
-            euclidean_distances_vector = compute_distances_from_hash(vec, feature_vectors, repackaged_apk_hash)
-            min_distance_idx = euclidean_distances_vector.argmin()
+# @ray.remote
+def evaluate(opts):
+    dataset_line, file_lines, vec, feature_vectors = opts
+    ground_truth_row = None
+    skipped_apk = ""
+    num, line = dataset_line
+    [_, repackaged_apk_hash,
+        gnd] = line.strip().split(',')
+    print("Searching (idx %s), repackaged app %s " % (num, repackaged_apk_hash))
+    try:
+        euclidean_distances_vector = compute_distances_from_hash(vec, feature_vectors, repackaged_apk_hash)
+        min_distance_idx = euclidean_distances_vector.argmin()
 
-            grnd_truth_result = "SIMILAR(%s)" % num if gnd == "SIMILAR" else "NOT_SIMILAR"
-            tool_result = "SIMILAR(%s)" % file_lines[min_distance_idx][0] if euclidean_distances_vector[
-                                                                min_distance_idx] <= THRESHOLD else "NOT_SIMILAR"
-            
-            row = [num,
-                grnd_truth_result,
-                euclidean_distances_vector[min_distance_idx],
-                tool_result,
-                "RIGHT" if grnd_truth_result == tool_result else "WRONG"]
-            ground_truth_rows.append(
-              row  )
-            print(row)
-        except:
-            skipped_apks.add(repackaged_apk_hash)
-            continue
-    return ground_truth_rows, skipped_apks
+        grnd_truth_result = "SIMILAR(%s)" % num if gnd == "SIMILAR" else "NOT_SIMILAR"
+        tool_result = "SIMILAR(%s)" % file_lines[min_distance_idx][0] if euclidean_distances_vector[
+                                                            min_distance_idx] <= THRESHOLD else "NOT_SIMILAR"
+        
+        ground_truth_row = [num,
+            grnd_truth_result,
+            euclidean_distances_vector[min_distance_idx],
+            tool_result,
+            "RIGHT" if grnd_truth_result == tool_result else "WRONG"]
+        
+        print(ground_truth_row)
+    except:
+        skipped_apk = repackaged_apk_hash
+    return (num, ground_truth_row, skipped_apk)
 
 def concurrent_process(target, opts_lst):
     """ chunk_size = 10 #trying to fix the memory leak
@@ -401,10 +405,18 @@ def concurrent_process(target, opts_lst):
     
     return res
 
-def main():
+
+def concurrent_process_with_ray(target, opts_lst):
+    results = []
+    for chunk in range(0,len(opts_lst), N_PROCESSES):
+        results.extend(ray.get([target.remote(opts_lst[i]) for i in range(chunk,min((chunk+N_PROCESSES,len(opts_lst))))]))
+    return results
+
+if __name__ == '__main__':
+# def main():
     # ray.init()
     vec = DictVectorizer()
-    with open('data/groundtruth_search.txt') as f:
+    with open(args.dataset) as f:
         file_lines = list(enumerate(f.readlines()))
         file_lines = file_lines[:args.n if args.n != None else len(file_lines)]
     raw_features = []
@@ -413,7 +425,36 @@ def main():
     print("Getting feature vectors..")
 
     concurrent_process(build_raw_feature_vector, [(fn,True) for fn in file_lines]) 
-    results = concurrent_process(build_raw_feature_vector, [(fn,False) for fn in file_lines])
+    # concurrent_process_with_ray(build_raw_feature_vector, [(fn,True) for fn in file_lines]) 
+
+    cache_filename = "complete-raw-feature-vec-" + hashlib.sha256(bytes(str(len(file_lines)) + VERSION)).hexdigest().upper()
+    if os.path.exists("./cache/" + cache_filename) and not args.nocache:
+        print("COMPLETE FEATURE VECTOR CACHED getting....")
+        with open("./cache/" + cache_filename, "rb") as file:
+            raw_features = cPickle.load(file)
+    else:
+
+        # """ Using ray (10x faster) but can't handle huge objects (our case)"""
+        # results = concurrent_process_with_ray(build_raw_feature_vector, [(fn,False) for fn in file_lines]) 
+        # for result in results:
+        #     (num,raw_feature,skipped_apk) = result
+        #     if raw_feature != None:
+        #         raw_features.insert(num,raw_feature) #
+        #     else:
+        #         skipped_apks.add(skipped_apk)
+                    
+        """ using multiprocessing """
+        for result in concurrent_process(build_raw_feature_vector, [(fn,False) for fn in file_lines]):
+            (num,raw_feature,skipped_apk) = result
+            if raw_feature != None:
+                raw_features.insert(num,raw_feature) #
+            else:
+                skipped_apks.add(skipped_apk)
+
+        print("CACHING complete raw feature vec....")
+        with open("./cache/" + cache_filename, "wb") as file:
+            cPickle.dump(raw_features, file)
+
 
     #use single processing because of memory leaks
     #map(build_raw_feature_vector, [(fn,True) for fn in file_lines])
@@ -421,20 +462,10 @@ def main():
     # results = ray.get([build_raw_feature_vector.remote((fn,False)) for fn in file_lines])
     #map(build_raw_feature_vector, [(fn,True) for fn in file_lines])
     # after this the raw feature vectors are cached thus the evaluation call later has only IO overhead (and distance computing)
-    
-    for result in results:
-        (num,raw_feature,skipped_apk) = result
-        if raw_feature != None:
-            raw_features.insert(num,raw_feature) #
-        else:
-            skipped_apks.add(skipped_apk)
 
-    
+    print("TRANSFORMING complete raw feature vec into binary one....")
     feature_vectors = vec.fit_transform(raw_features).toarray()
-    del raw_features
-    del results
-    results =  raw_features = None
-    gc.collect()
+  
     
     if args.s != None:
         searched_hash = args.s
@@ -450,7 +481,22 @@ def main():
             print("The searched app has no similar app in the dataset")
     else:
         print("Evaluating dataset..")
-        ground_truth_rows,skipped_searched_apks = evaluate(file_lines, vec, feature_vectors)
+        # vec_id = ray.put(vec)
+        # fv_id = ray.put(feature_vectors)
+        # flns_id = ray.put(file_lines)
+        ground_truth_rows = []
+        skipped_searched_apks = []
+        results = [evaluate((fn, file_lines, vec, feature_vectors)) for fn in file_lines]
+        # concurrent_process(evaluate, [(fn, file_lines, vec, feature_vectors) for fn in file_lines])
+        for result in results:
+            (num,grnd_row,skp_apk) = result
+            if grnd_row != None:
+                ground_truth_rows.insert(num,grnd_row) #
+            else:
+                skipped_searched_apks.add(skp_apk)
+
+            
+
         with open('./report/report-search-SUMMARY-%s.txt' % (args.output), 'w') as summary_report:
             prints= ""
             prints += tabulate(ground_truth_rows, headers=ground_truth_header, tablefmt="grid")
@@ -479,5 +525,5 @@ def main():
             summary_report.write(prints)
             print(prints)
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()
