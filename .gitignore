@@ -1,6 +1,8 @@
 .vscode/
 .idea
 src/data/apks/*
+src/report/*.csv
+src/report/*.txt
 session.ag
 src/report
 src/cache
