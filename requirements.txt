@@ -18,7 +18,7 @@ ipython-genutils==0.2.0
 keyring==10.6.0
 keyrings.alt==3.0
 kiwisolver==1.1.0
-lxml==4.4.2
+lxml==4.6.3
 Markdown==2.6.9
 matplotlib==2.2.4
 networkx==2.2
