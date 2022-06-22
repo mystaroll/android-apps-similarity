@@ -22,7 +22,7 @@ lxml==4.4.2
 Markdown==2.6.9
 matplotlib==2.2.4
 networkx==2.2
-numpy==1.16.6
+numpy==1.22.0
 pathlib2==2.3.5
 pexpect==4.8.0
 pickleshare==0.7.5
