@@ -54,7 +54,7 @@ netifaces==0.10.4
 networkx==2.4
 ngram==3.3.2
 nltk==3.4.5
-numpy==1.18.2
+numpy==1.22.0
 oauth==1.0.1
 olefile==0.45.1
 onboard==1.4.1
